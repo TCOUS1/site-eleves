@@ -1,0 +1,1 @@
+{"home":{"url":"co/TP-papeterie-services.html","label":"Page d'accueil du module","source":"ue","className":"home","id":"YENWa5nl0HkVh3s2bXNOMd"},"module":{"children":[{"url":"co/papeterie-services.html","label":"Exercice&nbsp;: TP - Pap&egrave;terie Services","source":"practUc","className":"practUc","id":"WPXVyDmOVUixjL4cWqKJMe"}]},"tools":{"children":[]}}
