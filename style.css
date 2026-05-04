@@ -11,6 +11,51 @@ body {
     max-width: 860px;
     margin: 60px auto;
 }
+    body {
+  counter-reset: h2counter;
+}
+
+/* H2 */
+h2 {
+  counter-reset: h3counter;
+}
+h2::before {
+  counter-increment: h2counter;
+  content: counter(h2counter) ". ";
+}
+
+/* H3 */
+h3 {
+  counter-reset: h4counter;
+}
+h3::before {
+  counter-increment: h3counter;
+  content: counter(h2counter) "." counter(h3counter) " ";
+}
+
+/* H4 */
+h4 {
+  counter-reset: h5counter;
+}
+h4::before {
+  counter-increment: h4counter;
+  content: counter(h2counter) "." counter(h3counter) "." counter(h4counter) " ";
+}
+
+/* H5 */
+h5 {
+  counter-reset: h6counter;
+}
+h5::before {
+  counter-increment: h5counter;
+  content: counter(h2counter) "." counter(h3counter) "." counter(h4counter) "." counter(h5counter) " ";
+}
+
+/* H6 */
+h6::before {
+  counter-increment: h6counter;
+  content: counter(h2counter) "." counter(h3counter) "." counter(h4counter) "." counter(h5counter) "." counter(h6counter) " ";
+}
 
 /* ===== TITRES ===== */
 
@@ -25,8 +70,8 @@ h1 {
 h2 {
     color: #b8d7ff;
     font-size: 1.6em;
-    margin-top: 50px;
-    margin-bottom: 18px;
+    margin-top: 20px;
+    margin-bottom: 12px;
     padding-left: 12px;
     border-left: 4px solid #4c78a8;
 }
@@ -34,15 +79,24 @@ h2 {
 h3 {
     color: #9ecb8f;
     font-size: 1.25em;
-    margin-top: 32px;
+    margin-top: 20px;
     margin-bottom: 12px;
+	text-transform: uppercase;
 }
 
 h4 {
     color: #d0b080;
     font-size: 1.05em;
-    margin-top: 24px;
-    text-transform: uppercase;
+	margin-top: 20px;
+    margin-bottom: 12px;
+    letter-spacing: 0.05em;
+}
+
+h5	{
+	color: #b8d7ff;
+    font-size: 1em;
+	margin-top: 20px;
+    margin-bottom: 12px;
     letter-spacing: 0.05em;
 }
 
