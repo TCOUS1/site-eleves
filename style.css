@@ -11,7 +11,7 @@ body {
     max-width: 860px;
     margin: 60px auto;
 }
-   
+
 /* Initialisation globale */
 body {
   counter-reset: h3counter;
@@ -59,7 +59,78 @@ h6::before {
 }
 
 
-/* ===== TITRES ===== */
+/* ============================================================
+   TABLEAUX GÉNÉRIQUES (hors CCF)
+   ============================================================ */
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  table-layout: auto;
+}
+
+table th,
+table td {
+  border: 1px solid #444;
+  padding: 8px;
+  vertical-align: top;
+}
+
+/* Colonne minimale */
+.col-min {
+  width: 1%;
+  white-space: nowrap;
+}
+
+
+/* ============================================================
+   TABLEAU CCF (SPÉCIFIQUE – PRIORITAIRE)
+   ============================================================ */
+
+.ccf-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  color: #f0f0f0;
+}
+
+/* Bordures gris clair sur fond sombre */
+.ccf-table th,
+.ccf-table td {
+  border: 1.5px solid #bfbfbf;
+  padding: 8px;
+  vertical-align: top;
+}
+
+/* En-têtes */
+.ccf-table th {
+  text-align: center;
+  font-weight: bold;
+  background-color: rgba(255, 255, 255, 0.05);
+}
+
+/* Largeurs de colonnes */
+.ccf-table .col-point { width: 45%; }
+.ccf-table .col-oui   { width: 15%; }
+.ccf-table .col-obs   { width: 40%; }
+
+/* Case de validation */
+.ccf-table .center {
+  text-align: center;
+  vertical-align: middle;
+  font-size: 18px;
+}
+
+/* Lignes prévues pour écrire */
+.ccf-table .ligne-vide {
+  height: 32px;
+}
+
+
+/* ============================================================
+   TITRES
+   ============================================================ */
 
 h1 {
     color: #eaeef2;
@@ -83,33 +154,39 @@ h3 {
     font-size: 1.25em;
     margin-top: 20px;
     margin-bottom: 12px;
-	text-transform: uppercase;
+    text-transform: uppercase;
 }
 
 h4 {
     color: #d0b080;
     font-size: 1.05em;
-	margin-top: 20px;
+    margin-top: 20px;
     margin-bottom: 12px;
     letter-spacing: 0.05em;
 }
 
-h5	{
-	color: #b8d7ff;
+h5 {
+    color: #b8d7ff;
     font-size: 1em;
-	margin-top: 20px;
+    margin-top: 20px;
     margin-bottom: 12px;
     letter-spacing: 0.05em;
 }
 
-/* ===== TEXTE ===== */
+
+/* ============================================================
+   TEXTE
+   ============================================================ */
 
 p {
     margin: 18px 0;
     font-size: 1.05em;
 }
 
-/* ===== LIENS ===== */
+
+/* ============================================================
+   LIENS
+   ============================================================ */
 
 a {
     color: #79b8ff;
@@ -122,7 +199,10 @@ a:hover {
     border-bottom-color: #ffffff;
 }
 
-/* ===== BLOCS ===== */
+
+/* ============================================================
+   BLOCS
+   ============================================================ */
 
 blockquote {
     background-color: #2a3038;
@@ -148,9 +228,34 @@ hr {
     margin: 40px 0;
 }
 
-/* Responsive */
+
+/* ============================================================
+   RESPONSIVE
+   ============================================================ */
+
 @media (max-width: 768px) {
     body {
         margin: 30px 16px;
     }
+}
+
+
+/* ============================================================
+   IMPRESSION (CCF lisible)
+   ============================================================ */
+
+@media print {
+  body {
+    background-color: #ffffff;
+    color: #000000;
+  }
+
+  .ccf-table {
+    color: #000000;
+  }
+
+  .ccf-table th,
+  .ccf-table td {
+    border: 1px solid #000000;
+  }
 }
