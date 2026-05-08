@@ -1,3 +1,4 @@
+
 /* ==========================================
    Thème sombre confortable & hiérarchisé
    ========================================== */
@@ -58,7 +59,6 @@ h6::before {
   content: counter(h3counter) "." counter(h4counter) "." counter(h5counter) "." counter(h6counter) " ";
 }
 
-
 /* ============================================================
    TABLEAUX GÉNÉRIQUES (hors CCF)
    ============================================================ */
@@ -82,7 +82,6 @@ table td {
   white-space: nowrap;
 }
 
-
 /* ============================================================
    TABLEAU CCF (SPÉCIFIQUE – PRIORITAIRE)
    ============================================================ */
@@ -95,7 +94,6 @@ table td {
   color: #f0f0f0;
 }
 
-/* Bordures gris clair sur fond sombre */
 .ccf-table th,
 .ccf-table td {
   border: 1.5px solid #bfbfbf;
@@ -103,30 +101,25 @@ table td {
   vertical-align: top;
 }
 
-/* En-têtes */
 .ccf-table th {
   text-align: center;
   font-weight: bold;
   background-color: rgba(255, 255, 255, 0.05);
 }
 
-/* Largeurs de colonnes */
 .ccf-table .col-point { width: 45%; }
 .ccf-table .col-oui   { width: 15%; }
 .ccf-table .col-obs   { width: 40%; }
 
-/* Case de validation */
 .ccf-table .center {
   text-align: center;
   vertical-align: middle;
   font-size: 18px;
 }
 
-/* Lignes prévues pour écrire */
 .ccf-table .ligne-vide {
   height: 32px;
 }
-
 
 /* ============================================================
    TITRES
@@ -173,7 +166,6 @@ h5 {
     letter-spacing: 0.05em;
 }
 
-
 /* ============================================================
    TEXTE
    ============================================================ */
@@ -183,6 +175,11 @@ p {
     font-size: 1.05em;
 }
 
+em {
+  color: #f2b6c6;
+  font-style: normal;
+  font-weight: bold;
+}
 
 /* ============================================================
    LIENS
@@ -199,7 +196,6 @@ a:hover {
     border-bottom-color: #ffffff;
 }
 
-
 /* ============================================================
    BLOCS
    ============================================================ */
@@ -212,7 +208,6 @@ blockquote {
     color: #cdd9e5;
 }
 
-/* Code */
 code {
     background-color: #2d333b;
     color: #c9d1d9;
@@ -221,12 +216,60 @@ code {
     font-family: "Fira Code", monospace;
 }
 
-/* Séparateurs */
 hr {
     border: none;
     border-top: 1px solid #3a3f45;
     margin: 40px 0;
 }
+
+/* =========================
+   CORRECTIONS MODE CLAIR
+   ========================= */
+
+/* =========================
+   CORRECTIONS MODE CLAIR
+   Titres & éléments colorés
+   ========================= */
+
+/* H1 */
+body.light h1 {
+  color: #1f2329;
+}
+
+/* H2 */
+body.light h2 {
+  color: #003366;
+  border-left-color: #003366;
+}
+
+/* H3 */
+body.light h3 {
+  color: #1f7a1f;
+}
+
+/* H4 */
+body.light h4 {
+  color: #7a4a00;
+}
+
+/* H5 */
+body.light h5 {
+  color: #003366;
+}
+
+/* Textes "compétence", titres thématiques, etc. */
+body.light .competence,
+body.light .competence-title,
+body.light .section-title {
+  color: #000000;
+}
+
+
+/* Emphase plus lisible en mode clair */
+body.light em {
+  color: #c2185b; /* rose vif, très lisible sur fond blanc */
+}
+
 
 
 /* ============================================================
@@ -237,8 +280,8 @@ hr {
     body {
         margin: 30px 16px;
     }
-}
 
+}
 
 /* ============================================================
    IMPRESSION (CCF lisible)
@@ -258,4 +301,61 @@ hr {
   .ccf-table td {
     border: 1px solid #000000;
   }
+}
+
+/* =========================
+   ACCESSIBILITÉ
+   ========================= */
+
+#accessibility-menu {
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  background: #2a3038;
+  padding: 8px;
+  border-radius: 8px;
+  display: flex;
+  gap: 6px;
+  z-index: 999;
+}
+
+#accessibility-menu button {
+  background: #4c78a8;
+  border: none;
+  color: white;
+  padding: 6px 8px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+#accessibility-menu button:hover {
+  background: #79b8ff;
+}
+
+/* Mode clair */
+body.light {
+  background-color: #ffffff;
+  color: #000000;
+}
+
+body.light a {
+  color: #0056b3;
+}
+
+/* OpenDyslexic */
+body.dys {
+  font-family: "OpenDyslexic", Arial, sans-serif;
+}
+
+/* Lignes de lecture */
+body.lines p,
+body.lines li {
+  background: linear-gradient(
+    to bottom,
+    rgba(255, 255, 0, 0.15) 0%,
+    rgba(255, 255, 0, 0.15) 50%,
+    transparent 50%,
+    transparent 100%
+  );
+  background-size: 100% 2.8em;
 }
