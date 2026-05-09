@@ -181,6 +181,17 @@ em {
   font-weight: bold;
 }
 
+em.em2 {
+  color: #9ecb8f;
+  font-style: normal;
+  font-weight: bold; 
+}
+
+summary em.em2 {
+	color: #9ecb8f;
+}
+
+
 /* ============================================================
    LIENS
    ============================================================ */
@@ -270,7 +281,9 @@ body.light em {
   color: #c2185b; /* rose vif, très lisible sur fond blanc */
 }
 
-
+summary em.em2 {
+	color: #1f7a1f;
+}
 
 /* ============================================================
    RESPONSIVE
