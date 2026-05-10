@@ -1,53 +1,77 @@
 window.dys = {
 	fStrings : [
-		/*00*/ "⚙","Afficher / cacher les options accessibilité",
-		/*02*/ "Police OpenDyslexic","Activer / désactiver l\'usage de la police OpenDyslexic",
-		/*04*/ "Lignes colorées","Activer / désactiver les lignes de textes en couleurs alternés",
-		/*06*/ "Texte aéré","Activer / désactiver un plus grand espacement du texte",
+		/*00*/ "⚙","Options d\'accessibilité",
+		/*02*/ "Police OpenDyslexic","Utiliser la police OpenDyslexic",
+		/*04*/ "Lignes colorées","Lignes de texte en couleurs alternées",
+		/*06*/ "Texte aéré","Plus grand espacement du texte",
 		/*08*/ "-","Diminuer la taille de la police",
 		/*10*/ "+","Augmenter la taille de la police",
+		/*12*/ "Titres numérotés","Numérotation des titres",
+		/*14*/ "Titres à l\'échelle","Mise à l\'échelle des titres des pages en fonction de leur profondeur",
 		""],
 	fPanelActive : false,
 	fFontActive : false,
 	fMoreSpace : false,
 	fFontSize : 100,
 	fAltLineColor : false,
+	fNumHeadings : false,
+	fScaleH2 : false,
 	fListeners : [],
 
 	init : function(pOptions) {
-		this.fStore = new this.LocalStore();
-		if (pOptions) this.fOptions = pOptions;
-		this.fBody = scPaLib.findNode("bod:");
-		this.fRoot = scPaLib.findNode(this.fOptions.pathRoot);
-		this.fContent = scPaLib.findNode(this.fOptions.pathContent);
-		if (window.parent !== window && window.parent.dys){ // We are in an iframe register with the parent dys manager.
-			if (this.fStore.get("dysFontActive")==="true") this.xToggleFont();
-			if (this.fStore.get("dysAltLineColor")==="true") this.xToggleAltLineColor();
-			if (this.fStore.get("dysMoreSpace")==="true") this.xToggleMoreSpace();
-			if (this.fStore.get("dysFontSize")){
-				this.fFontSize = Number(this.fStore.get("dysFontSize"));
-				this.fContent.style.fontSize = this.fFontSize + "%";
+		try {
+			this.fStore = new this.LocalStore();
+			if (pOptions) this.fOptions = pOptions;
+			else throw "Cannot find configuration object";
+			this.fBody = scPaLib.findNode("bod:");
+			this.fRoot = scPaLib.findNode(this.fOptions.pathRoot);
+			this.fContent = scPaLib.findNode(this.fOptions.pathContent);
+			let vHasParentDys = false;
+			try {
+				if (window.parent !== window && window.parent.dys) vHasParentDys = true;
+			} catch (e){}
+			if (vHasParentDys){ // We are in an iframe registered with the parent dys manager.
+				if (this.fStore.get("dysFontActive")==="true") this.xToggleFont();
+				if (this.fStore.get("dysMoreSpace")==="true") this.xToggleMoreSpace();
+				if (this.fStore.get("dysFontSize")){
+					this.fFontSize = Number(this.fStore.get("dysFontSize"));
+					this.fContent.style.fontSize = this.fFontSize + "%";
+				}
+				if (this.fOptions.optNumHeadings && this.fStore.get("dysNumHeadings")==="true") this.xToggleNumHeadings();
+				if (this.fOptions.optScaleH2 && this.fStore.get("dysScaleH2")==="true") this.xToggleScaleH2();
+				if (this.fStore.get("dysAltLineColor")==="true") this.xToggleAltLineColor();
+				window.parent.dys.registerListener(function (pAction) {
+					if (dys[pAction]) dys[pAction]();
+					else console.error("dys.listener : unknown action "+pAction);
+				})
+			} else if(!this.fOptions.disable) {
+				this.xBuildUi();
+				if (this.fStore.get("dysPanelActive")==="true" && !this.fOptions.defaultPanelInactive) this.xTogglePanel(scPaLib.findNode("des:button.dysBtnToggle"));
+				if (this.fStore.get("dysFontActive")==="true") this.xToggleFont(scPaLib.findNode("des:button.dysBtnToggleFont"));
+				if (this.fStore.get("dysMoreSpace")==="true") this.xToggleMoreSpace(scPaLib.findNode("des:button.dysBtnToggleMoreSpace"));
+				if (this.fStore.get("dysFontSize")){
+					this.fFontSize = Number(this.fStore.get("dysFontSize"));
+					this.fContent.style.fontSize = this.fFontSize + "%";
+					this.fFontSizeLbl.innerHTML = this.fFontSize + "%";
+				}
+				if (this.fOptions.optNumHeadings && this.fStore.get("dysNumHeadings")==="true") this.xToggleNumHeadings(scPaLib.findNode("des:button.dysBtnToggleNumHeadings"));
+				if (this.fOptions.optScaleH2 && this.fStore.get("dysScaleH2")==="true") this.xToggleScaleH2(scPaLib.findNode("des:button.dysBtnToggleScaleH2"));
+				if (this.fStore.get("dysAltLineColor")==="true") this.xToggleAltLineColor(scPaLib.findNode("des:button.dysBtnToggleAltLineColor"));
+				tplMgr.addMenuListener(function (pOpen) {
+					if(!pOpen && dys.fPanelActive) dys.fBtnToggle.click();
+				});
 			}
-			window.parent.dys.registerListener(function (pAction) {
-				if (dys[pAction]) dys[pAction]();
-				else console.error("dys.listener : unknown action "+pAction);
-			})
-		} else {
-			this.xBuildUi();
-			if (this.fStore.get("dysPanelActive")==="true" && !this.fOptions.defaultPanelInactive) this.xTogglePanel(scPaLib.findNode("des:button.dysBtnTogglePanel"));
-			if (this.fStore.get("dysFontActive")==="true") this.xToggleFont(scPaLib.findNode("des:button.dysBtnToggleFont"));
-			if (this.fStore.get("dysAltLineColor")==="true") this.xToggleAltLineColor(scPaLib.findNode("des:button.dysBtnToggleAltLineColor"));
-			if (this.fStore.get("dysMoreSpace")==="true") this.xToggleMoreSpace(scPaLib.findNode("des:button.dysBtnToggleMoreSpace"));
-			if (this.fStore.get("dysFontSize")){
-				this.fFontSize = Number(this.fStore.get("dysFontSize"));
-				this.fContent.style.fontSize = this.fFontSize + "%";
-				this.fFontSizeLbl.innerHTML = this.fFontSize + "%";
-			}
+			scOnLoads[scOnLoads.length] = this;
+		} catch (e) {
+			console.error(`ERROR dys.init : ${e}`);
 		}
-		scOnLoads[scOnLoads.length] = this;
 	},
 	onLoad : function() {
-		if (this.fAltLineColorInit) this.xAltLineColorUpdate();
+		try {
+			if (this.fAltLineColorInit) this.xAltLineColorUpdate();
+		} catch (e) {
+			console.error(`ERROR dys.onLoad : ${e}`);
+		}
 	},
 	registerListener : function(pFunc){
 		if (this.fListeners) this.fListeners.push(pFunc);
@@ -57,11 +81,12 @@ window.dys = {
 	xBuildUi : function() {
 		const vBtnParent = scPaLib.findNode(this.fOptions.pathBtnParent);
 		const vPanelParent = scPaLib.findNode(this.fOptions.pathPanelParent);
-		if (!vBtnParent || !vPanelParent) return;
+		if (!vBtnParent || !vPanelParent) throw "Cannot find button or panel parent element.";
 		const bd = dom.newBd(vBtnParent);
-		bd.elt("button", "dysBtnToggle").att("title", this.fStrings[1]).listen("click", function() {return dys.xTogglePanel(this)}).elt("span").text(this.fStrings[0]).up().up();
+		this.fBtnToggle = bd.elt("li", "dysBtnParent", vBtnParent.firstChild).elt("button", "dysBtnToggle").att("aria-expanded", "false").att("title", this.fStrings[1]).listen("click", function() {return dys.xTogglePanel(this)}).elt("span").text(this.fStrings[0]).up().current();
 		bd.setCurrent(vPanelParent);
-		bd.elt("div", "dysPanel").elt("span");
+		this.fDysPanel = bd.elt("div", "dysPanel").att("tabindex", "-1").current();
+		bd.elt("span");
 		bd.elt("span", "dysFontSizer");
 		bd.elt("button", "dysBtn dysBtnFontSmaller").att("title", this.fStrings[9]).listen("click",function() {return dys.xFontSmaller()}).elt("span").text(this.fStrings[8]).up().up();
 		this.fFontSizeLbl = bd.elt("span", "dysFontSizeLbl").text(this.fFontSize + "%").currentUp();
@@ -69,6 +94,9 @@ window.dys = {
 		bd.elt("button", "dysBtnCheck_false dysBtnToggleFont").att("title", this.fStrings[3]).listen("click",function() {return dys.xToggleFont(this)}).elt("span").text(this.fStrings[2]).up().up();
 		bd.elt("button", "dysBtnCheck_false dysBtnToggleAltLineColor").att("title", this.fStrings[5]).listen("click",function() {return dys.xToggleAltLineColor(this)}).elt("span").text(this.fStrings[4]).up().up();
 		bd.elt("button", "dysBtnCheck_false dysBtnToggleMoreSpace").att("title", this.fStrings[7]).listen("click",function() {return dys.xToggleMoreSpace(this)}).elt("span").text(this.fStrings[6]).up().up();
+		if (this.fOptions.optNumHeadings) bd.elt("button", "dysBtnCheck_false dysBtnToggleNumHeadings").att("title", this.fStrings[13]).listen("click",function() {return dys.xToggleNumHeadings(this)}).elt("span").text(this.fStrings[12]).up().up();
+		if (this.fOptions.optScaleH2) bd.elt("button", "dysBtnCheck_false dysBtnToggleScaleH2").att("title", this.fStrings[15]).listen("click",function() {return dys.xToggleScaleH2(this)}).elt("span").text(this.fStrings[14]).up().up();
+		bd.elt("a").att("href", "#").listen("click", function (){return false}).listen("focus", function (){dys.fBtnToggle.focus()}).att("aria-hidden", "true");
 	},
 	xAltLineColorInit : function() {
 		const vTextNodes = [];
@@ -123,17 +151,51 @@ window.dys = {
 			this.switchClass(vSpan, "dysColor_", "dysColor_"+this.fAltLineLastColor, false, false);
 		}
 	},
-
+	xNumHeadingsInit : function() {
+		this.fNumHeadingsInit = true;
+		if ("outMgr" in window) {
+			outMgr.addCounters(this.fOptions.counterFormat);
+			const vCurrentMenuItemCounter = scPaLib.findNode("ide:menu/des:li.sel_yes/des:span.counter");
+			const vCurrentHeading = scPaLib.findNode("ide:content/des:.hBk_ti");
+			const vBd = dom.newBd(vCurrentHeading);
+			if (vCurrentMenuItemCounter){
+				vBd.elt("span", "counter", vCurrentHeading.firstChild).text(vCurrentMenuItemCounter.textContent);
+			}
+			const vSubPageSelector = scPaLib.findNode("ide:content/des:nav.subPageSelector/chi:ul");
+			if (vSubPageSelector){
+				const vMenuSubPageItems = scPaLib.findNodes("ide:menu/des:li.sel_yes.type_b/chi:ul/chi:li");
+				const vSubPageSelectors = scPaLib.findNodes("chi:li/chi:a/chi:span", vSubPageSelector);
+				if (vSubPageSelectors.length !== vMenuSubPageItems.length) throw "SubPageSelector / Menu mismatch."
+				for (let i = 0; i < vSubPageSelectors.length; i++) {
+					const vCounter = scPaLib.findNode("des:span.counter", vMenuSubPageItems[i]);
+					if (vCounter){
+						vBd.setCurrent(vSubPageSelectors[i]);
+						vBd.elt("span", "counter", vSubPageSelectors[i].firstChild).text(vCounter.textContent);
+					}
+				}
+			}
+		}
+	},
+	xScaleH2Init : function() {
+		this.fScaleH2Init = true;
+		const vMenuDepth = Math.min(scPaLib.findNodes("ide:menu/des:li.sel_yes/anc:ul.sub").length + 1, 6);
+		this.fBody.classList.add("dysScaleH2_" + vMenuDepth);
+	},
 
 	xTogglePanel : function(pBtn) {
 		this.fPanelActive = !this.fPanelActive;
 		this.switchClass(this.fBody, "dysPanelActive_"+!this.fPanelActive, "dysPanelActive_"+this.fPanelActive, true);
 		this.fStore.set("dysPanelActive", this.fPanelActive);
+		pBtn.setAttribute("aria-expanded", this.fPanelActive);
+		if (this.fPanelActive) this.fDysPanel.focus();
 		return false;
 	},
 	xToggleFont : function(pBtn) {
 		this.fFontActive = !this.fFontActive;
-		if (pBtn) this.switchClass(pBtn, "dysBtnCheck_"+!this.fFontActive, "dysBtnCheck_"+this.fFontActive);
+		if (pBtn) {
+			this.switchClass(pBtn, "dysBtnCheck_"+!this.fFontActive, "dysBtnCheck_"+this.fFontActive);
+			pBtn.setAttribute("aria-pressed", this.fFontActive);
+		}
 		this.switchClass(this.fBody, "dysFontActive_"+!this.fFontActive, "dysFontActive_"+this.fFontActive, true);
 		this.fStore.set("dysFontActive", this.fFontActive);
 		if (this.fAltLineColorInit) this.xAltLineColorUpdate();
@@ -143,18 +205,24 @@ window.dys = {
 		this.fAltLineColor = !this.fAltLineColor;
 		if (!this.fAltLineColorInit) {
 			if ("mathjaxMgr" in window){
-				if (mathjaxMgr.fActive) mathjaxMgr.register(function(){dys.xAltLineColorInit();});
+				if (mathjaxMgr.fActive && !mathjaxMgr.fReady) mathjaxMgr.register(function(){dys.xAltLineColorInit();});
 				else dys.xAltLineColorInit();
 			} else dys.xAltLineColorInit();
 		}
-		if (pBtn) dys.switchClass(pBtn, "dysBtnCheck_"+!this.fAltLineColor, "dysBtnCheck_"+this.fAltLineColor);
+		if (pBtn) {
+			dys.switchClass(pBtn, "dysBtnCheck_"+!this.fAltLineColor, "dysBtnCheck_"+this.fAltLineColor);
+			pBtn.setAttribute("aria-pressed", this.fAltLineColor);
+		}
 		this.switchClass(this.fBody, "dysAltLineColor_"+!this.fAltLineColor, "dysAltLineColor_"+this.fAltLineColor, true);
 		this.fStore.set("dysAltLineColor", this.fAltLineColor);
 		this.xFireEvent("xToggleAltLineColor");
 	},
 	xToggleMoreSpace : function(pBtn) {
 		this.fMoreSpace = !this.fMoreSpace;
-		if (pBtn) this.switchClass(pBtn, "dysBtnCheck_"+!this.fMoreSpace, "dysBtnCheck_"+this.fMoreSpace);
+		if (pBtn) {
+			this.switchClass(pBtn, "dysBtnCheck_"+!this.fMoreSpace, "dysBtnCheck_"+this.fMoreSpace);
+			pBtn.setAttribute("aria-pressed", this.fMoreSpace);
+		}
 		this.switchClass(this.fBody, "dysMoreSpace_"+!this.fMoreSpace, "dysMoreSpace_"+this.fMoreSpace, true);
 		this.fStore.set("dysMoreSpace", this.fMoreSpace);
 		if (this.fAltLineColorInit) this.xAltLineColorUpdate();
@@ -177,6 +245,34 @@ window.dys = {
 		if (this.fFontSizeLbl) this.fFontSizeLbl.innerHTML = this.fFontSize + "%";
 		if (this.fAltLineColorInit) this.xAltLineColorUpdate();
 		this.xFireEvent("xFontLarger");
+	},
+	xToggleNumHeadings : function(pBtn) {
+		this.fNumHeadings = !this.fNumHeadings;
+		if (pBtn) {
+			this.switchClass(pBtn, "dysBtnCheck_"+!this.fNumHeadings, "dysBtnCheck_"+this.fNumHeadings);
+			pBtn.setAttribute("aria-pressed", this.fNumHeadings);
+		}
+		this.switchClass(this.fBody, "dysNumHeadings_"+!this.fNumHeadings, "dysNumHeadings_"+this.fNumHeadings, true);
+		this.fStore.set("dysNumHeadings", this.fNumHeadings);
+		if (!this.fNumHeadingsInit) {
+			this.xNumHeadingsInit();
+		}
+		if (this.fAltLineColorInit) this.xAltLineColorUpdate();
+		this.xFireEvent("xToggleNumHeadings");
+	},
+	xToggleScaleH2 : function(pBtn) {
+		this.fScaleH2 = !this.fScaleH2;
+		if (pBtn) {
+			this.switchClass(pBtn, "dysBtnCheck_"+!this.fScaleH2, "dysBtnCheck_"+this.fScaleH2);
+			pBtn.setAttribute("aria-pressed", this.fScaleH2);
+		}
+		this.switchClass(this.fBody, "dysScaleH2_"+!this.fScaleH2, "dysScaleH2_"+this.fScaleH2, true);
+		this.fStore.set("dysScaleH2", this.fScaleH2);
+		if (!this.fScaleH2Init) {
+			this.xScaleH2Init();
+		}
+		if (this.fAltLineColorInit) this.xAltLineColorUpdate();
+		this.xFireEvent("xToggleScaleH2");
 	},
 
 	xFireEvent : function(pParam){
