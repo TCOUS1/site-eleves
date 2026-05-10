@@ -1,0 +1,157 @@
+{"e":"co/PGI-Odoo_4.html","b":"co/PGI-Odoo_1.html","t":"co/09-Conclus_de_nouvelles_affaires.html","r":"co/07-Utilise_les_codes-barres.html","u":"co/10-Cree_ton_application.html","q":"co/06-Fabrication.html","s":"co/08-Gere_ton_equipe.html","j":"co/PGI-Odoo_9.html","g":"co/PGI-Odoo_6.html","c":"co/PGI-Odoo_2.html","n":"co/03-Creation_d_un_e-commerce.html","f":"co/PGI-Odoo_5.html","o":"co/04-Digitalise_la_comptabilite.html","l":"co/01-Achats_et_Vente.html","i":"co/PGI-Odoo_8.html","a":"co/Scale-up.html","d":"co/PGI-Odoo_3.html","k":"co/PGI-Odoo_10.html","m":"co/02-Gestion_d_un_magasin.html","p":"co/05-Vente_de_services.html","h":"co/PGI-Odoo_7.html"}
+["2","1"]
+{"wordPattern":"\\d+(?:[,.]\\d+)?|[^\\u0000-/:-@\\[-`{-\\u00A0]+(?:[-][^\\u0000-/:-@\\[-`{-\\u00A0]+)?","filters":[{"type":"excludeShortWords","forWords":"\\d+","min":1},{"type":"excludeShortWords","forWords":"\\D+","min":3},{"type":"cutLongWords","max":20},{"type":"lowerCase"},{"type":"ignoreWords","words":{"fois":1,"notre":1,"est":1,"vont":1,"fait":1,"avoir":1,"mais":1,"mon":1,"ici":1,"tels":1,"être":1,"des":1,"maintenant":1,"son":1,"sont":1,"depuis":1,"soyez":1,"les":1,"parce":1,"avant":1,"été":1,"par":1,"vous":1,"peu":1,"seulement":1,"pas":1,"pourquoi":1,"tes":1,"sans":1,"ceux":1,"dans":1,"nous":1,"donc":1,"ils":1,"tandis":1,"voient":1,"tellement":1,"hors":1,"étions":1,"avec":1,"très":1,"bon":1,"même":1,"que":1,"faites":1,"qui":1,"plupart":1,"sien":1,"aucuns":1,"elle":1,"sous":1,"ces":1,"sur":1,"ton":1,"devrait":1,"car":1,"aussi":1,"doit":1,"mes":1,"quand":1,"encore":1,"peut":1,"ses":1,"leur":1,"quelles":1,"quels":1,"pour":1,"trop":1,"alors":1,"tout":1,"tous":1,"chaque":1,"quelle":1,"cela":1,"comment":1,"votre":1,"autre":1,"comme":1,"quel":1,"étaient":1,"font":1}},{"type":"filterAccentedLatinLetters"}]}
+analyse	l.01	m.01	o.02	t.01
+utilise	h.10
+caisse	m.02
+produit	l.01	p.01	r.01
+version	a.10
+1	m.01
+3	m.01
+postes	q.01
+statistiques	u.01
+soumets	s.01
+referencement	n.01
+the	a.01
+achete	l.01	q.01
+teste	n.01
+fournitures	u.01
+mouvements	o.01
+banque	o.01
+lemploye	s.01
+controle	l.01	m.02	q.02
+article	n.01
+livre	l.01	o.01	r.01
+service	p.01
+sous-taches	p.01
+valide	o.01
+automatise	u.01
+ajoute	n.02	q.01	s.01	u.01
+premieres	q.01
+regles	a.10
+nouvelles	j.10
+projet	p.01
+preambule	l.10	m.10	n.10	o.10	p.10	q.10	r.10	s.10	t.10	u.10
+initialise	u.01
+cree	k.10	l.01	n.01	q.01	r.01	s.01	t.01	u.02
+deplace	r.01
+vue	u.02
+salariale	s.01
+facture	l.02	m.01	p.01
+bureau	m.02	u.01
+conges	s.01
+sortie	m.01
+heures	p.01
+ami	s.01
+magasin	c.10
+dargent	m.01
+crm	t.01
+remise	t.01
+verifie	q.01
+application	k.10	u.01
+ecris	n.01
+bois	l.01
+fournisseurs	o.02
+tva	o.01
+developpe	n.01
+bancaires	o.01
+actions	l.10	m.10	n.10	o.10	p.10	q.10	r.10	s.10	t.10	u.10
+odoo	a.10
+devis	t.01
+e-commerce	d.10	n.01
+creation	d.10
+services	f.10
+declaration	o.01
+prends	p.01
+definis	r.01
+page	n.01
+planifie	p.01	q.01	s.01
+configure	m.01	p.01	r.01
+resultat	o.01
+ameliore	u.01
+compte	o.01
+recois	r.01
+kanban	u.01
+daccueil	n.01
+envoie	t.01
+evalue	s.01
+mener	l.10	m.10	n.10	o.10	p.10	q.10	r.10	s.10	t.10	u.10
+retourne	m.01
+nouvelle	t.01
+existantes	t.01
+emplacements	r.01
+gere	i.10	u.01
+employe	s.01
+importe	m.01	o.01	t.01
+produits	l.02	q.01	r.04
+game	a.01
+rendez-vous	p.01
+scanner	r.01
+opportunite	t.01
+seo	n.01
+business	a.01
+gestion	c.10
+couts	q.01
+accorde	t.01
+deco	p.01
+augmente	n.01
+affaires	j.10
+test	q.01
+effectue	m.01
+laffaire	t.01
+codes-barres	h.10
+client	l.02	p.01
+variantes	n.01
+grand	o.01
+une	m.01	s.03	t.02	u.02
+equipe	i.10
+articles	m.01
+vente	f.10
+receptionne	l.01	q.01
+bureaux	l.01	u.01
+fabrication	g.10	q.01
+digitalise	e.10
+lampes	m.01
+pistes	t.02
+travail	p.01	q.01
+exercice	b.01	c.01	d.01	e.01	f.01	g.01	h.01	i.01	j.01	k.01	l.10	m.10	n.10	o.10	p.10	q.10	r.10	s.10	t.10	u.10
+genere	o.01	s.01	t.01
+revenus	t.01
+liste	u.01
+offre	s.02
+letat	u.01
+conclus	j.10	t.01
+depense	s.01
+dun	c.10	d.10
+reconcilie-les	o.01
+factures	o.02
+nomenclature	q.01
+mets	p.01
+19	a.10
+telecharge	o.01
+qualite	q.02
+recommande	s.01
+rapports	u.01
+ordre	q.01
+demploi	s.01
+matieres	q.01
+ajuste	r.01
+organise	t.01
+comptabilite	e.10
+vends	l.01	m.02	p.01	r.01
+stocks	r.01
+prologue	a.10
+attendus	t.01
+enregistre	l.01	o.01	p.02	u.01
+location	u.01
+paiement	l.01
+profits	l.01
+ventes	b.10	m.01	n.01
+place	p.01
+achats	b.10
+connecte-toi	o.01
+blog	n.01
+lampe	m.01
+activite	u.01
+scale	a.10
+operations	q.01
