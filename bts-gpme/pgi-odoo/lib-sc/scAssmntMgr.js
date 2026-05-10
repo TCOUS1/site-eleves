@@ -2,40 +2,36 @@
 
  
  
-window.scAssmntMgr = {
+var scAssmntMgr = {
 
 
 	setMode : function(pElt, pMode){
 		if(!pElt) return;
-		pElt.style.display = "";
-		pElt.style.visibility = "";
-		if (pElt.fCurrentMode === "outOfView"){
-			pElt.style.position = "";
-			pElt.style.left = "";
-			pElt.style.top = "";
-		}
 		switch(pMode) {
 		case "collapsed" :
 			pElt.style.display = "none";
+			pElt.style.visibility = "";
 			break;
 		case "invisible" :
+			pElt.style.display = "";
 			pElt.style.visibility = "hidden";
 			break;
-		case "outOfView" :
-			pElt.style.position = "absolute";
-			pElt.style.left = "-10000px";
-			pElt.style.top = "-10000px";
-			break;
 		case "enabled" :
+			pElt.style.display = "";
+			pElt.style.visibility = "";
 			if(pElt.className.indexOf("buttonDisabled")>=0) pElt.className = pElt.className.replace("buttonDisabled", "");
 			pElt.setAttribute("href", "#");
 			break;
 		case "disabled" :
+			pElt.style.display = "";
+			pElt.style.visibility = "";
 			if(pElt.className.indexOf("buttonDisabled")<0) pElt.className = pElt.className+" buttonDisabled";
 			pElt.removeAttribute("href");
 			break;
+		default :
+			pElt.style.display = "";
+			pElt.style.visibility = "";
 		}
-		pElt.fCurrentMode = pMode;
 		if("scSiLib" in window) scSiLib.fireResizedNode(pElt);
 	},
 
@@ -44,13 +40,12 @@ window.scAssmntMgr = {
 	},
 
 	setToggleStatus : function(pButton, pOn){
-		let vIdx;
 		if(pButton==null) return;
 		if(pOn){ 
-			vIdx = pButton.className.lastIndexOf("toggleButtonOff");
+			var vIdx = pButton.className.lastIndexOf("toggleButtonOff");
 			pButton.className = (vIdx>0 ? pButton.className.substring(0, vIdx) :  pButton.className) + " toggleButtonOn";
 		} else {
-			vIdx = pButton.className.lastIndexOf("toggleButtonOn");
+			var vIdx = pButton.className.lastIndexOf("toggleButtonOn");
 			pButton.className = (vIdx>0 ? pButton.className.substring(0, vIdx) :  pButton.className) + " toggleButtonOff";
 		}
 	},
@@ -60,26 +55,20 @@ window.scAssmntMgr = {
 	},
 
 	addClass : function(pNode, pClass) {
-		let vNewClassStr = pNode.className;
-		let i = 1;
-		const n = arguments.length;
-		for (; i < n; i++) vNewClassStr += ' '+arguments[i];
+		var vNewClassStr = pNode.className;
+		for (var i = 1, n = arguments.length; i < n; i++) vNewClassStr += ' '+arguments[i];
 		pNode.className = vNewClassStr;
 		return scAssmntMgr;
 	},
 
 	delClass : function(pNode, pClass) {
-		if (pClass !== '') {
-			const vCurrentClasses = pNode.className.split(' ');
-			const vNewClasses = [];
-			let i = 0;
-			const n = vCurrentClasses.length;
-			for (; i < n; i++) {
-				let vClassFound = false;
-				let j = 1;
-				const m = arguments.length;
-				for (; j < m; j++) {
-					if (vCurrentClasses[i] === arguments[j]) vClassFound = true;
+		if (pClass != '') {
+			var vCurrentClasses = pNode.className.split(' ');
+			var vNewClasses = new Array();
+			for (var i = 0, n = vCurrentClasses.length; i < n; i++) {
+				var vClassFound = false;
+				for (var j = 1, m = arguments.length; j < m; j++) {
+					if (vCurrentClasses[i] == arguments[j]) vClassFound = true;
 				}
 				if (!vClassFound) vNewClasses.push(vCurrentClasses[i]);
 			}
@@ -89,36 +78,23 @@ window.scAssmntMgr = {
 	},
 
 	switchClass : function(pNode, pClassOld, pClassNew) {
-		if (pClassOld && pClassOld !== '') {
-			const vCurrentClasses = pNode.className.split(' ');
-			const vNewClasses = [];
-			let vClassFound = false;
-			let i = 0;
-			const n = vCurrentClasses.length;
-			for (; i < n; i++) {
-				if (vCurrentClasses[i] === pClassNew) return scAssmntMgr;
-				if (vCurrentClasses[i] !== pClassOld) {
+		if (pClassOld && pClassOld != '') {
+			var vCurrentClasses = pNode.className.split(' ');
+			var vNewClasses = new Array();
+			var vClassFound = false;
+			for (var i = 0, n = vCurrentClasses.length; i < n; i++) {
+				if (vCurrentClasses[i] == pClassNew) return scAssmntMgr;
+				if (vCurrentClasses[i] != pClassOld) {
 					vNewClasses.push(vCurrentClasses[i]);
 				} else {
-					if (pClassNew && pClassNew !== '') vNewClasses.push(pClassNew);
+					if (pClassNew && pClassNew != '') vNewClasses.push(pClassNew);
 					vClassFound = true;
 				}
 			}
-			if (pClassNew && pClassNew !== '' && !vClassFound) vNewClasses.push(pClassNew);
+			if (pClassNew && pClassNew != '' && !vClassFound) vNewClasses.push(pClassNew);
 			pNode.className = vNewClasses.join(' ');
 		}
 		return scAssmntMgr;
-	},
-
-	/* === fonctions utilitaires edit ========================================== */
-	editTranslate : function(pString){
-		const vCharFrom = " ’«»".split("");
-		const vCharTo = " \'\"\"".split("");
-		for (let i = 0; i < vCharFrom.length; i++) {
-			if (i < vCharTo.length) pString = pString.replaceAll(vCharFrom[i], vCharTo[i]);
-			else  pString = pString.replaceAll(vCharFrom[i], "");
-		}
-		return pString;
 	},
 
 	/* === fonctions utilitaires gmcq ========================================== */
@@ -145,11 +121,9 @@ window.scAssmntMgr = {
 	},
 
 	gmcqInitUi : function(pId){
-		let i;
-		let vSelectBox;
 		try{
-			const vMgr = window[pId];
-			const vImg = scPaLib.findNodes("ide:" + pId + "_form/des:img")[0];
+			var vMgr = window[pId];
+			var vImg = scPaLib.findNodes("ide:"+pId+"_form/des:img")[0];
 			vMgr.fImg = scPaLib.findNodes("ide:"+pId+"_form/des:img")[1];
 			vMgr.fImg.width = vImg.width;
 			vMgr.fImg.height = vImg.height;
@@ -162,13 +136,13 @@ window.scAssmntMgr = {
 				if (vMgr.fSingleResp){
 					vMgr.fMarker = scDynUiMgr.addElement("div", vMgr.fMarkerFrame, vMgr.fClass+"_zn", vMgr.fImg, {position:"absolute", width:"1px",height:"1px"});
 					this.setMode(vMgr.fMarker, "invisible");
-					vSelectBox = scDynUiMgr.addElement("span", vMgr.fMarker, vMgr.fClass+"_mk");
+					var vSelectBox = scDynUiMgr.addElement("span", vMgr.fMarker, vMgr.fClass+"_mk");
 					this.xGmcqInitMarker(vSelectBox, vMgr);
 				}
 			} else {
 				vMgr.fSelectBoxes = scPaLib.findNodes("ide:"+pId+"_form/chi:div/des:span");
-				for(i = 0; i<vMgr.fSelectBoxes.length; i++){
-					vSelectBox = vMgr.fSelectBoxes[i];
+				for(var i=0; i<vMgr.fSelectBoxes.length; i++){
+					var vSelectBox = vMgr.fSelectBoxes[i];
 					this.setMode(vSelectBox, "invisible");
 					this.xGmcqInitMarker(vSelectBox, vMgr);
 				}
@@ -176,7 +150,7 @@ window.scAssmntMgr = {
 			vMgr.fChoiceAsTooltip = (typeof vMgr.fTooltipOptions != "undefined");
 			if (vMgr.fChoiceAsTooltip){
 				this.setMode(scPaLib.findNode("ide:"+pId+"_form/des:table"), "collapsed");
-				for(i = 0; i<vMgr.fAreas.length; i++) vMgr.fAreas[i].fOpt = scTooltipMgr.xInitOpts(vMgr.fTooltipOptions);
+				for(var i=0; i<vMgr.fAreas.length; i++) vMgr.fAreas[i].fOpt = scTooltipMgr.xInitOpts(vMgr.fTooltipOptions);
 				vMgr.fLabels = scPaLib.findNodes("ide:"+pId+"_form/des:td");
 			}
 		} catch(e) {scCoLib.log("ERROR - scAssmntMgr.initGmcqUi :"+e);}
@@ -184,19 +158,18 @@ window.scAssmntMgr = {
 	
 	gmcqHighlight : function(pMgr){
 		try{
-			scMapMgr.maphighlight(pMgr.fImg, scMapMgr.extend(this.gmcqHighlightDefault, {alwaysOn:(pMgr.fHighlight === "always"),neverOn:(pMgr.fHighlight === "never")}));
+			scMapMgr.maphighlight(pMgr.fImg, scMapMgr.extend(this.gmcqHighlightDefault, {alwaysOn:(pMgr.fHighlight == "always"),neverOn:(pMgr.fHighlight == "never")}));
 		} catch(e) {scCoLib.log("ERROR - scAssmntMgr.gmcqHighlight :"+e);}
 	},
 	
 	gmcqUpdateUi : function(pId){
-		let i;
 		try{
-			const vMgr = window[pId];
+			var vMgr = window[pId];
 			if (vMgr.fFreeMarker){
 				if (vMgr.fSingleResp){
 					this.setMode(vMgr.fMarker,"invisible");
-					for(i = 0; i<vMgr.fInputs.length; i++){
-						const vInput = vMgr.fInputs[i];
+					for(var i=0; i<vMgr.fInputs.length; i++){
+						var vInput = vMgr.fInputs[i];
 						if (vInput.checked){
 							vMgr.fMarker.style.left = vInput.fMarker.x+"px";
 							vMgr.fMarker.style.top = vInput.fMarker.y+"px";
@@ -205,25 +178,25 @@ window.scAssmntMgr = {
 					}
 				}
 			} else {
-				for(i = 0; i<vMgr.fSelectBoxes.length; i++) this.setMode(vMgr.fSelectBoxes[i], sc$(pId+"_"+i).checked ? "visible" : "invisible");
+				for(var i=0; i<vMgr.fSelectBoxes.length; i++) this.setMode(vMgr.fSelectBoxes[i], sc$(pId+"_"+i).checked ? "visible" : "invisible");
 			}
 			if (vMgr.fChoiceAsTooltip){
-				for(i = 0; i<vMgr.fAreas.length; i++){
-					const vArea = vMgr.fAreas[i];
+				for(var i=0; i<vMgr.fAreas.length; i++){
+					var vArea = vMgr.fAreas[i];
 					if (vArea.ttId) {
-						const vTt = sc$(vArea.ttId);
+						var vTt = sc$(vArea.ttId);
 						if (vTt) vTt.parentNode.removeChild(vTt);
 					}
-					const xHasContent = function (pElt) {
-						if (scDynUiMgr.readStyle(pElt, "display") === "none") return false;
-						if (pElt.nodeType === 3 || pElt.nodeName.toLowerCase() === "img" || pElt.nodeName.toLowerCase() === "object") return true;
-						for (let i = 0; i < pElt.childNodes.length; i++) {
+					var xHasContent = function(pElt){
+						if (scDynUiMgr.readStyle(pElt, "display") == "none") return false;
+						if (pElt.nodeType == 3 || pElt.nodeName.toLowerCase()=="img" || pElt.nodeName.toLowerCase()=="object") return true;
+						for (var i=0; i < pElt.childNodes.length; i++){
 							if (xHasContent(pElt.childNodes[i])) return true;
 						}
 						return false;
-					};
+					}
 					if (xHasContent(vMgr.fLabels[i])){
-						const vLbl = vMgr.fLabels[i].innerHTML.replace(/id="[^"]*"/g, "");
+						var vLbl = vMgr.fLabels[i].innerHTML.replace(/id="[^"]*"/g, "");
 						scTooltipMgr.xMakeTt(vArea, vLbl, "" , vMgr.fClass, "");
 						vArea.onmouseover = function (pEvt) {scTooltipMgr.showTooltip(this,pEvt); return false;};
 					}
@@ -234,10 +207,10 @@ window.scAssmntMgr = {
 	
 	gmcqSetSolution : function(pId, pShow){
 		try{
-			const vMgr = window[pId];
-			for(let i=0; i<vMgr.fAreas.length; i++){
-				const vArea = vMgr.fAreas[i];
-				const vRowClass = vMgr.fRows[i].className;
+			var vMgr = window[pId];
+			for(var i=0; i<vMgr.fAreas.length; i++){
+				var vArea = vMgr.fAreas[i];
+				var vRowClass = vMgr.fRows[i].className;
 				if (pShow){
 					vArea.maphighlight = (vRowClass.indexOf("assmntSolCheck")>=0 || vRowClass.indexOf("assmntSolRight")>=0 ? this.gmcqHighlightRight : this.gmcqHighlightWrong);
 				} else vArea.maphighlight = null;
@@ -247,8 +220,8 @@ window.scAssmntMgr = {
 	},
 	
 	xGmcqInitMarker : function(pElt, pMgr){
-		const vBkImg = scDynUiMgr.readStyle(pElt, "backgroundImage");
-		if (!vBkImg || vBkImg === "none"){
+		var vBkImg = scDynUiMgr.readStyle(pElt, "backgroundImage");
+		if (!vBkImg || vBkImg == "none"){
 			pElt.style.position = "absolute";
 			pElt.style.width = "40px";
 			pElt.style.height = "40px";
@@ -284,7 +257,7 @@ window.scAssmntMgr = {
 	},
 	imgGapInitUi : function(pId){
 		try{
-			const vMgr = window[pId];
+			var vMgr = window[pId];
 			vMgr.fImg = scPaLib.findNodes("ide:"+pId+"_form/des:img")[1];
 			vMgr.fAreas = scPaLib.findNodes("ide:"+pId+"_form/des:area");
 			vMgr.fInputs = scPaLib.findNodes("ide:"+pId+"_form/des:input");
@@ -293,16 +266,16 @@ window.scAssmntMgr = {
 	
 	imgGapHighlight : function(pMgr){
 		try{
-			scMapMgr.maphighlight(pMgr.fImg, scMapMgr.extend(this.imgGapHighlightDefault, {alwaysOn:(pMgr.fHighlight === "always"),neverOn:(pMgr.fHighlight === "never")}));
+			scMapMgr.maphighlight(pMgr.fImg, scMapMgr.extend(this.imgGapHighlightDefault, {alwaysOn:(pMgr.fHighlight == "always"),neverOn:(pMgr.fHighlight == "never")}));
 		} catch(e) {scCoLib.log("ERROR - scAssmntMgr.imgGapHighlight :"+e);}
 	},
 	
 	imgGapSetSolution : function(pId, pShow){
 		try{
-			const vMgr = window[pId];
-			for(let i=0; i<vMgr.fAreas.length; i++){
-				const vArea = vMgr.fAreas[i];
-				const vInput = vMgr.fInputs[i];
+			var vMgr = window[pId];
+			for(var i=0; i<vMgr.fAreas.length; i++){
+				var vArea = vMgr.fAreas[i];
+				var vInput = vMgr.fInputs[i];
 				if (pShow){
 					vArea.maphighlight = (vMgr.getSolIdx(vInput.name)>-1 ? this.imgGapHighlightRight : this.imgGapHighlightWrong);
 				} else vArea.maphighlight = null;

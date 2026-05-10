@@ -1,13 +1,13 @@
 const tePlayerMgr = {
 	subControllers : [],
 
-	init: async function (options) {
+	init: async function () {
 		await teLoader.docInteractive;
 		const playerElems = document.querySelectorAll('.tePlayer');
 		if (playerElems.length) {
 			await teLoader.loadTeScripts(teLoader.teScripts);
 			for (const playerElem of playerElems) {
-				await teLoader.initMediaElement(playerElem.querySelector('audio,video'), options);
+				await teLoader.initMediaElement(playerElem.querySelector('audio,video'));
 				const ctrl = this.initController(playerElem.querySelector('.tepController'));
 				if (ctrl) ctrl.media.addEventListener('loadedmetadata', () => {
 					if (playerElem.classList.contains('teAudioType')) playerElem.ariaLabel = playerElem.dataset.audioLabel;

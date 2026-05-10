@@ -21,7 +21,7 @@ TESettingsFromTracks.prototype = {
 		var subtitleTracks = [], altVideoTrack, audioDescTrack, transcriptTrack;
 		for (var child = media.firstElementChild; child; child = child.nextElementSibling) {
 			var kind = child.getAttribute('kind');
-			if (child.localName == 'track' || child.localName == 'text-track') {
+			if (child.localName == 'track') {
 				if (kind == 'subtitles') subtitleTracks.push(child);
 			} else if (child.localName == 'audio-track') {
 				if (kind == 'descriptions') audioDescTrack = child;
@@ -36,10 +36,11 @@ TESettingsFromTracks.prototype = {
 
 		var settingsList = document.createElement('ul');
 		settingsList.className = this.classPrefix + 'SettingsList';
-		var settingsBtn = this.createExpandButton(
+		var settingsBtn = this.createPressButton(
 			this.classPrefix + 'SettingsBtn',
 			"Options d\'accessibilité",
 			"Afficher les options d\'accessibilité",
+			"Cacher les options d\'accessibilité",
 			true);
 
 		function updateVisibility() {
@@ -56,10 +57,11 @@ TESettingsFromTracks.prototype = {
 			});
 
 			var subtitlesItem = settingsList.appendChild(document.createElement('li'));
-			var subtitlesBtn = subtitlesItem.appendChild(this.createExpandButton(
+			var subtitlesBtn = subtitlesItem.appendChild(this.createPressButton(
 				this.classPrefix + 'SubtitlesBtn',
 				"Sous-titres",
-				"Afficher la liste des sous-titres")
+				"Afficher la liste des sous-titres",
+				"Cacher la liste des sous-titres")
 			);
 			subtitlesItem.appendChild(this.createPanel(subtitlesBtn, this.classPrefix + 'SubtitlesPanel', subtitlesList));
 		}
@@ -100,10 +102,11 @@ TESettingsFromTracks.prototype = {
 		if (qualities) {
 			var qualitiesItem = settingsList.appendChild(document.createElement('li'));
 			qualitiesItem.hidden = true;
-			var qualitiesBtn = qualitiesItem.appendChild(this.createExpandButton(
+			var qualitiesBtn = qualitiesItem.appendChild(this.createPressButton(
 				this.classPrefix + 'QualitiesBtn',
 				"Qualité",
-				"Afficher les différentes qualités disponibles")
+				"Afficher les différentes qualités disponibles",
+				"Cacher les différentes qualités disponibles")
 			);
 			qualitiesItem.appendChild(qualitiesBtn);
 
@@ -152,10 +155,11 @@ TESettingsFromTracks.prototype = {
 			});
 
 			var playbackRatesItem = settingsList.appendChild(document.createElement('li'));
-			var playbackRatesBtn = playbackRatesItem.appendChild(this.createExpandButton(
+			var playbackRatesBtn = playbackRatesItem.appendChild(this.createPressButton(
 				this.classPrefix + 'PlaybackRatesBtn',
 				"Vitesse de lecture",
-				"Afficher les différentes vitesses de lecture")
+				"Afficher les différentes vitesses de lecture",
+				"Cacher les différentes vitesses de lecture")
 			);
 			playbackRatesItem.appendChild(this.createPanel(playbackRatesBtn, self.classPrefix + 'PlaybackRatesPanel', playbackRatesList));
 
@@ -174,6 +178,8 @@ TESettingsFromTracks.prototype = {
 			var transcriptSrc = transcriptTrack.getAttribute('src');
 			var transcriptItem = settingsList.appendChild(document.createElement('li'));
 			if (transcriptTrack.localName == 'html-track') {
+				var transcriptArea = ctrl.container.querySelector(self.transcriptArea);
+				transcriptArea.hidden = true;
 				var transcriptInput = transcriptItem.appendChild(this.createInput(
 					this.classPrefix + 'Transcript',
 					'checkbox',
@@ -181,46 +187,31 @@ TESettingsFromTracks.prototype = {
 					"Afficher la transcription",
 					"Cacher la transcription")
 				);
-
-				function loadTranscript(area, anchor) {
-					if (transcriptType == "text/vtt" && transcriptSrc) {
-						teMgr.parseVTTTranscript(transcriptSrc, area, anchor);
-					} else {
-						var content = document.createRange();
-						content.selectNodeContents(transcriptTrack);
-						area.appendChild(content.extractContents());
-					}
-					transcriptTrack.parentNode.removeChild(transcriptTrack);
-				}
-
-				var transcriptArea = ctrl.container.querySelector(self.transcriptArea);
-				if (transcriptArea) {
-					transcriptArea.hidden = true;
-					transcriptInput.firstElementChild.onchange = function () {
-						if (this.checked) {
-							if (transcriptTrack.parentNode) loadTranscript(transcriptArea);
-							ctrl.container.classList.add('teActiveTranscript');
-							transcriptArea.hidden = false;
-						} else {
-							ctrl.container.classList.remove('teActiveTranscript');
-							transcriptArea.hidden = true;
+				transcriptInput.firstElementChild.onchange = function () {
+					if (this.checked) {
+						if (transcriptTrack.parentNode) {
+							if (transcriptType == "text/vtt" && transcriptSrc) {
+								teMgr.parseVTTTranscript(transcriptSrc, transcriptArea);
+							} else {
+								var content = document.createRange();
+								content.selectNodeContents(transcriptTrack);
+								transcriptArea.appendChild(content.extractContents());
+							}
+							transcriptTrack.parentNode.removeChild(transcriptTrack);
 						}
-					};
-				} else {
-					var transcriptPanel = self.createPanel(transcriptInput.firstElementChild, self.classPrefix + 'TranscriptPanel', () => {
-						var transcriptArea = document.createElement('div');
-						transcriptArea.className = this.classPrefix + 'TranscriptArea';
-						loadTranscript(transcriptArea, self.ctrl.container);
-						return transcriptArea;
-					});
-					ctrl.element.insertBefore(transcriptPanel, this.insertBefore);
-				}
+						ctrl.container.classList.add('teActiveTranscript');
+						transcriptArea.hidden = false;
+					} else {
+						ctrl.container.classList.remove('teActiveTranscript');
+						transcriptArea.hidden = true;
+					}
+				};
 			} else if (transcriptTrack.localName == 'nav-track') {
 				var transcriptTarget = transcriptTrack.getAttribute('target');
 				var transcriptLink = transcriptItem.appendChild(document.createElement('a'));
 				transcriptLink.textContent = "Transcription";
 				transcriptLink.href = transcriptSrc;
-				transcriptLink.className = this.classPrefix + 'Transcript ' + this.classPrefix + 'Button';
+				transcriptLink.className = this.classPrefix + 'Transcript';
 				transcriptLink.title = "Afficher la transcription";
 				transcriptLink.href = transcriptSrc;
 
@@ -255,20 +246,20 @@ TESettingsFromTracks.prototype = {
 		panel.className = className + " " + this.classPrefix + 'Panel';
 		panel.setAttribute('role', 'dialog');
 		var closeBtn = panel.appendChild(this.createButton(
-			`${this.classPrefix}CloseBtn ${this.classPrefix}VisuallyHidden`,
+			this.classPrefix + 'VisuallyHidden',
 			"Fermer",
 			"Fermer la fenêtre")
 		);
 		panel.appendChild(content);
 		var focusOutBtn = panel.appendChild(this.createButton(
-			`${this.classPrefix}FocusOutBtn ${this.classPrefix}VisuallyHidden`,
+			this.classPrefix + 'VisuallyHidden',
 			"Sortir",
 			"Sortir de la fenêtre",
 			true)
 		);
 		panel.appendChild(focusOutBtn);
 		var focusRingBtn = panel.appendChild(this.createButton(
-			`${this.classPrefix}FocusRingBtn ${this.classPrefix}VisuallyHidden`,
+			this.classPrefix + 'VisuallyHidden',
 			"Retour",
 			"Retour en début de fenêtre", true)
 		);
@@ -292,7 +283,6 @@ TESettingsFromTracks.prototype = {
 				window.addEventListener('mouseup', mouseUpListener);
 			} else {
 				panel.hidden = true;
-				btn.focus();
 				window.removeEventListener('mouseup', mouseUpListener);
 			}
 		});
@@ -313,36 +303,13 @@ TESettingsFromTracks.prototype = {
 			closeBtn.focus();
 		};
 
-		panel.addEventListener('change', function (ev) {
-			if (!ev.target.matches("input[type=radio]")) closePanel();
+		panel.addEventListener('change', function () {
+			closePanel();
 		});
 
-		panel.addEventListener('keydown', function (ev) {
-			if (ev.keyCode == 13 /* Enter */ && document.activeElement.matches("input[type=radio]")) {
-				setTimeout(closePanel, 100);
-				ev.stopImmediatePropagation();
-			}
-		});
-
-		panel.addEventListener('pointerdown', function (ev) {
-			const target = ev.target.localName == "label" ? ev.target.htmlFor && document.getElementById(ev.target.htmlFor) : ev.target;
-			if (target && target.matches("input[type=radio]")) {
-				// Gestion manuel de la sélection et annulation de l'event
-				// Sinon le parent le plus proche avec tabindex="-1" prend le focus avant que celui-ci revienne à l'input (ce qui ferme le panneau)
-				if (!target.checked) {
-					target.checked = true;
-					target.dispatchEvent(new CustomEvent("change"));
-				}
-				ev.preventDefault();
-				ev.stopImmediatePropagation();
-				setTimeout(closePanel, 100);
-			}
-		});
-
-		window.addEventListener('keydown', function (ev) {
-			if (!panel.hidden && ev.keyCode == 27 /* Escape */) {
+		window.addEventListener('keydown', function (event) {
+			if (!panel.hidden && event.keyCode == 27 /* Escape */) {
 				closePanel();
-				ev.stopImmediatePropagation();
 			}
 		});
 
@@ -351,7 +318,7 @@ TESettingsFromTracks.prototype = {
 
 	createButton: function (className, label, title, labelHidden) {
 		var btn = document.createElement('button');
-		btn.className = className + ' ' + this.classPrefix + 'Button';
+		btn.className = className;
 		btn.title = title;
 		var span = btn.appendChild(document.createElement('span'));
 		span.textContent = label;
@@ -367,22 +334,16 @@ TESettingsFromTracks.prototype = {
 		return btn;
 	},
 
-	createExpandButton: function (className, label, title, labelHidden) {
-		var btn = this.createButton(className, label, title, labelHidden);
-		btn.setAttribute('aria-expanded', 'false');
-		return btn;
-	},
-
 	createInput: function (className, type, label, title, checkedTitle, value) {
 		var parentElt = document.createElement('div');
 		var input = parentElt.appendChild(document.createElement('input'));
 		input.type = type;
-		input.id = this.classPrefix + 'Input_' + this.id + '_' + this.inputCount++;
-		input.classList.add('tepVisuallyHidden');
+		input.id = this.classPrefix + 'Inout_' + this.id + '_' + this.inputCount++;
 		if (value !== undefined) input.value = value;
 
 		var labelElt = parentElt.appendChild(document.createElement('label'));
-		labelElt.className = className + ' ' + this.classPrefix + 'Button';
+		labelElt.className = className;
+		labelElt.tabIndex = 0;
 		labelElt.htmlFor = input.id;
 		labelElt.textContent = label;
 		if (title) {
@@ -392,9 +353,9 @@ TESettingsFromTracks.prototype = {
 				else labelElt.title = title;
 			});
 		}
-		input.addEventListener('keydown', function (ev) {
-			if (ev.keyCode == 13 /* Enter */ || ev.keyCode == 32 /* Space */) {
-				setTimeout(() => this.click());
+		labelElt.addEventListener('keydown', function (event) {
+			if (event.keyCode == 13 || event.keyCode == 32) {
+				this.click();
 			}
 		});
 		return parentElt;
@@ -403,18 +364,9 @@ TESettingsFromTracks.prototype = {
 	createSubtitleItem: function (trackElem) {
 		var self = this;
 		var item = document.createElement('li');
-		if (trackElem && trackElem.localName == 'text-track') {
-			const newTrackElem = document.createElement('track');
-			if (trackElem.hasAttribute('srclang')) newTrackElem.setAttribute('srclang', trackElem.getAttribute('srclang'));
-			if (trackElem.hasAttribute('label')) newTrackElem.setAttribute('label', trackElem.getAttribute('label'));
-			newTrackElem.setAttribute('src', URL.createObjectURL(new Blob([trackElem.textContent], {type: "text/vtt"})));
-			trackElem.replaceWith(newTrackElem);
-			trackElem = newTrackElem;
-		}
 		var src = trackElem ? trackElem.getAttribute('src') : "";
-		var langOrLabel = trackElem && (trackElem.getAttribute('srclang') || trackElem.getAttribute('label'));
-		var title = langOrLabel ?  "Activer les sous-titres" + langOrLabel : "Désactiver les sous-titres";
-		var label = langOrLabel || "Désactivés";
+		var title = trackElem ?  "Activer les sous-titres " + trackElem.getAttribute('srclang') : "Désactiver les sous-titres";
+		var label = trackElem ? trackElem.getAttribute('srclang') : "Désactivés";
 		var labelElt = item.appendChild(this.createInput(this.classPrefix + 'Subtitle', 'radio', label, title, null, src));
 		var input = labelElt.firstElementChild;
 		input.name = this.classPrefix + 'Subtitles_' + this.id;

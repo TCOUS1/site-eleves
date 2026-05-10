@@ -16,7 +16,7 @@
  * The Initial Developer of the Original Code is
  * samuel.monsarrat@kelis.fr
  *
- * Portions created by the Initial Developer are Copyright (C) 2009-2026
+ * Portions created by the Initial Developer are Copyright (C) 2009-2020
  * the Initial Developer. All Rights Reserved.
  *
  * Contributor(s): nicolas.boyer@kelis.fr
@@ -37,7 +37,7 @@
  */
 
 /* === SCENARI Dynamic image manager ======================================== */
-window.scImageMgr = {
+var scImageMgr = {
 	fPathAnim : [],
 	fPathGal : [],
 	fPathSeq : [],
@@ -51,7 +51,7 @@ window.scImageMgr = {
 	fPathPgeFra : "des:div",
 	fPathFocusables : "des:a|input|button",
 	fCurrItem : null,
-	fOverAlpha : .7,
+	fOverAlpha : .6,
 	fDefaultStep : 3 * 1000,
 	fMinStep : 1 * 100,
 	fMaxStep : 10 * 1000,
@@ -63,9 +63,8 @@ window.scImageMgr = {
 	fTypSeq : "scImgSeq",
 	fTypSlider : "scImgSlider",
 	fFocus : true,
-	fPgeFra : null, // Page frame element
-	fSourceRoot : null, // Root element containing all elements to search for
-	fDisplayRoot : null, // Root element where all scImageMgr element will be created
+	fSourceRoot : null,
+	fDisplayRoot : null,
 	fLocalize : true,
 	fMarginStart : "marginLeft",
 	fMarginEnd : "marginRight",
@@ -76,38 +75,38 @@ window.scImageMgr = {
 
 /** SCENARI Dynamic image manager strings */
 scImageMgr.fStrings = ["précédent","image précédente (flèche de gauche)",
-	/*02*/               "suivant","image suivante (flèche de droite)",
-	/*04*/               "fermer","fermer le diaporama (Échap)",
-	/*06*/               "lancer","lancer le diaporama (p)",
-	/*08*/               "arrêter","arrêter le diaporama (p)",
-	/*10*/               "Cette page est en cours de chargement. Veuillez patienter.","",
-	/*12*/               "précédent","image précédente",
-	/*14*/               "suivant","image suivante",
-	/*16*/               "lancer","lancer l\'animation",
-	/*18*/               "arrêter","arrêter l\'animation",
-	/*20*/               "début","aller au début de l\'animation",
-	/*22*/               "fin","aller à la fin de l\'animation",
-	/*24*/               "vitesse","changer la vitesse de l\'animation",
-	/*26*/               "image","Consulter le diaporama à partir de :",
-	/*28*/               "boucle","jouer en boucle continue",
-	/*30*/               "fermer","fermer le zoom (Échap)",
-	/*32*/               "zoomer sur cette image",""];
+/*02*/               "suivant","image suivante (flèche de droite)",
+/*04*/               "fermer","fermer le diaporama (Echap)",
+/*06*/               "lancer","lancer le diaporama (p)",
+/*08*/               "arrêter","arrêter le diaporama (p)",
+/*10*/               "Cette page est en cours de chargement. Veuillez patienter.","",
+/*12*/               "précédent","image précédente",
+/*14*/               "suivant","image suivante",
+/*16*/               "lancer","lancer l\'animation",
+/*18*/               "arrêter","arrêter l\'animation",
+/*20*/               "début","aller au début de l\'animation",
+/*22*/               "fin","aller à la fin de l\'animation",
+/*24*/               "vitesse","changer la vitesse de l\'animation",
+/*26*/               "image","Consulter le diaporama à partir de :",
+/*28*/               "boucle","jouer en boucle continue",
+/*30*/               "fermer","fermer le zoom (Echap)",
+/*32*/               "zoomer sur cette image",""];
 /** scImageMgr.init. */
 scImageMgr.init = function() {
 	// Init image animations...
 	try{
 		if (!("scDynUiMgr" in window)) throw "Library scDynUiMgr not found.";
-		if(this.xReadStyle(document.body.parentNode, "direction") === "rtl") {
+		if(this.xReadStyle(document.body.parentNode, "direction") == "rtl") {
 			this.fMarginStart = "marginRight";
 			this.fMarginEnd = "marginLeft";
 		}
-		for(let i=0; i<this.fPathAnim.length; i++) {
-			const vAnims = scPaLib.findNodes(this.fPathAnim[i].fPath);
-			for(let j=0; j<vAnims.length; j++) {
-				const vAnim = vAnims[j];
+		for(var i=0; i<this.fPathAnim.length; i++) {
+			var vAnims = scPaLib.findNodes(this.fPathAnim[i].fPath);
+			for(var j=0; j<vAnims.length; j++) {
+				var vAnim = vAnims[j];
 				try {
-					const vImgs = scPaLib.findNodes("chi:", vAnim);
-					for(let k=0; k<vImgs.length; k++) {
+					var vImgs = scPaLib.findNodes("chi:",vAnim);
+					for(var k=0; k<vImgs.length; k++) {
 						if (k>0) {
 							vImgs[k].style.visibility = "hidden";
 							vImgs[k].style.position = "absolute";
@@ -116,7 +115,7 @@ scImageMgr.init = function() {
 						}
 					}
 				} catch(e){
-					console.error("scImageMgr.init::Anim init Error : "+e);
+					scCoLib.log("scImageMgr.init::Anim init Error"+e);
 				}
 			}
 		}
@@ -126,7 +125,7 @@ scImageMgr.init = function() {
 		scDynUiMgr.collBlk.addOpenListener(this.sCollBlkOpen);
 		scDynUiMgr.collBlk.addCloseListener(this.sCollBlkClose);
 		scOnLoads[scOnLoads.length] = this;
-	} catch(e){console.error("ERROR - scImageMgr.init : "+e)}
+	} catch(e){scCoLib.log("ERROR - scImageMgr.init : "+e)}
 }
 /** scImageMgr.registerAnimation.
  * @param pPathAnim scPaLib path vers les animations.
@@ -134,7 +133,6 @@ scImageMgr.init = function() {
  *           toolbar : 0 = pas de toolbar / 1 = toolbar flotant / 2 toolbar permanent
  *           auto : true = démarrage auto
  *           loop : true = lecture en boucle
- *           adaptive : true = taille s'adapte à la largeur disponible
  *           lpBtn : true = bouton ctrl lecture en boucle
  *           speed : vitesse de défilement en ms
  *           spdBtns : true = boutons de contrôle de la vitesse
@@ -144,13 +142,12 @@ scImageMgr.init = function() {
  *           clsPre : préfix de classe CSS
  */
 scImageMgr.registerAnimation = function(pPathAnim, pOpts) {
-	const vAnim = {};
+	var vAnim = new Object;
 	vAnim.fPath = pPathAnim;
-	vAnim.fOpts = (typeof pOpts == "undefined" ? {toolbar:1,auto:true,loop:true,adaptive:false,lpBtn:false,speed:this.fDefaultStep,spdBtns:false,counter:false,soft:true,extBtns:false,clsPre:this.fTypAnm} : pOpts);
+	vAnim.fOpts = (typeof pOpts == "undefined" ? {toolbar:1,auto:true,loop:true,lpBtn:false,speed:this.fDefaultStep,spdBtns:false,counter:false,soft:true,extBtns:false,clsPre:this.fTypAnm} : pOpts);
 	vAnim.fOpts.toolbar = (typeof vAnim.fOpts.toolbar == "undefined" ? 1 : vAnim.fOpts.toolbar);
 	vAnim.fOpts.auto = (typeof vAnim.fOpts.auto == "undefined" ? true : vAnim.fOpts.auto);
 	vAnim.fOpts.loop = (typeof vAnim.fOpts.loop == "undefined" ? true : vAnim.fOpts.loop);
-	vAnim.fOpts.adaptive = (typeof vAnim.fOpts.adaptive == "undefined" ? false : vAnim.fOpts.adaptive);
 	vAnim.fOpts.lpBtn = (typeof vAnim.fOpts.lpBtn == "undefined" ? false : vAnim.fOpts.lpBtn);
 	vAnim.fOpts.speed = (typeof vAnim.fOpts.speed == "undefined" ? this.fDefaultStep : vAnim.fOpts.speed);
 	vAnim.fOpts.spdBtns = (typeof vAnim.fOpts.spdBtns == "undefined" ? false : vAnim.fOpts.spdBtns);
@@ -168,7 +165,7 @@ scImageMgr.registerAnimation = function(pPathAnim, pOpts) {
  *           maxHeight : hauteur max des images
  */
 scImageMgr.registerGallery = function(pPathGal, pOpts) {
-	const vGal = {};
+	var vGal = new Object;
 	vGal.fPath = pPathGal;
 	vGal.fOpts = (typeof pOpts == "undefined" ? {clsPre:this.fTypGal,maxWidth:700,maxHeight:500} : pOpts);
 	vGal.fOpts.clsPre = (typeof vGal.fOpts.clsPre == "undefined" ? this.fTypGal : vGal.fOpts.clsPre);
@@ -177,12 +174,12 @@ scImageMgr.registerGallery = function(pPathGal, pOpts) {
 	this.fPathGal[this.fPathGal.length] = vGal;
 }
 /** scImageMgr.registerSequence.
- * @param pPathSeq scPaLib path vers les zooms.
+ * @param fPathSeq scPaLib path vers les zooms.
  * @param pOpts options de la gallerie.
  *           clsPre : préfix de classe CSS
  */
 scImageMgr.registerSequence = function(pPathSeq, pOpts) {
-	const vSeq = {};
+	var vSeq = new Object;
 	vSeq.fPath = pPathSeq;
 	vSeq.fOpts = (typeof pOpts == "undefined" ? {clsPre:this.fTypSeq} : pOpts);
 	vSeq.fOpts.clsPre = (typeof vSeq.fOpts.clsPre == "undefined" ? this.fTypSeq : vSeq.fOpts.clsPre);
@@ -202,7 +199,7 @@ scImageMgr.registerSequence = function(pPathSeq, pOpts) {
  *           clsPre : préfix de classe CSS
  */
 scImageMgr.registerZoom = function(pPathZoom, pOpts) {
-	const vZm = {};
+	var vZm = new Object;
 	vZm.fPath = pPathZoom;
 	vZm.fOpts = (typeof pOpts == "undefined" ? {toolbar:0,type:"img",clsPre:this.fTypZm} : pOpts);
 	vZm.fOpts.type = (typeof vZm.fOpts.type == "undefined" ? "img" : vZm.fOpts.type);
@@ -214,7 +211,7 @@ scImageMgr.registerZoom = function(pPathZoom, pOpts) {
 	vZm.fOpts.svgMax = (typeof vZm.fOpts.svgMax == "undefined" ? 0 : vZm.fOpts.svgMax);
 	vZm.fOpts.clsPre = (typeof vZm.fOpts.clsPre == "undefined" ? this.fTypZm : vZm.fOpts.clsPre);
 	vZm.fOpts.titlePath = (typeof vZm.fOpts.titlePath == "undefined" ? null : vZm.fOpts.titlePath);
-	if ((vZm.fOpts.mag > 0 || vZm.fOpts.titlePath) && vZm.fOpts.toolbar === 0) vZm.fOpts.toolbar = 1;
+	if ((vZm.fOpts.mag > 0 || vZm.fOpts.titlePath) && vZm.fOpts.toolbar == 0) vZm.fOpts.toolbar = 1;
 	this.fPathZoom[this.fPathZoom.length] = vZm;
 }
 /** scImageMgr.registerSlider.
@@ -224,7 +221,7 @@ scImageMgr.registerZoom = function(pPathZoom, pOpts) {
  *           speed : vitesse de défilement en ms
  */
 scImageMgr.registerSlider = function(pPathSlider, pOpts) {
-	const vSlider = {};
+	var vSlider = new Object;
 	vSlider.fPath = pPathSlider;
 	vSlider.fOpts = (typeof pOpts == "undefined" ? {clsPre:this.fTypSlider,speed:this.fDefaultStep} : pOpts);
 	vSlider.fOpts.clsPre = (typeof vSlider.fOpts.clsPre == "undefined" ? this.fTypSlider : vSlider.fOpts.clsPre);
@@ -235,18 +232,20 @@ scImageMgr.registerSlider = function(pPathSlider, pOpts) {
  * @param pPathImage scPaLib path vers les images.
  */
 scImageMgr.registerAdaptedImage = function(pPathImage) {
-	const vImg = {};
+	var vImg = new Object;
 	vImg.fPath = pPathImage;
 	this.fPathImg[this.fPathImg.length] = vImg;
 }
+
 /** scImageMgr.registerSvg.
  * @param pPathSvg scPaLib path vers les svgs.
  */
 scImageMgr.registerSvg = function(pPathSvg) {
-	const vSvg = {};
+	var vSvg = new Object;
 	vSvg.fPath = pPathSvg;
 	this.fPathSvg[this.fPathSvg.length] = vSvg;
 }
+
 /** register a listener. */
 scImageMgr.registerListener = function(pType, pFunc) {
 	this.fListeners[pType].push(pFunc);
@@ -274,30 +273,23 @@ scImageMgr.setLocalize = function(pLocalize) {
 
 /** scImageMgr.onLoad - called by the scenari framework, inits the manager. */
 scImageMgr.onLoad = function() {
-	try{
-		if (!this.fSourceRoot) this.fSourceRoot = document.body;
-		if (!this.fDisplayRoot) this.fDisplayRoot = document.body;
-		this.fPgeFra = scPaLib.findNode(scImageMgr.fPathPgeFra, this.fDisplayRoot);
-		if (this.xMobileCheck()) document.body.classList.add("isMobile_true");
-		// Init all elements in this.fSourceRoot
-		this.initDom(this.fSourceRoot);
-	} catch(e){console.error("ERROR - scImageMgr.onLoad : "+e)}
-}
+	this.fPgeFra = scPaLib.findNode(scImageMgr.fPathPgeFra, this.fDisplayRoot);
+	if (!this.fSourceRoot) this.fSourceRoot = document.body;
+	if (!this.fDisplayRoot) this.fDisplayRoot = document.body;
+	if (this.xMobileCheck()) document.body.classList.add("isMobile_true");
 
-/** scImageMgr.initDom - init all scImageMgr elements in pRoot */
-scImageMgr.initDom = function(pRoot) {
 	// Load adapted images ...
-	this.xInitImgs(pRoot);
+	this.xInitImgs(this.fSourceRoot);
 	// Load image galleries...
-	this.xInitSss(pRoot);
+	this.xInitSss(this.fSourceRoot);
 	// Load image zooms...
-	this.xInitZms(pRoot);
+	this.xInitZms(this.fSourceRoot);
 	// Load image animations...
-	this.xInitAnims(pRoot);
+	this.xInitAnims(this.fSourceRoot);
 	// Load image Sliders...
-	this.xInitSliders(pRoot);
+	this.xInitSliders(this.fSourceRoot);
 	// Load image Sequences...
-	this.xInitSqs(pRoot);
+	this.xInitSqs(this.fSourceRoot);
 }
 
 /** scImageMgr.loading. */
@@ -319,7 +311,7 @@ scImageMgr.sCollBlkClose = function(pCo) {
 /* === Global managers ====================================================== */
 /** scImageMgr.xBtnMgr - centralized button manager */
 scImageMgr.xBtnMgr = function(pBtn) {
-	const vObj = pBtn.fObj;
+	var vObj = pBtn.fObj;
 	switch(pBtn.fName){
 		case this.fTypZm+"Zm":
 		case this.fTypSeq+"Zm":
@@ -396,12 +388,13 @@ scImageMgr.xBtnMgr = function(pBtn) {
 }
 /** scImageMgr.xKeyMgr - centralized keyboard manager */
 scImageMgr.xKeyMgr = function(pEvent){
-	const vCharCode = pEvent.which || pEvent.keyCode;
+	var vEvent = pEvent || window.event;
+	var vCharCode = vEvent.which || vEvent.keyCode;
 	if (!scImageMgr.fCurrItem) return;
 	switch(vCharCode){
 		case 34://pg_dwn
 		case 39://left
-			if (scImageMgr.fCurrItem.fName === "gal") {
+			if (scImageMgr.fCurrItem.fName == "gal") {
 				if (scImageMgr.fCurrItem.fSsAutoPly) scImageMgr.xPseSs(scImageMgr.fCurrItem);
 				scImageMgr.xNxtSs(scImageMgr.fCurrItem);
 			}
@@ -409,20 +402,20 @@ scImageMgr.xKeyMgr = function(pEvent){
 		case 8://bksp
 		case 33://pg_up
 		case 37://right
-			if (scImageMgr.fCurrItem.fName === "gal") {
+			if (scImageMgr.fCurrItem.fName == "gal") {
 				if (scImageMgr.fCurrItem.fSsAutoPly) scImageMgr.xPseSs(scImageMgr.fCurrItem);
 				scImageMgr.xPrvSs(scImageMgr.fCurrItem);
 			}
 			return false;
 		case 27://escape
-			if (scImageMgr.fCurrItem.fName === "gal") {
+			if (scImageMgr.fCurrItem.fName == "gal") {
 				scImageMgr.xClsSs(scImageMgr.fCurrItem);
 			} else {
 				scImageMgr.xClsZm(scImageMgr.fCurrItem);
 			}
 			return false;
 		case 80:// p
-			if (scImageMgr.fCurrItem.fName === "gal") {
+			if (scImageMgr.fCurrItem.fName == "gal") {
 				if(scImageMgr.fCurrItem.fSsAutoPly) scImageMgr.xPseSs(scImageMgr.fCurrItem);
 				else scImageMgr.xPlySs(scImageMgr.fCurrItem);
 			}
@@ -431,9 +424,9 @@ scImageMgr.xKeyMgr = function(pEvent){
 }
 /* === Image size manager =================================================== */
 scImageMgr.xInitImgs = function(pCo) {
-	for(let i=0; i<this.fPathImg.length; i++) {
-		const vImgs = scPaLib.findNodes(this.fPathImg[i].fPath, pCo);
-		for(let j=0; j<vImgs.length; j++) this.xInitImg(vImgs[j]);
+	for(var i=0; i<this.fPathImg.length; i++) {
+		var vImgs = scPaLib.findNodes(this.fPathImg[i].fPath, pCo);
+		for(var j=0; j<vImgs.length; j++) this.xInitImg(vImgs[j]);
 	}
 }
 scImageMgr.xInitImg = function(pImg) {
@@ -441,12 +434,16 @@ scImageMgr.xInitImg = function(pImg) {
 	pImg.style.maxWidth = "100%";
 	pImg.style.height = "auto";
 	pImg.fIsAdapted = true;
+
+/*	if (pImg.width>this.fMaxDeviceWidth){
+		pImg.fIsAdapted = true;
+	}*/
 }
 /* === SVG manager ========================================================== */
 scImageMgr.xInitSvgs = function(pCo) {
-	for(let i=0; i<this.fPathSvg.length; i++) {
-		const vSvgs = scPaLib.findNodes(this.fPathSvg[i].fPath, pCo);
-		for(let j=0; j<vSvgs.length; j++) this.xInitSvg(vSvgs[j]);
+	for(var i=0; i<this.fPathSvg.length; i++) {
+		var vSvgs = scPaLib.findNodes(this.fPathSvg[i].fPath, pCo);
+		for(var j=0; j<vSvgs.length; j++) this.xInitSvg(vSvgs[j]);
 	}
 }
 scImageMgr.xInitSvg = function(pSvg) {
@@ -454,26 +451,23 @@ scImageMgr.xInitSvg = function(pSvg) {
 }
 /* === Animation manager ==================================================== */
 scImageMgr.xInitAnims = function(pCo) {
-	for(let i=0; i<this.fPathAnim.length; i++) {
-		const vAnims = scPaLib.findNodes(this.fPathAnim[i].fPath, pCo);
-		for(let j=0; j<vAnims.length; j++) this.xInitAnim(vAnims[j],this.fPathAnim[i].fOpts,this.fTypAnm+i+j);
+	for(var i=0; i<this.fPathAnim.length; i++) {
+		var vAnims = scPaLib.findNodes(this.fPathAnim[i].fPath, pCo);
+		for(var j=0; j<vAnims.length; j++) this.xInitAnim(vAnims[j],this.fPathAnim[i].fOpts,this.fTypAnm+i+j);
 	}
 }
 scImageMgr.xInitAnim = function(pAnim,pOpts,pId) {
-	let vImg;
 	try {
-		if (!pAnim.fImgs && this.xIsVisible(pAnim)){
-			let i;
+		if (this.xIsVisible(pAnim)){
 			pAnim.fImgs = scPaLib.findNodes("chi:",pAnim);
 			pAnim.fOpts = pOpts;
-			let vMaxHeight = 0;
-			let vMaxWidth = 0;
-			for(i = 0; i<pAnim.fImgs.length; i++) {
-				vImg = pAnim.fImgs[i];
-				vImg.fWidth = scPaLib.findNode("des:img",vImg).width;
-				vImg.style.width = vImg.fWidth+"px";
-				vImg.fHeight = vImg.clientHeight;
+			var vMaxHeight = 0;
+			var vMaxWidth = 0;
+			for(var i=0; i<pAnim.fImgs.length; i++) {
+				var vImg = pAnim.fImgs[i];
 				vImg.style.position = "absolute";
+				vImg.fHeight = vImg.clientHeight;
+				vImg.fWidth = scPaLib.findNode("des:img",vImg).width;
 				vMaxHeight = Math.max(vMaxHeight,vImg.fHeight);
 				vMaxWidth = Math.max(vMaxWidth,vImg.fWidth);
 				vImg.style.visibility = "hidden";
@@ -481,25 +475,17 @@ scImageMgr.xInitAnim = function(pAnim,pOpts,pId) {
 				vImg.style.left = "0";
 				vImg.style.width = "100%";
 			}
-			pAnim.fMaxHeight = vMaxHeight;
-			pAnim.fMaxWidth = vMaxWidth;
-			const vResizer = {
-				onResizedDes: function (pOwnerNode, pEvent) {
-				},
-				onResizedAnc: function (pOwnerNode, pEvent) {
-					if (pEvent.phase === 1) {
-						scImageMgr.xRedrawAnim(pOwnerNode);
-					}
-				}
-			};
-			scSiLib.addRule(pAnim, vResizer);
-			this.xRedrawAnim(pAnim);
-
+			pAnim.style.height = vMaxHeight+0.01*vMaxHeight + "px";
+			pAnim.style.width = vMaxWidth+0.01*vMaxWidth + "px";
+			for(var i=0; i<pAnim.fImgs.length; i++) {
+				var vImg = pAnim.fImgs[i];
+				vImg.style.marginTop = (vMaxHeight - vImg.fHeight)/2 + "px";
+			}
 			if (!pOpts.auto && pOpts.toolbar<2) {
 				pAnim.fBtnInitPly = scImageMgr.xAddBtn(pAnim,pAnim,this.fTypAnm,"BtnInitPly",scImageMgr.xGetStr(16),scImageMgr.xGetStr(17));
 			}
 			if (pOpts.toolbar > 0){
-				if(pOpts.toolbar === 1) pAnim.fCtrl = scDynUiMgr.addElement("div",pAnim,pOpts.clsPre + "Ctrl");
+				if(pOpts.toolbar == 1) pAnim.fCtrl = scDynUiMgr.addElement("div",pAnim,pOpts.clsPre + "Ctrl");
 				else pAnim.fCtrl = scDynUiMgr.addElement("div",pAnim.parentNode,pOpts.clsPre + "Ctrl",pAnim.nextSibling);
 				if (pOpts.extBtns) {
 					pAnim.fBtnSrt = scImageMgr.xAddBtn(pAnim.fCtrl,pAnim,this.fTypAnm,"BtnSrt",scImageMgr.xGetStr(20),scImageMgr.xGetStr(21));
@@ -531,13 +517,13 @@ scImageMgr.xInitAnim = function(pAnim,pOpts,pId) {
 					pAnim.fBtnLp.setAttribute("id",pId);
 					pAnim.fBtnLp.setAttribute("title",scImageMgr.xGetStr(29));
 					if (pOpts.loop){
-						const vAttChk = document.createAttribute("checked"); // For IE the attr checked must be created
+						var vAttChk = document.createAttribute("checked"); // For IE the attr checked must be created
 						vAttChk.nodeValue = "true";
 						pAnim.fBtnLp.setAttributeNode(vAttChk);
 					}
 					pAnim.fBtnLp.fObj = pAnim;
 					pAnim.fBtnLp.onclick = function(){return scImageMgr.xBtnMgr(this);}
-					const vLblLp = scDynUiMgr.addElement("label", pAnim.fCtrl, pOpts.clsPre + "LpLbl");
+					var vLblLp = scDynUiMgr.addElement("label",pAnim.fCtrl,pOpts.clsPre + "LpLbl");
 					vLblLp.innerHTML = scImageMgr.xGetStr(28);
 					vLblLp.setAttribute("for",pId);
 					vLblLp.setAttribute("title",scImageMgr.xGetStr(29));
@@ -550,7 +536,7 @@ scImageMgr.xInitAnim = function(pAnim,pOpts,pId) {
 					scDynUiMgr.addElement("span",pAnim.fCtrl,pOpts.clsPre + "CtrSep").innerHTML = "/";
 					scDynUiMgr.addElement("span",pAnim.fCtrl,pOpts.clsPre + "CtrCnt").innerHTML = pAnim.fImgs.length;
 				}
-				if (pOpts.toolbar === 1) {
+				if (pOpts.toolbar == 1) {
 					pAnim.onmouseover = function () {scImageMgr.xAnimCtrlOn(pAnim);}
 					pAnim.fCtrl.style.visibility = "hidden";
 					pAnim.fCtrl.fOn = false;
@@ -567,32 +553,12 @@ scImageMgr.xInitAnim = function(pAnim,pOpts,pId) {
 			this.xInitZms(pAnim);
 		}
 	} catch(e){
-		console.error("scImageMgr.xInitAnim::Error : "+e);
-	}
-}
-scImageMgr.xRedrawAnim = function(pAnim) {
-	let vSetWidth = pAnim.fMaxWidth;
-	let vSetHeight = pAnim.fMaxHeight;
-	let vRatio = 1;
-	if (pAnim.fOpts.adaptive){
-		const vAvailableWidth = pAnim.parentElement.clientWidth;
-		if (vAvailableWidth < vSetWidth){
-			vRatio = vAvailableWidth / vSetWidth;
-			vSetWidth = vAvailableWidth;
-			vSetHeight = vSetHeight * vRatio;
-		}
-	}
-	pAnim.style.height = vSetHeight + "px";
-	pAnim.style.width = vSetWidth + "px";
-	for(i = 0; i<pAnim.fImgs.length; i++) {
-		vImg = pAnim.fImgs[i];
-		vImg.style.marginTop = (vSetHeight - vImg.fHeight * vRatio)/2 + "px";
-		scPaLib.findNode("des:img",vImg).width = vImg.fWidth * vRatio;
+		scCoLib.log("scImageMgr.xInitAnim::Error : "+e);
 	}
 }
 scImageMgr.xAutoAnim = function(pAnim) {
 	if (pAnim && pAnim.fAutoPly){
-		if (!pAnim.fLoop && pAnim.fCurrImgIdx === pAnim.fImgs.length - 1) {
+		if (!pAnim.fLoop && pAnim.fCurrImgIdx == pAnim.fImgs.length - 1) {
 			scImageMgr.xPseAnm(pAnim);
 		} else {
 			scImageMgr.xNxtAnm(pAnim);
@@ -623,7 +589,7 @@ scImageMgr.xEndAnm = function(pAnim) {
 	new scImageMgr.switchAnimTask(pAnim, pAnim.fImgs.length - 1);
 }
 scImageMgr.xPrvAnm = function(pAnim) {
-	new scImageMgr.switchAnimTask(pAnim, pAnim.fCurrImgIdx === 0 ? pAnim.fImgs.length - 1 : pAnim.fCurrImgIdx - 1);
+	new scImageMgr.switchAnimTask(pAnim, pAnim.fCurrImgIdx == 0 ? pAnim.fImgs.length - 1 : pAnim.fCurrImgIdx - 1);
 }
 scImageMgr.xNxtAnm = function(pAnim) {
 	new scImageMgr.switchAnimTask(pAnim, pAnim.fCurrImgIdx < pAnim.fImgs.length - 1 ? pAnim.fCurrImgIdx + 1 : 0);
@@ -669,7 +635,7 @@ scImageMgr.switchAnimTask = function(pAnim,pNewIdx){
 		this.fIdx = -1;
 		this.fIsRunning = true;
 		scTiLib.addTaskNow(this);
-	}catch(e){console.error("ERROR scImageMgr.switchAnimTask : "+e);}
+	}catch(e){scCoLib.log("ERROR scImageMgr.switchAnimTask : "+e);}
 }
 scImageMgr.switchAnimTask.prototype.execTask = function(){
 	while(this.fEndTime < (Date.now ? Date.now() : new Date().getTime()) && this.fIdx < this.fRateOld.length) {
@@ -697,10 +663,10 @@ scImageMgr.switchAnimTask.prototype.terminate = function(){
 
 /* === Zoom manager ========================================================= */
 scImageMgr.xInitZms = function(pCo) {
-	for(let i=0; i<this.fPathZoom.length; i++) {
-		const vZooms = scPaLib.findNodes(this.fPathZoom[i].fPath, pCo);
-		for(let j=0; j<vZooms.length; j++) {
-			const vAnc = vZooms[j];
+	for(var i=0; i<this.fPathZoom.length; i++) {
+		var vZooms = scPaLib.findNodes(this.fPathZoom[i].fPath, pCo);
+		for(var j=0; j<vZooms.length; j++) {
+			var vAnc = vZooms[j];
 			try {
 				vAnc.fImg = scPaLib.findNode("des:img", vAnc);
 				vAnc.fZmUri = vAnc.href;
@@ -709,110 +675,84 @@ scImageMgr.xInitZms = function(pCo) {
 				vAnc.fObj=vAnc;
 				vAnc.setAttribute("role", "button");
 				if (!vAnc.title) vAnc.title = this.xGetStr(32);
-				vAnc.onclick=function(pEvt){
-					if ((this.fImg && this.fImg.fIsAdapted && this.fImg.fWidth > window.innerWidth) || pEvt.ctrlKey) {
-						this.target = "_blank";
+				vAnc.onclick=function(){
+					if (this.fImg && this.fImg.fIsAdapted && this.fImg.fWidth > window.innerWidth) {
+							this.target = "_blank";
 						return true;
 					} else {
-						this.target = "_self";
+							this.target = "_self";
 						return scImageMgr.xBtnMgr(this);
 					}
 				}
 				vAnc.onkeydown=function(pEvent){scDynUiMgr.handleBtnKeyDwn(pEvent);}
 				vAnc.onkeyup=function(pEvent){scDynUiMgr.handleBtnKeyUp(pEvent);}
 			} catch(e){
-				console.error("scImageMgr.xInitZms::Error : "+e);
+				scCoLib.log("scImageMgr.xInitZms::Error : "+e);
 			}
 		}
 	}
 }
 scImageMgr.xInitZm = function(pAnc) {
-	const vOpts = pAnc.fOpts;
+	var vOpts = pAnc.fOpts;
 	pAnc.fImg = scPaLib.findNode("des:img", pAnc);
 	pAnc.fCvs = scDynUiMgr.addElement("div", this.fDisplayRoot,vOpts.clsPre+"Cvs", null, {display:"none"});
 	pAnc.fCvs.fAnc = pAnc;
 	pAnc.fCvs.setAttribute("role", "dialog");
-	if(pAnc.getAttribute("data-label")) pAnc.fCvs.setAttribute("aria-label", pAnc.getAttribute("data-label"));
-	else if(pAnc.fImg && pAnc.fImg.getAttribute("alt")) pAnc.fCvs.setAttribute("aria-label", pAnc.fImg.getAttribute("alt"));
 	pAnc.fCvs.onclick=function(){return scImageMgr.xClsZm(this.fAnc);}
 	pAnc.fOver = scDynUiMgr.addElement("div", pAnc.fCvs,vOpts.clsPre+"Over");
 	pAnc.fOver.fAnc = pAnc;
 	pAnc.fOver.onclick=function(){return scImageMgr.xClsZm(this.fAnc);}
-	pAnc.fFra = scDynUiMgr.addElement("div", pAnc.fCvs,vOpts.clsPre+"Fra", null, {visibility:vOpts.type === "svg" ? "" : "hidden"});
+	pAnc.fFra = scDynUiMgr.addElement("div", pAnc.fCvs,vOpts.clsPre+"Fra", null, {visibility:vOpts.type == "svg" ? "" : "hidden"});
 	pAnc.fFra.onclick=function(pEvt){
-		pEvt.cancelBubble = true;
-		if (pEvt.stopPropagation) pEvt.stopPropagation();
+		var vEvt = scImageMgr.xGetEvt(pEvt);
+		vEvt.cancelBubble = true;
+		if (vEvt.stopPropagation) vEvt.stopPropagation();
 	}
-	const vCo = pAnc.fCo = scDynUiMgr.addElement("div", pAnc.fFra, vOpts.clsPre + "Co");
+	var vCo = pAnc.fCo = scDynUiMgr.addElement("div",pAnc.fFra,vOpts.clsPre+"Co");
 	vCo.style.position = "relative";
-	let vImgBtn;
-	let vImg;
-	if (vOpts.toolbar === 1){
-		pAnc.fTlb = scDynUiMgr.addElement("div",pAnc.fFra,vOpts.clsPre+"Tlb");
-		pAnc.fClsBtn = scImageMgr.xAddBtn((this.xMobileCheck() ? pAnc.fFra : pAnc.fTlb),pAnc,scImageMgr.fTypZm,"BtnCls",this.xGetStr(30),this.xGetStr(31));
-		if (vOpts.titlePath){
-			const vTiSrc = scPaLib.findNode(vOpts.titlePath, pAnc);
-			if (vTiSrc){
-				const vTiElt = scDynUiMgr.addElement("div", pAnc.fTlb, vOpts.clsPre + "Ti");
-				vTiElt.appendChild(vTiSrc.cloneNode(true));
-			}
-		}
-	}
-	if (vOpts.type === "iframe"){
+	var vImgBtn = null;
+	var vImg = null;
+	if (vOpts.type == "iframe"){
 		vImg = vCo.fImg = scDynUiMgr.addElement("iframe",vCo,null);
 		vImg.fAnc = pAnc;
 		vCo.fOvr = scDynUiMgr.addElement("div",vCo,null);
 		vCo.fOvr.fAnc = pAnc;
 		vCo.fOvr.onclick=function(){return scImageMgr.xClsZm(this.fAnc);}
 		vCo.fOvr.style.cursor = "pointer";
-	} else if (vOpts.type === "svg"){
-		let vWidth, vHeight;
-		const vAncImg = scPaLib.findNode("des:img|svg", pAnc)
-		if (vAncImg.tagName.toLowerCase() === "svg"){
-			vImg = vCo.fImg = vAncImg.cloneNode(true);
-			vImg.removeAttribute("style");
-			vCo.appendChild(vImg);
+	} else if (vOpts.type == "svg"){
+		vImg = vCo.fImg = scPaLib.findNode("des:img|svg", pAnc).cloneNode(true);
+		vCo.appendChild(vImg);
+		vImg.fAnc = pAnc;
+		var vWidth, vHeight;
+		if (vImg.tagName.toLowerCase() == 'svg') {
 			vWidth = vImg.width.baseVal.value;
 			vHeight = vImg.height.baseVal.value;
 			if (!vImg.getAttribute("viewBox")) vImg.setAttribute("viewBox", "0 0 " + vWidth + " " + vHeight);
 		} else {
-			vImgBtn = scImageMgr.xAddBtn(vCo,pAnc,scImageMgr.fTypZm,"BtnImgCls","",this.xGetStr(31));
-			vImgBtn.innerHTML = "";
-			vImgBtn.style.display = "inline-block";
-			if(!pAnc.fClsBtn) pAnc.fClsBtn = vImgBtn;
-			vImg = vCo.fImg = scDynUiMgr.addElement("img",(vImgBtn),null);
-			vImg.setAttribute("width", vAncImg.width);
-			vImg.setAttribute("height", vAncImg.height);
-			vWidth = vAncImg.width;
-			vHeight = vAncImg.height;
-			vImg.setAttribute("alt",pAnc.fImg && pAnc.fImg.alt ? pAnc.fImg.alt : "");
-			vImg.onload = scImageMgr.sLoadZmImg;
+			vWidth = vImg.width;
+			vHeight = vImg.height;
 		}
-		vImg.fAnc = pAnc;
-		pAnc.fDefHeight = vHeight * (vOpts.svgMax===1 ? 1000 : 0);
-		pAnc.fDefWidth = vWidth * (vOpts.svgMax===1 ? 1000 : 0);
-		if (vAncImg.tagName.toLowerCase() === "svg"){
-			pAnc.fRatio = pAnc.fDefWidth/pAnc.fDefHeight;
-			pAnc.fDeltaHeight = scImageMgr.xGetEltHeight(pAnc.fFra) - scImageMgr.xGetEltHeight(pAnc.fCo) + scCoLib.toInt(scImageMgr.xReadStyle(pAnc.fCvs,"paddingTop")) + scCoLib.toInt(scImageMgr.xReadStyle(pAnc.fCvs,"paddingBottom"));
-			pAnc.fDeltaWidth = scImageMgr.xGetEltWidth(pAnc.fFra) - scImageMgr.xGetEltWidth(pAnc.fCo) + scCoLib.toInt(scImageMgr.xReadStyle(pAnc.fCvs,"paddingLeft")) + scCoLib.toInt(scImageMgr.xReadStyle(pAnc.fCvs,"paddingRight"));
-			pAnc.fFra.style.position="absolute";
-		}
+		pAnc.fDefHeight = vHeight * (vOpts.svgMax==1 ? 1000 : 0);
+		pAnc.fDefWidth = vWidth * (vOpts.svgMax==1 ? 1000 : 0);
+		pAnc.fRatio = pAnc.fDefWidth/pAnc.fDefHeight;
+		pAnc.fDeltaHeight = scImageMgr.xGetEltHeight(pAnc.fFra) - scImageMgr.xGetEltHeight(pAnc.fCo) + scCoLib.toInt(scImageMgr.xReadStyle(pAnc.fCvs,"paddingTop")) + scCoLib.toInt(scImageMgr.xReadStyle(pAnc.fCvs,"paddingBottom"));
+		pAnc.fDeltaWidth = scImageMgr.xGetEltWidth(pAnc.fFra) - scImageMgr.xGetEltWidth(pAnc.fCo) + scCoLib.toInt(scImageMgr.xReadStyle(pAnc.fCvs,"paddingLeft")) + scCoLib.toInt(scImageMgr.xReadStyle(pAnc.fCvs,"paddingRight"));
 	} else {
-		const vAddMag = vOpts.mag > 0;
+		var vAddMag = vOpts.mag > 0;
 		if (!vAddMag){
 			vImgBtn = scImageMgr.xAddBtn(vCo,pAnc,scImageMgr.fTypZm,"BtnImgCls","",this.xGetStr(31));
 			vImgBtn.innerHTML = "";
 			vImgBtn.style.display = "inline-block";
-			if(!pAnc.fClsBtn) pAnc.fClsBtn = vImgBtn;
 		}
 		vImg = vCo.fImg = scDynUiMgr.addElement("img",(vAddMag ? vCo : vImgBtn),null);
 		vImg.fAnc = pAnc;
+//		vImg.style.cursor = "pointer";
 		vImg.setAttribute("alt",pAnc.fImg && pAnc.fImg.alt ? pAnc.fImg.alt : "");
 		vImg.onload = scImageMgr.sLoadZmImg;
 		if (vAddMag){
 			vImg.onmouseover = this.sZmMagShow;
 			vImg.onmousemove = this.sZmImgMove;
-			const vMag = vCo.fImg.fMag = scDynUiMgr.addElement("div", vCo, vOpts.clsPre + "Mag", null, {display: "none"});
+			var vMag = vCo.fImg.fMag = scDynUiMgr.addElement("div", vCo, vOpts.clsPre+"Mag", null, {display:"none"});
 			vMag.fClass = vOpts.clsPre+"Mag";
 			vMag.fClassMax = vOpts.clsPre+"MagMax";
 			vMag.style.position="absolute";
@@ -825,63 +765,62 @@ scImageMgr.xInitZm = function(pAnc) {
 			if (vOpts.magMax > 0) vMag.onclick = this.sZmMagClick;
 		}
 	}
-	const vFocuserStart = scDynUiMgr.addElement("a",pAnc.fOver);
-	vFocuserStart.setAttribute("href", "#");
-	vFocuserStart.onfocus = function () {
-		scPaLib.findNodes("des:a", pAnc.fFra).at(-1).focus();
-	}
-	const vFocuserEnd = scDynUiMgr.addElement("a",pAnc.fCvs);
-	vFocuserEnd.setAttribute("href", "#");
-	vFocuserEnd.onfocus = function () {
-		scPaLib.findNodes("des:a", pAnc.fFra).at(0).focus();
-	}
-	const vResizer = {
-		onResizedDes: function (pOwnerNode, pEvent) {
-		},
-		onResizedAnc: function (pOwnerNode, pEvent) {
-			if (pEvent.phase === 1) {
-				if (scImageMgr.fCurrItem === pOwnerNode.fAnc) scImageMgr.xRedrawZm(pOwnerNode.fAnc);
+	if (vOpts.toolbar == 1){
+		pAnc.fTlb = scDynUiMgr.addElement("div",pAnc.fFra,vOpts.clsPre+"Tlb");
+		pAnc.fClsBtn = scImageMgr.xAddBtn((this.xMobileCheck() ? pAnc.fFra : pAnc.fTlb),pAnc,scImageMgr.fTypZm,"BtnCls",this.xGetStr(30),this.xGetStr(31));
+		if (vOpts.titlePath){
+			var vTiSrc =scPaLib.findNode(vOpts.titlePath, pAnc);
+			if (vTiSrc){
+				var vTiElt = scDynUiMgr.addElement("div",pAnc.fTlb,vOpts.clsPre+"Ti");
+				vTiElt.appendChild(vTiSrc.cloneNode(true));
 			}
 		}
-	};
+	} else pAnc.fClsBtn = vImgBtn;
+	var vResizer = {
+		onResizedDes : function(pOwnerNode, pEvent) {},
+		onResizedAnc : function(pOwnerNode, pEvent) {
+			if(pEvent.phase==1) {
+				if(scImageMgr.fCurrItem == pOwnerNode.fAnc) scImageMgr.xRedrawZm(pOwnerNode.fAnc);
+			}
+		}
+	}
 	scSiLib.addRule(vCo.fImg, vResizer);
 }
 scImageMgr.xOpenZm = function(pAnc) {
 	if ("scDragMgr" in window) { // do not open the zoom if the image is in a scDragMgr label that has just been dropped.
-		const vAncs = scPaLib.findNodes("anc:", pAnc);
-		for(let i=0; i<vAncs.length; i++) if (vAncs[i].fGroup && vAncs[i].fGroup._isThresholdExceeded) return;
+		var vAncs = scPaLib.findNodes("anc:",pAnc);
+		for(var i=0; i<vAncs.length; i++) if (vAncs[i].fGroup && vAncs[i].fGroup._isThresholdExceeded) return;
 	}
 	document.body.classList.add("imgLoading");
 	if(!pAnc.fCo) scImageMgr.xInitZm(pAnc);
-	if(this.xReadStyle(pAnc.fCvs,"position") === "absolute") window.scroll(0,0); // if position:absolute, we must scroll the SS into view.
-	scImageMgr.fadeInTask.initTask(pAnc, function(){
-		scPaLib.findNodes("des:a", pAnc.fFra).at(0).focus();
-	});
+	if(this.xReadStyle(pAnc.fCvs,"position") == "absolute") window.scroll(0,0); // if position:absolute, we must scroll the SS into view.
+	scImageMgr.fadeInTask.initTask(pAnc);
 	scTiLib.addTaskNow(scImageMgr.fadeInTask);
-	if(pAnc.fCo && !pAnc.fCo.fImg.src && pAnc.fCo.fImg.tagName.toLowerCase()!=="svg") pAnc.fCo.fImg.setAttribute("src", pAnc.fZmUri);
+	if(pAnc.fCo && !pAnc.fCo.fImg.src && pAnc.fOpts.type!="svg") pAnc.fCo.fImg.setAttribute("src", pAnc.fZmUri);
 	else scImageMgr.xRedrawZm(pAnc);
 	scImageMgr.fCurrItem = pAnc;
 	pAnc.fKeyUpOld = document.onkeyup;
 	document.onkeyup = scImageMgr.xKeyMgr;
 	this.xNotifyListeners("onZoomOpen", pAnc);
 	this.xNotifyListeners("onOverlayOpen", pAnc);
-	this.xToggleFocusables(true);
+	this.xToggleFocusables();
+	this.xFocus(pAnc.fClsBtn);
 }
 scImageMgr.xClsZm = function(pAnc) {
 	scImageMgr.fadeOutTask.initTask(pAnc,function(){
 		scImageMgr.xNotifyListeners("onZoomClose", pAnc);
 		scImageMgr.xNotifyListeners("onOverlayClose", pAnc);
-		scImageMgr.xFocus(pAnc);
 	});
 	scTiLib.addTaskNow(scImageMgr.fadeOutTask);
 	document.onkeyup = pAnc.fKeyUpOld;
 	scImageMgr.fCurrItem = null;
-	scImageMgr.xToggleFocusables(false);
+	scImageMgr.xToggleFocusables();
+	scImageMgr.xFocus(pAnc);
 }
 scImageMgr.sLoadZmImg = function() {
-	const vAnc = this.fAnc;
-	if (!vAnc.fDefHeight) vAnc.fDefHeight = this.height;
-	if (!vAnc.fDefWidth) vAnc.fDefWidth = this.width;
+	var vAnc = this.fAnc;
+	vAnc.fDefHeight = this.height;
+	vAnc.fDefWidth = this.width;
 	vAnc.fRatio = vAnc.fDefWidth/vAnc.fDefHeight;
 	vAnc.fDeltaHeight = scImageMgr.xGetEltHeight(vAnc.fFra) - scImageMgr.xGetEltHeight(vAnc.fCo) + scCoLib.toInt(scImageMgr.xReadStyle(vAnc.fCvs,"paddingTop")) + scCoLib.toInt(scImageMgr.xReadStyle(vAnc.fCvs,"paddingBottom"));
 	vAnc.fDeltaWidth = scImageMgr.xGetEltWidth(vAnc.fFra) - scImageMgr.xGetEltWidth(vAnc.fCo) + scCoLib.toInt(scImageMgr.xReadStyle(vAnc.fCvs,"paddingLeft")) + scCoLib.toInt(scImageMgr.xReadStyle(vAnc.fCvs,"paddingRight"));
@@ -890,79 +829,84 @@ scImageMgr.sLoadZmImg = function() {
 	vAnc.fFra.style.visibility="";
 }
 scImageMgr.sZmMagShow = function(pEvt) {
-	const vImg = pEvt.target;
+	var vEvt = scImageMgr.xGetEvt(pEvt);
+	var vImg = vEvt.target;
 	try {
-		const vMag = vImg.fMag;
-		const vAnc = vImg.fAnc;
+		var vMag = vImg.fMag;
+		var vAnc = vImg.fAnc
 		if (!vMag.fEnabled) return;
 		vMag.fAct = true;
-		const vX = pEvt.offsetX || pEvt.layerX;
-		const vY = pEvt.offsetY || pEvt.layerY;
+		var vX = vEvt.offsetX || vEvt.layerX;
+		var vY = vEvt.offsetY || vEvt.layerY;
 		if (vMag.fMaxDefault) scImageMgr.xZmMagMax(vMag,true);
 		else scImageMgr.xZmMagUpdate(vAnc, vMag, vX, vY,true);
 		vMag.style.display = "";
 	} catch(e){
-		console.error("scImageMgr.sZmMagShow::Error : "+e);
+		scCoLib.log("scImageMgr.sZmMagShow::Error : "+e);
 	}
 }
 scImageMgr.sZmImgMove = function(pEvt) {
-	const vImg = pEvt.target;
+	var vEvt = scImageMgr.xGetEvt(pEvt);
+	var vImg = vEvt.target;
 	try {
-		const vMag = vImg.fMag;
+		var vMag = vImg.fMag;
 		if (!vMag.fEnabled) return;
 		if (!vMag.fAct) scImageMgr.sZmMagShow(pEvt);
 	} catch(e){
-		console.error("scImageMgr.sZmImgMove::Error : "+e);
+		scCoLib.log("scImageMgr.sZmImgMove::Error : "+e);
 	}
 }
 scImageMgr.sZmMagHide = function(pEvt) {
-	const vMag = pEvt.target;
+	var vEvt = scImageMgr.xGetEvt(pEvt);
+	var vMag = vEvt.target;
 	try {
 		vMag.fAct = false;
 		scImageMgr.xZmMagMax(vMag,false);
 		vMag.style.display = "none";
 	} catch(e){
-		console.error("scImageMgr.sZmMagHide::Error : "+e);
+		scCoLib.log("scImageMgr.sZmMagHide::Error : "+e);
 	}
 }
 scImageMgr.sZmMagMove = function(pEvt) {
-	const vMag = pEvt.target;
-	const vAnc = vMag.fAnc;
-	const vX = vMag.offsetLeft + (pEvt.offsetX || pEvt.layerX);
-	const vY = vMag.offsetTop + (pEvt.offsetY || pEvt.layerY);
+	var vEvt = scImageMgr.xGetEvt(pEvt);
+	var vMag = vEvt.target;
+	var vAnc = vMag.fAnc
+	var vX = vMag.offsetLeft + (vEvt.offsetX || vEvt.layerX);
+	var vY = vMag.offsetTop + (vEvt.offsetY || vEvt.layerY);
 	try {
 		if (!vMag.fMax) {
 			scImageMgr.xZmMagUpdate(vAnc,vMag,vX,vY,true);
-		} else if (vMag.fMaxDefault || vAnc.fOpts.magPan === 1) {
+		} else if (vMag.fMaxDefault || vAnc.fOpts.magPan == 1) {
 			scImageMgr.xZmMagUpdate(vAnc,vMag,vX,vY,false);
 		}
 	} catch(e){
-		console.error("scImageMgr.sZmMagMove::Error : "+e);
+		scCoLib.log("scImageMgr.sZmMagMove::Error : "+e);
 	}
 }
 scImageMgr.sZmMagClick = function(pEvt) {
-	const vMag = pEvt.target;
+	var vEvt = scImageMgr.xGetEvt(pEvt);
+	var vMag = vEvt.target;
 	if (!vMag.fMaxDefault) {
 		scImageMgr.xZmMagMax(vMag,!vMag.fMax);
-		if (!vMag.fMax) scImageMgr.sZmMagMove(pEvt);
+		if (!vMag.fMax) scImageMgr.sZmMagMove(vEvt);
 	}
 }
 scImageMgr.xZmMagUpdate = function(pAnc, pMag, pX, pY, pUpdtPos) {
 	try {
-		const vTop = Math.round(Math.min(pAnc.fCurrHeight - pMag.fHeight, Math.max(0, pY - pMag.fHeight / 2)));
-		const vLeft = Math.round(Math.min(pAnc.fCurrWidth - pMag.fWidth, Math.max(0, pX - pMag.fWidth / 2)));
+		var vTop = Math.round(Math.min(pAnc.fCurrHeight-pMag.fHeight, Math.max(0,pY - pMag.fHeight/2)));
+		var vLeft = Math.round(Math.min(pAnc.fCurrWidth-pMag.fWidth, Math.max(0,pX - pMag.fWidth/2)));
 		if (pUpdtPos) {
 			pMag.style.left = (vLeft)+"px";
 			pMag.style.top = (vTop)+"px";
 		}
 		pMag.style.backgroundPosition = Math.round(Math.min(vLeft/(pAnc.fCurrWidth-pMag.fWidth)*100,100))+"% "+Math.round(Math.min(vTop/(pAnc.fCurrHeight-pMag.fHeight)*100,100))+"%";
 	} catch(e){
-		console.error("scImageMgr.xZmMagUpdate::Error : "+e);
+		scCoLib.log("scImageMgr.xZmMagUpdate::Error : "+e);
 	}
 }
 scImageMgr.xZmMagMax = function(pMag, pMax) {
 	try {
-		const vAnc = pMag.fAnc;
+		var vAnc = pMag.fAnc;
 		if (pMax){
 			pMag.fMax = true;
 			pMag.style.top = "0px";
@@ -977,32 +921,31 @@ scImageMgr.xZmMagMax = function(pMag, pMax) {
 			scImageMgr.xSwitchClass(pMag, pMag.fClassMax, pMag.fClass);
 		}
 	} catch(e){
-		console.error("scImageMgr.xZmMagMax::Error : "+e);
+		scCoLib.log("scImageMgr.xZmMagMax::Error : "+e);
 	}
 }
 scImageMgr.xRedrawZm = function(pAnc) {
 	try {
-		if (pAnc.fOpts.type === "iframe") return;
-		const vCoHeight = pAnc.fCvs.clientHeight - pAnc.fDeltaHeight - (scImageMgr.xMobileCheck() ? 0 : scImageMgr.fDeltaGalleryTop);
-		const vCoWidth = pAnc.fCvs.clientWidth - pAnc.fDeltaWidth - (scImageMgr.xMobileCheck() ? 0 : scImageMgr.fDeltaGalleryLeft);
-		if (vCoHeight === 0 || vCoWidth === 0) return;
-		const vCoRatio = vCoWidth / vCoHeight;
-		const vFra = pAnc.fFra;
-		const vCo = pAnc.fCo;
-		const vImg = vCo.fImg;
-		let vNewHeight = 0;
-		let vNewWidth = 0;
+		if (pAnc.fOpts.type == "iframe") return;
+		var vCoHeight = pAnc.fCvs.clientHeight - pAnc.fDeltaHeight - (scImageMgr.xMobileCheck() ? 0 : scImageMgr.fDeltaGalleryTop);
+		var vCoWidth = pAnc.fCvs.clientWidth - pAnc.fDeltaWidth - (scImageMgr.xMobileCheck() ? 0 : scImageMgr.fDeltaGalleryLeft);
+		if (vCoHeight == 0 || vCoWidth == 0) return;
+		var vCoRatio = vCoWidth/vCoHeight;
+		var vFra = pAnc.fFra;
+		var vCo = pAnc.fCo;
+		var vImg = vCo.fImg;
+		var vNewHeight = 0;
+		var vNewWidth = 0;
 		if (pAnc.fRatio <= vCoRatio && vCoHeight < pAnc.fDefHeight) vNewHeight = vCoHeight;
 		if (pAnc.fRatio >= vCoRatio && vCoWidth < pAnc.fDefWidth) vNewWidth = vCoWidth;
 		vImg.style.width = (vNewWidth>0 ? scCoLib.toInt(vNewWidth)+"px" : "auto");
 		vImg.style.height = (vNewHeight>0 ? scCoLib.toInt(vNewHeight)+"px" : "auto");
-		const vImgHeight = pAnc.fCurrHeight = scCoLib.toInt(vNewHeight > 0 ? vNewHeight : vNewWidth > 0 ? vNewWidth / pAnc.fRatio : pAnc.fDefHeight);
-		const vImgWidth = pAnc.fCurrWidth = scCoLib.toInt(vNewWidth > 0 ? vNewWidth : vNewHeight > 0 ? vNewHeight * pAnc.fRatio : pAnc.fDefWidth);
+		var vImgHeight = pAnc.fCurrHeight = scCoLib.toInt(vNewHeight > 0 ? vNewHeight : vNewWidth > 0 ? vNewWidth/pAnc.fRatio : pAnc.fDefHeight);
+		var vImgWidth = pAnc.fCurrWidth = scCoLib.toInt(vNewWidth > 0 ? vNewWidth : vNewHeight > 0 ? vNewHeight*pAnc.fRatio : pAnc.fDefWidth);
 		vCo.style.width = vImgWidth+"px";
 		vCo.style.height = vImgHeight+"px";
-		if (pAnc.fTlb) pAnc.fTlb.style.width = vImgWidth+"px";
 		if (pAnc.fOpts.mag){
-			const vMag = vImg.fMag;
+			var vMag = vImg.fMag;
 			vMag.fEnabled = vImgWidth < pAnc.fDefWidth;
 			vMag.fWidth = scCoLib.toInt(vImgWidth * pAnc.fOpts.magScale);
 			vMag.fHeight = scCoLib.toInt(vImgHeight * pAnc.fOpts.magScale);
@@ -1013,17 +956,17 @@ scImageMgr.xRedrawZm = function(pAnc) {
 		vFra.style[this.fMarginStart] = scCoLib.toInt((vCoWidth - vImgWidth) / 2 + (scImageMgr.xMobileCheck() ? 0 : scImageMgr.fDeltaGalleryLeft) / 2) + "px";
 		document.body.classList.remove("imgLoading");
 	} catch(e){
-		console.error("scImageMgr.xRedrawZm::Error : "+e);
+		scCoLib.log("scImageMgr.xRedrawZm::Error : "+e);
 	}
 }
 
 /* === Slider manager =================================================== */
 scImageMgr.xInitSliders = function(pCo) {
-	if (this.fPathSlider.length>0) document.body.classList.add("sliderLoading");
-	for(let i=0; i<this.fPathSlider.length; i++) {
-		const vSliders = scPaLib.findNodes(this.fPathSlider[i].fPath, pCo);
-		for(let j=0; j<vSliders.length; j++) {
-			const vSlider = vSliders[j];
+	document.body.classList.add("sliderLoading");
+	for(var i=0; i<this.fPathSlider.length; i++) {
+		var vSliders = scPaLib.findNodes(this.fPathSlider[i].fPath,pCo);
+		for(var j=0; j<vSliders.length; j++) {
+			var vSlider = vSliders[j];
 			vSlider.fOpts = this.fPathSlider[i].fOpts;
 			vSlider.fOrigHeight = scCoLib.toInt(this.xReadStyle(vSlider, "height"));
 			vSlider.fSliderWidth = this.xGetEltWidth(vSlider);
@@ -1031,8 +974,8 @@ scImageMgr.xInitSliders = function(pCo) {
 			try {
 				vSlider.fResizeTimer = 0;
 				vSlider.fImgs = scPaLib.findNodes("des:img", vSlider);
-				for (let k=0; k<vSlider.fImgs.length; k++) {
-					const vImg = vSlider.fImgs[k];
+				for (var k=0; k<vSlider.fImgs.length; k++) {
+					var vImg = vSlider.fImgs[k];
 					vImg.fNaturalWidth = Number(vImg.getAttribute("data-width"));
 					vImg.fNaturalHeight = Number(vImg.getAttribute("data-height"));
 					vImg.style.visibility = "hidden";
@@ -1047,7 +990,7 @@ scImageMgr.xInitSliders = function(pCo) {
 				}
 				vSlider.fMaxHeight = this.xSliderGetMaxHeigth(vSlider);
 				vSlider.style.height = vSlider.fMaxHeight + "px";
-				const vTools = scDynUiMgr.addElement("div", vSlider, vSlider.fOpts.clsPre + "Tools", vSlider.firstChild);
+				var vTools = scDynUiMgr.addElement("div", vSlider, vSlider.fOpts.clsPre+"Tools", vSlider.firstChild);
 				vSlider.fToolsOver = scDynUiMgr.addElement("div", vTools, vSlider.fOpts.clsPre+"ToolsOver");
 				vSlider.fToolsOver.style.height = vSlider.fMaxHeight + "px";
 				vSlider.fToolsOver.style.position = "absolute";
@@ -1087,63 +1030,64 @@ scImageMgr.xInitSliders = function(pCo) {
 				vSlider.fCurrentImageIndex = 0;
 				// On charge la première image
 				vSlider.fImgs[0].src = vSlider.fImgs[0].getAttribute("data-src");
-				const vResizer = {
-					onResizedDes: function (pOwnerNode, pEvent) {
-					},
-					onResizedAnc: function (pOwnerNode, pEvent) {
-						let k;
+				var vResizer = {
+					onResizedDes : function(pOwnerNode, pEvent) {},
+					onResizedAnc : function(pOwnerNode, pEvent) {
 						clearTimeout(pOwnerNode.fResizeTimer);
-						pOwnerNode.fResizeTimer = setTimeout(function () {
+						pOwnerNode.fResizeTimer = setTimeout(function() {
 							pOwnerNode.classList.remove("isResized");
 						}, 250);
 						pOwnerNode.classList.add("isResized");
-						const vCurrentImage = pOwnerNode.fImgs[pOwnerNode.fCurrentImageIndex];
+						var vCurrentImage = pOwnerNode.fImgs[pOwnerNode.fCurrentImageIndex];
 						pOwnerNode.fSliderWidth = scImageMgr.xGetEltWidth(pOwnerNode);
-						for (k = 0; k < pOwnerNode.fImgs.length; k++) {
+						for (var k=0; k<pOwnerNode.fImgs.length; k++) {
 							scImageMgr.xSliderSetImageSize(pOwnerNode.fImgs[k], pOwnerNode);
 						}
 						vCurrentImage.style.left = pOwnerNode.fSliderWidth / 2 - vCurrentImage.width / 2 + "px";
 						pOwnerNode.fMaxHeight = scImageMgr.xSliderGetMaxHeigth(pOwnerNode);
-						for (k = 0; k < pOwnerNode.fImgs.length; k++) {
-							const vImg = pOwnerNode.fImgs[k];
-							if (vImg.src) vImg.style.top = pOwnerNode.fMaxHeight / 2 - vImg.height / 2 + "px";
+						for (var k=0; k<pOwnerNode.fImgs.length; k++) {
+							var vImg = pOwnerNode.fImgs[k];
+							if (vImg.src) vImg.style.top = pOwnerNode.fMaxHeight / 2 -  vImg.height / 2 + "px";
 						}
 						pOwnerNode.style.height = pOwnerNode.fMaxHeight + "px";
-						pOwnerNode.fToolsOver.style.left = pOwnerNode.fSliderWidth / 2 - vCurrentImage.width / 2 + "px";
+						pOwnerNode.fToolsOver.style.left = pOwnerNode.fSliderWidth / 2 - vCurrentImage.width / 2  + "px";
 						pOwnerNode.fToolsOver.style.width = vCurrentImage.width + "px";
 						pOwnerNode.fToolsOver.style.height = pOwnerNode.fMaxHeight + "px";
 					}
-				};
+				}
 				scSiLib.addRule(vSlider, vResizer);
 			} catch(e){
-				console.error("scImageMgr.onLoad::Slider init Error : "+e);
+				scCoLib.log("scImageMgr.onLoad::Slider init Error : "+e);
 			}
 		}
 	}
 }
+
 scImageMgr.xSliderGetMaxHeigth = function(pSlider) {
 	return Math.max.apply(Math, pSlider.fImgs.map(function(pImg) { return pImg.height; }));
 }
+
 scImageMgr.xSliderSetImageSize = function(pImg, pSlider) {
 	pImg.width = Math.round(pSlider.fSliderWidth < pImg.fOrigWidth ? pSlider.fSliderWidth : pImg.fNaturalHeight > pSlider.fOrigHeight ? pImg.fNaturalWidth * (pSlider.fSliderHeight / pImg.fNaturalHeight) : pImg.fOrigWidth);
 	pImg.height = Math.round(pImg.width * pImg.fNaturalHeight / pImg.fNaturalWidth);
 	pImg.style.left = pSlider.fSliderWidth + "px";
 }
+
 scImageMgr.xRunSlider = function(pSlider) {
-	const vDuration = pSlider.fOpts.speed;
 	document.body.classList.remove("sliderLoading");
 	// On charge l'image suivante  et précédente si elles ne sont pas chargée
-	const vNextIndex = pSlider.fCurrentImageIndex + 1;
+	var vNextIndex = pSlider.fCurrentImageIndex + 1;
 	if (pSlider.fImgs[vNextIndex] && !pSlider.fImgs[vNextIndex].src) pSlider.fImgs[vNextIndex].src = pSlider.fImgs[vNextIndex].getAttribute("data-src");
-	const vPrevIndex = pSlider.fCurrentImageIndex - 1;
+	var vPrevIndex = pSlider.fCurrentImageIndex - 1;
 	if (pSlider.fImgs[vPrevIndex] && !pSlider.fImgs[vPrevIndex].src) pSlider.fImgs[vPrevIndex].src = pSlider.fImgs[vPrevIndex].getAttribute("data-src");
-	const vLastIndex = pSlider.fImgs.length - 1;
+	var vLastIndex = pSlider.fImgs.length - 1;
 	if (!pSlider.fImgs[vLastIndex].src) pSlider.fImgs[vLastIndex].src = pSlider.fImgs[vLastIndex].getAttribute("data-src");
-	const vCurrentImageWidth = pSlider.fImgs[pSlider.fCurrentImageIndex].width;
+	var vCurrentImageWidth = pSlider.fImgs[pSlider.fCurrentImageIndex].width;
 	pSlider.fToolsOver.style.width = vCurrentImageWidth + "px";
 	pSlider.fToolsOver.style.left = pSlider.fSliderWidth / 2 - vCurrentImageWidth / 2  + "px";
 	if (!scImageMgr.isSliderPaused) {
-		let vImgTime = 0;
+		var vDuration = pSlider.fOpts.speed;
+		var vImgTime = 0;
 		pSlider.fImgTimeInterval = setInterval(function () {
 			vImgTime++
 			pSlider.fTimerProgressBarSvg.style.display = "";
@@ -1164,6 +1108,7 @@ scImageMgr.xRunSlider = function(pSlider) {
 		}, vDuration);
 	}
 }
+
 scImageMgr.xSliderNxt = function(pSlider) {
 	clearTimeout(pSlider.fSliderTimer);
 	clearInterval(pSlider.fImgTimeInterval);
@@ -1178,6 +1123,7 @@ scImageMgr.xSliderNxt = function(pSlider) {
 	pSlider.fPrvBtn.style.display = "";
 	scImageMgr.xRunSlider(pSlider);
 }
+
 scImageMgr.xSliderPrv = function(pSlider) {
 	clearTimeout(pSlider.fSliderTimer);
 	clearInterval(pSlider.fImgTimeInterval);
@@ -1192,6 +1138,7 @@ scImageMgr.xSliderPrv = function(pSlider) {
 	pSlider.fImgs[pSlider.fPrevImageIndex].style.left = -pSlider.fImgs[pSlider.fPrevImageIndex].width + "px";
 	scImageMgr.xRunSlider(pSlider);
 }
+
 scImageMgr.xPauseSlider = function(pSlider) {
 	scImageMgr.isSliderPaused = true;
 	pSlider.fPauseBtn.style.display = "none";
@@ -1200,6 +1147,7 @@ scImageMgr.xPauseSlider = function(pSlider) {
 	clearTimeout(pSlider.fSliderTimer);
 	clearInterval(pSlider.fImgTimeInterval);
 }
+
 scImageMgr.xPlaySlider = function(pSlider) {
 	scImageMgr.isSliderPaused = false;
 	pSlider.fPlayBtn.style.display = "none";
@@ -1210,15 +1158,14 @@ scImageMgr.xPlaySlider = function(pSlider) {
 
 /* === Sequence manager =================================================== */
 scImageMgr.xInitSqs = function(pCo) {
-	scImageMgr.registerListener("onZoomOpen", function(pAnc) {if (pAnc.fObj.fIsSeq) scImageMgr.xPauseSeq(pAnc.fObj);});
-	for(let i=0; i<this.fPathSeq.length; i++) {
-		const vSeqs = scPaLib.findNodes(this.fPathSeq[i].fPath, pCo);
-		for(let j=0; j<vSeqs.length; j++) {
-			const vSeq = vSeqs[j];
+	scImageMgr.registerListener("onZoomOpen", function(pAnc) {scImageMgr.xPauseSeq(pAnc.fObj);});
+	for(var i=0; i<this.fPathSeq.length; i++) {
+		var vSeqs = scPaLib.findNodes(this.fPathSeq[i].fPath,pCo);
+		for(var j=0; j<vSeqs.length; j++) {
+			var vSeq = vSeqs[j];
 			vSeq.fOpts = this.fPathSeq[i].fOpts;
 			try {
 				// Init player
-				vSeq.fIsSeq = true;
 				vSeq.fAncs = scPaLib.findNodes("des:a.galPvLnk", vSeq);
 				vSeq.fToolsOver = scDynUiMgr.addElement("div", vSeq, vSeq.fOpts.clsPre+"ToolsOver");
 				vSeq.fToolsOver.style.position = "absolute";
@@ -1239,8 +1186,8 @@ scImageMgr.xInitSqs = function(pCo) {
 					vSeq.fNxtBtn.fObj = vSeq;
 				}
 				// Init anchors & images
-				for(let k=0; k<vSeq.fAncs.length; k++) {
-					const vAnc = vSeq.fAncs[k];
+				for(var k=0; k<vSeq.fAncs.length; k++) {
+					var vAnc = vSeq.fAncs[k];
 					vAnc.parentNode.style.position = "absolute";
 					vAnc.parentNode.style.top = scImageMgr.xGetEltHeight(vSeq.fToolsOver) + "px";
 					vAnc.parentNode.style.opacity = 0;
@@ -1250,7 +1197,6 @@ scImageMgr.xInitSqs = function(pCo) {
 					vAnc.target = "_self";
 					vAnc.fName=this.fTypSeq+"Zm";
 					if (vAnc.title && vAnc.title.length>0) vAnc.fTitle=vAnc.title;
-					vAnc.setAttribute("role", "button");
 					vAnc.onclick=function(){
 						if (this.fImg && this.fImg.fIsAdapted && this.fImg.fWidth > window.innerWidth) {
 							this.target = "_blank";
@@ -1273,11 +1219,12 @@ scImageMgr.xInitSqs = function(pCo) {
 				vSeq.fCurrentImageIndex = 0;
 				vSeq.fName="seq";
 			} catch(e){
-				console.error("scImageMgr.onLoad::Sequence init Error : "+e);
+				scCoLib.log("scImageMgr.onLoad::Sequence init Error : "+e);
 			}
 		}
 	}
 }
+
 scImageMgr.xRunSeq = function(pSeq) {
 	pSeq.fAncs[pSeq.fCurrentImageIndex].parentNode.style.visibility = "visible";
 	pSeq.fAncs[pSeq.fCurrentImageIndex].parentNode.style.opacity = 1;
@@ -1287,6 +1234,7 @@ scImageMgr.xRunSeq = function(pSeq) {
 		}, 3000);
 	}
 }
+
 scImageMgr.xSeqNxt = function(pSeq) {
 	clearTimeout(pSeq.fSeqTimer);
 	pSeq.fPrevImageIndex = pSeq.fCurrentImageIndex;
@@ -1300,6 +1248,7 @@ scImageMgr.xSeqNxt = function(pSeq) {
 	}
 	scImageMgr.xRunSeq(pSeq);
 }
+
 scImageMgr.xSeqPrv = function(pSeq) {
 	clearTimeout(pSeq.fSeqTimer);
 	pSeq.fPrevImageIndex = pSeq.fCurrentImageIndex;
@@ -1311,12 +1260,14 @@ scImageMgr.xSeqPrv = function(pSeq) {
 	}, 1000);
 	scImageMgr.xRunSeq(pSeq);
 }
+
 scImageMgr.xPauseSeq = function(pSeq) {
 	scImageMgr.isSeqPaused = true;
 	pSeq.fPauseBtn.style.display = "none";
 	pSeq.fPlayBtn.style.display = "";
 	clearTimeout(pSeq.fSeqTimer);
 }
+
 scImageMgr.xPlaySeq = function(pSeq) {
 	scImageMgr.isSeqPaused = false;
 	pSeq.fPlayBtn.style.display = "none";
@@ -1326,19 +1277,18 @@ scImageMgr.xPlaySeq = function(pSeq) {
 
 /* === Slide-show manager =================================================== */
 scImageMgr.xInitSss = function(pCo) {
-	let k;
-	for(let i=0; i<this.fPathGal.length; i++) {
-		const vGals = scPaLib.findNodes(this.fPathGal[i].fPath, pCo);
-		for(let j=0; j<vGals.length; j++) {
-			const vGal = vGals[j];
+	for(var i=0; i<this.fPathGal.length; i++) {
+		var vGals = scPaLib.findNodes(this.fPathGal[i].fPath,pCo);
+		for(var j=0; j<vGals.length; j++) {
+			var vGal = vGals[j];
 			vGal.fOpts = this.fPathGal[i].fOpts;
 			try {
 				vGal.fAncs = scPaLib.findNodes("des:a.galPvLnk", vGal);
 				if (vGal.getAttribute("data-mode") === "adapted") {
 					vGal.style.display = "block";
 					vGal.fImgs = scPaLib.findNodes("des:img.imgPv", vGal);
-					for (k = 0; k<vGal.fImgs.length; k++) {
-						const vImg = vGal.fImgs[k];
+					for (var k=0; k<vGal.fImgs.length; k++) {
+						var vImg = vGal.fImgs[k];
 						vImg.fPaddingWidth = scCoLib.toInt(scImageMgr.xReadStyle(vImg, 'padding-left')) + scCoLib.toInt(scImageMgr.xReadStyle(vImg, 'padding-right'));
 						vImg.fMarginWidth = scCoLib.toInt(scImageMgr.xReadStyle(vImg, 'margin-left')) + scCoLib.toInt(scImageMgr.xReadStyle(vImg, 'margin-right'));
 						vImg.fOrigWidth = scImageMgr.xGetEltWidth(vImg) - vImg.fPaddingWidth;
@@ -1347,18 +1297,17 @@ scImageMgr.xInitSss = function(pCo) {
 						vImg.fOrigHeight = scImageMgr.xGetEltHeight(vImg) - vImg.fPaddingHeight;
 					}
 					scImageMgr.xResizeThumbsSs(vGal);
-					const vResizer = {
-						onResizedDes: function (pOwnerNode, pEvent) {
-						},
-						onResizedAnc: function (pOwnerNode, pEvent) {
+					var vResizer = {
+						onResizedDes : function(pOwnerNode, pEvent) {},
+						onResizedAnc : function(pOwnerNode, pEvent) {
 							scImageMgr.xResizeThumbsSs(pOwnerNode);
 						}
-					};
+					}
 					scSiLib.addRule(vGal, vResizer);
 				}
 				// Init anchors & images
-				for(k = 0; k<vGal.fAncs.length; k++) {
-					const vAnc = vGal.fAncs[k];
+				for(var k=0; k<vGal.fAncs.length; k++) {
+					var vAnc = vGal.fAncs[k];
 					vAnc.fSsUri = vAnc.href;
 					vAnc.fIdx = k;
 					vAnc.href = "#";
@@ -1368,10 +1317,7 @@ scImageMgr.xInitSss = function(pCo) {
 						vAnc.fTitle=vAnc.title;
 						vAnc.title = scImageMgr.xGetStr(27) + " " + vAnc.fTitle;
 					}
-					vAnc.setAttribute("role", "button");
 					vAnc.onclick=function(){return scImageMgr.xBtnMgr(this);}
-					vAnc.onkeydown=function(pEvent){scDynUiMgr.handleBtnKeyDwn(pEvent);}
-					vAnc.onkeyup=function(pEvent){scDynUiMgr.handleBtnKeyUp(pEvent);}
 					vAnc.fImg = scPaLib.findNode("des:img.imgPv", vAnc);
 					vAnc.fObj = vGal;
 				}
@@ -1380,60 +1326,57 @@ scImageMgr.xInitSss = function(pCo) {
 				vGal.fSsStep = scImageMgr.fDefaultStep;
 				vGal.fName="gal";
 			} catch(e){
-				console.error("scImageMgr.onLoad::Gallery init Error : "+e);
+				scCoLib.log("scImageMgr.onLoad::Gallery init Error : "+e);
 			}
 		}
 	}
 }
 scImageMgr.xResizeThumbsSs = function (pGal) {
-	setTimeout(function () {
-		let vImg;
-		let vRatio = 0;
-		const vGalleryAvailableWidth = scImageMgr.xGetEltWidth(pGal) - 1;
-		let vMaxImgsPerRow = 0;
-		let vRowWidth = 0;
-		if (pGal.fImgs) {
-			let k;
-			for (k = 0; k < pGal.fImgs.length; k++) {
-				vImg = pGal.fImgs[k];
-				vImg.fHeight = null
-				vRatio += vImg.fOrigWidth / (vImg.fOrigHeight);
-				vRowWidth += vImg.fOrigWidth;
-				vMaxImgsPerRow++;
-				if (vRowWidth >= vGalleryAvailableWidth) {
-					for (let l = k - (vMaxImgsPerRow - 1); l <= k; l++) {
-						const vImage = pGal.fImgs[l];
-						vImage.fHeight = (vGalleryAvailableWidth - (vImage.fPaddingWidth + vImage.fMarginWidth) * vMaxImgsPerRow) / vRatio;
-					}
-					vRatio = 0;
-					vRowWidth = 0;
-					vMaxImgsPerRow = 0;
-				}
-			}
-			for (k = 0; k < pGal.fImgs.length; k++) {
-				vImg = pGal.fImgs[k];
-				if (vImg.fHeight) {
-					vImg.style.height = vImg.fHeight + "px";
-					vImg.style.width = "auto";
-				} else {
-					vImg.style.height = "auto";
-				}
-			}
-		}
-	})
+    setTimeout(function () {
+        var vRatio = 0;
+        var vGalleryAvailableWidth = scImageMgr.xGetEltWidth(pGal) - 1;
+        var vMaxImgsPerRow = 0;
+        var vRowWidth = 0;
+        if (pGal.fImgs) {
+            for (var k = 0; k < pGal.fImgs.length; k++) {
+                var vImg = pGal.fImgs[k];
+                vImg.fHeight = null
+                vRatio += vImg.fOrigWidth / (vImg.fOrigHeight);
+                vRowWidth += vImg.fOrigWidth;
+                vMaxImgsPerRow++;
+                if (vRowWidth >= vGalleryAvailableWidth) {
+                    for (var l = k - (vMaxImgsPerRow - 1); l <= k; l++) {
+                        var vImage = pGal.fImgs[l];
+                        vImage.fHeight = (vGalleryAvailableWidth - (vImage.fPaddingWidth + vImage.fMarginWidth) * vMaxImgsPerRow) / vRatio;
+                    }
+                    vRatio = 0;
+                    vRowWidth = 0;
+                    vMaxImgsPerRow = 0;
+                }
+            }
+            for (var k = 0; k < pGal.fImgs.length; k++) {
+                var vImg = pGal.fImgs[k];
+                if (vImg.fHeight) {
+                    vImg.style.height = vImg.fHeight + "px";
+                    vImg.style.width = "auto";
+                } else {
+                    vImg.style.height = "auto";
+                }
+            }
+        }
+    })
 }
 scImageMgr.xInitSs = function(pAlbFra) {
-	const vOpts = pAlbFra.fOpts;
+	var vOpts = pAlbFra.fOpts;
 	pAlbFra.fCvs = scDynUiMgr.addElement("div",this.fDisplayRoot,vOpts.clsPre+"Cvs", null, {display:"none"});
 	pAlbFra.fCvs.setAttribute("role", "dialog");
-	if(pAlbFra.getAttribute("data-label")) pAlbFra.fCvs.setAttribute("aria-label", pAlbFra.getAttribute("data-label"));
 	pAlbFra.fOver = scDynUiMgr.addElement("div",pAlbFra.fCvs,vOpts.clsPre+"Over");
 	pAlbFra.fOver.fAlbFra = pAlbFra;
 	pAlbFra.fOver.onclick=function(){return scImageMgr.xClsSs(this.fAlbFra);}
 	pAlbFra.fFraRoot = scDynUiMgr.addElement("div",pAlbFra.fCvs,vOpts.clsPre+"Fra");
 	pAlbFra.fSsCo = scDynUiMgr.addElement("ul",pAlbFra.fFraRoot,vOpts.clsPre+"Co");
 	pAlbFra.fSsImgFras = [];
-	for(let i=0; i<pAlbFra.fAncs.length; i++) {
+	for(var i=0; i<pAlbFra.fAncs.length; i++) {
 		pAlbFra.fSsImgFras[i] = scDynUiMgr.addElement("li",pAlbFra.fSsCo,vOpts.clsPre+"ImgFra", null, {visibility:"hidden"});
 		pAlbFra.fSsImgFras[i].fCo = scDynUiMgr.addElement("div",pAlbFra.fSsImgFras[i],vOpts.clsPre+"ImgCo");
 		pAlbFra.fSsImgFras[i].fImg = scDynUiMgr.addElement("img",pAlbFra.fSsImgFras[i].fCo,null);
@@ -1446,24 +1389,22 @@ scImageMgr.xInitSs = function(pAlbFra) {
 		pAlbFra.fSsImgFras[i].fImg.fAnc.fOpts = vOpts;
 		pAlbFra.fSsImgFras[i].fImg.fAnc.fImg = pAlbFra.fSsImgFras[i].fImg;
 		pAlbFra.fSsImgFras[i].fImg.onload = scImageMgr.sLoadSsImg;
-		const vResizer = {
-			onResizedDes: function (pOwnerNode, pEvent) {
-			},
-			onResizedAnc: function (pOwnerNode, pEvent) {
-				if (pEvent.phase === 1) {
-					if (scImageMgr.fCurrItem.fCurrAnc === pOwnerNode.fAnc) {
+		var vResizer = {
+			onResizedDes : function(pOwnerNode, pEvent) {},
+			onResizedAnc : function(pOwnerNode, pEvent) {
+				if(pEvent.phase==1) {
+					if(scImageMgr.fCurrItem.fCurrAnc == pOwnerNode.fAnc) {
 						scImageMgr.xRedrawSs(pOwnerNode.fAnc);
 					}
 				}
 			}
-		};
+		}
 		scSiLib.addRule(pAlbFra.fSsImgFras[i].fImg, vResizer);
 	}
 	pAlbFra.fSsTbr = scDynUiMgr.addElement("div",pAlbFra.fFraRoot,vOpts.clsPre+"Tbr");
 	pAlbFra.fSsTi = scDynUiMgr.addElement("div",pAlbFra.fSsTbr,vOpts.clsPre+"Ti");
 	pAlbFra.fSsTi.setAttribute("aria-live", "polite");
-	pAlbFra.fSsTi.setAttribute("aria-atomic", "true");
-	const vBtns = scDynUiMgr.addElement("div", pAlbFra.fSsTbr, vOpts.clsPre + "Btns");
+	var vBtns = scDynUiMgr.addElement("div",pAlbFra.fSsTbr,vOpts.clsPre+"Btns");
 	scImageMgr.xAddSep(vBtns);
 	if (pAlbFra.fAncs.length>1){
 		pAlbFra.fSsBtnPrv = scImageMgr.xAddBtn(vBtns,pAlbFra,this.fTypGal,"BtnPrv",scImageMgr.xGetStr(0),scImageMgr.xGetStr(1));
@@ -1477,27 +1418,15 @@ scImageMgr.xInitSs = function(pAlbFra) {
 	}
 	pAlbFra.fSsBtnCls = scImageMgr.xAddBtn((this.xMobileCheck() ? vBtns : pAlbFra.fCvs),pAlbFra,this.fTypGal,"BtnCls",scImageMgr.xGetStr(4),scImageMgr.xGetStr(5));
 	pAlbFra.fSsCount = scDynUiMgr.addElement("span",pAlbFra.fSsTbr,vOpts.clsPre+"Count")
-	const vFocuserStart = scDynUiMgr.addElement("a",pAlbFra.fOver);
-	vFocuserStart.setAttribute("href", "#");
-	vFocuserStart.onfocus = function () {
-		scPaLib.findNodes("des:a", pAlbFra.fFraRoot).at(-1).focus();
-	}
-	const vFocuserEnd = scDynUiMgr.addElement("a",pAlbFra.fCvs);
-	vFocuserEnd.setAttribute("href", "#");
-	vFocuserEnd.onfocus = function () {
-		scPaLib.findNodes("des:a", pAlbFra.fFraRoot).at(0).focus();
-	}
 }
 scImageMgr.xSsStart = function(pAlbFra) {
 	scImageMgr.xOpenSs(pAlbFra,pAlbFra.fAncs[0]);
 	scImageMgr.xPlySs(pAlbFra);
 }
 scImageMgr.xOpenSs = function(pAlbFra,pAnc) {
-	if(this.xReadStyle(pAlbFra.fCvs,"position") === "absolute") window.scroll(0,0); // if position:absolute, we must scroll the SS into view.
+	if(this.xReadStyle(pAlbFra.fCvs,"position") == "absolute") window.scroll(0,0); // if position:absolute, we must scroll the SS into view.
 	document.body.classList.add("noScroll");
-	scImageMgr.fadeInTask.initTask(pAlbFra, function(){
-		scImageMgr.xFocus(pAlbFra.fSsBtnPly);
-	});
+	scImageMgr.fadeInTask.initTask(pAlbFra);
 	scTiLib.addTaskNow(scImageMgr.fadeInTask);
 	scImageMgr.xUdtSs(pAlbFra,pAnc);
 	scImageMgr.fCurrItem = pAlbFra;
@@ -1506,16 +1435,17 @@ scImageMgr.xOpenSs = function(pAlbFra,pAnc) {
 	document.onkeyup = scImageMgr.xKeyMgr;
 	this.xNotifyListeners("onAnimationOpen", pAlbFra);
 	this.xNotifyListeners("onOverlayOpen", pAlbFra);
-	this.xToggleFocusables(true);
+	this.xToggleFocusables();
+	this.xFocus(pAlbFra.fSsBtnPly);
 }
 scImageMgr.xUdtSs = function(pAlbFra,pNewAnc) {
 	document.body.classList.add("imgLoading");
 	pAlbFra.fCurrAnc = pNewAnc;
 	if(!pAlbFra.fSsImgFras[pNewAnc.fIdx].fImg.src) pAlbFra.fSsImgFras[pNewAnc.fIdx].fImg.setAttribute("src", pNewAnc.fSsUri);
 	else scImageMgr.xRedrawSs(pNewAnc);
-	const vOpts = pAlbFra.fOpts;
-	pAlbFra.fSsHasPrv = pNewAnc.fIdx !== 0;
-	pAlbFra.fSsHasNxt = pNewAnc.fIdx !== pAlbFra.fAncs.length - 1;
+	var vOpts = pAlbFra.fOpts;
+	pAlbFra.fSsHasPrv = pNewAnc.fIdx != 0;
+	pAlbFra.fSsHasNxt = pNewAnc.fIdx != pAlbFra.fAncs.length - 1;
 	if (pAlbFra.fSsHasNxt){
 		pAlbFra.fNxtSsAnc = pAlbFra.fAncs[Math.min(pNewAnc.fIdx + 1,pAlbFra.fAncs.length - 1)];
 		if(!pAlbFra.fSsImgFras[pAlbFra.fNxtSsAnc.fIdx].fImg.src) pAlbFra.fSsImgFras[pAlbFra.fNxtSsAnc.fIdx].fImg.setAttribute("src", pAlbFra.fNxtSsAnc.fSsUri);
@@ -1559,7 +1489,7 @@ scImageMgr.xClsSs = function(pAlbFra) {
 	document.onkeyup = pAlbFra.fKeyUpOld;
 	pAlbFra.fSsAutoPly = false;
 	scImageMgr.fCurrItem = null;
-	scImageMgr.xToggleFocusables(false);
+	scImageMgr.xToggleFocusables();
 	scImageMgr.xFocus(pAlbFra.fInitAnc);
 	document.body.classList.remove("noScroll");
 	scImageMgr.xResizeThumbsSs(pAlbFra);
@@ -1569,7 +1499,6 @@ scImageMgr.xPlySs = function(pAlbFra) {
 	pAlbFra.fSsAutoPly = true;
 	pAlbFra.fSsBtnPly.style.display="none";
 	pAlbFra.fSsBtnPse.style.display="";
-	pAlbFra.fSsTi.setAttribute("aria-live", "off");
 	scImageMgr.xFocus(pAlbFra.fSsBtnPse);
 	if (! scImageMgr.xNxtSs(pAlbFra)) scImageMgr.xUdtSs(pAlbFra,pAlbFra.fAncs[0]);
 	pAlbFra.fNxtSsProc = window.setTimeout(scImageMgr.xAutoSs, pAlbFra.fSsStep);
@@ -1579,13 +1508,12 @@ scImageMgr.xPseSs = function(pAlbFra) {
 	pAlbFra.fSsAutoPly = false;
 	pAlbFra.fSsBtnPly.style.display="";
 	pAlbFra.fSsBtnPse.style.display="none";
-	pAlbFra.fSsTi.setAttribute("aria-live", "polite");
 	scImageMgr.xFocus(pAlbFra.fSsBtnPly);
 	window.clearTimeout(pAlbFra.fNxtSsProc);
 //	pAlbFra.fNxtSsProc = -1;
 }
 scImageMgr.sLoadSsImg = function() {
-	const vAnc = this.fAnc;
+	var vAnc = this.fAnc;
 	vAnc.fDefHeight = this.height;
 	vAnc.fDefWidth = this.width;
 	vAnc.fRatio = vAnc.fDefWidth/vAnc.fDefHeight;
@@ -1599,36 +1527,46 @@ scImageMgr.sLoadSsImg = function() {
 }
 scImageMgr.xRedrawSs = function(pAnc) {
 	try {
-		if (pAnc.fOpts.type === "iframe") return;
-		const vImg = pAnc.fImg;
-		if (!vImg.complete || typeof vImg.naturalWidth != "undefined" && vImg.naturalWidth === 0) return scImageMgr.xRedrawSs(pAnc);
-		const vCoHeight = pAnc.fCvs.clientHeight - pAnc.fDeltaHeight - (scImageMgr.xMobileCheck() ? 0 : scImageMgr.fDeltaGalleryTop);
-		const vCoWidth = pAnc.fCvs.clientWidth - pAnc.fDeltaWidth - (scImageMgr.xMobileCheck() ? 0 : scImageMgr.fDeltaGalleryLeft);
-		if (vCoHeight === 0 || vCoWidth === 0) return;
-		const vCoRatio = vCoWidth / vCoHeight;
-		const vFra = pAnc.fFra;
-		const vCo = pAnc.fCo;
+		if (pAnc.fOpts.type == "iframe") return;
+		var vImg = pAnc.fImg;
+		if (!vImg.complete || typeof vImg.naturalWidth != "undefined" && vImg.naturalWidth == 0) return scImageMgr.xRedrawSs(pAnc);
+		var vCoHeight = pAnc.fCvs.clientHeight - pAnc.fDeltaHeight - (scImageMgr.xMobileCheck() ? 0 : scImageMgr.fDeltaGalleryTop);
+		var vCoWidth = pAnc.fCvs.clientWidth - pAnc.fDeltaWidth - (scImageMgr.xMobileCheck() ? 0 : scImageMgr.fDeltaGalleryLeft);
+		if (vCoHeight == 0 || vCoWidth == 0) return;
+		var vCoRatio = vCoWidth/vCoHeight;
+		var vFra = pAnc.fFra;
+		var vCo = pAnc.fCo;
 
-		let vNewHeight = 0;
-		let vNewWidth = 0;
+		var vNewHeight = 0;
+		var vNewWidth = 0;
 		if (pAnc.fRatio <= vCoRatio && vCoHeight < pAnc.fDefHeight) vNewHeight = vCoHeight;
 		if (pAnc.fRatio >= vCoRatio && vCoWidth < pAnc.fDefWidth) vNewWidth = vCoWidth;
 		vImg.style.width = (vNewWidth>0 ? scCoLib.toInt(vNewWidth)+"px" : "auto");
 		vImg.style.height = (vNewHeight>0 ? scCoLib.toInt(vNewHeight)+"px" : "auto");
-		const vImgHeight = pAnc.fCurrHeight = scCoLib.toInt(vNewHeight > 0 ? vNewHeight : vNewWidth > 0 ? vNewWidth / pAnc.fRatio : pAnc.fDefHeight);
-		const vImgWidth = pAnc.fCurrWidth = scCoLib.toInt(vNewWidth > 0 ? vNewWidth : vNewHeight > 0 ? vNewHeight * pAnc.fRatio : pAnc.fDefWidth);
+		var vImgHeight = pAnc.fCurrHeight = scCoLib.toInt(vNewHeight > 0 ? vNewHeight : vNewWidth > 0 ? vNewWidth/pAnc.fRatio : pAnc.fDefHeight);
+		var vImgWidth = pAnc.fCurrWidth = scCoLib.toInt(vNewWidth > 0 ? vNewWidth : vNewHeight > 0 ? vNewHeight*pAnc.fRatio : pAnc.fDefWidth);
 		vCo.style.width = vImgWidth+"px";
 		vCo.style.height = vImgHeight+"px";
 		vCo.style.top="0" + pAnc.fDeltaTop + "px";
 		vCo.style.left="0" + pAnc.fDeltaWidth / 2 + "px";
+		// TODO mag - a voir
+		// if (pAnc.fOpts.mag){
+		// 	var vMag = vImg.fMag;
+		// 	vMag.fEnabled = vImgWidth < pAnc.fDefWidth;
+		// 	vMag.fWidth = scCoLib.toInt(vImgWidth * pAnc.fOpts.magScale);
+		// 	vMag.fHeight = scCoLib.toInt(vImgHeight * pAnc.fOpts.magScale);
+		// 	vMag.style.width = vMag.fWidth+"px";
+		// 	vMag.style.height = vMag.fHeight+"px";
+		// }
 		vFra.style.width = vImgWidth+"px";
 		vFra.style.height = vImgHeight+"px";
 		vFra.style.top = scCoLib.toInt((vCoHeight - vImgHeight) / 2 + (scImageMgr.xMobileCheck() ? 0 : scImageMgr.fDeltaGalleryTop) / 2) + "px";
 		vFra.style.left = scCoLib.toInt((vCoWidth - vImgWidth) / 2 + (scImageMgr.xMobileCheck() ? 0 : scImageMgr.fDeltaGalleryLeft) / 2) + "px";
 		document.body.classList.remove("imgLoading");
-		if (scImageMgr.fCurrItem) scImageMgr.xUpdateSsFraRoot(scImageMgr.fCurrItem, pAnc);
+		scImageMgr.xUpdateSsFraRoot(scImageMgr.fCurrItem, pAnc);
+
 	} catch(e){
-		console.error("scImageMgr.xRedrawSs::Error : "+e);
+		scCoLib.log("scImageMgr.xRedrawSs::Error : "+e);
 	}
 }
 scImageMgr.xUpdateSsFraRoot = function(pAlbFra, pAnc) {
@@ -1659,7 +1597,7 @@ scImageMgr.switchSsTask = {
 		this.fEndTime += 100;
 		if(this.fIdx >= this.fRateOld.length) {
 			if (this.fAlbFra.fCurrSsAnc) scImageMgr.xSetOpacity(this.fAlbFra.fSsImgFras[this.fAlbFra.fCurrSsAnc.fIdx],0);
-			if (this.fAlbFra.fCurrSsAnc && this.fAlbFra.fCurrSsAnc.fIdx !== this.fNewAnc.fIdx) this.fAlbFra.fSsImgFras[this.fAlbFra.fCurrSsAnc.fIdx].style.visibility = "hidden";
+			if (this.fAlbFra.fCurrSsAnc && this.fAlbFra.fCurrSsAnc.fIdx != this.fNewAnc.fIdx) this.fAlbFra.fSsImgFras[this.fAlbFra.fCurrSsAnc.fIdx].style.visibility = "hidden";
 			scImageMgr.xSetOpacity(this.fAlbFra.fSsImgFras[this.fNewAnc.fIdx],1);
 			this.fAlbFra.fCurrSsAnc = this.fNewAnc;
 			this.fIsRunning = false;
@@ -1701,7 +1639,6 @@ scImageMgr.fadeInTask = {
 		if(this.fIdx >= this.fRate.length) {
 			scImageMgr.xSetOpacity(this.fObj.fOver,scImageMgr.fOverAlpha);
 			scImageMgr.xSetOpacity(this.fObj.fCvs,1);
-			if (this.fEndFunc) this.fEndFunc();
 			return false;
 		}
 		scImageMgr.xSetOpacity(this.fObj.fOver, Math.min(this.fRate[this.fIdx], scImageMgr.fOverAlpha));
@@ -1712,9 +1649,8 @@ scImageMgr.fadeInTask = {
 		this.fIdx = this.fRate.length;
 		this.execTask();
 	},
-	initTask : function(pObj, pEndFunc){
+	initTask : function(pObj){
 		this.fObj = pObj;
-		this.fEndFunc = pEndFunc;
 		this.fEndTime = ( Date.now  ? Date.now() : new Date().getTime() ) + 100;
 		scImageMgr.xSetOpacity(this.fObj.fOver, .0);
 		scImageMgr.xSetOpacity(this.fObj.fCvs, .0);
@@ -1766,7 +1702,7 @@ scImageMgr.fadeOutTask = {
  * @param pInstant optionnal parameter if true no animation.
  */
 scImageMgr.FadeEltTask = function(pElt,pDir,pInstant){
-	this.fRate = [];
+	this.fRate = new Array();
 	this.fRate[0] = [.9, .85, .8, .7, .6, .5, .4, .3, .2, .15, .1];
 	this.fRate[1] = [.1, .15, .2, .3, .4, .5, .6, .7, .8, .85, .9];
 	try{
@@ -1785,7 +1721,7 @@ scImageMgr.FadeEltTask = function(pElt,pDir,pInstant){
 			this.fElt.fFadeTask = this;
 			scTiLib.addTaskNow(this);
 		}
-	}catch(e){console.error("ERROR scImageMgr.FadeEltTask: "+e);}
+	}catch(e){scCoLib.log("ERROR scImageMgr.FadeEltTask: "+e);}
 }
 scImageMgr.FadeEltTask.prototype.execTask = function(){
 	while(this.fEndTime < (Date.now ? Date.now() : new Date().getTime()) && this.fIdx < this.fRate[this.fDir].length) {
@@ -1803,8 +1739,8 @@ scImageMgr.FadeEltTask.prototype.execTask = function(){
 	return true;
 }
 scImageMgr.FadeEltTask.prototype.changeDir = function(pDir){
-	const vDir = (pDir >= 1 ? 1 : 0);
-	if (vDir !== this.fDir) this.fIdx = this.fRate[this.fDir].length - this.fIdx - 1;
+	var vDir = (pDir >= 1 ? 1 : 0)
+	if (vDir != this.fDir) this.fIdx = this.fRate[this.fDir].length - this.fIdx - 1;
 	this.fDir = vDir;
 }
 scImageMgr.FadeEltTask.prototype.terminate = function(){
@@ -1813,34 +1749,34 @@ scImageMgr.FadeEltTask.prototype.terminate = function(){
 }
 
 /* === Toolbox ============================================================== */
-/** scImageMgr.xReadStyle : cross-browser CSS rule reader */
+/** scImageMgr.xReadStyle : cross-browser css rule reader */
 scImageMgr.xReadStyle = function(pElt, pProp) {
 	try {
-		let vVal = null;
+		var vVal = null;
 		if (pElt.style[pProp]) {
 			vVal = pElt.style[pProp];
 		} else if (pElt.currentStyle) {
 			vVal = pElt.currentStyle[pProp];
 		} else {
-			const vDefaultView = pElt.ownerDocument.defaultView;
+			var vDefaultView = pElt.ownerDocument.defaultView;
 			if (vDefaultView && vDefaultView.getComputedStyle) {
-				const vStyle = vDefaultView.getComputedStyle(pElt, null);
-				const vProp = pProp.replace(/([A-Z])/g, "-$1").toLowerCase();
+				var vStyle = vDefaultView.getComputedStyle(pElt, null);
+				var vProp = pProp.replace(/([A-Z])/g,"-$1").toLowerCase();
 				if (vStyle[vProp]) return vStyle[vProp];
 				else vVal = vStyle.getPropertyValue(vProp);
 			}
 		}
-		return vVal;
+		return vVal.replace(/\"/g,""); //Opera returns certain values quoted (literal colors).
 	} catch (e) {
 		return null;
 	}
 }
 /** scImageMgr.xGetEltTop. */
 scImageMgr.xGetEltTop = function(pElt, pRoot) {
-	let vY;
-	const vRoot = pRoot || null;
+	var vY;
+	var vRoot = pRoot || null;
 	vY = scCoLib.toInt(pElt.offsetTop);
-	if (pElt.offsetParent !== vRoot && pElt.offsetParent.tagName.toLowerCase() !== 'body' && pElt.offsetParent.tagName.toLowerCase() !== 'html') {
+	if (pElt.offsetParent != vRoot && pElt.offsetParent.tagName.toLowerCase() != 'body' && pElt.offsetParent.tagName.toLowerCase() != 'html') {
 		vY -= pElt.offsetParent.scrollTop;
 		vY += this.xGetEltTop(pElt.offsetParent, vRoot);
 	}
@@ -1848,10 +1784,10 @@ scImageMgr.xGetEltTop = function(pElt, pRoot) {
 }
 /** scImageMgr.xGetEltLeft. */
 scImageMgr.xGetEltLeft = function(pElt, pRoot) {
-	let vX;
-	const vRoot = pRoot || null;
+	var vX;
+	var vRoot = pRoot || null;
 	vX = scCoLib.toInt(pElt.offsetLeft);
-	if (pElt.offsetParent !== vRoot && pElt.offsetParent.tagName.toLowerCase() !== 'body' && pElt.offsetParent.tagName.toLowerCase() !== 'html') {
+	if (pElt.offsetParent != vRoot && pElt.offsetParent.tagName.toLowerCase() != 'body' && pElt.offsetParent.tagName.toLowerCase() != 'html') {
 		vX -= pElt.offsetParent.scrollLeft;
 		vX += this.xGetEltLeft(pElt.offsetParent, vRoot);
 	}
@@ -1905,23 +1841,23 @@ scImageMgr.xClientWidth = function() {
 }
 /** scImageMgr.xNotifyListeners - calls all the listeners of a given type. */
 scImageMgr.xNotifyListeners = function(pType,pRes) {
-	const vListener = scImageMgr.fListeners[pType];
-	for(let i=0; i<vListener.length; i++) {
+	var vListener = scImageMgr.fListeners[pType];
+	for(var i=0; i<vListener.length; i++) {
 		try {
 			vListener[i](pRes);
-		} catch(e) {console.error("ERROR scImageMgr.xNotifyListeners: "+e);}
+		} catch(e) {scCoLib.log("ERROR scImageMgr.xNotifyListeners: "+e);}
 	}
 }
 /** scImageMgr.xAddSep : Add a simple textual separator : " | ". */
 scImageMgr.xAddSep = function(pParent){
-	const vSep = document.createElement("span");
+	var vSep = document.createElement("span");
 	vSep.className = "scImgSep";
 	vSep.innerHTML = " | "
 	pParent.appendChild(vSep);
 }
 /** scImageMgr.xAddBtn : Add a HTML button to a parent node. */
 scImageMgr.xAddBtn = function(pParent,pObj,pType,pName,pCapt,pTitle,pNoCmd){
-	const vBtn = scDynUiMgr.addElement("a", pParent, pObj.fOpts.clsPre + pName);
+	var vBtn = scDynUiMgr.addElement("a", pParent, pObj.fOpts.clsPre+pName);
 	vBtn.fName = pType+pName;
 	vBtn.href = "#";
 	vBtn.target = "_self";
@@ -1937,48 +1873,52 @@ scImageMgr.xAddBtn = function(pParent,pObj,pType,pName,pCapt,pTitle,pNoCmd){
 	pParent.appendChild(vBtn);
 	return vBtn;
 }
-/** scImageMgr.xToggleFocusables : */
-scImageMgr.xToggleFocusables = function(pState) {
-	let vElt;
-	let i;
+/** scImageMgr.xTogglePageFocus : */
+scImageMgr.xToggleFocusables = function() {
 	if (!this.fFocus) return;
-	const vFocusables = scPaLib.findNodes(this.fPathFocusables, this.fSourceRoot);
-	if (!pState){
-		for (i = 0; i<vFocusables.length; i++){
-			vElt = vFocusables[i];
+	if (this.fFocusablesDisabled && this.fFocusables){
+		for (var i=0; i<this.fFocusables.length; i++){
+			var vElt = this.fFocusables[i];
 			vElt.setAttribute("tabindex", vElt.fscImageMgrTabIndex || "");
 			vElt.fscImageMgrTabIndex = null;
 		}
-		if (this.fPgeFra) this.fPgeFra.removeAttribute("inert");
+		this.fFocusablesDisabled = false;
 	} else {
-		for (i = 0; i<vFocusables.length; i++){
-			vElt = vFocusables[i];
+		this.fFocusables = scPaLib.findNodes(this.fPathFocusables, this.fSourceRoot);
+		for (var i=0; i<this.fFocusables.length; i++){
+			var vElt = this.fFocusables[i];
 			if (this.fCurrItem && !this.xIsEltContainedByNode(vElt,this.fCurrItem.fCvs)) {
 				vElt.fscImageMgrTabIndex = vElt.getAttribute("tabindex");
 				vElt.setAttribute("tabindex", "-1");
 			}
 		}
-		if (this.fPgeFra) this.fPgeFra.setAttribute("inert", "true");
+		this.fFocusablesDisabled = true;
 	}
 }
 /** scImageMgr.xFocus : */
 scImageMgr.xFocus = function(pNode) {
-	if (this.fFocus && pNode) try{pNode.focus();}catch(e){}
+	if (this.fFocus && pNode) try{pNode.focus();}catch(e){};
+}
+/** imgZoomMgr.xGetEvt : cross-browser event retreiver */
+scImageMgr.xGetEvt = function(pEvt) {
+	var vEvt = pEvt || window.event;
+	if (vEvt.srcElement && !vEvt.target) vEvt.target = vEvt.srcElement;
+	return(vEvt);
 }
 /** scImageMgr.xIsVisible : */
 scImageMgr.xIsVisible = function(pNode) {
-	const vAncs = scPaLib.findNodes("anc:", pNode);
-	for(let i=0; i<vAncs.length; i++) if (vAncs[i].nodeType === 1 && scImageMgr.xReadStyle(vAncs[i],"display") === "none") return false;
+	var vAncs = scPaLib.findNodes("anc:", pNode);
+	for(var i=0; i<vAncs.length; i++) if (vAncs[i].nodeType == 1 && scImageMgr.xReadStyle(vAncs[i],"display") == "none") return false;
 	return true;
 }
 /** scImageMgr.xIsEltContainedByNode : */
 scImageMgr.xIsEltContainedByNode = function(pElt, pContainer) {
-	let vElt = pElt;
-	let vFound = false;
+	var vElt = pElt;
+	var vFound = false;
 	if (vElt) {
 		while (vElt.parentNode && !vFound) {
 			vElt = vElt.parentNode;
-			vFound = vElt === pContainer;
+			vFound = vElt == pContainer;
 		}
 	}
 	return(vFound);
@@ -1989,17 +1929,15 @@ scImageMgr.xGetStr = function(pStrId) {
 }
 /** scImageMgr.xSwitchClass : Replace a CSS class. */
 scImageMgr.xSwitchClass = function(pNode, pClassOld, pClassNew) {
-	if (pClassOld && pClassOld !== '') {
-		const vCurrentClasses = pNode.className.split(' ');
-		const vNewClasses = [];
-		let vClassFound = false;
-		let i = 0;
-		const n = vCurrentClasses.length;
-		for(; i<n; i++) {
-			if (vCurrentClasses[i] !== pClassOld) {
+	if (pClassOld && pClassOld != '') {
+		var vCurrentClasses = pNode.className.split(' ');
+		var vNewClasses = new Array();
+		var vClassFound = false;
+		for(var i=0, n=vCurrentClasses.length; i<n; i++) {
+			if (vCurrentClasses[i] != pClassOld) {
 				vNewClasses.push(vCurrentClasses[i]);
 			} else {
-				if (pClassNew && pClassNew !== '') vNewClasses.push(pClassNew);
+				if (pClassNew && pClassNew != '') vNewClasses.push(pClassNew);
 				vClassFound = true;
 			}
 		}
@@ -2007,8 +1945,8 @@ scImageMgr.xSwitchClass = function(pNode, pClassOld, pClassNew) {
 	}
 }
 /** Set the opacity of a given node.
- * @param pNode node à modifier
- * @param pRate Variable de 0 à 1. */
+ * @param pRate Variable de 0 à 1.
+ */
 scImageMgr.xSetOpacity = function(pNode, pRate){
 	if(!this.fNavie8) pNode.style.opacity = pRate;
 	else pNode.style.filter = "progid:DXImageTransform.Microsoft.Alpha(opacity="+pRate*100+")";
@@ -2016,29 +1954,27 @@ scImageMgr.xSetOpacity = function(pNode, pRate){
 /** Start the opacity of a given node.
  * On ajoute le filtre d'opacité sur IE.
  * On place le node en visibility: "".
- * @param pNode node à modifier
  * @param pRate 2 valeurs possibles: 0 (invisible) ou 1 (visible).
  */
 scImageMgr.xStartOpacityEffect = function(pNode, pRate){
 	if(!this.fNavie8) pNode.style.opacity = pRate;
-	else pNode.style.filter = pRate===1 ? "progid:DXImageTransform.Microsoft.Alpha(opacity=100)" : "progid:DXImageTransform.Microsoft.Alpha(opacity=0)";
+	else pNode.style.filter = pRate==1 ? "progid:DXImageTransform.Microsoft.Alpha(opacity=100)" : "progid:DXImageTransform.Microsoft.Alpha(opacity=0)";
 	pNode.style.visibility = "";
 }
 /** End the opacity of a given node.
  * On supprime le filtre d'opacité sur IE (évite des bugs de refresh).
  * On place le node en visibility: hidden.
- * @param pNode node à modifier
  * @param pRate 2 valeurs possibles: 0 (invisible) ou 1 (visible).
  */
 scImageMgr.xEndOpacityEffect = function(pNode, pRate){
-	if(!this.fNavie8) pNode.style.opacity = pRate;
-	else pNode.style.removeAttribute("filter");
-	if(pRate === 0) pNode.style.visibility = "hidden";
+		if(!this.fNavie8) pNode.style.opacity = pRate;
+		else pNode.style.removeAttribute("filter");
+	if(pRate == 0) pNode.style.visibility = "hidden";
 	else pNode.style.visibility = "";
 }
 scImageMgr.xMobileCheck = function() {
-	let check = false;
-	(function(a){if(/(android|bb\d+|meego).+mobile|avantgo|bada\/|blackberry|blazer|compal|elaine|fennec|hiptop|iemobile|ip(hone|od)|iris|kindle|lge |maemo|midp|mmp|mobile.+firefox|netfront|opera m(ob|in)i|palm( os)?|phone|p(ixi|re)\/|plucker|pocket|psp|series([46])0|symbian|treo|up\.(browser|link)|vodafone|wap|windows ce|xda|xiino/i.test(a)||/1207|6310|6590|3gso|4thp|50[1-6]i|770s|802s|a wa|abac|ac(er|oo|s-)|ai(ko|rn)|al(av|ca|co)|amoi|an(ex|ny|yw)|aptu|ar(ch|go)|as(te|us)|attw|au(di|-m|r |s )|avan|be(ck|ll|nq)|bi(lb|rd)|bl(ac|az)|br([ev])w|bumb|bw-([nu])|c55\/|capi|ccwa|cdm-|cell|chtm|cldc|cmd-|co(mp|nd)|craw|da(it|ll|ng)|dbte|dc-s|devi|dica|dmob|do([cp])o|ds(12|-d)|el(49|ai)|em(l2|ul)|er(ic|k0)|esl8|ez([4-7]0|os|wa|ze)|fetc|fly([-_])|g1 u|g560|gene|gf-5|g-mo|go(\.w|od)|gr(ad|un)|haie|hcit|hd-([mpt])|hei-|hi(pt|ta)|hp( i|ip)|hs-c|ht(c([- _agpst])|tp)|hu(aw|tc)|i-(20|go|ma)|i230|iac([ \-\/])|ibro|idea|ig01|ikom|im1k|inno|ipaq|iris|ja([tv])a|jbro|jemu|jigs|kddi|keji|kgt([ \/])|klon|kpt |kwc-|kyo([ck])|le(no|xi)|lg( g|\/([klu])|50|54|-[a-w])|libw|lynx|m1-w|m3ga|m50\/|ma(te|ui|xo)|mc(01|21|ca)|m-cr|me(rc|ri)|mi(o8|oa|ts)|mmef|mo(01|02|bi|de|do|t([- ov])|zz)|mt(50|p1|v )|mwbp|mywa|n10[0-2]|n20[2-3]|n30([02])|n50([025])|n7(0([01])|10)|ne(([cm])-|on|tf|wf|wg|wt)|nok([6i])|nzph|o2im|op(ti|wv)|oran|owg1|p800|pan([adt])|pdxg|pg(13|-([1-8]|c))|phil|pire|pl(ay|uc)|pn-2|po(ck|rt|se)|prox|psio|pt-g|qa-a|qc(07|12|21|32|60|-[2-7]|i-)|qtek|r380|r600|raks|rim9|ro(ve|zo)|s55\/|sa(ge|ma|mm|ms|ny|va)|sc(01|h-|oo|p-)|sdk\/|se(c([-01])|47|mc|nd|ri)|sgh-|shar|sie([-m])|sk-0|sl(45|id)|sm(al|ar|b3|it|t5)|so(ft|ny)|sp(01|h-|v-|v )|sy(01|mb)|t2(18|50)|t6(00|10|18)|ta(gt|lk)|tcl-|tdg-|tel([im])|tim-|t-mo|to(pl|sh)|ts(70|m-|m3|m5)|tx-9|up(\.b|g1|si)|utst|v400|v750|veri|vi(rg|te)|vk(40|5[0-3]|-v)|vm40|voda|vulc|vx(52|53|60|61|70|80|81|83|85|98)|w3c([- ])|webc|whit|wi(g |nc|nw)|wmlb|wonu|x700|yas-|your|zeto|zte-/i.test(a.substr(0,4))) check = true;})(navigator.userAgent||navigator.vendor||window.opera);
+	var check = false;
+	(function(a){if(/(android|bb\d+|meego).+mobile|avantgo|bada\/|blackberry|blazer|compal|elaine|fennec|hiptop|iemobile|ip(hone|od)|iris|kindle|lge |maemo|midp|mmp|mobile.+firefox|netfront|opera m(ob|in)i|palm( os)?|phone|p(ixi|re)\/|plucker|pocket|psp|series(4|6)0|symbian|treo|up\.(browser|link)|vodafone|wap|windows ce|xda|xiino/i.test(a)||/1207|6310|6590|3gso|4thp|50[1-6]i|770s|802s|a wa|abac|ac(er|oo|s\-)|ai(ko|rn)|al(av|ca|co)|amoi|an(ex|ny|yw)|aptu|ar(ch|go)|as(te|us)|attw|au(di|\-m|r |s )|avan|be(ck|ll|nq)|bi(lb|rd)|bl(ac|az)|br(e|v)w|bumb|bw\-(n|u)|c55\/|capi|ccwa|cdm\-|cell|chtm|cldc|cmd\-|co(mp|nd)|craw|da(it|ll|ng)|dbte|dc\-s|devi|dica|dmob|do(c|p)o|ds(12|\-d)|el(49|ai)|em(l2|ul)|er(ic|k0)|esl8|ez([4-7]0|os|wa|ze)|fetc|fly(\-|_)|g1 u|g560|gene|gf\-5|g\-mo|go(\.w|od)|gr(ad|un)|haie|hcit|hd\-(m|p|t)|hei\-|hi(pt|ta)|hp( i|ip)|hs\-c|ht(c(\-| |_|a|g|p|s|t)|tp)|hu(aw|tc)|i\-(20|go|ma)|i230|iac( |\-|\/)|ibro|idea|ig01|ikom|im1k|inno|ipaq|iris|ja(t|v)a|jbro|jemu|jigs|kddi|keji|kgt( |\/)|klon|kpt |kwc\-|kyo(c|k)|le(no|xi)|lg( g|\/(k|l|u)|50|54|\-[a-w])|libw|lynx|m1\-w|m3ga|m50\/|ma(te|ui|xo)|mc(01|21|ca)|m\-cr|me(rc|ri)|mi(o8|oa|ts)|mmef|mo(01|02|bi|de|do|t(\-| |o|v)|zz)|mt(50|p1|v )|mwbp|mywa|n10[0-2]|n20[2-3]|n30(0|2)|n50(0|2|5)|n7(0(0|1)|10)|ne((c|m)\-|on|tf|wf|wg|wt)|nok(6|i)|nzph|o2im|op(ti|wv)|oran|owg1|p800|pan(a|d|t)|pdxg|pg(13|\-([1-8]|c))|phil|pire|pl(ay|uc)|pn\-2|po(ck|rt|se)|prox|psio|pt\-g|qa\-a|qc(07|12|21|32|60|\-[2-7]|i\-)|qtek|r380|r600|raks|rim9|ro(ve|zo)|s55\/|sa(ge|ma|mm|ms|ny|va)|sc(01|h\-|oo|p\-)|sdk\/|se(c(\-|0|1)|47|mc|nd|ri)|sgh\-|shar|sie(\-|m)|sk\-0|sl(45|id)|sm(al|ar|b3|it|t5)|so(ft|ny)|sp(01|h\-|v\-|v )|sy(01|mb)|t2(18|50)|t6(00|10|18)|ta(gt|lk)|tcl\-|tdg\-|tel(i|m)|tim\-|t\-mo|to(pl|sh)|ts(70|m\-|m3|m5)|tx\-9|up(\.b|g1|si)|utst|v400|v750|veri|vi(rg|te)|vk(40|5[0-3]|\-v)|vm40|voda|vulc|vx(52|53|60|61|70|80|81|83|85|98)|w3c(\-| )|webc|whit|wi(g |nc|nw)|wmlb|wonu|x700|yas\-|your|zeto|zte\-/i.test(a.substr(0,4))) check = true;})(navigator.userAgent||navigator.vendor||window.opera);
 	return check;
-};
+  };
 scImageMgr.loadSortKey = "ZZZ";

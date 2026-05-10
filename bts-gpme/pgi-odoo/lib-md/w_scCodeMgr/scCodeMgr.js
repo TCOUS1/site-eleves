@@ -1,5 +1,43 @@
+/**
+ * LICENCE[[
+ * Version: MPL 2.0/GPL 3.0/LGPL 3.0/CeCILL 2.1
+ *
+ * The contents of this file are subject to the Mozilla Public License Version
+ * 2.0 (the "License"); you may not use this file except in compliance with
+ * the License. You may obtain a copy of the License at http://www.mozilla.org/MPL/
+ *
+ * Software distributed under the License is distributed on an "AS IS" basis,
+ * WITHOUT WARRANTY OF ANY KIND, either express or implied. See the License
+ * for the specific language governing rights and limitations under the
+ * License.
+ *
+ * The Original Code is kelis.fr code.
+ *
+ * The Initial Developer of the Original Code is 
+ * samuel.monsarrat@kelis.fr
+ *
+ * Portions created by the Initial Developer are Copyright (C) 2013-2017
+ * the Initial Developer. All Rights Reserved.
+ *
+ * Contributor(s):
+ *
+ * Alternatively, the contents of this file may be used under the terms of
+ * either of the GNU General Public License Version 3.0 or later (the "GPL"),
+ * or the GNU Lesser General Public License Version 3.0 or later (the "LGPL"),
+ * or the CeCILL Licence Version 2.1 (http://www.cecill.info),
+ * in which case the provisions of the GPL, the LGPL or the CeCILL are applicable
+ * instead of those above. If you wish to allow use of your version of this file
+ * only under the terms of either the GPL, the LGPL or the CeCILL, and not to allow
+ * others to use your version of this file under the terms of the MPL, indicate
+ * your decision by deleting the provisions above and replace them with the notice
+ * and other provisions required by the GPL, the LGPL or the CeCILL. If you do not
+ * delete the provisions above, a recipient may use your version of this file under
+ * the terms of any one of the MPL, the GPL, the LGPL or the CeCILL.
+ * ]]LICENCE
+ */
+
 /* === SCENARI code block manager ======================================== */
-window.scCodeMgr	 = {
+var scCodeMgr	 = {
 	fPathCode : [],
 	fCodes : null,
 	fCurrItem : null,
@@ -31,7 +69,7 @@ scCodeMgr.init = function() {
  *           clsPre : préfix de classe CSS
  */
 scCodeMgr.registerCode = function(pPathCode, pOpts) {
-	const vCode = {};
+	var vCode = new Object;
 	vCode.fPath = pPathCode;
 	vCode.fOpts = (typeof pOpts == "undefined" ? {toolbar:1,pathCode:"chi:div",pathRaw:"chi:pre",clsPre:this.fTypCode} : pOpts);
 	vCode.fOpts.toolbar = (typeof vCode.fOpts.toolbar == "undefined" ? 1 : vCode.fOpts.toolbar);
@@ -67,7 +105,7 @@ scCodeMgr.onLoad = function() {
 /* === Global managers ====================================================== */
 /** scCodeMgr.xBtnMgr - centralized button manager */
 scCodeMgr.xBtnMgr = function(pBtn) {
-	const vObj = pBtn.fObj;
+	var vObj = pBtn.fObj;
 	switch(pBtn.fName){
 		case this.fTypCode+"BtnLineNums":
 			scCodeMgr.xTgleLineNums(vObj);break;
@@ -84,48 +122,53 @@ scCodeMgr.xBtnMgr = function(pBtn) {
 
 /* === Code block manager ==================================================== */
 scCodeMgr.xInitCodes = function(pCo) {
-	for(let i=0; i<this.fPathCode.length; i++) {
-		const vCodes = scPaLib.findNodes(this.fPathCode[i].fPath, pCo);
-		for(let j=0; j<vCodes.length; j++) this.xInitCode(vCodes[j],this.fPathCode[i].fOpts);
+	for(var i=0; i<this.fPathCode.length; i++) {
+		var vCodes = scPaLib.findNodes(this.fPathCode[i].fPath, pCo);
+		for(var j=0; j<vCodes.length; j++) this.xInitCode(vCodes[j],this.fPathCode[i].fOpts);
 	}
 }
 scCodeMgr.xInitCode = function(pCode,pOpts) {
 	try {
-		pCode.fCode = scPaLib.findNode(pOpts.pathCode, pCode);
-		if (!pCode.fCode) return;
-		pCode.fClass = pCode.className;
-		pCode.fCode.className = pCode.fClass + " " + pOpts.clsPre + "Code";
-		pCode.fOpts = pOpts;
-		pCode.fLang = pCode.fCode.firstChild.getAttribute("data-lang");
-		pCode.fIsPlain = pCode.fLang === "text/plain";
-		pCode.fRaw = scPaLib.findNode(pOpts.pathRaw, pCode);
-		if (pCode.fRaw) {
-			pCode.fRaw.className = pCode.fRaw.className + " " + pOpts.clsPre + "Raw";
-			pCode.fRawInvisible = true;
-		}
-		if (pOpts.toolbar > 0) {
-			pCode.fCtrl = scDynUiMgr.addElement("div", pCode, pOpts.clsPre + "Ctrl noIndex", pCode.firstChild);
-			var vNumLines = scPaLib.findNodes(this.fLineNumPath, pCode.fCode).length;
-			if (vNumLines && !pCode.fIsPlain) {
-				pCode.fBtnLineNums = this.xAddBtn(pCode.fCtrl, pCode, this.fTypCode, "BtnLineNums", this.xGetStr(0), this.xGetStr(1));
-				scCodeMgr.xAddSep(pCode.fCtrl, pCode);
+//		if (this.xIsVisible(pCode)){
+		if (true){
+			pCode.fCode = scPaLib.findNode(pOpts.pathCode,pCode);
+			if (!pCode.fCode) return;
+			pCode.fClass = pCode.className;
+			pCode.fCode.className = pCode.fClass + " " + pOpts.clsPre+"Code";
+			pCode.fOpts = pOpts;
+			pCode.fLang = pCode.fCode.firstChild.getAttribute("data-lang");
+			pCode.fIsPlain = pCode.fLang == "text/plain";
+			pCode.fRaw = scPaLib.findNode(pOpts.pathRaw,pCode);
+			if (pCode.fRaw){
+				pCode.fRaw.className = pCode.fRaw.className + " " + pOpts.clsPre+"Raw";
+				pCode.fRawInvisible = true;
 			}
-			pCode.fBtnWrap = this.xAddBtn(pCode.fCtrl, pCode, this.fTypCode, "BtnWrap", this.xGetStr(6), this.xGetStr(7));
-			scCodeMgr.xAddSep(pCode.fCtrl, pCode);
-			pCode.fWrapOn = false;
-			if (pCode.fRaw) {
-				pCode.fBtnRaw = this.xAddBtn(pCode.fCtrl, pCode, this.fTypCode, "BtnRaw", this.xGetStr(pCode.fIsPlain ? 0 : 2), this.xGetStr(pCode.fIsPlain ? 1 : 3));
-				scCodeMgr.xAddSep(pCode.fCtrl, pCode);
-				pCode.fBtnCopy = this.xAddBtn(pCode.fCtrl, pCode, this.fTypCode, "BtnCopy", this.xGetStr(4), this.xGetStr(5));
-				scCodeMgr.xAddSep(pCode.fCtrl, pCode);
-				pCode.fCopyMsg = scDynUiMgr.addElement("div", pCode, pOpts.clsPre + "CopyMsg " + pOpts.clsPre + "Hidden noIndex", pCode.fCtrl.nextSibling);
-				pCode.fCopyMsg.innerHTML = "<span>" + this.xGetStr(8) + "</span>";
+			
+			if (pOpts.toolbar > 0){
+				pCode.fCtrl = scDynUiMgr.addElement("div",pCode,pOpts.clsPre + "Ctrl noIndex",pCode.firstChild);
+				var vNumLines = scPaLib.findNodes(this.fLineNumPath, pCode.fCode).length;
+				if (vNumLines && !pCode.fIsPlain){
+					pCode.fBtnLineNums = this.xAddBtn(pCode.fCtrl,pCode,this.fTypCode,"BtnLineNums",this.xGetStr(0),this.xGetStr(1));
+					scCodeMgr.xAddSep(pCode.fCtrl,pCode);
+				}
+				pCode.fBtnWrap = this.xAddBtn(pCode.fCtrl,pCode,this.fTypCode,"BtnWrap",this.xGetStr(6),this.xGetStr(7));
+				scCodeMgr.xAddSep(pCode.fCtrl,pCode);
+				pCode.fWrapOn = false;
+				if (pCode.fRaw){
+					pCode.fBtnRaw = this.xAddBtn(pCode.fCtrl,pCode,this.fTypCode,"BtnRaw",this.xGetStr(pCode.fIsPlain?0:2),this.xGetStr(pCode.fIsPlain?1:3));
+					scCodeMgr.xAddSep(pCode.fCtrl,pCode);
+					pCode.fBtnCopy = this.xAddBtn(pCode.fCtrl,pCode,this.fTypCode,"BtnCopy",this.xGetStr(4),this.xGetStr(5));
+					scCodeMgr.xAddSep(pCode.fCtrl,pCode);
+					pCode.fCopyMsg = scDynUiMgr.addElement("div",pCode,pOpts.clsPre + "CopyMsg "+pOpts.clsPre+"Hidden noIndex",pCode.fCtrl.nextSibling);
+					pCode.fCopyMsg.innerHTML = "<span>"+this.xGetStr(8)+"</span>";
+				}
 			}
+			pCode.className = pCode.fClass + " " + pOpts.clsPre+"Raw-invisible " + pOpts.clsPre+"Wrap-off " + pOpts.clsPre+"Active" + (vNumLines? " " + pOpts.clsPre+"LineNums-visible" : "") + (pCode.fIsPlain? " " + pOpts.clsPre+"Plain" : "");
+			//if (vNumLines==1) scCodeMgr.xTgleLineNums(pCode);
+			if (pCode.fRaw) pCode.fRaw.style.display="";
 		}
-		pCode.className = pCode.fClass + " " + pOpts.clsPre + "Raw-invisible " + pOpts.clsPre + "Wrap-off " + pOpts.clsPre + "Active" + (vNumLines ? " " + pOpts.clsPre + "LineNums-visible" : "") + (pCode.fIsPlain ? " " + pOpts.clsPre + "Plain" : "");
-		if (pCode.fRaw) pCode.fRaw.style.display = "";
 	} catch(e){
-		console.error("scCodeMgr.xInitCode::Error" + e);
+		scCoLib.log("scCodeMgr.xInitCode::Error" + e);
 	}
 }
 /** scCodeMgr.xTgleLineNums : . */
@@ -158,7 +201,7 @@ scCodeMgr.xTgleWrap = function(pObj){
 /** scCodeMgr.xCopy : . */
 scCodeMgr.xCopy = function(pObj){
 	this.xTgleRaw(pObj, true);
-	let vRange, vSelection;
+	var vRange, vSelection;
 	if (document.body.createTextRange) {
 		vRange = document.body.createTextRange();
 		vRange.moveToElementText(pObj.fRaw);
@@ -180,14 +223,14 @@ scCodeMgr.xCopy = function(pObj){
 /* === Toolbox ============================================================== */
 /** scCodeMgr.xAddSep : Add a simple textual separator : " | ". */
 scCodeMgr.xAddSep = function(pParent, pObj){
-	const vSep = document.createElement("span");
+	var vSep = document.createElement("span");
 	vSep.className = pObj.fOpts.clsPre+"Hidden";
 	vSep.innerHTML = " | "
 	pParent.appendChild(vSep);
 }
 /** scCodeMgr.xAddBtn : Add a HTML button to a parent node. */
 scCodeMgr.xAddBtn = function(pParent,pObj,pType,pName,pCapt,pTitle){
-	const vBtn = scDynUiMgr.addElement("a", pParent, pObj.fOpts.clsPre + pName);
+	var vBtn = scDynUiMgr.addElement("a", pParent, pObj.fOpts.clsPre+pName);
 	vBtn.fName = pType+pName;
 	vBtn.href = "#";
 	vBtn.target = "_self";
@@ -202,12 +245,12 @@ scCodeMgr.xAddBtn = function(pParent,pObj,pType,pName,pCapt,pTitle){
 }
 /** scCodeMgr.xFocus : */
 scCodeMgr.xFocus = function(pNode) {
-	if (this.fFocus) try{pNode.focus();}catch(e){}
+	if (this.fFocus) try{pNode.focus();}catch(e){};
 }
 /** scCodeMgr.xIsVisible : */
 scCodeMgr.xIsVisible = function(pNode) {
-	const vAncs = scPaLib.findNodes("anc:", pNode);
-	for(let i=0; i<vAncs.length; i++) if (vAncs[i].nodeType === 1 && scDynUiMgr.readStyle(vAncs[i],"display") === "none") return false;
+	var vAncs = scPaLib.findNodes("anc:", pNode);
+	for(var i=0; i<vAncs.length; i++) if (vAncs[i].nodeType == 1 && scDynUiMgr.readStyle(vAncs[i],"display") == "none") return false;
 	return true;
 }
 /** scCodeMgr.xGetStr : Reteive a string. */
@@ -216,17 +259,15 @@ scCodeMgr.xGetStr = function(pStrId) {
 }
 /** scCodeMgr.xSwitchClass : Replace a CSS class. */
 scCodeMgr.xSwitchClass = function(pNode, pClassOld, pClassNew) {
-	if (pClassOld && pClassOld !== '') {
-		const vCurrentClasses = pNode.className.split(' ');
-		const vNewClasses = [];
-		let vClassFound = false;
-		let i = 0;
-		const n = vCurrentClasses.length;
-		for(; i<n; i++) {
-			if (vCurrentClasses[i] !== pClassOld) {
+	if (pClassOld && pClassOld != '') {
+		var vCurrentClasses = pNode.className.split(' ');
+		var vNewClasses = new Array();
+		var vClassFound = false;
+		for(var i=0, n=vCurrentClasses.length; i<n; i++) {
+			if (vCurrentClasses[i] != pClassOld) {
 				vNewClasses.push(vCurrentClasses[i]);
 			} else {
-				if (pClassNew && pClassNew !== '') vNewClasses.push(pClassNew);
+				if (pClassNew && pClassNew != '') vNewClasses.push(pClassNew);
 				vClassFound = true;
 			}
 		}

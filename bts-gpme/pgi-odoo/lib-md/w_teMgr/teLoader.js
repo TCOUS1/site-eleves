@@ -3,13 +3,13 @@ teLoader = {
 	loaded: [],
 	defaultTeScripts: ['mediaelement.min.js', 'teMgr.js', 'teSubControllers.js', 'teSettings.js' ],
 
-	init: async function(media, options) {
+	init: async function(media) {
 		await this.loadTeScripts(this.defaultTeScripts);
 		if ('length' in media) {
 			const medias = Array.isArray(media) ? media : Array.from(media);
-			await Promise.all(medias.map((m) => this.initMediaElement(m, options)));
+			await Promise.all(medias.map((m) => this.initMediaElement(m)));
 		} else {
-			await this.initMediaElement(media, options);
+			await this.initMediaElement(media);
 		}
 	},
 
@@ -36,31 +36,15 @@ teLoader = {
 		return this.loaded[src];
 	},
 
-	initMediaElement: function(media, options) {
+	initMediaElement: function(media) {
 		if (!media) throw new Error("Unable to initialize MediaElement: the media is null");
-		const rendererOptions = {};
 		if (!('native_scportal' in mejs.Renderers.renderers)) mejs.Renderers.add(teMgr.scPortalRenderer);
-		if (options && options.credentials) {
-			rendererOptions.scportal = {
-				credentials: options.credentials
-			};
-			rendererOptions.hls = {
-				xhrSetup: function(xhr, url) {
-					xhr.withCredentials = options.credentials == "include";
-				},
-				fetchSetup: function(context, initParams) {
-					initParams.credentials = options.credentials;
-					return new Request(context.url,initParams);
-				}
-			};
-
-		}
 		return new Promise((resolve, reject) => {
-			new MediaElement(media, Object.assign({
+			new MediaElement(media, {
 				fakeNodeName: 'mediaelementwrapper',
 				success: (mediaElement) => resolve(mediaElement),
 				error: reject
-			}, rendererOptions));
+			});
 		});
 	}
 }

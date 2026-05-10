@@ -1,11 +1,11 @@
 
 
 
-window.scMapMgr = {
+var scMapMgr = {
 	fEltBuild : document.createElement("div"),
 	addElt : function (pStr) {
 		this.fEltBuild.innerHTML = pStr;
-		const vElt = this.fEltBuild.firstChild.cloneNode(true);
+		var vElt = this.fEltBuild.firstChild.cloneNode(true);
 		this.fEltBuild.innerHTML = "";
 		return vElt;
 	},
@@ -19,7 +19,7 @@ window.scMapMgr = {
 		return elem.parentNode.removeChild( elem )
 	},
 	each: function( obj, callback ) {
-		let name,
+		var name,
 			i = 0,
 			length = obj.length,
 			isObj = length === undefined;
@@ -47,19 +47,20 @@ window.scMapMgr = {
 			return JSON.parse(pStr);
 		} catch(e){ // TODO: purge when there is little chance of non JSON content.
 			console.warn("WARNING depreciated non-JSON content :", pStr);
-			let vVal;
+			var vVal;
 			eval("vVal="+pStr);
 			return vVal;
 		}
 	},
 	css : function(elt, rules) {
-		for (const name in rules ) {
+		for (var name in rules ) {
 			elt.style[name] = rules[name];
 		}
 		return this;
 	},
 	addClass: function(elem,  value ) {
-		let classNames, setClass, c, cl;
+		var classNames, i, l,
+			setClass, c, cl;
 
 		if ( value && typeof value === "string" ) {
 			classNames = value.split( " " );
@@ -83,7 +84,7 @@ window.scMapMgr = {
 	},
 
 	extend : function() {
-		let options, name, src, copy,
+		var options, name, src, copy, copyIsArray, clone,
 			target = arguments[0] || {},
 			i = 1,
 			length = arguments.length;
@@ -113,7 +114,17 @@ window.scMapMgr = {
 	},
 
 	register : function(element, type, func) {
-		element.addEventListener(type, func, false);
+		if (element.addEventListener) {
+			element.addEventListener(type, func, false);
+		} else if (element.attachEvent) {
+			if (!element._listeners) element._listeners = new Array();
+			if (!element._listeners[type]) element._listeners[type] = new Array();
+			var workaroundFunc = function() {
+				func.apply(element, new Array());
+			}
+			element._listeners[type][func] = workaroundFunc;
+			element.attachEvent('on' + type, workaroundFunc);
+		}
 	},
 
 	unregister : function(element, type, func) {
@@ -129,10 +140,10 @@ window.scMapMgr = {
 };
 
 (function($) {
-	let has_VML, has_canvas, create_canvas_for, add_shape_to, clear_canvas, shape_from_area,
+	var has_VML, has_canvas, create_canvas_for, add_shape_to, clear_canvas, shape_from_area,
 		canvas_style, hex_to_decimal, css3color, is_image_loaded, options_from_area;
 
-
+	
 	has_VML = document.namespaces;
 	has_canvas = !!document.createElement('canvas').getContext;
 
@@ -140,7 +151,7 @@ window.scMapMgr = {
 		$.maphighlight = function() {};
 		return;
 	}
-
+	
 	if(has_canvas) {
 		hex_to_decimal = function(hex) {
 			return Math.max(0, Math.min(parseInt(hex, 16), 255));
@@ -149,78 +160,78 @@ window.scMapMgr = {
 			return 'rgba('+hex_to_decimal(color.substr(0,2))+','+hex_to_decimal(color.substr(2,2))+','+hex_to_decimal(color.substr(4,2))+','+opacity+')';
 		};
 		create_canvas_for = function(img) {
-			const c = $.addElt('<canvas style="width:' + img.width + 'px;height:' + img.height + 'px;"></canvas>');
+			var c = $.addElt('<canvas style="width:'+img.width+'px;height:'+img.height+'px;"></canvas>');
 			c.getContext("2d").clearRect(0, 0, c.width, c.height);
 			return c;
 		};
-		const draw_shape = function (context, shape, coords, x_shift, y_shift) {
+		var draw_shape = function(context, shape, coords, x_shift, y_shift) {
 			x_shift = x_shift || 0;
 			y_shift = y_shift || 0;
-
+			
 			context.beginPath();
-			if (shape === 'rect') {
+			if(shape == 'rect') {
 
 				context.rect(coords[0] + x_shift, coords[1] + y_shift, coords[2] - coords[0], coords[3] - coords[1]);
-			} else if (shape === 'poly') {
+			} else if(shape == 'poly') {
 				context.moveTo(coords[0] + x_shift, coords[1] + y_shift);
-				for (let i = 2; i < coords.length; i += 2) {
-					context.lineTo(coords[i] + x_shift, coords[i + 1] + y_shift);
+				for(i=2; i < coords.length; i+=2) {
+					context.lineTo(coords[i] + x_shift, coords[i+1] + y_shift);
 				}
-			} else if (shape === 'circ') {
+			} else if(shape == 'circ') {
 
 				context.arc(coords[0] + x_shift, coords[1] + y_shift, coords[2], 0, Math.PI * 2, false);
 			}
 			context.closePath();
-		};
+		}
 		add_shape_to = function(canvas, shape, coords, options, name) {
-			let context = canvas.getContext('2d');
+			var i, context = canvas.getContext('2d');
+			
 
-
-
+			
 
 
 			if(options.shadow) {
 				context.save();
-				if(options.shadowPosition === "inside") {
+				if(options.shadowPosition == "inside") {
 
 					draw_shape(context, shape, coords);
 					context.clip();
 				}
+				
 
 
 
-
-				const x_shift = canvas.width * 100;
-				const y_shift = canvas.height * 100;
+				var x_shift = canvas.width * 100;
+				var y_shift = canvas.height * 100;
 				draw_shape(context, shape, coords, x_shift, y_shift);
-
+				
 				context.shadowOffsetX = options.shadowX - x_shift;
 				context.shadowOffsetY = options.shadowY - y_shift;
 				context.shadowBlur = options.shadowRadius;
 				context.shadowColor = css3color(options.shadowColor, options.shadowOpacity);
+				
 
 
 
-
-				let shadowFrom = options.shadowFrom;
+				var shadowFrom = options.shadowFrom;
 				if (!shadowFrom) {
-					if (options.shadowPosition === 'outside') {
+					if (options.shadowPosition == 'outside') {
 						shadowFrom = 'fill';
 					} else {
 						shadowFrom = 'stroke';
 					}
 				}
-				if (shadowFrom === 'stroke') {
+				if (shadowFrom == 'stroke') {
 					context.strokeStyle = "rgba(0,0,0,1)";
 					context.stroke();
-				} else if (shadowFrom === 'fill') {
+				} else if (shadowFrom == 'fill') {
 					context.fillStyle = "rgba(0,0,0,1)";
 					context.fill();
 				}
 				context.restore();
+				
 
-
-				if(options.shadowPosition === "outside") {
+				if(options.shadowPosition == "outside") {
 					context.save();
 
 					draw_shape(context, shape, coords);
@@ -230,11 +241,11 @@ window.scMapMgr = {
 					context.restore();
 				}
 			}
-
+			
 			context.save();
-
+			
 			draw_shape(context, shape, coords);
-
+			
 
 
 			if(options.fill) {
@@ -248,9 +259,9 @@ window.scMapMgr = {
 				context.lineWidth = options.strokeWidth;
 				context.stroke();
 			}
-
+			
 			context.restore();
-
+			
 		};
 		clear_canvas = function(canvas) {
 			canvas.getContext('2d').clearRect(0, 0, canvas.width,canvas.height);
@@ -260,15 +271,15 @@ window.scMapMgr = {
 			return $.addElt('<var style="zoom:1;overflow:hidden;display:block;width:'+img.width+'px;height:'+img.height+'px;"></var>');
 		};
 		add_shape_to = function(canvas, shape, coords, options, name) {
-			let fill, stroke, opacity, e;
+			var fill, stroke, opacity, e;
 			fill = '<v:fill color="#'+options.fillColor+'" opacity="'+(options.fill ? options.fillOpacity : 0)+'" />';
 			stroke = (options.stroke ? 'strokeweight="'+options.strokeWidth+'" stroked="t" strokecolor="#'+options.strokeColor+'"' : 'stroked="f"');
 			opacity = '<v:stroke opacity="'+options.strokeOpacity+'"/>';
-			if(shape === 'rect') {
+			if(shape == 'rect') {
 				e = $.addElt('<v:rect name="'+name+'" filled="t" '+stroke+' style="zoom:1;margin:0;padding:0;display:block;position:absolute;left:'+coords[0]+'px;top:'+coords[1]+'px;width:'+(coords[2] - coords[0])+'px;height:'+(coords[3] - coords[1])+'px;"></v:rect>');
-			} else if(shape === 'poly') {
+			} else if(shape == 'poly') {
 				e = $.addElt('<v:shape name="'+name+'" filled="t" '+stroke+' coordorigin="0,0" coordsize="'+canvas.width+','+canvas.height+'" path="m '+coords[0]+','+coords[1]+' l '+coords.join(',')+' x e" style="zoom:1;margin:0;padding:0;display:block;position:absolute;top:0px;left:0px;width:'+canvas.width+'px;height:'+canvas.height+'px;"></v:shape>');
-			} else if(shape === 'circ') {
+			} else if(shape == 'circ') {
 				e = $.addElt('<v:oval name="'+name+'" filled="t" '+stroke+' style="zoom:1;margin:0;padding:0;display:block;position:absolute;left:'+(coords[0] - coords[2])+'px;top:'+(coords[1] - coords[2])+'px;width:'+(coords[2]*2)+'px;height:'+(coords[2]*2)+'px;"></v:oval>');
 			}
 			e.innerHTML = fill+opacity;
@@ -276,13 +287,13 @@ window.scMapMgr = {
 		};
 		clear_canvas = function(canvas) {
 			$.each(scPaLib.findNodes("des:", canvas), function() {
-				if (this.getAttribute('name')==='highlighted') $.remove(this);
+				if (this.getAttribute('name')=='highlighted') $.remove(this);
 			});
 		};
 	}
-
+	
 	shape_from_area = function(area) {
-		let i, coords = area.getAttribute('coords').split(',');
+		var i, coords = area.getAttribute('coords').split(',');
 		for (i=0; i < coords.length; i++) { coords[i] = parseFloat(coords[i]); }
 		return [area.getAttribute('shape').toLowerCase().substr(0,4), coords];
 	};
@@ -290,10 +301,10 @@ window.scMapMgr = {
 	options_from_area = function(area, options) {
 		return $.extend({}, options, $.data(area, 'maphighlight'), (area.maphighlight ? area.maphighlight : false));
 	};
-
+	
 	is_image_loaded = function(img) {
 		if(!img.complete) { return false; } // IE
-		if(typeof img.naturalWidth != "undefined" && img.naturalWidth === 0) { return false; } // Others
+		if(typeof img.naturalWidth != "undefined" && img.naturalWidth == 0) { return false; } // Others
 		return true;
 	};
 
@@ -304,15 +315,15 @@ window.scMapMgr = {
 		padding: 0,
 		border: 0
 	};
-
-	let ie_hax_done = false;
+	
+	var ie_hax_done = false;
 	$.maphighlight = function(img, opts) {
 		opts = $.extend({}, $.defaults, opts);
-
+		
 		if(!has_canvas && scCoLib.isIE && !ie_hax_done) {
 			document.namespaces.add("v", "urn:schemas-microsoft-com:vml");
-			const style = document.createStyleSheet();
-			const shapes = ['shape', 'rect', 'oval', 'circ', 'fill', 'stroke', 'imagedata', 'group', 'textbox'];
+			var style = document.createStyleSheet();
+			var shapes = ['shape','rect', 'oval', 'circ', 'fill', 'stroke', 'imagedata', 'group','textbox'];
 			$.each(shapes,
 				function() {
 					style.addRule('v\\:' + this, "behavior: url(#default#VML); antialias:true");
@@ -320,8 +331,8 @@ window.scMapMgr = {
 			);
 			ie_hax_done = true;
 		}
-
-		let wrap, options, maps, map, canvas, canvas_always, addAlwaysOn, mouseover, mouseout, usemap;
+		
+		var wrap, options, maps, map, canvas, canvas_always, addAlwaysOn, mouseover, highlighted_shape, usemap;
 
 		if(!is_image_loaded(img)) {
 
@@ -336,8 +347,8 @@ window.scMapMgr = {
 
 		usemap = img.getAttribute('usemap');
 		maps = scDynUiMgr.getDocument(img).getElementsByTagName("map");
-		for (let i=0; i<maps.length; i++){
-			if (maps[i].getAttribute('name') === usemap.substr(1)) map = maps[i];
+		for (var i=0; i<maps.length; i++){
+			if (maps[i].getAttribute('name') == usemap.substr(1)) map = maps[i];
 		}
 
 		if(!(usemap && map.childNodes.length > 0)) {
@@ -348,8 +359,8 @@ window.scMapMgr = {
 
 
 
-			const wrapper = img.parentNode;
-			const imgWidth = img.width, imgHeight = img.height;
+			var wrapper = img.parentNode;
+			var imgWidth = img.width, imgHeight = img.height; 
 			$.before(img, wrapper);
 			img.width = Math.max(imgWidth, img.width);
 			img.height = Math.max(imgHeight, img.height);
@@ -361,7 +372,7 @@ window.scMapMgr = {
 		}
 
 		wrap = $.addElt('<div></div>')
-		if (scDynUiMgr.readStyle(img,"position") === "absolute"){
+		if (scDynUiMgr.readStyle(img,"position") == "absolute"){
 			$.css(wrap, {
 				display:'block',
 				background:'url("'+img.src+'")',
@@ -371,7 +382,7 @@ window.scMapMgr = {
 				height:img.height+"px",
 				top:scDynUiMgr.readStyle(img,"top"),
 				left:scDynUiMgr.readStyle(img,"left")
-			});
+				});
 		} else {
 			$.css(wrap, {
 				display:'block',
@@ -380,7 +391,7 @@ window.scMapMgr = {
 				padding:0,
 				width:img.width+"px",
 				height:img.height+"px"
-			});
+				});
 		}
 		if(options.wrapClass) {
 			if(options.wrapClass === true) {
@@ -394,36 +405,40 @@ window.scMapMgr = {
 		if(scCoLib.isIE) { $.css(img, 'filter', 'Alpha(opacity=0)'); }
 		$.remove(img);
 		$.append(wrap, img);
-
+		
 		canvas = create_canvas_for(img);
 		$.css(canvas, canvas_style);
 		canvas.height = img.height;
 		canvas.width = img.width;
-
+		
 		mouseover = function(e) {
-			let shape, area_options;
+			var shape, area_options;
 			area_options = options_from_area(this, options);
 			if( !area_options.neverOn && !area_options.alwaysOn ) {
 				shape = shape_from_area(this);
 				add_shape_to(canvas, shape[0], shape[1], area_options, "highlighted");
 				if(area_options.groupBy) {
-					let areas;
+					var areas;
 
 					if(/^[a-zA-Z][-a-zA-Z]+$/.test(area_options.groupBy)) {
 						areas = map.find('area['+area_options.groupBy+'="'+$(this).attr(area_options.groupBy)+'"]')
 					} else {
 						areas = map.find(area_options.groupBy);
 					}
-					const first = this;
+					var first = this;
 					$.each(areas, function() {
-						if(this !== first) {
-							const subarea_options = options_from_area(this, options);
+						if(this != first) {
+							var subarea_options = options_from_area(this, options);
 							if(!subarea_options.neverOn && !subarea_options.alwaysOn) {
-								const shape = shape_from_area(this);
+								var shape = shape_from_area(this);
 								add_shape_to(canvas, shape[0], shape[1], subarea_options, "highlighted");
 							}
 						}
 					});
+				}
+
+				if(!has_canvas) {
+					$.append(canvas, $.addElt('<v:rect></v:rect>'));
 				}
 			}
 		}
@@ -441,7 +456,7 @@ window.scMapMgr = {
 				canvas.innerHTML = "";
 			}
 			$.each(scPaLib.findNodes("chi:area", map), function() {
-				let shape, area_options;
+				var shape, area_options;
 				area_options = options_from_area(this, options);
 				if(area_options.alwaysOn) {
 					if(!canvas_always && has_canvas) {
@@ -460,16 +475,16 @@ window.scMapMgr = {
 				}
 			});
 		}
-
+		
 		addAlwaysOn();
 
 		$.each(scPaLib.findNodes("chi:area", map), function() {
 			$.register(this, 'mouseover', mouseover);
 			$.register(this, 'mouseout', mouseout);
 		});
-
+		
 		$.before(canvas, img); // if we put this after, the mouseover events wouldn't fire.
-
+		
 		$.addClass(img, 'maphighlighted');
 	};
 	$.defaults = {
