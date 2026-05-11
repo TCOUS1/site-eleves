@@ -1,7 +1,298 @@
-{"a":"co/SDGN-Th2.html"}
-["2"]
+{"c":"co/02_3-Numerique_agilite_ou_rigidite.html","a":"co/02_1-Informations_ressources.html","b":"co/02_2-Intelligence_collective.html"}
+["2","1"]
 {"wordPattern":"\\d+(?:[,.]\\d+)?|[^\\u0000-/:-@\\[-`{-\\u00A0]+(?:[-][^\\u0000-/:-@\\[-`{-\\u00A0]+)?","filters":[{"type":"excludeShortWords","forWords":"\\d+","min":1},{"type":"excludeShortWords","forWords":"\\D+","min":3},{"type":"cutLongWords","max":20},{"type":"lowerCase"},{"type":"ignoreWords","words":{"fois":1,"notre":1,"est":1,"vont":1,"fait":1,"avoir":1,"mais":1,"mon":1,"ici":1,"tels":1,"être":1,"des":1,"maintenant":1,"son":1,"sont":1,"depuis":1,"soyez":1,"les":1,"parce":1,"avant":1,"été":1,"par":1,"vous":1,"peu":1,"seulement":1,"pas":1,"pourquoi":1,"tes":1,"sans":1,"ceux":1,"dans":1,"nous":1,"donc":1,"ils":1,"tandis":1,"voient":1,"tellement":1,"hors":1,"étions":1,"avec":1,"très":1,"bon":1,"même":1,"que":1,"faites":1,"qui":1,"plupart":1,"sien":1,"aucuns":1,"elle":1,"sous":1,"ces":1,"sur":1,"ton":1,"devrait":1,"car":1,"aussi":1,"doit":1,"mes":1,"quand":1,"encore":1,"peut":1,"ses":1,"leur":1,"quelles":1,"quels":1,"pour":1,"trop":1,"alors":1,"tout":1,"tous":1,"chaque":1,"quelle":1,"cela":1,"comment":1,"votre":1,"autre":1,"comme":1,"quel":1,"étaient":1,"font":1}},{"type":"filterAccentedLatinLetters"}]}
-erreur	a.1
-saisi	a.1
-item	a.1
-aucun	a.1
+efficacite	c.01
+faire	a.01
+inefficacites	c.01
+avantage	c.01
+synchrones	b.01
+google	b.01
+adaptee	a.01
+supprime	b.01
+ressaisie	c.01
+adaptes	c.01
+remarque	c.10
+centralise	c.01
+information	a.01
+fonctionnalites	c.01
+mieux	c.02
+risque	a.01	c.01
+unicite	c.01
+taches	c.01
+responsabilites	b.01
+sensibilisation	b.01
+representation	c.10
+verifiable	a.01
+rigidite	c.10
+actuelle	a.01
+eclairees	c.02
+dinformation	a.01	c.11
+ressource	a.10
+referencee	a.01
+personnelle	a.01
+personnel	a.10
+implication	c.10
+cooperation	b.01
+transparence	b.01
+intelligence	b.21
+integration	c.01
+inefficacite	c.01
+economique	a.01
+protection	b.01
+regles	b.01
+propre	c.02
+nouvelles	c.01
+yammer	b.01
+pgi	c.49
+reelle	b.01
+decisions	a.01	c.02
+contraintes	b.01
+mauvaise	b.01
+erp	c.12
+standardisation	c.01
+2.1	a.10
+2.2	b.10
+2.3	c.10
+temps	b.02	c.03
+correspond	a.01
+mode	c.10
+complement	b.10	c.20
+donnee	a.01
+messageries	b.01
+outils	b.03
+sociaux	b.01
+jugement	a.01
+indique	a.01
+croissance	c.01
+lutilisation	c.01
+cadre	a.01
+depassees	a.01
+difficultes	c.01
+crm	c.20
+donnees	a.22	b.01	c.06
+laction	a.01
+despace	b.01
+fidelement	a.01
+dentreprise	b.01
+erreurs	a.01	c.02
+utiles	a.01
+automatisant	c.01
+reduisent	c.01
+diagramme	c.10
+standardisant	c.01
+dune	a.01
+reel	c.02
+besoin	a.01
+rse	b.01
+pratiques	b.10
+notion	c.10
+generer	c.01
+realite	a.01
+chatgpt	b.01
+situation	a.01
+integrite	c.01
+replacee	a.01
+mesure	c.01
+nest	c.10
+entraine	c.01
+ideale	c.10
+peuvent	c.01
+accessibilite	b.01
+danticiper	a.01
+claires	b.01
+droits	b.01
+prendre	c.02
+source	a.02
+microsoft	b.01
+besoins	c.01
+technologies	a.10
+centralisation	b.01	c.01
+augmenter	c.01
+aux	b.01	c.01
+quoi	a.10
+emails	b.01
+evolutivite	c.01
+contribuetil	b.10
+watson	b.01
+dusage	b.01
+evenements	a.01
+lecteur	a.01
+usage	b.01
+transformentelles	a.10
+comprendre	a.01
+collecter	c.02
+bien	a.01
+incoherence	c.01
+factuelles	a.01
+auteur	a.01
+quon	a.01
+gain	b.01
+methode	c.10
+facilite	a.01
+rendre	c.01
+traiter	c.01
+suivre	c.01
+parfois	a.01
+redondance	c.01
+permettant	a.02	c.01
+presentee	a.01
+dintelligence	b.10
+operationnelle	c.02
+labsence	c.10
+menaces	b.01
+explication	a.01	c.01
+principal	b.01
+zoom	b.01
+processus	c.32
+numeriques	b.11
+lintelligence	b.10
+reduction	c.01
+lui	a.01
+facile	c.01
+caractere	a.10
+maitriser	b.10	c.02
+afin	c.01
+entreprise	c.03
+interpretation	a.01
+drive	b.01
+acteurs	b.01	c.10
+communications	b.01
+aidant	c.02
+systeme	c.11
+gestion	c.11
+couts	c.05
+traite	a.01
+partage	b.11
+claude	b.01
+fiable	a.01
+confiance	a.01
+necessite	c.01
+manque	c.01
+critere	a.01
+visioconference	b.01
+metier	c.01
+importance	b.10
+toutes	c.01
+risques	b.20	c.01
+connaissances	a.10
+passer	c.01
+utilisation	b.01
+une	a.01	c.04
+fournit	c.02
+collaboratifs	b.01
+big	a.10
+departement	c.01
+linformation	a.22	b.11
+reduisant	c.01
+eliminant	c.01
+limitant	a.01
+decisionnel	a.01
+fiche	a.10	b.10	c.10
+privilegie	c.10
+entreprises	c.01
+dou	a.01
+ecommunication	b.01
+maniere	c.02
+onedrive	b.01
+workplace	b.01
+fur	c.01
+levier	b.10
+supplementaires	c.01
+portee	a.01
+reussite	b.11
+communication	c.02
+progiciel	c.11
+interoperables	c.01
+origine	a.01
+plus	a.01
+bonnes	b.10
+productivite	b.01	c.01
+creetil	c.10
+dispose	c.01
+reseaux	b.01
+lagilite	c.10
+informations	a.11	c.04
+transformer	c.01
+puis	a.01
+valeur	a.11
+social	a.01
+asana	b.01
+amelioration	c.01
+dun	c.01
+utile	a.01
+credible	a.01
+modulaires	c.01
+observee	a.01
+objective	a.01
+pertinente	a.01
+artificielle	b.01
+exemple	b.01
+fonctionnement	c.04
+meta	b.01
+unique	c.01
+conditions	b.11
+ressources	a.01
+connaissance	a.01
+facilitee	c.01
+decision	a.01	c.01
+exacte	a.01
+evenement-resultat	c.10
+silo	c.01
+integre	c.10
+ibm	b.01
+collaboration	b.01
+sujet	a.01
+fragmentees	c.01
+open	a.10
+aide	c.01
+coordination	b.01	c.01
+jour	a.01
+contexte	a.01
+numerique	a.02	b.11	c.10
+specifiques	c.01
+transformetil	a.01
+apport	b.01
+explicatif	a.01
+lies	c.01
+definition	c.01
+avantages	c.10
+performances	c.01
+gagner	c.01
+reconnue	a.01
+organisationnelle	c.10
+base	c.01
+diffuser	c.01
+phase	a.01
+teams	b.01
+dirigeants	c.02
+distribution	c.10
+collective	a.01	b.30
+precise	a.01
+opinion	a.01
+confidentialite	b.01
+permet	a.01	c.01
+date	a.01
+trello	b.01
+passage	a.01
+data	a.20
+recentes	a.01
+evite	a.01
+garantit	a.01
+automatisation	b.01	c.11
+biaisee	a.01
+contextualisee	a.01
+from	b.01
+sens	a.01
+competences	b.01
+icloud	b.01
+securite	b.01
+operations	c.01
+fondamental	a.10	b.10
+doublons	c.01
+vient	a.01
+asynchrones	b.01
+provient	a.01
+clairement	a.01
+verifier	a.01
+basees	a.01
+historique	a.01
