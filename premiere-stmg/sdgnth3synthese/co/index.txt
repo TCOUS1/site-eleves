@@ -1,0 +1,832 @@
+{"a":"co/03_1-Mesurer_contribution.html","b":"co/03_2_Creation_de_valeur_performance_globale.html"}
+["2","1"]
+{"wordPattern":"\\d+(?:[,.]\\d+)?|[^\\u0000-/:-@\\[-`{-\\u00A0]+(?:[-][^\\u0000-/:-@\\[-`{-\\u00A0]+)?","filters":[{"type":"excludeShortWords","forWords":"\\d+","min":1},{"type":"excludeShortWords","forWords":"\\D+","min":3},{"type":"cutLongWords","max":20},{"type":"lowerCase"},{"type":"ignoreWords","words":{"fois":1,"notre":1,"est":1,"vont":1,"fait":1,"avoir":1,"mais":1,"mon":1,"ici":1,"tels":1,"être":1,"des":1,"maintenant":1,"son":1,"sont":1,"depuis":1,"soyez":1,"les":1,"parce":1,"avant":1,"été":1,"par":1,"vous":1,"peu":1,"seulement":1,"pas":1,"pourquoi":1,"tes":1,"sans":1,"ceux":1,"dans":1,"nous":1,"donc":1,"ils":1,"tandis":1,"voient":1,"tellement":1,"hors":1,"étions":1,"avec":1,"très":1,"bon":1,"même":1,"que":1,"faites":1,"qui":1,"plupart":1,"sien":1,"aucuns":1,"elle":1,"sous":1,"ces":1,"sur":1,"ton":1,"devrait":1,"car":1,"aussi":1,"doit":1,"mes":1,"quand":1,"encore":1,"peut":1,"ses":1,"leur":1,"quelles":1,"quels":1,"pour":1,"trop":1,"alors":1,"tout":1,"tous":1,"chaque":1,"quelle":1,"cela":1,"comment":1,"votre":1,"autre":1,"comme":1,"quel":1,"étaient":1,"font":1}},{"type":"filterAccentedLatinLetters"}]}
+exception	a.01
+efficacite	b.14
+sest	a.01
+analyse	a.10
+faire	a.01	b.02
+notamment	a.01
+energetiques	b.01
+financiere	a.29	b.03
+reflete	a.01
+produit	a.02
+cout	a.19	b.01
+sommes	a.02
+reserves	a.02
+varie	a.01
+0	a.02
+1	a.03	b.01
+avis	a.01
+charges	a.02
+2	a.01
+3	a.01
+sera	a.02
+5	a.05
+detail	a.01
+couvre	a.01
+financier	a.10	b.01
+continuellement	a.01
+classique	a.01
+aupres	a.01
+saine	a.02
+arrivee	a.01
+batiments	b.01
+oeuvre	b.01
+realisees	b.01
+differents	b.01
+resume	b.01
+objectifs	b.09
+adoptee	b.01
+financiers	b.01
+precedentes	a.02
+oblige	a.01
+dannee	a.01
+nationales	a.01
+evaluer	b.02
+utilite	b.01
+lannee	a.02
+souhaite	a.01
+acceptable	a.01
+attentes	b.01
+concurrence	a.02
+evidence	a.01	b.01
+tendances	b.01
+mesurer	a.11
+caritatives	b.01
+lentree	a.01
+creances	a.03
+banque	a.02
+creetelle	a.01
+greenwashing	b.01
+gagne	a.02
+controle	a.01
+autour	a.01
+recycles	b.01
+risque	a.01
+analyser	a.01
+financement	a.05
+mesuree	a.01
+faut	a.01
+modeles	a.01
+lenvironnement	b.01
+production	a.14	b.03
+dechets	b.04
+didentifier	b.01
+anticipation	a.01
+peuton	a.10
+lensemble	a.01
+usager	a.01
+lamoindrissement	a.01
+responsabilite	b.01
+surveillance	b.01
+hauteur	a.01
+sociale	a.01	b.06
+benefice	a.03
+mobile	a.01
+activites	b.02
+detecter	b.01
+societe	a.01	b.03
+couvrir	a.01
+negoce	a.10
+service	a.02
+personnel	a.01
+linvestissement	a.01
+favorable	a.01
+etat	a.01
+marche	a.16	b.03
+rentabilite	b.02
+ajoute	a.01
+qualifications	a.01
+filiale	b.01
+locaux	a.01
+ruptures	b.01
+plafond	a.01
+facteurs	b.01
+transparence	b.01
+impacts	b.02
+efficiente	b.01
+recurrence	b.01
+compose	a.01
+moins	b.02
+juridique	a.01
+fondee	a.20
+lorsquelle	a.01
+co2	b.01
+economique	a.02	b.01
+capitaux	a.03	b.01
+actionnariale	a.22
+reelle	a.01
+systematiquement	a.01
+decisions	b.02
+durabilite	b.03
+satisfaire	b.01
+contraintes	a.01
+generees	b.01
+cree	b.01
+quils	a.01
+futurs	a.01
+traitements	a.01
+approche	a.03	b.10
+reste	a.01
+haut	a.02
+suivant	b.01
+satisfaction	a.02
+salaires	a.01
+milieu	a.01
+esg	b.01
+tensions	b.01
+cotisations	a.01
+soumise	b.02
+dachat	a.03
+capital	a.01
+repartie	a.01
+vue	a.01
+apporte	a.01
+flore	b.01
+temps	b.02
+correspond	a.01	b.01
+perception	a.02
+cotee	a.11
+exploitation	a.02
+renforce	b.01
+lactif	a.03
+recommandations	a.01
+etc	a.02	b.02
+facture	a.01
+etablissements	a.01
+carbone	b.01
+complement	a.90	b.30
+net	a.02	b.02
+employes	b.03
+donnee	a.01
+outils	a.13	b.10
+200	b.01
+lexperience	a.01
+sociaux	a.01	b.01
+espaces	b.01
+effets	b.01
+jugement	a.01
+dalignement	a.01
+prenantes	a.04	b.01
+fonds	a.17
+partenariale	a.21
+ensemble	b.01
+prises	b.01
+autres	a.11
+colonne	a.03
+conciliant	b.01
+450	b.02
+richesse	a.01
+calcul	a.31
+remplace	b.01
+savoir-faire	a.01
+cadre	a.02
+remuneration	a.01
+direction	a.02
+aurait	a.01
+subjective	a.01
+penetration	a.02
+automatiquement	b.01
+equilibree	a.01
+forme	a.01
+donnees	b.01
+compromis	b.01
+ecarts	b.01
+productive	a.01
+declasses	a.01
+emprunts	a.02
+objectif	b.01
+freemium	a.01
+apports	a.03
+optimisant	b.01
+machines	a.01
+dentreprise	a.01
+pret	a.04
+fondamentale	a.10
+pme	b.01
+eleve	a.01
+grandes	a.01
+premiers	b.01
+contradictoires	b.01
+perte	a.02
+regroupes	a.01
+initiatives	b.01
+eclaires	b.01
+perennite	b.02
+environnement	b.01
+fournisseurs	a.06
+tva	a.01
+importants	b.01
+savoirs	a.01
+dune	a.12	b.04
+anticipations	a.01
+limage	a.02
+drucker	b.03
+superieure	a.01
+ameliorer	b.01
+temporaire	a.01
+reel	b.01
+000	a.09	b.01
+sinon	a.01
+lamortissement	a.02
+financieres	a.02
+marques	a.01
+60000	a.02
+actions	a.02	b.03
+104000	a.02
+fonctionnel	a.20
+besoin	a.07
+droite	a.01
+document	a.01	b.01
+reside	a.01
+pratiques	b.01
+rapport	a.02	b.06
+centree	a.01
+limite	b.02
+roulement	a.07
+fixes	b.01
+traduction	a.01
+notion	b.10
+generer	b.01
+grace	a.01
+recule	a.01
+creation	a.13	b.11
+depreciation	a.11
+situation	a.03	b.01
+expliquent	a.01
+mesure	a.02	b.04
+nest	a.02
+services	a.12
+facilitant	b.01
+cest	a.03
+ideale	b.01
+financent	a.01
+marketing	a.01
+principe	b.01
+quil	a.04
+danticiper	b.01
+realise	b.01
+stables	a.06
+impots	a.02
+engagement	b.02
+prix	a.69
+lia	a.01
+organisation	a.02	b.09
+lie	a.01
+revient	a.02
+source	b.01
+cible	a.11
+interdependance	b.10
+marchandises	a.01
+pris	a.01
+anciennement	a.01
+champ	b.01
+publier	b.01
+lequilibre	a.10
+designe	b.01
+criteres	a.10	b.01
+difficulte	a.01
+caracteristiques	a.01
+souvent	a.01	b.01
+developpement	b.02
+parties	a.04	b.01
+marges	a.10
+rubriques	a.01
+retirer	a.01
+boursiere	a.44
+lutter	b.01
+aux	a.05	b.02
+classes	a.01
+motivation	b.01
+aspects	b.01
+brute	a.12
+comptable	a.41
+durable	b.03
+circulant	a.13
+negative	a.01
+environnementale	b.05
+impose	a.01	b.01
+patrimoine	a.28
+piton	a.10
+classe	a.01
+resultats	a.01	b.05
+assurant	b.01
+obligatoire	b.01
+effet	a.01
+resultat	a.25	b.03
+derives	b.01
+niveau	a.01
+exercer	a.01
+positionne	a.01
+bourse	a.12
+nette	a.05
+infrastructure	a.01
+cles	a.10	b.02
+investissements	a.02	b.01
+prevu	b.01
+finance	a.01
+compte	a.21	b.02
+usage	a.01
+pression	a.01
+investisseurs	a.02	b.01
+taxes	a.01
+optimiser	a.01
+organique	b.10
+paiements	a.01
+bord	b.32
+scolaires	a.01
+percue	a.44
+institutionnels	a.01
+trouve-t	a.01
+impliquent	b.01
+bien	a.03	b.01
+celles	a.01
+reliquat	a.01
+nentraine	b.01
+evalue	a.01	b.02
+facon	b.01
+illustre	a.01
+marque	a.02
+presentant	b.01
+1980	a.01
+explicite	a.03
+carrefour	a.01
+impute	a.01
+estelle	a.01
+15000	a.03
+lutilite	a.01
+direct	a.01
+formation	b.03
+gain	b.01
+methode	a.92
+societale	b.03
+premium	a.01
+preteurs	a.01
+realisation	b.01
+categories	a.01
+suivre	b.01
+aider	b.01
+parfois	b.01
+actionnaires	a.07	b.02
+piloter	b.01
+technologique	a.01
+amortissement	a.10
+positif	a.03	b.01
+toujours	b.10
+dit-on	a.01
+tresorerie	a.09
+contrainte	a.01
+indicator	b.01
+dopportunite	a.03
+tesla	a.01
+fournisseur	a.02
+ajoutee	a.42
+ainsi	b.01
+dagir	b.01
+distribuee	a.02	b.01
+reglementaire	b.10
+ereputation	a.01
+possedes	a.01
+produire	a.01
+ecosystemes	b.01
+vatan	a.10
+dont	a.01
+consommations	a.01
+produits	a.02	b.01
+lesprit	a.01
+souhaitee	a.01
+part	a.04	b.03
+explication	a.01
+propres	a.13	b.01
+point	a.10
+tenu	b.01
+maximale	b.01
+interactions	b.01
+general	b.01
+25000	a.02
+circulent	a.01
+comparaison	a.01
+organismes	a.01
+propriete	a.01
+profit	a.01
+audits	b.01
+economiques	a.01	b.01
+offres	a.01
+immobilisations	a.03
+processus	a.01	b.02
+europeenne	b.03
+numeriques	a.01
+attention	a.11	b.20
+environnementaux	b.01
+traditionnels	a.01
+reduction	b.02
+lue	b.02
+gouvernance	a.01	b.01
+lui	a.01	b.01
+sociales	a.03	b.01
+constitue	a.01
+approfondie	a.01
+encaissements	a.01
+typiquement	a.01
+assurer	b.01
+bas	a.02
+combinant	a.10
+calculer	a.10
+impact	b.02
+afin	b.01
+obtenus	b.01
+active	a.03
+cours	a.02
+formes	a.10
+nexiste	b.01
+entreprise	a.46	b.01
+interpretation	a.02
+plans	a.01
+rapidement	a.01	b.01
+acteurs	a.03	b.01
+relative	a.01
+eviter	a.01
+passif	a.15
+opportunite	a.01
+publiques	a.01
+montant	a.14	b.01
+titres	a.01
+peter	b.02
+arbitrages	b.12
+investissement	a.01	b.01
+vocabulaire	a.01
+dinvestissement	a.01
+couts	a.14	b.01
+gestion	a.10	b.04
+vise	a.02
+atteindre	b.02
+fixation	a.50
+degager	a.01	b.01
+maximum	a.01
+consomme	a.01
+paye	a.04
+indicateurs	a.10	b.03
+dit	a.01
+resumer	a.01
+marge	a.49
+vend	a.01
+exemples	a.01
+legal	b.10
+france	a.01
+certaines	b.01
+fiable	b.01
+image	a.01
+signifie	a.01	b.02
+energie	b.03
+energetique	b.01
+benefices	a.02	b.01
+actif	a.25
+creer	a.02	b.01
+financee	a.01
+bfr	a.16
+vision	a.10
+soit	a.02
+negatifs	b.01
+204000	a.02
+fonction	a.02
+parts	a.01
+financer	a.01	b.01
+societes	a.01
+dindicateurs	b.01
+100000	a.02
+pilotage	b.11
+capable	a.01
+toutes	a.03	b.01
+integralement	a.01
+risques	b.01
+salaries	a.04	b.02
+recyclage	b.01
+decembre	a.01
+client	a.09
+methodes	a.10
+mise	a.02	b.01
+emissions	b.04
+reporting	b.02
+acteur	a.10
+utilisation	a.01	b.02
+associes	a.01
+courante	a.02
+partie	a.02
+2023	a.02
+2022	b.01
+une	a.39	b.29
+presente	a.01
+principaux	b.10
+2019	a.10
+management	b.01
+partir	a.01
+vente	a.22	b.01
+anomalie	a.01
+desequilibres	b.01
+delais	b.01
+repose	a.01	b.01
+leconomie	a.10
+degre	b.02
+payer	a.04
+rassurer	a.01
+2029	b.01
+commerciale	a.14	b.02
+plancher	a.01
+lentreprise	a.09	b.01
+appauvrir	a.01
+environnemental	a.01	b.01
+realises	a.01
+fiche	a.10	b.10
+decouvert	a.01
+3.1	a.10
+3.2	b.10
+privilegier	a.01
+facteur	a.01
+selon	b.02
+clients	a.08	b.03
+proportion	b.01
+entreprises	a.02	b.05
+lactivite	a.04
+cycle	a.03
+dominee	a.01
+periode	a.01
+devaluer	b.01
+dire	a.03
+travail	a.01	b.04
+mal	a.01
+durablement	a.01
+gratuite	a.01
+creee	a.11
+prise	b.01
+positive	a.02
+corporate	b.01
+dameliorer	a.01
+comparable	b.01
+transaction	a.03
+placees	a.01
+savoir-etre	a.01
+emplois	a.15
+banques	b.01
+75000	a.01
+genere	a.02
+dacquisition	a.01
+annees	a.03
+credit	a.01
+different	a.10
+entre	a.02	b.04
+appelee	a.01
+repartition	a.10
+vendues	a.01
+carbones	b.01
+choses	b.01
+origine	a.01
+sustainability	b.01
+plus	a.07	b.01
+letat	a.02
+proteger	b.01
+bonnes	b.01
+obtenir	b.01
+immobilise	a.11
+productivite	b.11
+dispose	a.01
+dioxyde	b.01
+notoriete	a.01
+fidelite	b.02
+dividendes	a.12	b.01
+utilisee	b.01
+daffaires	a.03	b.03
+conquerir	a.01
+prend	a.01
+nombre	a.01
+preservation	b.01
+total	a.06	b.01
+capteurs	b.01
+utilises	b.01
+subie	a.01
+nfrd	b.01
+met	a.01	b.01
+cest-a	a.03
+revenant	a.01
+valeur	a.99	b.13
+hormis	a.01
+social	a.01	b.02
+taux	a.22
+depense	a.01
+structure	a.01	b.01
+chiffre	a.03	b.03
+100	a.03
+amelioration	b.03
+uniquement	a.01
+dun	a.05
+performante	b.01
+levolution	a.01	b.01
+depend	a.11
+multidimensionnelle	b.10
+inclut	b.01
+strategie	a.06	b.01
+coherent	a.02
+boursier	a.01
+possede	a.01
+cotees	b.01
+determination	a.02
+actifs	a.03
+objective	a.01	b.01
+110	a.04
+contribution	a.10
+globale	a.01	b.33
+susent	a.01
+10	a.07
+atteints	b.02
+devaluation	a.10
+12	a.01
+6000	a.01
+15	a.02
+moyens	b.04
+limpact	b.01
+exemple	a.42	b.01
+apparaitre	a.01
+principale	a.01	b.01
+qualite	a.03	b.02
+conditions	b.03
+20	a.05
+25	a.03
+identiques	b.01
+deduire	a.01
+global	a.02
+texte	b.10
+long	a.03
+ressources	a.16	b.02
+mis	b.01
+porte	a.01
+free	a.01
+30	a.06
+acquis	a.01
+31	a.02
+key	b.01
+35	a.01
+bilan	a.96	b.01
+atteinte	b.01
+rapports	b.01
+integre	b.01
+gamme	a.05
+ont	a.03	b.01
+reunis	b.01
+40	a.03
+but	a.01
+detriment	a.01
+financierement	a.01
+couvrent	a.01
+csrd	b.13
+tableaux	b.10
+logique	a.21
+50	a.05
+outil	a.01	b.01
+succursale	b.01
+formations	a.01
+investis	b.01
+interets	a.03
+dobtenir	a.01
+contexte	b.01
+achat	a.01
+comptabilite	a.01
+internes	a.01
+specifiques	a.01
+deux	a.02	b.01
+stocks	a.03
+celuici	a.01
+confondre	b.10
+apple	a.01
+lien	a.01
+biens	a.04
+lies	a.01
+70	a.01
+definition	a.90	b.41
+lorganisation	a.18	b.06
+fixe	a.03
+coherents	a.01	b.01
+celle	b.01
+attendus	b.01
+8000	a.01
+types	b.10
+saisir	a.01
+fiscales	a.02
+problemes	b.01
+directive	b.03
+antoine	a.10
+additionnels	a.01
+formule	a.02
+valoriser	a.01
+concernent	a.01
+naturels	b.01
+choix	b.01
+comprend	a.01
+organisationnelle	b.12
+negatif	a.01
+gagnant	a.02
+amenagement	a.01
+laide	b.01
+lunion	b.01
+type	b.01
+90	a.01
+simultanee	b.01
+immobilises	a.01
+psychologique	a.01
+efficience	b.12
+quantite	b.02
+ayant	a.01
+profits	b.01
+generant	b.01
+raison	a.02
+positionnement	a.01
+profitabilite	b.02
+lors	a.02
+concurrentes	a.01
+ventes	b.02
+lorigine	a.01
+decremage	a.01
+amont	b.01
+dettes	a.09
+problematique	a.01
+exclues	b.01
+montre	a.10
+intelligents	b.01
+intermediaires	a.01
+humaines	b.01
+reduire	b.02
+linnovation	a.02
+capacite	b.06
+autofinancement	b.02
+servent	a.01
+consommation	b.02
+inferieur	a.01
+immobilisation	a.01
+eau	b.03
+place	a.01	b.01
+faveur	b.01
+precise	b.01
+remunerer	a.01
+mondiale	a.10
+achats	b.01
+decalage	a.01
+elements	a.02
+valorisation	a.01
+permet	a.11	b.13
+minimum	a.01
+lautonomie	b.01
+dimensions	b.02
+principales	b.01
+parle	a.01
+passage	a.10
+pole	a.01
+biodiversite	b.03
+reference	b.10
+optimisation	b.01
+concurrentielle	a.01
+faune	b.01
+depart	a.10
+securise	a.01
+doivent	a.02
+indirect	a.01
+kpi	b.01
+dexploitation	a.06
+publicite	a.01
+saggravent	b.01
+activite	a.06
+competences	a.01	b.01
+frng	a.17
+contraire	a.01
+accepter	a.01
+securite	a.01
+routiere	a.01
+conduitelle	b.10
+engagees	b.01
+envers	a.03
+agressive	a.01
+proprietaires	a.04
+auquel	a.01
+cas	a.02
+integrer	a.01
+brouille	a.01
+circulants	a.03
+regroupant	b.01
+contre	b.01
+manageriale	b.01
+fondamental	a.80	b.41
+cette	a.24
+argumentation	a.10
+terme	a.03
+guerre	a.01
+passive	a.03
+simplifie	a.10
+emploi	a.01	b.01
+efficace	b.01
+tableau	b.22
+performance	a.03	b.99
+bilans	b.01
+verifier	b.01
+quelle	a.02
+concernant	a.01
+variable	a.01
+emis	a.01
+sophie	a.10
