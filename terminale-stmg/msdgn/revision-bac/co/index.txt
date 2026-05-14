@@ -1,47 +1,47 @@
-{"s":"co/Management_pour_cooperation_7.html","G":"co/Demarche_mercatique.html","m":"co/Management_pour_cooperation_1.html","C":"co/Diagnostic_strategique_3.html","U":"co/Exercice_SI_TPS.html","L":"co/Systeme_d_information.html","v":"co/Management_pour_cooperation_10.html","J":"co/Demarche_mercatique_1.html","I":"co/Demarche-mercatique.html","R":"co/Modes_de_production_3.html","t":"co/Management_pour_cooperation_8.html","y":"co/Chaine_de_valeur.html","n":"co/Management_pour_cooperation_2.html","6":"co/Types-performances.html","H":"co/Choix_strategiques_1.html","z":"co/Diagnostic-strategique.html","g":"co/fiche-revision-bac-msdgn_5.html","F":"co/choix_strategiques.html","0":"co/Compte_de_resultat_et_bilan.html","E":"co/Fredericm.html","K":"co/Modes_de_production.html","O":"co/Modes-de-production.html","2":"co/Bilan_fonctionnel.html","b":"co/Type_d_organisation-finalite-gouvernance.html","3":"co/Controle_des_couts.html","h":"co/Type_d_organisation-finalite-gouvernance_1.html","Q":"co/Modes_de_production_2.html","X":"co/Communciation.html","e":"co/fiche-revision-bac-msdgn_3.html","Z":"co/Types_de_performance.html","5":"co/Chiffre_d_affaires_previsionnel_1.html","p":"co/Management_pour_cooperation_4.html","P":"co/Modes_de_production_1.html","Y":"co/La_communication_strategique_des_organisations.html","V":"co/Exercice_SI_SIEL.html","k":"co/Air_Tahiti_Nui.html","9":"co/Bilan-fonctionnel.html","A":"co/Diagnostic_strategique_1.html","q":"co/Management_pour_cooperation_5.html","u":"co/Management_pour_cooperation_9.html","c":"co/Management_pour_cooperation.html","-":"co/Controle-cout-ankama.html","S":"co/SI.html","d":"co/fiche-revision-bac-msdgn_2.html","j":"co/Type_d_organisation.html","l":"co/Management_et_cooperation.html","*":"co/Chiffre_d_affaires.html","4":"co/Chiffre_d_affaires_previsionnel.html","8":"co/04_1_Temps_et_Risque.html","N":"co/Communication.html","1":"co/seuil_de_rentabilite.html","o":"co/Management_pour_cooperation_3.html","+":"co/controle-couts.html","W":"co/Outils_numerique.html","7":"co/Compte_de_resultat-bilan.html","x":"co/Diagnostic_strategique.html","r":"co/Management_pour_cooperation_6.html","T":"co/Exercice_SI_Frederic_M.html","w":"co/Management_pour_cooperation_11.html","a":"co/fiche-revision-bac-msdgn_1.html","M":"co/Outils_numeriques_et_rgpd.html","D":"co/chaine-valeur-porter.html","f":"co/fiche-revision-bac-msdgn_4.html","i":"co/01-Types_d_organisations.html","B":"co/Diagnostic_strategique_2.html"}
+{"s":"co/Management_pour_cooperation_7.html","G":"co/Demarche_mercatique.html","m":"co/Management_pour_cooperation_1.html","C":"co/Diagnostic_strategique_3.html","U":"co/Exercice_SI_TPS.html","L":"co/Systeme_d_information.html","v":"co/Management_pour_cooperation_10.html","J":"co/Demarche_mercatique_1.html","I":"co/Demarche-mercatique.html","R":"co/Modes_de_production_3.html","t":"co/Management_pour_cooperation_8.html","y":"co/Chaine_de_valeur.html","n":"co/Management_pour_cooperation_2.html","5":"co/Types-performances.html","H":"co/Choix_strategiques_1.html","z":"co/Diagnostic-strategique.html","g":"co/fiche-revision-bac-msdgn_5.html","F":"co/choix_strategiques.html","0":"co/Compte_de_resultat_et_bilan.html","E":"co/Fredericm.html","K":"co/Modes_de_production.html","O":"co/Modes-de-production.html","2":"co/Bilan_fonctionnel.html","b":"co/Type_d_organisation-finalite-gouvernance.html","3":"co/Controle_des_couts.html","h":"co/Type_d_organisation-finalite-gouvernance_1.html","Q":"co/Modes_de_production_2.html","X":"co/Communciation.html","e":"co/fiche-revision-bac-msdgn_3.html","Z":"co/Types_de_performance.html","*":"co/Chiffre_d_affaires_previsionnel_1.html","p":"co/Management_pour_cooperation_4.html","P":"co/Modes_de_production_1.html","Y":"co/La_communication_strategique_des_organisations.html","V":"co/Exercice_SI_SIEL.html","k":"co/Air_Tahiti_Nui.html","8":"co/Bilan-fonctionnel.html","A":"co/Diagnostic_strategique_1.html","q":"co/Management_pour_cooperation_5.html","u":"co/Management_pour_cooperation_9.html","c":"co/Management_pour_cooperation.html","+":"co/Controle-cout-ankama.html","S":"co/SI.html","d":"co/fiche-revision-bac-msdgn_2.html","j":"co/Type_d_organisation.html","l":"co/Management_et_cooperation.html","-":"co/Chiffre_d_affaires.html","4":"co/Chiffre_d_affaires_previsionnel.html","7":"co/04_1_Temps_et_Risque.html","N":"co/Communication.html","1":"co/seuil_de_rentabilite.html","o":"co/Management_pour_cooperation_3.html","9":"co/controle-couts.html","W":"co/Outils_numerique.html","6":"co/Compte_de_resultat-bilan.html","x":"co/Diagnostic_strategique.html","r":"co/Management_pour_cooperation_6.html","T":"co/Exercice_SI_Frederic_M.html","w":"co/Management_pour_cooperation_11.html","a":"co/fiche-revision-bac-msdgn_1.html","M":"co/Outils_numeriques_et_rgpd.html","D":"co/chaine-valeur-porter.html","f":"co/fiche-revision-bac-msdgn_4.html","i":"co/01-Types_d_organisations.html","B":"co/Diagnostic_strategique_2.html"}
 ["2","1"]
 {"wordPattern":"\\d+(?:[,.]\\d+)?|[^\\u0000-/:-@\\[-`{-\\u00A0]+(?:[-][^\\u0000-/:-@\\[-`{-\\u00A0]+)?","filters":[{"type":"excludeShortWords","forWords":"\\d+","min":1},{"type":"excludeShortWords","forWords":"\\D+","min":3},{"type":"cutLongWords","max":20},{"type":"lowerCase"},{"type":"ignoreWords","words":{"fois":1,"notre":1,"est":1,"vont":1,"fait":1,"avoir":1,"mais":1,"mon":1,"ici":1,"tels":1,"être":1,"des":1,"maintenant":1,"son":1,"sont":1,"depuis":1,"soyez":1,"les":1,"parce":1,"avant":1,"été":1,"par":1,"vous":1,"peu":1,"seulement":1,"pas":1,"pourquoi":1,"tes":1,"sans":1,"ceux":1,"dans":1,"nous":1,"donc":1,"ils":1,"tandis":1,"voient":1,"tellement":1,"hors":1,"étions":1,"avec":1,"très":1,"bon":1,"même":1,"que":1,"faites":1,"qui":1,"plupart":1,"sien":1,"aucuns":1,"elle":1,"sous":1,"ces":1,"sur":1,"ton":1,"devrait":1,"car":1,"aussi":1,"doit":1,"mes":1,"quand":1,"encore":1,"peut":1,"ses":1,"leur":1,"quelles":1,"quels":1,"pour":1,"trop":1,"alors":1,"tout":1,"tous":1,"chaque":1,"quelle":1,"cela":1,"comment":1,"votre":1,"autre":1,"comme":1,"quel":1,"étaient":1,"font":1}},{"type":"filterAccentedLatinLetters"}]}
 trois	j.02	k.01	m.01	z.01	O.01
-formules	5.10
-sest	j.02	7.01
+formules	*.10
+sest	j.02	6.01
 moderne	R.01
-analyse	d.10	g.10	z.12	S.01	7.10	8.10	*.10
+analyse	d.10	g.10	z.12	S.01	6.10	7.10	-.10
 statuts	i.02
 pollution	z.01
-financiere	Y.34	6.03	7.04	8.01	9.02
+financiere	Y.34	5.03	6.04	7.01	8.02
 concurrentiels	z.10
 demarquer	j.01	k.01	z.01
 absolument	z.01
 inefficacites	S.01
-jours	E.01	J.01	8.15
+jours	E.01	J.01	7.15
 lillustrer	z.01
 aventure	j.01
 est-a	C.02
-190.8	-.02
+190.8	+.02
 emotionnelle	l.01
 sert	z.01
 necessaires	z.01	C.01	T.01	V.01
 lacheter	S.01
 europeen	W.01
-produit	m.01	n.01	r.01	D.01	H.01	I.01	J.01	O.03	+.19	-.01	*.05
-cout	6.01	7.01	8.12	+.69	-.16
+produit	m.01	n.01	r.01	D.01	H.01	I.01	J.01	O.03	9.19	+.01	-.05
+cout	5.01	6.01	7.12	9.69	+.16
 cour	i.02
 destinations	k.01
 uniques	O.01
-reserves	7.02
-varie	7.01
-0	9.02
-1	i.01	z.15	C.01	U.02	6.01	7.01	8.01	+.10	-.04	*.06
-ecologique	j.01	6.02
+reserves	6.02
+varie	6.01
+0	8.02
+1	i.01	z.15	C.01	U.02	5.01	6.01	7.01	9.10	+.04	-.06
+ecologique	j.01	5.02
 innovations	Y.01
-2	i.01	V.01	7.01	+.10	-.04
+2	i.01	V.01	6.01	9.10	+.04
 avis	t.01	Y.04
-3	i.01	E.01	J.01	T.01	7.01	-.03
+3	i.01	E.01	J.01	T.01	6.01	+.03
 pouvoir	l.01	u.01	z.05	C.02	E.01	T.02
 dechantillons	T.01
-sera	j.01	9.02	*.01
+sera	j.01	8.02	-.01
 4	T.01
-5	z.15	C.01	9.05	+.02
+5	z.15	C.01	8.05	9.02
 formulaire	S.01	T.11
 6	z.02
 ressaisie	S.01
@@ -51,88 +51,88 @@ latine	j.01
 carriere	D.01
 eleves	H.01	O.01
 accessible	i.01
-couvre	9.01
+couvre	8.01
 role	l.01	z.01	C.01	S.10	V.01
-elevee	O.01	8.01
+elevee	O.01	7.01
 collectives	i.10
-classique	9.01
+classique	8.01
 arriver	j.01
-1000	-.02
+1000	+.02
 autoritaire	t.01	u.01	v.01	w.01
 territoriales	i.01
 prochaine	R.01
 opposition	z.01
 informatiques	S.01	W.01
-arrivee	5.01
+arrivee	*.01
 cet	j.01	E.02	J.02	U.01	V.01
 valeurs	l.01	Y.02
 deviter	i.01
 successifs	T.01
 procedures	s.02	V.01	X.01
-lanticipation	8.01
+lanticipation	7.01
 seul	z.01	C.01	H.01
-differents	l.01	m.01	I.10	T.01	V.03	X.01	6.01	+.10
-realisees	6.01
+differents	l.01	m.01	I.10	T.01	V.03	X.01	5.01	9.10
+realisees	5.01
 revalorisation	V.01
-resume	6.01
-objectifs	h.01	i.03	l.02	q.01	D.04	H.04	O.01	V.01	X.10	Y.12	6.09	*.11
+resume	5.01
+objectifs	h.01	i.03	l.02	q.01	D.04	H.04	O.01	V.01	X.10	Y.12	5.09	-.11
 loffre	z.01
 valider	T.01
-adoptee	6.02
-financiers	q.01	H.01	Y.11	6.01	8.01
+adoptee	5.02
+financiers	q.01	H.01	Y.11	5.01	7.01
 centralise	S.01	U.01
 specifiquement	V.01
 renommee	j.01
 lheure	J.01
 transversale	l.01	m.01	n.01	o.01	p.01	q.01	r.01	X.01
 prestation	D.01
-adopter	6.01
+adopter	5.01
 feuilles	V.01
 coeur	i.01	D.02	T.01
 boisson	E.02	J.02
 approvisionnements	D.01	U.01
-dannee	7.01
+dannee	6.01
 boutiques	j.02
-suite	*.01
+suite	-.01
 reunions	l.01	T.02	V.01	X.02
-1001	-.02
+1001	+.02
 achete	j.01	U.01
 information	D.01	S.30	U.02
-illustration	-.02
+illustration	+.02
 citoyens	i.01
 fonctionnalites	S.02	U.01
-evaluer	6.02
+evaluer	5.02
 accompagne	T.01
 blogs	I.01
-tardivement	8.01
-mesurer	z.01	T.01	8.01
+tardivement	7.01
+mesurer	z.01	T.01	7.01
 fournitures	D.01
-mesures	T.01	6.01
-caritatives	6.01
+mesures	T.01	5.01
+caritatives	5.01
 conflits	i.01	l.02
 grosses	U.01
-publicites	6.01
+publicites	5.01
 agence	i.01
 analyses	O.01	R.01
-creances	7.01	9.02
+creances	6.01	8.02
 cgt	i.01
 analysez	C.01
-banque	9.02
-tmcv	8.04
-exemplaire	-.03
+banque	8.02
+tmcv	7.04
+exemplaire	+.03
 famille	j.01	T.01
 mieux	z.02	D.02	E.03	I.01	J.03	S.02	T.03	V.01	W.01
 autour	j.01	z.01
-recycles	6.01
-risque	z.01	H.04	S.01	Y.01	7.01	8.49
-peut-elle	+.01	*.01
+recycles	5.01
+risque	z.01	H.04	S.01	Y.01	6.01	7.49
+peut-elle	9.01	-.01
 securisation	T.01
-analyser	C.01	H.10	I.01	S.01	Y.01	8.01	+.01
+analyser	C.01	H.10	I.01	S.01	Y.01	7.01	9.01
 reduits	k.01
 projets	l.01	Y.01
 veulent	E.01	J.01
-recyclabilite	6.01
-lenvironnement	i.01	k.01	p.01	z.03	H.01	Y.01	6.03
+recyclabilite	5.01
+lenvironnement	i.01	k.01	p.01	z.03	H.01	Y.01	5.03
 melvita	E.01	J.01
 fuite	W.01
 anonyme	k.01	p.01
@@ -143,38 +143,38 @@ morales	i.01
 lens	i.01
 locale	j.02	k.01	z.01
 representation	Y.01
-ankama	3.01	-.10
+ankama	3.01	+.10
 supplementaire	E.02
 confinement	T.01
 lensemble	z.01	D.01	H.01	S.01	T.01	U.01	V.02	Y.03
-lamoindrissement	7.01
+lamoindrissement	6.01
 devenu	j.01
 membres	i.02	l.03	m.01	T.01	W.01	X.01
 peau	E.01	J.01
 recycler	V.01
 bricole	j.01
-hauteur	7.01
-sociale	i.02	k.01	z.01	Y.01	6.06	7.01
+hauteur	6.01
+sociale	i.02	k.01	z.01	Y.01	5.06	6.01
 fournissent	p.01
 homogene	Y.01
 groupement	i.01
-activites	j.01	D.09	H.01	T.02	6.02	+.01
+activites	j.01	D.09	H.01	T.02	5.02	9.01
 lucrative	i.03
-evolution	j.01	H.01	5.01	*.12
+evolution	j.01	H.01	-.12	*.01
 heberger	S.01
-societe	i.04	k.01	H.01	T.01	Y.01	6.03	7.10
+societe	i.04	k.01	H.01	T.01	Y.01	5.03	6.10
 actuelle	j.01	J.01
 eclairees	S.02
-loyers	+.01
+loyers	9.01
 distribuent	j.01
 mathieu	U.05
 conjointement	i.01
 pdg	q.01
 service	i.03	n.02	z.01	D.03	I.01	S.01	T.01	X.01
-entrainement	c.09	g.01	n.10	o.10	p.10	q.10	r.10	s.10	t.10	u.10	v.10	w.10	y.01	E.10	G.01	J.10	L.03	T.10	U.10	V.10	5.10
+entrainement	c.09	n.10	o.10	p.10	q.10	r.10	s.10	t.10	u.10	v.10	w.10	y.01	E.10	G.01	J.10	L.03	T.10	U.10	V.10	4.01	*.10
 personnelle	l.01
 permis	j.02	T.01
-personnel	S.10	T.01	W.10	7.01
+personnel	S.10	T.01	W.10	6.01
 hebdomadaires	Q.01
 deploye	T.01
 passant	U.01
@@ -190,39 +190,39 @@ qualifications	T.01
 locaux	j.04	z.01	Q.01
 implication	l.03
 dinspection	i.01
-premieres	j.01	E.04	J.03	+.02
+premieres	j.01	E.04	J.03	9.02
 e-mail	q.01
 majoritairement	i.01	j.01	R.01
 cle	l.10
 cooperation	l.13	H.01
 professionnelle	i.01
 explique	j.02	E.01	J.01
-ruptures	6.01
-actuel	*.02
-compromettre	6.01
+ruptures	5.01
+actuel	-.02
+compromettre	5.01
 revenu	z.01
-transparence	i.01	T.01	Y.02	6.01
-facteurs	l.10	z.26	C.02	6.01	*.10
+transparence	i.01	T.01	Y.02	5.01
+facteurs	l.10	z.26	C.02	5.01	-.10
 travaillent	r.01
 propose	k.02	U.01	V.01
 freiner	l.01	z.01
-efficiente	6.01
-recurrence	6.01
+efficiente	5.01
+recurrence	5.01
 integration	D.01	S.01
 anah	i.01
-surtout	z.01	E.01	J.01	*.01
+surtout	z.01	E.01	J.01	-.01
 attente	j.01
-savoir	+.01
+savoir	9.01
 abandonner	H.01
 managers	S.01	Y.02
 juridique	k.01	D.01
 transversaux	l.01
-co2	6.01
+co2	5.01
 engouement	E.01	J.01
 choisi	E.02	J.02	R.01
-190.80	-.01
-protection	T.01	8.01
-capitaux	6.01	7.01	9.02
+190.80	+.01
+protection	T.01	7.01
+capitaux	5.01	6.01	8.02
 conserver	j.01	S.01
 immediatement	U.01
 soulignent	T.01
@@ -231,299 +231,299 @@ propre	z.01	S.02
 dorigine	j.01
 entite	H.01
 pgi	S.49	T.03	U.19	V.05	W.01
-reelle	P.01	7.01
+reelle	P.01	6.01
 creees	i.01	k.01
-durabilite	6.03
+durabilite	5.03
 echanges	l.02	S.01	T.01	U.01	V.01	X.01
 mauvaise	l.01
 pouvons	T.04
 succession	j.01	I.01
-quils	z.02	7.01
-analysant	8.01
+quils	z.02	6.01
+analysant	7.01
 question	j.01	m.01	n.01	o.01	p.01	q.01	r.01	s.01	t.01	u.01	v.01	w.01	z.02	A.01	B.01	C.01	P.01	Q.01	R.01
 repenser	T.01
 lusine	U.01
 haut	E.01	J.01
 sauf	z.01
-suivant	6.01
-1,10	*.01
+suivant	5.01
+1,10	-.01
 opportunities	z.01	A.01
 moyennes	E.01	J.01
 trentaine	j.01
 baptisee	E.01	J.01
 convaincre	l.02	X.01
 brevets	z.01
-avenir	6.01
-2.1	-.01
+avenir	5.01
+2.1	+.01
 tps	L.01	U.19
-667	-.03
-baisse	E.01	J.01	8.03
-tensions	6.01
+667	+.03
+baisse	E.01	J.01	7.03
+tensions	5.01
 proposant	k.02
 livraison	D.01	O.01	T.01	U.01	Y.01
 trajets	k.01
 industriel	U.01
 com	k.01	U.01
-capital	i.03	k.01	7.01
+capital	i.03	k.01	6.01
 lavantage	z.02
 operationnelles	D.01
-flore	6.01
-apporte	7.01
-temps	i.01	C.01	S.04	U.06	V.05	X.03	1.01	6.02	8.53	-.01
+flore	5.01
+apporte	6.01
+temps	i.01	C.01	S.04	U.06	V.05	X.03	1.01	5.02	7.53	+.01
 adopte	j.01
-mettre	A.02	Y.02	8.01	*.01
+mettre	A.02	Y.02	7.01	-.01
 imposer	z.01	C.01
 acquerir	T.01
-lactif	7.03
+lactif	6.03
 nationaux	j.01
-varient	+.02
-etablissements	7.01
-carbone	6.01
+varient	9.02
+etablissements	6.01
+carbone	5.01
 stock	O.01	U.04
 representative	Y.01
 imposee	Y.01
-employes	j.01	m.01	p.01	q.01	t.01	w.01	6.03
+employes	j.01	m.01	p.01	q.01	t.01	w.01	5.03
 voie	j.01
 ledition	V.01
-17.56	-.01
+17.56	+.01
 represente	U.01
 favorisant	I.01
-tri	S.01	6.01
-affectee	+.01
+tri	S.01	5.01
+affectee	9.01
 meilleures	z.01	U.01
 suivi	S.01	V.04
-200	6.01
-obligation	6.01
+200	5.01
+obligation	5.01
 gout	E.01	J.02
-sociaux	j.01	I.01	Y.03	6.01	7.01	8.01
-207	5.03
+sociaux	j.01	I.01	Y.03	5.01	6.01	7.01
+207	*.03
 dechanges	l.01
 ordres	l.01
-lancer	E.01	J.01	*.01
-5000	-.02
+lancer	E.01	J.01	-.01
+5000	+.02
 durables	H.01
-unite	P.01	Q.01	R.01	-.02
+unite	P.01	Q.01	R.01	+.02
 cause	i.01	E.01	J.01
 technique	r.01
-prises	w.01	z.01	H.01	6.01
+prises	w.01	z.01	H.01	5.01
 encadree	i.01
 richesse	E.01	J.01
 lacces	S.01	W.01
-remplace	T.01	6.01
-216	8.04
+remplace	T.01	5.01
+216	7.04
 devant	j.01
 cadre	l.01	z.01	X.01
 flux	K.03	O.06	P.12	Q.12	R.13	V.05
 differe	i.10	X.01
 remuneration	D.01
 masse	O.02	R.01
-correcte	8.01
+correcte	7.01
 sortent	j.01
 direction	a.01	c.14	i.01	l.22	t.10	u.10	v.10	w.10	D.01	H.01
 crm	S.47	W.01
 fiabilite	V.01	Y.01
-aurait	7.01
-ttc	-.01
+aurait	6.01
+ttc	+.01
 totale	j.01
 lavenir	E.01	J.01
 baissent	z.01
 conformite	D.01	T.01	Y.01
 accord	T.01
-equilibree	9.01
+equilibree	8.01
 viande	j.01
 possibilite	D.01	T.01	V.02
 laction	i.01
-222	5.01
+222	*.01
 cse	Y.01
-ecarts	6.01
+ecarts	5.01
 changement	l.03	H.01
-distributeur	T.01	-.01
-declasses	7.01
+distributeur	T.01	+.01
+declasses	6.01
 reunion	s.02	X.02
-emprunts	7.01
+emprunts	6.01
 delectricite	O.01
-apports	U.02	7.01
-optimisant	6.01
+apports	U.02	6.01
+optimisant	5.01
 productions	D.01
 celui	j.01	k.01
 interroger	T.01
 davion	k.01
 maintenance	D.01	U.01
 conseils	T.01
-relativement	j.01	8.01
-traduit	A.01	8.01
+relativement	j.01	7.01
+traduit	A.01	7.01
 marketeurs3	T.01
 nombreux	z.02
 pres	j.01
 pret	j.01
 ergonomie4	T.01
 poids	V.01
-pme	U.01	6.01
+pme	U.01	5.01
 recoltant	I.01
 reinvestis	i.01
-eleve	O.01	8.03
-directe	l.01	C.01	X.01	-.01
-230	5.01
-premiers	k.01	6.01
+eleve	O.01	7.03
+directe	l.01	C.01	X.01	+.01
+230	*.01
+premiers	k.01	5.01
 connait	E.01
-contradictoires	6.01
+contradictoires	5.01
 materielles	z.02	H.01	S.01
 sociologique	z.01
 meilleur	D.01	V.02
-veille	Y.01	8.02
-regroupes	7.01
+veille	Y.01	7.02
+regroupes	6.01
 organigramme	i.01
-eclaires	6.01
+eclaires	5.01
 fluidifier	V.01
 strategiques	e.11	z.01	F.11	H.61	Y.01
 snes-fsu	i.01
-fournisseurs	l.01	z.03	C.01	D.02	U.03	X.01	Y.02	7.01	9.03
+fournisseurs	l.01	z.03	C.01	D.02	U.03	X.01	Y.02	6.01	8.03
 reduisent	z.01	S.01
-tva	V.01	7.01
-element	z.01	E.02	H.01	J.01	U.01	-.01
+tva	V.01	6.01
+element	z.01	E.02	H.01	J.01	U.01	+.01
 indirectement	i.01	I.01	W.01
 ergonomie	T.01
 developpe	j.01	l.01	H.02	T.01	U.01	V.01
 superieurs	m.01
-importants	6.01
+importants	5.01
 quune	z.02	H.01
-limage	j.11	Y.04	6.01
+limage	j.11	Y.04	5.01
 rensis	l.01
 connais	j.02
 superieure	C.01
-240	8.01
+240	7.01
 importante	D.01
-lamortissement	7.02
-sinon	*.01
-financieres	z.02	H.01	9.02
+lamortissement	6.02
+sinon	-.01
+financieres	z.02	H.01	8.02
 dapprovisionnement	E.01
 fonctions	D.05	S.10
 vols	k.05
 difference	l.10
-60000	7.02
+60000	6.02
 styles	c.04	l.10	t.10	u.10	v.10	w.10	X.10
-directs	+.03
-actions	i.10	T.01	Y.02	6.03	8.01	*.01
+directs	9.03
+actions	i.10	T.01	Y.02	5.03	7.01	-.01
 prets	D.01
 latents	I.03
 territoire	k.02	T.01	Y.01
-fonctionnel	g.01	j.01	2.11	9.20
+fonctionnel	g.01	j.01	2.11	8.20
 laitiers	Q.01
 personnalite	l.01
 reglementations	C.01
-droite	7.01
-document	T.01	Y.01	6.01	7.01
-rapport	V.01	6.06
-3.68	-.01
+droite	6.01
+document	T.01	Y.01	5.01	6.01
+rapport	V.01	5.06
+3.68	+.01
 fonctionner	j.01	S.02
 volonte	j.01
-limite	l.01	z.01	6.02
-fixer	*.02
-fixes	z.01	C.01	V.01	6.01	8.03	+.04
+limite	l.01	z.01	5.02
+fixer	-.02
+fixes	z.01	C.01	V.01	5.01	7.03	9.04
 moment	T.03
 tarifs	V.01
-complementaires	-.10
+complementaires	+.10
 medecins	i.01
 descendante	l.02	m.01	n.01	o.01	p.01	q.01	r.01	s.02	v.01	X.01
-generer	S.01	6.01	8.01
+generer	S.01	5.01	7.01
 detourner	z.01
 publique	i.05	j.01
-situation	l.01	C.01	Y.02	6.01	8.11	9.03	*.01
+situation	l.01	C.01	Y.02	5.01	7.11	8.03	-.01
 declencher	D.01
 etudes	D.01	I.01
-creation	E.01	H.01	I.02	J.02	Y.01	6.01	8.01
-depreciation	7.11
+creation	E.01	H.01	I.02	J.02	Y.01	5.01	7.01
+depreciation	6.11
 declenchee	P.01	Q.01
-expliquent	7.01
+expliquent	6.01
 integrite	S.01
 numerisation	T.01
-mesure	z.01	O.01	P.01	S.01	U.03	6.04	7.01	*.01
+mesure	z.01	O.01	P.01	S.01	U.03	5.04	6.01	-.01
 societaux	Y.01
 refuser	T.01	W.01
 services	D.03	O.01	S.01	T.03	Y.01
-72000	8.01
+72000	7.01
 demandes	T.01
-ideale	j.01	S.10	6.01
+ideale	j.01	S.10	5.01
 demander	T.04	W.01
 naturellement	l.01
-marketing	n.01	D.01	S.01	T.01	Y.02	*.01
+marketing	n.01	D.01	S.01	T.01	Y.02	-.01
 accessibilite	S.01
 clientele	j.01	D.01	J.01	U.01
-quil	E.01	J.01	T.01	7.01
-danticiper	6.01	*.02
+quil	E.01	J.01	T.01	6.01
+danticiper	5.01	-.02
 souris	V.01
-realise	j.01	k.01	D.01	6.01
-attirer	C.01	Y.02	6.01
+realise	j.01	k.01	D.01	5.01
+attirer	C.01	Y.02	5.01
 selectionnes	j.01
 droits	W.01
 dalerte	i.01
 utilisations	Y.01
-stables	9.06
+stables	8.06
 quantitatif	V.01
 demandee	z.01
-destimation	*.01
+destimation	-.01
 definit	i.10	Y.01
-definir	z.01	K.03	P.10	Q.10	R.10	*.01
-prix	k.01	z.07	C.01	U.01	V.02	+.05	-.06	*.04
+definir	z.01	K.03	P.10	Q.10	R.10	-.01
+prix	k.01	z.07	C.01	U.01	V.02	9.05	+.06	-.04
 superieur	j.01	l.01	X.02
 composants	z.02
 prendre	i.01	t.01	I.01	S.02	V.01
-lie	l.01	E.01	J.01	9.01
-revient	+.24	-.04
+lie	l.01	E.01	J.01	8.01
+revient	9.24	+.04
 apprecie	j.01
-source	j.02	k.01	E.01	J.01	U.02	6.01
-270	5.04
-18,52	-.01
+source	j.02	k.01	E.01	J.01	U.02	5.01
+270	*.04
+18,52	+.01
 definie	l.01
-interdependance	6.10
+interdependance	5.10
 guider	z.01
-incite	6.01
+incite	5.01
 continue	D.01	P.01	Q.01	R.02
 fume	j.04
-pris	7.01
-anciennement	7.01
+pris	6.01
+anciennement	6.01
 passager	l.01
 henkel	E.01	J.01
-champ	6.01
-sensibles	6.01
+champ	5.01
+sensibles	5.01
 aujourd	j.01
 fondations	i.01
 industrie	z.10	R.01
-garanti	*.01
+garanti	-.01
 pousser	j.01
-280	5.01
-besoins	j.01	H.01	I.06	O.02	S.02	U.03	X.01	Y.03	6.01
+280	*.01
+besoins	j.01	H.01	I.06	O.02	S.02	U.03	X.01	Y.03	5.01
 boeing	k.01
 pousses	O.02
 professionnelles	z.02
-souvent	l.01	v.01	6.01
+souvent	l.01	v.01	5.01
 centralisation	S.01
-developpement	i.01	k.01	l.01	n.01	z.03	C.01	D.01	H.12	T.01	Y.02	6.14
+developpement	i.01	k.01	l.01	n.01	z.03	C.01	D.01	H.12	T.01	Y.02	5.14
 quatre	k.02
 securiser	W.01
 securises	T.01
 psa	i.01
 lechange	X.01
-rubriques	7.01
-lutter	6.02
-aleas	8.01
+rubriques	6.01
+lutter	5.02
+aleas	7.01
 commune	H.01	U.01	V.01
 concept	j.10
-motivation	j.01	l.03	D.01	X.01	6.01
+motivation	j.01	l.03	D.01	X.01	5.01
 trajectoire	H.01
 partout	S.01
 planifier	l.01	V.01
 communs	l.02
-aspects	6.01
+aspects	5.01
 quoi	i.11	z.01	W.01
 ambiance	j.01
 associees	D.02
-296	5.02
-96000	8.01
-comptable	Y.10	7.21	9.10
-circulant	7.13
-minimal	8.01
-reemploi	6.01
+96000	7.01
+296	*.02
+comptable	Y.10	6.21	8.10
+circulant	6.13
+minimal	7.01
+reemploi	5.01
 menee	i.01
 geres	U.01
 mercatique	e.01	G.11	I.32	J.02
@@ -541,64 +541,64 @@ regroupe	D.01	Y.02
 intrants	D.01
 voyez-vous	E.02	J.02
 center	T.01
-resultats	q.01	Y.01	6.05	9.01
-assurant	T.01	6.01
+resultats	q.01	Y.01	5.05	8.01
+assurant	T.01	5.01
 hausse	D.01
 confidentielle	U.01
-niveau	j.01	m.01	z.06	T.01	8.01	+.01
-premiere	E.01	J.01	U.01	+.01
+niveau	j.01	m.01	z.06	T.01	7.01	9.01
+premiere	E.01	J.01	U.01	9.01
 soucieux	k.01
-exercer	T.01	7.01
-nette	9.05
+exercer	T.01	6.01
+nette	8.05
 reseau	S.01
 chacun	j.01	s.02	E.01	J.01	T.01
 micro-environnement	z.12	C.01
 infrastructure	D.01
 amenes	T.02
 amener	c.01	l.10
-cles	z.23	C.01	6.02	8.10	9.10
+cles	z.23	C.01	5.02	7.10	8.10
 salarie	X.01
 ameliore	D.01	V.01
 travailler	T.01	W.03
 marchand	j.01
 buzz	Y.01
-dadherents	5.10
-prevu	6.01	*.03
-finance	9.01
+prevu	5.01	-.03
+dadherents	*.10
+finance	8.01
 applications	S.02
-favoriser	l.02	z.01	T.01	X.01	6.02
+favoriser	l.02	z.01	T.01	X.01	5.02
 interactive	I.01
-investisseurs	Y.03	6.01
+investisseurs	Y.03	5.01
 malgre	j.02
 novembre	E.01	J.01
-demande	j.01	E.02	I.01	J.04	O.06	P.04	R.01	T.03	W.01	Y.01	*.02
+demande	j.01	E.02	I.01	J.04	O.06	P.04	R.01	T.03	W.01	Y.01	-.02
 fiscale	z.01
 recoit	Q.01
 optimiser	j.01	O.01
 vendeurs	T.04
 possibles	X.01
-organique	6.10
+organique	5.10
 lefficacite	O.01
-paiements	9.01
+paiements	8.01
 gouvernements	z.01
 fiches	V.02
 forums	Y.01
 comprendre	a.10	j.01	z.01	I.01	T.01
-exemplaires	-.07
+exemplaires	+.07
 suppression	T.03
-specifique	z.01	O.01	+.13
-trouve-t	7.01
+specifique	z.01	O.01	9.13
+trouve-t	6.01
 deconomie	k.01
-bien	j.01	z.12	C.01	D.01	E.01	U.01	6.01	7.01	8.01
+bien	j.01	z.12	C.01	D.01	E.01	U.01	5.01	6.01	7.01
 petites	j.01	O.01
 reglements	z.01
 envoie	q.01
 cremes	E.01	J.01
 vous	U.01
-identifier	a.01	b.10	h.01	k.01	z.12	H.10	8.01
+identifier	a.01	b.10	h.01	k.01	z.12	H.10	7.01
 identifies	z.01
 majeur	V.01
-nentraine	6.01
+nentraine	5.01
 fumoir	j.01
 mettent	H.01
 sorties	V.01
@@ -607,7 +607,7 @@ majuscule	A.01
 mener	i.10
 extraction	U.01
 dagave	E.01	J.01
-facon	T.01	6.01
+facon	T.01	5.01
 fonctionne	i.01	O.01
 creative	I.01
 marque	j.01	z.02	E.01	J.01	Y.11
@@ -620,27 +620,27 @@ explicite	T.01
 carrefour	i.01
 sarticule	z.01
 niche	E.01	J.01
-lexercice	i.10	8.10
+lexercice	i.10	7.10
 consultation	T.03
 organisons	T.01
-interdiction	6.01
+interdiction	5.01
 echelle	j.01
 denombre	j.01
-loi	i.01	6.14
-15000	7.03
+loi	i.01	5.14
+15000	6.03
 semaine	Q.01
 lon	B.01
-formation	D.02	6.03
+formation	D.02	5.03
 lobjectif	T.01
 developper	j.01
 developpes	T.01
-methode	i.20	z.10	D.10	7.20	8.50	9.32	+.50	*.60
+methode	i.20	z.10	D.10	6.20	7.50	8.32	9.50	-.60
 1998	k.01
-lot	-.01
+lot	+.01
 1997	j.01
 los	k.02
 facilite	V.01
-societale	i.01	k.11	6.04
+societale	i.01	k.11	5.04
 premium	k.01
 acheminer	U.01
 assure	j.01	E.01
@@ -650,30 +650,30 @@ disposons	U.01
 lenseigne	j.01
 tire	P.01	Q.01	R.01
 deviennent	U.01
-aider	S.01	6.01	*.01
-parfois	j.01	l.02	6.01
+aider	S.01	5.01	-.01
+parfois	j.01	l.02	5.01
 derreur	H.01
 comporte	V.01
 peur	v.01
 exterieurs	C.01
-danalyser	z.01	+.01
-centre	5.13
-technologique	z.02	C.01	D.01	7.01
+danalyser	z.01	9.01
+centre	*.13
+technologique	z.02	C.01	D.01	6.01
 connu	j.02
 miel	E.01	J.01
 mecanismes	i.01
-indicateur	8.01
+indicateur	7.01
 recemment	j.01
 garder	j.01	S.01	W.01
 quantites	R.01	U.03
 nationale	i.02
 toujours	h.01	j.03	z.01
-dit-on	7.01
-tresorerie	9.09
+dit-on	6.01
+tresorerie	8.09
 incidence	C.01
 subordonne	X.02
 swot	x.01	z.13	A.11	B.01
-gaspillage	j.01	6.01
+gaspillage	j.01	5.01
 ajouter	z.01
 fournisseur	j.02	E.02	J.01	U.02
 participent	w.01
@@ -689,55 +689,55 @@ intro	a.10
 inscription	T.01
 strategiquement	E.01	J.01
 lachat	U.01
-dagir	6.01
+dagir	5.01
 lautomatisation	V.01
 nouvelle-zelande	k.01
 operationnelle	f.10	D.01	S.02
 distribues	j.01
 employe	o.01
 politiques	m.01
-distribuee	6.01	7.01	-.01
+distribuee	5.01	6.01	+.01
 telles	D.05
 quest-ce	z.02
 corps	i.01
 reponse	O.01	P.02
 economies	O.01
 posseder	C.01	E.01
-possedes	7.01
-produire	O.03	Y.10	7.01
+possedes	6.01
+produire	O.03	Y.10	6.01
 laboratoire	j.01
-ecosystemes	6.01
+ecosystemes	5.01
 envoyer	j.01
 japon	k.02
 cohesion	l.23
 lamelioration	T.02
 utilisant	R.01
-dont	i.02	k.01	C.01	E.01	J.01	O.01	T.04	7.01
+dont	i.02	k.01	C.01	E.01	J.01	O.01	T.04	6.01
 traitement	z.01	I.01	U.01
-produits	j.19	z.04	C.02	E.07	J.09	O.02	P.02	R.02	T.02	V.05	Y.01	6.02	7.02	*.11
+produits	j.19	z.04	C.02	E.07	J.09	O.02	P.02	R.02	T.02	V.05	Y.01	5.02	6.02	-.11
 substitution	z.02	C.01
-part	j.02	m.01	U.01	6.03	7.01
+part	j.02	m.01	U.01	5.03	6.01
 classement	S.01
 diriger	l.01
 semipublique	i.01
-point	j.01	8.28	9.10
-tenu	j.01	U.01	6.01
-debut	h.01	8.01
+point	j.01	7.28	8.10
+tenu	j.01	U.01	5.01
+debut	h.01	7.01
 principal	i.02
 rationaliser	S.01
-general	i.03	T.01	6.01
-reparabilite	6.01
+general	i.03	T.01	5.01
+reparabilite	5.01
 durer	i.01
-circulent	7.01
+circulent	6.01
 relier	k.01
-devolution	5.01	*.22
+devolution	-.22	*.01
 dirigee	i.01
 duree	i.01	T.02
 dimension	z.01
-audits	6.01
+audits	5.01
 introduction	b.01	h.10	k.10
 spontanee	l.01	X.01
-economiques	6.01
+economiques	5.01
 nouveautes	z.01
 membre	j.01
 ligne	o.01	T.24	U.01	V.01	W.01	Y.03
@@ -748,12 +748,12 @@ commandez	U.01
 fournissant	U.01
 sagit-il	z.01
 produisant	Y.01
-processus	l.01	o.01	w.01	E.01	J.01	O.02	P.01	R.01	S.03	T.01	U.01	V.02	X.01	6.02
+processus	l.01	o.01	w.01	E.01	J.01	O.02	P.01	R.01	S.03	T.01	U.01	V.02	X.01	5.02
 co-creation	I.01
 chez	k.10	E.01	J.01	U.02
-anti-gaspillage	6.01
-europeenne	6.03
-produite	O.01	-.01
+anti-gaspillage	5.01
+europeenne	5.03
+produite	O.01	+.01
 lexterieur	X.01
 numeriques	f.01	M.11	T.01	W.33	X.01
 importantes	H.01
@@ -761,21 +761,21 @@ interaction	X.01
 domicile	T.03
 internationaux	k.01
 suggestions	m.01
-11,17	-.01
+11,17	+.01
 cher	j.01
 temoignages	T.01
-lue	6.02
-danalyse	z.01	T.01	8.10
-gouvernance	a.01	b.10	i.31	6.01
-lui	E.01	U.02	6.01
+lue	5.02
+danalyse	z.01	T.01	7.10
+gouvernance	a.01	b.10	i.31	5.01
+lui	E.01	U.02	5.01
 crise	j.03	T.01
-sociales	z.01	6.01	7.01	9.01
+sociales	z.01	5.01	6.01	8.01
 coherence	D.01	J.01	Y.01
-supportable	8.01
+supportable	7.01
 abbe	i.01
 videos	T.01	Y.01
 lus	j.01
-encaissements	9.01
+encaissements	8.01
 den	E.01	J.01
 dorganiser	O.01
 maitrisee	D.01
@@ -785,20 +785,20 @@ strenght	z.01
 competitif	z.01
 coute	j.01
 consigne	j.01
-afin	i.01	E.01	I.02	J.01	O.01	Q.01	S.01	T.06	6.02	+.01
-impact	j.01	k.01	6.03	8.01
+afin	i.01	E.01	I.02	J.01	O.01	Q.01	S.01	T.06	5.02	9.01
+impact	j.01	k.01	5.03	7.01
 organisationnelles	z.02
-maitriser	z.03	E.04	J.02	S.02	+.02
+maitriser	z.03	E.04	J.02	S.02	9.02
 pare-feux	T.01
 beneficier	U.01
-obtenus	6.01
+obtenus	5.01
 bill	i.01
 firme	D.01
-active	9.03
-cours	7.01
+active	8.03
+cours	6.01
 venture	H.11
 population	E.01	J.01
-nexiste	6.01
+nexiste	5.01
 route	V.01
 flexible	O.01
 minoritaire	i.01
@@ -806,94 +806,94 @@ mettant	A.01
 relever	T.01
 mentions	T.01
 profils	T.01
-lorsque	B.01	T.02	U.01	Y.01	-.01
+lorsque	B.01	T.02	U.01	Y.01	+.01
 impactant	z.01
-acteurs	a.01	c.11	i.01	l.21	z.01	C.02	S.01	V.06	X.03	6.01
+acteurs	a.01	c.11	i.01	l.21	z.01	C.02	S.01	V.06	X.03	5.01
 attitude	z.01
 eviter	j.01	W.02
 acceder	H.01	U.01	W.01
-passif	7.13	9.02
+passif	6.13	8.02
 telle	j.01	H.01	Y.01
 creme	E.01	J.01
 susceptibles	z.02
-atteint	8.02	*.01
+atteint	7.02	-.01
 europeennes	C.01
 frontieres	i.01
-annuels	5.04
+annuels	*.04
 marketeur	T.01
 departements	m.01
 lettres	T.01
-peter	6.02
+peter	5.02
 tahiti	b.01	k.38
 elle-meme	D.01
 acquisition	H.12
 damelioration	T.01
-arbitrages	6.12
+arbitrages	5.12
 business	Y.10
 emergence	I.01
 logiques	O.10
-investissement	6.01	9.01
+investissement	5.01	8.01
 retenue	J.01
 surproduction	O.01
 apres-vente	D.01
 affirmation	z.01
 dinvestissement	z.01
 transition	E.01	J.01	T.01
-gestion	g.10	D.04	K.03	O.01	P.10	Q.10	R.10	S.25	T.01	U.19	V.29	Y.10	1.01	6.04	8.22
-couts	g.01	z.02	C.01	D.04	H.01	O.06	S.07	3.11	6.02	+.59
+gestion	g.10	D.04	K.03	O.01	P.10	Q.10	R.10	S.25	T.01	U.19	V.29	Y.10	1.01	5.04	7.22
+couts	g.01	z.02	C.01	D.04	H.01	O.06	S.07	3.11	5.02	9.59
 lobjet	z.01
-atteindre	i.01	6.02
+atteindre	i.01	5.02
 series	O.02	Q.01
-degager	6.01
+degager	5.01
 definies	i.01
 maximum	j.01	T.01	U.01
 phenomene	E.02	J.02
 diversification	H.03
 publications	j.01
 multiples	U.01
-consomme	7.01
+consomme	6.01
 caracterisation	V.01
 reposent	S.01
 rapidite	z.02
-indicateurs	S.01	2.01	6.03	8.10	9.20
-paye	7.01
-0.10	-.01
-dit	7.01
-marge	D.01	8.37	+.35	-.01
-acceleration	8.01
-0.09	-.01
+indicateurs	S.01	2.01	5.03	7.10	8.20
+paye	6.01
+0.10	+.01
+dit	6.01
+marge	D.01	7.37	9.35	+.01
+acceleration	7.01
+0.09	+.01
 dix	j.01
-0.06	-.02
+0.06	+.02
 daurade	j.01
 enjeu	O.01
-affaires	5.04
-exemples	i.14	z.01	W.11	X.04	+.02
-lecrire	8.01
-legal	z.02	C.01	6.20
+affaires	*.04
+exemples	i.14	z.01	W.11	X.04	9.02
+lecrire	7.01
+legal	z.02	C.01	5.20
 airlines	k.01
 lunite	O.01
 grosse	U.01
-certaines	i.01	6.01
+certaines	i.01	5.01
 dutilisation	T.02	W.01
-informationnelle	8.01
+informationnelle	7.01
 angeles	k.02
 creez	T.01
 etapes	D.01
 simplement	U.01
-creer	C.01	6.01
+creer	C.01	5.01
 succes	j.01	z.23	C.01	E.03	J.03	T.01
 prospectus	j.01
 manque	S.01
-vision	l.02	8.01
+vision	l.02	7.01
 critere	X.01
-soit	k.01	T.01	U.01	8.01	9.02	-.01	*.01
+soit	k.01	T.01	U.01	7.01	8.02	+.01	-.01
 soin	j.01	E.01	J.01
 fideliser	j.01	C.01	U.01	Y.01
 immediate	X.01
 offreurs	z.01	C.01
-fonction	i.01	l.02	D.01	E.01	J.01	R.01	T.01	9.01
+fonction	i.01	l.02	D.01	E.01	J.01	R.01	T.01	8.01
 varies	j.01
-ecart	*.01
+ecart	-.01
 finalites	i.03	k.02
 toyota	R.01
 occasions	T.01
@@ -901,46 +901,46 @@ jessaie	j.01
 limposer	Y.01
 confusion	z.10
 celles-ci	D.01
-societes	W.10	7.01
+societes	W.10	6.01
 visioconference	X.02
 effectue	B.01
 mobiliser	a.01	c.10	l.10	X.01
 tant	j.01
 tactile	V.01
-pilotage	D.01	6.11
+pilotage	D.01	5.11
 back	D.01
 bocaux	j.01
 lequel	z.01
 navigateur	T.02
 lelaboration	V.01
-toutes	v.01	z.01	S.01	6.01
+toutes	v.01	z.01	S.01	5.01
 lui-meme	U.01
 peche	j.14
-risques	l.10	D.01	H.11	O.01	S.01	W.10	Y.01	6.01	8.03
+risques	l.10	D.01	H.11	O.01	S.01	W.10	Y.01	5.01	7.03
 sante	i.01
 petit	j.03
 connaissances	D.01	S.10	X.01
 passes	V.01
 passer	S.01	U.03
 puissants	z.01
-exposee	8.01
+exposee	7.01
 passee	U.01
-engagements	Y.01	5.03
-annuelles	8.01
+engagements	Y.01	*.03
+annuelles	7.01
 reception	D.01
-mise	f.10	k.01	H.01	S.01	T.01	U.01	V.01	6.03	7.01
-partie	g.10	j.01	D.01	H.01	T.01	U.02	7.02
+mise	f.10	k.01	H.01	S.01	T.01	U.01	V.01	5.03	6.01
+partie	g.10	j.01	D.01	H.01	T.01	U.02	6.02
 flotte	V.01
-2023	5.06	7.02
-2022	5.03	6.01
+2023	6.02	*.06
+2022	5.01	*.03
 2021	j.01
 est-ce	j.01
-2020	j.11	E.02	J.02	6.01
+2020	j.11	E.02	J.02	5.01
 doutre-mer	k.01
 grand	R.01	U.02
-0.40	-.01
-une	a.01	b.10	i.09	j.09	l.05	m.01	o.03	p.01	s.02	z.08	A.02	C.04	D.02	E.09	H.19	I.04	J.09	O.02	P.02	R.01	S.07	T.01	U.08	V.01	W.01	Y.04	6.19	7.03	8.06	9.02	+.02	-.14	*.03
-respecte	T.02	6.01
+0.40	+.01
+une	a.01	b.10	i.09	j.09	l.05	m.01	o.03	p.01	s.02	z.08	A.02	C.04	D.02	E.09	H.19	I.04	J.09	O.02	P.02	R.01	S.07	T.01	U.08	V.01	W.01	Y.04	5.19	6.03	7.06	8.02	9.02	+.14	-.03
+respecte	T.02	5.01
 michael	C.01
 2019	k.01	E.01	J.01
 2018	k.01
@@ -958,53 +958,53 @@ collaboratifs	W.02
 reperes	l.01
 charisme	l.02
 departement	S.01
-desequilibres	6.01
-delais	O.04	6.01	8.01
+desequilibres	5.01
+delais	O.04	5.01	7.01
 ouverte	w.01
 nouveau	n.01	r.01	z.01	H.01	I.01
 amenant	l.01
-payer	D.01	7.01
+payer	D.01	6.01
 privilegiee	I.01
-0.50	8.01
+0.50	7.01
 navigation	T.02
-2029	6.01
-752	5.02
+2029	5.01
+752	*.02
 contenus	Y.02
-croire	6.01
+croire	5.01
 diversifies	j.01
 755	k.01
 diffusees	Y.01
-2024	5.06
+2024	*.06
 lhabitat	i.01
 action	i.21	T.01
 acquerant	D.01
 reduisant	S.01
-approvisionnement	j.03	-.03
+approvisionnement	j.03	+.03
 exprimes	I.02
 jamais	T.01
 validation	V.01
 eliminant	S.01
 exprimer	X.01
-lentreprise	i.01	j.09	k.11	z.03	D.03	E.12	H.04	I.01	J.10	S.01	T.19	U.04	W.12	Y.03	6.03	7.06	+.01	*.01
+lentreprise	i.01	j.09	k.11	z.03	D.03	E.12	H.04	I.01	J.10	S.01	T.19	U.04	W.12	Y.03	5.03	6.06	9.01	-.01
 espace	j.01	U.01
 boutique	j.01	T.10
 connaissons	E.01	J.01
-strategique	d.11	x.11	z.12	D.01	H.13	N.01	Y.21	8.01
+strategique	d.11	x.11	z.12	D.01	H.13	N.01	Y.21	7.01
 lactuel	j.01
 fabrication	D.01	E.01	J.01	O.01	P.06	Q.04	R.06
 cherchent	O.01
 rectification	T.03	W.01
-daider	S.01	+.01
-0.67	-.01
+daider	S.01	9.01
+0.67	+.01
 meubles	P.01
 idees	l.01	o.01	z.01
 menace	z.02
 qualifiez	J.01
 decisionnel	w.01
-previsionnel	g.01	4.11	5.16	*.57
+previsionnel	g.01	4.11	-.57	*.16
 contents	j.02
 messages	T.01	Y.01
-impression	-.03
+impression	+.03
 travers	D.10	E.01	P.01	Y.01
 pluriel	A.01
 facteur	l.10
@@ -1013,79 +1013,79 @@ statut	k.02	l.03
 citoyenne	i.01
 jusquici	U.01
 diffusion	Y.01
-bande	-.10
-clients	j.04	l.01	z.06	C.01	D.01	E.02	I.03	J.02	O.01	P.01	S.04	T.05	U.04	W.02	X.01	Y.04	6.04	7.02	9.03
+bande	+.10
+clients	j.04	l.01	z.06	C.01	D.01	E.02	I.03	J.02	O.01	P.01	S.04	T.05	U.04	W.02	X.01	Y.04	5.04	6.02	8.03
 communement	D.01
-entreprises	i.03	j.01	z.05	C.01	E.01	H.02	J.01	S.02	U.01	W.01	Y.02	6.08
+entreprises	i.03	j.01	z.05	C.01	E.01	H.02	J.01	S.02	U.01	W.01	Y.02	5.08
 comptons	j.01
 eliminer	V.01
 ingenieur	r.01
 manuelle	S.01
 dadministration	i.01	T.01
-periode	j.01	7.01	*.01
+periode	j.01	6.01	-.01
 loisir	z.01
-devaluer	6.01
+devaluer	5.01
 dynamique	j.01	l.21
 non-percu	I.01
-travail	i.03	l.02	o.01	p.02	z.01	O.01	T.01	U.01	V.01	W.01	X.01	Y.01	6.04	7.01
+travail	i.03	l.02	o.01	p.02	z.01	O.01	T.01	U.01	V.01	W.01	X.01	Y.01	5.04	6.01
 creee	D.01	H.01
-resistante	8.01
+resistante	7.01
 exprimee	D.01	J.01
 hierarchique	l.01	m.01	X.01
 livraisons	j.01
 abouti	D.01
 cependant	R.01
-prise	i.01	l.01	H.02	S.02	T.04	U.02	X.01	1.01	6.01	8.11	*.12
+prise	i.01	l.01	H.02	S.02	T.04	U.02	X.01	1.01	5.01	7.11	-.12
 restaurateurs	j.02
-positive	9.02	*.01
+positive	8.02	-.01
 emblematique	l.01
 lourds	O.01
 parler	E.01	J.01
-300	5.03
+300	*.03
 stockees	T.01
-machine	E.01	J.01	+.01
-exercice	b.02	c.09	g.01	j.10	k.10	x.03	y.01	E.10	G.01	J.10	K.03	L.03	T.10	U.10	V.10	3.01	5.10	-.10
+machine	E.01	J.01	9.01
+exercice	b.02	c.09	j.10	k.10	x.03	y.01	E.10	G.01	J.10	K.03	L.03	T.10	U.10	V.10	3.01	4.01	+.10	*.10
 aluminium	U.01
 pourra	T.01
 globaux	D.01
 passagers	k.02
 implique	l.01
 distingue	D.01
-comparable	H.01	6.01
+comparable	H.01	5.01
 francais	j.01	A.01	E.01	J.01
 instance	Y.01
 mail	W.02	X.02
 peut-il	c.01	l.10
 opere	k.01
-plutot	R.01	8.01
-emplois	9.15
+plutot	R.01	7.01
+emplois	8.15
 individuels	l.01	V.01
-main	T.02	-.01
-banques	Y.02	6.01
+main	T.02	+.01
+banques	Y.02	5.01
 nommes	i.01
 emballages	j.02
 compagnies	k.01
 completement	J.01
 radio	i.01
 consultatif	t.01	u.01	v.01	w.01
-310	5.01
-dacquisition	7.01
+dacquisition	6.01
+310	*.01
 poursuit	j.02
 solution	j.01	I.01
 annoncer	s.02
 reussite	z.01
 sylob	U.15
-administratifs	+.01
+administratifs	9.01
 weaknesses	z.01	A.01
-prevue	*.02
+prevue	-.02
 commun	i.03	H.01
-doptimiser	V.01	+.01
+doptimiser	V.01	9.01
 international	i.01	k.01
 enfants	j.01
-credit	7.01
+credit	6.01
 disponible	z.01
 progiciel	S.12	T.01	U.02	V.15
-disparaissent	+.01
+disparaissent	9.01
 utilisees	D.01	E.01	J.01
 reinventer	E.01	J.01
 monopole	z.01	C.01
@@ -1094,30 +1094,30 @@ joint-venture	H.01
 ambitieuse	l.01
 interoperables	S.01
 orienter	Y.01
-probleme	j.01	r.01	I.01	*.01
-sustainability	6.01
-letat	i.02	z.01	U.02	V.02	7.01
-proteger	W.03	6.01
-bonnes	S.01	6.01
-obtenir	U.01	6.01
+probleme	j.01	r.01	I.01	-.01
+sustainability	5.01
+letat	i.02	z.01	U.02	V.02	6.01
+proteger	W.03	5.01
+bonnes	S.01	5.01
+obtenir	U.01	5.01
 uniformes	O.01
 traitons	T.01
 dentrer	z.01
 fonctionnelle	l.01
-dispose	S.01	9.01
+dispose	S.01	8.01
 position	l.01
-present	6.01
-fidelite	k.01	6.02
-informations	m.02	I.01	S.06	T.04	U.01	V.02	W.01	X.01	Y.07	6.01	-.20
+present	5.01
+fidelite	k.01	5.02
+informations	m.02	I.01	S.06	T.04	U.01	V.02	W.01	X.01	Y.07	5.01	+.20
 sentiment	l.01
 obtient	T.01
-prend	t.01	u.01	v.01	8.01
+prend	t.01	u.01	v.01	7.01
 guadeloupe	j.05
 grandissant	E.01	J.01
 transformer	j.01	l.01	I.01	S.02	T.01
 prive	i.01
 elles	i.02
-capteurs	S.01	6.01
+capteurs	S.01	5.01
 leadership	a.01	c.10	l.44
 modifie	j.01
 threats	z.01	A.01
@@ -1125,103 +1125,103 @@ alliances	H.01
 loin	U.01
 ladhesion	i.01
 intensite	z.02
-met	T.02	6.01
+met	T.02	5.01
 lois	z.02	C.01
 execution	D.01
 ville	i.01
-cest-a	T.01	7.03
-celui-ci	*.01
-taux	z.01	5.02	8.12	-.01	*.43
+cest-a	T.01	6.03
+celui-ci	-.01
+taux	z.01	7.12	+.01	-.43	*.02
 fins	T.03
-depense	7.01
+depense	6.01
 dirigeant	j.02	l.01	t.01	u.01	v.01	E.10	H.01	J.10	U.01
-ladaptation	8.01
+ladaptation	7.01
 asynchrone	X.11
-structure	i.03	6.01	9.01
-comportement	j.01	z.01	I.01	6.01
-chiffre	g.01	j.01	S.01	U.02	4.11	5.04	6.03	8.07	*.66
-secteur	z.06	U.01	-.01
-amelioration	l.01	o.01	D.02	S.02	6.03	8.01
+structure	i.03	5.01	8.01
+comportement	j.01	z.01	I.01	5.01
+chiffre	g.01	j.01	S.01	U.02	4.11	5.03	7.07	-.66	*.04
+secteur	z.06	U.01	+.01
+amelioration	l.01	o.01	D.02	S.02	5.03	7.01
 sinstaure	U.01
 defendre	i.01
 concerner	T.01
 circulation	T.01	X.01
-correcteur	-.01
-dun	j.04	l.01	n.01	z.04	H.01	I.01	S.01	T.03	U.01	V.01	6.01	7.01	8.01	9.02	+.01
-performante	z.01	O.01	6.01
+correcteur	+.01
+dun	j.04	l.01	n.01	z.04	H.01	I.01	S.01	T.03	U.01	V.01	5.01	6.01	7.01	8.02	9.01
+performante	z.01	O.01	5.01
 lanalyse	z.04
 inox	U.01
 prestataire	D.01
 hectares	E.01	J.01
-levolution	6.01	7.01
-depend	O.01	-.02	*.01
-multidimensionnelle	6.10
+levolution	5.01	6.01
+depend	O.01	+.02	-.01
+multidimensionnelle	5.10
 communautaire	Y.01
 dordre	j.01
-cotees	6.01
-actifs	7.01	9.02
+cotees	5.01
+actifs	6.01	8.02
 dinfrastructure	S.01
 saison	E.01	J.01
 defficacite	S.01
-globale	d.10	Y.21	6.23	8.01	9.01
+globale	d.10	Y.21	5.23	7.01	8.01
 modalites	i.01	H.10
-susent	7.01
+susent	6.01
 effectuees	T.01
 indispensables	z.02
-10	k.01	E.01	J.01	9.06	+.04	-.01	*.02
+10	k.01	E.01	J.01	8.06	9.04	+.01	-.02
 reglementation	z.01
-12	5.06	7.01	-.02
+12	6.01	+.02	*.06
 cherchant	j.01
-6000	7.01	-.02
+6000	6.01	+.02
 fabrique	j.01	P.01	R.01
-15	9.02	+.02	-.01
+15	8.02	9.02	+.01
 basee	k.01
 contractuelle	T.01
-moyens	D.02	I.01	T.01	Y.10	6.05
+moyens	D.02	I.01	T.01	Y.10	5.05
 module	U.01	V.06
 racheter	E.01	J.01
-360	8.02
-limpact	i.01	6.01
+360	7.02
+limpact	i.01	5.01
 amplifient	Y.01
 biais	j.01
 langle	z.01
 independants	T.03
 serveurs	S.03
-unique	S.01	V.01	6.01
-qualite	j.01	l.01	z.02	D.02	E.03	J.02	O.02	T.01	U.01	Y.01	6.02
+unique	S.01	V.01	5.01
+qualite	j.01	l.01	z.02	D.02	E.03	J.02	O.02	T.01	U.01	Y.01	5.02
 restauration	z.01
-20	9.05	+.03	*.05
+20	8.05	9.03	-.05
 22	E.01	J.01
-25	9.03
-identiques	O.01	R.01	6.01
+25	8.03
+identiques	O.01	R.01	5.01
 organes	i.23
-texte	6.20
-global	9.02
+texte	5.20
+global	8.02
 modifiant	T.01
 objets	V.02
-long	l.01	H.02	9.03
-ressources	z.02	C.01	D.02	H.06	O.01	S.02	V.01	6.02	9.16	+.01
+long	l.01	H.02	8.03
+ressources	z.02	C.01	D.02	H.06	O.01	S.02	V.01	5.02	8.16	9.01
 pieces	j.01
 bases	R.01	S.02	T.01
 evolue	k.01	z.01
 devons	j.01
 partenariat	H.01
-mis	T.01	6.01
+mis	T.01	5.01
 choisit-elle	O.01
 supports	D.01	Y.10
-10.34	-.01
+10.34	+.01
 exiger	z.01
 relationship	S.11
 collectees	T.02
 naturelles	E.01	J.01
-30	T.01	9.06	+.02	*.01
+30	T.01	8.06	9.02	-.01
 decrire	U.01
 dobjets	V.02
-acquis	7.01
-31	7.02
-concurrents	j.01	k.01	z.03	C.01	6.01
-variables	U.01	8.01	+.03
-35	9.01
+acquis	6.01
+31	6.02
+concurrents	j.01	k.01	z.03	C.01	5.01
+variables	U.01	7.01	9.03
+35	8.01
 laccord	W.01
 strategies	H.11
 recommande	z.01
@@ -1229,49 +1229,49 @@ respecter	W.02	Y.01
 adhesion	l.02
 commande	O.02	P.01	S.01	T.02	U.04
 entrepreneur	l.01
-integre	S.11	T.01	U.03	V.14	6.01
-face	z.01	C.01	E.01	J.01	T.01	8.02
+integre	S.11	T.01	U.03	V.14	5.01
+face	z.01	C.01	E.01	J.01	T.01	7.02
 gamme	E.04	J.05	V.01
 disposait	T.01
 legales	i.01	T.01
 impacter	H.10
 inspire	l.01
 collaboration	m.01	w.01	I.01
-directement	z.01	D.01	I.01	W.02	8.10	+.01
+directement	z.01	D.01	I.01	W.02	7.10	9.01
 planification	U.01	V.01
-40	9.03	+.03	*.02
+40	8.03	9.03	-.02
 precisement	z.01	O.01
 open	S.10
-financierement	9.01
-indirects	+.03
-45	+.03
+financierement	8.01
+indirects	9.03
+45	9.03
 tenons	j.02
 manutention	D.01
 standardises	R.01
 coordonnent	i.01
-daction	i.01	8.01
+daction	i.01	7.01
 48	k.01
 politique	z.02	C.01	T.10
 accelerer	T.01
-couvrent	9.01
+couvrent	8.01
 obligations	i.01	W.11
 diffuserons	T.01
 reputation	j.02	Y.01
-atelier	P.01	-.01
+atelier	P.01	+.01
 berhault	j.02
 coordination	l.13	m.01	O.01	S.02	V.01
 presentation	k.10	T.01	V.10
 standardisee	R.01
 voyageurs	k.01
 synchrone	X.11
-50	i.02	8.03	9.05	+.05	*.03
+50	i.02	7.03	8.05	9.05	-.03
 logique	I.01	O.03
 raffinerie	O.01
 pousse	P.01	Q.01	R.02
 agrandie	j.01
-outil	j.01	l.10	z.01	C.01	T.01	U.01	V.04	6.01
-temporel	8.10
-succursale	6.01
+outil	j.01	l.10	z.01	C.01	T.01	U.01	V.04	5.01
+temporel	7.10
+succursale	5.01
 solutions	j.01	U.01
 courrier	T.02
 remplir	z.01
@@ -1280,9 +1280,9 @@ courriel	T.01
 cliente	U.01
 taille	j.01	z.01	C.01	H.01
 reactive	I.01	J.01	U.01	Y.01
-investir	*.01
+investir	-.01
 actuellement	V.01
-investis	6.01
+investis	5.01
 ufc-que	i.01
 adapte	P.01	T.01
 dediees	U.01
@@ -1292,7 +1292,7 @@ controles	T.01
 monde	k.02
 controler	l.02	Y.01
 comptabilite-finance	U.01
-60	+.03	-.04	*.01
+60	9.03	+.04	-.01
 qua	j.01
 jusqua	U.01
 internet	j.01	E.01	J.01	S.02	T.14	V.01	Y.01
@@ -1304,67 +1304,67 @@ numerique	z.01	O.01	W.20
 participatif	l.02	t.01	u.01	v.01	w.01	X.01
 transmettre	l.01	m.02	S.01
 nuxe	E.01	J.01
-specifiques	D.01	P.01	S.01	+.12
+specifiques	D.01	P.01	S.01	9.12
 consentement	T.01	W.01
 evidemment	E.01	J.01
 pouvoirs	z.01
 commerce	z.01
 controlee	i.01
-stocks	O.01	U.18	V.02	7.01	9.02
-celuici	9.01
+stocks	O.01	U.18	V.02	6.01	8.02
+celuici	8.01
 grands	R.01	U.03
 daccepter	T.01
-sous-total	-.04
+sous-total	+.04
 releve	E.01
 saisie	S.01
 symboles	l.01
 fondateur	j.01	l.01
-biens	D.02	O.03	7.04
+biens	D.02	O.03	6.04
 surfaces	E.01	J.01
 e-reputation	Y.23
 pestel	z.15	C.01
 fortes	T.01
-70	9.01	+.02	*.01
-definition	i.30	l.31	z.10	D.10	H.42	I.11	O.22	S.30	W.30	X.10	Y.60	6.41	7.30	8.30	+.30	*.30
+70	8.01	9.02	-.01
+definition	i.30	l.31	z.10	D.10	H.42	I.11	O.22	S.30	W.30	X.10	Y.60	5.41	6.30	7.30	9.30	-.30
 federer	l.02
-72	8.01
+72	7.01
 performances	S.01
-75	5.03
-lorganisation	a.11	c.10	h.01	i.26	l.05	x.01	z.02	B.01	C.10	D.01	F.01	H.14	N.01	V.02	X.13	Y.16	1.01	6.06	7.02	8.45	9.01	+.01	*.01
+75	*.03
+lorganisation	a.11	c.10	h.01	i.26	l.05	x.01	z.02	B.01	C.10	D.01	F.01	H.14	N.01	V.02	X.13	Y.16	1.01	5.06	6.02	7.45	8.01	9.01	-.01
 semble	j.01
 hierarchie	m.02
-fixe	7.01
+fixe	6.01
 dexpertise	D.01
-77	5.02
-celle	i.01	C.01	6.01
-78	5.07
-coherents	6.01	9.01
+77	*.02
+celle	i.01	C.01	5.01
+coherents	5.01	8.01
+78	*.07
 saisir	S.01	V.01
-externe	l.01	x.01	z.33	B.11	C.01	D.02	H.02	T.01	X.01	Y.40	8.01
+externe	l.01	x.01	z.33	B.11	C.01	D.02	H.02	T.01	X.01	Y.40	7.01
 maitrise	z.01	D.01
 interpersonnelle	X.01
 grande	j.02	z.01	E.02	H.01	J.01	O.01	T.01
 affichages	X.01
-formule	9.02
+formule	8.02
 80	j.01	k.01
 similaire	C.01
 rapide	l.01	z.01	O.02
-concernent	D.01	U.01	7.01
-naturels	6.01
-86	5.07
-base	j.02	z.01	E.01	J.01	S.01	U.02	*.10
+concernent	D.01	U.01	6.01
+naturels	5.01
+86	*.07
+base	j.02	z.01	E.01	J.01	S.01	U.02	-.10
 trouve	j.01	T.01
-organisationnelle	l.20	6.12
-comprend	C.01	D.01	7.01
+organisationnelle	l.20	5.12
+comprend	C.01	D.01	6.01
 enfin	z.01	C.01
-negatif	7.01
+negatif	6.01
 cosmetique	E.01	J.01
 appel	X.01
-mod	-.01
+mod	+.01
 logicielles	S.01
 discussions	l.01	X.01
 igf	i.01
-lunion	6.01
+lunion	5.01
 revolution	T.01
 decoule	U.01
 relation	l.02	C.01	I.01	S.12	T.03	U.04
@@ -1376,29 +1376,29 @@ fabricant	j.01	R.01
 auckland	k.01
 diffuser	S.03
 contenant	S.01
-simultanee	X.01	6.01
-90	*.01
-francaise	k.02	E.01	J.01	6.01
-92	5.04
+simultanee	X.01	5.01
+90	-.01
+francaise	k.02	E.01	J.01	5.01
+92	*.04
 consolider	j.01
 fiables	S.01
-94	5.02
-immobilises	7.01
+94	*.02
+immobilises	6.01
 existante	z.02	C.01
 dependent	z.01
-96	8.02
-quantite	j.01	K.03	O.02	P.10	Q.10	R.10	6.02	-.03	*.02
+96	7.02
+quantite	j.01	K.03	O.02	P.10	Q.10	R.10	5.02	+.03	-.02
 corriger	W.01
-ayant	T.01	7.01
+ayant	T.01	6.01
 val	V.01
 dacces	T.01
-profits	6.01
+profits	5.01
 appartient	i.01
-indice	6.01
+indice	5.01
 collaborative	O.01
 recevoir	T.01
 diverses	D.01	Y.01
-dessinee	-.10
+dessinee	+.10
 nachete	U.01
 existants	C.01
 annexes	Y.01
@@ -1406,31 +1406,31 @@ voit-on	E.01	J.01
 resistance	H.01	T.01
 dirigeants	i.03	H.01	S.02	T.02	Y.01
 bouillante	j.01
-profitabilite	6.02
-lors	z.01	T.03	U.03	V.01	Y.01	7.01
+profitabilite	5.02
+lors	z.01	T.03	U.03	V.01	Y.01	6.01
 externes	z.01	U.01	Y.04
 concurrentes	z.01	C.01
 dautre	j.01
 impactent	z.01
 osaka	k.01
 identite	l.01
-sachant	5.01
-amont	D.01	6.01
+sachant	*.01
+amont	D.01	5.01
 demballage	j.03
-proche	8.01
+proche	7.01
 flexibilite	l.01	D.01	O.03	S.01	X.01
-humaines	z.02	D.01	H.02	S.01	V.01	6.01
+humaines	z.02	D.01	H.02	S.01	V.01	5.01
 positivement	i.01
 discontinue	O.02	P.01	Q.01	R.01
-autofinancement	6.02
+autofinancement	5.02
 supprimer	W.02
 installation	D.01
-dactivite	z.01	D.01	8.01	+.01
-eau	6.03
-immobilisation	7.01
+dactivite	z.01	D.01	7.01	9.01
+eau	5.03
+immobilisation	6.01
 collective	i.22	l.01	X.01
-faveur	6.01
-dinformer	6.01
+faveur	5.01
+dinformer	5.01
 dallier	V.01
 loue	S.01
 multitude	z.01	C.01
@@ -1438,41 +1438,41 @@ gammes	E.01	J.01
 contribuent	D.01
 afficher	T.01
 detapes	I.01
-agec	6.13
-incompletes	6.01
+agec	5.13
+incompletes	5.01
 lexport	j.01
 existe	E.01	J.01
 memes	z.01	U.01
 sappliquer	W.01
 lots	Q.01
-achats	j.02	D.01	E.02	J.02	U.01	6.01
+achats	j.02	D.01	E.02	J.02	U.01	5.01
 superficie	j.02
 culture	a.01	c.10	l.23	Y.01
 promotionnelles	T.01
-decalage	9.01
+decalage	8.01
 fumes	b.01	j.19
 vdi	T.01
 rhum	j.01
-permet	j.02	m.01	z.03	D.01	I.02	S.07	U.09	V.09	W.01	Y.10	6.13	9.01	+.01	*.04
-principales	i.01	D.02	S.01	Y.10	6.02
+permet	j.02	m.01	z.03	D.01	I.02	S.07	U.09	V.09	W.01	Y.10	5.13	8.01	9.01	-.04
+principales	i.01	D.02	S.01	Y.10	5.02
 fumer	j.01
-lautonomie	6.01
-dimensions	6.02
+lautonomie	5.01
+dimensions	5.02
 televisions	i.01
 unitaires	O.01
 existence	z.01
-pole	7.01
-tours	5.13
-stmg	8.10
+pole	6.01
+stmg	7.10
+tours	*.13
 evite	U.01
-biodiversite	6.03
-reference	6.10
+biodiversite	5.03
+reference	5.10
 phares	j.01
 serez	T.01
 passe-t	U.01
 vichy	V.01
 sappuie	j.01
-optimisation	D.11	6.01
+optimisation	D.11	5.01
 automatisation	O.01	S.01
 newsletters	T.01
 parallelement	T.01
@@ -1480,7 +1480,7 @@ detenu	i.03	k.01
 sopposer	W.01
 lexploitation	V.03
 fluidifie	V.01
-depart	5.02	8.10	9.10	*.02
+depart	7.10	8.10	-.02	*.02
 stockage	j.01	D.01	O.01	S.01	U.02
 transporteur	U.01
 culinaires	j.01
@@ -1490,67 +1490,67 @@ gouvernementales	i.01
 appartenir	l.01
 anticip	I.01
 davoir	T.01
-publicite	D.01	Y.01	+.01
-saggravent	6.01
+publicite	D.01	Y.01	9.01
+saggravent	5.01
 mails	l.01	S.01	X.01
 marketeurs	T.01
 ailleurs	j.01
-frng	g.01	2.11	9.27
+frng	g.01	2.11	8.27
 vraie	j.01
 negociation	z.02	C.02
 intervention	U.01
-commence	j.02	8.01
+commence	j.02	7.01
 conseil	i.01	H.01
 tickets	V.01
-10.75	5.01
-depenses	z.01	+.02
+10.75	*.01
+depenses	z.01	9.02
 transporte	k.01
-annee	j.02	E.01	J.01	R.01	*.02
-prevoir	*.02
-proprietaires	7.02
+annee	j.02	E.01	J.01	R.01	-.02
+prevoir	-.02
+proprietaires	6.02
 trace	S.01
 provenance	j.02	E.01
 operations	C.01	O.01	S.01	T.01	U.02
 public	i.02	l.01	X.01
-circulants	7.01	9.02
+circulants	6.01	8.02
 soucier	U.01
-contre	E.01	J.01	6.03
+contre	E.01	J.01	5.03
 favorise	l.01	m.01	I.01
 toute	j.01	z.01	T.01	U.01	W.01
 reciproque	C.01
-manageriale	6.01
-fondamental	i.20	l.40	z.30	H.20	O.10	S.40	W.10	Y.20	6.61	7.10	8.50	9.10	+.10
-cette	j.05	m.01	n.01	o.01	p.01	q.01	r.01	s.01	t.01	u.01	v.01	w.01	A.01	B.01	C.01	E.01	I.01	J.02	P.01	Q.02	R.01	T.03	7.01
+manageriale	5.01
+fondamental	i.20	l.40	z.30	H.20	O.10	S.40	W.10	Y.20	5.61	6.10	7.50	8.10	9.10
+cette	j.05	m.01	n.01	o.01	p.01	q.01	r.01	s.01	t.01	u.01	v.01	w.01	A.01	B.01	C.01	E.01	I.01	J.02	P.01	Q.02	R.01	T.03	6.01
 agir	Y.02
 lappartenance	l.01
-argumentation	z.02	9.10
+argumentation	z.02	8.10
 personnalisation	j.01	E.01	J.01	O.01	X.01
 dimage	j.02
 covid-19	j.01	E.01	J.01
 coordonnees	T.01
-simplifie	9.10
+simplifie	8.10
 long-courrier	k.01
-preparer	V.01	*.01
-emploi	V.01	6.01	7.01
+preparer	V.01	-.01
+emploi	V.01	5.01	6.01
 professionnel	Y.01
-performance	g.11	l.01	H.01	S.01	T.03	Y.03	Z.11	6.99	7.11	+.01	*.02
+performance	g.11	l.01	H.01	S.01	T.03	Y.03	Z.11	5.99	6.11	9.01	-.02
 daugmenter	j.01	T.02
-verifier	6.01
-concernant	j.01	U.01	V.02	Y.01	7.01
+verifier	5.01
+concernant	j.01	U.01	V.02	Y.01	6.01
 alimentaire	E.01	J.01
 serie	O.01	P.01	Q.01	R.02
-variable	8.12	+.16
+variable	7.12	9.16
 dernier	j.01
 agit	C.01	D.01
 historique	E.01	J.01	S.01
 marlin	j.05
-efficacite	D.01	R.01	S.01	T.01	U.01	6.14
-consommateurs	j.03	z.01	C.01	I.03	J.01	6.01
+efficacite	D.01	R.01	S.01	T.01	U.01	5.14
+consommateurs	j.03	z.01	C.01	I.03	J.01	5.01
 ponctuellement	D.01
 touristes	k.01
 refus	W.01
-faire	j.02	l.01	z.01	D.02	E.01	I.01	J.01	S.01	T.01	Y.02	6.02
-notamment	T.01	7.01
+faire	j.02	l.01	z.01	D.02	E.01	I.01	J.01	S.01	T.01	Y.02	5.02
+notamment	T.01	6.01
 recrute	T.02
 souligne	j.01
 eventuellement	Y.01
@@ -1558,8 +1558,8 @@ pierre	i.01
 via	O.01	S.13	T.01
 remontee	l.01
 immaterielles	z.02
-energetiques	6.01
-reflete	7.01
+energetiques	5.01
+reflete	6.01
 avantage	z.03	E.01	J.01	S.01
 exigences	z.01
 interruptions	Q.01
@@ -1572,8 +1572,8 @@ dapres	j.01
 terrain	T.02
 organisees	T.02
 caisse	V.01
-adapter	O.01	T.01	6.01	*.01
-sommes	j.01	E.01	J.01	U.02	7.02
+adapter	O.01	T.01	5.01	-.01
+sommes	j.01	E.01	J.01	U.02	6.02
 generent	D.01
 alimentation	E.01	J.01
 dexporter	V.01
@@ -1581,7 +1581,7 @@ passe	V.01
 adaptee	j.01	I.01
 modalite	H.01
 planning	V.01
-charges	T.01	7.02	8.04	+.05	-.05
+charges	T.01	6.02	7.04	9.05	+.05
 marches	j.01	H.01
 selection	D.01
 villes	T.01
@@ -1590,144 +1590,144 @@ mutuel	T.01
 competitives	C.01
 sondages	T.01
 facilement	T.01
-detail	7.01	-.01
+detail	6.01	+.01
 adaptes	j.01	E.01	J.01	S.01
-main-doeuvre	+.01
-remarque	S.10	Y.10	8.10
+main-doeuvre	9.01
+remarque	S.10	Y.10	7.10
 echeant	V.01
 poursuivre	i.01
-financier	H.01	6.01	8.01
-continuellement	7.01
+financier	H.01	5.01	7.01
+continuellement	6.01
 inspirant	l.01
 kilogrammes	j.01
 presentiel	T.01
 efficacement	c.01	l.11
-aupres	j.01	T.01	V.01	7.01
-saine	9.02
-batiments	6.01
+aupres	j.01	T.01	V.01	6.01
+saine	8.02
+batiments	5.01
 evoluer	T.01	U.01
 ateliers	U.01	V.01
-oeuvre	f.10	H.01	V.01	Y.01	6.01	-.01
+oeuvre	f.10	H.01	V.01	Y.01	5.01	+.01
 sanitaire	j.02	T.01
 organisationnels	D.10	Y.01
 referencement	V.01
 dinteraction	X.01
 internautes	T.01	Y.01
 ceci	T.01
-precedentes	R.01	7.02
+precedentes	R.01	6.02
 regulieres	Y.01
-precedent	8.10
+precedent	7.10
 missions	i.01	l.01	D.01
 mandat	i.01
 rillettes	j.03
-utilite	6.01
+utilite	5.01
 situes	T.01
 laccent	T.01
 declenchent	Q.01
-lannee	7.02	8.03	*.02
+lannee	6.02	7.03	-.02
 organisee	j.01	l.01	X.01
-attentes	j.02	z.01	J.01	T.03	Y.01	6.01
+attentes	j.02	z.01	J.01	T.03	Y.01	5.01
 volontaire	i.01
-concurrence	k.02	z.05	C.01	E.01	H.01	J.01	*.01
+concurrence	k.02	z.05	C.01	E.01	H.01	J.01	-.01
 notes	l.01	X.02
-evidence	6.01	7.01
+evidence	5.01	6.01
 ecouter	j.01
 autonome	S.01
-tendances	E.01	I.01	J.01	R.01	6.01
+tendances	E.01	I.01	J.01	R.01	5.01
 deconsommation	E.01	J.01
 repetition	O.01
 demandeurs	z.01	C.01
 pandemie	E.01	J.01
-grammes	-.02
+grammes	+.02
 oriente	H.01
 transmission	T.01	X.02
 charismatique	l.01
 nees	W.10
-contribue	T.01	V.01	6.01
+contribue	T.01	V.01	5.01
 moindre	j.01
-greenwashing	6.13
-controle	g.01	i.22	D.02	H.01	Y.02	3.11	9.01	+.21
-gagne	7.01
+greenwashing	5.13
+controle	g.01	i.22	D.02	H.01	Y.02	3.11	8.01	9.21
+gagne	6.01
 parfumerie	E.01	J.01
 unicite	S.01
 faiblesses	z.02	A.01	B.01	H.01
 centaine	j.01
 souffrent	j.01
-maitrisant	8.01
+maitrisant	7.01
 respect	i.01	D.01
-financement	9.03
+financement	8.03
 fusion	H.12
-volume	O.02	*.01
+volume	O.02	-.01
 constructeurs	R.01
 organiser	i.02	l.02	S.01	U.01
-faux	*.02
+faux	-.02
 melinda	i.01
 boite	o.01
 considerons	E.01	J.01
 rythme	O.01
 port	j.01
-faut	7.01
+faut	6.01
 taches	O.01	S.01	U.01	V.01
 hauteurs	j.01
 activement	w.01
 sanctions	v.01	W.01
 aloel	E.01	J.02
-production	f.01	j.06	o.01	D.04	K.14	O.59	P.12	Q.13	R.15	U.02	V.01	6.03	+.01	-.15	*.02
+production	f.01	j.06	o.01	D.04	K.14	O.59	P.12	Q.13	R.15	U.02	V.01	5.03	9.01	+.15	-.02
 united	k.01
 roles	i.01	l.10	s.02
 monsieur	U.06
 vieillissement	E.01	J.01
 gates	i.01
 benjamin	j.07
-dechets	z.01	6.06
+dechets	z.01	5.06
 vol	W.01
-didentifier	z.01	W.01	6.01
-unites	-.01
+didentifier	z.01	W.01	5.01
+unites	+.01
 constituent	D.01
-responsabilite	j.02	k.10	Y.01	6.01
+responsabilite	j.02	k.10	Y.01	5.01
 vos	z.01	T.09
-surveillance	6.01
-dassurer	i.01	6.01
+surveillance	5.01
+dassurer	i.01	5.01
 perturber	z.01
 automatiques	S.01
 linscription	T.01
 utilisateurs	T.02
 oligopole	z.01	C.01
-benefice	i.01	7.01
+benefice	i.01	6.01
 remonter	l.01	X.01
 collectivite	i.02
 pouvez	C.01	T.05
 identifiant	z.01
 editant	V.01
-detecter	6.01
+detecter	5.01
 message	X.01
-applique	-.01
+applique	+.01
 progressent	E.01	J.01
 remplacer	z.01
 forum	X.01
-horizon	8.10
+horizon	7.10
 dinformation	f.01	L.11	S.22	T.03	U.02	V.01	Y.01
-couvrir	8.02
-egalement	i.01	j.03	D.02	E.02	J.01	T.03	U.01	V.01	8.01
-progressive	6.01
+couvrir	7.02
+egalement	i.01	j.03	D.02	E.02	J.01	T.03	U.01	V.01	7.01
+progressive	5.01
 polynesie	k.06
 tournees	V.01
-linvestissement	7.01
+linvestissement	6.01
 education	i.01
-pertes	j.01	8.01
+pertes	j.01	7.01
 construire	z.02	T.01
-240000	8.04
-3001	-.02
-3000	-.05
+240000	7.04
+3001	+.02
+3000	+.05
 contribuer	i.01
 dinteret	i.01	z.01
 etat	C.01	E.01	J.01	Y.02
-marche	k.01	z.06	C.03	D.01	E.05	H.01	I.05	J.07	R.01	6.03	*.02
-variation	*.01
-rentabilite	g.01	i.01	H.01	S.01	Y.01	1.10	6.02	8.25	+.02	*.01
+marche	k.01	z.06	C.03	D.01	E.05	H.01	I.05	J.07	R.01	5.03	-.02
+variation	-.01
+rentabilite	g.01	i.01	H.01	S.01	Y.01	1.10	5.02	7.25	9.02	-.01
 diminution	E.01	J.01
 trouver	H.01
-filiale	6.01
+filiale	5.01
 recues	Q.01
 centers	S.11
 sortants	V.01
@@ -1736,60 +1736,60 @@ determinants	H.10
 volumes	V.01
 forte	l.05	z.01	E.02	J.02	O.02
 dependances	D.01
-impacts	Y.01	6.02
-17,56	-.01
+impacts	Y.01	5.02
+17,56	+.01
 reponses	T.01
 lassociation	V.03
-400	5.02
-compose	7.01
-moins	j.01	l.01	E.02	J.02	O.01	X.01	6.02
-programmee	6.01
+400	*.02
+compose	6.01
+moins	j.01	l.01	E.02	J.02	O.01	X.01	5.02
+programmee	5.01
 remplissez	T.01
 puisse	T.01
-hypotheses	*.01
+hypotheses	-.01
 inefficacite	S.01
-economique	i.01	k.05	z.01	C.01	Y.02	6.01	7.11	8.13	*.02
+economique	i.01	k.05	z.01	C.01	Y.02	5.01	6.11	7.13	-.02
 lancement	n.01	H.01
 rivalite	z.02
 manifeste	I.01
 equipements	U.01
 air	b.01	i.01	k.36
-actionnariale	7.01
-unitaire	-.02
+actionnariale	6.01
+unitaire	+.02
 regles	i.37	T.03	Y.01
 local	j.03
 nouvelles	j.01	z.01	D.01	H.02	S.01
 fluides	T.01
 projet	H.02	X.02	Y.01
-decisions	i.01	l.02	t.01	u.01	v.01	w.01	z.01	H.01	I.01	S.02	U.01	6.02	8.02
-satisfaire	j.01	J.01	O.01	6.01
+decisions	i.01	l.02	t.01	u.01	v.01	w.01	z.01	H.01	I.01	S.02	U.01	5.02	7.02
+satisfaire	j.01	J.01	O.01	5.01
 entretien	j.01	E.10	J.10	U.01	X.01
 deficit	j.01
-generees	T.10	6.01
+generees	T.10	5.01
 commencez	C.01	T.01
-cree	j.02	H.01	I.02	6.01
+cree	j.02	H.01	I.02	5.01
 reelles	R.01
 erp	S.13	W.01
 futurs	q.01
 reste	j.01	k.01	E.01	I.01	J.01
-approche	I.13	J.03	Y.01	6.10
-operationnel	8.01
+approche	I.13	J.03	Y.01	5.10
+operationnel	7.01
 digitale	Y.01
 partenaires	j.02	l.01	S.02	U.02	X.01	Y.02
 conquerant	C.01
 satisfaction	p.01	C.01	S.01	T.01
 demographie	z.01
-salaires	+.02
+salaires	9.02
 locales	j.01
 standardisation	O.01	S.01
-future	*.02
+future	-.02
 evitons	j.01
 saveurs	j.01
-esg	6.01
+esg	5.01
 quantitatives	I.01
-papier	j.01	-.03
+papier	j.01	+.03
 mouvement	E.01	J.01
-soumise	6.02
+soumise	5.02
 dachat	z.02
 arrivent	z.01
 tache	j.01	V.01
@@ -1800,31 +1800,31 @@ modifier	H.01	W.01
 originales	j.01
 repartir	i.01	H.01
 greenpeace	i.01
-donner	l.02	T.02	W.01	X.01	6.01
+donner	l.02	T.02	W.01	X.01	5.01
 body	E.02	J.02
 prochainement	E.01	J.01
-correspond	l.01	D.01	H.01	O.01	6.01	7.01	*.01
+correspond	l.01	D.01	H.01	O.01	5.01	6.01	-.01
 perception	j.01
 points	u.01
 mode	E.01	J.01	O.02	R.01	S.21	U.01	V.01	X.02
-exploitation	9.02
-renforce	l.01	6.01
+exploitation	8.02
+renforce	l.01	5.01
 recentres	j.01
 recentrer	j.01
 basant	R.01
-etc	i.01	j.01	O.01	U.01	6.02
+etc	i.01	j.01	O.01	U.01	5.02
 abandonnees	k.01
 434	k.01
 nen	j.01
-1.59	-.01
+1.59	+.01
 sintensifie	k.01
-complement	l.30	z.10	D.20	H.10	I.10	O.10	S.20	W.10	X.10	Y.70	6.30	7.20	9.10	*.10
-annuel	5.01	8.01
-net	6.02	9.02
+complement	l.30	z.10	D.20	H.10	I.10	O.10	S.20	W.10	X.10	Y.70	5.30	6.20	8.10	-.10
+net	5.02	8.02
+annuel	7.01	*.01
 syndicats	i.01
 optant	j.01
 stockee	O.01
-donnee	S.10	7.01
+donnee	S.10	6.01
 finale	D.01
 domaine	D.01	E.04	H.01	J.02
 poisson	j.06
@@ -1832,38 +1832,38 @@ mcdonalds	z.01
 letranger	H.01
 etats-unis	k.01
 dorganes	i.10
-outils	f.01	z.02	M.11	S.10	T.03	W.36	X.12	6.10
+outils	f.01	z.02	M.11	S.10	T.03	W.36	X.12	5.10
 etes	T.01
 sortie	i.01	T.01
 unis	k.01
-1.69	-.03
+1.69	+.03
 lexperience	k.01
-espaces	6.01
+espaces	5.01
 pointe	j.01
-effets	l.01	D.10	H.01	6.01
+effets	l.01	D.10	H.01	5.01
 exactement	Q.01
 capitalistique	i.01
-adherents	k.01	V.01	5.01
-prenantes	U.02	Y.05	6.01
+adherents	k.01	V.01	*.01
+prenantes	U.02	Y.05	5.01
 correctrices	V.01
-1.80	-.01
-fonds	Y.02	9.07
-croissance	H.03	S.01	Y.01	*.21
+1.80	+.01
+fonds	Y.02	8.07
+croissance	H.03	S.01	Y.01	-.21
 eux	T.01
-retrouvez	c.01	m.10	-.01
-ensemble	l.01	r.01	z.06	D.01	W.01	6.01
+retrouvez	c.01	m.10	+.01
+ensemble	l.01	r.01	z.06	D.01	W.01	5.01
 magasin	E.01	J.01	V.03
 autres	z.01	D.01	E.02	J.02
 possedons	E.01	J.01
-colonne	7.03
+colonne	6.03
 hierarchiques	l.01
-conciliant	6.01
-450	6.02
+conciliant	5.01
+450	5.02
 normalisation	Y.10
 telephonique	X.01
 influencer	l.03	z.01	C.01	X.02	Y.02
-calcul	g.10	8.41	9.11	+.50	-.01	*.31
-lutilisation	S.01	T.01	W.02	6.01
+calcul	g.10	7.41	8.11	9.50	+.01	-.31
+lutilisation	S.01	T.01	W.02	5.01
 voulu	j.01
 savoir-faire	D.01
 reversible	H.01
@@ -1872,70 +1872,70 @@ demain	E.01	J.01
 lexemple	D.10
 difficultes	S.01
 quarts	j.01
-automatiquement	6.01
-decider	+.01
+automatiquement	5.01
+decider	9.01
 digitalisation	j.01	k.01
 ans	k.01	T.01
 stocker	S.02	W.01
-transport	i.01	D.01	U.01	+.02
+transport	i.01	D.01	U.01	9.02
 remise	V.01
 syntheses	V.01
 stockes	S.01
 dehors	V.01
-consiste	z.01	I.01	J.01	R.01	6.02	+.01
-minute	-.01
+consiste	z.01	I.01	J.01	R.01	5.02	9.01
+minute	+.01
 forme	z.01	S.01
 repondent	z.01
-donnees	I.02	S.29	T.09	U.05	V.13	W.29	6.01	8.02
-compromis	6.01
+donnees	I.02	S.29	T.09	U.05	V.13	W.29	5.01	7.02
+compromis	5.01
 clandestin	l.01
 specialisation	H.01
-0.1	-.01
-0.2	*.01
+0.1	+.01
+0.2	-.01
 reliant	k.01
 independamment	l.01
 preuve	Y.01
 liaisons	k.01
 engage	k.01	H.01
-0.5	-.02
-objectif	i.03	l.03	H.01	S.15	T.01	X.01	Y.14	6.02	8.01	*.01
+0.5	+.02
+objectif	i.03	l.03	H.01	S.15	T.01	X.01	Y.14	5.02	7.01	-.01
 echange	X.05
 synthese	l.10
 privilegient	j.01	E.01	J.01
 dentreprise	Y.01
-erreurs	O.01	S.02	U.01	*.01
+erreurs	O.01	S.02	U.01	-.01
 remplissent	p.01
 rachat	E.03	H.01
 prives	i.01
 utiles	S.01
 expertise	H.01
-grandes	E.02	J.02	O.01	R.01	7.01
+grandes	E.02	J.02	O.01	R.01	6.01
 proprietaire	i.02
 jai	j.02
 identification	z.10	I.01
 comptes	i.04	U.03
 modele	l.01	z.02	C.01	R.01	Y.01
-perte	Y.01	7.01	8.02
+perte	Y.01	6.01	7.02
 automatisant	S.01
 privee	i.01
-initiatives	6.01
-perennite	i.01	k.01	H.02	6.02
-environnement	C.01	I.01	6.02
+initiatives	5.01
+perennite	i.01	k.01	H.02	5.02
+environnement	C.01	I.01	5.02
 principalement	E.01	J.01	T.01
 trouvees	V.01
 cache	I.01
 immersion	k.01
 standardisant	S.01
 logement	i.01
-dune	j.02	k.01	z.10	D.03	H.03	O.01	T.01	U.06	V.11	Y.03	6.04
-drucker	6.03
-ameliorer	i.01	S.02	U.01	W.01	6.03	+.01
-480	5.01
+dune	j.02	k.01	z.10	D.03	H.03	O.01	T.01	U.06	V.11	Y.03	5.04
+drucker	5.03
+ameliorer	i.01	S.02	U.01	W.01	5.03	9.01
+480	*.01
 temporaire	D.01
 robotisation	O.01
 geolocalisation	V.01
-reel	u.01	S.02	U.03	X.01	6.01	*.13
-000	k.03	R.01	U.01	6.01	8.08	9.09	-.03	*.09
+reel	u.01	S.02	U.03	X.01	5.01	-.13
+000	k.03	R.01	U.01	5.01	7.08	8.09	+.03	-.09
 recyclerie	V.11
 disponibles	H.01	O.01	T.01
 marques	E.02	J.02
@@ -1947,45 +1947,45 @@ civile	i.03
 adoptant	Y.01
 logiciel	S.01	U.01
 associations	i.03
-104000	7.02
-seuil	g.01	1.10	8.24
+104000	6.02
+seuil	g.01	1.10	7.24
 vide	J.01
 justifiant	T.01
 detiquettes	V.01
-besoin	j.01	C.01	D.01	I.06	T.02	W.01	7.01	9.06
+besoin	j.01	C.01	D.01	I.06	T.02	W.01	6.01	8.06
 numero	W.01
 rse	Y.01
-pratiques	z.01	6.01
+pratiques	z.01	5.01
 collaboratif	l.01
 offreur	z.01	C.01
 dordres	X.01
-roulement	9.07
+roulement	8.07
 cookies	T.06
 devis	S.01
 automobile	O.01	R.01
-traduction	7.01
-notion	6.10
+traduction	6.01
+notion	5.10
 technologiques	z.01	H.01	I.01
 grace	i.01	l.01	E.01	I.01	J.01	T.02	U.03	V.01
 dimport	j.01
 structuree	j.01
 likert	l.01
-11.07	-.02
+11.07	+.02
 centres	S.01	T.02
 parfums	T.01
 pallier	T.01
 ameliorations	Y.01
 jeunes	E.01	J.01
 impliques	j.01	V.01
-nest	j.01	S.10	6.01	7.01	+.01
+nest	j.01	S.10	5.01	6.01	9.01
 entraine	S.01
-facilitant	6.01
+facilitant	5.01
 cest	j.05	z.02	D.01	H.01	T.01	U.02	W.10
-supporter	8.01
+supporter	7.01
 peuvent	l.01	u.01	z.02	C.04	O.01	S.01	T.01	W.01
-financent	9.01
+financent	8.01
 precises	i.01
-principe	6.01
+principe	5.01
 parametres	T.02
 claires	Y.01
 parametrer	T.01
@@ -1994,41 +1994,41 @@ permettent	i.01	z.02	I.01	S.01	V.01	W.01	Y.01
 relations	l.01	v.01	S.01	T.01	U.01	V.01
 mobilite	z.01
 preciser	T.01
-mois	5.09
-engagement	l.02	Y.01	5.02	6.02
-impots	7.01
+mois	*.09
+engagement	l.02	Y.01	5.02	*.02
+impots	6.01
 documents	Y.21
 vendre	j.01	T.01	Y.01
 administration	H.01
-organisation	a.01	b.10	i.04	m.02	H.02	I.03	O.02	V.01	Y.01	6.09	8.02	*.01
+organisation	a.01	b.10	i.04	m.02	H.02	I.03	O.02	V.01	Y.01	5.09	7.02	-.01
 strengts	A.01
 syndicale	Y.01
 publies	Y.01
 mobilise	H.01
 comportements	l.01	T.01
-dinnovation	E.01	J.01	6.01
+dinnovation	E.01	J.01	5.01
 repetee	R.01
 plannings	V.01
 segment	E.01	J.01
 marchandises	D.01
 soins	U.01
 internaute	T.01
-publier	Y.01	6.01
-estime	*.01
+publier	Y.01	5.01
+estime	-.01
 bidirectionnelle	t.01
 paternaliste	t.01	u.01	v.01	w.01
 formulaires	T.01
-bonne	8.01
+bonne	7.01
 publiee	T.10
 expliquer	s.02	T.02	Y.01
-lequilibre	6.01
+lequilibre	5.01
 persuasif	l.01	X.01
 motives	j.01
 detient	T.01
-designe	6.01
-darreter	+.01
+designe	5.01
+darreter	9.01
 telephone	T.02	W.01	X.02
-criteres	O.01	6.01
+criteres	O.01	5.01
 difficulte	O.01
 reussir	z.01
 parcouraient	T.01
@@ -2037,56 +2037,56 @@ occupe	l.01
 partagent	Y.01
 previsualisation	V.01
 puissance	z.01
-048	5.03
+048	*.03
 lorsqu	C.01
-parties	U.02	Y.05	6.01
+parties	U.02	Y.05	5.01
 marges	j.01	z.01
 dreamliner	k.01
 augmenter	z.01	S.01
 continuite	j.01	T.01
 distance	S.02	T.03
-circulaire	6.01
-aux	i.01	j.07	k.01	l.01	m.01	z.01	C.03	D.02	O.02	Q.02	S.04	T.09	U.01	V.02	W.01	Y.06	6.04	7.02	8.01
+circulaire	5.01
+aux	i.01	j.07	k.01	l.01	m.01	z.01	C.03	D.02	O.02	Q.02	S.04	T.09	U.01	V.02	W.01	Y.06	5.04	6.02	7.01
 decouvertes	z.01
 absence	i.02	j.01
 prospects	S.01
-classes	k.01	7.01
+classes	k.01	6.01
 gaec	i.01
 description	D.10
 avoisinants	j.01
-non	i.03	H.01	I.01	*.02
+non	i.03	H.01	I.01	-.02
 retrait	E.01	J.01
 nom	j.01	W.01
 concepteur	r.01
 le-reputation	Y.10
-conclusion	i.10	V.01	8.10
+conclusion	i.10	V.01	7.10
 dechange	l.01
-durable	l.01	z.01	6.14
+durable	l.01	z.01	5.14
 publics	i.01	z.01	Y.01
-negative	9.01
-environnementale	i.02	j.02	Y.01	6.06
+negative	8.01
+environnementale	i.02	j.02	Y.01	5.06
 nos	j.05	E.02	J.02	T.09	U.02
 central	j.01	l.10
 organisations	b.01	i.26	l.01	H.01	N.01	O.01	Y.10
-impose	6.01
+impose	5.01
 systemes	D.01	S.01	T.02	V.01
 particulier	R.01
 prealable	T.01
-suivantes	8.01
-patrimoine	T.01	7.37
+suivantes	7.01
+patrimoine	T.01	6.37
 dinternationalisati	H.01
 renforcer	l.01	E.01	H.01	J.01	Y.02
-classe	k.03	9.01
+classe	k.03	8.01
 adherent	V.01
 fournissez	T.01
-obligatoire	z.01	6.01
+obligatoire	z.01	5.01
 evolutivite	S.01
 clarification	l.01
 discuter	n.01
-effet	j.01	k.01	l.01	E.02	J.02	7.01	*.01
-resultat	g.01	Y.01	0.11	6.03	7.34	8.02	+.13	*.03
-derives	j.02	6.01
-futures	6.02
+effet	j.01	k.01	l.01	E.02	J.02	6.01	-.01
+resultat	g.01	Y.01	0.11	5.03	6.34	7.02	9.13	-.03
+derives	j.02	5.01
+futures	5.02
 tokyo	k.01
 cuisinier	j.02
 recueillies	T.01
@@ -2095,11 +2095,11 @@ ensuite	j.01	z.01	I.01	U.01
 resoudre	r.01
 denlevement	V.01
 impulsifs	E.01	J.01
-investissements	H.01	O.01	6.01	7.01	9.01
-compte	g.01	j.01	k.02	t.01	T.01	U.02	V.01	Y.01	0.11	1.01	6.02	7.30	8.12
+investissements	H.01	O.01	5.01	6.01	8.01
+compte	g.01	j.01	k.02	t.01	T.01	U.02	V.01	Y.01	0.11	1.01	5.02	6.30	7.12
 leader	l.16
 expertises	D.01
-usage	6.01	7.01
+usage	5.01	6.01
 taxes	z.01
 decide	j.01	E.01	J.01
 axa	i.01
@@ -2108,105 +2108,105 @@ issues	E.01	J.01	S.01
 colis	U.01
 amnesty	i.01
 comptables	Y.11
-bord	S.01	V.01	6.32
+bord	S.01	V.01	5.32
 collecter	S.04	T.02	W.01
 percue	C.01	Y.01
-liees	D.01	+.01
+liees	D.01	9.01
 influencant	z.02
-arrivee-valeur	*.01
+arrivee-valeur	-.01
 collectes	V.01
 plan	T.01	Y.20
-impliquent	6.01
+impliquent	5.01
 circuits	E.01	J.01
 habituellement	T.01
-celles	7.01
+celles	6.01
 incoherence	S.01
 adressez	T.01
 double	k.01
 deconomiser	U.01
-080	5.02
+080	*.02
 innovants	j.01
 adresses	V.01
-chiffres	5.01
-evalue	6.02
+evalue	5.02
+chiffres	*.01
 artisanale	P.01	Q.01
 conservees	T.01
 adresser	T.01
 superviseur	s.02
 reactivite	O.01	X.01
-presentant	C.01	6.01
+presentant	C.01	5.01
 arrivages	V.01
-probabilite	8.01
+probabilite	7.01
 differentes	C.01	S.01
 digitalisee	j.02
-determiner	+.01
+determiner	9.01
 beneficient	k.01
 style	a.01	c.10	l.22	t.04	u.04	v.04	w.04	X.01
 droit	i.02	T.03	W.11
 suis	j.02
 horizontale	l.02	n.01	o.01	p.01	q.01	r.01	X.01
 rubrique	T.01
-excessive	8.01
+excessive	7.01
 cultivees	E.01	J.01
 participation	i.01
-dabsorber	8.01
+dabsorber	7.01
 rogner	j.01
 explose	E.01	J.01
-electricite	+.01
+electricite	9.01
 differences	j.01
 seffectue	U.01
-direct	X.01	7.01	+.02
+direct	X.01	6.01	9.02
 connexion	T.01
-gain	O.01	S.01	U.03	V.01	6.01
-limitees	6.01
+gain	O.01	S.01	U.03	V.01	5.01
+limitees	5.01
 web	T.06
 ecologiques	j.01
 fcs	z.47
 rendre	S.02
-mort	8.28
-realisation	6.01
-categories	7.01
-suivre	S.01	V.02	6.01
-modere	8.01
+mort	7.28
+realisation	5.01
+categories	6.01
+suivre	S.01	V.02	5.01
+modere	7.01
 entreposage	D.01
 redondance	S.01
 dernieres	T.01
-actionnaires	i.02	Y.01	6.02	7.01
+actionnaires	i.02	Y.01	5.02	6.01
 formelle	l.01	X.01
 externalisation	D.01
 nouvelle	E.01	H.02	J.01
-piloter	6.01	*.01
+piloter	5.01	-.01
 quotidiennes	T.01
 recherche	i.01	z.01
-amortissement	7.10
+amortissement	6.10
 recette	j.01
 conduite	l.01
 permettant	z.01	S.02	T.01	W.01
 caraibes	b.01	j.19
-positif	Y.01	6.01	7.01	9.02
+positif	Y.01	5.01	6.01	8.02
 affecteront	s.02
 barometre	j.01
 auxquels	I.01
-economie	6.02
+economie	5.02
 certain	u.01	U.01
 consultes	u.01
-grille	8.10
+grille	7.10
 consulter	v.01	T.01
 producteurs	j.01
-indicator	6.01
-bout	8.01
+indicator	5.01
+bout	7.01
 nui	b.01	k.35
 collectif	i.01	l.01
-generalement	-.01
-simple	+.40	*.60
+generalement	+.01
+simple	9.40	-.60
 dinformations	T.01	V.01	W.01	X.01	Y.01
-matiere	j.01	D.01	T.02	U.04	Y.01	+.01
-donne	j.01	l.03	z.01	8.01
-influence	l.02	z.01	C.01	8.10
+matiere	j.01	D.01	T.02	U.04	Y.01	9.01
+donne	j.01	l.03	z.01	7.01
+influence	l.02	z.01	C.01	7.10
 cloud	S.13	W.01
 mots	j.01	A.01
-ainsi	k.02	E.04	J.02	T.04	V.01	6.01
-arrete	+.01
+ainsi	k.02	E.04	J.02	T.04	V.01	5.01
+arrete	9.01
 rachetant	j.01
 jusque-la	k.01
 talent	j.01
@@ -2214,7 +2214,7 @@ presentee	Y.01
 seule	k.01	z.01	H.01	U.01
 nombreuses	z.01	C.01
 recrutement	D.01	T.01
-ajustement	8.01
+ajustement	7.01
 echangees	V.01
 presenter	z.01	T.01	Y.02
 presentes	z.01
@@ -2225,14 +2225,14 @@ vehiculee	Y.10
 labsence	S.10
 tracer	Y.01
 couteuse	I.01
-reglementaire	Y.01	6.10
+reglementaire	Y.01	5.10
 important	j.01	E.01	J.01	W.10
 recours	V.01
 ereputation	Y.01
 vehicules	R.01	V.01
 menacer	C.01
 menaces	z.04	A.01	B.01	H.01
-correction	-.02
+correction	+.02
 option	T.01
 subordonnes	m.02	t.01	u.01	v.01	w.01
 sous-traitance	D.01
@@ -2241,39 +2241,39 @@ investi	T.01	U.01
 continu	O.02	R.01
 rester	j.03	T.02
 explication	z.01	H.01	O.01	S.01	X.01
-propres	z.01	H.01	6.01	7.01	9.02
-maximale	U.01	6.01	8.01
+propres	z.01	H.01	5.01	6.01	8.02
+maximale	U.01	5.01	7.01
 transformationnel	l.01
-interactions	l.12	S.01	6.01
+interactions	l.12	S.01	5.01
 leviers	l.10
-25000	7.02
+25000	6.02
 dialogue	l.02	X.01
-comparaison	Y.01	*.10
+comparaison	Y.01	-.10
 mallettes	T.01
-organismes	7.01
+organismes	6.01
 aubery	j.07
 propriete	i.04
 profit	i.03	k.01
-enjeux	l.10	H.10	O.10	S.01	6.01
+enjeux	l.10	H.10	O.10	S.01	5.01
 lactualite	V.01
 administrations	i.01
 sav	U.01
 nectar	E.01	J.01
 surveillant	Y.01
 designes	i.01
-immobilisations	7.01	9.02
+immobilisations	6.01	8.02
 desastre	j.01
 creole	j.11
 exterieur	z.01
 tendance	E.05	J.05
 recycleries	V.01
 aucune	U.01
-attention	i.10	l.10	z.20	W.10	6.20	9.01	*.10
+attention	i.10	l.10	z.20	W.10	5.20	8.01	-.10
 interruption	O.01
-environnementaux	6.01	8.01
+environnementaux	5.01	7.01
 dolivier	j.01
 mixte	k.01
-reduction	D.04	O.02	S.02	6.02
+reduction	D.04	O.02	S.02	5.02
 traditionnels	X.01
 petite	j.01
 commerciales	z.02	T.01
@@ -2283,66 +2283,66 @@ participe	I.01
 quelques	j.02	U.01
 poissons	j.05
 bad	Y.01
-bac	b.02	j.10	k.10	L.03	T.10	U.10	V.10	3.01	8.10	-.10
-constitue	j.01	7.01
+bac	b.02	j.10	k.10	L.03	T.10	U.10	V.10	3.01	7.10	+.10
+constitue	j.01	6.01
 dadaptation	O.01
 facile	z.01	S.01
 assemblage	D.01
 rattache	T.01
 daloe	E.01	J.01
-complet	V.01	+.24
-assurer	i.02	j.01	k.01	l.01	H.01	T.02	Y.02	6.01
+complet	V.01	9.24
+assurer	i.02	j.01	k.01	l.01	H.01	T.02	Y.02	5.01
 fond	E.01	J.01
 niveaux	l.01	w.01	X.01
 multidirectionnelle	w.01
 certains	j.02	u.01
-demarche	e.01	G.11	I.21	Y.01	8.10
-influencent	z.01	*.10
+demarche	e.01	G.11	I.21	Y.01	7.10
+influencent	z.01	-.10
 bas	z.02
 dimpacter	z.01
 echec	H.01
 reve	E.01	J.01
-912	5.04
-faible	l.01	O.01	8.01
+912	*.04
+faible	l.01	O.01	7.01
 matrice	x.01	z.01	A.11	B.01
 collectivites	i.02
 cfdt	i.01
 fromagerie	Q.01
-calculer	7.10	+.01
+calculer	6.10	9.01
 caractere	S.10	T.01	W.10
 logistiques	D.01
 territoriale	i.01
 recueillir	S.01	T.01
-calculez	5.04
+calculez	*.04
 franceagrimer	j.01
 figurant	T.01
 fromages	Q.01
 destinataires	T.01	Y.10
-puisque	U.01	8.01
+puisque	U.01	7.01
 formes	i.02	X.10	Y.11
 agricole	i.01
-entreprise	i.03	j.02	k.01	z.05	C.07	D.04	E.02	H.03	I.02	J.03	S.04	U.04	6.01	9.01	-.01
+entreprise	i.03	j.02	k.01	z.05	C.07	D.04	E.02	H.03	I.02	J.03	S.04	U.04	5.01	8.01	+.01
 dautonomie	k.01
 formel	l.01
-interpretation	8.31	9.02
+interpretation	7.31	8.02
 detre	j.01	z.01	U.01
-plans	8.01
+plans	7.01
 consommer	j.01	E.01	J.01
 competitive	z.01
 mobilier	P.01
 totalement	Y.02
-rapidement	O.01	T.02	Y.01	6.01
-prerequis	8.01
+rapidement	O.01	T.02	Y.01	5.01
+prerequis	7.01
 gros	j.02
-permette	8.01
+permette	7.01
 exigu	j.01
 particuliers	j.01	V.01
 virgule	A.01
 consultables	U.01
 publiques	i.04	z.01
-montant	6.01	7.10	8.01	9.04	-.01	*.01
+montant	5.01	6.10	7.01	8.04	+.01	-.01
 employeur	k.01	Y.11
-indirectes	+.01	-.02
+indirectes	9.01	+.02
 utilisons	T.01
 quaux	U.01
 communications	Y.01
@@ -2353,16 +2353,16 @@ exprime	I.02
 aidant	S.02
 genre	j.01
 saisonnalite	j.01
-abonnement	5.12
+abonnement	*.12
 national	T.01
-segmentation	8.10
+segmentation	7.10
 permanence	O.01	S.01
 aerienne	k.02
 eventuels	i.01
 poser	W.01
 innovation	j.02	l.02	z.01	D.01	H.01	O.01
 abordables	z.01
-somme	D.01	*.02
+somme	D.01	-.02
 necessaire	i.01	j.01
 charge	T.01	U.01
 systeme	f.01	L.11	S.33	U.02	V.02
@@ -2371,10 +2371,10 @@ publient	Y.01
 directif	l.01	X.01
 informatique	D.01
 operant	C.01
-vise	W.01	X.01	Y.01	6.02
-944	5.02
+vise	W.01	X.01	Y.01	5.02
+944	*.02
 infrastructures	S.01
-synthetique	8.10
+synthetique	7.10
 confie	j.01	D.02
 creativite	j.01
 ladmiration	l.01
@@ -2384,10 +2384,10 @@ sujets	H.10
 frequente	z.10
 vieux	j.01
 subventions	i.01
-augmente	z.01	*.01
+augmente	z.01	-.01
 language	E.02	J.02
-144000	8.03
-resumer	9.01
+144000	7.03
+resumer	8.01
 beaute	E.01	J.01
 discontinu	O.01	R.01
 partage	U.01	X.01
@@ -2397,116 +2397,116 @@ tenir	T.01
 contact	T.02
 participer	t.01
 fleurs	E.01	J.01
-france	i.02	k.04	E.01	J.01	7.01
+france	i.02	k.04	E.01	J.01	6.01
 contrer	j.01
 confiance	j.02	l.01	U.02	W.01	Y.01
 aquatiques	j.02
 messagerie	X.01
-fiable	6.01
+fiable	5.01
 deducation	z.01
 tires	O.02	P.01
 meilleure	l.01	z.01	D.01	S.01	X.01
-image	z.01	E.02	J.02	Y.05	6.01
-signifie	C.01	6.02	8.10	9.01
+image	z.01	E.02	J.02	Y.05	5.01
+signifie	C.01	5.02	7.10	8.01
 enregistree	U.01
 montage	R.01
-energie	6.03	+.01
+energie	5.03	9.01
 campagnes	S.01	T.01
-energetique	6.01
+energetique	5.01
 apportent	C.01
 necessite	j.01	S.01	X.01
-benefices	6.01
-actif	7.23	9.02
-bfr	g.01	2.11	9.26
+benefices	5.01
+actif	6.23	8.02
+bfr	g.01	2.11	8.26
 lorsquil	W.01
 exige	V.01
-negatifs	6.01
+negatifs	5.01
 piece	P.01	T.01
-204000	7.02
+204000	6.02
 parts	C.01
-968	5.02
+968	*.02
 obligent	E.01	J.01
 finances	Y.01
-financer	6.01
+financer	5.01
 promouvoir	i.01	j.01
 metier	j.01	D.02	S.01
 reagit	I.01
-dindicateurs	6.01
+dindicateurs	5.01
 quasi-totalite	E.01	J.01
-delai	E.01	8.01
+delai	E.01	7.01
 sources	H.01	S.01
 tient	j.01	s.02
-100000	7.02
+100000	6.02
 finissent	j.01
 capable	E.01	J.01
 voitures	R.01
 pendant	j.02	k.01	T.01
 contenu	T.01	Y.02
 olivier	j.01
-integralement	9.01
+integralement	8.01
 effectuee	U.01
-salaries	i.02	j.03	k.01	l.04	S.01	U.01	Y.03	6.02
+salaries	i.02	j.03	k.01	l.04	S.01	U.01	Y.03	5.02
 seules	k.01	E.01	J.01
-recyclage	V.01	6.04
+recyclage	V.01	5.04
 capturee	D.01
 apprecier	D.01
-decembre	7.01
+decembre	6.01
 client	k.01	z.01	I.01	O.02	P.02	S.15	T.02	U.09
 autorite	l.01
-methodes	o.01	D.01	*.10
+methodes	o.01	D.01	-.10
 oreal	E.01	J.01
-emissions	6.04
+emissions	5.04
 ratp	i.01
-reporting	6.02
+reporting	5.02
 pecheur	j.01
-utilisation	D.01	T.01	6.02	7.01
+utilisation	D.01	T.01	5.02	6.01
 digital	T.01
-assurances	+.01
+assurances	9.01
 six	j.01	V.01
 associes	i.02	D.01
 repond	j.02	J.01	Y.01
-courante	7.02
+courante	6.02
 representants	n.01	Y.01
 ajustee	Q.01
-conserve	+.01
-presente	7.01	8.01
-principaux	m.01	H.10	O.11	6.10
+conserve	9.01
+presente	6.01	7.01
+principaux	m.01	H.10	O.11	5.10
 etiquettes	V.01
 piratage	W.02
-management	c.01	l.10	S.11	6.01
+management	c.01	l.10	S.11	5.01
 restos	i.01
-500	R.01	U.01	*.01
+500	R.01	U.01	-.01
 logiciels	S.02
 adresse	T.01	W.01
 defaut	T.01
 essentiel	z.01	E.01	J.01
-equipe	l.01	O.01	T.01	W.02	+.01
-directes	-.02
+equipe	l.01	O.01	T.01	W.02	9.01
+directes	+.02
 logistique	z.01	D.02
-vente	D.01	R.01	T.12	V.03	6.01	+.04	-.04	*.02
+vente	D.01	R.01	T.12	V.03	5.01	9.04	+.04	-.02
 comblent	C.01
 promotion	Y.01
 big	I.01	S.10
 montrer	j.01	E.01	J.01	T.01	V.01	Y.01
-differencier	z.02	C.01	6.01
+differencier	z.02	C.01	5.01
 modes	f.01	E.01	J.01	K.14	O.41	P.10	Q.10	R.10	T.01
 animale	j.01
 regulierement	j.01	t.01	T.01
 anticiper	O.01
 doutils	W.01
 vers	j.01	k.03	l.01	m.02	V.01	X.01
-repose	i.12	l.01	z.01	E.01	I.01	J.01	6.02	8.01	*.01
+repose	i.12	l.01	z.01	E.01	I.01	J.01	5.02	7.01	-.01
 linformation	l.02	S.03	U.02	W.01
-degre	u.01	C.01	T.01	6.02
+degre	u.01	C.01	T.01	5.02
 bio	z.01	E.04	J.05
 majorite	i.01	u.01
 enormement	j.01
 enquete	p.01	T.01
 fatigue	E.01	J.01
 rassurer	Y.01
-commerciale	I.01	S.01	T.01	U.01	Y.10	6.02	8.01	9.01
+commerciale	I.01	S.01	T.01	U.01	Y.10	5.02	7.01	8.01
 contrats	T.01
-abonnements	5.08
+abonnements	*.08
 communaute	T.01	V.01
 plateforme	o.01	X.01
 https	T.01	U.01
@@ -2514,58 +2514,58 @@ anticipee	U.01
 planches	V.01
 french	k.01
 individuelles	V.01
-appauvrir	7.01
+appauvrir	6.01
 surface	j.01
 issue	H.01
 revelant	I.01
 large	U.01
-environnemental	j.02	z.01	C.01	6.02
+environnemental	j.02	z.01	C.01	5.02
 jaime	j.01
 vera	E.01	J.01
 generatrice	U.01
-2.00	-.01
+2.00	+.01
 interessez	C.01
 realisee	R.01
 livrer	U.01
-frais	U.01	+.01
-realiser	i.03	C.01	D.01	V.01	8.01
+frais	U.01	9.01
+realiser	i.03	C.01	D.01	V.01	7.01
 acronyme	C.01
 conservation	j.01	T.02
-realises	7.01
+realises	6.01
 fiche	b.01	i.10
 privilegie	S.10
-oublier	A.01	*.01
-decouvert	9.01
+oublier	A.01	-.01
+decouvert	8.01
 esses	D.01
 bouleversent	k.01
-selon	i.21	k.01	l.04	I.01	K.06	O.01	P.20	Q.20	R.20	X.03	6.02	+.01
+selon	i.21	k.01	l.04	I.01	K.06	O.01	P.20	Q.20	R.20	X.03	5.02	9.01
 plateformes	I.01	X.01
 collectons	T.02
 congeler	j.01
 dautomatisation	D.01
-proportion	6.01
+proportion	5.01
 emerger	l.01	I.01
 siel	L.01	V.12
 billets	k.01
 instantanee	U.01
 cooperer	c.01	l.11	X.01
 panne	W.01
-2.10	-.01
-lactivite	i.01	z.02	D.02	S.01	T.10	V.02	7.02	9.02	*.01
+2.10	+.01
+lactivite	i.01	z.02	D.02	S.01	T.10	V.02	6.02	8.02	-.01
 larsenal	T.01
-cycle	7.03
+cycle	6.03
 aura	E.01	J.01
 dinscription	T.10
 recettes	j.01
 aident	D.01
 prefere	j.01
 deja	z.01	C.01	I.01
-dire	C.02	T.01	7.03
+dire	C.02	T.01	6.03
 dautres	k.01
-durablement	D.01	7.01
+durablement	D.01	6.01
 programme	k.01
 bien-etre	k.01
-trompeuse	6.01
+trompeuse	5.01
 maniere	i.01	v.01	z.01	O.01	S.03	T.03	U.01
 m2	j.02
 change	j.01
@@ -2573,14 +2573,14 @@ rencontrent	n.01
 acces	D.02	T.01	U.02
 actuels	I.01
 disposition	T.01
-corporate	6.01
+corporate	5.01
 1,2	E.01	J.01
-dameliorer	O.01	T.01	7.01	+.01
+dameliorer	O.01	T.01	6.01	9.01
 alignement	D.01
 fortement	T.01
 datelier	V.01
 lhistoire	j.01
-0,50	8.04
+0,50	7.04
 fur	S.01	U.03
 connue	j.01
 constant	O.01
@@ -2590,36 +2590,36 @@ office	D.01
 creatrices	D.01
 soi	E.01	J.01
 photos	T.01	V.01
-75000	7.01
-genere	8.01	9.02
+75000	6.01
+genere	7.01	8.02
 normalises	Y.10
 second	C.01
 supplementaires	S.01
 fallu	T.01
 modernite	k.01
-lutte	6.01
-annees	H.01	R.01	T.01	U.01	7.02
+lutte	5.01
+annees	H.01	R.01	T.01	U.01	6.02
 www	k.01	U.01
 personnelles	T.05	W.11
 connaitre	D.01	T.01	U.01	Y.01
-lobsolescence	6.01
+lobsolescence	5.01
 communication	a.01	c.17	f.01	j.03	l.48	m.14	n.13	o.13	p.13	q.13	r.13	s.12	t.01	v.01	w.01	N.12	S.02	T.01	X.68	Y.95
-different	7.10
-entre	l.03	m.02	z.01	A.01	C.01	H.01	T.02	U.03	V.03	X.04	Y.01	5.02	6.05	9.01	-.06	*.02
+different	6.10
+entre	l.03	m.02	z.01	A.01	C.01	H.01	T.02	U.03	V.03	X.04	Y.01	5.05	8.01	+.06	-.02	*.02
 repartition	z.01
-appelee	7.01
+appelee	6.01
 porter	y.01	z.15	C.01	D.20
 physiques	i.01
-incertitude	*.01
+incertitude	-.01
 personne	l.02	V.02
 appelees	D.02
-vendues	-.01
-carbones	6.01
+vendues	+.01
+carbones	5.01
 elus	i.02
-choses	j.01	6.01
-origine	6.01	7.01
+choses	j.01	5.01
+origine	5.01	6.01
 termes	j.01	z.06	A.01	E.01
-plus	i.01	j.02	k.03	l.01	z.05	D.03	E.05	H.01	J.06	O.02	S.02	T.03	U.06	W.01	6.02	8.08
+plus	i.01	j.02	k.03	l.01	z.05	D.03	E.05	H.01	J.06	O.02	S.02	T.03	U.06	W.01	5.02	7.08
 offre	z.01	C.01	D.03	I.02	V.02
 bienveillance	u.01
 amazon	U.01
@@ -2633,80 +2633,80 @@ quotidien	D.01
 collaboratives	I.01	X.01
 coordonner	l.01	S.01	V.02	X.03
 concurrentiel	z.07
-immobilise	7.11
-productivite	O.02	S.01	U.01	V.01	6.11	8.01
+immobilise	6.11
+productivite	O.02	S.01	U.01	V.01	5.11	7.01
 delices	Q.01
-1.5	-.01
+1.5	+.01
 permettre	E.01	J.02	T.03	W.01	Y.01
-1.8	-.02
+1.8	+.02
 reseaux	j.01	I.01	Y.03
-dioxyde	6.01
-dividendes	6.01	7.10
-utilisee	j.01	m.01	X.01	6.01
+dioxyde	5.01
+dividendes	5.01	6.10
+utilisee	j.01	m.01	X.01	5.01
 tracables	U.01
-tardif	8.03
+tardif	7.03
 code	V.02
-daffaires	g.01	j.01	S.01	U.02	Y.10	4.11	5.01	6.03	8.07	*.66
+daffaires	g.01	j.01	S.01	U.02	Y.10	4.11	5.03	7.07	-.66	*.01
 conservons	j.01
 recherches	D.10
 rechercher	i.01	k.01	U.01
-entrainer	l.01	6.01
+entrainer	l.01	5.01
 savent	E.01	J.01
 pouvant	z.01	H.10
 chomage	z.01
-nombre	k.01	z.01	C.01	R.01	5.11	8.01	-.01
+nombre	k.01	z.01	C.01	R.01	7.01	+.01	*.11
 commercialisation	D.01
 preparations	j.01
-preservation	6.01
-total	k.01	E.01	J.01	6.01	7.02	9.04	+.01	*.02
+preservation	5.01
+total	k.01	E.01	J.01	5.01	6.02	8.04	9.01	-.02
 quotidiennement	U.01
 prononce	E.01	J.01
 utiliser	z.10	C.01	S.01	T.01
-utilises	W.01	6.02
-subie	Y.12	7.01
+utilises	W.01	5.02
+subie	Y.12	6.01
 integrant	T.01
-nfrd	6.01
+nfrd	5.01
 puis	U.01
-viable	6.01
-plusieurs	i.02	H.01	U.01	X.01	+.01
+viable	5.01
+plusieurs	i.02	H.01	U.01	X.01	9.01
 survivre	z.02
 incontestablement	j.01
-responsable	T.01	6.01
-valeur	d.01	y.11	C.01	D.36	E.02	O.01	Y.01	5.03	6.03	7.16	8.01	*.02
+responsable	T.01	5.01
+valeur	d.01	y.11	C.01	D.36	E.02	O.01	Y.01	5.03	6.16	7.01	-.02	*.03
 nature	z.10
-social	C.01	6.03
-hormis	7.01
+social	C.01	5.03
+hormis	6.01
 davantages	H.01
 informe	T.01	U.01	W.01
 spontanement	l.01
 utilisez	C.01	T.01
 complexe	H.01
 toutefois	E.01	I.01	J.01
-100	5.02	8.01	+.03	-.05	*.09
-uniquement	z.01	U.01	+.01
-103	5.02
-opportunites	z.02	A.01	B.01	H.01	Y.01	6.01
+100	7.01	9.03	+.05	-.09	*.02
+uniquement	z.01	U.01	9.01
+103	*.02
+opportunites	z.02	A.01	B.01	H.01	Y.01	5.01
 ascendante	l.01	m.01	n.01	o.01	p.01	q.01	r.01	X.01
 fabriquees	Q.01
-106	5.02
+106	*.02
 restent	H.01
 luxe	z.01
-inclut	C.01	6.01
+inclut	C.01	5.01
 preferent	j.01
 servent-ils	W.01
-strategie	H.04	I.01	S.01	Y.02	6.01	*.01
+strategie	H.04	I.01	S.01	Y.02	5.01	-.01
 adaptation	l.02	O.02	S.01
-possede	z.02	U.01	7.01
+possede	z.02	U.01	6.01
 modulaires	S.01
-communes	Y.01	+.01
+communes	Y.01	9.01
 environ	j.01
-objective	6.01
+objective	5.01
 groupes	X.01
-110	9.04	*.01
+110	8.04	-.01
 emission	z.01
 114	k.01
 collaborateurs	k.01	l.03	T.01
-atteints	6.02
+atteints	5.02
 achats-ventes	U.01
 dintegrer	E.01	V.01
 exerce	l.01	C.01
@@ -2714,41 +2714,41 @@ web-marketing	T.01
 progressivement	j.01
 faciliter	S.01	T.01	V.01
 collecte	I.01	V.05
-120	8.01	*.02
+120	7.01	-.02
 mission	i.02
 fonctionnement	h.01	i.23	l.01	D.01	S.04	T.01	U.01	V.01
-exemple	i.31	j.02	l.03	z.04	D.10	H.01	O.01	V.01	W.10	6.01	7.20	8.30	9.10	+.92	*.90
+exemple	i.31	j.02	l.03	z.04	D.10	H.01	O.01	V.01	W.10	5.01	6.20	7.30	8.10	9.92	-.90
 dappartenance	l.01
 trimestriels	q.01
-principale	D.02	6.01	9.01
+principale	D.02	5.01	8.01
 co-creer	I.01
-apparaitre	7.01
+apparaitre	6.01
 amerique	j.01
-conditions	i.01	z.04	U.01	Y.01	6.03
+conditions	i.01	z.04	U.01	Y.01	5.03
 interet	i.02
 nouvel	T.01
 prissette	U.01
 dair	k.01
-reellement	6.01	+.01
+reellement	5.01	9.01
 marchandise	U.01
-deduire	7.01
+deduire	6.01
 connaissance	S.10
 sur	U.01
-repondre	i.02	m.01	n.01	o.01	p.01	q.01	r.01	s.01	t.01	u.01	v.01	w.01	A.01	B.01	C.01	D.01	E.01	I.01	J.02	O.01	P.01	Q.03	R.01	T.03	Y.01	6.02
+repondre	i.02	m.01	n.01	o.01	p.01	q.01	r.01	s.01	t.01	u.01	v.01	w.01	A.01	B.01	C.01	D.01	E.01	I.01	J.02	O.01	P.01	Q.03	R.01	T.03	Y.01	5.02
 loubli	W.01
 etats	k.01
 facilitee	S.01
 porte	l.01
 email	T.01
-key	6.01
+key	5.01
 cartons	j.01
 essentielle	j.01
 maximiser	R.01
 dediter	V.06
 macro-environnement	z.12	C.01
 connectes	T.01
-decision	e.10	i.03	l.01	H.11	S.04	X.01	+.01	*.12
-bilan	g.02	Y.01	0.11	2.11	6.01	7.66	9.30
+decision	e.10	i.03	l.01	H.11	S.04	X.01	9.01	-.12
+bilan	g.02	Y.01	0.11	2.11	5.01	6.66	8.30
 manager	l.12	X.01
 priorites	z.01	Y.01
 garage	j.01
@@ -2757,46 +2757,46 @@ ong	i.01
 unilaterale	v.01
 reduit	E.01	J.01
 silo	S.01
-resiliente	8.01
-atteinte	6.01	8.01
+resiliente	7.01
+atteinte	5.01	7.01
 fabriques	P.01
-rapports	Y.02	6.01
+rapports	Y.02	5.01
 didees	X.01
 fabriquer	E.01	J.01	R.01
 pull	O.01
-144	8.03
-145	5.02
-ont	j.02	k.03	u.01	z.01	C.01	E.03	J.04	T.05	6.01	7.03
-reunis	6.01
+144	7.03
+145	*.02
+ont	j.02	k.03	u.01	z.01	C.01	E.03	J.04	T.05	5.01	6.03
+reunis	5.01
 remplies	T.01
-sujet	a.10	b.02	j.10	k.10	L.03	T.11	U.10	V.10	3.01	-.10
+sujet	a.10	b.02	j.10	k.10	L.03	T.11	U.10	V.10	3.01	+.10
 fabriquee	E.01	J.01
 fragmentees	S.01
 contacts	S.01
-but	k.01	E.01	7.01
+but	k.01	E.01	6.01
 joint	H.11
-aide	z.01	S.02	U.01	*.01
+aide	z.01	S.02	U.01	-.01
 ordre	A.01
-generations	6.02
+generations	5.02
 fermee	j.01
 150	j.01
-csrd	6.13
+csrd	5.13
 repondant	i.01	Y.01
 154	k.01
 parfaitement	E.01
 consommateur	I.03
-155	5.03
-jour	S.01	U.02	Y.01	8.01
+155	*.03
+jour	S.01	U.02	Y.01	7.01
 equipes	m.01	T.02	V.02
-tableaux	S.02	6.10
+tableaux	S.02	5.10
 passion	j.01
-matieres	j.01	E.04	J.03	U.01	V.01	+.02
+matieres	j.01	E.04	J.03	U.01	V.01	9.02
 commissaire	i.01
 naissance	j.01
 sadresse	Y.02
-heure	-.01
+heure	+.01
 joue	V.01
-dactions	V.01	6.01
+dactions	V.01	5.01
 modules	U.01	V.02
 lereputation	Y.01
 extraits	T.10
@@ -2805,8 +2805,8 @@ formations	T.02
 alimenter	S.01
 transformations	T.11
 utilisable	S.01	V.01
-contexte	k.01	6.01	8.10
-dobtenir	9.01
+contexte	k.01	5.01	7.10
+dobtenir	8.01
 region	j.01
 achat	D.01
 organise	O.01	T.01
@@ -2814,55 +2814,55 @@ entendez	T.01
 support	D.02	S.01
 comptabilite	D.01
 dorganisation	i.20
-vertes	6.01
+vertes	5.01
 soucieuse	k.01
 sein	C.01	D.01	T.01	U.01	V.02	X.01
 etape	R.01
 accompagnee	T.01
-euro	8.01
+euro	7.01
 decompose	D.01
 changer	T.01
 idee	j.01	z.01
-deux	k.01	H.02	X.01	6.01	7.02	*.01
-175	5.02
-confondre	6.10
+deux	k.01	H.02	X.01	5.01	6.02	-.01
+175	*.02
+confondre	5.10
 informels	l.01	X.01
 concretement	U.01
-lien	X.01	6.01	7.01	8.10	*.10
-lies	z.01	S.01	7.01	8.10	+.01
+lien	X.01	5.01	6.01	7.10	-.10
+lies	z.01	S.01	6.01	7.10	9.01
 laerien	k.01
 provencale	E.01	J.01
 avantages	z.10	O.01	S.11	U.01	W.10	X.02
-exagerees	6.01
+exagerees	5.01
 lieu	V.01
-attendus	6.01
-encourager	6.01
-normal	-.01
-types	g.01	i.10	l.20	m.01	H.11	I.10	V.01	X.10	Y.20	Z.11	6.20	+.10
+attendus	5.01
+encourager	5.01
+normal	+.01
+types	g.01	i.10	l.20	m.01	H.11	I.10	V.01	X.10	Y.20	Z.11	5.20	9.10
 aeriennes	k.01
 encourages	t.01
 independantes	H.01
 qualitatives	I.01
-8000	7.01
+8000	6.01
 gagner	H.01	S.01	T.01	U.01
-calculs	S.01	8.10	+.10
-fiscales	7.01	9.01
+calculs	S.01	7.10	9.10
+fiscales	6.01	8.01
 supermarches	j.01	Q.02
-problemes	l.01	W.01	6.01
+problemes	l.01	W.01	5.01
 liee	j.01	E.01	H.02	J.01	T.01
 sadapter	O.01
-directive	6.03
-dapparition	8.01
+directive	5.03
+dapparition	7.01
 accompagner	T.01
-188	5.03
-estimer	*.01
+estimer	-.01
+188	*.03
 lentement	E.01	J.01
-attendue	Y.01	8.20
+attendue	Y.01	7.20
 juste	E.01	J.01
 reconnue	E.01	J.01
 valoriser	Y.02
 partenariats	H.01
-choix	e.11	j.01	z.01	C.01	D.10	E.01	F.11	H.62	T.01	6.01
+choix	e.11	j.01	z.01	C.01	D.10	E.01	F.11	H.62	T.01	5.01
 passation	D.01
 talents	Y.01
 osc	i.01
@@ -2874,10 +2874,10 @@ fiabiliser	T.01
 susciter	l.01
 tester	E.01	J.01
 extrait	U.01
-laide	B.01	6.01
+laide	B.01	5.01
 electroniques	O.01
-193	5.02
-type	a.01	b.10	i.13	l.01	H.03	O.01	V.02	X.01	6.01	-.01
+193	*.02
+type	a.01	b.10	i.13	l.01	H.03	O.01	V.02	X.01	5.01	+.01
 feedback	l.01
 representent	E.01	J.01	T.01	U.01
 hack	W.01
@@ -2891,19 +2891,19 @@ presence	l.01	Y.01
 doigt	j.01
 guide	l.01
 partager	T.01	U.01	W.01	X.01
-efficience	6.12
+efficience	5.12
 partages	l.01
-ecoblanchiment	6.01
+ecoblanchiment	5.01
 phase	E.01	J.01
-generant	6.01
+generant	5.01
 distants	S.01
 teams	W.01
 negatives	Y.01
 doffreurs	k.01
-interne	c.01	l.01	m.11	z.03	D.02	H.02	T.01	X.02	Y.21	8.01
+interne	c.01	l.01	m.11	z.03	D.02	H.02	T.01	X.02	Y.21	7.01
 vivre	j.01
 totalenergies	i.01
-raison	7.01
+raison	6.01
 linteret	i.01	T.02
 tonnes	U.01
 comprehension	S.01	X.01
@@ -2913,41 +2913,41 @@ franceklm	i.01
 navons	U.01
 gdr	V.12
 saas	S.12
-corrige	-.01
+corrige	+.01
 frederic	E.12	J.13	L.01	T.29
-ventes	j.02	E.03	J.03	S.02	T.03	U.01	V.01	6.02	*.03
+ventes	j.02	E.03	J.03	S.02	T.03	U.01	V.01	5.02	-.03
 tracabilite	E.02	J.01	U.03
 dadhesion	i.01	l.01
-lorigine	7.01
+lorigine	6.01
 oui	U.01
-plastique	j.01	6.02
-10,75	5.01
+plastique	j.01	5.02
+10,75	*.01
 lidee	j.01
-dettes	7.06	9.07
+dettes	6.06	8.07
 problematique	j.01
-exclues	6.01
+exclues	5.01
 depasser	l.01
 constamment	U.01
-montre	T.01	7.10
-distribution	j.01	z.01	D.02	E.01	J.01	S.10	+.01	-.06
-intelligents	6.01
+montre	T.01	6.10
+distribution	j.01	z.01	D.02	E.01	J.01	S.10	9.01	+.06
+intelligents	5.01
 biodegradables	j.02
 difficilement	H.01
-reduire	l.01	O.02	6.05	8.01	+.01
+reduire	l.01	O.02	5.05	7.01	9.01
 longs	O.02
-capacite	j.01	l.04	z.03	C.01	E.01	J.01	T.01	6.07	8.01
-salle	5.13
+capacite	j.01	l.04	z.03	C.01	E.01	J.01	T.01	5.07	7.01
+salle	*.13
 servent	i.02	T.02
-consommation	E.03	J.03	6.02
+consommation	E.03	J.03	5.02
 continues	Y.01
 institutionnelle	Y.11
-precise	j.02	O.01	6.01
-place	T.04	Y.01	6.02	8.01
+precise	j.02	O.01	5.01
+place	T.04	Y.01	5.02	7.01
 personnalisees	T.01
 continuer	E.01	J.01
 emplacement	z.01
 partagee	l.01
-6.66	-.01
+6.66	+.01
 concentre	H.01
 thon	j.01
 directives	m.01	Y.01
@@ -2957,114 +2957,114 @@ normes	l.01	z.01	C.01	D.01
 transformation	E.01	J.01	S.10	T.01	V.03
 familiariser	T.01
 rigoureuse	z.01
-remunerer	7.01
+remunerer	6.01
 site	j.01	T.19	V.01	Y.01
 consequente	j.01
-rentable	D.01	8.01	+.04
+rentable	D.01	7.01	9.04
 massive	I.01
 confidentialite	T.10	U.01
 mises	S.01	T.01	Y.02
 etiquette	V.01
 valorisation	l.01	V.02
-elements	z.04	H.10	T.02	7.01	9.01
+elements	z.04	H.10	T.02	6.01	8.01
 informel	l.01
 repondants	j.02
-leurs	j.02	l.01	m.01	t.01	z.02	C.01	D.01	S.01	T.05	U.01	W.01	6.03
-minimum	8.01
+leurs	j.02	l.01	m.01	t.01	z.02	C.01	D.01	S.01	T.05	U.01	W.01	5.03
+minimum	7.01
 informer	l.01	q.01	T.01	W.01	X.02
-date	V.01	8.01
-parle	Y.01	9.01
+date	V.01	7.01
+parle	Y.01	8.01
 humaine	U.01
 lile	j.01
 data	I.01	S.31	T.01
 depot	V.01
-passage	9.10
-dediee	+.01
+passage	8.10
+dediee	9.01
 privees	i.01
 avez	T.02
 excedents	i.01
 leaders	z.01
 internationales	C.01
 garantir	S.01	Y.01
-lexistence	8.01
+lexistence	7.01
 avons	j.03	E.04	J.04	T.02	U.01
 chutes	j.02
 atrice	I.01
 cooperatives	i.01
 generale	i.02	D.01
-laquelle	I.01	8.01
+laquelle	I.01	7.01
 dexercer	z.01
 consequences	Y.01
-apres	O.01	V.01	8.01
-faune	6.01
+apres	O.01	V.01	7.01
+faune	5.01
 securise	U.01
 sens	c.07	i.01	l.02	m.10	n.10	o.10	p.10	q.10	r.10	s.10	T.01	X.01
-doivent	C.01	Y.01	6.01	7.02
+doivent	C.01	Y.01	5.01	6.02
 satisfait	I.01
-kpi	6.01
+kpi	5.01
 directeur	j.01	U.02
 proposer	o.01	I.01	T.01
-dexploitation	i.01	7.04	9.02
+dexploitation	i.01	6.04	8.02
 proposes	k.01	S.01	T.01
-naturel	6.01
+naturel	5.01
 affaire	k.01
 destines	V.01
 didentite	T.01
-reparation	6.01
-activite	j.02	z.02	C.03	D.02	H.01	V.02	Y.02	7.04	9.01	+.02	*.01
-competences	l.02	z.02	C.01	D.02	T.03	6.01
+reparation	5.01
+activite	j.02	z.02	C.03	D.02	H.01	V.02	Y.02	6.04	8.01	9.02	-.01
+competences	l.02	z.02	C.01	D.02	T.03	5.01
 choisit	E.01	H.01
 choisir	i.01
 maillon	E.01
 contacter	T.03
 proposee	J.01
-contraire	9.01
+contraire	8.01
 verre	j.01
 mobilisation	l.01	H.01
 concevoir	I.01
 accepter	T.02
-securite	i.01	D.01	E.01	T.01	7.01	8.25
+securite	i.01	D.01	E.01	T.01	6.01	7.25
 choisie	Y.11
 subordination	l.01
-engagees	6.01
+engagees	5.01
 reflexion	X.01
 instances	i.01
-10,34	-.01
-envers	7.03
+10,34	+.01
+envers	6.03
 sncf	i.01
-cherche	i.02	l.01	6.01
+cherche	i.02	l.01	5.01
 previsions	R.01	Y.01
 biologique	E.01	J.01
 consulte	t.01
 computing	S.10
 cap	j.11
 paris	k.01
-cas	H.01	V.02	6.01	9.01
+cas	H.01	V.02	5.01	8.01
 auquel	T.01
-120000	8.01
+120000	7.01
 dependance	l.01	H.01	W.01
-limites	H.10	O.01	X.02	*.11
+limites	H.10	O.01	X.02	-.11
 limiter	i.01	j.01	O.01
 combler	J.01
-regroupant	6.01
+regroupant	5.01
 navigateurs	T.01
-nindiquez	*.01
+nindiquez	-.01
 doublons	S.01
 vient	T.01
 humanitaire	i.01
 haute	j.01
-terme	H.02	9.03
+terme	H.02	8.03
 potentiels	S.01
-passive	9.03
+passive	8.03
 provient	E.01	J.01
 questionnaires	T.01
-efficace	i.01	l.01	6.01
-tableau	z.01	V.01	6.22
+efficace	i.01	l.01	5.01
+tableau	z.01	V.01	5.22
 clairement	J.01	W.01
-periodes	T.01	8.10	*.01
-bilans	V.01	6.01
-considere	*.01
-quelle	j.01	T.01	Y.01	6.01	7.02
+periodes	T.01	7.10	-.01
+bilans	V.01	5.01
+considere	-.01
+quelle	j.01	T.01	Y.01	5.01	6.02
 etait	k.01	E.01	J.01
 basees	v.01	T.01
 entrants	z.02	C.01	V.01
