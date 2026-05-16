@@ -127,7 +127,7 @@ table td {
 
 h1 {
     color: #eaeef2;
-    font-size: 2.4em;
+    font-size: 2em;
     margin-bottom: 30px;
     padding-bottom: 10px;
     border-bottom: 2px solid #3a3f45;
@@ -170,6 +170,14 @@ h5 {
    TEXTE
    ============================================================ */
 
+.intro {
+  font-size: 2.5em;
+  font-weight: 400;
+  text-align: center;
+  margin: 40px 0 20px 0;
+  color: #cfd6dd;
+}
+
 p {
     margin: 18px 0;
     font-size: 1.05em;
@@ -210,6 +218,12 @@ a:hover {
 /* ============================================================
    BLOCS
    ============================================================ */
+
+nav {
+  margin-top: 10px;   /* plus proche du haut */
+  margin-bottom: 20px;
+  font-size: 1rem;
+}
 
 blockquote {
     background-color: #2a3038;
@@ -286,8 +300,24 @@ summary em.em2 {
 }
 
 /* ============================================================
-   RESPONSIVE
+   BANNIÉRE
    ============================================================ */
+
+
+.top-banner {
+  position: relative; /* ou supprime complètement position */
+  width: 100%;
+  padding: 10px 0;
+  text-align: center;
+  font-size: 2em;   /* augmente légèrement */
+  font-weight: bold;
+
+  background-color: var(--banner-bg);
+  color: var(--banner-text);
+}
+
+
+
 
 @media (max-width: 768px) {
     body {
@@ -354,6 +384,14 @@ body.light {
 body.light a {
   color: #0056b3;
 }
+
+
+body.light .top-banner {
+  background-color: #eaeef2;
+  color: #1f2329;
+  border-bottom: 1px solid #ccc;
+}
+
 
 /* OpenDyslexic */
 body.dys {
