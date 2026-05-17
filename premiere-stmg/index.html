@@ -11,6 +11,8 @@
 </head>
 
 <body>
+
+<!-- ACCESSIBILITÉ -->
 <div id="accessibility-menu">
   <button onclick="toggleTheme()">🌙 / ☀️</button>
   <button onclick="toggleDys()">Dys</button>
@@ -19,50 +21,119 @@
   <button onclick="resetAccessibility()">🔄</button>
 </div>
 
-<nav><a href='../index.html'>Accueil</a> | <a href='../index.html'>Retour</a></nav>
+<!-- HEADER -->
+<header class="page-header">
 
-<h1>Première stmg</h1>
-<h2>Disciplines :</h2>
+  <nav class="top-nav">
+    <a href="../index.html">Accueil</a>
+    <span>|</span>
+    <a href="../index.html">Retour</a>
+  </nav>
+  
+   <p class="intro">
+    Bienvenue sur l’espace de ressources de la
+    <strong>Première STMG</strong>.<br><br>
+    Cliquez sur les liens ci-dessous pour accéder aux ressources mises à votre disposition dans le cadre des enseignements.
+  </p>
+ 
+ <hr>
 
-<h3>Sciences de Gestion et Numérique</h3>
+<nav class="menu-programme">
+  <h2>📚 Accès rapide</h2>
+	<details>
+		<summary><a href="#sdgn">SDGN</a></summary>
+		<ul>
+			<li><a href="#sdgn-th1">Thème 1 - De l'individu à l'acteur</a></li>
+			<li><a href="#sdgn-th2">Thème 2 - Numérique et intelligence collective</a></li>
+			<li><a href="#sdgn-th3">Thème 3 - Création de valeur et performance</a></li>
+			<li><a href="#sdgn-th4">Thème 4 - Thème 4 - Temps et risque</a></li>
+		</ul>
+	</details>
+	<details>
+		<summary><a href="#mana">Management</a></summary>
+		<ul>
+			<li><a href="#mana-th1">Thème 1 - À la rencontre du management des organisations</a></li>
+			<li><a href="#mana-th2">Thème 2 - Le management stratégique, du diagnostic à la fixation des objectifs</a></li>
+			<li><a href="#mana-th3">Thème 3 - Les choix stratégiques des organisations</a></li>
+		</ul>
+	</details>
+	<details>
+		<summary><a href="#droit">Droit</a></summary>
+			<ul>
+				<li><a href="#droit-th1">Thème 1 - Qu'est-ce que le droit ?</a></li>
+				<li><a href="#droit-th2">Thème 2 - Comment le droit permet-il de règler un litige ?</a></li>
+				<li><a href="#droit-th3">Thème 3 - Qui peut faire valoir ses droits ?</a></li>
+				<li><a href="#droit-th4">Thème 4 - Quels sont les droits reconnus aux personnes ?</a></li>
+			</ul>
+	</details>
+	<details>
+		<summary><a href="#eco">Économie</a></summary>
+			<ul>
+				<li><a href="#eco-th1">Thème 1 - Quelles sont les grandes questions économiques et leurs enjeux actuels ?</a></li>
+				<li><a href="#eco-th2">Thème 2 - Comment la richesse se crée-t-elle et se répartit-elle ?</a></li>
+				<li><a href="#eco-th3">Thème 3 - Comment les ménages décident-ils d'affecter leurs revenus ?</a></li>
+				<li><a href="#eco-th4">Thème 4 - Quels modes de financement de l'activité économique ?</a></li>
+				<li><a href="#eco-th5">Thème 5 - Les marchés des biens et services sont-ils concurrentiels ?</a></li>
+			</ul>
+	</details>
+</nav>
 
-<h4>Thème  1 - De l'individu à l'acteur</h4>
+</header>
+
+<main>
+
+	<h2 id="sdgn">Sciences de Gestion et Numérique</h3>
+
+		<h3 id="sdgn-th1">Thème  1 - De l'individu à l'acteur</h3>
 <p>
 <a href="https://tcous1.github.io/site-eleves/premiere-stmg/sdgnth1synthese">Synthèse des cours</a>
 </p>
 
-<h4>Thème 2 - Numérique et intelligence collective</h4>
+		<h3 id="sdgn-th2">Thème 2 - Numérique et intelligence collective</h3>
 <p>
 <a href="https://tcous1.github.io/site-eleves/premiere-stmg/sdgnth2synthese">Synthèse des cours</a>
 </p>
 
-<h4>Thème 3 - Création de valeur et performance</h4>
+		<h3 id="sdgn-th3">Thème 3 - Création de valeur et performance</h3>
 <p>
 <a href="https://tcous1.github.io/site-eleves/premiere-stmg/sdgnth3synthese">Synthèse des cours</a>
 </p>
 
-<h4>Thème 4 - Temps et risque</h4>
+		<h3 id="sdgn-th4">Thème 4 - Temps et risque</h3>
 <p>
 <a href="https://tcous1.github.io/site-eleves/premiere-stmg/sdgnth4synthese">Synthèse des cours</a>
 </p>
 
-<h3>Management</h3>
-<h4>Thème 1 - À la rencontre du management des organisations</h4>
-<h4>Thème 2 - Le management stratégique, du diagnostic à la fixation des objectifs</h4>
-<h4>Thème 3 - Les choix stratégiques des organisations</h4>
+	<h2 id="mana">Management</h2>
+	
+		<h3 id="mana-th1">Thème 1 - À la rencontre du management des organisations</h3>
+		
+		<h3 id="mana-th2">Thème 2 - Le management stratégique, du diagnostic à la fixation des objectifs</h3>
+		
+		<h3 id="mana-th3">Thème 3 - Les choix stratégiques des organisations</h3>
 
-<h3>Économie</h3>
-<h4>Thème 1 - Quelles sont les grandes questions économiques et leurs enjeux actuels ?</h4>
-<h4>Thème 2 - Comment la richesse se crée-t-elle et se répartit-elle ?</h4>
-<h4>Thème 3 - Comment les ménages décident-ils d'affecter leurs revenus</h4>
-<h4>Thème 4 - Quels modes de financement de l'activité économique ?</h4>
-<h4>Thème 5 - Les marchés des biens et services sont-ils concurrentiels ?</h4>
-
-<h3>Droit</h3>
-<h4>Thème 1 - Qu'est-ce que le droit ?</h4>
-<h4>Thème 2 - Comment le droit permet-il de règler un litige ?</h4>
-<h4>Thème 3 - Qui peut faire valoir ses droits ?<h4>
-<h4>Thème 4 - Quels sont les droits reconnus aux personnes ?</h4>
-
+	<h2 id="eco">Économie</h2>
+	
+		<h3 id="eco-th1">Thème 1 - Quelles sont les grandes questions économiques et leurs enjeux actuels ?</h3>
+		
+		<h3 id="eco-th2">Thème 2 - Comment la richesse se crée-t-elle et se répartit-elle ?</h3>
+		
+		<h3 id="eco-th3">Thème 3 - Comment les ménages décident-ils d'affecter leurs revenus</h3>
+		
+		<h3  id="eco-th4">Thème 4 - Quels modes de financement de l'activité économique ?</h3>
+		
+		<h3 id="eco-th5">Thème 5 - Les marchés des biens et services sont-ils concurrentiels ?</h3>
+		
+	<h2 id="droit">Droit</h2>
+	
+		<h3 id="droit-th1">Thème 1 - Qu'est-ce que le droit ?</h3>
+		
+		<h3 id="droit-th2">Thème 2 - Comment le droit permet-il de règler un litige ?</h3>
+		
+		<h3 id="droit-th3">Thème 3 - Qui peut faire valoir ses droits ?<h3>
+		
+		<h3 id="droit-th4">Thème 4 - Quels sont les droits reconnus aux personnes ?</h3>
+		
+</main>
 </body>
 </html>

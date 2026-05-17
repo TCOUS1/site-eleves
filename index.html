@@ -12,32 +12,48 @@
 
 <body>
 
+<!-- ACCESSIBILITÉ -->
 <div id="accessibility-menu">
   <button onclick="toggleTheme()">🌙 / ☀️</button>
-
   <button onclick="toggleDys()">Dys</button>
-
   <button onclick="fontMinus()">A−</button>
   <button onclick="fontPlus()">A+</button>
-
-  <button onclick="resetAccessibility()" title="Réinitialiser l’affichage">🔄</button>
+  <button onclick="resetAccessibility()">🔄</button>
 </div>
 
-	
-<nav>
-  <strong>Accueil</strong>
+<!-- HEADER -->
+<header class="page-header">
+
+  <nav class="top-nav">
+    <a href="../index.html">Accueil</a>
+    <span>|</span>
+    <a href="../index.html">Retour</a>
+  </nav>
+  
+   <p class="intro">
+    Bienvenue sur l’espace de ressources pour élèves de
+    <strong>Thibaud Cousin</strong>.<br><br>
+    Cliquez sur les liens ci-dessous pour accéder aux ressources mises à votre disposition dans le cadre des enseignements.
+  </p>
+ 
+ <hr>
+  
+  
+<nav class="menu-programme">
+  <h2>📚 Accès rapide</h2>
+
+	<ul>
+		<li><a href="https://tcous1.github.io/site-eleves/seconde">Classe de 2nde - SNT</a></li>
+		<li><a href="https://tcous1.github.io/site-eleves/premiere-stmg">Classe de 1re STMG</a></li>
+		<li><a href="https://tcous1.github.io/site-eleves/terminale-stmg">Classe de Tle STMG</a></li>
+		<li><a href="https://tcous1.github.io/site-eleves/bts-gpme">Classe de BTS GPME</a></li>
+	</ul>
 </nav>
 
+</header>
 
-<h1>Site élève de Thibaud COUSIN</h1>
-<p>Cliquez sur les liens ci-dessous pour accéder aux différentes ressources</p>
+<main>
 
-
-<ul>
-	<li><a href='seconde/index.html'>Seconde Générale et Technologique</a></li>
-	<li><a href='premiere-stmg/index.html'>Première Sciences et Techniques du Management et de la Gestion</a></li>
-	<li><a href='terminale-stmg/index.html'>Terminale Sciences et Techniques du Management et de la Gestion</a></li>
-	<li><a href='bts-gpme/index.html'>BTS Gestion de la PME</a></li>
-</ul>
+</main>
 </body>
 </html>

@@ -13,6 +13,7 @@
 
 <body>
 
+<!-- ACCESSIBILITÉ -->
 <div id="accessibility-menu">
   <button onclick="toggleTheme()">🌙 / ☀️</button>
   <button onclick="toggleDys()">Dys</button>
@@ -21,37 +22,68 @@
   <button onclick="resetAccessibility()">🔄</button>
 </div>
 
-<nav><a href='../index.html'>Accueil</a> | <a href='../index.html'>Retour</a></nav>
-<h1>BTS GPME – Ressources pédagogiques</h1>
+<!-- HEADER -->
+<header class="page-header">
 
-<p>
-Bienvenue sur l’espace de ressources du <strong>BTS Gestion de la PME</strong>.
-Cliquez sur les liens ci-dessous pour accéder aux travaux pratiques et modules
-pédagogiques à réaliser dans le cadre des enseignements.
-</p>
+  <nav class="top-nav">
+    <a href="../index.html">Accueil</a>
+    <span>|</span>
+    <a href="../index.html">Retour</a>
+  </nav>
+  
+   <p class="intro">
+    Bienvenue sur l’espace de ressources pour élèves de
+    <strong>BTS GPME</strong>.<br><br>
+    Cliquez sur les liens ci-dessous pour accéder aux ressources mises à votre disposition dans le cadre des enseignements.
+  </p>
+ 
+ <hr>
+  
+  
+<nav class="menu-programme">
+  <h2>📚 Accès rapide</h2>
+	<h3><a href="#1btsgpme">1re année</a></h3>
+			<ul>
+				<li><a href="https://tcous1.github.io/site-eleves/bts-gpme/excel-debutant">Parcours d'apprentissage Excel</a></li>
+				<li><a href="https://tcous1.github.io/site-eleves/bts-gpme/pgi-odoo">Initiation à Odoo</a></li>
+				<li><a href="https://tcous1.github.io/site-eleves/bts-gpme/stage1">Stage</a></li>
+				<li>
+			</ul>
+			</p>
+				<details>
+					<summary><a href="#grcf">GRCF</a></summary>
+								<ul>
+									<li><a href="#grcf1">Activité 1 - Recherche de clientèle et contact</a></li>
+									<li><a href="#grcf2">Activité 2 - Administration des ventes de la PME</a></li>
+									<li><a href="#grcf3">Activité 3 - Maintien et développement de la relation avec les clients de la PME </a></li>
+									<li><a href="#grcf4">Activité 4 - Recherche et choix des fournisseurs de la PME</a></li>
+									<li><a href="#grcf5">Activité 5 - Suivi et contrôle des opérations d'achats et d'investissements de la PME </a></li>
+									<li><a href="#grcf6">Activité 6 - Suivi comptable des opérations avec les clients et les fournisseurs de la PME</a></li>
+								</ul>
+				</details>
+			<p>
+		<h3><a href="2btsgpme">2e année</a></h3>
+				<ul>
+					<li><a href="risque">Gestion des risques</a></li>
+					<li><a href="https://tcous1.github.io/site-eleves/bts-gpme/stage2">Stage</a></li>
+				</ul>
+</nav>
 
+</header>
+
+<main>
 <hr>
 
-<h2>BTS GPME – Première année</h2>
+<h1 id="1btsgpme">BTS GPME – Première année</h1>
 
-<h3>GRCF – Gestion des relations avec les clients et les fournisseurs</h3>
+	<h2 id="grcf">GRCF – Gestion des relations avec les clients et les fournisseurs</h2>
 
-<hr>
-
-
-<!--Formation Excel-->
-<p>
-<a href="https://tcous1.github.io/site-eleves/bts-gpme/excel-debutant"> Parcours d'apprentissage Excel</a><br>
-<a href="https://tcous1.github.io/site-eleves/bts-gpme/pgi-odoo"> Parcours d'apprentissage à Odoo</a><br>
-<a href="https://tcous1.github.io/site-eleves/bts-gpme/stage1"> Stage de 1re année</a><br>
-<a href="https://tcous1.github.io/site-eleves/bts-gpme/passeport-pro">Passeport professionnel : compétences acquises TP et stage</a>
-</p>
 <hr>
 <!--Partie 1 GRCF-->
 
-<h4>Recherche de clientèle et contact (Activité 1.1)</h4>
+		<h3 id="grcf1">Activité 1 - Recherche de clientèle et contact</h3>
 
-<h5>Référentiel</h5>
+			<h4>Référentiel</h4>
 
 <em>Compétence : Rechercher des clients par prospection ou pour répondre à un appel d’offres</em>
 
@@ -154,14 +186,14 @@ pédagogiques à réaliser dans le cadre des enseignements.
 	</ul>
 </details>
 
-<h5>Limites des savoirs associés et synthèse</h5>
+			<h4>Limites des savoirs associés et synthèse</h4>
 
 		<ul>
 			<li><a href="https://nuage06.apps.education.fr/index.php/s/52SLrCeqNe9xx3P"> Limites des savoirs associés</a></li>
 			<li><a href="https://nuage06.apps.education.fr/index.php/s/MxaBRg5ZM2m9gEg"> GRCF Activité 1 - Synthèse</a></li>
 		</ul>
 	
-<h5>Travaux pratiques</h5>
+			<h4>Travaux pratiques</h4>
 	<ul>
 		<li><a href="https://tcous1.github.io/site-eleves/bts-gpme/tp-papeterie-services"> TP Papéterie Services</a></li>
 		<li><a href="https://tcous1.github.io/site-eleves/bts-gpme/tp-hexa"> TP HEXA - Le matériel</a></li>
@@ -173,8 +205,8 @@ pédagogiques à réaliser dans le cadre des enseignements.
 
 <!--Partie 2 GRCF-->
 
-<h4>Administration des ventes de la PME (Activité 1.2)</h4>
-<h5>Référentiel</h5>
+		<h3 id="grcf2">Activité 2 - Administration des ventes de la PME</h4>
+			<h4>Référentiel</h4>
 
 <em>Compétences : Traiter la demande du client (de la demande de devis jusqu’à la relance des éventuels impayés)</em>
 
@@ -279,14 +311,14 @@ pédagogiques à réaliser dans le cadre des enseignements.
 	</ul>
 </details>
 
-<h5>Limites des savoirs associés et synthèse</h5>
+			<h4>Limites des savoirs associés et synthèse</h4>
 
 		<ul>
 			<li><a href="https://nuage06.apps.education.fr/index.php/s/xqxD6ynJGCaW4Lw"> Limites des savoirs associés</a></li>
 			<li><a href="https://nuage06.apps.education.fr/index.php/s/RgGxxLDLfLymPxy"> GRCF Activité 2 - Synthèse</a></li>
 		</ul>
 	
-<h5>Travaux pratiques</h5>
+			<h4>Travaux pratiques</h4>
 	<p>
 	<a href="https://tcous1.github.io/site-eleves/bts-gpme/tp-pepinieres-sirot"> TP Pépinières SIROT</a>
 	</p>
@@ -294,8 +326,8 @@ pédagogiques à réaliser dans le cadre des enseignements.
 
 <!--Partie 3 GRCF-->
 
-<h4>Maintien et développement de la relation avec les clients de la PME (Activité 1.3)</h4>
-<h5>Référentiel</h5>
+		<h3 id="grcf3">Activité 3 - Maintien et développement de la relation avec les clients de la PME</h3>
+			<h4>Référentiel</h4>
 
 <em>Compétence : Informer, conseiller, orienter et traiter les réclamations</em>
 
@@ -304,7 +336,7 @@ pédagogiques à réaliser dans le cadre des enseignements.
 	<ul>
 		<li>T.1.3.1. Accueil, information et conseils</li>
 		<li>T.1.3.2. Traitement et suivi des réclamations</li>
-		<li>T.1.3.3. Communication pour développer la relation client<li>
+		<li>T.1.3.3. Communication pour développer la relation client</li>
 	</ul>
 </details>
 
@@ -390,14 +422,14 @@ pédagogiques à réaliser dans le cadre des enseignements.
 	</ul>
 </details>
 
-<h5>Limites des savoirs associés et synthèse</h5>
+			<h4>Limites des savoirs associés et synthèse</h4>
 
 		<ul>
 			<li><a href="https://nuage06.apps.education.fr/index.php/s/eAjtWfdWewYqeNw"> Limites des savoirs associés</a></li>
 			<li><a href="https://nuage06.apps.education.fr/index.php/s/4Lfysm42K4qptWt"> GRCF Activité 3 - Synthèse</a></li>
 		</ul>
 	
-<h5>Travaux pratiques</h5>
+			<h4>Travaux pratiques</h4>
 	<p>
 	<a href="https://tcous1.github.io/site-eleves/bts-gpme/tp-bainu-errandonea"> TP Bainu Errandonea</a>
 	</p>
@@ -405,8 +437,8 @@ pédagogiques à réaliser dans le cadre des enseignements.
 
 <!--Partie 4 GRCF-->
 
-<h4>Recherche et choix des fournisseurs de la PME (Activité 1.4)</h4>
-<h5>Référentiel</h5>
+		<h3 id="grcf4">Activité 4 - Recherche et choix des fournisseurs de la PME</h4>
+			<h4>Référentiel</h4>
 
 <em>Compétence : Rechercher et sélectionner les fournisseurs</em>
 
@@ -415,7 +447,7 @@ pédagogiques à réaliser dans le cadre des enseignements.
 	<ul>
 		<li>T.1.4.1. Étude des projets d’achat et d’investissements</li>
 		<li>T.1.4.2. Recherche des fournisseurs</li>
-		<li>T.1.4.3. Comparaison des offres, sélection et qualification des fournisseurs<li>
+		<li>T.1.4.3. Comparaison des offres, sélection et qualification des fournisseurs</li>
 		<li>T.1.4.4. Mise à jour du système d’information fournisseurs</li>
 		<li>T.1.4.5. Communication avec des acteurs internes et avec les fournisseurs</li>
 	</ul>
@@ -501,14 +533,14 @@ pédagogiques à réaliser dans le cadre des enseignements.
 	</ul>
 </details>
 
-<h5>Limites des savoirs associés et synthèse</h5>
+			<h4>Limites des savoirs associés et synthèse</h4>
 
 		<ul>
 			<li><a href="https://nuage06.apps.education.fr/index.php/s/sMnoX9HoKKLE4CJ"> Limites des savoirs associés</a></li>
 			<li><a href="https://nuage06.apps.education.fr/index.php/s/3m9Ti38MGBsG5TA"> GRCF Activité 4 - Synthèse</a></li>
 		</ul>
 	
-<h5>Travaux pratiques</h5>
+			<h4>Travaux pratiques</h4>
 	<p>
 	<a href="https://tcous1.github.io/site-eleves/bts-gpme/tp-lumipro"> TP LUMI'PRO SARL</a>
 	</p>
@@ -516,8 +548,8 @@ pédagogiques à réaliser dans le cadre des enseignements.
 
 <!--Partie 5 GRCF-->
 
-<h4>Suivi et contrôle des opérations d'achats et d'investissements de la PME (Activité 1.5)</h4>
-<h5>Référentiel</h5>
+		<h3 id="grcf5">Activité 5 - Suivi et contrôle des opérations d'achats et d'investissements de la PME</h4>
+			<h4>Référentiel</h4>
 
 <em>Compétence : Passer les commandes d’achat et d’immobilisation et les contrôler, valider le règlement, évaluer les fournisseurs.</em>
 
@@ -619,14 +651,14 @@ pédagogiques à réaliser dans le cadre des enseignements.
 	</ul>
 </details>
 
-<h5>Limites des savoirs associés et synthèse</h5>
+			<h4>Limites des savoirs associés et synthèse</h4>
 
 		<ul>
 			<li><a href="https://nuage06.apps.education.fr/index.php/s/3zE8xXJMZcm6mzc"> Limites des savoirs associés</a></li>
 			<li><a href="https://nuage06.apps.education.fr/index.php/s/a3z3n2ijoTWnS7W"> GRCF Activité 5 - Synthèse</a></li>
 		</ul>
 	
-<h5>Travaux pratiques</h5>
+			<h4>Travaux pratiques</h4>
 	<p>
 	<a href="https://tcous1.github.io/site-eleves/bts-gpme/tp-technord-services"> TP Technord Services</a>
 	</p>
@@ -634,8 +666,8 @@ pédagogiques à réaliser dans le cadre des enseignements.
 
 <!--Partie 6 GRCF-->
 
-<h4>Suivi comptable des opérations avec les clients et les fournisseurs de la PME (Activité 1.6)</h4>
-<h5>Référentiel</h5>
+		<h3 id="grcf6">Activité 6 - Suivi comptable des opérations avec les clients et les fournisseurs de la PME</h4>
+			<h4>Référentiel</h4>
 
 <em>Compétence : Assurer le suivi comptable des opérations commerciales.</em>
 
@@ -733,14 +765,14 @@ pédagogiques à réaliser dans le cadre des enseignements.
 	</ul>
 </details>
 
-<h5>Limites des savoirs associés et synthèse</h5>
+			<h4>Limites des savoirs associés et synthèse</h4>
 
 		<ul>
 			<li><a href="https://nuage06.apps.education.fr/index.php/s/bb6SGZ5M2rA7dZR"> Limites des savoirs associés</a></li>
 			<li><a href="https://nuage06.apps.education.fr/index.php/s/W5fT7W6WLC7qLWf"> GRCF Activité 6 - Synthèse</a></li>
 		</ul>
 	
-<h5>Travaux pratiques</h5>
+			<h4>Travaux pratiques</h4>
 	<p>
 	<a href="https://nuage06.apps.education.fr/index.php/s/mc7pj9XSYbZ2FPN"> TP Aventure Entrepreneur</a>
 	</p>
@@ -761,6 +793,7 @@ pédagogiques à réaliser dans le cadre des enseignements.
 Ces ressources sont mises à disposition conformément aux consignes données en classe.
 Aucune réponse corrigée n’est fournie sur cet espace.
 </em></p>
+</main>
 
 <nav><a href='../index.html'>Accueil</a> | <a href='../index.html'>Retour</a></nav>
 

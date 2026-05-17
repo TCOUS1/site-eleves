@@ -289,10 +289,21 @@ hr {
 /* ==========================================
    TABLEAUX
 ========================================== */
-table {
-  width: 100%;
+table { 
+  width: auto;           /* ✅ au lieu de 100% */
   border-collapse: collapse;
+  table-layout: auto;
 }
+
+
+col.col-min {
+  width: 1%;
+}
+
+td:first-child {
+  white-space: nowrap;
+}
+
 
 table th,
 table td {
