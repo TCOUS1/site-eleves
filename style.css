@@ -79,6 +79,36 @@ body.light .top-nav a {
   color: #0056b3;
 }
 
+/* Menu hyperlien*/
+.menu-programme {
+  background: #2a3038;
+  padding: 15px;
+  border-radius: 6px;
+  margin: 20px 0;
+}
+
+.menu-programme h2 {
+  margin-top: 0;
+}
+
+.menu-programme ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.menu-programme li {
+  margin: 5px 0;
+}
+
+.menu-programme ul ul {
+  margin-left: 15px;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+
 /* ==========================================
    BANDEAU
 ========================================== */
