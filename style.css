@@ -87,6 +87,23 @@ body.light .top-nav a {
   margin: 20px 0;
 }
 
+/* Mode clair : menu accès rapide */
+
+body.light .menu-programme {
+  background: #ffffff;
+  border: 1px solid #d0d7de;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+}
+
+
+body.light .menu-programme a {
+  color: #0056b3;        /* bleu lisible */
+}
+
+body.light .menu-programme a:hover {
+  color: #003366;
+}
+
 .menu-programme h2 {
   margin-top: 0;
 }
