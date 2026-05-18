@@ -92,6 +92,13 @@ main {
   cursor: pointer;
 }
 
+
+#accessibility-menu button.active {
+  background: #ff9800;
+  color: #000;
+}
+
+
 #accessibility-menu button:hover {
   background: var(--primary-hover);
 }
@@ -306,6 +313,16 @@ table td {
     font-size: 1rem;
   }
 }
+
+
+/* MODE DYS PRIORITAIRE */
+body.dys {
+  font-family: "OpenDyslexic", Arial, sans-serif !important;
+  letter-spacing: 0.05em;
+  word-spacing: 0.1em;
+  line-height: 1.9;
+}
+
 
 /* ==========================================
    IMPRESSION
