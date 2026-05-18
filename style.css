@@ -22,6 +22,7 @@
   --title-h2: #b8d7ff;
   --title-h3: #9ecb8f;
   --title-h4: #d0b080;
+  --title-h5:#b8d7ff;
 }
 
 /* Mode clair */
@@ -46,6 +47,7 @@ body.light {
   --title-h2: #003366;
   --title-h3: #1f7a1f;
   --title-h4: #7a4a00;
+  --title-h5: #1a1a1a;
 }
 
 /* ==========================================
@@ -181,6 +183,13 @@ h3 {
 h4 {
   color: var(--title-h4);
   font-size: 1.05em;
+  margin-top: 20px;
+  margin-bottom: 12px;
+}
+
+h5 {
+  color: var(--title-h5);
+  font-size: 1em;
   margin-top: 20px;
   margin-bottom: 12px;
 }
