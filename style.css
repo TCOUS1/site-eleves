@@ -291,19 +291,33 @@ hr {
    TABLEAUX
 ========================================== */
 table {
-  width: auto;
+  width: 100%;              /* ✅ prend toute la largeur */
   border-collapse: collapse;
+  table-layout: fixed;      /* ✅ clé du fix */
 }
 
-td:first-child {
-  white-space: nowrap;
-}
-
+/* bordures + padding */
 table th,
 table td {
   border: 1px solid var(--border);
-  padding: 8px;
+  padding: 10px;
+  text-align: left;
 }
+
+/* colonne gauche (libellés) */
+.col-min {
+  width: 250px;
+  white-space: nowrap;
+  font-weight: 600;
+}
+
+/* colonne droite */
+td:last-child,
+th:last-child {
+  width: auto;
+}
+``
+
 
 /* ==========================================
    RESPONSIVE
