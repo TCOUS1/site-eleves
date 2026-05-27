@@ -1,4 +1,4 @@
-{"R":"co/merca2_23.html","T":"co/merca2_26.html","M":"co/merca2_20.html","b":"co/01-Merca-evolution.html","t":"co/04_1-Merca-4P.html","J":"co/merca2_18.html","P":"co/07_merca-distrib-digitalisation.html","e":"co/02-Merca-Marche_Velo.html","z":"co/merca2_12.html","N":"co/08_MERCA_CHOIX_DISTRIB.html","k":"co/merca2_7.html","G":"co/merca2_15.html","w":"co/05_1_merca-experience_1.html","o":"co/03_1_Merca-segmentation.html","L":"co/07-merca-distrib.html","p":"co/03_2-merca-ciblage.html","O":"co/merca2_21.html","m":"co/merca2_9.html","U":"co/merca2_27.html","S":"co/merca2_24.html","q":"co/03_3_Merca-Positionnement.html","g":"co/merca2_3.html","v":"co/05_1_Merca-experience.html","H":"co/merca2_16.html","j":"co/merca2_6.html","E":"co/6_2_Merca-fixation_prix.html","K":"co/merca2_19.html","i":"co/merca2_5.html","l":"co/merca2_8.html","A":"co/merca2_13.html","F":"co/6_2_merca.html","C":"co/6_1_merca-prix.html","B":"co/06_1_Merca-Prix.html","u":"co/merca2_10.html","d":"co/02-Merca-Analyse_Marche.html","f":"co/merca2_2.html","x":"co/05-2_merca-luz.html","n":"co/03_1-Merca-segmentation.html","r":"co/03_3-Merca-TP.html","D":"co/merca2_14.html","c":"co/01-merca.html","h":"co/merca2_4.html","I":"co/merca2_17.html","s":"co/04_1_Merca-Produit.html","a":"co/merca2_1.html","Q":"co/merca2_22.html","y":"co/merca2_11.html"}
+{"R":"co/merca2_23.html","t":"co/04_1-Merca-4P.html","P":"co/07_merca-distrib-digitalisation.html","N":"co/08_MERCA_CHOIX_DISTRIB.html","G":"co/merca2_15.html","T":"co/09-merca-com3_1.html","o":"co/03_1_Merca-segmentation.html","p":"co/03_2-merca-ciblage.html","m":"co/merca2_9.html","S":"co/merca2_24.html","g":"co/merca2_3.html","v":"co/05_1_Merca-experience.html","H":"co/merca2_16.html","A":"co/merca2_13.html","F":"co/6_2_merca.html","C":"co/6_1_merca-prix.html","B":"co/06_1_Merca-Prix.html","u":"co/merca2_10.html","r":"co/03_3-Merca-TP.html","c":"co/01-merca.html","h":"co/merca2_4.html","s":"co/04_1_Merca-Produit.html","a":"co/merca2_1.html","V":"co/merca2_26.html","M":"co/merca2_20.html","b":"co/01-Merca-evolution.html","J":"co/merca2_18.html","e":"co/02-Merca-Marche_Velo.html","z":"co/merca2_12.html","k":"co/merca2_7.html","w":"co/05_1_merca-experience_1.html","L":"co/07-merca-distrib.html","O":"co/merca2_21.html","q":"co/03_3_Merca-Positionnement.html","j":"co/merca2_6.html","E":"co/6_2_Merca-fixation_prix.html","K":"co/merca2_19.html","i":"co/merca2_5.html","l":"co/merca2_8.html","d":"co/02-Merca-Analyse_Marche.html","f":"co/merca2_2.html","x":"co/05-2_merca-luz.html","n":"co/03_1-Merca-segmentation.html","W":"co/10-merca-com3_2.html","D":"co/merca2_14.html","U":"co/merca2_25.html","I":"co/merca2_17.html","Q":"co/merca2_22.html","y":"co/merca2_11.html"}
 ["2","1"]
 {"wordPattern":"\\d+(?:[,.]\\d+)?|[^\\u0000-/:-@\\[-`{-\\u00A0]+(?:[-][^\\u0000-/:-@\\[-`{-\\u00A0]+)?","filters":[{"type":"excludeShortWords","forWords":"\\d+","min":1},{"type":"excludeShortWords","forWords":"\\D+","min":3},{"type":"cutLongWords","max":20},{"type":"lowerCase"},{"type":"ignoreWords","words":{"fois":1,"notre":1,"est":1,"vont":1,"fait":1,"avoir":1,"mais":1,"mon":1,"ici":1,"tels":1,"être":1,"des":1,"maintenant":1,"son":1,"sont":1,"depuis":1,"soyez":1,"les":1,"parce":1,"avant":1,"été":1,"par":1,"vous":1,"peu":1,"seulement":1,"pas":1,"pourquoi":1,"tes":1,"sans":1,"ceux":1,"dans":1,"nous":1,"donc":1,"ils":1,"tandis":1,"voient":1,"tellement":1,"hors":1,"étions":1,"avec":1,"très":1,"bon":1,"même":1,"que":1,"faites":1,"qui":1,"plupart":1,"sien":1,"aucuns":1,"elle":1,"sous":1,"ces":1,"sur":1,"ton":1,"devrait":1,"car":1,"aussi":1,"doit":1,"mes":1,"quand":1,"encore":1,"peut":1,"ses":1,"leur":1,"quelles":1,"quels":1,"pour":1,"trop":1,"alors":1,"tout":1,"tous":1,"chaque":1,"quelle":1,"cela":1,"comment":1,"votre":1,"autre":1,"comme":1,"quel":1,"étaient":1,"font":1}},{"type":"filterAccentedLatinLetters"}]}
 trois	c.01	E.01	F.02	P.01
@@ -24,9 +24,10 @@ pics	P.01
 sert	o.01	F.01	P.02
 emotionnelle	t.01
 audience	P.01
+lacheter	W.01
 acceptabilite	E.05
-produit	d.01	e.04	i.01	j.01	o.01	p.01	q.39	r.02	s.06	t.29	u.01	v.01	w.01	y.01	B.03	C.03	D.01	E.09	F.09	L.02	N.04	P.04
-cout	q.01	E.39	F.01
+produit	d.01	e.04	i.01	j.01	o.01	p.01	q.39	r.02	s.06	t.29	u.01	v.01	w.01	y.01	B.03	C.03	D.01	E.09	F.09	L.02	N.04	P.04	T.01	W.01
+cout	q.01	E.39	F.01	T.01
 vitrines	x.03
 harmonisee	P.01
 ferrari	q.01
@@ -36,8 +37,8 @@ innovations	d.01
 1	e.02	f.10	j.01	n.10	v.01	w.01	E.08	F.01
 inciter	p.01	v.01
 2	e.13	g.10	j.01	p.20	v.01	x.01	E.09	F.01
-avis	P.01
-3	e.04	h.10	j.01	q.10	v.01	E.06	F.02
+avis	P.01	T.01	W.01
+3	e.04	h.10	j.01	q.10	v.01	E.06	F.02	T.10
 pouvoir	q.01	P.01
 4	d.01	e.01	B.01	C.02	E.04	K.01	S.01
 sera	e.02	E.03	F.01
@@ -62,19 +63,20 @@ valeurs	t.01	v.01
 commission	P.01
 seul	q.02	L.01	P.01
 differents	e.10	p.01	q.02	t.02	v.01	E.25	F.01	P.01
-resume	p.01	B.01	E.01
-loffre	c.02	d.01	f.11	g.11	h.11	j.10	m.02	q.03	t.12	u.01	x.02	G.01	H.11	L.11	P.17	Q.01	R.10
-objectifs	e.01	p.01	x.01	E.02	N.01
+resume	p.01	B.01	E.01	W.01
+loffre	c.02	d.01	f.11	g.11	h.11	j.10	m.02	q.03	t.12	u.01	x.02	G.01	H.11	L.11	P.17	Q.01	R.11	T.10
+objectifs	e.01	p.01	x.01	E.02	N.01	T.01	W.10
 adoptee	t.01
 fournies	F.01
 tripartite	E.04	F.02
 specifiquement	p.01	q.01
 adopter	e.01	q.01
 prestation	t.01	E.04	F.01
-combiner	B.01
+combiner	B.01	T.01
 the	v.01	w.11
 boisson	q.01
 evaluez	e.01
+achete	W.01
 information	E.01	F.01
 fonctionnalites	t.01	E.02	F.01
 evaluer	d.01	q.01
@@ -108,7 +110,7 @@ representent-elles	x.01
 informative	p.01
 familles	q.01
 folle	w.02
-analyser	d.01	x.01
+analyser	d.01	x.01	W.01
 concretise	d.01
 reduits	q.02
 mesuree	t.01
@@ -116,6 +118,7 @@ veillez	s.01
 lenvironnement	x.01
 publicitaires	q.02	E.02	F.05
 couteux	E.01
+ropo	W.01
 proactive	e.01
 distributeurs	L.01
 indispensable	c.01	E.01
@@ -132,8 +135,9 @@ devenu	c.02
 peau	q.01
 sociale	w.01
 uniforme	c.01
+homogene	W.01
 fluidite	N.10
-mobile	w.01	N.01	P.01
+mobile	w.01	N.01	P.01	T.01	W.01
 payantes	E.01
 activites	e.01	p.01	E.04
 evolution	d.01	e.03	x.02
@@ -142,12 +146,12 @@ societe	E.01	F.01
 requierent	E.01
 pdg	F.01
 forfait	E.01
-service	e.02	p.01	q.03	t.07	E.09	F.09	L.02	P.01
+service	e.02	p.01	q.03	t.07	E.09	F.09	L.02	P.01	W.01
 personnelle	N.01
 permis	v.01
 deploye	C.01
 personnes	e.01	o.01	v.02	E.01	F.02
-communiquer	h.01	q.01	R.10
+communiquer	h.01	q.01	R.11	T.10
 sur-mesure	q.01
 payants	E.01	F.01
 my-business	E.02
@@ -159,7 +163,8 @@ desir	o.01
 renforcent-ils	x.01
 valide	E.01	F.01
 emprunte	L.01
-automatise	N.01
+automatise	N.01	W.01
+payante	T.01
 locaux	E.01
 dabord	e.01	v.01
 implication	N.01
@@ -183,17 +188,18 @@ spots	F.01
 2,3	w.01
 cnfpt	E.10
 surtout	E.01
-convertir	e.01
+convertir	e.01	W.01
 lestimation	y.01
 fondee	P.01
 circuit	e.03	K.03	L.71
 indiquant	v.01	F.01
 dapple	t.01
 locomotion	e.02
-visibilite	h.01	L.01	P.03	R.10	S.01
+visibilite	h.01	L.01	P.03	R.11	S.01	T.24
 choisi	i.01	u.01	K.01
-protection	t.01
+protection	t.01	W.01
 entrer	P.01
+conserver	W.01
 immaterielle	t.01
 immediatement	N.01	P.01
 conduit	d.01	E.01	P.01
@@ -219,7 +225,7 @@ premier	v.01
 competitions	E.01
 reclaim	w.11
 352,30	e.01
-convaincre	N.01
+convaincre	N.01	T.02
 fluctuant	E.01
 php	x.09
 proposant	p.01	q.01
@@ -238,6 +244,7 @@ voit	w.01
 burger	w.15
 varient	E.01
 referentiel	D.01
+voir	W.01
 macbook	t.01
 derriere	e.01	x.01
 pliant	e.01
@@ -249,14 +256,14 @@ lay	F.02
 represente	e.01	C.01	F.01
 bouscule	w.01
 lest	E.01
-objet	t.01	E.02	F.02
+objet	t.01	E.02	F.02	T.01
 meilleures	e.01
 touristique	F.01
-suivi	e.01	q.01	P.02
-cartes	e.01
+suivi	e.01	q.01	P.02	W.01
+cartes	e.01	W.01
 contribuent-ils	x.01
 gout	v.02
-sociaux	e.01	F.02	P.01	U.01
+sociaux	e.01	F.02	P.01	T.01	V.01	W.02
 gouv	E.01
 theorie	v.01
 comportementaux	o.01
@@ -276,11 +283,12 @@ design	t.06	E.01
 cadre	e.02
 devant	s.01
 flux	P.02
-masse	c.01	p.01	q.25	r.01	s.01
+masse	c.01	p.01	q.25	r.01	s.01	T.01
 lautre	P.02
-crm	U.01
+crm	V.01	W.20
 fiabilite	t.01
 20000	E.03
+totale	W.01
 marcheage	d.01	E.01
 inconscient	v.01
 selfies	w.01
@@ -288,6 +296,7 @@ imposees	P.01
 possibilite	N.01
 reservations	E.01
 distributeur	N.10
+changement	W.10
 demographiques	o.01	p.01
 parle-t	F.01	P.10
 freemium	E.04	F.02
@@ -301,7 +310,7 @@ determinant	E.01
 liberte	v.01
 nombreux	p.01	F.01
 pres	e.01
-attire	t.01
+attire	t.01	T.01
 daccessoires	e.01
 concert	E.11	F.01
 led	w.01
@@ -337,6 +346,7 @@ difference	E.01
 directs	e.01	E.01
 demonstration	N.01
 prets	E.01
+actions	T.01	W.01
 fonctionnel	t.03
 permanente	P.02
 droite	e.01
@@ -357,37 +367,41 @@ generer	F.02
 imaginaire	e.01
 creneau	p.01
 realite	q.01	F.01
-e-commerce	O.01
+e-commerce	O.01	W.01
 presenterez	s.01
-canal	K.01	N.01	P.06
+canal	K.01	N.01	P.06	T.01
 publique	E.01	F.04
 situation	e.01	o.01	N.04
 accompagnement	L.01
+creation	W.01
 dhabitation	e.01
 offerte	E.01
 detendre	o.01
-personnalise	q.02	N.01
+personnalise	q.02	N.01	T.01
 generee	s.01
 lhotellerie	E.01	F.01
 peut-etre	e.01
 selectionner	p.02
-mesure	E.02	F.01
+mesure	E.02	F.01	W.01
 psychologiques	e.01	E.01	F.01
 simplification	q.01
 services	e.03	l.01	o.01	p.03	t.25	A.10	B.02	E.19	F.04	P.02
 demandes	x.01
-marketing	b.01	c.01	e.12	k.01	l.01	n.02	p.19	q.99	r.04	s.04	t.02	v.16	w.13	z.11	B.14	C.03	E.02	F.02
+marketing	b.01	c.01	e.12	k.01	l.01	n.02	p.19	q.99	r.04	s.04	t.02	v.16	w.13	z.11	B.14	C.03	E.02	F.02	T.33	W.12
 accessibilite	P.02
+naturellement	T.01
 clientele	c.01	e.02	p.01	q.01	t.01	E.02	F.05	P.04
 quil	e.01	t.01	F.01
-gratuitement	F.01
+gratuitement	F.01	T.01
+cabines	W.01
 realise	e.05	s.01
 cheveux	t.01
-attirer	t.01	v.02	x.02	B.01	F.01
+attirer	t.01	v.02	x.02	B.01	F.01	T.02	W.01
 consistant	p.01
 1929	c.01
-offrir	P.01
+offrir	P.01	W.01
 demandee	F.01
+e-mailing	T.01
 definir	a.10	e.01	p.01	q.01	t.11	E.04	F.01
 decole	w.02
 attend	N.02
@@ -407,8 +421,9 @@ definie	E.01
 continue	e.01	v.01	P.03
 pris	e.01
 things	w.10
+evenementiel	T.01
 auxquelles	N.01
-visant	d.01
+visant	d.01	T.01	W.02
 dappui	e.01
 proximite	L.01	N.02	P.01
 aujourd	w.01
@@ -418,16 +433,17 @@ preserver	E.01
 besoins	c.02	d.01	e.03	o.01	p.02	q.09	B.03	C.02	P.01
 technologies	g.01	J.11	P.20
 souvent	p.03	q.04	t.02	N.01	P.02
-medias	h.01	R.10	S.01
+medias	h.01	R.11	S.01	T.22
 developpement	e.05	p.01	E.01
 tarifaires	y.01	A.01	D.01	E.10
 quatre	B.01	E.02
 utilisent	E.01	F.02
 veblen	E.11	F.02
+interactives	W.01
 retenir	c.01
 initiaux	P.01
 aleas	E.01
-physique	t.01	P.02
+physique	t.01	P.02	W.01
 concept	b.01	q.01	E.01
 partout	N.01	P.02
 aspects	E.01
@@ -444,11 +460,14 @@ gerer	q.01	t.01
 evolutions	d.01	e.02	q.01
 individus	v.02	F.01
 attendu	N.01
-precis	e.01
+rgpd	W.01
+precis	e.01	T.01
 trottinettes	e.01
 regroupe	L.01
 pain	v.01
+mecenat	T.01
 resultats	d.01	e.01	v.01
+purchase	W.01
 observees	x.01
 premiere	E.01	F.01
 niveau	E.01	N.02
@@ -458,17 +477,19 @@ reseau	e.02	F.01	L.01	N.02	P.01
 chacun	e.01	p.01	v.01
 anglais	E.01
 evenements	E.01	F.01
-cles	F.01
-pub	w.01
+paid	T.12
+cles	F.01	T.10
+time	W.11
+pub	w.01	T.01
 marchand	P.01
-buzz	w.01
+buzz	w.01	T.01	W.01
 pricing	E.02
 finance	E.01
 cross-canal	P.11
 centrees	C.01
-applications	N.01
-phygital	O.01
-interactive	w.01	P.01
+applications	N.01	W.01
+phygital	O.01	W.03
+interactive	w.01	P.01	W.01
 compris	e.02
 demande	c.01	q.01	v.01	E.04	F.03	P.02
 homogenes	o.01	p.01
@@ -501,7 +522,7 @@ mettent	P.01
 lessor	e.01
 facon	v.01	E.01
 lespace	x.02
-marque	q.01	t.39	v.01	w.01	x.02	L.01	N.01
+marque	q.01	t.39	v.01	w.01	x.02	L.01	N.01	T.01
 necessitant	p.01
 chris	E.02
 light	w.02
@@ -521,7 +542,7 @@ lon	e.03	E.04	F.01
 lobjectif	q.01	E.01	F.01
 cosmetiques	q.01
 obtenu	E.01	F.01
-methode	d.01	j.04	m.01	n.10	p.20	q.20	r.10	t.10	E.99	F.01
+methode	d.01	j.04	m.01	n.10	p.20	q.20	r.10	t.10	E.99	F.01	T.20	W.10
 facilite	t.02	P.03
 dicte-t	g.01	I.11	N.10
 premium	E.04	F.02	N.01
@@ -542,7 +563,7 @@ expliquant	e.01
 danalyser	d.01
 centre	c.01	B.01
 technologique	P.01
-clic	N.01
+clic	N.01	T.01
 levenement	x.02
 indicateur	E.02	F.02
 promotions	q.02
@@ -557,7 +578,7 @@ secondaire	E.01
 quun	E.01
 marketplaces	L.01	N.01	P.02
 nouveaux	P.01
-experience	t.02	u.03	v.26	w.04	N.01	P.06
+experience	t.02	u.03	v.26	w.04	N.01	P.06	W.14
 airbnb	P.01
 commander	w.01
 ajoutee	t.01
@@ -592,26 +613,29 @@ simplifient	P.01
 point	d.10	o.01	P.02
 debut	a.01	b.10	c.02
 principal	e.02	t.02
-lattention	t.02	v.01
+lattention	t.02	v.01	T.01
 general	E.01	F.01
 relies	P.01
 obeit	v.01	D.01
-introduction	f.01	g.01	h.01	j.01	k.01	l.01	A.01	H.01	I.01	J.01	R.01	T.01
+duree	W.01
+introduction	f.01	g.01	h.01	j.01	k.01	l.01	A.01	H.01	I.01	J.01	R.01	U.01
 economiques	E.01
-ligne	t.02	P.01
+ad-blockers	W.01
+ligne	t.02	P.01	W.04
 artisan	L.01	P.01
 correspondance	q.01	K.01	S.01
-offres	p.01	q.03	P.01
+offres	p.01	q.03	P.01	W.02
 marchandes	P.01
 associent	t.01
 souhaitez	r.01
 payent	E.01	F.01
 fournissant	F.01
+ltv	W.01
 processus	d.01	p.01	q.01	E.01
-chez	e.01	w.01	x.01
+chez	e.01	w.01	x.01	W.01
 produite	E.05
 opportuniste	N.11
-numeriques	d.01	g.01	J.11	L.01	P.22
+numeriques	d.01	g.01	J.11	L.01	P.22	W.30
 interaction	q.01	w.01
 electriques	e.01	v.01
 agroalimentaire	L.01
@@ -620,11 +644,11 @@ dentifrice	N.01
 lui	v.01	w.01
 crise	c.01	e.11
 sociales	e.01	P.01
-coherence	e.01	P.01
-reductions	E.01
+coherence	e.01	P.01	T.10
+reductions	E.01	T.01
 approfondie	e.01
 architectes	v.01
-videos	v.02
+videos	v.02	T.01
 distinctes	t.01
 tarifaire	E.01
 luz	k.01	x.92
@@ -632,6 +656,7 @@ chaussure	w.01
 hommes	o.01	q.01
 dote	e.01
 des	w.01
+coupons	T.01
 executees	E.06	F.02
 cdiscount	P.01
 competitif	q.01
@@ -640,7 +665,7 @@ positionner	B.01	C.01
 you	q.01
 rencontrer	D.01
 observe-t	x.01
-afin	e.02	p.02	v.01	E.01	P.01
+afin	e.02	p.02	v.01	E.01	P.01	T.01
 impact	x.02
 active	w.01
 est-il	x.01
@@ -655,25 +680,30 @@ oceans	t.01
 lorsque	v.01	E.03	F.02	L.01	N.30
 millions	E.01	F.01
 assignee	x.01
+bannieres	T.01
+bornes	W.01
 acteurs	e.02	L.01	P.11
 relevez	o.01
 geographiques	o.01
 chacune	q.01
 acceder	E.01	F.01
+passif	T.10
 lergonomie	t.01
 susceptibles	p.01
 secable	E.01
 composition	t.01
 elle-meme	t.01
+acquisition	T.01
 femmes	o.02	q.01
 business	p.03	E.14	F.02
-logiques	D.01	E.31
+logiques	D.01	E.31	W.10
+investissement	T.01
 complices	v.02
 apres-vente	t.01
 possible	q.01	E.02	F.01
 dinvestissement	P.01
 couts	e.01	q.05	B.01	E.79	L.02	N.01	P.03
-gestion	q.01	E.01	P.02
+gestion	q.01	E.01	P.02	W.01
 lobjet	v.01
 toucher	q.03	v.02	P.01
 atteindre	p.02	B.01	C.01	E.01	F.02
@@ -686,15 +716,16 @@ questions	e.01	v.02	F.01
 engageante	q.01
 paye	E.03	F.02
 rapidite	N.02
+indicateurs	T.10
 agreable	v.01
 interconnectes	P.01
 marge	E.29	L.02
 acceleration	P.01
 demballages	t.10
-enjeu	i.01	u.01	G.01	P.20	Q.01
+enjeu	i.01	u.01	G.01	P.20	Q.01	W.11
 affaires	E.02
 cerveau	F.02
-exemples	t.20	v.01	E.01	F.01	L.20	N.03	P.01
+exemples	t.20	v.01	E.01	F.01	L.20	N.03	P.01	T.02	W.11
 fallait	w.01
 coupe	r.01	s.01	t.01
 lunite	E.03	F.01
@@ -709,14 +740,14 @@ simplement	v.02	w.01	P.01
 transforment	w.02	P.02
 scenaristes	v.01
 2000	E.02
-creer	e.01	o.01	u.01	v.01	w.02	P.01
+creer	e.01	o.01	u.01	v.01	w.02	P.01	W.01
 succes	C.01
 manque	P.01
 unicanal	P.11
 soit	E.02	F.02
 serieusement	e.01
 soin	o.01	t.01
-fideliser	t.01	P.01
+fideliser	t.01	P.01	T.01	W.02
 immediate	N.02	P.03
 symbolique	x.03
 offreurs	P.01
@@ -735,7 +766,7 @@ consommables	E.01	F.01
 decouvre	P.01
 toutes	q.01	E.01
 omnipresente	E.01
-multiplie	N.01
+multiplie	N.01	T.01
 telecommunications	t.01
 lui-meme	P.01
 quillustrent	v.01
@@ -745,10 +776,12 @@ passes	q.01
 passer	g.01	H.11	L.10	P.01
 equilibre	v.01
 tarification	E.01	F.02
+obtenue	T.01
 prenom	e.01
 mise	q.01	v.01	x.04	E.01	L.01	P.02
 just	t.01
-acteur	v.01	P.01
+acteur	v.01	P.01	W.01
+affiche	T.01
 one-to	q.11
 partie	E.01	L.01	P.01
 requiert	p.01
@@ -758,7 +791,8 @@ requiert	p.01
 est-ce	l.01	A.10
 2020	e.05	x.10
 grand	q.01	E.01
-une	a.10	c.04	e.37	g.01	i.01	o.01	p.07	q.09	s.01	t.09	u.02	v.09	w.05	x.05	B.02	E.09	F.08	J.11	L.02	N.19	P.79
+une	a.10	c.04	e.37	g.01	i.01	o.01	p.07	q.09	s.01	t.09	u.02	v.09	w.05	x.05	B.02	E.09	F.08	J.11	L.02	N.19	P.79	T.12	W.12
+ressenti	W.01
 tangible	t.01
 velos	e.19
 home	w.01
@@ -767,10 +801,13 @@ home	w.01
 2017	x.10
 2016	e.04	x.10
 2015	x.10
+sephora	W.01
+owned	T.12
 partir	c.02	o.01	r.01	t.01	v.01	F.01
 fournis	e.01
 concerne	t.01	E.03	F.01
 hui	w.01
+articles	T.01
 fusionner	v.01
 reperes	E.01
 payez	F.01
@@ -779,11 +816,12 @@ nouveau	e.03
 lentretien	t.01
 marquante	w.01
 payer	E.03	F.03
+tracking	W.01
 approches	p.01	q.01
 socio-demographiques	o.01
 navigation	q.01	F.01
 sons	v.01
-contenus	e.01
+contenus	e.01	W.02
 diversifier	t.01
 2025	w.01
 diffusees	q.01	F.01
@@ -792,7 +830,7 @@ diversifies	t.01
 action	t.01
 stadium	w.10
 rebelle	v.01
-lentreprise	c.01	m.01	q.04	t.03	C.01	E.01	F.01	L.01	N.06	P.19
+lentreprise	c.01	m.01	q.04	t.03	C.01	E.01	F.01	L.01	N.06	P.19	T.03	W.02
 espace	F.01	P.01
 recommandee	E.01
 boutique	w.01	L.01	P.02
@@ -801,10 +839,10 @@ limitant	v.01
 cartouches	E.03	F.01
 arbitre	N.01
 disparait	q.01
-acheter	t.01	E.01	F.01	N.01	P.01
+acheter	t.01	E.01	F.01	N.01	P.01	W.01
 appele	d.01	p.01	q.01
 messages	p.01	q.01	B.01	F.01
-travers	d.01	e.01	q.01	r.01	s.01	x.01	E.02	F.02
+travers	d.01	e.01	q.01	r.01	s.01	x.01	E.02	F.02	W.01
 privilegier	N.30
 facteur	B.01
 exploite	P.01
@@ -812,9 +850,9 @@ exploite	P.01
 statut	E.01	F.01
 prelevee	P.01
 peut-on	g.01	H.11	L.10
-diffusion	v.02	F.02	L.01
+diffusion	v.02	F.02	L.01	T.01
 don	E.01	F.01
-clients	o.01	p.03	q.01	v.03	B.05	C.04	E.04	F.04	P.04
+clients	o.01	p.03	q.01	v.03	B.05	C.04	E.04	F.04	P.04	T.03	W.02
 entreprises	c.02	e.04	p.01	q.02	C.01	E.01	F.02	P.11
 algorithmes	E.01
 induit	E.01	F.01
@@ -845,7 +883,7 @@ francais	E.01
 concernees	F.01
 mail	F.01
 conscience	v.01
-titre	x.02	R.01
+titre	x.02
 distincts	p.01	q.01	P.01
 opere	t.01
 plutot	w.01	E.02
@@ -856,6 +894,7 @@ individuellement	q.01
 completement	w.01
 saisons	x.03
 abkbgdqqk2bbjkp	x.01
+radio	T.01
 lessai	N.01
 regressent	e.03
 inclure	B.01
@@ -875,10 +914,12 @@ international	P.01
 intensive	N.03
 disponible	E.02	F.01	N.02
 combine	N.01
+progiciel	W.10
 utilisees	d.01	x.01	B.01	E.02
 dattente	v.11
 regardent	F.01
 ideal	q.01
+showrooming	W.01
 revenus	c.01	E.02	F.02
 ferme	L.01
 specialise	L.01	N.01
@@ -896,10 +937,10 @@ progresser	e.01
 larrivee	e.01
 dispose	P.01
 position	e.01	q.01
-present	N.01
+present	N.01	W.01
 orientee	c.01
-notoriete	P.01
-fidelite	w.01	P.01
+notoriete	P.01	T.01
+fidelite	w.01	P.01	W.01
 informations	d.02	n.01	q.03	t.01	v.07	w.04	E.04	F.01	P.01
 longueur	t.01
 obtient	F.02	P.01
@@ -915,17 +956,17 @@ segmenter	q.02
 loin	e.11	v.01
 justification	N.03
 met	o.01	P.01
-affichage	q.01
+affichage	q.01	T.01
 ville	e.01
 irrationnelles	D.01	E.11
 cest-a	E.01	F.02
 impulsion	N.01
 pampers	t.01
-taux	E.02
+taux	E.02	T.02
 fins	q.01
 celine	E.11
 segmentee	q.01
-comportement	d.01	v.05	E.01	F.01	N.12
+comportement	d.01	v.05	E.01	F.01	N.12	T.01	W.01
 mix-marketing	z.01	C.10
 chiffre	e.03	o.01	E.03	F.01	P.01
 secteur	e.02	E.01
@@ -933,8 +974,9 @@ co-branding	t.01
 gratuit	E.01	F.05
 paient	F.02
 adaptations	x.02
+online	W.01
 incroyable	w.03
-dun	d.01	e.04	o.01	q.01	t.02	E.07	F.06	P.05
+dun	d.01	e.04	o.01	q.01	t.02	E.07	F.06	P.05	W.01
 lanalyse	q.01	E.01	P.01
 rayon	t.02
 confort	N.01
@@ -945,7 +987,7 @@ depend	t.01	P.01
 choregraphes	v.01
 composantes	t.11
 actifs	q.01
-instagram	E.03	P.01
+instagram	E.03	P.01	T.02
 pourrait	e.01
 danger	q.01
 observee	c.01
@@ -965,7 +1007,7 @@ cherchant	c.01	q.01
 15	e.01	t.01	E.02
 fabrique	e.01
 basee	E.30
-moyens	e.04	C.01
+moyens	e.04	C.01	T.10
 19	e.01
 deliberement	p.01
 9990	E.01
@@ -985,12 +1027,12 @@ permeable	F.01
 identiques	E.01
 multisport	e.02
 association	q.01
-global	e.01	p.01	x.01
+global	e.01	p.01	x.01	W.01
 realisant	s.01
 texte	E.01
 detailles	o.01
 long	K.01	L.20
-omnicanalite	M.01
+omnicanalite	M.01	W.01
 ressources	p.01	q.01	E.05
 pieces	e.07
 bases	E.13
@@ -1000,9 +1042,10 @@ b2b	p.14
 voyages	t.01
 mis	c.02	x.01
 experientiel	k.01	v.11	w.11
-supports	x.01	B.01
+supports	x.01	B.01	T.11
 detaillants	e.02	L.01
 free	E.02	F.02
+relationship	W.10
 30	e.01	E.01
 mix	l.01	z.11	B.14	C.03
 concurrents	d.01	e.02	B.01
@@ -1011,7 +1054,7 @@ variables	E.19
 undifferentiated	q.10
 expression	E.01
 reaction	E.01	F.01
-strategies	c.01	e.01	p.01	q.01	B.01	N.10
+strategies	c.01	e.01	p.01	q.01	B.01	N.10	T.01	W.10
 magasins	N.01
 recommande	N.01
 forfaitaire	E.16	F.02
@@ -1042,21 +1085,21 @@ daction	q.01	v.01	C.01
 politique	t.32	E.14
 coordonnent	P.01
 reputation	t.03
-canaux	q.02	B.01	N.23	P.09
+canaux	q.02	B.01	N.23	P.09	W.01
 maximums	F.01
 experte	q.01
 coordination	P.01
 presentation	e.01	x.01	L.01
 distinguent	p.01
 50	e.01	E.01
-logique	x.01	N.01	P.01
+logique	x.01	N.01	P.01	T.02
 surprise	v.01
-outil	N.01	P.01
+outil	N.01	P.01	T.01
 diagnostiquer	e.01
 televisees	q.01
 ajuste	E.01
 etroite	q.01
-personnalisee	q.01	P.02
+personnalisee	q.01	P.02	W.02
 montants	E.01
 modification	P.01
 assurance	t.01	E.01	N.01
@@ -1066,15 +1109,16 @@ vivent	w.01
 taille	d.01	e.02	o.01
 adapte	m.01	q.01	E.01	F.01	N.11
 forces	e.01
-personnaliser	c.01	q.02	P.01
+controles	T.01
+personnaliser	c.01	q.02	P.01	W.01
 monde	q.01	v.12
 61	F.02
 grossistes	L.01
-internet	e.02	E.01	L.01	P.04
+internet	e.02	E.01	L.01	P.04	T.01
 manquants	E.01
 personnalises	N.01
 65	v.01
-numerique	L.01	P.08	R.01	T.10	U.01
+numerique	L.01	P.08	R.01	U.11	V.01	W.41
 comprenant	e.01
 transmettre	t.01
 specifiques	c.02	m.01	p.01	q.07	v.01	x.01	E.14	F.02	N.01
@@ -1086,11 +1130,14 @@ dencre	E.02	F.01
 stocks	P.02
 grands	e.01
 apple	t.12	N.01
+poem	T.20
 surfaces	e.04	N.01
 biens	o.01	B.01	E.01
-appli	w.05
+appli	w.05	T.02	W.02
 travaux	E.02
-definition	d.12	f.10	p.10	q.50	t.50	v.01	w.10	E.51	L.60	P.22
+e-reputation	W.12
+definition	d.12	f.10	p.10	q.50	t.50	v.01	w.10	E.51	L.60	P.22	T.31	W.60
+fnac	W.01
 definissez	o.01	C.01	F.04
 performances	t.01
 ouvrages	E.01
@@ -1105,17 +1152,17 @@ maitrise	L.02
 pensons	v.01
 grande	e.01	q.01	N.01
 inducteurs	E.01
-coherente	e.02	i.01	q.01	u.01	B.01	E.01	P.01
+coherente	e.02	i.01	q.01	u.01	B.01	E.01	P.01	T.01
 legalement	F.01
 lachete	e.01	E.01	F.01
 80	E.03
-rapide	N.03	P.03
+rapide	N.03	P.03	W.01
 comprend	e.01	t.03
 base	t.02	E.03	F.01
 enfin	c.01	e.04	q.01	s.01	E.01
 cosmetique	N.01
 salignant	E.01
-relation	c.01	q.01	L.01	P.19	R.01	T.10
+relation	c.01	q.01	L.01	P.19	R.01	U.11	W.44
 preparation	P.01
 elargissent	P.01
 diffuser	v.01
@@ -1143,6 +1190,7 @@ intermediaires	K.01	L.22	P.03
 discontinue	P.01
 adaptees	p.01	q.01
 supprimer	N.01
+chatbots	W.01
 inferieur	E.01	F.01
 dactivite	P.01
 abondante	c.01
@@ -1161,7 +1209,7 @@ nuire	E.01
 achats	q.01	E.01	F.01
 regle	E.01
 fake	w.01
-permet	c.01	d.01	e.01	o.01	p.01	q.02	t.02	v.01	E.02	P.02
+permet	c.01	d.01	e.01	o.01	p.01	q.02	t.02	v.01	E.02	P.02	T.01	W.11
 entendant	v.01
 reconnaissance	E.01	F.01
 diapositive	x.01
@@ -1184,10 +1232,10 @@ indiquez	c.02	e.02	v.02	F.04
 capture	x.02
 materiels	B.01
 contribuable	E.01
-enrichir	R.01	T.10
+enrichir	R.01	U.11	W.10
 lapproche	b.02
 davoir	E.03
-publicite	c.01	q.01	w.11	E.03	F.01	P.01
+publicite	c.01	q.01	w.11	E.03	F.01	P.01	T.03
 quentre	e.01
 theatralisation	k.01	x.92
 concerts	E.01
@@ -1213,13 +1261,14 @@ communiquent	P.01
 siecle	a.01	b.10	c.02
 contre	v.01	w.01
 toute	f.01	k.11	v.01	w.10	N.01
+value	W.11
 vehiculent-elles	x.01
 derniere	F.02
-fondamental	d.10	p.10	q.11	t.10	E.20	L.20	N.40	P.80
+fondamental	d.10	p.10	q.11	t.10	E.20	L.20	N.40	P.80	T.30	W.60
 cette	e.03	p.02	q.02	t.01	v.03	w.03	C.01	E.09	F.04
 opaque	D.01
 automatisee	P.01
-personnalisation	c.04	f.01	j.10	m.01	q.02	P.01	U.01
+personnalisation	c.04	f.01	j.10	m.01	q.02	P.01	V.01	W.01
 allongement	e.01
 simplifie	P.01
 fans	w.01
@@ -1234,8 +1283,8 @@ stylique	t.02
 dernier	w.01	D.01
 agit	q.01	E.01
 historique	P.01
-efficacite	p.02
-consommateurs	c.01	d.02	e.03	p.03	q.08	t.04	v.02	B.01	E.02	F.01	L.02	P.01
+efficacite	p.02	T.10
+consommateurs	c.01	d.02	e.03	p.03	q.08	t.04	v.02	B.01	E.02	F.01	L.02	P.01	W.01
 spic	E.02
 smartphone	v.01	N.01
 faire	e.01	v.03	w.01	B.01	F.01
@@ -1244,7 +1293,7 @@ dintermediation	P.32
 attribuee	x.01
 eventuellement	E.01
 realistes	e.01
-via	q.01	P.02
+via	q.01	P.02	T.10	W.11
 immaterielles	t.10
 energetiques	E.01
 conditionne	E.01
@@ -1253,7 +1302,7 @@ cree-t	f.01	k.11	w.10
 vie	o.02
 avantage	c.01
 anticipe	P.01
-utilise	q.01	t.01	E.01	F.01	P.04
+utilise	q.01	t.01	E.01	F.01	P.04	T.01	W.01
 terrain	e.01	w.01
 monnayee	E.01
 vis	o.01	E.01	F.01
@@ -1261,10 +1310,11 @@ persona	e.16
 adapter	e.01	m.01	q.02	E.01
 courant	e.01
 charment	v.11
-google	E.02	F.01
+google	E.02	F.01	T.01
 passe	P.01
+community	W.21
 version	q.01	E.01
-adaptee	c.01	q.01	v.01	E.01	P.01
+adaptee	c.01	q.01	v.01	E.01	P.01	T.01
 charges	E.09
 marches	E.04
 dacheter	v.01	P.01
@@ -1273,6 +1323,7 @@ musique	t.01	v.02
 competitives	e.01
 facilement	v.02
 restaurants	F.01
+influenceurs	W.01
 adaptes	q.02	B.01	N.01
 poursuivre	P.01
 financier	o.01	N.01
@@ -1290,10 +1341,11 @@ wikipedia	E.02	F.01
 sanitaire	e.10
 ethiques	v.02
 ire	w.01
+referencement	T.01
 preferences	d.01	e.01	p.01	q.01	F.01
 abc	E.15
 parcours	e.02	u.01	N.03	P.06
-nike	q.01	t.02	w.10
+nike	q.01	t.02	w.10	T.01
 unlimited	w.10
 concernerait	o.01
 precedentes	v.01
@@ -1327,12 +1379,12 @@ ceux-ci	E.01	P.01
 pose	v.01
 titulaire	E.01
 beneficiaire	E.07
-decathlon	N.10
+decathlon	N.10	W.01
 rassure	t.01
 financement	t.01	E.03	F.01
 volume	e.18	E.01
 alimentaires	e.02
-fusion	E.01	F.01
+fusion	E.01	F.01	W.01
 faux	v.01
 surprendre	x.01
 boite	F.01
@@ -1343,6 +1395,7 @@ mauvaises	E.01	F.01
 conduire	q.01
 production	b.01	c.01	e.01	q.02	x.01	E.09
 feuille	e.01
+inbound	T.12	W.02
 recueil	q.01
 soncase	s.01
 unites	E.09
@@ -1357,17 +1410,18 @@ pouvez	e.01
 visuel	t.01	x.01
 identifiant	e.01
 degustations	v.01
-message	q.03	t.01	x.04
+message	q.03	t.01	x.04	T.02
 actives	o.01
 applique	E.03	F.01
 progressent	e.02
 revolutionnaire	v.01
 gratuites	v.01
-dinformation	N.01
+dinformation	N.01	W.01
 egalement	e.01	s.01	D.01	E.05
 habitudes	B.01	F.01	M.01
 change-t	x.01
 dacceptabilite	F.02
+bricolage	T.01
 age	o.01
 theorique	E.01	F.01
 education	x.09
@@ -1390,12 +1444,13 @@ vendus	e.04	l.01	A.10
 attentif	F.01
 lotions	t.01
 lasie	e.01
-programmes	F.02	P.01
-forte	e.02	q.02	L.02	N.01	P.01
+programmes	F.02	P.01	W.01
+forte	e.02	q.02	L.02	N.01	P.01	T.01	W.01
 jeux	w.01	x.03
 maximise	E.01
 reponses	F.01
-ciblee	F.01
+animation	W.01
+ciblee	F.01	W.01
 provoque-t	x.02
 moins	p.01	q.10	E.04	F.03	P.01
 cibler	r.01	E.01
@@ -1409,7 +1464,7 @@ unitaire	E.17	F.02
 local	P.01
 regles	P.02
 segments	m.01	o.03	p.06	q.05
-nouvelles	v.01
+nouvelles	v.01	W.10
 motivations	d.01	s.01
 lethique	v.01
 projet	e.01
@@ -1428,15 +1483,17 @@ television	q.01	E.01	F.04
 approche	p.02	q.02	C.01	E.01
 lente	v.01
 reste	E.01
-satisfaction	c.01	q.01	t.01	u.01	C.01
+digitale	T.10
+partenaires	T.01
+satisfaction	c.01	q.01	t.01	u.01	C.01	W.01
 algorithme	N.01
 capter	c.01	p.01	N.01
 donnez	v.01	x.01	F.01
-immersive	v.01	w.01	N.01
+immersive	v.01	w.01	N.01	W.01
 profondeur	t.01	P.01
 vtt	e.01
 10000	E.01
-dachat	o.01	s.01	v.01	E.01	L.01	M.02	N.17	P.03
+dachat	o.01	s.01	v.01	E.01	L.01	M.02	N.17	P.03	T.01
 incontournable	c.02	f.01	j.10
 arrivent	v.01
 accessibles	p.01
@@ -1449,20 +1506,21 @@ sublimotion	v.11
 souplesse	P.01
 correspond	e.01	x.01	E.01	L.01
 aventureux	q.01
-points	q.01	N.02	P.12
-devient	q.01	N.01	P.05
+points	q.01	N.02	P.12	W.01
+devient	q.01	N.01	P.05	W.01
 perception	t.05
-saturation	e.01
+saturation	e.01	W.01
 mode	e.01	o.01
-recommandations	N.01	P.01
+recommandations	N.01	P.01	W.01
 basant	E.01	F.02
 etc	e.01	q.05	t.03	x.01	E.01	F.01
+outbound	T.12
 initialement	c.01
 lhistorique	E.01	F.01
 commencer	P.01
 partagees	P.01
 bureau	E.01
-complement	d.10	p.20	q.40	t.11	w.60	E.30	L.50	P.20
+complement	d.10	p.20	q.40	t.11	w.60	E.30	L.50	P.20	T.20	W.20
 societales	d.01
 instantane	N.10
 intense	v.01
@@ -1476,12 +1534,14 @@ gastronomy	v.01
 applicable	E.01
 letude	d.21	M.01
 epoque	w.01
+mcdonalds	T.10
 1.75	e.01
-outils	q.01	t.01	P.01
+outils	q.01	t.01	P.01	W.21
 degagees	x.01
 cafe	v.01
+merlin	T.10
 ouie	v.02
-lexperience	f.01	k.11	q.01	t.01	v.01	w.10	x.01	N.01	P.02	U.01
+lexperience	f.01	k.11	q.01	t.01	v.01	w.10	x.01	N.01	P.02	V.01	W.11
 espaces	F.02
 exactement	E.01
 apprenant	v.01
@@ -1489,21 +1549,22 @@ collect	O.01	P.01
 essentielles	t.01
 contextuelle	N.01
 nuage06	x.09
+sportifs	W.01
 etudiez	x.01
 croissance	d.01	e.33
 progression	e.02
 eux	E.01	F.01	P.02
-ensemble	t.12	B.01	C.01	E.02
+ensemble	t.12	B.01	C.01	E.02	T.01	W.02
 representatif	F.01
-media	S.01
-magasin	v.04	L.01	N.02	P.06
+media	S.01	T.24
+magasin	v.04	L.01	N.02	P.06	W.05
 autres	e.01	p.01	v.01	E.01	F.01	P.01
 colonne	F.02
 simples	p.01
 450	v.01
 materiaux	t.01
 lurgence	N.01
-influencer	v.02	x.01
+influencer	v.02	x.01	T.01
 lutilisation	e.01	t.01	E.01	F.01
 calcul	E.21	F.01
 dargent	F.01
@@ -1516,18 +1577,19 @@ lexemple	o.01
 stimulation	c.01
 ans	e.14
 quotidienne	v.01	w.01
-digitalisation	P.19
+digitalisation	P.19	T.11
 transport	e.11	t.02	E.01	L.01
 consiste	o.01	p.02	q.13	v.01	E.02	P.01
+dedie	W.01
 forme	e.01	s.01	v.01	w.01	E.02	F.01
 tranche	e.01
 repondent	q.01
-donnees	q.03	E.05	F.04	P.04
+donnees	q.03	E.05	F.04	P.04	W.02
 specialisation	q.01
 application	N.01	P.01
 cris	v.01	w.03
 0.5	E.01
-objectif	w.01	x.01	F.01	N.01
+objectif	w.01	x.01	F.01	N.01	W.02
 synthese	E.11
 batterie	t.01
 strategy	E.01
@@ -1541,15 +1603,17 @@ expertise	t.01	L.01
 grandes	c.01	e.04	N.01
 producteur	L.05	P.03
 proprietaire	E.01
+exe	W.01
 redevance	E.01
-modele	e.01	s.01	E.17	F.09	P.01
+modele	e.01	s.01	E.17	F.09	P.01	T.10
 perte	L.02	P.03
 exclusive	N.02
 environnement	q.01
 principalement	P.01
 immersion	w.01
-dune	e.03	s.01	t.14	v.01	x.01	E.01	F.01	L.01	P.03
+dune	e.03	s.01	t.14	v.01	x.01	E.01	F.01	L.01	P.03	W.01
 presentent	p.01
+ameliorer	W.01
 reel	e.01	E.02	P.01
 000	w.01	E.09
 partageant	p.01
@@ -1571,10 +1635,12 @@ concentrer	p.02
 diversite	E.01
 covoiturage	E.01
 enseigne	P.01
-digitaux	e.01
+notion	W.01
+digitaux	e.01	W.01
+amelioree	W.01
 complexite	q.02	P.01
 technologiques	q.01
-grace	q.03	E.01	F.03	L.01	R.01	T.10
+grace	q.03	E.01	F.03	L.01	R.01	U.11	W.10
 illustrez	s.01
 sadresser	q.01
 centres	C.01
@@ -1585,7 +1651,7 @@ primaire	E.01
 impliquer	E.01
 nest	c.01	e.01	v.02	E.01	F.01	N.02	P.01
 lenjeu	N.01	P.01
-cest	e.07	q.01	t.02	v.03	w.01	E.09	F.06
+cest	e.07	q.01	t.02	v.03	w.01	E.09	F.06	W.01
 peuvent	c.01	e.05	q.02	v.02	C.01	E.02
 tour	v.01
 prends	E.01	F.01
@@ -1604,14 +1670,16 @@ pourrez	e.01
 rue	w.01
 impots	E.01
 fragmentee	P.01
+engagement	T.01	W.01
 documents	c.01	e.01	E.01
 orale	e.01
 vendre	w.01	E.01	F.02	P.06
 administration	E.01
-organisation	x.01	E.01	F.01	P.01
+organisation	x.01	E.01	F.01	P.01	T.01
 larriere-plan	P.01
 generales	E.01
-cible	e.03	p.02	q.06	s.01	B.01	C.01	E.39	F.02	G.01	Q.01
+research	W.01
+cible	e.03	p.02	q.06	s.01	B.01	C.01	E.39	F.02	G.01	Q.01	T.03	W.01
 jen	E.01	F.01
 reflechi	N.02
 comportements	d.01	o.01	p.01	q.01	B.01	M.01	N.12	P.01
@@ -1623,6 +1691,7 @@ marchandises	E.02
 jeu	w.01
 offrent	F.01
 sonore	v.01
+defiance	W.01
 justifiez	c.01	r.01
 bonne	N.01
 aisee	q.01
@@ -1654,9 +1723,10 @@ expliquez	e.01	v.04	x.01	F.05
 nominative	t.01
 centime	w.01
 evolutif	F.01
+augmenter	W.01
 continuite	P.01
 aux	c.04	e.01	m.01	p.02	q.05	v.01	B.02	E.07	F.06	L.01	N.02	P.01
-prospects	F.01
+prospects	F.01	T.01
 absence	P.01
 classes	e.01
 critique	o.01
@@ -1666,7 +1736,8 @@ augmentee	e.02
 nom	t.02	F.01
 danimaux	w.03
 conclusion	c.01	q.10	t.10	v.01	E.10	L.10	N.10
-durable	c.01	P.01
+emails	W.01
+durable	c.01	P.01	W.01
 publics	E.13	F.03
 nos	o.01	v.23
 central	t.01	B.01	P.01
@@ -1682,13 +1753,15 @@ green	w.01
 simplicite	p.01	N.02	P.01
 utilise-t	F.01
 inducteur	E.01
-effet	c.01	o.01	E.01	F.01
+effet	c.01	o.01	E.01	F.01	T.10
 lelasticite	E.02	F.03
 agregateurs	P.01
+resultat	T.01
 serait	o.01
 target	E.01
-publicitaire	q.02
+publicitaire	q.02	W.01
 sauvages	w.02
+tutoriels	T.01
 ensuite	x.01	F.01
 bons	e.01	E.01
 flame	w.11
@@ -1713,7 +1786,7 @@ piano	v.01
 legitimes	o.01
 gens	v.01
 doffres	P.01
-collecter	E.01
+collecter	E.01	W.01
 percue	t.01	u.01	D.01	K.01
 rend	D.01	P.01
 plan	d.01	E.03
@@ -1721,7 +1794,7 @@ circuits	L.10	P.01
 chaines	q.01
 fabricants	e.03
 innovants	E.01
-evalue	E.01	F.01
+evalue	E.01	F.01	T.10
 illustre	E.01	F.01
 barrieres	P.01
 differentes	e.01	p.01	q.02	t.10	N.01
@@ -1735,13 +1808,13 @@ explose	w.11
 electricite	E.01
 financees	E.02
 differenciation	d.01	m.01	q.02
-direct	E.01	K.01	L.20	P.01
+direct	E.01	K.01	L.20	P.01	T.01
 dadresser	q.01
 gain	L.01	P.01
 culinaire	v.01
 universelle	q.01
 pilotee	P.01
-web	e.01	q.01	P.01
+web	e.01	q.01	P.01	T.03	W.01
 choisissez	e.01
 rendre	v.02	G.01	P.01
 realisation	E.01
@@ -1755,10 +1828,10 @@ facilitent	L.01
 scientifique	v.01
 optique	E.01
 recherche	o.01	E.02	F.02	L.01	N.02	P.01
-permettant	o.01	v.01	L.01	N.01
+permettant	o.01	v.01	L.01	N.01	W.01
 visionnez	F.01
 geographique	P.01
-transforme	w.01
+transforme	w.01	T.01
 auxquels	E.01
 economie	E.01
 annonceurs	F.03
@@ -1771,16 +1844,19 @@ cycles	e.03
 simple	v.01	P.01
 detaillant	L.01
 matiere	E.01
-influence	t.02	v.01	B.01	K.01	N.13
+influence	t.02	v.01	B.01	K.01	N.13	W.10
 lutilisateur	E.01
 mots	x.03	E.01
+earned	T.12
 ainsi	d.01	e.02	p.01	s.01	t.01	v.01	E.02
 presque	w.01
 seule	q.02	t.01	v.01	P.01
+emailing	T.01	W.01
 nombreuses	E.01
 faisant	v.01
 assortie	x.01
 ajustement	P.01
+mples	W.01
 precisant	C.01
 marketplace	O.01	P.02
 rapprochement	e.01
@@ -1797,6 +1873,7 @@ menaces	d.01
 ipad	t.01
 presentez	e.01
 sum-up	E.10
+complementaire	W.01
 levent	v.01
 determinez	c.01	e.03	r.01	v.01	C.01	F.03
 game	w.11
@@ -1809,13 +1886,15 @@ petits	E.01
 explication	t.01	E.01	N.01
 propres	E.02
 maximale	N.02
-interactions	t.01	F.01
+interactions	t.01	F.01	W.01
 leviers	c.01
 immateriel	t.01
 comparaison	N.02	P.06
-fidelisation	c.01	q.02	C.01	L.01	P.01	U.01
+enjeux	W.10
+fidelisation	c.01	q.02	C.01	L.01	P.01	T.01	V.01	W.22
 multiplient	P.01
 technologie	q.01	v.01	w.01
+leroy	T.10
 gastronomique	v.01
 separes	P.01
 selective	N.02
@@ -1825,16 +1904,18 @@ surveillant	e.01
 designer	E.01
 enclins	o.01
 illusionnistes	v.01
-fluide	N.01	P.01
+fluide	N.01	P.01	W.02
 a3	e.01
 tendance	v.01
 attention	c.01	e.01	p.01	r.01	E.10	F.01	P.10
 reduction	o.01	q.01	L.01	N.01	P.01
 petite	P.01
+customer	W.10
 finalite	d.10	F.01
 sinsere	P.01
 rendez-vous	N.01
 quelques	L.20
+bad	W.01
 dadaptation	q.01
 bring	w.01
 fil	x.02
@@ -1886,7 +1967,7 @@ slogans	x.01
 contractuels	E.01
 fooh	w.12
 vite	e.02
-notions	m.01	u.01	K.01	M.01	O.01	S.01	U.01
+notions	m.01	u.01	K.01	M.01	O.01	S.01	V.01
 relatif	E.01
 exprime	S.01
 posez	e.01
@@ -1908,9 +1989,10 @@ ce	F.01
 categorie	t.01
 charge	E.02
 jusquau	v.01
+systeme	W.02
 predictive	P.01
 loperation	e.01
-comparer	P.01
+comparer	P.01	W.01
 librement	P.01
 vise	p.04	q.02	v.01	B.01	N.01
 fixation	l.01	z.11	A.01	B.10	D.01	E.33	F.10
@@ -1932,16 +2014,18 @@ contact	P.15
 france	e.14	w.02
 confiance	c.01
 signifie	e.01	F.03
-meilleure	q.03	L.01	P.01
-image	s.01	t.05	B.01	N.01
+meilleure	q.03	L.01	P.01	W.01
+image	s.01	t.05	B.01	N.01	T.01	W.01
 campagnes	p.01	q.01
 partent	v.01
 energetique	e.01
 creneaux	F.01
 centrale	L.01	P.01
+exploiter	W.01
 necessite	q.02	F.01
 benefices	B.01	E.01
 marchandises-cout	E.01
+actif	T.10
 tirage	x.01
 sont-ils	x.01
 financee	E.01
@@ -1955,6 +2039,7 @@ little	w.10
 decran	x.02
 couleurs	v.01	x.05
 battu	w.03
+sources	T.01
 sensoriel	v.04	x.01
 reagir	e.01
 effectuer	E.01
@@ -1964,17 +2049,18 @@ commerciaux	p.01	N.01
 augmentation	e.03
 pendant	w.01
 fr	E.12
-contenu	E.01
+contenu	E.01	T.01
 elaborer	e.01
 effectuez	F.01
 obligatoirement	F.01
 exclut	E.01
-client	c.01	e.02	q.03	t.02	u.02	v.01	w.01	x.02	E.02	F.01	L.01	N.01	P.09	R.01	T.10	U.01
+client	c.01	e.02	q.03	t.02	u.02	v.01	w.01	x.02	E.02	F.01	L.01	N.01	P.09	R.01	T.02	U.11	V.01	W.69
 autorite	v.02
 methodes	E.21
 emissions	F.01
 utilisation	q.01	t.01	v.01	x.01
-digital	q.01
+conversion	T.01
+digital	q.01	W.01
 associes	t.02
 repond	N.02
 gamble	t.01
@@ -1983,12 +2069,12 @@ spatialement	P.01
 packaging	t.11
 conserve	N.01
 presente	E.01
-principaux	a.01	b.10	c.01	e.02	B.01	P.10
+principaux	a.01	b.10	c.01	e.02	B.01	P.10	T.10
 associez	E.01
 unifie	P.01
 manipuler	v.01
 500	E.03
-management	E.15	F.05
+management	E.15	F.05	W.31
 courants	E.01
 adresse	p.01
 essentiel	e.01
@@ -1999,16 +2085,17 @@ directes	E.08	F.01
 vente	b.01	e.02	E.09	L.02	N.02	P.02
 ajuster	q.01
 logistique	L.01	P.14
-promotion	B.01	C.02	N.01	S.01
+promotion	B.01	C.02	N.01	S.01	T.01
 differencier	c.03	p.10	q.01	t.02	C.01	E.01
 expert	p.01
 complets	E.11
 modes	A.01	F.10
 anticiper	e.01	E.01	F.01	P.01
 bin	v.01
-vers	c.01	e.10
+doutils	W.10
+vers	c.01	e.10	T.02
 cherche-t	x.01
-repose	p.01	t.10	B.01	C.01	E.04	F.01	P.01
+repose	p.01	t.10	B.01	C.01	E.04	F.01	P.01	T.10
 bip	v.01
 dion	E.11
 memorable	v.01
@@ -2016,8 +2103,9 @@ majorite	p.01
 enquete	E.01
 attractivite	d.01
 rassurer	x.01
-commerciale	c.01	E.24	L.02	P.12
-mobiles	N.01
+commerciale	c.01	E.24	L.02	P.12	T.20
+mobiles	N.01	W.01
+communaute	W.01
 model	E.14	F.01
 https	x.09
 plateforme	P.09
@@ -2038,6 +2126,7 @@ complexification	D.01
 autorise	E.01
 realisez	e.01	x.02
 enseignant	v.01
+dinfluence	W.11
 opticiens	k.01	x.11
 selon	q.03	x.02	E.03
 acharne	v.01
@@ -2059,6 +2148,7 @@ composee	t.01
 deja	e.01	N.01
 dire	E.01	F.03
 dautres	E.01	P.01
+sms	T.01
 ciblages	q.01
 elasticite-prix	E.01	F.01
 camera	v.01
@@ -2088,6 +2178,7 @@ ponctuelle	P.01
 0,50	E.01
 appeles	o.01
 wnfcbm5ticpkzrb	x.01
+sponsoring	T.01
 omnicanale	P.01
 wwf	w.13
 levier	c.02
@@ -2101,6 +2192,7 @@ achetent	e.01
 supplementaires	e.01	t.01
 portee	e.10
 modernite	t.01
+mesurable	T.01
 annees	c.01	v.01
 personnelles	E.01	F.01
 www	E.10
@@ -2108,8 +2200,8 @@ connaitre	B.01	E.01
 mechancete	v.01
 supermarche	L.01
 poste	e.01	w.01
-communication	d.01	h.10	q.06	t.02	B.02	C.01	S.02
-entre	e.05	f.01	l.10	q.03	t.01	v.01	E.04	F.01	L.01	N.01	P.17
+communication	d.01	h.10	q.06	t.02	B.02	C.01	S.02	T.40	W.01
+entre	e.05	f.01	l.10	q.03	t.01	v.01	E.04	F.01	L.01	N.01	P.17	W.01
 precedente	e.01
 appelee	E.01
 physiques	B.01	P.02
@@ -2124,9 +2216,9 @@ impulsif	v.01
 conduisent	E.02	F.01
 comparant	e.01
 termes	p.01	t.01	F.01
-offre	c.03	d.01	i.01	j.01	k.01	m.01	q.06	s.10	t.23	x.11	E.04	F.02	P.03
-plus	e.19	p.06	q.12	v.15	C.01	D.02	E.04	F.07	L.01	P.05
-amazon	N.01	P.11
+offre	c.03	d.01	i.01	j.01	k.01	m.01	q.06	s.10	t.23	x.11	E.04	F.02	P.03	T.01
+plus	e.19	p.06	q.12	v.15	C.01	D.02	E.04	F.07	L.01	P.05	W.01
+amazon	N.01	P.11	W.02
 faibles	c.01
 na	e.01	P.01
 profiter	w.01
@@ -2136,7 +2228,7 @@ genie	w.01
 coordonnes	P.01
 veut	F.01	N.01
 permettre	v.01	N.01
-reseaux	F.02	P.01	U.01
+reseaux	F.02	P.01	T.02	V.01	W.02
 confrontes	e.01
 utilisee	t.01	E.05
 daffaires	e.03	o.01	E.01	F.01	P.01
@@ -2157,11 +2249,11 @@ integrant	x.01
 limpulsion	N.01
 puis	e.04	w.01	F.01	P.02
 tente	v.01
-plusieurs	e.01	o.01	p.01	q.01	t.04	E.03	F.01	L.01	N.12	P.05
+plusieurs	e.01	o.01	p.01	q.01	t.04	E.03	F.01	L.01	N.12	P.05	T.01	W.01
 consumer	p.01
 decouvrir	v.01
 pretty	w.10
-valeur	e.19	l.01	q.01	t.01	u.01	x.01	y.01	A.10	D.02	P.02	S.01
+valeur	e.19	l.01	q.01	t.01	u.01	x.01	y.01	A.10	D.02	P.02	S.01	W.04
 clair	q.01
 determine	s.01
 prelevees	E.01
@@ -2177,7 +2269,7 @@ toutefois	e.02	E.02	F.01
 focalise	q.01
 uniquement	w.01	P.02
 opportunites	d.01
-campagne	t.01
+campagne	t.01	T.20
 fabriquees	t.01
 awjsmghdrxsp8re	x.01
 moyenne	F.01
@@ -2206,12 +2298,13 @@ ordonne	v.01
 interpreter	d.01
 faciliter	P.02
 collecte	E.01	P.01
-exemple	e.02	n.02	q.60	t.55	v.01	w.53	E.77	F.07	L.60	N.44	P.34
+exemple	e.02	n.02	q.60	t.55	v.01	w.53	E.77	F.07	L.60	N.44	P.34	T.21	W.12
 fonctionnement	E.03	F.02	P.11
 avez-vous	e.01
 dage	e.01
 viral	w.02
 conditions	E.01
+interet	W.10
 flambee	e.01
 nouvel	P.01
 promesse	S.01
@@ -2223,7 +2316,8 @@ deduire	e.01
 netflix	q.01	w.10	P.10
 aient	v.01
 mcdonald	w.04
-connaissance	P.01
+connaissance	P.01	W.01
+offline	W.01
 repondre	c.03	e.01	p.01	q.03	B.01	C.01	E.09	N.01
 ombrelle	t.01
 suv	q.01
@@ -2233,11 +2327,11 @@ participants	v.01	w.02
 situations	N.01
 constat	e.01
 essentielle	C.01
-maximiser	C.01	E.01	N.01
-connectes	P.01
+maximiser	C.01	E.01	N.01	W.01
+connectes	P.01	W.01
 decision	E.01
 one	q.11
-seduire	t.01
+seduire	t.01	T.01
 spotify	E.01	F.01
 prestataires	E.02	F.01	P.02
 sils	e.01
@@ -2289,7 +2383,7 @@ region	o.01
 achat	p.02	t.01	E.06	N.01	P.03
 organise	x.01	P.02
 percoit	N.01
-support	e.01
+support	e.01	T.12
 servira	e.02
 etape	j.03	n.10	p.10	q.20
 sein	E.01
@@ -2298,9 +2392,10 @@ changer	v.01
 deux	e.02	p.11	t.01	v.02	B.01	E.01
 idee	w.02	P.01
 renault	q.01
+life	W.11
 agissant	v.01
 echantillon	E.01	F.02
-lien	e.01	m.01	u.01	v.02	K.01	M.01	N.01	O.01	S.01	U.01
+lien	e.01	m.01	u.01	v.02	K.01	M.01	N.01	O.01	S.01	V.01	W.01
 suscitees	x.01
 27.5	e.01
 avantages	d.01	q.06	L.23	P.12
@@ -2323,27 +2418,28 @@ juste	E.01
 transmis	x.01
 location	E.01
 linteraction	N.01	P.01
-valoriser	h.01	N.01	Q.01	R.10
+valoriser	h.01	N.01	Q.01	R.11	T.11
 choix	e.02	g.01	q.01	r.01	s.01	v.01	x.03	B.01	E.01	I.11	N.14	P.02
 ancien	F.01
 dobligation	F.01
 changements	a.01	b.10	c.01	e.01	q.01
-paiement	P.05
+paiement	P.05	W.01
 tester	v.01
 susciter	x.01
 laide	e.01	s.01
 electroniques	t.01
-type	e.02	E.01	F.01	P.01
+type	e.02	E.01	F.01	P.01	T.01
 beaucoup	e.01
 representent	e.04	F.01
 chaine	F.01	P.01
 attrayants	p.01
-recommandation	P.01
+recommandation	P.01	W.01
 presence	L.01	N.02	P.02
 etant	F.01
 guide	e.01
 psychologique	x.01	E.45	F.04
 partager	E.01
+partages	T.01	W.01
 deduisez	e.01
 phase	E.01
 vivre	w.01	F.01
@@ -2355,14 +2451,14 @@ lacheteur	E.02
 prestations	E.05
 exact	e.01
 force	P.02
-ventes	e.09	B.01	E.01	F.01
+ventes	e.09	B.01	E.01	F.01	T.03
 diaporama	x.02
 chocs	v.02
 14.3	e.01
 oui	L.01	P.01
 plastique	t.01
 lidee	q.01
-retour	P.01
+retour	P.01	T.01
 problematique	P.10
 depasser	E.01
 montre	v.01	w.01	E.01
@@ -2381,7 +2477,7 @@ consommation	f.01	k.11	s.01	w.10	E.04	N.01
 place	e.03	v.01	B.01	E.02	K.01
 precise	p.01
 clairs	B.01
-personnalisees	N.01	P.01
+personnalisees	N.01	P.01	W.02
 sensible	F.01
 continuer	v.01
 entierement	E.01	P.01
@@ -2394,16 +2490,18 @@ observation	P.01
 tiree	e.10
 chemin	e.02	L.01
 transformation	P.50
-site	e.01	L.01	P.06
+connectees	W.01
+site	e.01	L.01	P.06	T.02	W.02
 rentable	E.04
 confidentialite	E.01
 mises	x.01
 nont	E.01	F.01
-elements	t.02	x.04	B.01	E.01
+elements	t.02	x.04	B.01	E.01	T.10
 valorisation	x.01
 focalisation	q.01
 leurs	c.01	e.05	p.02	q.01	v.01	B.01	C.01	E.04	F.04
 minimum	F.01
+informer	T.01
 rencontrees	e.01
 parle	N.01
 garantie	t.01
@@ -2411,6 +2509,7 @@ humaine	N.01
 entrainera	E.01
 avez	e.01	s.01
 specialisee	q.01
+blog	T.01
 logotype	t.01
 reflechis	e.01
 corresponde	E.01
@@ -2434,6 +2533,7 @@ proposer	q.02	v.01	F.01
 proposes	t.01	E.01
 E30000E	E.01
 prestige	N.01
+zara	W.01
 qualites	E.01	F.01
 activite	E.19
 choisis	N.01
@@ -2448,7 +2548,9 @@ mobilisation	w.01
 choisie	q.01
 regarde	F.01
 inconvenients	q.05
+youtube	T.01
 suivants	x.01
+cherche	W.01
 sait	v.01
 avances	q.01
 cam	E.01
@@ -2462,19 +2564,20 @@ auquel	q.01	F.01
 dependance	q.01	P.02
 concrets	t.01
 prevoyant	E.01
-limites	E.01	L.23	P.13
+limites	E.01	L.23	P.13	W.10
 limiter	N.01
 electrique	e.25
 douleur	v.01
 demandant	p.01
 limitee	E.01	L.01
-vient	P.01
+vient	P.01	T.01
 cuisine	v.01
 haute	v.01
 terme	E.01
+reels	W.01
 accent	c.02
 potentiels	p.01	E.01	F.01
-efficace	c.01
+efficace	c.01	T.11
 arbitrer	P.10
 considere	E.01	F.01
 quelle	e.02	v.01
