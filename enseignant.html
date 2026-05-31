@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang='fr'>
+
+<head>
+	<meta charset='UTF-8'>
+	<title>Accueil</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="fonts.css">
+	<link rel="stylesheet" href="style.css">
+	<script src="accessibility.js"></script>
+	<script src="enseignant.js"></script>
+	
+</head>
+
+<body>
+
+
+<script>
+if (!sessionStorage.getItem("auth")) {
+    window.location.href = "acces-enseignant.html";
+}
+</script>
+
+
+
+
+<!-- ACCESSIBILITÉ -->
+<div id="accessibility-menu">
+  <button onclick="toggleTheme()">🌙 / ☀️</button>
+  <button id="btn-dys" onclick="toggleDys()">Dys</button>
+  <button onclick="fontMinus()">A−</button>
+  <button onclick="fontPlus()">A+</button>
+  <button onclick="resetAccessibility()">🔄</button>
+  <button onclick="logout()">Se déconnecter</button>
+  </div>
+  
+
+
+<!-- HEADER -->
+<header class="page-header">
+
+  <nav class="top-nav">
+    <a href="index.html">Accueil</a>
+  </nav>
+  
+ </header>
+ 
+ <main>
+ 
+ <p class="intro">Accès réservé aux enseignants</p>
+ 
+
+ <h1>Accès aux ressources corrigées</h1>
+ <a href="https://tcous1.github.io/site-eleves/seconde">SNT 2de</a>
+ <details>
+	<summary>1re STMG</summary>
+		<ul>
+			<li>SDGN</li>
+				<ul>
+					<li>Thème 1</li>
+						<ul>
+							<li><a href="">1.1</a>
+							<li><a href="">1.2</a>
+						</ul>
+					<li>Thème 2</li>
+						<ul>
+							<li><a href="">2.1</a>
+							<li><a href="">2.2</a>
+						</ul>
+		</ul>
+</details>
+					
+ </main>
+ 
+  </body>
+</html>
