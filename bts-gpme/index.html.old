@@ -1,13 +1,14 @@
+
 <!DOCTYPE html>
 <html lang="fr">
 <head>
   <meta charset="UTF-8">
-  <title>Ressources – Page</title>
+  <title>BTS GPME – Ressources pédagogiques</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-
-  <link rel="stylesheet" href="../fonts.css">
+   <link rel="stylesheet" href="../fonts.css">
   <link rel="stylesheet" href="../style.css">
-  <script src="../accessibility.js" defer></script>
+ <script src="../accessibility.js"></script>
+
 </head>
 
 <body>
@@ -21,93 +22,36 @@
   <button onclick="resetAccessibility()">🔄</button>
 </div>
 
-<!-- HEADER IDENTIQUE À L’ACCUEIL -->
+<!-- HEADER -->
 <header class="page-header">
 
   <nav class="top-nav">
-    <a href="../index.html">🏠 Accueil</a>
+    <a href="../index.html">Accueil</a>
     <span>|</span>
-    <a href="../acces-enseignant.html">🔒 Espace enseignant</a>
+    <a href="../index.html">Retour</a>
   </nav>
-
-  <div class="top-banner">
-    <span class="banner-main">BTS GPME</span>
-    <span class="banner-sub">Excel, PGI Odoo, GRCF, Gestion des risques, Stages </span>
-  </div>
-
-  <p class="intro">
-    Choisis une ressource ci-dessous pour accéder au contenu.
+  
+   <p class="intro">
+    Bienvenue sur l’espace de ressources pour élèves de
+    <strong>BTS GPME</strong>.<br><br>
+    Cliquez sur les liens ci-dessous pour accéder aux ressources mises à votre disposition dans le cadre des enseignements.
   </p>
-
-</header>
-
-<body>
-<main>
-
-<h2>📚 Accès rapide</h2>
-
-<div class="cards-grid">
-
-
-<a class="card" href="https://tcous1.github.io/site-eleves/bts-gpme/excel-debutant">
-  <span class="card-icon">
-    <img src="../img/icons8-ms-excel-48.png	" alt="Excel" width="32" height="32">
-  </span>
-  <span class="card-title">Parcours d'apprentissage à Excel debutant</span>
-  <span class="card-desc">
-   Prendre en main Excel, importer des données, les mettre sous forme d'un tableau, calcul de taux d'évolution, organiser l'affichage, visualiser les données et utiliser les fonctions
-  </span>
-</a>
-
-  <a class="card" href="https://tcous1.github.io/site-eleves/bts-gpme/pgi-odoo">
-  <span class="card-icon">
-    <img src="../img/Odoo.png	" alt="Odoo" width="32" height="32">
-  </span>
-  <span class="card-title">Initiation à Odoo avec Scale Up !</span>
-  <span class="card-desc">
-   Achats et ventes, gestion d'un magasin, création d'un e-commerce, digitaliser sa comptabilité, vendre des services, fabriquer, utliser des codes-barres, gérer son équipe, conclure de nouvelles affaires et créer son application
-  </span>
-</a>
-
-  <a class="card" href="https://tcous1.github.io/site-eleves/bts-gpme/stage1">
-    <span class="card-icon">🧑‍💼</span>
-    <span class="card-title">Stage de 1re année</span>
-    <span class="card-desc">Contenu du dossier à préparer, carnet de bord de stage, analyse du contexte commercial de la PME, Fiches de situations professionnelles, faire le point sur ses fiches</span>
-  </a>
-
-  <a class="card" href="https://nuage06.apps.education.fr/index.php/s/r6rNTywzgTnDaeg">
-   <span class="card-icon">
-    <img src="../img/Passeport.jpg	" alt="Passeport-pro" width="32" height="32">
-  </span>
-    <span class="card-title">Passeport Professionnel BTS GPME</span>
-    <span class="card-desc">Passeport Professionnel - version 2026 (sans limitation du nombre de fiches). Fichier à télécharger et à utiliser avec Excel en local (pas en ligne), après avoir activé les macros.</span>
-  </a>
+ 
+ <hr>
   
-  <a class="card" href="#grcf">
-   <span class="card-icon">
-    <img src="../img/Client.png	" alt="Client" width="32" height="32">
-  </span>
-    <span class="card-title">Gestion des Relations avec les Clients et  les Fournisseurs</span>
-    <span class="card-desc">Recherche de clientèle et contact, Administration des ventes de la PME, Maintien et développement de la relation avec les clients de la PME, Recherche et choix des fournisseurs de la PME, Suivi et contrôle des opérations d'achats et d'investissements de la PME, Suivi comptable des opérations avec les clients et les fournisseurs de la PME</span>
-  </a>
   
-    <a class="card" href="#grcf">
-   <span class="card-icon">
-    <img src="../img/Risques.jpg	" alt="Risques" width="32" height="32">
-  </span>
-    <span class="card-title">Gestion des risques de la PME</span>
-    <span class="card-desc">Conduite d'une veille, Participation à la mise en place d'un travail en mode projet au sein de la PME, Mise en oeuvre d'une démarche de gestion des risques de la PME, Participation à la gestion des risques financiers et non financiers de la PME, Mise en place d'une démarche qualité au sein de la PME</span>
-  </a>
-
-
-</div>
-
-
-<hr>
-<h1 id="1btsgpme">BTS GPME – Première année</h1>
-
-	<h2 id="grcf">GRCF – Gestion des relations avec les clients et les fournisseurs</h2>
-	<details>
+<nav class="menu-programme">
+  <h2>📚 Accès rapide</h2>
+	<h3><a href="#1btsgpme">1re année</a></h3>
+		
+			<ul>
+				<li><a href="https://tcous1.github.io/site-eleves/bts-gpme/excel-debutant">Parcours d'apprentissage Excel</a></li>
+				<li><a href="https://tcous1.github.io/site-eleves/bts-gpme/pgi-odoo">Initiation à Odoo</a></li>
+				<li><a href="https://tcous1.github.io/site-eleves/bts-gpme/stage1">Stage</a></li>
+				<li><a href="https://nuage06.apps.education.fr/index.php/s/r6rNTywzgTnDaeg">Passeport Professionnel - version 2026 (sans limitation du nombre de fiches)</a></li>
+			</ul>
+	
+				<details>
 					<summary><a href="#grcf">GRCF - accès rapide aux activités</a></summary>
 								<ul>
 									<li><a href="#grcf1">Activité 1 - Recherche de clientèle et contact</a></li>
@@ -118,6 +62,22 @@
 									<li><a href="#grcf6">Activité 6 - Suivi comptable des opérations avec les clients et les fournisseurs de la PME</a></li>
 								</ul>
 				</details>
+			<p>
+		<h3><a href="2btsgpme">2e année</a></h3>
+				<ul>
+					<li><a href="risque">Gestion des risques</a></li>
+					<li><a href="https://tcous1.github.io/site-eleves/bts-gpme/stage2">Stage</a></li>
+				</ul>
+</nav>
+
+</header>
+
+<main>
+<hr>
+
+<h1 id="1btsgpme">BTS GPME – Première année</h1>
+
+	<h2 id="grcf">GRCF – Gestion des relations avec les clients et les fournisseurs</h2>
 
 <hr>
 <!--Partie 1 GRCF-->
@@ -838,6 +798,5 @@ Aucune réponse corrigée n’est fournie sur cet espace.
 
 <nav><a href='../index.html'>Accueil</a> | <a href='../index.html'>Retour</a></nav>
 
-</main>
 </body>
 </html>
