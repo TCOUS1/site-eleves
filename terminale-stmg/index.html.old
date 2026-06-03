@@ -2,13 +2,13 @@
 <html lang="fr">
 <head>
 <meta charset="UTF-8">
-<title>Terminale STMG – Ressources pédagogiques</title>
+<title>terminale-stmg</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
-
-<link rel="stylesheet" href="../fonts.css">
-<link rel="stylesheet" href="../style.css">
-<script src="../accessibility.js" defer></script>
-
+	<link rel="stylesheet" href="../fonts.css">
+	<link rel="stylesheet" href="../style.css">
+	<script src="../accessibility.js"></script>
+	<script src="../enseignant.js"></script>
+	
 </head>
 
 <body>
@@ -22,132 +22,108 @@
   <button onclick="resetAccessibility()">🔄</button>
 </div>
 
-<!-- HEADER MODERNE -->
+<!-- HEADER -->
 <header class="page-header">
 
   <nav class="top-nav">
-    <a href="../index.html">🏠 Accueil</a>
+    <a href="../index.html">Accueil</a>
     <span>|</span>
-    <a href="../acces-enseignant.html">🔒 Espace enseignant</a>
+    <a href="../index.html">Retour</a>
+	<span>|<span>
+	<a href="../acces-enseignant.html">Espace enseignant</a>
   </nav>
+  
+   <p class="intro">
+    Bienvenue sur l'espace de ressources de la
+    <strong>Terminale STMG</strong>.
+    Cliquez sur les liens ci-dessous pour accéder aux ressources mises à votre disposition dans le cadre des enseignements.<br><br>
+	</p>
+	 
+ 
+ <hr>
+  
+  
+<nav class="menu-programme">
+  <h2>Accès rapide</h2>
 
-  <div class="top-banner">
-    <span class="banner-main">Terminale STMG</span>
-    <span class="banner-sub">Spécialités, Droit, Économie et Management</span>
-  </div>
+	<ul>
+		<li><a href="https://tcous1.github.io/site-eleves/terminale-stmg/grand-oral">Grand Oral</a></li>
+		<li><a href="https://tcous1.github.io/site-eleves/terminale-stmg/msdgn/revision-bac">MSDGN - Fiches révision pour le bac</a></li>
+		<li><a href="https://tcous1.github.io/site-eleves/terminale-stmg/msdgn/frederic-m">Frederic M - Sujet Bac MSDGN corrigé</a></li>
+		<li><a href="https://tcous1.github.io/site-eleves/terminale-stmg/msdgn/top-schuss">Top Schuss - Sujet Bac MSDGN corrigé</a></li>
+		<li><a href="https://tcous1.github.io/site-eleves/terminale-stmg/eco-droit-2024">Éco-Droit - Sujet Bac Corrigé 2024</a></li>
+	</ul>
+	<details>
+		<summary><a href="#msdgn">MSDGN</a></summary>
+		<ul>
+			<li><a href="#msdgn-th1">Thème 1 : Les organisations et l’activité de production de biens et de services</a></li>
+			<li><a href="#msdgn-th2">Thème 2 : Les organisations et les acteurs</a></li>
+			<li><a href="#msdgn-th3">Thème 3 : Les organisations et la société</a></li>
+		</ul>
+	</details>
+	<details>
+		<summary><a href="#specialites-colorations">Colorations / Spécialités</a></summary>
+		<ul>
+			<li><a href="#gf">Enseignement spécifique de gestion et finance</a></li>
+				<ul>
+					<li><a href="#gf-th1">Thème 1 : Appliquer les règles comptables</a></li>
+					<li><a href="#gf-th2">Thème 2 : Analyser la situation de l’entreprise</a></li>
+					<li><a href="#gf-th3">Thème 3 : Accompagner la prise de décision</a></li>
+				</ul>
+			<li><a href="#merca">Enseignement spécifique de mercatique (marketing)</a></li>
+				<ul>
+					<li><a href="#merca-th1">Thème 1 : La définition de l’offre</a></li>
+					<li><a href="#merca-th2">Thème 2 : La distribution de l’offre</a></li>
+					<li><a href="#merca-th3">Thème 3 : La communication de l’offre</a></li>
+				</ul>
+			<li><a href="#rh">Enseignement spécifique de ressources humaines et communication</a></li>
+				<ul>
+					<li><a href="#rh-th1">Thème 1 : Les compétences au service de l’organisation et l’organisation au service du développement des compétences</a></li>
+					<li><a href="#rh-th2">Thème 2 : Des facteurs de motivation et de satisfaction : qualité de vie au travail et rémunération</a></li>
+					<li><a href="#rh-th3">Thème 3 : La recherche de cohésion, un levier d’amélioration des relations de travail et du climat social</a></li>
+				</ul>
+			<li><a href="#sig">Enseignement spécifique de systèmes d’information de gestion</a></li>
+				<ul>
+					<li><a href="#sig-th1">Thème 1 : Organisation et numérisation</a></li>
+					<li><a href="#sig-th2">Thème 2 : Management du système d’information et performance</a></li>
+					<li><a href="#sig-th3">Thème 3 : Information, action et décision</a></li>
+					<li><a href="#sig-th4">Thème 4 : Système d’information et échange</a></li>
+				</ul>
+		</ul>
+	</details>
+	<details>
+		<summary><a href="#droit">Droit</a></summary>
+			<ul>
+				<li><a href="#droit-th5">Thème 5 : Quel est le rôle du contrat ?</a></li>
+				<li><a href="#droit-th6">Thème 6 : Qu’est-ce qu’être responsable ?</a></li>
+				<li><a href="#droit-th7">Thème 7 : Comment le droit encadre-t-il le travail salarié ?</a></li>
+				<li><a href="#droit-th8">Thème 8 : Dans quel cadre et comment entreprendre ?</a></li>
+			</ul>
+	</details>
+	<details>
+		<summary><a href="#eco">Économie</a></summary>
+			<ul>
+				<li><a href="#eco-th6">Thème 6 : Comment l’État peut-il intervenir dans l’économie ?</a></li>
+				<li><a href="#eco-th7">Thème 7 : Quelle est l’influence de l’État sur l’évolution de l’emploi et du chômage ?</a></li>
+				<li><a href="#eco-th8">Thème 8 : Comment organiser le commerce international dans un contexte d’ouverture des échanges ?</a></li>
+				<li><a href="#eco-th9">Thème 9 : Comment concilier la croissance économique et le développement durable ?</a></li>
+			</ul>
+	</details>
+	
 
-  <p class="intro">
-    Sélectionne une matière pour accéder aux chapitres, synthèses et ressources.
-  </p>
+</nav>
+
+
 
 </header>
 
 <main>
 
-<!-- CARTES DE NAVIGATION -->
-<h2>📚 Matières</h2>
-
-<div class="cards-grid">
-
-  <a class="card" href="#msdgn">
-    <span class="card-icon">💻</span>
-    <span class="card-title">MSDGN</span>
-    <span class="card-desc">Organisation et :
-	<ul>
-		<li>Activité de production</li>
-		<li>Les acteurs</li>
-		<li>La société</li>
-	</ul>
-	</span>
-  </a>
-  
-    <a class="card" href="https://tcous1.github.io/site-eleves/terminale-stmg/msdgn/frederic-m">
-    <span class="card-icon">🟧</span>
-    <span class="card-title">Fréderic M (MSDGN) - Sujet Bac corrigé</span>
-    <span class="card-desc">Diagnostic interne, avantage concurrentiel, style de direction, approche mercatique, seuil de rentabilité, objectif de profitabilité, chaine de valeur, transformations numériques et adaptation RH, RGPD</span>
-  </a>
-  
-    <a class="card" href="https://tcous1.github.io/site-eleves/terminale-stmg/msdgn/top-schuss">
-    <span class="card-icon">🟧</span>
-    <span class="card-title">Top Schuss (MSDGN) - Sujet Bac corrigé</span>
-    <span class="card-desc">Évolution des modes de consommation, choix stratégiques, avantage concurrentiel, RSE, marque employeur, performance globale, analyse FRNG BFR et TN, choix de financement, taux d'évolution, outils numériques et relation client, processus, impact de l'automatisation</span>
-  </a>
-  
-   <a class="card" href="https://tcous1.github.io/site-eleves/terminale-stmg/msdgn/revision-bac">
-    <span class="card-icon">📗</span>
-    <span class="card-title">Fiches révision MSDGN</span>
-    <span class="card-desc">Comprendre l'organisation , diagnostic stratégique, choix stratégiques, mise en oeuvre opérationnelle, analyse de la performance</span>
-  </a>
-  
-
- <a class="card" href="#gf"">
-  <span class="card-icon">
-    <img src="../img/colorations.png	" alt="Coloration / spécialités" width="32" height="32">
-  </span>
-  <span class="card-title">Enseignement spécifique de gesion et finance</span>
-  <span class="card-desc">
-   Règles comptables, analyse de situations d'entreprise, accompagnement à la prise de décision
-  </span>
-</a>
-
-<a class="card" href="#merca">
-  <span class="card-icon">
-    <img src="../img/colorations.png	" alt="Coloration / spécialités" width="32" height="32">
-  </span>
-  <span class="card-title">Enseignement spécifique de mercatique</span>
-  <span class="card-desc">
-    Définition de l'offre, sa distribution et sa communication
-  </span>
-</a>
-
-<a class="card" href="#rh">
-  <span class="card-icon">
-    <img src="../img/colorations.png	" alt="Coloration / spécialités" width="32" height="32">
-  </span>
-  <span class="card-title">Enseignement spécifique de ressources humaines et communication</span>
-  <span class="card-desc">
-   Développement des compétences, QVT et rémunération, cohésion et climat social
-  </span>
-</a>
-
-<a class="card" href="#sig">
-  <span class="card-icon">
-    <img src="../img/colorations.png	" alt="Coloration / spécialités" width="32" height="32">
-  </span>
-  <span class="card-title">Enseignement spécifique de systèmes d’information de gestion</span>
-  <span class="card-desc">
-   Organisation et numérisation, SI et performance, information, action et décision, SI et échange
-  </span>
-</a>
-
-  <a class="card" href="#eco">
-    <span class="card-icon">💰</span>
-    <span class="card-title">Économie</span>
-    <span class="card-desc">Analyse économique</span>
-  </a>
-
-  <a class="card" href="#droit">
-    <span class="card-icon">⚖️</span>
-    <span class="card-title">Droit</span>
-    <span class="card-desc">Cadre juridique</span>
-  </a>
-  
-  <a class="card" href="https://tcous1.github.io/site-eleves/terminale-stmg/grand-oral">
-    <span class="card-icon">🟪</span>
-    <span class="card-title">Préparation au Grand Oral</span>
-    <span class="card-desc">Présentation de l'épreuve, de son déroulement, choisir une problématique avec une mise en tension, se constituer une base de connaissance et quelques conseils</span>
-  </a>
-  
  
-  
+<!--MSDGN-->
+<h1 id="msdgn">MSDGN - Management Sciences de Gestion et numérique</h1>
 
-</div>
-
-<hr>
-
-<h1 id="msdgn">MSDGN</h1>
-
-<h3 id="msdgn-th1">Thème 1 - Les organisations et l'activité de production de biens et services</h3>
+		<h3 id="msdgn-th1">Thème 1 - Les organisations et l'activité de production de biens et services</h3>
 
 <details>
 	<summary><em>Capacité à acquérir - L’élève est capable :</em></summary>
@@ -647,11 +623,9 @@
 		</p>
 </details>
 
-<hr>
-
 <h1 id="specialites-colorations">Spécialités / colorations</h1>
 
-<h2 id="gf">Enseignement spécifique de gestion et finance</h2>
+	<h2 id="gf">Enseignement spécifique de gestion et finance</h2>
 	
 <details>
 	<summary><em>Capacité à acquérir - L’élève est capable :</em></summary>
@@ -1828,12 +1802,11 @@
 		</i>
 		</p>
 </details>
-
 <hr>
+<h1>Économie-Droit</h1>
 
-<h1 id="droit">Droit</h1>
-
-<details>
+	<h2 id="droit">Droit</h2>
+		<details>
 			<summary><em>Les élèves analysent les situations juridiques et construisent une argumentation pertinente. Les élèves sont ainsi capables :</em></summary>
 				<ul>
 					<li>d’analyser des situations juridiques en mobilisant des qualifications juridiques ;</li>
@@ -2235,12 +2208,10 @@
 						</p>
 					</details>
 					<hr>
+			
+	<h2 id="eco">Économie</h2>		
 
-<hr>
-
-<h1 id="eco">Économie</h1>
-
-<details>
+		<details>
 			<summary><em>Dans le cadre de cet enseignement d’économie, l’élève doit développer les capacités suivantes :</em></summary>
 				<ul>
 					<li>rechercher une information ou des statistiques pertinentes dans des documents fiables (lire et comprendre le document quelle que soit sa forme, trier, classer et valider les informations). Dans le cas de documents statistiques, il s’agit par exemple d’être capable d’analyser et d’interpréter des graphiques de différents formats (graphiques statistiques, hiérarchiques ou de tendances, histogrammes, nuages de points, etc.) et de mobiliser les données observées pour calculer de nouvelles statistiques (cf. valeur ajoutée, coût marginal) ;</li>
@@ -2576,10 +2547,8 @@
 						L’éducation et la formation constituent un des premiers moteurs du développement économique des pays et de lutte contre la pauvreté.						
 						</p>
 					</details>		
-
-<hr>
-
-
+			
+					<hr>
 
 </main>
 
