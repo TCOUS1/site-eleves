@@ -2,18 +2,100 @@
 <html lang='fr'>
 
 <head>
-	<meta charset='UTF-8'>
-	<title>seconde</title>
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" href="../fonts.css">
-	<link rel="stylesheet" href="../style.css">
-	<script src="../accessibility.js"></script>
-	<script src="../enseignant.js"></script>
+  <meta charset='UTF-8'>
+  <title>Seconde – Ressources pédagogiques</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="../fonts.css">
+  <link rel="stylesheet" href="../style.css">
+  <script src="../accessibility.js" defer></script>
+  <style>
+    /* ── Grille de cartes ── */
+    .cards-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+      gap: 16px;
+      margin: 24px 0;
+    }
+
+    .card {
+      background: var(--card-bg);
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      padding: 20px 16px;
+      text-decoration: none;
+      color: var(--text);
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+      transition: border-color 0.2s, transform 0.15s;
+      border-left: 4px solid var(--primary);
+    }
+
+    .card:hover {
+      border-color: var(--primary);
+      transform: translateY(-3px);
+      color: var(--text);
+    }
+
+    .card-icon {
+      font-size: 1.8em;
+      line-height: 1;
+    }
+
+    .card-title {
+      font-weight: 700;
+      font-size: 1em;
+      color: var(--title-h2);
+    }
+
+    .card-desc {
+      font-size: 0.88em;
+      color: var(--muted);
+      line-height: 1.4;
+    }
+
+    /* ── Bandeau de niveau ── */
+    .level-banner {
+      background: var(--banner-bg);
+      color: var(--banner-text);
+      border-radius: 8px;
+      padding: 18px 20px;
+      margin: 20px 0;
+      display: flex;
+      align-items: center;
+      gap: 16px;
+    }
+
+    .level-banner .level-emoji {
+      font-size: 2.2em;
+      flex-shrink: 0;
+    }
+
+    .level-banner .level-text p {
+      margin: 4px 0 0;
+      font-size: 0.95em;
+      opacity: 0.85;
+    }
+
+    /* ── Section titre ── */
+    .section-label {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      margin: 32px 0 12px;
+      padding-bottom: 8px;
+      border-bottom: 2px solid var(--border);
+    }
+
+    .section-label h2 {
+      margin: 0;
+      border: none;
+      padding: 0;
+    }
+  </style>
 </head>
 
-
 <body>
-
 
 <!-- ACCESSIBILITÉ -->
 <div id="accessibility-menu">
@@ -24,27 +106,81 @@
   <button onclick="resetAccessibility()">🔄</button>
 </div>
 
-<main>
-<nav class="top-nav">
-    <a href="../index.html">Accueil</a>
-    <span>|</span>
-    <a href="../index.html">Retour</a>
-	<span>|<span>
-	<a href="../acces-enseignant.html">Espace enseignant</a>
+<!-- HEADER -->
+<header class="page-header">
+  <nav class="top-nav">
+    <a href="../index.html">← Accueil</a>
   </nav>
-  
 
-<h1>Seconde Générale et Technologique</h1>
-<h2>Sciences Numériques et Technologies - SNT</h2>
-<ul>
-	<li>Internet</li>
-	<li>Le Web</li>
-	<li>Les réseaux sociaux</li>
-	<li>Les données structurées et leur traitement</li>
-	<li>Localisation, cartographie et mobilité</li>
-	<li>Informatique embarquée et objets connectés</li>
-	<li>Photographie numérique</li>
-</ul>
+  <div class="level-banner">
+    <div class="level-emoji">🎓</div>
+    <div class="level-text">
+      <strong style="font-size:1.3em">Seconde Générale et Technologique</strong>
+      <p>Retrouve ici toutes les ressources de cours, exercices et activités mises à ta disposition.</p>
+    </div>
+  </div>
+</header>
+
+<main>
+
+  <!-- SNT -->
+  <div class="section-label">
+    <h2>💻 Sciences Numériques et Technologie</h2>
+  </div>
+
+  <div class="cards-grid">
+
+    <a class="card" href="snt/01-internet/index.html">
+      <span class="card-icon">🌐</span>
+      <span class="card-title">Internet</span>
+      <span class="card-desc">Fonctionnement du réseau, protocoles, histoire d'internet.</span>
+    </a>
+
+    <a class="card" href="snt/02-web/index.html">
+      <span class="card-icon">🕸️</span>
+      <span class="card-title">Le Web</span>
+      <span class="card-desc">Pages web, HTML, moteurs de recherche, vie privée en ligne.</span>
+    </a>
+
+    <a class="card" href="snt/03-reseaux-sociaux/index.html">
+      <span class="card-icon">👥</span>
+      <span class="card-title">Réseaux sociaux</span>
+      <span class="card-desc">Graphes, influence, identité numérique, bulles de filtre.</span>
+    </a>
+
+    <a class="card" href="snt/04-donnees-structurees/index.html">
+      <span class="card-icon">📊</span>
+      <span class="card-title">Données structurées</span>
+      <span class="card-desc">Collecte, traitement et représentation des données.</span>
+    </a>
+
+    <a class="card" href="snt/05-localisation-cartographie/index.html">
+      <span class="card-icon">🗺️</span>
+      <span class="card-title">Localisation & cartographie</span>
+      <span class="card-desc">GPS, géolocalisation, open data cartographique.</span>
+    </a>
+
+    <a class="card" href="snt/06-objets-connectes/index.html">
+      <span class="card-icon">📡</span>
+      <span class="card-title">Objets connectés</span>
+      <span class="card-desc">IoT, capteurs, enjeux de sécurité et de vie privée.</span>
+    </a>
+
+    <a class="card" href="snt/07-photographie-numerique/index.html">
+      <span class="card-icon">📷</span>
+      <span class="card-title">Photographie numérique</span>
+      <span class="card-desc">Codage des images, compression, métadonnées.</span>
+    </a>
+
+    <a class="card" href="snt/pix/index.html">
+      <span class="card-icon">🏅</span>
+      <span class="card-title">PIX</span>
+      <span class="card-desc">Certification des compétences numériques.</span>
+    </a>
+
+  </div>
+
 </main>
+
 </body>
 </html>
