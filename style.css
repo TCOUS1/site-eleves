@@ -152,6 +152,90 @@ main {
   opacity: 0.8;
 }
 
+/* ── Grille de cartes ── */
+    .cards-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+      gap: 16px;
+      margin: 24px 0;
+    }
+
+    .card {
+      background: var(--card-bg);
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      padding: 20px 16px;
+      text-decoration: none;
+      color: var(--text);
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+      transition: border-color 0.2s, transform 0.15s;
+      border-left: 4px solid var(--primary);
+    }
+
+    .card:hover {
+      border-color: var(--primary);
+      transform: translateY(-3px);
+      color: var(--text);
+    }
+
+    .card-icon {
+      font-size: 1.8em;
+      line-height: 1;
+    }
+
+    .card-title {
+      font-weight: 700;
+      font-size: 1em;
+      color: var(--title-h2);
+    }
+
+    .card-desc {
+      font-size: 0.88em;
+      color: var(--muted);
+      line-height: 1.4;
+    }
+
+    /* ── Bandeau de niveau ── */
+    .level-banner {
+      background: var(--banner-bg);
+      color: var(--banner-text);
+      border-radius: 8px;
+      padding: 18px 20px;
+      margin: 20px 0;
+      display: flex;
+      align-items: center;
+      gap: 16px;
+    }
+
+    .level-banner .level-emoji {
+      font-size: 2.2em;
+      flex-shrink: 0;
+    }
+
+    .level-banner .level-text p {
+      margin: 4px 0 0;
+      font-size: 0.95em;
+      opacity: 0.85;
+    }
+
+    /* ── Section titre ── */
+    .section-label {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      margin: 32px 0 12px;
+      padding-bottom: 8px;
+      border-bottom: 2px solid var(--border);
+    }
+
+    .section-label h2 {
+      margin: 0;
+      border: none;
+      padding: 0;
+    }
+
 /* ==========================================
    TITRES
 ========================================== */

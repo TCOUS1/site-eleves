@@ -2,17 +2,15 @@
 <html lang='fr'>
 
 <head>
-	<meta charset='UTF-8'>
-	<title>Accueil</title>
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" href="fonts.css">
-	<link rel="stylesheet" href="style.css">
-	<script src="accessibility.js"></script>
-	<script src="../enseignant.js"></script>
+  <meta charset='UTF-8'>
+  <title>Accueil – Ressources pédagogiques</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="fonts.css">
+  <link rel="stylesheet" href="style.css">
+  <script src="accessibility.js" defer></script>
 </head>
 
 <body>
-
 
 <!-- ACCESSIBILITÉ -->
 <div id="accessibility-menu">
@@ -23,42 +21,66 @@
   <button onclick="resetAccessibility()">🔄</button>
 </div>
 
-
 <!-- HEADER -->
 <header class="page-header">
 
   <nav class="top-nav">
-    <a href="index.html">Accueil</a>
-    <span>|</span>
-    <a href="../index.html">Retour</a>
-	<span>|<span>
-	<a href="acces-enseignant.html">Espace enseignant</a>
+    <a href="acces-enseignant.html">🔒 Espace enseignant</a>
   </nav>
-  
-   <p class="intro">
-    Bienvenue sur l’espace de ressources pour élèves de
-    <strong>Thibaud Cousin</strong>.<br><br>
-    Cliquez sur les liens ci-dessous pour accéder aux ressources mises à votre disposition dans le cadre des enseignements.
-  </p>
- 
- <hr>
-  
-  
-<nav class="menu-programme">
-  <h2>📚 Accès rapide</h2>
 
-	<ul>
-		<li><a href="https://tcous1.github.io/site-eleves/seconde">Classe de 2nde - SNT</a></li>
-		<li><a href="https://tcous1.github.io/site-eleves/premiere-stmg">Classe de 1re STMG</a></li>
-		<li><a href="https://tcous1.github.io/site-eleves/terminale-stmg">Classe de Tle STMG</a></li>
-		<li><a href="https://tcous1.github.io/site-eleves/bts-gpme">Classe de BTS GPME</a></li>
-	</ul>
-</nav>
+  <div class="top-banner">
+    <span class="banner-main">Ressources pédagogiques</span>
+    <span class="banner-sub">Thibaud Cousin — Lycée &amp; BTS</span>
+  </div>
+
+  <p class="intro">
+    Bienvenue ! Sélectionne ta classe ci-dessous pour accéder aux ressources
+    de cours, exercices et activités mises à ta disposition.
+  </p>
 
 </header>
 
 <main>
 
+  <!-- LYCÉE -->
+  <h2>🏫 Lycée</h2>
+
+  <div class="cards-grid">
+
+    <a class="card" href="seconde/index.html">
+      <span class="card-icon">💻</span>
+      <span class="card-title">2nde</span>
+      <span class="card-desc">Sciences Numériques et Technologie (SNT)</span>
+    </a>
+
+    <a class="card" href="premiere-stmg/index.html">
+      <span class="card-icon">📈</span>
+      <span class="card-title">1re STMG</span>
+      <span class="card-desc">Management · Sciences de gestion &amp; numérique · Droit · Économie</span>
+    </a>
+
+    <a class="card" href="terminale-stmg/index.html">
+      <span class="card-icon">🎯</span>
+      <span class="card-title">Terminale STMG</span>
+      <span class="card-desc">MSDGN · Droit · Économie · Spécialités</span>
+    </a>
+
+  </div>
+
+  <!-- BTS -->
+  <h2>🎓 BTS</h2>
+
+  <div class="cards-grid">
+
+    <a class="card" href="bts-gpme/index.html">
+      <span class="card-icon">🏢</span>
+      <span class="card-title">BTS GPME</span>
+      <span class="card-desc">Gestion de la PME · GRCF · Gestion des risques · Odoo · Excel</span>
+    </a>
+
+  </div>
+
 </main>
+
 </body>
 </html>
