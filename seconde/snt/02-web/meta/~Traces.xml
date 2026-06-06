@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<trace><start t="06/06/26 11:07:15"/><l t="Warning" d="06/06/26 11:07:18"><message type="Warning" ts="1780736838613" appCtx="chain" thread="ForkJoinPool-1-worker-1" desc="Erreur - aucun item n'a été saisi"/></l><end t="06/06/26 11:07:19"/></trace>
