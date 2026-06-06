@@ -1,0 +1,235 @@
+{"c":"co/stmg-03.html","e":"co/stmg-05.html","b":"co/stmg-02.html","a":"co/stmg-01.html","d":"co/stmg-04.html"}
+["2","1"]
+{"wordPattern":"\\d+(?:[,.]\\d+)?|[^\\u0000-/:-@\\[-`{-\\u00A0]+(?:[-][^\\u0000-/:-@\\[-`{-\\u00A0]+)?","filters":[{"type":"excludeShortWords","forWords":"\\d+","min":1},{"type":"excludeShortWords","forWords":"\\D+","min":3},{"type":"cutLongWords","max":20},{"type":"lowerCase"},{"type":"ignoreWords","words":{"fois":1,"notre":1,"est":1,"vont":1,"fait":1,"avoir":1,"mais":1,"mon":1,"ici":1,"tels":1,"être":1,"des":1,"maintenant":1,"son":1,"sont":1,"depuis":1,"soyez":1,"les":1,"parce":1,"avant":1,"été":1,"par":1,"vous":1,"peu":1,"seulement":1,"pas":1,"pourquoi":1,"tes":1,"sans":1,"ceux":1,"dans":1,"nous":1,"donc":1,"ils":1,"tandis":1,"voient":1,"tellement":1,"hors":1,"étions":1,"avec":1,"très":1,"bon":1,"même":1,"que":1,"faites":1,"qui":1,"plupart":1,"sien":1,"aucuns":1,"elle":1,"sous":1,"ces":1,"sur":1,"ton":1,"devrait":1,"car":1,"aussi":1,"doit":1,"mes":1,"quand":1,"encore":1,"peut":1,"ses":1,"leur":1,"quelles":1,"quels":1,"pour":1,"trop":1,"alors":1,"tout":1,"tous":1,"chaque":1,"quelle":1,"cela":1,"comment":1,"votre":1,"autre":1,"comme":1,"quel":1,"étaient":1,"font":1}},{"type":"filterAccentedLatinLetters"}]}
+daller	a.01
+faire	a.01	b.01
+belles	e.01
+adaptee	e.01
+4	d.01
+5	d.02
+eleves	a.02	b.04	c.01
+differente	b.01
+choisissent	c.01
+lannee	d.01
+notes	d.01
+viennent	e.01
+oriente	b.01
+discrimination	a.10
+mieux	b.02
+controle	d.01
+pas	a.01
+faux	b.04
+projets	b.01
+poubelle	a.01
+naura	b.01
+applique	b.01
+dinformation	c.01
+theorique	b.01
+travaille	a.01
+moral	c.01	d.01
+rien	a.01	b.01
+cle	d.10
+eps	c.01	d.01
+travaillent	b.01
+surtout	b.01
+concret	b.01
+nouvelles	b.01
+projet	b.01	e.01
+mauvaise	e.01
+question	a.01
+epreuve	d.01
+ecole	b.01
+correspond	b.01
+voir	b.01
+loral	b.01	d.01
+voie	a.01	e.03
+outils	c.01
+eux	b.01
+terminales	d.01
+cancres	a.01
+forme	b.01
+repondent	a.01
+donnees	c.01
+quen	e.01
+ecrit	d.01
+utiles	d.01
+eleve	b.02
+meilleur	b.02
+les	a.01
+dune	e.02
+injustes	e.01
+reel	b.01
+capables	b.01
+lesquelles	b.01
+histoire-geographie	c.01
+pouvaient	b.01
+realite	b.10
+technologiques	c.01	e.01
+etudes	a.01	d.02	e.01
+davantage	e.01
+nest	e.01
+cest	a.03	b.01	e.01
+marketing	c.01
+philosophie	d.01
+permettent	e.01
+administration	c.01
+organisation	c.01
+prepas	b.01
+generales	d.01
+sciences	c.02
+enseignements	c.02
+difficulte	b.03
+reussir	b.03
+souvent	a.02	b.01	e.01
+dapprendre	e.01
+retenir	d.10	e.10
+impossible	a.01
+systemes	c.01
+reussites	e.01
+mercatique	c.01	d.01
+classe	a.01
+resultats	b.01
+premiere	c.10	d.01
+serait	e.01
+detudes	b.01
+disciplines	b.01	c.10	d.01
+anglais	c.01
+travailler	b.01
+remplacees	b.01
+histoire-geo	d.01
+demande	b.01
+comprendre	c.02
+specifique	d.01
+bien	b.01
+enseignement	b.01	c.01	d.02
+dossier	b.03
+facon	e.01
+fonctionne	c.01
+quon	a.01
+droit	b.01	c.02
+facilite	e.01
+demotive	b.01
+parfois	e.01
+toujours	b.01
+economie	c.02
+quun	b.01
+seule	e.01
+licence	b.01
+stereotypes	a.10
+profil	b.02
+aujourdhui	e.01
+quest-ce	a.01
+deleves	e.01
+dapprentissage	b.01
+mauvais	b.01
+dcg	b.01
+continu	d.01
+general	b.04
+lv2	c.01
+chez	b.01
+bac	b.01	d.10
+entreprise	c.01
+terminale	c.10
+perdu	b.01
+profils	e.01
+gardent	c.01
+maths	d.01
+civique	c.01	d.01
+gestion	c.04	e.01
+parcoursup	b.01
+certaines	b.01	e.01
+simplement	b.01
+droit-economie	d.01
+justement	b.01
+gf	d.01
+leleve	b.01
+grand	d.01
+une	a.01	b.01	c.02	e.01
+etiquettes	b.01
+epreuves	d.11
+management	b.01	c.02
+vers	b.01
+leconomie	b.01	c.01
+contrats	c.01
+selon	e.01
+entreprises	c.01	e.01
+travail	b.02
+dautres	b.01
+exercice	b.10
+le	b.01
+oral	d.02
+francais	c.01	d.01
+prepa	b.01
+communication	b.01	c.02	e.01
+combine	d.01
+plus	b.03
+faibles	b.02
+obtenir	b.01
+noble	e.01
+nuls	a.01
+recrutent	b.01
+specialite	c.01	d.01
+meprisantes	e.01
+puis	b.01	c.01
+on	a.01	b.02
+lois	c.01
+concretes	d.01
+discours	e.01
+depend	b.01
+prejuges	a.10
+onisep	b.01
+gestion-finance	c.01
+anciens	e.01
+coef	d.06
+14	d.01
+16	d.02
+fonctionnement	c.01
+association	c.01
+ressources	c.02
+generaux	c.01
+connaissance	e.01
+repondre	a.01
+bts	b.01
+40	d.01
+but	b.01
+entend	a.01
+matieres	b.01	d.01
+formations	b.01
+monde	d.01
+60	d.01
+vaut	b.01
+numerique	b.01	c.03	e.01
+recherchent	e.01
+idee	e.01
+commerce	b.01	e.01
+filiere	b.01	e.01
+juste	b.01
+beaucoup	e.01
+falloir	b.01
+mathematiques	c.01
+lidee	d.10
+humaines	c.02
+parle	a.01
+aller	b.01
+stmg	a.03	b.08	c.10	d.11	e.22
+generale	e.02
+laquelle	e.01
+ect	b.02
+apres	a.01	b.02
+competences	d.01
+choisir	e.12
+cliches	e.01
+lacunes	b.01
+comptent	d.01
+langues	d.01
+cas	d.01
+paroles	e.01
+toute	d.01
+fondamental	d.10	e.10
+cette	a.01
+existent	b.01
+superieures	a.01	d.01
+professionnel	d.01
+groupe	b.01
+sepanouissent	e.01
+animaux	a.01
