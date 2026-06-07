@@ -5,6 +5,7 @@ daller	a.01
 faire	a.01	b.01
 belles	e.01
 adaptee	e.01
+1	d.02
 4	d.01
 5	d.02
 eleves	a.02	b.04	c.01
@@ -35,6 +36,7 @@ surtout	b.01
 concret	b.01
 nouvelles	b.01
 projet	b.01	e.01
+ere	d.01
 mauvaise	e.01
 question	a.01
 epreuve	d.01
@@ -76,7 +78,7 @@ administration	c.01
 organisation	c.01
 prepas	b.01
 generales	d.01
-sciences	c.02
+sciences	c.02	d.03
 enseignements	c.02
 difficulte	b.03
 reussir	b.03
@@ -84,9 +86,11 @@ souvent	a.02	b.01	e.01
 dapprendre	e.01
 retenir	d.10	e.10
 impossible	a.01
+sdgn	d.01
+msdgn	d.02
 systemes	c.01
 reussites	e.01
-mercatique	c.01	d.01
+mercatique	c.01
 classe	a.01
 resultats	b.01
 premiere	c.10	d.01
@@ -99,7 +103,6 @@ remplacees	b.01
 histoire-geo	d.01
 demande	b.01
 comprendre	c.02
-specifique	d.01
 bien	b.01
 enseignement	b.01	c.01	d.02
 dossier	b.03
@@ -129,25 +132,24 @@ lv2	c.01
 chez	b.01
 bac	b.01	d.10
 entreprise	c.01
-terminale	c.10
+terminale	c.10	d.01
 perdu	b.01
 profils	e.01
 gardent	c.01
 maths	d.01
 civique	c.01	d.01
-gestion	c.04	e.01
+gestion	c.04	d.03	e.01
 parcoursup	b.01
 certaines	b.01	e.01
 simplement	b.01
 droit-economie	d.01
 justement	b.01
-gf	d.01
 leleve	b.01
 grand	d.01
 une	a.01	b.01	c.02	e.01
 etiquettes	b.01
 epreuves	d.11
-management	b.01	c.02
+management	b.01	c.02	d.02
 vers	b.01
 leconomie	b.01	c.01
 contrats	c.01
@@ -190,6 +192,7 @@ generaux	c.01
 connaissance	e.01
 repondre	a.01
 bts	b.01
+mana	d.01
 40	d.01
 but	b.01
 entend	a.01
@@ -198,7 +201,7 @@ formations	b.01
 monde	d.01
 60	d.01
 vaut	b.01
-numerique	b.01	c.03	e.01
+numerique	b.01	c.03	d.03	e.01
 recherchent	e.01
 idee	e.01
 commerce	b.01	e.01
