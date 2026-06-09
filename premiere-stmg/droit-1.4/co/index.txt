@@ -1,0 +1,865 @@
+{"j":"co/droit-1-4-07.html","g":"co/droit-1-4-04.html","a":"co/droit-1-4_1.html","c":"co/droit-1-4_4.html","d":"co/droit-1-4-01.html","e":"co/droit-1-4-02.html","h":"co/droit-1-4-05.html","f":"co/droit-1-4-03.html","i":"co/droit-1-4-06.html","b":"co/droit-1-4_2.html"}
+["1","2"]
+{"wordPattern":"\\d+(?:[,.]\\d+)?|[^\\u0000-/:-@\\[-`{-\\u00A0]+(?:[-][^\\u0000-/:-@\\[-`{-\\u00A0]+)?","filters":[{"type":"excludeShortWords","forWords":"\\d+","min":1},{"type":"excludeShortWords","forWords":"\\D+","min":3},{"type":"cutLongWords","max":20},{"type":"lowerCase"},{"type":"ignoreWords","words":{"fois":1,"notre":1,"est":1,"vont":1,"fait":1,"avoir":1,"mais":1,"mon":1,"ici":1,"tels":1,"être":1,"des":1,"maintenant":1,"son":1,"sont":1,"depuis":1,"soyez":1,"les":1,"parce":1,"avant":1,"été":1,"par":1,"vous":1,"peu":1,"seulement":1,"pas":1,"pourquoi":1,"tes":1,"sans":1,"ceux":1,"dans":1,"nous":1,"donc":1,"ils":1,"tandis":1,"voient":1,"tellement":1,"hors":1,"étions":1,"avec":1,"très":1,"bon":1,"même":1,"que":1,"faites":1,"qui":1,"plupart":1,"sien":1,"aucuns":1,"elle":1,"sous":1,"ces":1,"sur":1,"ton":1,"devrait":1,"car":1,"aussi":1,"doit":1,"mes":1,"quand":1,"encore":1,"peut":1,"ses":1,"leur":1,"quelles":1,"quels":1,"pour":1,"trop":1,"alors":1,"tout":1,"tous":1,"chaque":1,"quelle":1,"cela":1,"comment":1,"votre":1,"autre":1,"comme":1,"quel":1,"étaient":1,"font":1}},{"type":"filterAccentedLatinLetters"}]}
+caracteres	a.10	c.10	i.12
+analyse	f.10
+faire	i.30
+notamment	c.10	f.10	i.20
+financiere	d.10
+vie	b.10	c.20	d.20	e.40	g.63	h.20
+conformer	f.10
+changent	f.20
+tel	f.20
+utilise	f.20	g.10	j.20
+juridiques	i.10
+familiaux	d.10	e.51
+est-a	i.10
+necessaires	f.10
+europeen	f.10
+adapter	i.10
+loyale	f.10
+viole	g.10	h.10
+cour	i.10
+victime	d.10
+insaisissable	d.50	g.10
+extra-patrimoniaux	d.01	e.10
+standards	e.10
+1	f.20
+innovations	j.10
+pouvoir	i.20
+5	f.51
+6	f.71
+8	g.10
+9	g.10
+statistiques	f.20
+accessible	g.10
+nabil	i.10
+revendications	e.10
+exclusif	j.30
+aupres	j.10
+opposition	f.10
+envies	i.10
+aspect	h.01
+oeuvre	d.10	f.10	j.10
+seul	c.10
+vraies	d.10
+explicites	f.10
+femme	f.10
+liceite	f.21
+variees	i.10
+discute	g.10
+intrusion	g.10
+police	i.10
+missions	f.10
+achete	d.10
+information	f.10	i.10
+citoyens	e.10
+garde	e.20
+particulierement	c.10	j.20
+souhaite	e.10
+evidence	i.10
+brevete	j.20
+alinea	f.10
+sexe	d.10
+mesures	f.50
+pertinentes	f.10
+discrimination	d.10
+loyaute	f.10
+oeuvres	j.10
+famille	e.10
+appartement	i.20
+relatives	a.10
+respect	a.10	b.10	c.20	f.10	g.33	h.11
+article	f.92	g.20	i.10
+livre	d.10
+organiser	f.10
+degats	f.10
+caracteristique	i.10
+fuite	f.10
+brevet	i.10	j.20
+yanis	d.10	e.10
+toilettes	g.10
+didentifier	a.40
+constituent	a.10	c.10
+constater	i.10
+cesser	i.10
+inexactes	f.10
+surveillance	f.10	g.10
+responsabilite	i.30
+membres	e.10
+utilisateurs	f.50	g.10
+sociale	f.10
+identifiant	f.10
+mobile	f.10
+activites	g.10
+applique	f.10
+societe	a.10
+service	f.20
+4.1	b.01
+personnelle	f.30	g.10
+personnel	a.20	b.10	c.30	d.10	f.82	g.10
+personnes	a.10	f.20	h.40
+reproduction	j.10
+telephoniques	f.10
+dimmatriculation	f.10
+litteraires	j.10
+occasionne	i.10
+focus	b.10	i.01
+marche	j.10
+locaux	f.10
+tenues	f.10
+e-mail	f.10
+vendus	j.10
+explique	h.10
+illegale	g.10
+transparence	f.10
+obsoletes	f.10
+effacement	f.10
+moins	f.20
+cibler	f.10
+juridique	a.20	c.10	i.10
+distinguer	a.20
+puisse	f.20
+engagee	j.10
+economique	a.10
+poursuivis	f.10
+medicales	f.10	g.30
+sauvegarder	f.10
+protection	a.30	b.10	c.30	d.20	f.31
+discriminee	d.10
+entrer	i.10
+regler	e.10
+regles	a.10
+avril	i.20
+concret	d.10
+cameras	f.10	g.10
+reelle	d.10
+exactitude	f.20
+fondamentaux	f.10
+decisions	i.10
+odeurs	i.10
+ordinateur	i.10
+question	d.90	e.80	f.90	g.90	h.40	i.90	j.90
+reste	h.10
+premier	f.10	i.10
+apprehendee	j.10
+locales	f.10
+regard	f.40
+dexpliquer	a.10
+livraison	f.10
+desagrement	i.20
+employee	e.10
+mettre	f.10
+nee	f.10
+exploitation	j.20
+confidentiel	g.10
+copies	j.20
+etc	d.10
+motif	d.10
+complement	d.01
+municipalite	f.10
+employes	f.10	g.20
+donnee	a.10	f.50
+voix	f.10
+domaine	i.10
+letude	j.10
+portabilite	f.10
+condition	f.10
+inventions	j.10
+obligation	f.10
+sociaux	e.61	h.10
+informees	h.10
+indique	i.10
+ensemble	f.10
+prises	f.20	h.10
+sanctionnee	i.10
+encadree	i.10
+lutilisation	a.10	c.10
+extra	b.01
+chose	i.10
+cadre	g.10
+bruits	i.10
+lexemple	j.10
+direction	i.10
+formelles	c.10
+ans	e.10
+decides	f.20
+accord	h.10
+inconscient	f.10
+declarations	f.10
+forme	f.10
+possibilite	f.20
+donnees	a.20	b.10	c.40	f.92
+saisi	d.10
+application	f.20
+nuisances	i.20
+engage	j.10
+objectif	d.10
+etudies	c.10
+liberte	d.90
+ecrit	d.10	h.10	j.20
+demarches	i.10
+eleve	a.10
+proprietaire	i.10
+identification	f.10
+perte	f.10
+privee	b.10	c.20	e.20	g.53	h.20
+medecin	g.30
+indirectement	f.10
+app	f.20
+extrapatrimonial	a.10	d.20	g.20
+dune	a.10	f.20	i.10
+quune	f.10	i.10
+limage	c.20	f.10	h.01
+photographe	h.20
+salaire	e.20
+evoluent	f.20
+personnels	g.10	h.10
+importante	j.10
+difference	d.10
+medicament	j.20
+civile	i.10
+industrielle	j.70
+lesquelles	f.50
+logiciel	i.10
+numero	f.30
+personnalite	d.10	e.51
+accident	d.10
+complementaires	f.10
+autorisation	g.10	j.20
+inalienable	d.60
+illustrer	c.10
+incompatible	f.30
+notion	i.20	j.20
+generer	d.10
+fruits	i.10
+divorce	e.10
+publique	e.10	f.10
+situation	a.10	d.20	h.10	i.10
+etudes	d.10
+autorisee	a.10	e.10	f.80	j.10
+pecuniaire	d.11
+integrite	e.10	f.20
+davantage	i.10
+mesure	f.20
+consultees	h.10
+services	f.20	j.10
+attributs	a.10	i.21
+demander	f.90
+cest	i.10
+peuvent	f.10	i.10
+religion	d.30
+principe	d.10	f.50	i.20
+marketing	f.20
+permettent	a.10	e.10
+autorises	g.10
+droits	a.70	b.31	c.30	d.84	e.92	f.40	g.10	i.21	j.30
+dauteur	a.10	i.10	j.60
+constats	i.10
+relations	e.10
+abusus	i.50
+mois	i.20
+medical	g.10
+vendre	d.10	f.10	i.10	j.30
+prendre	e.10	g.10	h.10
+etroitement	h.10
+lit	g.10
+entreprendre	i.10
+soins	f.10
+libertes	f.30
+occupants	g.10
+visant	i.10	j.10
+justifiez	d.50	e.40	f.90	g.80	h.20	i.30	j.50
+sanctionnees	i.10
+accidentelle	f.10
+garanti	f.10	g.10
+protege	e.10	j.10
+excedant	f.10	i.10
+designe	i.10
+detient	j.10
+telephone	f.20
+besoins	i.10
+drone	g.10
+caracteristiques	b.10	d.11
+technologies	c.10
+appropriee	f.20
+deposee	a.10
+securiser	f.10
+recourir	i.10
+expliquez	g.10
+aux	a.20	d.10	e.30	f.90	h.10	i.20
+physique	f.40
+legale	f.20	i.10
+aspects	e.10	g.01
+video	f.10
+non	a.10	d.10	e.10	f.90	g.90	h.20	j.10
+ethnique	d.10
+nom	f.30	i.10
+exactes	f.20
+annonce	g.10
+plaint	i.10
+particulier	d.10
+suivantes	f.10
+patrimoine	a.20	d.10	g.10
+rgpd	f.22
+vote	e.10
+cnil	f.10
+convention	g.10
+race	d.10
+non-discrimination	d.20
+resultats	g.10
+exercer	i.10
+mentionne	i.10
+chacun	i.10
+ensuite	f.10
+abstraite	d.10
+occupant	i.10
+applications	f.60
+contrat	f.20	i.10
+compris	d.20	f.10
+decide	d.10	i.30
+autant	f.10
+recoit	d.10
+demande	f.20	g.10	h.10
+hopital	f.10	g.10
+legitimes	f.30
+kerem	i.10
+identifiee	f.20
+liees	a.10
+bien	g.10	i.90	j.20
+gendarmerie	i.10
+identifier	j.20
+images	h.10
+identifies	i.10
+evalue	d.10
+adresses	f.10
+excessives	i.10
+familiale	g.10
+conservees	f.50
+facon	f.10
+imprescriptible	d.50	g.10
+marque	a.20	i.10	j.80
+individuelle	d.20
+auteur	d.20	j.40
+maries	e.10
+differentes	i.10
+determinee	j.20
+explicite	f.20	h.10
+droit	a.50	b.20	c.40	d.90	e.50	f.60	g.90	h.63	i.96	j.90
+participation	e.10
+loi	i.20
+vetements	i.10
+adequates	f.20
+medicaux	g.20
+obtenu	j.10
+principes	f.01
+limitees	f.10
+assure	g.10
+juge	i.10
+klara	d.10
+categories	b.10	d.10	e.01
+transfere	i.10
+percevoir	i.10
+nouvelle	j.10
+scientifique	f.20
+tentative	i.20
+peux	f.80
+recherche	f.20
+corporels	a.10	i.12
+permettant	f.10
+prevalent	f.10
+evenement	h.10
+plaque	f.10
+issam	d.10
+quun	i.10
+fournisseur	f.20
+matiere	f.10
+donne	f.10
+visent	d.10	e.10
+commandes	f.10
+arrete	d.10
+elire	e.10
+ainsi	f.20	i.10
+maison	d.10	g.20	i.20
+jusque-la	i.10
+vendant	i.10
+seule	f.10
+electronique	f.10
+exclusivement	a.10	f.10
+amiable	i.20
+inventeur	j.10
+exigent	f.10
+interesse	i.10
+politiques	e.51
+quest-ce	f.10	i.10
+reponse	d.50	e.40	f.90	g.80	h.20	i.30	j.50
+produire	j.30
+residents	f.10
+utilisant	i.10
+dont	f.10
+traitement	f.92
+limitation	f.30
+produits	f.10	j.50
+investi	f.10
+part	e.10	i.20
+explication	f.10
+point	f.10
+equitable	e.20
+patient	f.20	g.40
+parc	h.10
+duree	f.10
+initiales	f.20
+propriete	a.20	b.20	d.10	i.76	j.92
+enjeux	a.20	i.10
+introduction	b.10	c.01
+technologie	j.30
+membre	f.10
+ligne	f.40
+causees	i.10
+correspondance	g.10
+marica	e.10
+donnant	j.10
+determinees	f.10
+europeenne	g.10
+administrative	i.10
+domicile	g.20
+participe	e.10
+decents	e.10
+lui	f.10	j.10
+constitue	g.20	h.10	j.10
+complet	i.10
+confidentielles	g.10
+des	f.20
+seront	f.10
+caractere	a.20	b.10	c.30	d.10	f.82
+organisationnelles	f.20
+afin	f.10
+insaisissables	c.10	d.11
+agricole	i.10
+entreprise	e.10	f.90	g.30	j.50
+conscientes	h.10
+dommage	i.10
+volontairement	f.10
+lorsque	f.10
+tiers	f.20	g.20
+chacune	d.10	h.10	i.10
+telle	f.20
+publiques	f.10
+employeur	g.10
+communications	f.10	g.10
+intimite	g.20
+postale	f.10
+notions	c.10
+civil	g.10	i.20
+vitaux	f.20
+somme	g.10
+categorie	e.10	j.10
+necessaire	f.90
+maire	e.10
+systeme	g.10
+possible	i.10
+procedure	j.20
+contrairement	d.10
+pensee	d.20
+questions	e.10
+raisonnables	f.10
+sites	f.60
+ulterieur	f.20
+effacees	f.10
+incessible	g.10
+soumis	f.10
+partage	g.20
+incessibles	d.11
+exemples	f.10
+incorporels	a.10	b.10	i.11	j.01
+legal	f.02
+france	g.10
+messagerie	g.10
+intellectuelle	b.10	j.42
+image	b.10	e.20	h.72
+loyer	i.20
+contrevenant	f.10
+soit	f.10
+absente	i.10
+finalites	f.90
+corporel	i.90
+financer	d.10
+effectue	f.10
+voiture	d.10	i.30
+importance	a.10
+effectuer	i.10
+capable	a.10
+pendant	f.10	j.20
+decouvre	j.10
+toutes	f.10
+contenu	g.10
+signe	i.10
+incorporel	i.90	j.20
+transferer	i.10
+lidentification	f.10
+trouble	a.10	i.80
+autorite	f.10
+client	f.10
+prenom	f.10
+utilisation	h.20
+clara	e.10
+partie	d.10	f.10
+inalienables	c.10
+permission	g.10	h.10
+conserve	f.20	g.10
+une	a.30	c.10	d.70	e.30	f.90	g.60	h.10	i.90	j.90
+respecte	g.30	h.20
+presente	i.10
+principaux	g.01	h.01
+associez	f.10
+partir	f.20
+adresse	f.30
+entrainant	f.10
+concerne	d.40
+vente	f.10	i.10
+newsletter	f.10
+differencier	j.10
+appropriees	f.20
+linformation	c.10
+navigation	f.10
+commerciale	a.20	i.10	j.80
+2024	i.20
+action	j.70
+individuelles	a.10
+rectification	f.10
+conformement	f.20
+meubles	i.10
+realisee	f.10
+tarder	f.10
+conservation	f.20
+ecartee	i.10
+autorise	f.10	g.10
+qualifier	a.10
+filmer	g.10
+travers	c.10	j.10
+intransmissible	g.10
+ulterieurement	f.10
+selon	i.20
+diffusion	h.20
+clients	f.50
+publiees	h.10
+expedier	f.10
+imprescriptibles	c.10	d.11
+contrefacon	j.70
+periode	j.20
+dire	i.10
+travail	d.10	e.30
+louer	i.20
+rectifiees	f.10
+programme	f.10
+municipales	e.10
+yohan	d.10
+cependant	i.10
+maniere	d.20	f.20
+portant	a.10
+decentes	e.10
+acces	f.10	g.10
+actuels	i.10
+amar	e.10
+acheteur	i.20
+louise	e.10
+exercice	e.10	f.10
+extra-patrimonial	d.60	g.10
+enfant	f.10
+paragraphe	f.20
+attache	g.10
+francais	e.10
+codes	i.10
+concernees	f.20	h.10
+dossiers	g.10
+conscience	d.20
+illicite	f.10
+patrimonial	d.90
+usus	i.50
+photos	e.10	g.10	h.40
+opposer	f.20	h.10
+annonces	f.10
+personnelles	f.90	g.10
+connaitre	a.10
+publication	e.10
+prevue	h.10
+manga	f.10
+logo	j.30
+communication	c.10
+enfants	e.20
+residence	i.10
+entre	a.20	e.10	f.10
+repartition	e.20
+porter	i.10
+monetaires	d.10
+voisin	g.20	i.10
+monopole	j.70
+revenus	d.10	f.10
+veux	f.20
+personne	a.20	c.30	d.70	f.90	g.20	h.10	i.40
+appelees	a.10
+origine	d.20	f.10	i.10
+termes	d.10
+plus	f.20	i.10	j.10
+consenti	f.10
+attaches	a.10
+proteger	e.10	f.20	g.20	j.30
+relevant	f.10
+apportees	i.10
+homme	g.10
+reseaux	e.10	h.10
+present	f.10
+distinctif	j.20
+vivant	f.10
+fidelite	f.10
+parents	d.10
+informations	f.80	g.40
+obtient	d.10	h.10	j.10
+code	g.10	i.20
+prend	h.10
+prive	d.30
+anormal	a.10	i.70
+exterieures	g.10
+elles	f.50
+utiliser	f.40	i.20
+indemnisation	d.20
+justification	f.10
+plusieurs	f.10	i.10
+met	f.10	i.10
+lois	i.10
+execution	f.50
+ville	e.10
+responsable	f.30	i.10
+valeur	d.11
+fins	f.70
+uniquement	g.20
+defendre	j.10
+etablisse	i.10
+concernee	f.70
+dun	f.10
+restent	g.10
+regissent	e.10
+inclut	g.10	j.10
+intransmissibles	d.11
+reconnait	a.10
+composantes	a.10
+possede	i.30
+dignite	e.10
+licite	f.20
+relatifs	f.01
+10	e.10
+anciens	f.10
+15	i.10
+exerce	i.20
+judiciaire	j.20
+ministre	i.10
+archivistiques	f.20
+collecte	f.90
+autorites	f.10	j.10
+mission	f.20
+exemple	f.40	i.10
+fonctionnement	f.10
+prerogatives	a.10
+conditions	e.20	f.10
+interet	f.40
+valable	d.10
+patrimoniaux	a.20	b.11	d.10	i.11
+nouvel	i.10
+25	i.10
+composent	d.10
+association	f.10
+texte	f.02
+repondre	d.90	e.80	f.90	g.90	h.40	i.90	j.90
+purification	j.20
+identifiable	f.10
+executer	f.10
+herite	d.10
+porte	f.10
+collectees	f.20
+destruction	f.10
+situations	d.10	h.10	i.20
+participants	h.20
+interieur	g.20
+celle-ci	f.10
+dappliquer	a.10
+atteinte	a.10	f.10	g.10	h.10
+rapports	i.10
+ont	d.20	f.20	h.20
+legales	f.10
+cassation	i.10
+directement	f.10	i.10
+contacts	f.10
+agent	g.10
+politique	e.10
+aide	f.10
+obligations	a.10	f.10
+relevent	e.10
+plein	i.10
+jour	f.40
+fiscalite	f.10
+decident	e.10
+commissaire	i.10
+remplie	f.10
+urgence	f.10
+revendique	e.10
+courriel	f.10
+conforme	i.10
+soient	f.40
+interets	f.50
+contexte	i.10
+percoit	i.20
+internet	c.10
+numerique	c.10
+dommages	d.10
+specifiques	f.10
+consentement	f.30	g.40	h.50
+deux	d.10
+commerce	f.10
+disposer	i.10
+releve	j.10
+biens	a.30	b.10	d.20	e.20	f.10	i.23	j.01
+lies	a.10	d.10
+definition	d.01	g.01	h.01
+contrevient	f.10
+definissez	f.10	i.10
+vendu	d.30
+inscrivent	f.10
+lieu	i.10
+celle	f.10
+revet	a.10
+illustrees	i.10
+longtemps	f.10
+fiscales	f.10
+camille	d.10
+locataire	i.50
+liee	h.10
+enregistre	j.20
+photographiees	h.20
+transmises	f.20
+nassim	i.10
+transmis	d.50
+compensation	d.10
+89	f.20
+individu	d.10	e.10	g.10	h.10
+appel	i.10
+confere	c.10
+type	i.10
+arbitrairement	d.20
+reglement	f.20	i.20
+traitees	f.80
+effacer	f.20
+extrapatrimoniaux	a.30	b.20	c.10	d.22	e.01
+presence	g.10
+corriger	f.20
+dacces	f.10
+voisinage	a.10	i.80
+indefiniment	f.10
+vivre	d.10
+recevoir	f.10
+raison	d.20
+citoyen	e.10
+elections	e.20	f.10
+longues	f.10
+lors	d.10	e.10	h.10
+transparente	f.10
+installe	g.10
+lorigine	i.10
+identite	c.10	g.10
+oui	f.90	g.80	h.20
+rapportant	f.10
+arbitraire	d.20
+arretes	f.20
+arreter	f.20
+secret	g.10
+protegees	a.10	c.10	g.10
+causes	d.10
+installation	i.10
+normaux	i.10
+eau	j.20
+place	f.10
+sauvegarde	f.10
+precontractuelles	f.10
+intrusions	g.10
+site	f.20
+confidentialite	f.20	g.20
+nont	d.01
+mises	f.10
+correspondances	g.10
+durees	f.10
+leurs	e.10	f.30	h.10
+minimisation	f.10
+permet	h.10	j.10
+principales	b.10	e.01
+subjectifs	a.10	d.21
+privees	g.20
+roman	j.20
+existence	c.10
+croisement	f.10
+divorcer	e.10
+violant	f.20
+existait	i.10
+garantir	e.10	f.20
+reference	j.10
+garantit	f.10	g.10	h.10
+detenu	d.10
+generale	d.10
+laquelle	f.10	j.10
+consequences	a.10
+justice	i.20
+fructus	i.40
+administrer	f.10
+securise	g.10
+doivent	c.10	e.10	f.20
+parmi	a.10	i.10
+dechec	i.10
+citez	f.10
+patients	g.10
+dexploitation	j.50
+indiquez	d.10	f.10	g.10	h.10	i.20	j.10
+materiels	d.10
+branches	d.10
+laissees	c.10
+publicite	f.10
+informant	h.10
+activite	i.10
+contacter	i.10
+particuliere	a.10
+techniques	f.20	j.10
+securite	f.40
+inconvenients	i.10
+informelles	c.10
+artistiques	j.10
+distinct	h.10
+egard	f.10
+public	f.40	h.10
+auquel	f.10
+cas	i.10
+disposant	i.10
+publie	h.10	i.10
+limites	i.11
+crypte	g.10
+contre	e.10	f.20	g.10	j.10
+immobilier	g.10
+toute	f.10	h.10
+fondamental	d.12	e.01	g.01	h.01	i.03	j.01
+demandant	g.10	h.10
+cette	d.90	e.80	f.90	g.90	h.50	i.90	j.90
+competentes	j.10
+agir	a.10
+grave	g.10
+prescrit	d.10
+coordonnees	f.20
+provient	i.10
+professionnel	h.10
+clairement	h.10
+verifier	a.10
+considere	f.10	g.10
+concernant	e.10
+etait	i.10
+e-mails	g.20
+commentaires	h.10
+dernier	g.10
+agit	g.10
+provoque	i.10
+historique	f.20
+requises	f.10
