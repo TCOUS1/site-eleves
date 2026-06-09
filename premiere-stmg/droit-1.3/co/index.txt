@@ -1,0 +1,746 @@
+{"a":"co/droit-1-3_1.html","h":"co/droit-1-3_4.html","j":"co/droit-1-3-05.html","d":"co/droit-1-3-02.html","e":"co/droit-1-3-03.html","b":"co/droit-1-3_2.html","k":"co/droit-1-3-06.html","c":"co/droit-1-3-01.html","g":"co/droit-1-3_3.html","l":"co/droit-1-3_7.html","i":"co/droit-1-3_6.html","f":"co/droit-1-3-04.html","m":"co/droit-1-3-07.html"}
+["2","1"]
+{"wordPattern":"\\d+(?:[,.]\\d+)?|[^\\u0000-/:-@\\[-`{-\\u00A0]+(?:[-][^\\u0000-/:-@\\[-`{-\\u00A0]+)?","filters":[{"type":"excludeShortWords","forWords":"\\d+","min":1},{"type":"excludeShortWords","forWords":"\\D+","min":3},{"type":"cutLongWords","max":20},{"type":"lowerCase"},{"type":"ignoreWords","words":{"fois":1,"notre":1,"est":1,"vont":1,"fait":1,"avoir":1,"mais":1,"mon":1,"ici":1,"tels":1,"être":1,"des":1,"maintenant":1,"son":1,"sont":1,"depuis":1,"soyez":1,"les":1,"parce":1,"avant":1,"été":1,"par":1,"vous":1,"peu":1,"seulement":1,"pas":1,"pourquoi":1,"tes":1,"sans":1,"ceux":1,"dans":1,"nous":1,"donc":1,"ils":1,"tandis":1,"voient":1,"tellement":1,"hors":1,"étions":1,"avec":1,"très":1,"bon":1,"même":1,"que":1,"faites":1,"qui":1,"plupart":1,"sien":1,"aucuns":1,"elle":1,"sous":1,"ces":1,"sur":1,"ton":1,"devrait":1,"car":1,"aussi":1,"doit":1,"mes":1,"quand":1,"encore":1,"peut":1,"ses":1,"leur":1,"quelles":1,"quels":1,"pour":1,"trop":1,"alors":1,"tout":1,"tous":1,"chaque":1,"quelle":1,"cela":1,"comment":1,"votre":1,"autre":1,"comme":1,"quel":1,"étaient":1,"font":1}},{"type":"filterAccentedLatinLetters"}]}
+exception	k.01	m.01
+caracteres	m.10
+mentaux	k.02
+trois	m.02
+deplaces	m.02
+professionnels	m.01
+mince	m.10
+courantes	k.01
+faire	m.02
+statuts	d.02	e.04	j.01	k.02
+eventuellement	j.01
+vie	c.01	k.01
+immobiliers	m.02
+juridiques	a.01	c.03	e.10	i.01
+terrain	m.02
+attribuer	m.01
+subjectif	c.01
+nationalite	e.02
+necessaires	e.01
+mandataire	k.01
+patrimoines	m.01
+insaisissable	m.01
+extra-patrimoniaux	c.01
+1	e.01	f.01	j.01	m.04
+2	f.01	j.01	m.02
+pouvoir	e.01
+3	f.01	j.01	m.04
+4	f.01	m.02
+detail	m.10
+statistiques	e.01
+differente	c.01
+tribunal	j.01	m.01
+aupres	d.02
+cet	l.01
+prevenir	e.02
+evoluer	f.01
+rembourser	m.03
+seul	m.01
+objectifs	e.01
+rcs	d.01	m.02
+moitie	m.01
+grisbi	m.01
+prestation	m.02
+suite	d.02
+volontaire	d.01
+autonome	d.01	j.03
+faillite	m.12
+sexe	e.01
+mesures	k.01
+creances	c.01	m.03
+redige	m.01
+transmission	m.02
+reparations	k.01
+oeuvres	m.02
+mieux	f.01
+famille	k.01
+unicite	m.12
+jouissance	j.19	k.01	m.01
+titulaire	j.03	k.01	m.02
+majeure	j.01
+alienation	k.01
+article	f.10
+denfants	m.01
+recouvrer	m.01
+enregistrement	d.02
+modeles	m.01
+incluent	k.02	m.01
+non-usage	m.01
+morales	b.01	c.11	d.01	e.01	k.11
+representation	j.05	k.01
+majeurs	k.01
+constituent	l.01
+morale	a.01	c.26	d.01	e.04	j.16	k.03	m.06
+responsabilite	e.03	f.01
+membres	c.04	m.01
+sociale	e.01
+pouvez	m.01
+evolution	f.02
+societe	f.01	j.19	m.01
+lintermediaire	i.01
+egalement	m.01
+personnelle	m.01
+personnel	m.09
+personnes	a.01	b.02	c.27	d.02	e.12	i.01	k.26	m.01
+immatriculation	d.01	e.01
+dexercice	j.07
+education	e.02	j.01
+transmissibilite	m.01
+officiel	d.01
+litteraires	m.02
+tuteurs	k.02
+lieux	m.01
+dassurances	k.01
+vendus	m.01
+auparavant	f.01
+400	m.01
+considerer	m.01
+consideres	f.01
+graves	k.01
+juridique	a.11	c.24	d.26	e.01	f.02	g.12	i.01	j.20	k.28	m.02
+defaillance	m.01
+economique	m.01
+distinguez	j.01
+protection	f.01	j.01	k.02	m.04
+conserver	k.01
+prononcee	m.01
+regles	c.01	e.01	k.01
+entite	c.02	d.02	m.01
+decisions	j.01	k.01
+affecter	m.01
+echanges	m.02
+ordinateur	m.01
+succession	d.01	m.05
+consequence	k.11
+question	c.02	d.02	e.02	f.01	j.06	k.02	m.09
+redaction	d.02	e.01
+sauf	k.01	m.02
+cession	m.01
+desheriter	m.03
+desherites	m.01
+brevets	m.03
+ouverture	d.01
+intellectuels	m.03
+evaluables	l.01	m.13
+modifier	k.01
+donner	m.03
+temps	m.01
+donnes	m.01
+lanimal	b.01
+dassister	k.01
+correspond	m.01
+exploitation	m.01
+acquerir	c.02
+etc	e.02	m.04
+meuble	f.01
+complement	c.10	k.10	m.20
+reclamer	j.02
+mentalites	f.01
+represente	j.02
+immeuble	m.01
+objet	j.01	k.01
+inventions	m.02
+obligation	m.04
+jugement	j.01
+definissent	e.01
+industriels	m.01
+locative	k.01
+ensemble	l.01	m.02
+sanctionnee	c.01
+autres	m.02
+cedes	m.01
+calcul	m.11
+dassistance	j.01	k.02
+chose	m.01
+cadre	m.01
+remuneration	m.01
+masse	m.01
+didentification	b.01
+totale	k.01	m.02
+automatiquement	d.05
+ans	j.03
+conformite	j.01
+chien	f.01
+possibilite	j.01
+saisi	m.02
+independamment	c.01	d.01	j.01
+engage	j.01
+vivants	f.02
+emprunts	j.01	m.01
+echange	m.01
+celui	m.01
+pret	m.01
+representer	j.01	k.01
+monetaire	c.01	m.01
+representes	k.02
+grandes	m.01
+proprietaire	m.01
+identification	a.01	e.10
+jai	c.02	e.01	m.10
+comptes	m.02
+perte	d.01
+exclusive	m.01
+strategiques	j.01
+principalement	m.01
+refleter	f.01
+garantissent	k.01
+element	e.01
+capacites	j.01
+importants	k.02
+dune	c.01	d.01	i.01	j.12	m.04
+logement	m.01
+testament	m.03
+personnels	m.02
+temporaire	k.03
+bancaires	m.02
+reel	m.09
+000	m.03
+importante	k.01
+saisissabilite	m.01
+financieres	e.03	m.01
+marques	m.02
+devez	m.01
+civile	k.01
+actions	e.02	m.02
+besoin	c.01	e.01	k.01
+personnalite	a.11	c.37	d.28	m.02
+fixes	m.01
+descendants	m.01
+habilitation	k.01
+defense	j.01
+publique	c.02
+creation	d.01	m.01
+situation	k.01
+integrite	c.01
+mesure	k.04
+nest	b.01
+services	e.01	m.01
+entraine	d.01
+cest	j.01
+peuvent	m.07
+beneficiaires	m.01
+principe	m.05
+quil	m.02
+distinctifs	m.01
+permettent	b.01	m.01
+precisez	c.01
+droits	c.09	d.01	e.01	i.01	j.09	k.03	l.01	m.39
+appartenant	m.01
+tutelle	k.03
+engagement	m.01
+administration	k.01
+organisation	c.04	d.06	e.01	j.02
+lie	e.01	m.01
+prendre	j.01
+revient	m.01
+seteint	d.01	i.01
+continue	d.01
+donation	k.01	m.01
+soins	e.02
+libertes	j.01
+sanctionnees	c.01
+justifiez	m.01
+protege	k.01	m.01
+renforcee	k.01
+substantiellement	k.01
+abondance	j.19
+caracteristiques	m.01
+endommages	m.01
+puissance	c.01
+ordonnant	j.01
+parties	m.01
+quatre	m.01
+securiser	e.02
+esprit	m.01
+expliquez	c.01	f.01	j.01	k.01	m.01
+continuite	d.01
+aux	e.01	j.01	m.02
+physique	a.01	c.16	d.02	e.02	j.06	m.04
+legale	e.02	j.02	k.02
+affective	f.01
+classes	m.01
+aspects	m.01
+quoi	c.01	j.01
+non	e.01	k.01
+nom	e.01	j.01
+doues	f.02
+rediger	m.01
+intransmissibilite	m.12
+intellectuel	m.09
+reservataire	m.13
+delimite	i.01
+gerer	j.01
+autorisees	k.01
+evolutions	b.01
+patrimoine	h.11	k.02	l.01	m.69
+paisible	m.01
+effet	m.01
+exercer	i.01	j.06	k.01
+jouir	m.02
+vifs	m.13
+musicales	m.01
+fiscaux	j.01
+garantissant	m.01
+civiles	j.01
+contrat	j.02	m.02
+usage	m.01
+compris	j.03
+malgre	b.01
+accessoire	m.01
+curateur	k.02
+levaluation	m.10
+essentiels	e.01
+liees	c.01
+specifique	a.01	f.10	m.01
+bien	c.01	k.01	m.04
+identifier	e.01	m.01
+majeur	k.01
+emprunt	k.01
+nomme	d.01
+dissolution	d.01
+familiale	k.01
+imprescriptible	m.01
+auteur	m.02
+mineurs	k.01
+droit	b.01	c.02	j.06	m.09
+lexercice	k.01
+revenir	m.01
+loi	c.02	m.01
+principes	m.10
+facilite	m.01
+arbres	m.01
+possedent	m.01
+mort	d.04	i.01
+rendre	m.01
+juge	k.01
+aptitude	i.01	j.04
+categories	m.01
+groupements	c.01
+aider	e.02
+transfere	m.01
+non-paiement	j.01
+quotite	m.01
+peux	m.01
+corporels	m.03
+permettant	k.02
+reconnaissant	f.01	j.01
+mien	m.01
+certain	m.01
+totalite	m.01
+distinction	a.01	c.11	m.01
+possession	j.01	m.01
+generalement	j.01
+simple	k.01
+indivisible	m.01
+visent	f.01	k.01
+ainsi	d.01
+maison	j.01	m.01
+consciente	f.01
+politiques	e.02
+tracer	e.02
+quest-ce	a.10	g.10	h.10
+curatelle	k.02
+importe	c.02
+reponse	m.01
+posseder	j.01	m.03
+dont	j.01
+determinez	d.01	m.02
+immeubles	m.03
+incluant	d.02
+produits	m.02
+acquiere	d.01
+part	m.15
+explication	e.01
+tenu	j.01
+principal	e.01
+general	j.01	m.01
+creanciers	m.04
+propriete	c.01	j.01	m.03
+introduction	a.01	b.10	g.01	h.01	i.10	l.10
+hypotheque	m.03
+membre	k.01
+autrui	m.02
+processus	d.01
+dheritage	m.01
+acquiert	d.01
+importantes	m.02
+domicile	e.01
+reclamation	j.01
+remboursement	m.01
+commerciales	m.01
+parent	m.03
+contractee	j.01
+fin	d.01
+contracter	j.03
+assurer	d.01	e.02
+evaluation	m.01
+niveaux	k.01
+dote	c.02
+certains	k.02	l.01
+reservataires	m.04
+servitude	m.01
+beneficier	e.02	j.01
+figurant	m.01
+privation	m.01
+insaisissables	c.01
+divisent	m.01
+entreprise	c.02	j.02	m.05
+formel	d.01
+necessitent	k.02
+totalement	m.01
+mobilier	m.01
+tiers	m.01
+passif	m.01
+publiques	e.02
+montant	m.01
+extinction	a.01	d.20
+etres	f.02
+composition	k.01
+civil	f.10
+acquisition	d.02	k.01
+elle-meme	j.01
+humain	c.02
+somme	m.02
+categorie	c.01
+touchez	m.01
+procedure	j.01
+possible	m.01
+gestion	k.03	m.04
+librement	m.02
+dette	j.03
+transmissible	m.01
+caracterisent	b.01
+definies	k.01
+voter	j.01
+exister	d.01
+chaise	m.01
+maltraitance	f.01
+soumis	c.01	f.01
+denomination	e.02
+gerent	j.01
+immatriculee	m.02
+affaires	j.02
+incorporels	m.03
+legal	f.10	j.01
+soumises	c.01
+signifie	m.01
+hereditaire	m.02
+loyer	m.01
+necessite	d.01	j.03
+soit	d.01	k.02	m.02
+heritiers	m.05
+societes	d.01	m.01
+voiture	m.01
+tant	j.02
+signe	j.01
+lui-meme	j.01
+sante	e.02	j.01
+obligatoirement	m.02
+obtenue	j.01
+courante	k.01
+partie	m.01
+associer	e.01
+representants	i.01	j.02
+inalienables	c.01
+2022	m.01
+est-ce	h.01	m.10
+une	b.01	c.19	d.05	e.03	f.02	j.09	k.07	m.19
+presente	f.01
+contractees	j.01
+principaux	m.02
+associez	k.01
+esthetiques	m.01
+courants	k.01
+adresse	e.02
+concerne	j.02
+fournir	m.02
+vente	k.01
+vers	f.01
+nouveau	d.01
+payer	j.01	m.01
+majorite	j.01
+contrats	j.01
+515	f.10
+signes	m.01
+signer	j.02
+individuelles	c.01
+lentreprise	j.01
+statue	j.01
+argent	l.01	m.26
+meubles	f.02	m.02
+transactions	e.01	m.01
+jaurais	c.01
+disparait	d.02
+acheter	j.01
+intransmissible	m.01
+selon	k.01
+statut	a.01	e.01	f.12	k.04
+clients	j.01
+actes	k.09
+accrue	f.01
+dadministration	k.01
+prenoms	e.01
+sensibilite	f.02
+debiteur	m.03
+deja	c.01
+dire	c.01
+travail	j.01	m.02
+bien-etre	f.03
+creee	c.02	e.02
+cependant	j.01	m.01
+maniere	j.03	k.01	m.01
+prise	f.01
+portant	m.01
+acces	e.01
+creance	m.04
+disposition	k.01
+300	m.01
+exercice	j.19	k.03
+complete	k.01
+enfant	j.01	m.03
+dessins	m.01
+deces	d.01	m.02
+francais	m.01
+appeles	m.01
+conscience	f.01
+titre	e.01
+distincts	c.02
+plutot	f.01
+souscription	k.02
+bail	m.01
+portee	k.01
+sol	m.01
+lindividu	m.01
+poursuit	j.01
+enfants	m.06
+entre	k.01	m.13
+physiques	b.01	c.13	d.01	e.01	k.14
+disponible	m.01
+intermediaire	j.01
+monopole	m.01
+personne	a.02	b.01	c.26	d.02	e.06	j.19	k.06	l.01	m.19
+loues	m.01
+restrictions	m.01
+plus	c.01	f.01	j.01	k.01	m.01
+protegee	k.01
+proteger	f.01
+na	j.01
+protegent	c.01	f.01	k.01
+vivant	m.04
+parents	k.02
+constitution	d.02
+fraudes	e.02
+code	f.10
+creancier	m.02
+indivisibilite	m.11
+prend	d.01	k.01
+maintenir	k.01
+prive	m.01
+mineur	k.01
+troubles	k.02
+etablit	k.01
+pouvant	c.01
+nombre	m.01
+utiliser	m.01
+utilises	m.01
+reserve	f.01	m.06
+puis	c.01
+doivent-ils	m.01
+plusieurs	e.01	f.01	k.01	m.01
+lois	f.01	j.01
+execution	m.02
+cest-a	c.01
+responsable	j.02
+valeur	c.01	f.01	m.01
+social	e.01	j.01	k.01
+dirigeant	d.05
+dits	m.01
+cousin	j.17
+structure	e.01
+assurent	j.01
+toutefois	m.01
+100	m.01
+disparition	d.02
+assistees	k.02
+dun	k.02
+depend	m.01
+intransmissibles	c.01
+possede	m.01
+actifs	m.01
+usufruit	m.02
+speciale	k.01
+10	j.01
+14	f.10
+exerce	j.02	m.01
+18	j.01
+judiciaire	d.01	j.01
+autorites	d.02
+exemple	c.04	j.10	k.02	m.13
+fonctionnement	e.01	k.01
+prerogatives	c.01
+unique	m.01
+animal	f.01
+conditions	c.01
+interet	c.11	e.01	f.01	m.10
+patrimoniaux	c.01	m.35
+association	c.02	m.01
+texte	f.10
+sur	c.01
+repondre	c.02	d.02	e.02	f.01	j.06	k.02	m.09
+physiquement	j.01
+tuteur	k.03
+exiger	m.02
+30	j.01
+exclu	k.01
+appartenez	c.01
+essentielle	m.01
+decision	j.01
+debute	i.01
+respecter	j.01	m.01
+representant	j.01
+entrepreneur	m.01
+dobligations	j.01	m.01
+directement	m.01
+planification	e.03
+aide	m.01
+obligations	c.06	d.01	j.03	m.03
+revanche	d.01
+plein	c.01
+sagisse	m.01
+naissance	a.01	d.21	i.01
+soi-meme	j.01
+enracines	m.01
+modifient	k.01
+defunt	m.03
+cessibles	m.01
+interets	c.01	f.01	k.01
+contexte	j.01
+bailleur	m.01
+qua	m.01
+personnellement	j.01
+faute	m.01
+deux	c.01	m.01
+commerce	d.01	m.01
+disposer	m.01
+disposent	i.01
+saisie	m.02
+lien	k.01
+biens	c.01	f.03	j.01	m.09
+adulte	j.01
+creations	m.01
+lies	c.01
+definition	c.20	j.20	m.20
+definissez	c.01
+lieu	e.01
+celle	c.01
+independantes	m.01
+saisir	m.01
+regime	f.01
+fiscales	m.01
+divise	m.01
+significative	k.01
+locataire	m.01
+accessoires	m.02
+money	m.03
+reconnue	c.02
+registre	d.01	m.01
+transmis	c.01	m.02
+comptabilisation	m.01
+concernent	c.01
+regissant	c.01
+valoriser	k.01
+comprend	m.01
+individu	c.04	m.01
+changements	f.01
+paiement	j.03	m.01
+moi	c.03
+officielle	d.01
+type	c.01
+decoule	k.01
+ayant	c.03
+quantification	m.01
+immateriels	m.01
+raison	k.02
+necessiter	j.01
+elections	j.01
+eux-memes	i.01
+dirigeants	j.01
+lors	d.04
+emancipes	k.01
+lentrepreneur	m.01
+identite	e.02
+oui	m.01
+dettes	j.02	l.01	m.05
+individualiser	b.01
+capacite	g.11	i.02	j.49	k.08
+vulnerables	k.12
+faveur	j.01	m.01
+precise	m.01
+sauvegarde	k.02
+siege	e.01
+existe	c.01
+fraction	m.01
+implantation	e.01
+nont	k.01
+elements	b.01	m.10
+regle	m.01
+permet	c.01	j.01	k.01	m.04
+leurs	i.01	k.03
+reconnaissance	c.10	e.01	f.01
+passage	m.01
+subjectifs	c.01
+recentes	b.01
+existence	k.01
+garantir	e.02
+garantit	m.01
+generale	k.01
+justice	j.01	k.02
+apres	m.01
+sens	d.01
+conferent	m.01
+doivent	m.01
+directeur	j.01
+gouvernementale	c.02
+indiquez	d.01	e.01	m.01
+affaire	j.10
+materiels	m.01
+titulaires	c.01
+activite	d.01
+humains	c.11
+saisissables	m.01
+transmissibles	m.01
+techniques	m.01
+incapacite	g.01	k.23
+empruntee	m.01
+perdre	m.01
+securite	e.01
+artistiques	m.02
+distinct	m.02
+proprietaires	f.01
+operations	e.02
+cas	k.01	m.03
+integres	m.13
+limites	k.01
+contre	f.01	j.11	m.03
+immobilier	k.01	m.02
+toute	m.01
+fondamental	c.20	d.10	j.10	k.10	m.40
+cette	c.02	d.02	e.02	f.01	i.01	j.06	k.02	m.09
+competentes	d.02
+agir	j.01
+prescriptibles	m.01
+limitee	j.01	k.02
+reels	m.06
+subdivisent	m.01
+existent	j.01
+fevrier	m.01
+efficace	m.01
+dessert	m.01
+considere	b.01	m.01
+concernant	d.01
+quelle	j.01
+groupe	c.02
+animaux	a.01	f.17
