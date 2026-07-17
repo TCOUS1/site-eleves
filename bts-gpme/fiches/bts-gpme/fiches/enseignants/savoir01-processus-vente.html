@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<title>Enseignant - Fiche savoir 01 - Le processus de vente</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="../../../fonts.css">
+<link rel="stylesheet" href="../../../style.css">
+<script src="../../../accessibility.js" defer></script>
+</head>
+<body>
+<script>
+if (!sessionStorage.getItem("auth")) {
+  window.location.href = "../../../acces-enseignant.html";
+}
+</script>
+<div id="accessibility-menu">
+  <button onclick="toggleTheme()">🌙 / ☀️</button>
+  <button id="btn-dys" onclick="toggleDys()">Dys</button>
+  <button onclick="fontMinus()">A−</button>
+  <button onclick="fontPlus()">A+</button>
+  <button onclick="resetAccessibility()">🔄</button>
+  <button onclick="sessionStorage.removeItem('auth'); window.location.href='../../../index.html';">Se déconnecter</button>
+</div>
+<header class="page-header">
+  <nav class="top-nav">
+    <a href="../../../index.html">Accueil</a><span>|</span>
+    <a href="../index.html">Sommaire BTS GPME</a><span>|</span>
+    <a href="../eleves/savoir01-processus-vente.html">Version élève</a>
+  </nav>
+  <div class="top-banner">
+    <span class="banner-main">Version enseignant - Fiche savoir 01</span>
+    <span class="banner-sub">Le processus de vente dans la PME</span>
+  </div>
+  <p class="intro">Support d'exploitation pédagogique : connaissances, activité, correction et prolongements.</p>
+</header>
+<main>
+  <h1>Le processus de vente dans la PME - Exploitation enseignant</h1>
+
+  <h2>1. Positionnement BTS GPME</h2>
+  <p><strong>Bloc concerné :</strong> U4 - Gérer la relation avec les clients et les fournisseurs de la PME.</p>
+  <p><strong>Activités professionnelles :</strong> recherche de clientèle et contact, administration des ventes, maintien et développement de la relation client, suivi comptable des opérations commerciales.</p>
+
+  <h2>2. Objectifs d'apprentissage</h2>
+  <ul>
+    <li>Identifier les étapes du processus de vente.</li>
+    <li>Associer chaque étape aux documents professionnels correspondants.</li>
+    <li>Comprendre les risques liés à une mauvaise gestion de la vente : erreur documentaire, litige, impayé, insatisfaction.</li>
+    <li>Relier le processus de vente aux outils numériques : CRM, PGI, tableur, messagerie.</li>
+  </ul>
+
+  <h2>3. Savoirs associés à installer</h2>
+  <table>
+    <tr><th class="col-min">Axe</th><th>Connaissances attendues</th></tr>
+    <tr><td class="col-min">Commercial</td><td>Prospection, qualification du besoin, proposition commerciale, fidélisation.</td></tr>
+    <tr><td class="col-min">Administratif</td><td>Devis, commande, bon de livraison, facture, conditions générales de vente.</td></tr>
+    <tr><td class="col-min">Comptable</td><td>Suivi des règlements, échéance, relance, impayés, impact sur la trésorerie.</td></tr>
+    <tr><td class="col-min">Numérique</td><td>Mise à jour du système d'information client, CRM, PGI, traçabilité des échanges.</td></tr>
+    <tr><td class="col-min">Juridique</td><td>Engagement contractuel, preuve écrite, mentions obligatoires, responsabilité de l'entreprise.</td></tr>
+  </table>
+
+  <h2>4. Déroulement pédagogique possible</h2>
+  <ol>
+    <li><strong>Accroche - 5 min :</strong> demander aux étudiants ce qui se passe entre une demande client et le paiement.</li>
+    <li><strong>Structuration - 15 min :</strong> construire collectivement la chaîne : demande → devis → commande → livraison → facture → paiement → suivi.</li>
+    <li><strong>Application - 25 min :</strong> mini-cas PME ci-dessous.</li>
+    <li><strong>Correction - 15 min :</strong> mise en commun des documents, étapes et risques.</li>
+    <li><strong>Trace écrite - 10 min :</strong> compléter la fiche savoir élève.</li>
+  </ol>
+
+  <h2>5. Activité de mise en situation</h2>
+  <blockquote><strong>Contexte.</strong> La PME BureauNord vend du mobilier de bureau. Une cliente, l'association Horizon, demande 12 chaises, 3 tables pliantes et une armoire pour une salle de réunion. Elle souhaite une livraison sous 15 jours et un paiement à 30 jours.</blockquote>
+  <p><strong>Travail demandé aux étudiants :</strong></p>
+  <ol>
+    <li>Repérer les informations nécessaires avant d'établir le devis.</li>
+    <li>Lister les documents à produire dans l'ordre chronologique.</li>
+    <li>Identifier deux risques pour la PME.</li>
+    <li>Proposer deux informations à enregistrer dans le CRM ou le PGI.</li>
+  </ol>
+
+  <h2>6. Éléments de correction</h2>
+  <table>
+    <tr><th class="col-min">Question</th><th>Réponses attendues</th></tr>
+    <tr><td class="col-min">Informations avant devis</td><td>Références produits, quantités, prix, disponibilité, délai, adresse de livraison, conditions de paiement, validité de l'offre.</td></tr>
+    <tr><td class="col-min">Documents</td><td>Demande client, devis, bon de commande ou accord écrit, bon de livraison, facture, preuve de règlement, relance éventuelle.</td></tr>
+    <tr><td class="col-min">Risques</td><td>Erreur de quantité, retard de livraison, client non solvable, oubli de facturation, impayé, litige sur les conditions.</td></tr>
+    <tr><td class="col-min">SI client</td><td>Coordonnées, historique de la demande, devis envoyé, date de relance, conditions acceptées, réclamation éventuelle.</td></tr>
+  </table>
+
+  <h2>7. Différenciation</h2>
+  <ul>
+    <li><strong>Étudiants fragiles :</strong> fournir les documents dans le désordre et demander de les remettre dans l'ordre.</li>
+    <li><strong>Étudiants avancés :</strong> ajouter un retard de paiement et demander une stratégie de relance graduée.</li>
+    <li><strong>Travail en groupe :</strong> un groupe traite la partie commerciale, un groupe la partie administrative, un groupe la partie risque/trésorerie.</li>
+  </ul>
+
+  <h2>8. Évaluation rapide</h2>
+  <p>Faire produire un schéma du processus de vente en 8 étapes et demander aux étudiants d'associer à chaque étape : un document, un risque et un outil numérique.</p>
+
+  <h2>9. Prolongements</h2>
+  <ul>
+    <li>Créer un devis sur tableur ou PGI.</li>
+    <li>Comparer CRM et PGI dans le suivi de la relation client.</li>
+    <li>Construire une procédure de relance client.</li>
+    <li>Étudier l'impact d'un impayé sur la trésorerie.</li>
+  </ul>
+</main>
+</body>
+</html>
