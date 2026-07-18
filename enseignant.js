@@ -1,16 +1,17 @@
-function verifier(passwordCorrect, redirectPage) {
-    const mdp = document.getElementById("mdp").value;
+"use strict";
 
-    if (mdp === passwordCorrect) {
-        sessionStorage.setItem("auth", "ok");
-        window.location.href = redirectPage;
-    } else {
-        alert("Mot de passe incorrect");
-    }
+/*
+ * Ancien controle par mot de passe neutralise.
+ * Un site statique public ne protege pas des contenus reserves.
+ */
+
+function verifier() {
+  window.alert(
+    "Les ressources reservees ont ete deplacees vers un service authentifie."
+  );
 }
 
-
 function logout() {
-    sessionStorage.removeItem("auth");
-    window.location.href = "index.html";
+  sessionStorage.removeItem("auth");
+  window.location.href = "index.html";
 }

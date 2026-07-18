@@ -488,30 +488,30 @@ html {
 @media print{#accessibility-menu,.top-nav,.fiche-nav{display:none!important}.print-only{display:block}:root,body,body.light{--bg:#ffffff;--text:#000000;--muted:#222222;--card-bg:#ffffff;--border:#777777;--primary:#0056b3;--title-h1:#000000;--title-h2:#003366;--title-h3:#1f5f1f;--title-h4:#6b3f00;}body{font-size:10.5pt;line-height:1.45;background:#fff;color:#000}.page-break{break-before:page}h1{font-size:22pt;color:#000!important}h2{font-size:16pt;color:#003366!important}h3{font-size:13pt}.card,.mini-card,.callout,.steps li{break-inside:avoid}.container,.page-header,main{max-width:none}.badge{color:#333;background:#fff}.cards-grid{display:block}.card{margin:8px 0}}
 
 /* ==========================================
-   MANAGEMENT 1RE STMG - FICHES DE RÉVISION
+   FICHES DE RÉVISION STMG
 ========================================== */
 .management-page .page-header {
   padding-top: 3.2rem;
 }
 
-.mgmt-revision {
+.revision-page {
   padding-bottom: 60px;
 }
 
-.mgmt-revision * {
+.revision-page * {
   box-sizing: border-box;
 }
 
-.mgmt-revision button,
-.mgmt-revision input {
+.revision-page button,
+.revision-page input {
   font: inherit;
 }
 
-.mgmt-revision button {
+.revision-page button {
   cursor: pointer;
 }
 
-.mgmt-revision .skip-link,
+.revision-page .skip-link,
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -524,7 +524,7 @@ html {
   border: 0;
 }
 
-.mgmt-revision .skip-link:focus {
+.revision-page .skip-link:focus {
   position: fixed;
   top: 8px;
   left: 8px;
@@ -539,7 +539,7 @@ html {
   border-radius: 6px;
 }
 
-.mgmt-revision .revision-title {
+.revision-page .revision-title {
   margin: 0;
   padding: 0;
   border: 0;
@@ -548,20 +548,20 @@ html {
   line-height: 1.25;
 }
 
-.mgmt-revision .level-banner {
+.revision-page .level-banner {
   margin-top: 0;
 }
 
-.mgmt-revision .progress-panel {
+.revision-page .progress-panel {
   margin-top: 16px;
 }
 
-.mgmt-revision .progress-panel strong {
+.revision-page .progress-panel strong {
   display: block;
   font-size: 1.15em;
 }
 
-.mgmt-revision .progress-track {
+.revision-page .progress-track {
   height: 10px;
   margin: 10px 0 6px;
   overflow: hidden;
@@ -570,14 +570,14 @@ html {
   background: var(--bg);
 }
 
-.mgmt-revision .progress-fill {
+.revision-page .progress-fill {
   width: 0;
   height: 100%;
   background: var(--primary);
   transition: width .25s ease;
 }
 
-.mgmt-revision .toolbar {
+.revision-page .toolbar {
   margin: 22px 0;
   padding: 14px;
   border: 1px solid var(--border);
@@ -585,14 +585,14 @@ html {
   background: var(--card-bg);
 }
 
-.mgmt-revision .toolbar-inner {
+.revision-page .toolbar-inner {
   display: grid;
   grid-template-columns: minmax(210px, 1fr) auto;
   gap: 10px;
   align-items: center;
 }
 
-.mgmt-revision .search {
+.revision-page .search {
   width: 100%;
   min-height: 42px;
   padding: 8px 11px;
@@ -602,21 +602,21 @@ html {
   background: var(--bg);
 }
 
-.mgmt-revision .search::placeholder {
+.revision-page .search::placeholder {
   color: var(--muted);
   opacity: .8;
 }
 
-.mgmt-revision .filters {
+.revision-page .filters {
   display: flex;
   flex-wrap: wrap;
   gap: 7px;
 }
 
-.mgmt-revision .filter,
-.mgmt-revision .print-btn,
-.mgmt-revision .done-btn,
-.mgmt-revision .answer-btn {
+.revision-page .filter,
+.revision-page .print-btn,
+.revision-page .done-btn,
+.revision-page .answer-btn {
   min-height: 38px;
   padding: 7px 10px;
   border: 1px solid var(--primary);
@@ -626,40 +626,40 @@ html {
   font-weight: 700;
 }
 
-.mgmt-revision .filter:hover,
-.mgmt-revision .print-btn:hover,
-.mgmt-revision .done-btn:hover,
-.mgmt-revision .answer-btn:hover,
-.mgmt-revision .filter[aria-pressed="true"] {
+.revision-page .filter:hover,
+.revision-page .print-btn:hover,
+.revision-page .done-btn:hover,
+.revision-page .answer-btn:hover,
+.revision-page .filter[aria-pressed="true"] {
   color: #0d1117;
   background: var(--primary);
 }
 
-body.light .mgmt-revision .filter:hover,
-body.light .mgmt-revision .print-btn:hover,
-body.light .mgmt-revision .done-btn:hover,
-body.light .mgmt-revision .answer-btn:hover,
-body.light .mgmt-revision .filter[aria-pressed="true"] {
+body.light .revision-page .filter:hover,
+body.light .revision-page .print-btn:hover,
+body.light .revision-page .done-btn:hover,
+body.light .revision-page .answer-btn:hover,
+body.light .revision-page .filter[aria-pressed="true"] {
   color: #fff;
 }
 
-.mgmt-revision .print-btn {
+.revision-page .print-btn {
   grid-column: 1 / -1;
   justify-self: end;
 }
 
-.mgmt-revision .container {
+.revision-page .container {
   padding: 0;
 }
 
-.mgmt-revision .orientation {
+.revision-page .orientation {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 12px;
   margin: 22px 0;
 }
 
-.mgmt-revision .theme-link {
+.revision-page .theme-link {
   display: block;
   padding: 14px;
   border: 1px solid var(--border);
@@ -671,25 +671,25 @@ body.light .mgmt-revision .filter[aria-pressed="true"] {
   transition: border-color .2s, transform .15s;
 }
 
-.mgmt-revision .theme-link:hover {
+.revision-page .theme-link:hover {
   transform: translateY(-2px);
   border-color: var(--primary);
   color: var(--text);
 }
 
-.mgmt-revision .theme-link small {
+.revision-page .theme-link small {
   display: block;
   color: var(--muted);
   font-weight: 700;
 }
 
-.mgmt-revision .theme-link strong {
+.revision-page .theme-link strong {
   display: block;
   margin-top: 5px;
   line-height: 1.35;
 }
 
-.mgmt-revision .method-box {
+.revision-page .method-box {
   margin: 24px 0 34px;
   padding: 16px 18px;
   border: 1px solid var(--border);
@@ -698,23 +698,23 @@ body.light .mgmt-revision .filter[aria-pressed="true"] {
   background: var(--card-bg);
 }
 
-.mgmt-revision .method-box h2 {
+.revision-page .method-box h2 {
   margin: 0 0 8px;
   padding: 0;
   border: 0;
   font-size: 1.25em;
 }
 
-.mgmt-revision .method-box ol {
+.revision-page .method-box ol {
   margin-bottom: 0;
 }
 
-.mgmt-revision .theme-section {
+.revision-page .theme-section {
   scroll-margin-top: 15px;
   margin: 42px 0;
 }
 
-.mgmt-revision .theme-heading {
+.revision-page .theme-heading {
   display: grid;
   grid-template-columns: auto 1fr;
   gap: 12px;
@@ -722,7 +722,7 @@ body.light .mgmt-revision .filter[aria-pressed="true"] {
   margin-bottom: 16px;
 }
 
-.mgmt-revision .theme-number {
+.revision-page .theme-number {
   display: grid;
   place-items: center;
   width: 44px;
@@ -734,29 +734,29 @@ body.light .mgmt-revision .filter[aria-pressed="true"] {
   font-size: 1.25em;
 }
 
-.mgmt-revision .theme-heading h2 {
+.revision-page .theme-heading h2 {
   margin: 0;
 }
 
-.mgmt-revision .theme-heading p {
+.revision-page .theme-heading p {
   margin: 4px 0 0;
   color: var(--muted);
   font-size: .95em;
 }
 
-.mgmt-revision .cards {
+.revision-page .cards {
   display: grid;
   gap: 18px;
 }
 
-.mgmt-revision .revision-card {
+.revision-page .revision-card {
   overflow: hidden;
   border: 1px solid var(--border);
   border-radius: 10px;
   background: var(--card-bg);
 }
 
-.mgmt-revision .card-head {
+.revision-page .card-head {
   display: grid;
   grid-template-columns: auto 1fr auto;
   gap: 10px;
@@ -766,7 +766,7 @@ body.light .mgmt-revision .filter[aria-pressed="true"] {
   border-left: 4px solid var(--theme-color);
 }
 
-.mgmt-revision .fiche-id {
+.revision-page .fiche-id {
   min-width: 44px;
   padding: 4px 7px;
   border-radius: 6px;
@@ -776,7 +776,7 @@ body.light .mgmt-revision .filter[aria-pressed="true"] {
   font-weight: 800;
 }
 
-.mgmt-revision .card-head h3 {
+.revision-page .card-head h3 {
   margin: 0;
   color: var(--text);
   font-size: 1.05em;
@@ -784,25 +784,25 @@ body.light .mgmt-revision .filter[aria-pressed="true"] {
   text-transform: none;
 }
 
-.mgmt-revision .done-btn {
+.revision-page .done-btn {
   white-space: nowrap;
   border-color: var(--theme-color);
   color: var(--theme-color);
 }
 
-.mgmt-revision .done-btn[aria-pressed="true"] {
+.revision-page .done-btn[aria-pressed="true"] {
   color: #fff;
   border-color: #238636;
   background: #238636;
 }
 
-.mgmt-revision .card-body {
+.revision-page .card-body {
   padding: 16px;
 }
 
-.mgmt-revision .lead,
-.mgmt-revision .block,
-.mgmt-revision .quiz {
+.revision-page .lead,
+.revision-page .block,
+.revision-page .quiz {
   margin: 0 0 16px;
   padding: 14px 16px;
   border: 1px solid var(--border);
@@ -811,75 +811,75 @@ body.light .mgmt-revision .filter[aria-pressed="true"] {
   background: var(--bg);
 }
 
-.mgmt-revision .lead {
+.revision-page .lead {
   color: var(--muted);
 }
 
-.mgmt-revision .lead strong {
+.revision-page .lead strong {
   color: var(--text);
 }
 
-.mgmt-revision .grid-2,
-.mgmt-revision .grid-3 {
+.revision-page .grid-2,
+.revision-page .grid-3 {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 14px;
 }
 
-.mgmt-revision .grid-3 {
+.revision-page .grid-3 {
   grid-template-columns: repeat(3, 1fr);
 }
 
-.mgmt-revision .block h4,
-.mgmt-revision .quiz h4 {
+.revision-page .block h4,
+.revision-page .quiz h4 {
   margin: 0 0 8px;
   color: var(--theme-color);
 }
 
-.mgmt-revision .block p,
-.mgmt-revision .quiz p {
+.revision-page .block p,
+.revision-page .quiz p {
   margin: 10px 0;
   font-size: 1em;
 }
 
-.mgmt-revision .block ul:last-child,
-.mgmt-revision .block ol:last-child,
-.mgmt-revision .block p:last-child {
+.revision-page .block ul:last-child,
+.revision-page .block ol:last-child,
+.revision-page .block p:last-child {
   margin-bottom: 0;
 }
 
-.mgmt-revision .example {
+.revision-page .example {
   border-left-color: #3fb950;
 }
 
-.mgmt-revision .example h4 {
+.revision-page .example h4 {
   color: #56d364;
 }
 
-body.light .mgmt-revision .example h4 {
+body.light .revision-page .example h4 {
   color: #1f7a1f;
 }
 
-.mgmt-revision .warning {
+.revision-page .warning {
   border-left-color: #d29922;
 }
 
-.mgmt-revision .warning h4 {
+.revision-page .warning h4 {
   color: #e3b341;
 }
 
-body.light .mgmt-revision .warning h4 {
+body.light .revision-page .warning h4 {
   color: #7a4a00;
 }
 
-.mgmt-revision .key-terms {
+.revision-page .key-terms {
   display: flex;
   flex-wrap: wrap;
   gap: 7px;
   margin: 10px 0 18px;
 }
 
-.mgmt-revision .term {
+.revision-page .term {
   padding: 3px 9px;
   border: 1px solid var(--theme-color);
   border-radius: 999px;
@@ -889,29 +889,29 @@ body.light .mgmt-revision .warning h4 {
   font-weight: 700;
 }
 
-.mgmt-revision .table-scroll {
+.revision-page .table-scroll {
   margin: 10px 0 18px;
   overflow-x: auto;
 }
 
-.mgmt-revision table {
+.revision-page table {
   min-width: 620px;
   table-layout: auto;
   background: var(--card-bg);
 }
 
-.mgmt-revision caption {
+.revision-page caption {
   padding-bottom: 7px;
   color: var(--text);
   text-align: left;
   font-weight: 700;
 }
 
-.mgmt-revision th {
+.revision-page th {
   background: var(--bg);
 }
 
-.mgmt-revision .formula {
+.revision-page .formula {
   display: block;
   margin: 10px 0;
   padding: 11px;
@@ -923,45 +923,45 @@ body.light .mgmt-revision .warning h4 {
   font-weight: 700;
 }
 
-.mgmt-revision details {
+.revision-page details {
   margin: 12px 0;
   border: 1px solid var(--border);
   border-radius: 7px;
   background: var(--bg);
 }
 
-.mgmt-revision summary {
+.revision-page summary {
   padding: 11px 13px;
   color: var(--theme-color);
   font-weight: 700;
   cursor: pointer;
 }
 
-.mgmt-revision details > div {
+.revision-page details > div {
   padding: 0 13px 12px;
 }
 
-.mgmt-revision .quiz {
+.revision-page .quiz {
   border-left-color: var(--theme-color);
 }
 
-.mgmt-revision .answer-btn {
+.revision-page .answer-btn {
   border-color: var(--theme-color);
   color: var(--theme-color);
 }
 
-.mgmt-revision .answer {
+.revision-page .answer {
   margin-top: 12px;
   padding: 11px;
   border-radius: 6px;
   background: var(--card-bg);
 }
 
-.mgmt-revision [hidden] {
+.revision-page [hidden] {
   display: none !important;
 }
 
-.mgmt-revision .empty-state {
+.revision-page .empty-state {
   display: none;
   margin: 26px 0;
   padding: 22px;
@@ -971,11 +971,11 @@ body.light .mgmt-revision .warning h4 {
   text-align: center;
 }
 
-.mgmt-revision .empty-state.visible {
+.revision-page .empty-state.visible {
   display: block;
 }
 
-.mgmt-revision .footer {
+.revision-page .footer {
   margin-top: 42px;
   padding-top: 20px;
   border-top: 1px solid var(--border);
@@ -983,40 +983,48 @@ body.light .mgmt-revision .warning h4 {
   font-size: .9em;
 }
 
-.mgmt-revision .footer p {
+.revision-page .footer p {
   margin: 6px 0;
   font-size: 1em;
 }
 
-.mgmt-revision .t1 {
+.revision-page .t1 {
   --theme-color: var(--title-h3);
 }
 
-.mgmt-revision .t2 {
+.revision-page .t2 {
   --theme-color: var(--title-h2);
 }
 
-.mgmt-revision .t3 {
+.revision-page .t3 {
   --theme-color: var(--title-h4);
 }
 
+.revision-page .t4 {
+  --theme-color: #d2a8ff;
+}
+
+body.light .revision-page .t4 {
+  --theme-color: #6f42c1;
+}
+
 @media (max-width: 760px) {
-  .mgmt-revision .toolbar-inner,
-  .mgmt-revision .orientation,
-  .mgmt-revision .grid-2,
-  .mgmt-revision .grid-3 {
+  .revision-page .toolbar-inner,
+  .revision-page .orientation,
+  .revision-page .grid-2,
+  .revision-page .grid-3 {
     grid-template-columns: 1fr;
   }
 
-  .mgmt-revision .print-btn {
+  .revision-page .print-btn {
     width: 100%;
   }
 
-  .mgmt-revision .card-head {
+  .revision-page .card-head {
     grid-template-columns: auto 1fr;
   }
 
-  .mgmt-revision .done-btn {
+  .revision-page .done-btn {
     grid-column: 1 / -1;
     justify-self: start;
   }
@@ -1027,16 +1035,16 @@ body.light .mgmt-revision .warning h4 {
     padding-top: 4rem;
   }
 
-  .mgmt-revision .level-banner {
+  .revision-page .level-banner {
     align-items: flex-start;
   }
 
-  .mgmt-revision .theme-heading {
+  .revision-page .theme-heading {
     align-items: start;
   }
 
-  .mgmt-revision .card-body,
-  .mgmt-revision .card-head {
+  .revision-page .card-body,
+  .revision-page .card-head {
     padding: 12px;
   }
 }
@@ -1046,34 +1054,38 @@ body.light .mgmt-revision .warning h4 {
     padding-top: 0;
   }
 
-  .mgmt-revision .toolbar,
-  .mgmt-revision .orientation,
-  .mgmt-revision .done-btn,
-  .mgmt-revision .answer-btn {
+  .revision-page .revision-title {
+    color: #fff !important;
+  }
+
+  .revision-page .toolbar,
+  .revision-page .orientation,
+  .revision-page .done-btn,
+  .revision-page .answer-btn {
     display: none !important;
   }
 
-  .mgmt-revision .revision-card {
+  .revision-page .revision-card {
     break-inside: auto;
   }
 
-  .mgmt-revision .card-head,
-  .mgmt-revision .block,
-  .mgmt-revision .quiz,
-  .mgmt-revision table {
+  .revision-page .card-head,
+  .revision-page .block,
+  .revision-page .quiz,
+  .revision-page table {
     break-inside: avoid;
   }
 
-  .mgmt-revision details[open] > div,
-  .mgmt-revision .answer[hidden] {
+  .revision-page details[open] > div,
+  .revision-page .answer[hidden] {
     display: block !important;
   }
 
-  .mgmt-revision .table-scroll {
+  .revision-page .table-scroll {
     overflow: visible;
   }
 
-  .mgmt-revision table {
+  .revision-page table {
     min-width: 0;
   }
 }

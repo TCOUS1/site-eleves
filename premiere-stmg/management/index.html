@@ -1,0 +1,343 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Onze fiches de révision interactives pour le programme de management de première STMG.">
+  <title>Fiches de révision - Management 1re STMG</title>
+  <!-- Page prévue dans /management/ : les ressources communes sont à la racine. -->
+  <link rel="stylesheet" href="../fonts.css">
+  <link rel="stylesheet" href="../style.css">
+  <script src="../accessibility.js" defer></script>
+</head>
+<body class="management-page">
+  <div id="accessibility-menu" aria-label="Options d’accessibilité">
+    <button type="button" onclick="toggleTheme()" title="Basculer entre le thème sombre et le thème clair" aria-label="Basculer entre le thème sombre et le thème clair">🌙 / ☀️</button>
+    <button type="button" id="btn-dys" onclick="toggleDys()" title="Activer ou désactiver la police OpenDyslexic">Dys</button>
+    <button type="button" onclick="fontMinus()" title="Réduire la taille du texte" aria-label="Réduire la taille du texte">A−</button>
+    <button type="button" onclick="fontPlus()" title="Augmenter la taille du texte" aria-label="Augmenter la taille du texte">A+</button>
+    <button type="button" onclick="resetAccessibility()" title="Réinitialiser les options d’accessibilité" aria-label="Réinitialiser les options d’accessibilité">🔄</button>
+  </div>
+
+  <header class="page-header">
+    <nav class="top-nav" aria-label="Fil d’Ariane">
+      <a href="../index.html">← Accueil</a>
+      <span aria-hidden="true">›</span>
+      <span>Management 1re STMG</span>
+    </nav>
+    <div class="top-banner">
+      <span class="banner-main">Ressources pédagogiques</span>
+      <span class="banner-sub">Première STMG · Management</span>
+    </div>
+    <p class="intro">Révise les notions, les méthodes et les raisonnements du programme à l’aide de onze fiches interactives.</p>
+  </header>
+
+  <main class="revision-page" id="management-revision" data-storage-key="management-1re-stmg-fiches-v2">
+    <a class="skip-link" href="#fiches">Aller aux fiches</a>
+
+    <section class="level-banner" aria-labelledby="revision-title">
+      <span class="level-emoji" aria-hidden="true">📊</span>
+      <div class="level-text">
+        <h1 class="revision-title" id="revision-title">Management - Première STMG</h1>
+        <p>Comprendre, retenir et argumenter.</p>
+      </div>
+    </section>
+
+    <section class="progress-panel callout student" aria-label="Progression de révision">
+      <strong><span id="done-count">0</span> / 11 fiches révisées</strong>
+      <div class="progress-track" aria-hidden="true"><div class="progress-fill" id="progress-fill"></div></div>
+      <span id="progress-message">Commence par le thème de ton choix.</span>
+    </section>
+
+<nav class="toolbar" aria-label="Outils de révision">
+    <div class="toolbar-inner">
+      <label>
+        <span class="visually-hidden">Rechercher une notion</span>
+        <input class="search" id="search" type="search" placeholder="Rechercher : RSE, stratégie, service public…">
+      </label>
+      <div class="filters" aria-label="Filtrer par thème">
+        <button class="filter" type="button" data-filter="all" aria-pressed="true">Toutes</button>
+        <button class="filter" type="button" data-filter="1" aria-pressed="false">Thème 1</button>
+        <button class="filter" type="button" data-filter="2" aria-pressed="false">Thème 2</button>
+        <button class="filter" type="button" data-filter="3" aria-pressed="false">Thème 3</button>
+      </div>
+      <button class="print-btn" type="button" id="print-page">Imprimer / PDF</button>
+    </div>
+  </nav>
+
+<div class="container" id="fiches">
+    <nav class="orientation" aria-label="Accès aux thèmes">
+      <a class="theme-link" href="#theme-1"><small>Thème 1 · 4 fiches</small><strong>À la rencontre du management des organisations</strong></a>
+      <a class="theme-link" href="#theme-2"><small>Thème 2 · 4 fiches</small><strong>Du diagnostic à la fixation des objectifs</strong></a>
+      <a class="theme-link" href="#theme-3"><small>Thème 3 · 3 fiches</small><strong>Les choix stratégiques des organisations</strong></a>
+    </nav>
+
+    <section class="method-box" aria-labelledby="methode-titre">
+      <h2 id="methode-titre">La méthode A‑E‑I pour répondre à une question</h2>
+      <ol>
+        <li><strong>Affirmer :</strong> réponds clairement à la question avec la notion exacte.</li>
+        <li><strong>Expliquer :</strong> définis la notion et montre le mécanisme ou le lien logique.</li>
+        <li><strong>Illustrer :</strong> cite un élément précis de l’organisation ou du document étudié.</li>
+      </ol>
+    </section>
+
+    <section class="theme-section t1" id="theme-1" data-theme-section="1">
+      <div class="theme-heading">
+        <span class="theme-number">1</span>
+        <div><h2>À la rencontre du management des organisations</h2><p>Comprendre pourquoi les organisations existent, comment les distinguer et comment elles sont dirigées.</p></div>
+      </div>
+      <div class="cards">
+
+        <article class="revision-card" id="fiche-1-1" data-theme="1" data-id="1.1">
+          <header class="card-head">
+            <span class="fiche-id">1.1</span>
+            <h3>Pourquoi est-il nécessaire d’organiser l’action collective ?</h3>
+            <button class="done-btn" type="button" aria-pressed="false">À réviser</button>
+          </header>
+          <div class="card-body">
+            <p class="lead"><strong>L’essentiel :</strong> quand plusieurs personnes poursuivent un objectif commun, organiser leur action permet de répartir les tâches, coordonner les efforts et obtenir un résultat plus efficace et durable.</p>
+            <div class="key-terms"><span class="term">Action collective</span><span class="term">Objectif commun</span><span class="term">Groupe organisé</span><span class="term">Organisation</span><span class="term">Cadre juridique</span><span class="term">Ressources</span></div>
+            <div class="grid-2">
+              <section class="block">
+                <h4>De l’action individuelle à l’organisation</h4>
+                <ol>
+                  <li><strong>Action individuelle :</strong> une personne agit seule selon son propre objectif.</li>
+                  <li><strong>Action collective :</strong> plusieurs personnes coopèrent pour un objectif commun.</li>
+                  <li><strong>Groupe organisé :</strong> les rôles et les tâches sont répartis, les actions coordonnées.</li>
+                  <li><strong>Organisation :</strong> le groupe s’inscrit dans la durée, mobilise des ressources, établit des règles et adopte un cadre juridique.</li>
+                </ol>
+              </section>
+              <section class="block">
+                <h4>Les ressources mobilisées</h4>
+                <ul>
+                  <li><strong>Humaines :</strong> salariés, bénévoles, agents, compétences.</li>
+                  <li><strong>Financières :</strong> capital, recettes, subventions, dons.</li>
+                  <li><strong>Matérielles :</strong> bâtiments, véhicules, machines.</li>
+                  <li><strong>Immatérielles :</strong> marque, réputation, brevets, données.</li>
+                  <li><strong>Technologiques :</strong> logiciels, réseaux, procédés.</li>
+                </ul>
+              </section>
+            </div>
+            <section class="block example"><h4>Exemple</h4><p>Pour organiser un festival scolaire, un groupe fixe un objectif commun, répartit la communication, la sécurité et la billetterie, utilise un budget et un planning, puis respecte les règles de l’établissement. L’organisation rend l’action plus efficace que des initiatives isolées.</p></section>
+            <details><summary>Comment caractériser l’action collective ?</summary><div>Repère les <strong>acteurs</strong>, leur <strong>objectif commun</strong>, la <strong>répartition des tâches</strong>, les mécanismes de <strong>coordination</strong>, les <strong>règles</strong>, les <strong>ressources</strong> et la recherche de <strong>pérennité</strong>.</div></details>
+            <section class="block warning"><h4>À ne pas confondre</h4><p>Un rassemblement de personnes n’est pas forcément une organisation. Des voyageurs dans une gare forment un ensemble, mais ils ne poursuivent pas nécessairement un objectif commun organisé.</p></section>
+            <section class="quiz"><h4>Teste-toi</h4><p>Une équipe de quatre élèves crée durablement une association et répartit les responsabilités. Quels indices montrent le passage à l’organisation ?</p><button class="answer-btn" type="button" aria-expanded="false">Voir la correction</button><p class="answer" hidden>Il existe un objectif commun, une division du travail, des règles de fonctionnement, une volonté de durer, des ressources et un cadre juridique : l’association.</p></section>
+          </div>
+        </article>
+
+        <article class="revision-card" id="fiche-1-2" data-theme="1" data-id="1.2">
+          <header class="card-head"><span class="fiche-id">1.2</span><h3>Comment appréhender la diversité des organisations ?</h3><button class="done-btn" type="button" aria-pressed="false">À réviser</button></header>
+          <div class="card-body">
+            <p class="lead"><strong>L’essentiel :</strong> on distingue les organisations par leur finalité, leur production, leur financement, leur statut, leur taille, leur secteur d’activité et leur champ géographique.</p>
+            <div class="key-terms"><span class="term">Finalité</span><span class="term">Biens et services</span><span class="term">Marchand / non marchand</span><span class="term">Financement</span><span class="term">Secteur public / privé</span><span class="term">Société civile</span></div>
+            <div class="table-scroll">
+              <table>
+                <caption>Les trois grandes catégories d’organisations</caption>
+                <thead><tr><th>Catégorie</th><th>Finalité dominante</th><th>Production</th><th>Financement fréquent</th><th>Exemples</th></tr></thead>
+                <tbody>
+                  <tr><td><strong>Entreprise privée</strong></td><td>Lucrative : réaliser un profit et assurer sa pérennité, avec des responsabilités sociales et environnementales</td><td>Biens ou services marchands</td><td>Ventes, apports, emprunts</td><td>Commerce, banque, industrie</td></tr>
+                  <tr><td><strong>Organisation ou entreprise publique</strong></td><td>Satisfaire l’intérêt général et assurer une mission de service public</td><td>Services souvent non marchands ; parfois marchands</td><td>Impôts, taxes, emprunts et/ou prix payé par l’usager</td><td>Mairie, lycée public, entreprise publique</td></tr>
+                  <tr><td><strong>Organisation de la société civile (OSC)</strong></td><td>But non lucratif : satisfaire des adhérents ou une population</td><td>Services surtout non marchands</td><td>Cotisations, dons, subventions, mécénat, recettes d’activité</td><td>Association, ONG, syndicat, fondation</td></tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="grid-2">
+              <section class="block"><h4>Caractériser une organisation</h4><p>Présente systématiquement : <strong>type</strong>, <strong>finalité</strong>, <strong>nature de l’activité</strong>, <strong>statut juridique</strong>, <strong>ressources</strong>, <strong>taille</strong>, <strong>secteur d’activité</strong> et <strong>champ géographique</strong>.</p></section>
+              <section class="block"><h4>Une frontière parfois poreuse</h4><p>Des situations hybrides existent : partenariat public-privé, association vendant des services, entreprise chargée d’une mission de service public. Il faut raisonner à partir de plusieurs critères, pas d’un seul.</p></section>
+            </div>
+            <section class="block warning"><h4>Deux distinctions indispensables</h4><ul><li><strong>Lucratif</strong> concerne la recherche et la répartition d’un profit ; <strong>marchand</strong> concerne la vente à un prix économiquement significatif.</li><li><strong>Public</strong> ne signifie pas toujours gratuit : un usager peut payer une partie du service.</li></ul></section>
+            <section class="quiz"><h4>Teste-toi</h4><p>Une association sportive fait payer une cotisation. Devient-elle automatiquement une entreprise ?</p><button class="answer-btn" type="button" aria-expanded="false">Voir la correction</button><p class="answer" hidden>Non. La cotisation finance son activité, mais l’association conserve un but non lucratif : ses éventuels excédents ne sont pas distribués à des propriétaires.</p></section>
+          </div>
+        </article>
+
+        <article class="revision-card" id="fiche-1-3" data-theme="1" data-id="1.3">
+          <header class="card-head"><span class="fiche-id">1.3</span><h3>Qu’est-ce que le management des organisations ?</h3><button class="done-btn" type="button" aria-pressed="false">À réviser</button></header>
+          <div class="card-body">
+            <p class="lead"><strong>L’essentiel :</strong> le management est le gouvernement des organisations. Il consiste à fixer des objectifs et à conduire une production collective en tenant compte de multiples contraintes.</p>
+            <div class="key-terms"><span class="term">Management</span><span class="term">Fonctions du management</span><span class="term">Décision</span><span class="term">Stratégique</span><span class="term">Opérationnel</span><span class="term">Efficacité</span></div>
+            <div class="grid-2">
+              <section class="block"><h4>Les quatre fonctions génériques</h4><ol><li><strong>Fixer</strong> les objectifs.</li><li><strong>Organiser et animer</strong> le travail collectif.</li><li><strong>Mobiliser et contrôler</strong> les ressources et les résultats.</li><li><strong>Évaluer</strong> et corriger les pratiques.</li></ol></section>
+              <section class="block"><h4>Management privé et management public</h4><p>Ils mobilisent les mêmes grandes fonctions, mais leurs priorités et contraintes diffèrent. Le management privé tient notamment compte de la rentabilité et de la concurrence ; le management public recherche l’intérêt général, la qualité du service et la maîtrise des fonds publics.</p><p>Le management est <strong>contingent</strong> : les pratiques dépendent aussi de la taille, de la culture, des technologies, des ressources et de l’environnement.</p></section>
+            </div>
+            <div class="table-scroll">
+              <table>
+                <caption>Management stratégique et management opérationnel</caption>
+                <thead><tr><th>Critère</th><th>Décision stratégique</th><th>Décision opérationnelle</th></tr></thead>
+                <tbody><tr><td>Horizon</td><td>Long terme</td><td>Court ou moyen terme</td></tr><tr><td>Portée</td><td>Engage l’ensemble et le devenir de l’organisation</td><td>Met en œuvre la stratégie dans l’activité courante</td></tr><tr><td>Niveau</td><td>Direction générale ou dirigeants</td><td>Responsables de service et équipes</td></tr><tr><td>Réversibilité</td><td>Difficile et coûteuse</td><td>Plus facile</td></tr><tr><td>Exemple</td><td>Ouvrir une activité dans un autre pays</td><td>Établir le planning mensuel de l’équipe</td></tr></tbody>
+              </table>
+            </div>
+            <section class="block example"><h4>Évaluer l’efficacité</h4><p>Une décision est efficace si elle permet d’atteindre l’objectif fixé. Pour juger le management, il faut donc comparer les résultats obtenus aux objectifs, puis tenir compte des moyens employés et des effets sur les parties prenantes.</p></section>
+            <section class="quiz"><h4>Teste-toi</h4><p>« Recruter deux vendeurs pour appliquer le plan de développement national » : décision stratégique ou opérationnelle ?</p><button class="answer-btn" type="button" aria-expanded="false">Voir la correction</button><p class="answer" hidden>Le recrutement est ici une décision opérationnelle : il met en œuvre une orientation stratégique déjà choisie, le développement national.</p></section>
+          </div>
+        </article>
+
+        <article class="revision-card" id="fiche-1-4" data-theme="1" data-id="1.4">
+          <header class="card-head"><span class="fiche-id">1.4</span><h3>Comment le management répond-il aux changements de l’environnement ?</h3><button class="done-btn" type="button" aria-pressed="false">À réviser</button></header>
+          <div class="card-body">
+            <p class="lead"><strong>L’essentiel :</strong> l’organisation est un système ouvert sur un environnement changeant. Le management recherche un équilibre entre contraintes, opportunités et intérêts des parties prenantes.</p>
+            <div class="key-terms"><span class="term">Système complexe</span><span class="term">Parties prenantes</span><span class="term">Régulation</span><span class="term">Transformation numérique</span><span class="term">Mutation écologique</span><span class="term">RSE</span></div>
+            <div class="grid-2">
+              <section class="block"><h4>Parties prenantes</h4><p>Ce sont les acteurs qui <strong>influencent</strong> l’organisation ou sont <strong>influencés</strong> par elle.</p><ul><li><strong>Internes :</strong> dirigeants, salariés, associés.</li><li><strong>Externes :</strong> clients ou usagers, fournisseurs, banques, État, collectivités, associations, riverains.</li></ul></section>
+              <section class="block"><h4>Analyser l’environnement : PESTEL</h4><ul><li><strong>P</strong>olitique</li><li><strong>É</strong>conomique</li><li><strong>S</strong>ocioculturel</li><li><strong>T</strong>echnologique</li><li><strong>É</strong>cologique</li><li><strong>L</strong>égal</li></ul></section>
+            </div>
+            <div class="grid-3">
+              <section class="block"><h4>Numérique</h4><p>Opportunités : automatisation, nouveaux services, coopération. Risques : cyberattaque, dépendance, exclusion numérique, atteinte aux données.</p></section>
+              <section class="block"><h4>Écologie</h4><p>Le droit impose des normes, tandis que les attentes sociales poussent à réduire les impacts, économiser les ressources et repenser l’offre.</p></section>
+              <section class="block"><h4>RSE</h4><p>La responsabilité sociétale consiste à intégrer volontairement les préoccupations sociales et environnementales aux activités et relations avec les parties prenantes.</p></section>
+            </div>
+            <section class="block example"><h4>Régulation managériale</h4><p>Une entreprise qui fait face à une hausse du prix de l’énergie peut investir dans des équipements moins énergivores, modifier ses objectifs, former ses salariés et suivre sa consommation. Elle adapte plusieurs éléments du système pour retrouver un équilibre.</p></section>
+            <section class="block warning"><h4>Le bon réflexe</h4><p>Ne te contente pas de nommer un changement. Explique toujours son <strong>effet</strong> sur l’organisation et la <strong>réponse managériale</strong> choisie.</p></section>
+            <section class="quiz"><h4>Teste-toi</h4><p>Une nouvelle règle limite l’usage de certaines matières. Dans quelle dimension de PESTEL la classer et quelle réponse envisager ?</p><button class="answer-btn" type="button" aria-expanded="false">Voir la correction</button><p class="answer" hidden>La règle relève de la dimension légale et peut aussi répondre à une préoccupation écologique. L’organisation peut changer de fournisseur, modifier la conception du produit et contrôler sa conformité.</p></section>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="theme-section t2" id="theme-2" data-theme-section="2">
+      <div class="theme-heading"><span class="theme-number">2</span><div><h2>Le management stratégique : du diagnostic aux objectifs</h2><p>Comprendre la démarche stratégique, analyser l’organisation et piloter les résultats.</p></div></div>
+      <div class="cards">
+
+        <article class="revision-card" id="fiche-2-1" data-theme="2" data-id="2.1">
+          <header class="card-head"><span class="fiche-id">2.1</span><h3>Qu’est-ce que la stratégie ?</h3><button class="done-btn" type="button" aria-pressed="false">À réviser</button></header>
+          <div class="card-body">
+            <p class="lead"><strong>L’essentiel :</strong> la stratégie est un ensemble de décisions coordonnées qui engage le devenir de l’organisation et lui permet d’atteindre ses objectifs en tenant compte de ses ressources et de son environnement.</p>
+            <div class="key-terms"><span class="term">Stratégie</span><span class="term">Démarche stratégique</span><span class="term">Finalité</span><span class="term">Diagnostic</span><span class="term">Plan d’action</span><span class="term">Ajustement</span></div>
+            <section class="block"><h4>La démarche stratégique en cinq étapes</h4><ol><li>Rappeler les <strong>finalités</strong> et la mission de l’organisation.</li><li>Réaliser le <strong>diagnostic interne et externe</strong>.</li><li>Fixer des <strong>objectifs stratégiques</strong>.</li><li>Choisir et mettre en œuvre un <strong>plan d’actions coordonnées</strong>.</li><li>Mesurer les résultats, puis <strong>ajuster</strong> les actions, les objectifs ou la stratégie.</li></ol></section>
+            <div class="grid-2">
+              <section class="block"><h4>Une stratégie engageante</h4><p>Elle concerne le long terme, mobilise des ressources importantes, touche une grande partie de l’organisation et reste difficilement réversible.</p></section>
+              <section class="block"><h4>Planifiée et émergente</h4><p>La stratégie peut être préparée dans un plan, mais elle doit aussi évoluer lorsque des événements imprévus, des innovations ou de nouvelles attentes apparaissent.</p></section>
+            </div>
+            <section class="block example"><h4>Exemple</h4><p>Une entreprise de mobilier décide de devenir une référence de l’économie circulaire. Elle évalue ses capacités, vise une part croissante de matériaux recyclés, revoit sa conception et mesure le taux de produits réparables.</p></section>
+            <section class="quiz"><h4>Teste-toi</h4><p>Pourquoi une stratégie ne peut-elle plus toujours rester figée pendant plusieurs années ?</p><button class="answer-btn" type="button" aria-expanded="false">Voir la correction</button><p class="answer" hidden>Parce que l’environnement est fluctuant et incertain : concurrence, technologie, droit, attentes sociales ou contraintes écologiques peuvent imposer des ajustements.</p></section>
+          </div>
+        </article>
+
+        <article class="revision-card" id="fiche-2-2" data-theme="2" data-id="2.2">
+          <header class="card-head"><span class="fiche-id">2.2</span><h3>Comment élaborer le diagnostic stratégique ?</h3><button class="done-btn" type="button" aria-pressed="false">À réviser</button></header>
+          <div class="card-body">
+            <p class="lead"><strong>L’essentiel :</strong> le diagnostic croise l’analyse interne des forces et faiblesses avec l’analyse externe des opportunités et menaces. Il s’appuie sur une veille stratégique.</p>
+            <div class="key-terms"><span class="term">Veille stratégique</span><span class="term">Forces / faiblesses</span><span class="term">Opportunités / menaces</span><span class="term">Ressources</span><span class="term">Compétence distinctive</span><span class="term">Facteur clé de succès</span></div>
+            <div class="table-scroll">
+              <table>
+                <caption>La matrice FFOM (ou SWOT)</caption>
+                <thead><tr><th></th><th>Positif</th><th>Négatif</th></tr></thead>
+                <tbody><tr><th>Interne et maîtrisable</th><td><strong>Forces</strong> : ressources ou compétences favorables</td><td><strong>Faiblesses</strong> : limites internes</td></tr><tr><th>Externe et peu maîtrisable</th><td><strong>Opportunités</strong> : évolution favorable de l’environnement</td><td><strong>Menaces</strong> : évolution externe défavorable</td></tr></tbody>
+              </table>
+            </div>
+            <div class="grid-2">
+              <section class="block"><h4>Diagnostic interne</h4><p>Étudie les ressources humaines, financières, matérielles, immatérielles et technologiques, puis les compétences permettant de bien les combiner.</p><p>Une <strong>compétence distinctive</strong> est particulièrement maîtrisée, utile et difficile à imiter.</p></section>
+              <section class="block"><h4>Diagnostic externe</h4><p>Analyse le macro-environnement avec PESTEL et le micro-environnement : clients, concurrents, fournisseurs, partenaires.</p><p>Un <strong>facteur clé de succès</strong> est une condition à maîtriser pour réussir dans un secteur.</p></section>
+            </div>
+            <section class="block example"><h4>Exemple guidé</h4><p>Pour une petite boulangerie : savoir-faire artisanal reconnu = force ; faible capacité de production = faiblesse ; intérêt croissant pour le local = opportunité ; hausse du prix de l’énergie = menace. La qualité régulière peut être un facteur clé de succès ; une recette exclusive bien maîtrisée, une compétence distinctive.</p></section>
+            <section class="block warning"><h4>Erreur classique</h4><p>Ne classe pas un même élément au hasard. Demande-toi : « vient-il de l’organisation et peut-elle le maîtriser ? » Si oui, il est interne. Sinon, il est externe.</p></section>
+            <section class="quiz"><h4>Teste-toi</h4><p>« Une équipe possède un brevet unique, mais un nouveau concurrent arrive. » Classe les deux éléments.</p><button class="answer-btn" type="button" aria-expanded="false">Voir la correction</button><p class="answer" hidden>Le brevet est une ressource immatérielle interne et une force potentielle. L’arrivée d’un concurrent est un élément externe et constitue une menace potentielle.</p></section>
+          </div>
+        </article>
+
+        <article class="revision-card" id="fiche-2-3" data-theme="2" data-id="2.3">
+          <header class="card-head"><span class="fiche-id">2.3</span><h3>Comment traduire le diagnostic en objectifs ?</h3><button class="done-btn" type="button" aria-pressed="false">À réviser</button></header>
+          <div class="card-body">
+            <p class="lead"><strong>L’essentiel :</strong> les objectifs stratégiques traduisent la finalité de l’organisation en résultats à atteindre. Ils sont choisis à partir du diagnostic et influencés par les attentes des parties prenantes.</p>
+            <div class="key-terms"><span class="term">Objectif stratégique</span><span class="term">Finalité</span><span class="term">RSE</span><span class="term">Parties prenantes</span><span class="term">Conflit</span><span class="term">Consensus</span></div>
+            <section class="block"><h4>Le raisonnement attendu</h4><p><strong>Finalité → diagnostic → objectif → action → indicateur.</strong></p><p>Un objectif solide est précis, cohérent avec la finalité et le diagnostic, associé à un délai et évaluable grâce à un indicateur.</p></section>
+            <div class="grid-2">
+              <section class="block"><h4>Des intérêts divergents</h4><p>Les propriétaires peuvent rechercher une rentabilité, les salariés de bonnes conditions de travail, les clients des prix bas et les riverains moins de nuisances. Ces attentes peuvent créer un <strong>nœud de conflit</strong>.</p></section>
+              <section class="block"><h4>Construire le consensus</h4><p>Informer, consulter, négocier et faire participer les acteurs favorisent l’appropriation des objectifs. Le consensus est un accord acceptable ; il ne signifie pas que tous les intérêts deviennent identiques.</p></section>
+            </div>
+            <section class="block example"><h4>Exemple</h4><p>Après avoir identifié une forte attente écologique, une entreprise fixe l’objectif de diminuer de 30 % ses émissions directes en quatre ans. Cet objectif contribue à sa finalité de pérennité et à sa RSE ; il doit être discuté avec les salariés, fournisseurs et financeurs.</p></section>
+            <section class="block warning"><h4>Objectif ou action ?</h4><p>« Réduire les émissions de 30 % » est un <strong>objectif</strong>. « Remplacer les véhicules thermiques » est une <strong>action</strong> possible pour l’atteindre.</p></section>
+            <section class="quiz"><h4>Teste-toi</h4><p>Pourquoi l’appropriation des objectifs par les salariés peut-elle favoriser la réussite ?</p><button class="answer-btn" type="button" aria-expanded="false">Voir la correction</button><p class="answer" hidden>Des salariés qui comprennent et acceptent les objectifs sont plus susceptibles de mobiliser leurs compétences, de coopérer et d’appliquer les actions nécessaires. La résistance et les conflits diminuent.</p></section>
+          </div>
+        </article>
+
+        <article class="revision-card" id="fiche-2-4" data-theme="2" data-id="2.4">
+          <header class="card-head"><span class="fiche-id">2.4</span><h3>Comment évaluer les objectifs et les pratiques ?</h3><button class="done-btn" type="button" aria-pressed="false">À réviser</button></header>
+          <div class="card-body">
+            <p class="lead"><strong>L’essentiel :</strong> un indicateur transforme un objectif en information mesurable. La comparaison entre la valeur attendue et la valeur obtenue permet d’évaluer la performance et de décider d’actions correctrices.</p>
+            <div class="key-terms"><span class="term">Indicateur</span><span class="term">Valeur cible</span><span class="term">Résultat</span><span class="term">Performance</span><span class="term">Écart</span><span class="term">Action correctrice</span></div>
+            <div class="grid-2">
+              <section class="block"><h4>Choisir de bons indicateurs</h4><ul><li>pertinents par rapport à l’objectif ;</li><li>fiables et compréhensibles ;</li><li>comparables dans le temps ou l’espace ;</li><li>variés : financiers, commerciaux, sociaux, environnementaux ;</li><li>acceptés par les acteurs concernés.</li></ul></section>
+              <section class="block"><h4>La boucle de pilotage</h4><ol><li>Fixer l’objectif et la cible.</li><li>Mesurer le résultat.</li><li>Calculer et expliquer l’écart.</li><li>Décider une correction.</li><li>Contrôler à nouveau.</li></ol></section>
+            </div>
+            <span class="formula">Taux de réalisation = résultat obtenu ÷ objectif fixé × 100</span>
+            <span class="formula">Taux d’évolution = (valeur d’arrivée − valeur de départ) ÷ valeur de départ × 100</span>
+            <div class="table-scroll"><table><caption>Exemples d’indicateurs</caption><thead><tr><th>Dimension</th><th>Indicateurs possibles</th></tr></thead><tbody><tr><td>Financière</td><td>Chiffre d’affaires, résultat, coût</td></tr><tr><td>Commerciale</td><td>Part de marché, satisfaction, fidélisation</td></tr><tr><td>Sociale</td><td>Absentéisme, accidents, formation, conflits internes</td></tr><tr><td>Environnementale</td><td>Émissions, consommation d’énergie, taux de recyclage</td></tr></tbody></table></div>
+            <section class="block example"><h4>Calcul express</h4><p>L’objectif est de former 80 salariés ; 68 ont été formés. Le taux de réalisation est de 68 ÷ 80 × 100 = <strong>85 %</strong>. L’écart doit ensuite être expliqué avant de corriger le planning, les moyens ou la cible.</p></section>
+            <section class="quiz"><h4>Teste-toi</h4><p>Pourquoi un seul indicateur financier ne suffit-il pas toujours pour juger la performance ?</p><button class="answer-btn" type="button" aria-expanded="false">Voir la correction</button><p class="answer" hidden>Parce que l’organisation poursuit plusieurs objectifs et produit des effets économiques, sociaux et environnementaux. Une variété d’indicateurs évite une conclusion partielle.</p></section>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="theme-section t3" id="theme-3" data-theme-section="3">
+      <div class="theme-heading"><span class="theme-number">3</span><div><h2>Les choix stratégiques des organisations</h2><p>Comparer les options des entreprises, des organisations publiques et des organisations de la société civile.</p></div></div>
+      <div class="cards">
+
+        <article class="revision-card" id="fiche-3-1" data-theme="3" data-id="3.1">
+          <header class="card-head"><span class="fiche-id">3.1</span><h3>Quelles options stratégiques pour les entreprises ?</h3><button class="done-btn" type="button" aria-pressed="false">À réviser</button></header>
+          <div class="card-body">
+            <p class="lead"><strong>L’essentiel :</strong> l’entreprise choisit ses activités, construit un avantage concurrentiel, délimite ce qu’elle réalise elle-même et sélectionne ses modalités de développement.</p>
+            <div class="key-terms"><span class="term">DAS</span><span class="term">Spécialisation</span><span class="term">Diversification</span><span class="term">Domination par les coûts</span><span class="term">Différenciation</span><span class="term">Chaîne de valeur</span><span class="term">Croissance</span></div>
+            <section class="block"><h4>Deux niveaux de choix</h4><p>Un <strong>domaine d’activité stratégique (DAS)</strong> regroupe des activités qui affrontent des concurrents proches, répondent à des clients comparables et mobilisent des facteurs clés de succès semblables.</p><ul><li><strong>Stratégie globale :</strong> spécialisation sur un métier ou diversification vers de nouvelles activités.</li><li><strong>Stratégie de domaine :</strong> construire un avantage dans chaque DAS.</li></ul></section>
+            <div class="table-scroll"><table><caption>Construire l’avantage concurrentiel</caption><thead><tr><th>Option</th><th>Principe</th><th>Vigilance</th></tr></thead><tbody><tr><td><strong>Domination par les coûts</strong></td><td>Produire à un coût inférieur pour proposer un prix bas ou dégager une meilleure marge</td><td>Préserver la qualité et éviter une guerre des prix</td></tr><tr><td><strong>Différenciation</strong></td><td>Proposer une offre perçue comme unique : par <strong>sophistication</strong> (plus de valeur perçue) ou par <strong>épuration</strong> (offre simplifiée à prix accessible)</td><td>La différence doit être utile au client et difficile à copier</td></tr></tbody></table></div>
+            <div class="grid-2">
+              <section class="block"><h4>Chaîne de valeur</h4><ul><li><strong>Intégration :</strong> réaliser en interne une activité auparavant confiée à un partenaire.</li><li><strong>Externalisation :</strong> confier une activité à un prestataire spécialisé.</li></ul></section>
+              <section class="block"><h4>Développement</h4><ul><li><strong>Croissance interne :</strong> créer ses propres capacités.</li><li><strong>Croissance externe :</strong> acquérir ou fusionner.</li><li><strong>Partenariat :</strong> coopérer sans fusionner.</li><li><strong>Internationalisation :</strong> se développer à l’étranger.</li></ul></section>
+            </div>
+            <section class="block example"><h4>Choix cohérents</h4><p>Une marque spécialisée dans les vélos urbains peut se différencier par la réparabilité, intégrer la conception pour protéger son savoir-faire, externaliser la livraison et se développer à l’étranger grâce à un partenaire local.</p></section>
+            <section class="block warning"><h4>Un avantage n’est jamais définitif</h4><p>Les concurrents imitent, les technologies progressent et les attentes changent. Le numérique peut créer des plateformes, exploiter les données et accélérer l’innovation, mais aussi rendre l’avantage plus éphémère. L’entreprise doit également arbitrer entre transparence envers ses parties prenantes et secret stratégique.</p></section>
+            <section class="quiz"><h4>Teste-toi</h4><p>Une entreprise de chaussures lance une activité de bagages. Spécialisation ou diversification ?</p><button class="answer-btn" type="button" aria-expanded="false">Voir la correction</button><p class="answer" hidden>Il s’agit d’une diversification, car l’entreprise ajoute une nouvelle activité. Il faut toutefois vérifier, dans une situation réelle, si les compétences, clients et concurrents sont suffisamment différents pour constituer un nouveau DAS.</p></section>
+          </div>
+        </article>
+
+        <article class="revision-card" id="fiche-3-2" data-theme="3" data-id="3.2">
+          <header class="card-head"><span class="fiche-id">3.2</span><h3>Les stratégies des organisations publiques : quelles spécificités ?</h3><button class="done-btn" type="button" aria-pressed="false">À réviser</button></header>
+          <div class="card-body">
+            <p class="lead"><strong>L’essentiel :</strong> la stratégie publique vise l’intérêt général et respecte les principes du service public. Elle se déploie à plusieurs niveaux, sous contraintes budgétaires, juridiques et politiques.</p>
+            <div class="key-terms"><span class="term">Intérêt général</span><span class="term">Service public</span><span class="term">Continuité</span><span class="term">Égalité</span><span class="term">Adaptabilité</span><span class="term">Délégation</span><span class="term">Transparence</span></div>
+            <div class="grid-3">
+              <section class="block"><h4>Continuité</h4><p>Le service doit fonctionner de manière régulière, car il répond à un besoin collectif.</p></section>
+              <section class="block"><h4>Égalité</h4><p>Les usagers placés dans une situation comparable doivent être traités de façon comparable.</p></section>
+              <section class="block"><h4>Adaptabilité</h4><p>Le service évolue avec les besoins, les techniques et l’intérêt général.</p></section>
+            </div>
+            <section class="block"><h4>Niveaux et modalités d’action</h4><ul><li><strong>Niveaux :</strong> central, territorial, intercommunal et cadre européen.</li><li><strong>Gestion directe :</strong> la personne publique assure elle-même le service.</li><li><strong>Délégation ou concession :</strong> elle confie la gestion à un opérateur, sous contrôle et pour une durée prévue.</li><li><strong>Partenariat public-privé :</strong> acteurs publics et privés coopèrent dans un projet.</li></ul></section>
+            <div class="grid-2">
+              <section class="block"><h4>Arbitrages</h4><p>Il faut concilier qualité du service, accessibilité, continuité, maîtrise des coûts et contraintes budgétaires. Des groupes de pression et conflits d’intérêts peuvent influencer le débat.</p></section>
+              <section class="block"><h4>Évaluation et transparence</h4><p>Les objectifs et l’utilisation des fonds doivent être rendus compréhensibles. Des indicateurs de coût, de qualité, d’accès et de satisfaction évaluent la performance. La Cour des comptes contrôle l’emploi des fonds publics.</p></section>
+            </div>
+            <section class="block example"><h4>Exemple</h4><p>Une collectivité veut améliorer les transports. Elle peut exploiter directement le réseau ou le déléguer. Elle évaluera notamment la ponctualité, la couverture du territoire, le coût par voyageur et la satisfaction des usagers.</p></section>
+            <section class="block warning"><h4>À ne pas oublier</h4><p>Une entreprise publique vend parfois sur un marché concurrentiel, mais la propriété publique et les missions confiées créent des spécificités par rapport à l’entreprise privée classique.</p></section>
+            <section class="quiz"><h4>Teste-toi</h4><p>Une mairie ouvre une démarche en ligne pour répondre plus rapidement aux habitants. Quel principe du service public est principalement illustré ?</p><button class="answer-btn" type="button" aria-expanded="false">Voir la correction</button><p class="answer" hidden>L’adaptabilité : le service évolue avec les usages et les technologies. Il faut toutefois préserver l’égalité, par exemple en proposant une solution aux personnes éloignées du numérique.</p></section>
+          </div>
+        </article>
+
+        <article class="revision-card" id="fiche-3-3" data-theme="3" data-id="3.3">
+          <header class="card-head"><span class="fiche-id">3.3</span><h3>Les organisations de la société civile peuvent-elles se passer de stratégie ?</h3><button class="done-btn" type="button" aria-pressed="false">À réviser</button></header>
+          <div class="card-body">
+            <p class="lead"><strong>L’essentiel :</strong> non. Même sans but lucratif, une OSC doit choisir ses priorités, pérenniser ses ressources, développer son action et rendre compte de l’emploi de ses moyens.</p>
+            <div class="key-terms"><span class="term">Objet social</span><span class="term">But non lucratif</span><span class="term">Ressources humaines</span><span class="term">Ressources financières</span><span class="term">Pérennisation</span><span class="term">Transparence</span></div>
+            <section class="block"><h4>Une stratégie délimitée par l’objet social</h4><p>L’<strong>objet social</strong> indique la raison d’être et le domaine d’action de l’organisation. La stratégie doit le respecter : une association humanitaire choisira des actions compatibles avec sa mission et ses bénéficiaires.</p></section>
+            <div class="grid-2">
+              <section class="block"><h4>Pourquoi faire des choix ?</h4><ul><li>les dons, subventions et bénévoles sont limités ;</li><li>les besoins sociaux évoluent ;</li><li>plusieurs organisations peuvent solliciter les mêmes ressources ;</li><li>le numérique transforme la collecte et la mobilisation ;</li><li>la pérennité exige d’anticiper.</li></ul></section>
+              <section class="block"><h4>Options possibles</h4><ul><li>prioriser un public ou un territoire ;</li><li>diversifier les financements ;</li><li>recruter et fidéliser des bénévoles ;</li><li>créer des partenariats ;</li><li>développer des activités marchandes compatibles avec l’objet social.</li></ul></section>
+            </div>
+            <section class="block example"><h4>Exemple</h4><p>Une association d’aide alimentaire confrontée à une baisse des dons peut développer des partenariats avec des commerces, améliorer sa plateforme de bénévolat et mesurer le nombre de bénéficiaires servis ainsi que le gaspillage évité.</p></section>
+            <section class="block"><h4>Une exigence de transparence</h4><p>Lorsqu’une OSC reçoit des dons du public ou des subventions, elle doit expliquer ses objectifs et l’affectation des ressources. Cette transparence entretient la confiance des donateurs, adhérents, bénévoles, bénéficiaires et financeurs.</p></section>
+            <section class="block warning"><h4>But non lucratif ≠ absence d’excédent</h4><p>Une OSC peut dégager un excédent pour financer son activité et assurer sa pérennité. La différence essentielle est l’absence de distribution de cet excédent à des propriétaires.</p></section>
+            <section class="quiz"><h4>Teste-toi</h4><p>Montre en une phrase pourquoi une association a besoin d’une stratégie.</p><button class="answer-btn" type="button" aria-expanded="false">Voir la correction</button><p class="answer" hidden>Une association doit élaborer une stratégie afin de réaliser durablement son objet social malgré des ressources humaines et financières limitées et un environnement changeant.</p></section>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <div class="empty-state" id="empty-state" role="status"><strong>Aucune fiche ne correspond à cette recherche.</strong><br>Essaie un autre mot-clé ou affiche toutes les fiches.</div>
+
+    <footer class="footer">
+      <p><strong>Référence pédagogique :</strong> <a href="https://eduscol.education.gouv.fr/sites/default/files/document/spe646annexe21063602pdf-84603.pdf">programme de management de première STMG</a>, programme officiel en vigueur.</p>
+      <p>Les exemples sont volontairement simples : dans une étude de cas, appuie toujours ta réponse sur les informations précises des documents.</p>
+    </footer>
+  </div>
+
+  </main>
+</body>
+</html>

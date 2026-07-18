@@ -1,0 +1,240 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="12 fiches de révision interactives pour Économie - Terminale STMG.">
+  <title>Fiches de révision - Économie - Terminale STMG</title>
+  <!-- Page prévue dans /economie/ : les ressources communes sont à la racine. -->
+  <link rel="stylesheet" href="../fonts.css">
+  <link rel="stylesheet" href="../style.css">
+  <script src="../accessibility.js" defer></script>
+</head>
+<body class="management-page economie-page">
+  <div id="accessibility-menu" aria-label="Options d’accessibilité">
+    <button type="button" onclick="toggleTheme()" title="Basculer entre le thème sombre et le thème clair" aria-label="Basculer entre le thème sombre et le thème clair">🌙 / ☀️</button>
+    <button type="button" id="btn-dys" onclick="toggleDys()" title="Activer ou désactiver la police OpenDyslexic">Dys</button>
+    <button type="button" onclick="fontMinus()" title="Réduire la taille du texte" aria-label="Réduire la taille du texte">A−</button>
+    <button type="button" onclick="fontPlus()" title="Augmenter la taille du texte" aria-label="Augmenter la taille du texte">A+</button>
+    <button type="button" onclick="resetAccessibility()" title="Réinitialiser les options d’accessibilité" aria-label="Réinitialiser les options d’accessibilité">🔄</button>
+  </div>
+
+  <header class="page-header">
+    <nav class="top-nav" aria-label="Fil d’Ariane"><a href="../index.html">← Accueil</a><span aria-hidden="true">›</span><span>Économie Tle STMG</span></nav>
+    <div class="top-banner"><span class="banner-main">Ressources pédagogiques</span><span class="banner-sub">Terminale STMG · Économie</span></div>
+    <p class="intro">Révise les mécanismes, les calculs et l’argumentation du programme de terminale à l’aide de douze fiches interactives.</p>
+  </header>
+
+  <main class="revision-page" id="economie-revision" data-storage-key="economie-tle-stmg-fiches-v1">
+    <a class="skip-link" href="#fiches">Aller aux fiches</a>
+    <section class="level-banner" aria-labelledby="revision-title">
+      <span class="level-emoji" aria-hidden="true">📈</span>
+      <div class="level-text"><h1 class="revision-title" id="revision-title">Économie - Terminale STMG</h1><p>Comprendre, retenir et argumenter.</p></div>
+    </section>
+    <section class="progress-panel callout student" aria-label="Progression de révision">
+      <strong><span id="done-count">0</span> / 12 fiches révisées</strong>
+      <div class="progress-track" aria-hidden="true"><div class="progress-fill" id="progress-fill"></div></div>
+      <span id="progress-message">Commence par le thème de ton choix.</span>
+    </section>
+    <nav class="toolbar" aria-label="Outils de révision">
+      <div class="toolbar-inner">
+        <label><span class="visually-hidden">Rechercher une notion</span><input class="search" id="search" type="search" placeholder="Rechercher : chômage, BCE, libre-échange…"></label>
+        <div class="filters" aria-label="Filtrer par thème"><button class="filter" type="button" data-filter="all" aria-pressed="true">Toutes</button>
+        <button class="filter" type="button" data-filter="6" aria-pressed="false">Thème 6</button>
+        <button class="filter" type="button" data-filter="7" aria-pressed="false">Thème 7</button>
+        <button class="filter" type="button" data-filter="8" aria-pressed="false">Thème 8</button>
+        <button class="filter" type="button" data-filter="9" aria-pressed="false">Thème 9</button></div>
+        <button class="print-btn" type="button" id="print-page">Imprimer / PDF</button>
+      </div>
+    </nav>
+    <div class="container" id="fiches">
+      <nav class="orientation" aria-label="Accès aux thèmes"><a class="theme-link" href="#theme-6"><small>Thème 6 · 4 fiches</small><strong>Comment l’État peut-il intervenir dans l’économie ?</strong></a>
+      <a class="theme-link" href="#theme-7"><small>Thème 7 · 3 fiches</small><strong>Quelle est l’influence de l’État sur l’évolution de l’emploi et du chômage ?</strong></a>
+      <a class="theme-link" href="#theme-8"><small>Thème 8 · 3 fiches</small><strong>Comment organiser le commerce international dans un contexte d’ouverture des échanges ?</strong></a>
+      <a class="theme-link" href="#theme-9"><small>Thème 9 · 2 fiches</small><strong>Comment concilier la croissance économique et le développement durable ?</strong></a></nav>
+      <section class="method-box" aria-labelledby="methode-titre"><h2 id="methode-titre">La méthode A‑D‑I pour construire un raisonnement économique</h2><ol><li><strong>Affirmer :</strong> formule une réponse nette et mobilise la notion économique exacte.</li><li><strong>Démontrer :</strong> déroule le mécanisme de cause à effet, avec un calcul si nécessaire.</li><li><strong>Illustrer :</strong> utilise une donnée datée du document, puis interprète-la sans la paraphraser.</li></ol></section>
+
+    <section class="theme-section t1" id="theme-6" data-theme-section="6">
+      <div class="theme-heading"><span class="theme-number">6</span><div><h2>Comment l’État peut-il intervenir dans l’économie ?</h2><p>Comprendre les fonctions publiques, les défaillances et les politiques économiques et sociales.</p></div></div>
+      <div class="cards">
+        <article class="revision-card" id="fiche-6-1" data-theme="6" data-id="6.1">
+          <header class="card-head"><span class="fiche-id">6.1</span><h3>L’intervention de l’État</h3><button class="done-btn" type="button" aria-pressed="false">À réviser</button></header>
+          <div class="card-body">
+            <p class="lead"><strong>L’essentiel :</strong> L’État définit les règles, produit des services publics, redistribue les revenus et stabilise l’activité. L’ampleur de son intervention oppose conceptions libérale et interventionniste et se lit dans les dépenses, le déficit et la dette.</p>
+            <div class="key-terms"><span class="term">État-gendarme</span><span class="term">État-providence</span><span class="term">Libéralisme</span><span class="term">Interventionnisme</span><span class="term">Dépense publique</span><span class="term">Déficit public</span><span class="term">Dette publique</span><span class="term">Entreprise publique</span></div>
+            <div class="grid-2"><section class="block"><h4>De l’État-gendarme à l’État-providence</h4><ul><li>L’<strong>État-gendarme</strong> se concentre sur les fonctions régaliennes : sécurité, justice, défense et règles.</li><li>L’<strong>État-providence</strong> ajoute protection sociale, redistribution, services collectifs et régulation économique.</li><li>Le <strong>libéralisme</strong> fait confiance au marché ; l’<strong>interventionnisme</strong> justifie une action publique plus large.</li></ul></section><section class="block"><h4>Acteurs et comptes publics</h4><p>La production peut être assurée par une entreprise privée, publique ou à participation mixte. Les <strong>dépenses publiques</strong> financent services, prestations et investissements. Le déficit est un <strong>flux annuel</strong> quand les dépenses dépassent les recettes ; la dette est un <strong>stock</strong> issu notamment de l’accumulation des déficits.</p></section></div>
+            
+            <section class="block example"><h4>Exemple raisonné</h4><p>Si les administrations dépensent 120 et perçoivent 110 sur une année, le déficit est de 10. Il augmente généralement le besoin d’emprunt et donc la dette.</p></section>
+            <section class="block warning"><h4>Piège à éviter</h4><p>Déficit et dette ne sont pas synonymes. Un pays peut réduire son déficit tout en continuant à augmenter sa dette si son solde reste négatif.</p></section>
+            <section class="quiz"><h4>Teste-toi</h4><p>Une dépense publique est-elle toujours une intervention directe dans la production ?</p><button class="answer-btn" type="button" aria-expanded="false">Voir la correction</button><p class="answer" hidden>Non. Elle peut financer une production publique, un transfert social, un investissement ou une commande adressée à une entreprise privée.</p></section>
+          </div>
+        </article>
+
+        <article class="revision-card" id="fiche-6-2" data-theme="6" data-id="6.2">
+          <header class="card-head"><span class="fiche-id">6.2</span><h3>Défaillances des marchés et défaillances de l’État</h3><button class="done-btn" type="button" aria-pressed="false">À réviser</button></header>
+          <div class="card-body">
+            <p class="lead"><strong>L’essentiel :</strong> Le marché n’alloue pas toujours efficacement les ressources. Information imparfaite, pouvoir de marché, externalités et biens collectifs peuvent justifier une correction publique, elle-même susceptible d’erreurs et de coûts.</p>
+            <div class="key-terms"><span class="term">Asymétrie d’information</span><span class="term">Concurrence imparfaite</span><span class="term">Externalité</span><span class="term">Bien public</span><span class="term">Bien commun</span><span class="term">Réglementation</span><span class="term">Taxe</span><span class="term">Subvention</span><span class="term">Défaillance de l’État</span></div>
+            <div class="grid-2"><section class="block"><h4>Quatre défaillances fréquentes</h4><ul><li><strong>Asymétrie d’information :</strong> un acteur sait plus que l’autre.</li><li><strong>Concurrence imparfaite :</strong> une entreprise peut influencer prix ou quantité.</li><li><strong>Externalité :</strong> effet sur un tiers non intégré au prix, positif ou négatif.</li><li><strong>Bien public :</strong> non-rival et non-excluable ; <strong>bien commun :</strong> rival mais difficilement excluable.</li></ul></section><section class="block"><h4>Corriger sans aggraver</h4><p>Information obligatoire, normes, concurrence, taxes, quotas, subventions ou production publique modifient les incitations. Mais manque d’information, coût administratif, capture par des intérêts, délai et effets inattendus peuvent produire une <strong>défaillance de l’État</strong>.</p></section></div>
+            
+            <section class="block example"><h4>Exemple raisonné</h4><p>Une taxe carbone cherche à intégrer le coût climatique dans le prix. Une aide à l’isolation encourage une externalité positive : baisse des consommations et des émissions.</p></section>
+            <section class="block warning"><h4>Piège à éviter</h4><p>Une intervention se juge par sa cible et ses effets. Dire « le marché échoue donc l’État doit agir » ne suffit pas : il faut comparer instruments, coûts et risques.</p></section>
+            <section class="quiz"><h4>Teste-toi</h4><p>Pourquoi un phare est-il souvent présenté comme un bien public ?</p><button class="answer-btn" type="button" aria-expanded="false">Voir la correction</button><p class="answer" hidden>Son signal peut bénéficier à un bateau sans réduire le bénéfice des autres, et il est difficile d’exclure ceux qui ne paient pas : non-rivalité et non-exclusion.</p></section>
+          </div>
+        </article>
+
+        <article class="revision-card" id="fiche-6-3" data-theme="6" data-id="6.3">
+          <header class="card-head"><span class="fiche-id">6.3</span><h3>Les politiques économiques de l’État et de l’Europe</h3><button class="done-btn" type="button" aria-pressed="false">À réviser</button></header>
+          <div class="card-body">
+            <p class="lead"><strong>L’essentiel :</strong> Les politiques conjoncturelles cherchent à limiter les fluctuations à court terme ; les politiques structurelles transforment durablement l’économie. Dans la zone euro, politique budgétaire nationale et politique monétaire de la BCE doivent s’articuler.</p>
+            <div class="key-terms"><span class="term">Cycle</span><span class="term">Politique conjoncturelle</span><span class="term">Politique structurelle</span><span class="term">Politique budgétaire</span><span class="term">Politique monétaire</span><span class="term">Relance</span><span class="term">Rigueur</span><span class="term">BCE</span><span class="term">Transmission</span></div>
+            <div class="grid-2"><section class="block"><h4>Objectifs et instruments</h4><ul><li><strong>Politique budgétaire :</strong> agir sur dépenses et prélèvements.</li><li><strong>Politique monétaire :</strong> agir notamment sur les taux et la liquidité.</li><li><strong>Politique de demande :</strong> soutenir consommation et investissement.</li><li><strong>Politique d’offre :</strong> renforcer capacités productives, innovation ou compétitivité.</li><li><strong>Politique de concurrence :</strong> préserver un fonctionnement concurrentiel.</li></ul></section><section class="block"><h4>Le mécanisme de transmission</h4><p>Une baisse des taux directeurs peut réduire le coût du crédit, favoriser consommation et investissement, stimuler demande et production, puis emploi. Le résultat dépend toutefois des anticipations, des banques, de l’endettement et des capacités de production. Les règles européennes encadrent déficits et coordination.</p></section></div>
+            
+            <section class="block example"><h4>Exemple raisonné</h4><p>Face à une récession, une hausse temporaire de l’investissement public soutient directement la demande et peut aussi améliorer l’offre future grâce aux infrastructures.</p></section>
+            <section class="block warning"><h4>Piège à éviter</h4><p>Une mesure peut agir à la fois sur offre et demande. Il faut expliciter l’horizon, le canal de transmission et les limites, pas seulement lui coller une étiquette.</p></section>
+            <section class="quiz"><h4>Teste-toi</h4><p>Pourquoi une baisse des taux ne relance-t-elle pas mécaniquement l’investissement ?</p><button class="answer-btn" type="button" aria-expanded="false">Voir la correction</button><p class="answer" hidden>Si les entreprises anticipent peu de débouchés ou sont déjà endettées, elles peuvent ne pas emprunter malgré un crédit moins cher.</p></section>
+          </div>
+        </article>
+
+        <article class="revision-card" id="fiche-6-4" data-theme="6" data-id="6.4">
+          <header class="card-head"><span class="fiche-id">6.4</span><h3>Les politiques sociales</h3><button class="done-btn" type="button" aria-pressed="false">À réviser</button></header>
+          <div class="card-body">
+            <p class="lead"><strong>L’essentiel :</strong> Les politiques sociales couvrent les risques et réduisent les inégalités grâce à la protection sociale, aux services publics et à la redistribution horizontale ou verticale.</p>
+            <div class="key-terms"><span class="term">Inégalité</span><span class="term">Redistribution horizontale</span><span class="term">Redistribution verticale</span><span class="term">Protection sociale</span><span class="term">Assurance</span><span class="term">Assistance</span><span class="term">Cotisation</span><span class="term">Impôt progressif</span><span class="term">Risque social</span></div>
+            <div class="grid-2"><section class="block"><h4>Deux logiques de redistribution</h4><ul><li><strong>Horizontale :</strong> transfert entre personnes exposées différemment à un risque, par exemple des bien-portants vers les malades.</li><li><strong>Verticale :</strong> réduction des écarts de niveau de vie, des revenus élevés vers les revenus faibles.</li><li><strong>Assurance :</strong> droits liés à des cotisations.</li><li><strong>Assistance :</strong> aide fondée sur la solidarité et les besoins.</li></ul></section><section class="block"><h4>Financement et effets</h4><p>Cotisations sociales, impôts et taxes financent prestations et services. Un prélèvement progressif représente une part croissante du revenu lorsque celui-ci augmente. La redistribution modifie le revenu disponible, protège contre maladie, chômage, vieillesse ou pauvreté et peut soutenir la cohésion sociale.</p></section></div>
+            
+            <section class="block example"><h4>Exemple raisonné</h4><p>L’indemnisation du chômage relève d’une logique assurantielle lorsqu’elle dépend des cotisations ; un minimum social relève d’une logique d’assistance.</p></section>
+            <section class="block warning"><h4>Piège à éviter</h4><p>Égalité et équité diffèrent : l’égalité traite de manière identique ; l’équité adapte le traitement pour tenir compte des situations et viser davantage de justice.</p></section>
+            <section class="quiz"><h4>Teste-toi</h4><p>Une prestation familiale versée sans condition de revenu illustre quelle redistribution ?</p><button class="answer-btn" type="button" aria-expanded="false">Voir la correction</button><p class="answer" hidden>Elle illustre surtout une redistribution horizontale entre ménages sans enfant et ménages avec enfant, même si le système global peut aussi avoir des effets verticaux.</p></section>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="theme-section t2" id="theme-7" data-theme-section="7">
+      <div class="theme-heading"><span class="theme-number">7</span><div><h2>Quelle est l’influence de l’État sur l’évolution de l’emploi et du chômage ?</h2><p>Mesurer le marché du travail, expliquer ses déséquilibres et évaluer les politiques d’emploi.</p></div></div>
+      <div class="cards">
+        <article class="revision-card" id="fiche-7-1" data-theme="7" data-id="7.1">
+          <header class="card-head"><span class="fiche-id">7.1</span><h3>Activité et chômage</h3><button class="done-btn" type="button" aria-pressed="false">À réviser</button></header>
+          <div class="card-body">
+            <p class="lead"><strong>L’essentiel :</strong> La population en âge de travailler se partage entre actifs et inactifs. Parmi les actifs, certains occupent un emploi et d’autres sont au chômage. Trois taux distincts décrivent la situation.</p>
+            <div class="key-terms"><span class="term">Population active</span><span class="term">Inactif</span><span class="term">Emploi</span><span class="term">Chômage</span><span class="term">Taux d’activité</span><span class="term">Taux d’emploi</span><span class="term">Taux de chômage</span><span class="term">Sous-emploi</span><span class="term">Plein emploi</span></div>
+            <div class="grid-2"><section class="block"><h4>Classer les personnes</h4><ul><li><strong>Population active :</strong> personnes en emploi et chômeurs.</li><li><strong>Chômeur :</strong> sans emploi, disponible et en recherche active selon la définition statistique.</li><li><strong>Inactif :</strong> personne qui n’est ni en emploi ni au chômage.</li><li><strong>Sous-emploi :</strong> emploi insuffisant au regard de la durée souhaitée ou disponibilité réduite.</li><li><strong>Plein emploi :</strong> chômage faible, sans être nécessairement nul.</li></ul></section><section class="block"><h4>Interpréter les taux</h4><p>Le dénominateur est décisif. Le taux de chômage porte sur les <strong>actifs</strong>, alors que taux d’activité et taux d’emploi rapportent une population à la <strong>population en âge de travailler</strong>.</p></section></div>
+            <div class="formula">Taux d’activité = population active ÷ population en âge de travailler × 100</div><div class="formula">Taux de chômage = chômeurs ÷ population active × 100</div><div class="formula">Taux d’emploi = personnes en emploi ÷ population en âge de travailler × 100</div>
+            <section class="block example"><h4>Exemple raisonné</h4><p>Sur 1 000 personnes en âge de travailler, 700 sont actives, dont 630 en emploi : le taux d’activité est 70 %, le taux d’emploi 63 % et le taux de chômage 10 %.</p></section>
+            <section class="block warning"><h4>Piège à éviter</h4><p>Une baisse du taux de chômage peut venir d’une hausse de l’emploi, mais aussi d’un passage de chômeurs vers l’inactivité. Il faut lire plusieurs indicateurs.</p></section>
+            <section class="quiz"><h4>Teste-toi</h4><p>Si 50 chômeurs cessent de rechercher un emploi, que peut-il arriver au taux de chômage ?</p><button class="answer-btn" type="button" aria-expanded="false">Voir la correction</button><p class="answer" hidden>Ils sortent de la population active ; le taux de chômage peut baisser sans création d’emploi. C’est pourquoi le taux d’emploi complète l’analyse.</p></section>
+          </div>
+        </article>
+
+        <article class="revision-card" id="fiche-7-2" data-theme="7" data-id="7.2">
+          <header class="card-head"><span class="fiche-id">7.2</span><h3>L’offre et la demande de travail</h3><button class="done-btn" type="button" aria-pressed="false">À réviser</button></header>
+          <div class="card-body">
+            <p class="lead"><strong>L’essentiel :</strong> Sur le marché du travail, les ménages offrent leur travail et les organisations demandent du travail. Le niveau d’emploi dépend du coût, de la productivité, de la demande de biens et services, des compétences et des anticipations.</p>
+            <div class="key-terms"><span class="term">Offre de travail</span><span class="term">Demande de travail</span><span class="term">Offre d’emploi</span><span class="term">Demande d’emploi</span><span class="term">Coût du travail</span><span class="term">Productivité</span><span class="term">Salaire minimum</span><span class="term">Chômage conjoncturel</span><span class="term">Chômage structurel</span></div>
+            <div class="grid-2"><section class="block"><h4>Le vocabulaire à retourner</h4><p>L’<strong>offre de travail</strong> vient des personnes, alors que la <strong>demande de travail</strong> vient des employeurs. Dans le langage courant des annonces, l’employeur fait une offre d’emploi et le candidat une demande d’emploi : les formulations sont inversées.</p></section><section class="block"><h4>Déterminants et déséquilibres</h4><ul><li>La demande de travail augmente avec les débouchés anticipés et la productivité.</li><li>Elle dépend du coût du travail et de la substitution entre travail et capital.</li><li>Salaire minimum, négociation et droit encadrent la relation.</li><li>Le chômage <strong>conjoncturel</strong> vient d’une activité insuffisante ; le chômage <strong>structurel</strong> d’un décalage durable de compétences, lieux ou institutions.</li></ul></section></div>
+            
+            <section class="block example"><h4>Exemple raisonné</h4><p>Un hôtel peut renoncer à recruter si les réservations anticipées chutent, même si les salaires restent stables : la demande adressée à l’entreprise influence sa demande de travail.</p></section>
+            <section class="block warning"><h4>Piège à éviter</h4><p>Le coût du travail n’est qu’un déterminant. Une baisse de coût ne crée pas d’emploi si les entreprises n’anticipent pas de ventes supplémentaires.</p></section>
+            <section class="quiz"><h4>Teste-toi</h4><p>Une usine recrute difficilement alors que le territoire compte des chômeurs. Quel type de déséquilibre évoquer ?</p><button class="answer-btn" type="button" aria-expanded="false">Voir la correction</button><p class="answer" hidden>Un chômage structurel est possible si les compétences, la localisation ou les conditions ne correspondent pas aux emplois, mais il faut vérifier les données de la situation.</p></section>
+          </div>
+        </article>
+
+        <article class="revision-card" id="fiche-7-3" data-theme="7" data-id="7.3">
+          <header class="card-head"><span class="fiche-id">7.3</span><h3>Les politiques de l’emploi</h3><button class="done-btn" type="button" aria-pressed="false">À réviser</button></header>
+          <div class="card-body">
+            <p class="lead"><strong>L’essentiel :</strong> Les politiques de l’emploi combinent soutien aux personnes sans emploi, stimulation de l’activité et correction des déséquilibres structurels du marché du travail.</p>
+            <div class="key-terms"><span class="term">Politique active</span><span class="term">Politique passive</span><span class="term">Formation</span><span class="term">Accompagnement</span><span class="term">Incitation à l’embauche</span><span class="term">Indemnisation</span><span class="term">Politique conjoncturelle</span><span class="term">Politique structurelle</span></div>
+            <div class="grid-2"><section class="block"><h4>Deux familles de mesures</h4><ul><li><strong>Passives :</strong> indemniser le chômage et aménager les retraits d’activité.</li><li><strong>Actives :</strong> former, accompagner, inciter à embaucher, soutenir la mobilité ou créer directement des emplois aidés.</li></ul></section><section class="block"><h4>Relier cause et réponse</h4><p>Une récession appelle des mesures conjoncturelles de soutien à la demande. Une inadéquation durable de compétences appelle formation, orientation ou mobilité. Politiques budgétaire et monétaire peuvent soutenir l’emploi, mais elles subissent contraintes de financement, délais et cadre européen.</p></section></div>
+            
+            <section class="block example"><h4>Exemple raisonné</h4><p>Former des demandeurs d’emploi aux métiers en tension agit sur la structure ; investir dans la rénovation de bâtiments peut en même temps soutenir rapidement l’activité.</p></section>
+            <section class="block warning"><h4>Piège à éviter</h4><p>Évalue une politique avec plusieurs critères : retour à un emploi durable, coût, ciblage, effets d’aubaine, qualité des emplois et effets sur les inégalités.</p></section>
+            <section class="quiz"><h4>Teste-toi</h4><p>Une allocation chômage est-elle inutile à l’emploi parce qu’elle est dite passive ?</p><button class="answer-btn" type="button" aria-expanded="false">Voir la correction</button><p class="answer" hidden>Non. Elle protège le revenu, soutient la demande et peut permettre une recherche adaptée. « Passive » décrit son mode d’action, pas une absence d’effets économiques.</p></section>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="theme-section t3" id="theme-8" data-theme-section="8">
+      <div class="theme-heading"><span class="theme-number">8</span><div><h2>Comment organiser le commerce international dans un contexte d’ouverture des échanges ?</h2><p>Analyser les échanges mondiaux, les politiques commerciales et le rôle de l’OMC.</p></div></div>
+      <div class="cards">
+        <article class="revision-card" id="fiche-8-1" data-theme="8" data-id="8.1">
+          <header class="card-head"><span class="fiche-id">8.1</span><h3>Les transformations du commerce mondial</h3><button class="done-btn" type="button" aria-pressed="false">À réviser</button></header>
+          <div class="card-body">
+            <p class="lead"><strong>L’essentiel :</strong> Les échanges mondiaux portent sur biens, services et capitaux. La fragmentation des chaînes de valeur et les investissements directs à l’étranger rendent les productions interdépendantes et compliquent la lecture des seuls flux bruts.</p>
+            <div class="key-terms"><span class="term">Importation</span><span class="term">Exportation</span><span class="term">Solde commercial</span><span class="term">IDE</span><span class="term">FMN</span><span class="term">Chaîne de valeur mondiale</span><span class="term">Bien intermédiaire</span><span class="term">Bien final</span><span class="term">Valeur ajoutée</span></div>
+            <div class="grid-2"><section class="block"><h4>Lire les flux</h4><ul><li><strong>Exportation :</strong> vente d’un résident à un non-résident.</li><li><strong>Importation :</strong> achat d’un résident à un non-résident.</li><li><strong>Solde :</strong> différence entre exportations et importations.</li><li><strong>IDE :</strong> investissement donnant une influence durable sur une entité étrangère.</li><li><strong>FMN :</strong> firme organisant des activités dans plusieurs pays.</li></ul></section><section class="block"><h4>Une production segmentée</h4><p>Conception, composants, assemblage et commercialisation peuvent être localisés dans des pays différents. Un composant intermédiaire traverse parfois plusieurs frontières. Mesurer la <strong>valeur ajoutée</strong> par territoire évite de compter plusieurs fois la même valeur.</p></section></div>
+            <div class="formula">Solde commercial = exportations − importations</div>
+            <section class="block example"><h4>Exemple raisonné</h4><p>Un téléphone assemblé dans un pays incorpore une puce, un écran et un logiciel produits ailleurs. Sa valeur d’exportation ne correspond pas entièrement à la richesse créée par le pays assembleur.</p></section>
+            <section class="block warning"><h4>Piège à éviter</h4><p>Un déficit commercial n’est pas à lui seul la preuve d’une économie faible : il faut distinguer biens et services, structure des importations, conjoncture et position dans les chaînes de valeur.</p></section>
+            <section class="quiz"><h4>Teste-toi</h4><p>Des machines importées aggravent-elles forcément la situation économique ?</p><button class="answer-btn" type="button" aria-expanded="false">Voir la correction</button><p class="answer" hidden>Elles diminuent le solde à court terme, mais peuvent accroître les capacités, la productivité et les exportations futures. L’interprétation dépend de leur usage.</p></section>
+          </div>
+        </article>
+
+        <article class="revision-card" id="fiche-8-2" data-theme="8" data-id="8.2">
+          <header class="card-head"><span class="fiche-id">8.2</span><h3>Des politiques commerciales divergentes</h3><button class="done-btn" type="button" aria-pressed="false">À réviser</button></header>
+          <div class="card-body">
+            <p class="lead"><strong>L’essentiel :</strong> Le libre-échange réduit les obstacles afin de spécialiser et d’élargir les marchés ; le protectionnisme protège certaines activités. Chaque orientation crée des gains, des coûts et des effets distributifs.</p>
+            <div class="key-terms"><span class="term">Libre-échange</span><span class="term">Protectionnisme</span><span class="term">Droit de douane</span><span class="term">Quota</span><span class="term">Barrière non tarifaire</span><span class="term">Spécialisation</span><span class="term">Compétitivité</span><span class="term">Représailles</span></div>
+            <div class="grid-2"><section class="block"><h4>Arguments du libre-échange</h4><ul><li>spécialisation et gains de productivité ;</li><li>prix plus bas et choix plus large ;</li><li>marchés plus vastes et diffusion des innovations ;</li><li>accès à des ressources ou composants absents localement.</li></ul></section><section class="block"><h4>Arguments et instruments protectionnistes</h4><p>Protéger une industrie naissante ou stratégique, l’emploi, la santé ou l’environnement peut mobiliser droits de douane, quotas, normes, subventions ou préférence nationale. Les risques sont hausse des prix, moindre concurrence, maintien d’activités inefficaces et représailles.</p></section></div>
+            
+            <section class="block example"><h4>Exemple raisonné</h4><p>Un droit de douane renchérit le produit importé : les producteurs nationaux gagnent en protection, mais consommateurs et entreprises utilisatrices paient davantage.</p></section>
+            <section class="block warning"><h4>Piège à éviter</h4><p>Une norme sanitaire légitime peut devenir une barrière non tarifaire si elle est disproportionnée ou utilisée pour écarter les produits étrangers.</p></section>
+            <section class="quiz"><h4>Teste-toi</h4><p>Pourquoi les effets d’un droit de douane diffèrent-ils selon les acteurs ?</p><button class="answer-btn" type="button" aria-expanded="false">Voir la correction</button><p class="answer" hidden>Il peut soutenir les producteurs protégés et les recettes publiques, tout en augmentant le prix pour les consommateurs et le coût des intrants pour d’autres entreprises.</p></section>
+          </div>
+        </article>
+
+        <article class="revision-card" id="fiche-8-3" data-theme="8" data-id="8.3">
+          <header class="card-head"><span class="fiche-id">8.3</span><h3>L’OMC et le règlement des différends</h3><button class="done-btn" type="button" aria-pressed="false">À réviser</button></header>
+          <div class="card-body">
+            <p class="lead"><strong>L’essentiel :</strong> L’Organisation mondiale du commerce fournit un cadre de négociation, de transparence et de règlement des différends afin de rendre les échanges plus prévisibles, mais ses décisions reposent sur la coopération de ses membres.</p>
+            <div class="key-terms"><span class="term">OMC</span><span class="term">Cycle de négociation</span><span class="term">Nation la plus favorisée</span><span class="term">Traitement national</span><span class="term">Réciprocité</span><span class="term">Organe de règlement des différends</span><span class="term">Multilatéralisme</span></div>
+            <div class="grid-2"><section class="block"><h4>Principes et missions</h4><ul><li>administrer les accords et accueillir les négociations ;</li><li>examiner les politiques commerciales ;</li><li>appliquer la <strong>nation la plus favorisée</strong> : un avantage accordé à un membre est en principe étendu aux autres ;</li><li>appliquer le <strong>traitement national</strong> après l’entrée sur le marché ;</li><li>organiser une ouverture négociée fondée sur la réciprocité.</li></ul></section><section class="block"><h4>Un différend encadré</h4><p>Un membre conteste une mesure, des consultations sont engagées, puis un groupe spécial examine la compatibilité avec les accords. Une mise en conformité est recherchée ; à défaut, une compensation ou des contre-mesures peuvent être autorisées.</p></section></div>
+            
+            <section class="block example"><h4>Exemple raisonné</h4><p>Si un pays taxe davantage un produit importé après son entrée sur son marché qu’un produit national comparable, le principe du traitement national peut être invoqué.</p></section>
+            <section class="block warning"><h4>Piège à éviter</h4><p>L’OMC n’est pas un gouvernement mondial : elle repose sur des accords entre membres et son efficacité dépend du fonctionnement de ses organes et du respect des décisions.</p></section>
+            <section class="quiz"><h4>Teste-toi</h4><p>Nation la plus favorisée signifie-t-elle réserver un privilège à son partenaire préféré ?</p><button class="answer-btn" type="button" aria-expanded="false">Voir la correction</button><p class="answer" hidden>Non. Le principe vise au contraire la non-discrimination entre partenaires : un avantage accordé à l’un est en principe étendu aux autres membres.</p></section>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="theme-section t4" id="theme-9" data-theme-section="9">
+      <div class="theme-heading"><span class="theme-number">9</span><div><h2>Comment concilier la croissance économique et le développement durable ?</h2><p>Identifier les sources de croissance et les conditions d’un développement humain soutenable.</p></div></div>
+      <div class="cards">
+        <article class="revision-card" id="fiche-9-1" data-theme="9" data-id="9.1">
+          <header class="card-head"><span class="fiche-id">9.1</span><h3>Les sources d’une croissance économique soutenable</h3><button class="done-btn" type="button" aria-pressed="false">À réviser</button></header>
+          <div class="card-body">
+            <p class="lead"><strong>L’essentiel :</strong> La croissance vient de l’accumulation des facteurs et des gains de productivité, nourris par le progrès technique et l’innovation. Elle devient soutenable si elle préserve les ressources, limite les externalités et améliore durablement le bien-être.</p>
+            <div class="key-terms"><span class="term">Croissance</span><span class="term">Capital</span><span class="term">Travail</span><span class="term">Productivité globale</span><span class="term">Progrès technique</span><span class="term">Innovation</span><span class="term">Droit de propriété</span><span class="term">Ressource renouvelable</span><span class="term">Économie circulaire</span><span class="term">Transition</span></div>
+            <div class="grid-2"><section class="block"><h4>Produire davantage</h4><ul><li><strong>Croissance extensive :</strong> mobiliser plus de travail ou de capital.</li><li><strong>Croissance intensive :</strong> augmenter la productivité globale grâce à l’organisation, aux compétences et au progrès technique.</li><li>Innovation, investissement, éducation et droits de propriété peuvent encourager l’accumulation de connaissances et la prise de risque.</li></ul></section><section class="block"><h4>Transformer le modèle</h4><p>Les ressources renouvelables se régénèrent sous conditions ; les non renouvelables forment un stock fini. Économie circulaire, économie de la fonctionnalité, collaboration, ESS, normes, prix du carbone, subventions et investissement public sont des leviers. Climat ou biodiversité ont une dimension de <strong>bien public mondial</strong>, ce qui exige une coopération internationale.</p></section></div>
+            
+            <section class="block example"><h4>Exemple raisonné</h4><p>Réparer et réemployer un produit réduit l’extraction et les déchets. Le service rendu peut croître sans augmenter proportionnellement la consommation de matières vierges.</p></section>
+            <section class="block warning"><h4>Piège à éviter</h4><p>La croissance du PIB ne mesure pas directement la répartition, la santé, le temps libre ni les dommages environnementaux. Elle doit être complétée par d’autres indicateurs.</p></section>
+            <section class="quiz"><h4>Teste-toi</h4><p>Une innovation est-elle automatiquement favorable au développement durable ?</p><button class="answer-btn" type="button" aria-expanded="false">Voir la correction</button><p class="answer" hidden>Non. Elle peut réduire les ressources par unité produite, mais aussi accroître les volumes ou créer de nouveaux impacts. Il faut étudier tout le cycle de vie et l’effet rebond.</p></section>
+          </div>
+        </article>
+
+        <article class="revision-card" id="fiche-9-2" data-theme="9" data-id="9.2">
+          <header class="card-head"><span class="fiche-id">9.2</span><h3>Réduire la pauvreté : rôle de l’éducation et de la formation</h3><button class="done-btn" type="button" aria-pressed="false">À réviser</button></header>
+          <div class="card-body">
+            <p class="lead"><strong>L’essentiel :</strong> La pauvreté est absolue lorsqu’un minimum de besoins ne peut être satisfait et relative lorsqu’un niveau de vie est très inférieur à celui de la société. Éducation et formation développent le capital humain, mais doivent s’accompagner d’institutions et d’opportunités.</p>
+            <div class="key-terms"><span class="term">Pauvreté absolue</span><span class="term">Pauvreté relative</span><span class="term">Développement</span><span class="term">Capital humain</span><span class="term">Éducation</span><span class="term">Formation</span><span class="term">Inégalité</span><span class="term">Mobilité sociale</span></div>
+            <div class="grid-2"><section class="block"><h4>Pauvreté et développement</h4><p>La pauvreté est multidimensionnelle : revenus, santé, logement, éducation et accès aux services. Le <strong>développement</strong> désigne une transformation durable des structures et du bien-être ; il ne se réduit pas à la croissance de la production.</p></section><section class="block"><h4>Le mécanisme du capital humain</h4><p>Éducation et formation renforcent connaissances, compétences, santé, capacité d’adaptation et productivité. Elles peuvent améliorer l’accès à l’emploi, les revenus, l’innovation et la participation citoyenne. Leur effet dépend toutefois de la qualité de l’enseignement, de son accessibilité, des débouchés, des discriminations et de la protection sociale.</p></section></div>
+            
+            <section class="block example"><h4>Exemple raisonné</h4><p>Une formation qualifiante peut répondre à un métier en tension et augmenter le revenu. Mais sans transport, garde d’enfants ou offre d’emploi locale, le bénéfice reste limité.</p></section>
+            <section class="block warning"><h4>Piège à éviter</h4><p>Un seuil relatif peut faire évoluer la mesure de la pauvreté même si les revenus des plus modestes augmentent : il dépend du niveau de vie de l’ensemble de la population.</p></section>
+            <section class="quiz"><h4>Teste-toi</h4><p>Pourquoi l’éducation est-elle un investissement plutôt qu’une simple consommation ?</p><button class="answer-btn" type="button" aria-expanded="false">Voir la correction</button><p class="answer" hidden>Elle mobilise des ressources aujourd’hui pour accroître durablement compétences, productivité, autonomie et revenus futurs, avec aussi des bénéfices collectifs.</p></section>
+          </div>
+        </article>
+      </div>
+    </section>
+      <div class="empty-state" id="empty-state" role="status"><strong>Aucune fiche ne correspond à cette recherche.</strong><br>Essaie un autre mot-clé ou affiche toutes les fiches.</div>
+      <footer class="footer">
+        <p><strong>Référence pédagogique :</strong> <a href="https://eduscol.education.gouv.fr/sites/default/files/document/spe262annexe11159139pdf-84612.pdf">programme de droit et économie de terminale STMG — partie économie</a>, programme officiel en vigueur.</p>
+        <p>Dans une étude de cas, appuie toujours ta réponse sur les informations et données précises des documents.</p>
+      </footer>
+    </div>
+  </main>
+</body>
+</html>

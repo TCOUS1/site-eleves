@@ -1,43 +1,22 @@
 <!DOCTYPE html>
-<html lang='fr'>
-
+<html lang="fr">
 <head>
-	<meta charset='UTF-8'>
-	<title>Accueil</title>
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" href="fonts.css">
-	<link rel="stylesheet" href="style.css">
-	<script src="accessibility.js"></script>
-	<script src="enseignant.js"></script>
+  <meta charset="UTF-8">
+  <title>Espace enseignant - acces deplace</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex,nofollow">
+  <link rel="stylesheet" href="fonts.css">
+  <link rel="stylesheet" href="style.css">
+  <script src="accessibility.js" defer></script>
 </head>
-
 <body>
-
-
-<!-- ACCESSIBILITÉ -->
-<div id="accessibility-menu">
-  <button onclick="toggleTheme()">🌙 / ☀️</button>
-  <button id="btn-dys" onclick="toggleDys()">Dys</button>
-  <button onclick="fontMinus()">A−</button>
-  <button onclick="fontPlus()">A+</button>
-  <button onclick="resetAccessibility()">🔄</button>
-</div>
-
-
-<!-- HEADER -->
 <header class="page-header">
-
-  <nav class="top-nav">
-    <a href="index.html">Accueil</a>
-    <span>|</span>
-    <a href="index.html">Retour</a>
-  </nav>
-<h2>🔒 Accès enseignant</h2>
-
-<div class="login-box">
-    <input type="password" id="mdp" placeholder="Mot de passe">
-    <button onclick="verifier('teambatd', 'enseignant.html')">Connexion</button>
-</div>
+  <nav class="top-nav"><a href="index.html">Accueil</a></nav>
+  <h1>Espace enseignant</h1>
+  <p class="intro">
+    Les ressources reservees ne sont pas hebergees sur ce site public.
+    Utilise le service authentifie communique par l enseignant.
+  </p>
 </header>
 </body>
 </html>
