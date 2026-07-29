@@ -1,0 +1,37 @@
+[
+  {
+    "id": "SEC01",
+    "objet": "Caméra connectée",
+    "menace": "mot de passe par défaut conservé",
+    "impact": "accès non autorisé aux images et au microphone",
+    "mesures": [
+      "mot de passe unique",
+      "mise à jour",
+      "accès distant désactivé si inutile",
+      "réseau séparé"
+    ]
+  },
+  {
+    "id": "SEC02",
+    "objet": "Thermostat",
+    "menace": "service cloud indisponible",
+    "impact": "commande distante impossible",
+    "mesures": [
+      "fonctionnement local dégradé",
+      "commande manuelle",
+      "journal d’événements"
+    ]
+  },
+  {
+    "id": "SEC03",
+    "objet": "Badge d’accès",
+    "menace": "identifiant copié",
+    "impact": "intrusion et fausse traçabilité",
+    "mesures": [
+      "authentification renforcée",
+      "révocation",
+      "détection d’anomalies",
+      "minimisation des journaux"
+    ]
+  }
+]

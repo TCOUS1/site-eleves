@@ -1,0 +1,371 @@
+.photo-hero{
+  background:
+    radial-gradient(circle at 82% 13%,rgba(255,255,255,.2),transparent 25%),
+    linear-gradient(135deg,#263d74,#6e3f87 52%,#b84d62);
+}
+
+.photo-grid-2,
+.photo-lab-grid,
+.photo-project-grid{
+  display:grid;
+  grid-template-columns:repeat(2,minmax(0,1fr));
+  gap:16px;
+}
+
+.photo-card,
+.photo-lab,
+.photo-case{
+  padding:18px;
+  border:1px solid var(--course-border);
+  border-radius:15px;
+  background:var(--course-card);
+}
+
+.photo-note{
+  padding:13px;
+  border-left:5px solid var(--course-primary);
+  border-radius:9px;
+  background:var(--course-notions);
+}
+
+.photo-warning{
+  border-left-color:#bd3846;
+  background:var(--course-danger);
+}
+
+.photo-chain{
+  display:grid;
+  grid-template-columns:repeat(9,minmax(78px,1fr));
+  gap:7px;
+  align-items:center;
+  margin:14px 0;
+}
+
+.photo-chain-box{
+  min-height:88px;
+  padding:10px;
+  border:1px solid var(--course-border);
+  border-radius:12px;
+  background:var(--course-card);
+  text-align:center;
+}
+
+.photo-chain-box strong{
+  display:block;
+  margin-bottom:5px;
+  color:var(--course-primary);
+}
+
+.photo-arrow{
+  color:var(--course-primary);
+  font-size:1.7rem;
+  font-weight:900;
+  text-align:center;
+}
+
+.photo-canvas{
+  width:100%;
+  height:auto;
+  border:1px solid var(--course-border);
+  border-radius:15px;
+  background:#eef2f6;
+}
+
+.photo-form{
+  display:grid;
+  gap:10px;
+}
+
+.photo-form label{
+  display:grid;
+  gap:5px;
+  font-weight:700;
+}
+
+.photo-form input,
+.photo-form select,
+.photo-form textarea{
+  width:100%;
+  padding:9px;
+  border:1px solid var(--course-border);
+  border-radius:9px;
+  color:var(--course-text);
+  background:var(--course-card);
+}
+
+.photo-actions{
+  display:flex;
+  flex-wrap:wrap;
+  gap:8px;
+  margin:10px 0;
+}
+
+.photo-secondary-button,
+.photo-choice{
+  padding:8px 11px;
+  border:1px solid var(--course-primary);
+  border-radius:9px;
+  color:var(--course-primary);
+  background:var(--course-card);
+  font-weight:700;
+  text-decoration:none;
+}
+
+.photo-choice.good{
+  color:#fff;
+  border-color:#16824a;
+  background:#16824a;
+}
+
+.photo-choice.bad{
+  color:#fff;
+  border-color:#b9313b;
+  background:#b9313b;
+}
+
+.photo-output{
+  min-height:170px;
+  padding:14px;
+  overflow:auto;
+  border-radius:13px;
+  color:#d9f9e4;
+  background:#172231;
+  white-space:pre-wrap;
+  font-family:"Cascadia Code","Fira Code",Consolas,monospace;
+}
+
+.photo-kpis,
+.photo-metadata-grid,
+.photo-file-grid,
+.photo-pipeline-grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(160px,1fr));
+  gap:10px;
+  margin:12px 0;
+}
+
+.photo-kpis div,
+.photo-metadata,
+.photo-file-card,
+.photo-pipeline-step{
+  padding:13px;
+  border:1px solid var(--course-border);
+  border-radius:12px;
+  background:var(--course-card);
+}
+
+.photo-kpis strong,
+.photo-metadata strong,
+.photo-file-card strong,
+.photo-pipeline-step strong{
+  display:block;
+  color:var(--course-primary);
+  font-size:1.15rem;
+}
+
+.photo-pixel-layout{
+  display:grid;
+  grid-template-columns:minmax(320px,1.4fr) minmax(230px,.8fr);
+  gap:15px;
+  align-items:start;
+}
+
+.photo-pixel-info{
+  position:sticky;
+  top:10px;
+}
+
+.photo-color-preview{
+  min-height:160px;
+  display:grid;
+  place-items:center;
+  border:1px solid var(--course-border);
+  border-radius:15px;
+  font-size:1.2rem;
+  font-weight:900;
+  text-shadow:0 1px 3px rgba(0,0,0,.3);
+}
+
+.photo-bayer-grid{
+  display:grid;
+  grid-template-columns:repeat(8,1fr);
+  max-width:520px;
+  margin:auto;
+  border:1px solid var(--course-border);
+}
+
+.photo-bayer-cell{
+  aspect-ratio:1;
+  display:grid;
+  place-items:center;
+  color:#fff;
+  font-weight:900;
+  border:1px solid rgba(255,255,255,.65);
+}
+
+.photo-table-wrap{
+  overflow:auto;
+  margin:12px 0;
+  border:1px solid var(--course-border);
+  border-radius:13px;
+}
+
+.photo-table-wrap table{
+  margin:0;
+  min-width:720px;
+}
+
+.photo-compression-preview{
+  width:100%;
+  min-height:220px;
+  object-fit:contain;
+  border:1px solid var(--course-border);
+  border-radius:15px;
+  background:#e7ebef;
+}
+
+.photo-compare{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:10px;
+}
+
+.photo-compare figure{
+  margin:0;
+  padding:9px;
+  border:1px solid var(--course-border);
+  border-radius:12px;
+  background:var(--course-card);
+}
+
+.photo-compare img{
+  width:100%;
+  height:auto;
+  border-radius:9px;
+}
+
+.photo-histogram{
+  width:100%;
+  height:180px;
+  border:1px solid var(--course-border);
+  border-radius:12px;
+  background:#f4f6f8;
+}
+
+.photo-classifier{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+  gap:10px;
+  padding:0;
+  list-style:none;
+}
+
+.photo-classifier-item{
+  padding:13px;
+  border:1px solid var(--course-border);
+  border-radius:12px;
+  background:var(--course-card);
+}
+
+.photo-feedback{
+  min-height:1.5em;
+  margin:.55em 0 0;
+  font-weight:700;
+}
+
+.photo-timeline{
+  display:grid;
+  grid-template-columns:repeat(5,1fr);
+  gap:9px;
+  margin:14px 0;
+}
+
+.photo-timeline div{
+  padding:12px;
+  border:1px solid var(--course-border);
+  border-radius:11px;
+  background:var(--course-card);
+  text-align:center;
+}
+
+.photo-timeline strong{
+  display:block;
+  color:var(--course-primary);
+}
+
+.photo-pipeline-step.active{
+  border-color:var(--course-primary);
+  box-shadow:0 0 0 3px rgba(49,87,213,.18);
+}
+
+.photo-rubric td:first-child{
+  font-weight:700;
+}
+
+.photo-teacher-help{
+  border-left:5px solid #7552b8;
+}
+
+@media(max-width:1050px){
+  .photo-chain{
+    grid-template-columns:1fr;
+  }
+
+  .photo-arrow{
+    transform:rotate(90deg);
+  }
+}
+
+@media(max-width:850px){
+  .photo-grid-2,
+  .photo-lab-grid,
+  .photo-project-grid,
+  .photo-pixel-layout{
+    grid-template-columns:1fr;
+  }
+
+  .photo-pixel-info{
+    position:static;
+  }
+
+  .photo-timeline{
+    grid-template-columns:1fr 1fr;
+  }
+
+  .photo-compare{
+    grid-template-columns:1fr;
+  }
+}
+
+@media(max-width:520px){
+  .photo-timeline{
+    grid-template-columns:1fr;
+  }
+}
+
+@media print{
+  .photo-actions,
+  .photo-choice,
+  .photo-secondary-button,
+  .photo-lab button{
+    display:none!important;
+  }
+
+  .photo-grid-2,
+  .photo-lab-grid,
+  .photo-project-grid,
+  .photo-pixel-layout{
+    grid-template-columns:1fr!important;
+  }
+
+  .photo-output{
+    min-height:0!important;
+    color:#000!important;
+    background:#fff!important;
+    border:1px solid #777!important;
+  }
+
+  .photo-chain{
+    grid-template-columns:repeat(9,1fr)!important;
+  }
+}

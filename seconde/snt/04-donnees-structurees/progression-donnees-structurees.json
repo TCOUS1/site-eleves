@@ -1,0 +1,121 @@
+{
+  "metadata": {
+    "id": "SNT-DONNEES-STRUCTUREES-MATRICE-OFFICIELLE",
+    "titre": "Données structurées et leur traitement",
+    "niveau": "Seconde",
+    "discipline": "SNT",
+    "version": "1.0",
+    "date": "2026-07-29",
+    "duree_totale_minutes": 650,
+    "source_programme": "BO spécial n°1 du 22 janvier 2019"
+  },
+  "modules": [
+    {
+      "id": "DATA-01",
+      "titre": "Objets, descripteurs et valeurs",
+      "duree_minutes": 60,
+      "progression_cognitive": [
+        "observer_decrire",
+        "acquerir_notions",
+        "analyser",
+        "conceptualiser",
+        "entrainer_verifier"
+      ]
+    },
+    {
+      "id": "DATA-02",
+      "titre": "Formats et CSV",
+      "duree_minutes": 75,
+      "progression_cognitive": [
+        "observer_decrire",
+        "acquerir_notions",
+        "analyser",
+        "conceptualiser",
+        "entrainer_verifier"
+      ]
+    },
+    {
+      "id": "DATA-03",
+      "titre": "Recherche, filtre, tri et calcul",
+      "duree_minutes": 90,
+      "progression_cognitive": [
+        "observer_decrire",
+        "acquerir_notions",
+        "analyser",
+        "conceptualiser",
+        "entrainer_verifier"
+      ]
+    },
+    {
+      "id": "DATA-04",
+      "titre": "Qualité et nettoyage",
+      "duree_minutes": 75,
+      "progression_cognitive": [
+        "observer_decrire",
+        "acquerir_notions",
+        "analyser",
+        "conceptualiser",
+        "entrainer_verifier"
+      ]
+    },
+    {
+      "id": "DATA-05",
+      "titre": "Croiser les tables",
+      "duree_minutes": 75,
+      "progression_cognitive": [
+        "observer_decrire",
+        "acquerir_notions",
+        "analyser",
+        "conceptualiser",
+        "entrainer_verifier"
+      ]
+    },
+    {
+      "id": "DATA-06",
+      "titre": "Données personnelles",
+      "duree_minutes": 90,
+      "progression_cognitive": [
+        "observer_decrire",
+        "acquerir_notions",
+        "analyser",
+        "conceptualiser",
+        "entrainer_verifier"
+      ]
+    },
+    {
+      "id": "DATA-07",
+      "titre": "Open data et métadonnées",
+      "duree_minutes": 80,
+      "progression_cognitive": [
+        "observer_decrire",
+        "acquerir_notions",
+        "analyser",
+        "conceptualiser",
+        "entrainer_verifier"
+      ]
+    },
+    {
+      "id": "DATA-08",
+      "titre": "Cloud et projet final",
+      "duree_minutes": 105,
+      "progression_cognitive": [
+        "observer_decrire",
+        "acquerir_notions",
+        "analyser",
+        "conceptualiser",
+        "entrainer_verifier"
+      ]
+    }
+  ],
+  "capacites_programme": [
+    "Définir une donnée personnelle",
+    "Identifier formats et représentations",
+    "Identifier les descripteurs",
+    "Distinguer valeur et descripteur",
+    "Sélectionner et récupérer des données ouvertes",
+    "Rechercher, filtrer, trier et calculer",
+    "Retrouver des métadonnées",
+    "Utiliser le cloud, partager et synchroniser",
+    "Identifier les causes et conséquences environnementales du cloud"
+  ]
+}

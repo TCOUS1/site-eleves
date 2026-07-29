@@ -1,0 +1,17 @@
+{
+  "fichier": "photo_sortie_scolaire.jpg",
+  "type_mime": "image/jpeg",
+  "taille_octets": 2839472,
+  "dimensions_pixels": [
+    4032,
+    3024
+  ],
+  "date_creation": "2026-05-14T10:32:18+02:00",
+  "appareil": "Téléphone fictif SNT-2",
+  "gps": {
+    "latitude": 48.8566,
+    "longitude": 2.3522
+  },
+  "auteur": "Exemple fictif",
+  "licence": "Non définie"
+}

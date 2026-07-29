@@ -1,0 +1,433 @@
+.iot-hero{
+  background:
+    radial-gradient(circle at 84% 12%,rgba(255,255,255,.2),transparent 24%),
+    linear-gradient(135deg,#174f70,#167c72 53%,#68418e);
+}
+
+.iot-grid-2,
+.iot-lab-grid,
+.iot-project-grid{
+  display:grid;
+  grid-template-columns:repeat(2,minmax(0,1fr));
+  gap:16px;
+}
+
+.iot-card,
+.iot-lab,
+.iot-case{
+  padding:18px;
+  border:1px solid var(--course-border);
+  border-radius:15px;
+  background:var(--course-card);
+}
+
+.iot-note{
+  padding:13px;
+  border-left:5px solid var(--course-primary);
+  border-radius:9px;
+  background:var(--course-notions);
+}
+
+.iot-warning{
+  border-left-color:#bd3846;
+  background:var(--course-danger);
+}
+
+.iot-chain{
+  display:grid;
+  grid-template-columns:repeat(7,minmax(90px,1fr));
+  gap:8px;
+  align-items:center;
+  margin:14px 0;
+}
+
+.iot-chain-box{
+  min-height:92px;
+  padding:11px;
+  border:1px solid var(--course-border);
+  border-radius:12px;
+  background:var(--course-card);
+  text-align:center;
+}
+
+.iot-chain-box strong{
+  display:block;
+  margin-bottom:5px;
+  color:var(--course-primary);
+}
+
+.iot-arrow{
+  color:var(--course-primary);
+  font-size:1.8rem;
+  font-weight:900;
+  text-align:center;
+}
+
+.iot-classifier{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+  gap:10px;
+  padding:0;
+  list-style:none;
+}
+
+.iot-classifier-item{
+  padding:13px;
+  border:1px solid var(--course-border);
+  border-radius:12px;
+  background:var(--course-card);
+}
+
+.iot-actions{
+  display:flex;
+  flex-wrap:wrap;
+  gap:8px;
+  margin:10px 0;
+}
+
+.iot-choice,
+.iot-secondary-button{
+  padding:8px 11px;
+  border:1px solid var(--course-primary);
+  border-radius:9px;
+  color:var(--course-primary);
+  background:var(--course-card);
+  font-weight:700;
+}
+
+.iot-choice.good{
+  color:#fff;
+  border-color:#16824a;
+  background:#16824a;
+}
+
+.iot-choice.bad{
+  color:#fff;
+  border-color:#b9313b;
+  background:#b9313b;
+}
+
+.iot-feedback{
+  min-height:1.5em;
+  margin:.55em 0 0;
+  font-weight:700;
+}
+
+.iot-form{
+  display:grid;
+  gap:10px;
+}
+
+.iot-form label{
+  display:grid;
+  gap:5px;
+  font-weight:700;
+}
+
+.iot-form input,
+.iot-form select,
+.iot-form textarea{
+  width:100%;
+  padding:9px;
+  border:1px solid var(--course-border);
+  border-radius:9px;
+  color:var(--course-text);
+  background:var(--course-card);
+}
+
+.iot-output{
+  min-height:170px;
+  padding:14px;
+  overflow:auto;
+  border-radius:13px;
+  color:#d9f9e4;
+  background:#172231;
+  white-space:pre-wrap;
+  font-family:"Cascadia Code","Fira Code",Consolas,monospace;
+}
+
+.iot-kpis,
+.iot-state-grid,
+.iot-security-grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(155px,1fr));
+  gap:10px;
+  margin:12px 0;
+}
+
+.iot-kpis div,
+.iot-state-grid div,
+.iot-security-grid div{
+  padding:13px;
+  border:1px solid var(--course-border);
+  border-radius:12px;
+  background:var(--course-card);
+}
+
+.iot-kpis strong,
+.iot-state-grid strong,
+.iot-security-grid strong{
+  display:block;
+  color:var(--course-primary);
+  font-size:1.18rem;
+}
+
+.iot-room{
+  width:100%;
+  height:auto;
+  border:1px solid var(--course-border);
+  border-radius:16px;
+  background:#eef4f0;
+}
+
+.iot-sensor{
+  fill:#3157d5;
+  stroke:#fff;
+  stroke-width:3;
+}
+
+.iot-actuator-off{
+  fill:#adb5c2;
+  stroke:#fff;
+  stroke-width:3;
+}
+
+.iot-actuator-on{
+  fill:#f4aa22;
+  stroke:#fff;
+  stroke-width:3;
+}
+
+.iot-fan-blade{
+  fill:#64a9c7;
+  transform-origin:center;
+}
+
+.iot-fan-running{
+  animation:iot-spin .9s linear infinite;
+}
+
+@keyframes iot-spin{
+  to{transform:rotate(360deg)}
+}
+
+.iot-state-machine{
+  display:grid;
+  grid-template-columns:repeat(5,minmax(110px,1fr));
+  gap:9px;
+  margin:15px 0;
+}
+
+.iot-state{
+  padding:13px 9px;
+  border:2px solid var(--course-border);
+  border-radius:12px;
+  background:var(--course-card);
+  text-align:center;
+  font-weight:800;
+}
+
+.iot-state.active{
+  color:#fff;
+  border-color:var(--course-primary);
+  background:var(--course-primary);
+}
+
+.iot-code{
+  min-height:330px;
+  padding:15px;
+  overflow:auto;
+  border-radius:13px;
+  color:#e7f7ed;
+  background:#172231;
+  font-family:"Cascadia Code","Fira Code",Consolas,monospace;
+  line-height:1.45;
+  white-space:pre;
+}
+
+.iot-dashboard{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(160px,1fr));
+  gap:10px;
+}
+
+.iot-widget{
+  padding:14px;
+  border:1px solid var(--course-border);
+  border-radius:13px;
+  background:var(--course-card);
+  text-align:center;
+}
+
+.iot-widget .value{
+  display:block;
+  margin:7px 0;
+  color:var(--course-primary);
+  font-size:1.55rem;
+  font-weight:900;
+}
+
+.iot-switch-row,
+.iot-security-row{
+  display:grid;
+  grid-template-columns:1fr auto;
+  gap:12px;
+  align-items:center;
+  padding:10px 0;
+  border-bottom:1px solid var(--course-border);
+}
+
+.iot-switch-row:last-child,
+.iot-security-row:last-child{
+  border-bottom:0;
+}
+
+.iot-broker{
+  display:grid;
+  grid-template-columns:1fr auto 1fr;
+  gap:13px;
+  align-items:center;
+}
+
+.iot-device,
+.iot-broker-center{
+  padding:16px;
+  border:1px solid var(--course-border);
+  border-radius:14px;
+  background:var(--course-card);
+  text-align:center;
+}
+
+.iot-broker-center{
+  color:#fff;
+  background:var(--course-primary);
+}
+
+.iot-message-list{
+  display:grid;
+  gap:8px;
+  max-height:320px;
+  overflow:auto;
+  padding:0;
+  list-style:none;
+}
+
+.iot-message{
+  padding:10px;
+  border:1px solid var(--course-border);
+  border-left:5px solid var(--course-primary);
+  border-radius:10px;
+  background:var(--course-card);
+}
+
+.iot-message strong{
+  display:block;
+  overflow-wrap:anywhere;
+}
+
+.iot-table-wrap{
+  overflow:auto;
+  margin:12px 0;
+  border:1px solid var(--course-border);
+  border-radius:13px;
+}
+
+.iot-table-wrap table{
+  margin:0;
+  min-width:720px;
+}
+
+.iot-timeline{
+  display:grid;
+  grid-template-columns:repeat(4,1fr);
+  gap:9px;
+  margin:14px 0;
+}
+
+.iot-timeline div{
+  padding:12px;
+  border:1px solid var(--course-border);
+  border-radius:11px;
+  background:var(--course-card);
+  text-align:center;
+}
+
+.iot-timeline strong{
+  display:block;
+  color:var(--course-primary);
+}
+
+.iot-rubric td:first-child{
+  font-weight:700;
+}
+
+.iot-teacher-help{
+  border-left:5px solid #7552b8;
+}
+
+@media(max-width:980px){
+  .iot-chain{
+    grid-template-columns:1fr;
+  }
+
+  .iot-arrow{
+    transform:rotate(90deg);
+  }
+
+  .iot-state-machine{
+    grid-template-columns:1fr 1fr;
+  }
+}
+
+@media(max-width:850px){
+  .iot-grid-2,
+  .iot-lab-grid,
+  .iot-project-grid,
+  .iot-broker{
+    grid-template-columns:1fr;
+  }
+
+  .iot-timeline{
+    grid-template-columns:1fr 1fr;
+  }
+}
+
+@media(max-width:520px){
+  .iot-state-machine,
+  .iot-timeline{
+    grid-template-columns:1fr;
+  }
+
+  .iot-switch-row,
+  .iot-security-row{
+    grid-template-columns:1fr;
+  }
+}
+
+@media print{
+  .iot-actions,
+  .iot-choice,
+  .iot-secondary-button,
+  .iot-lab button{
+    display:none!important;
+  }
+
+  .iot-grid-2,
+  .iot-lab-grid,
+  .iot-project-grid,
+  .iot-broker{
+    grid-template-columns:1fr!important;
+  }
+
+  .iot-output,
+  .iot-code{
+    min-height:0!important;
+    color:#000!important;
+    background:#fff!important;
+    border:1px solid #777!important;
+  }
+
+  .iot-chain{
+    grid-template-columns:repeat(7,1fr)!important;
+  }
+}

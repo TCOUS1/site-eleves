@@ -1,13 +1,1960 @@
 <!DOCTYPE html>
-<html lang='fr'>
+<html lang="fr">
 <head>
-<meta charset='UTF-8'>
-<title>06-objets-connectes</title>
-<link rel='stylesheet' href='/style.css'>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Chemins modifiables selon l’arborescence du site -->
+  <link rel="stylesheet" href="../../../fonts.css">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="matrice-cours.css">
+  <link rel="stylesheet" href="objets-connectes.css">
+
+  <script src="accessibility.js" defer></script>
+  <script src="enseignant.js" defer></script>
+  <script src="matrice-cours.js" defer></script>
+  <script src="objets-connectes.js" defer></script>
+
+  <meta name="description"
+        content="Cours complet SNT seconde sur l’informatique embarquée et les objets connectés : capteurs, actionneurs, événements, programmation, IHM, MQTT, sécurité et projet.">
+  <title>Informatique embarquée et objets connectés — SNT seconde</title>
 </head>
-<body>
-<nav><a href='/index.html'>Accueil</a> | <a href='../index.html'>Retour</a></nav>
-<h1>06-objets-connectes</h1>
-<ul></ul>
+
+<body class="course-matrix-page"
+      data-storage-key="snt-informatique-embarquee-objets-connectes-v1">
+
+<a class="course-skip-link" href="#contenu">Aller au contenu</a>
+
+<div class="course-teacher-banner">
+  Mode enseignant activé : repères pédagogiques visibles.
+</div>
+
+<div id="accessibility-menu" aria-label="Accessibilité">
+  <button type="button" onclick="toggleTheme()" title="Thème">🌙/☀️</button>
+  <button id="btn-dys" type="button" onclick="toggleDys()">Dys</button>
+  <button type="button" onclick="fontMinus()">A−</button>
+  <button type="button" onclick="fontPlus()">A+</button>
+  <button type="button" onclick="resetAccessibility()">↺</button>
+</div>
+
+<main id="contenu" class="course-matrix">
+  <header class="page-header">
+    <nav class="top-nav" aria-label="Navigation principale">
+      <a href="../index.html">🏠 Accueil</a>
+      <a href="../acces-enseignant.html">🔒 Espace enseignant</a>
+    </nav>
+  </header>
+
+  <header class="course-hero iot-hero">
+    <p class="course-eyebrow">Sciences numériques et technologie · Seconde</p>
+    <h1>🔌 Informatique embarquée et objets connectés</h1>
+
+    <p>Un parcours clé en main pour comprendre les capteurs, actionneurs,
+    événements, microcontrôleurs, interfaces et communications, puis concevoir
+    un objet connecté responsable.</p>
+
+    <div class="course-chips">
+      <span class="course-chip">Observer</span>
+      <span class="course-chip">Mesurer</span>
+      <span class="course-chip">Programmer</span>
+      <span class="course-chip">Commander</span>
+      <span class="course-chip">Diagnostiquer</span>
+      <span class="course-chip">Sécuriser</span>
+    </div>
+
+    <div class="course-actions">
+      <a href="#parcours">Commencer le parcours</a>
+      <a href="#module-02">Ouvrir la salle connectée</a>
+      <a href="donnees/mesures_salle_connectee_demo.csv"
+         download>Télécharger les mesures</a>
+      <button type="button" onclick="printCourse()">🖨️ Imprimer</button>
+      <button type="button"
+              onclick="toggleCourseTeacher()">👩‍🏫 Mode enseignant</button>
+    </div>
+  </header>
+
+  <div class="course-progress">
+    <strong>Progression enregistrée sur cet appareil :
+      <span id="course-progress-text">0 / 8</span>
+    </strong>
+
+    <div class="course-progress-track" aria-hidden="true">
+      <span id="course-progress-fill"
+            class="course-progress-fill"></span>
+    </div>
+  </div>
+
+  <div class="course-grid-2">
+    <section class="course-card">
+      <h2>🎯 Finalité du parcours</h2>
+      <p>À la fin, l’élève doit pouvoir identifier l’algorithme de contrôle
+      d’un système courant, écrire un programme simple d’acquisition ou de
+      commande et réaliser une IHM simple, conformément aux capacités du
+      programme.</p>
+
+      <p><strong>Durée indicative :</strong> 11 h 10, adaptable à environ
+      quatre semaines.</p>
+    </section>
+
+    <section class="course-card">
+      <h2>🧭 Démarche commune</h2>
+
+      <div class="course-ladder">
+        <div><strong>1. Observer</strong>Repérer les composants.</div>
+        <div><strong>2. Notions</strong>Construire le vocabulaire.</div>
+        <div><strong>3. Analyser</strong>Expliquer l’algorithme.</div>
+        <div><strong>4. Conceptualiser</strong>Diagnostiquer et proposer.</div>
+      </div>
+    </section>
+  </div>
+
+  <section id="parcours" class="course-card">
+    <h2>🚀 Accès rapide aux huit modules</h2>
+    <div class="course-quick-links"><a href="#module-01"><span>01</span>Systèmes embarqués et objets connectés</a><a href="#module-02"><span>02</span>Capteurs et actionneurs</a><a href="#module-03"><span>03</span>Événements et états</a><a href="#module-04"><span>04</span>Programmation embarquée</a><a href="#module-05"><span>05</span>Interface homme-machine</a><a href="#module-06"><span>06</span>Communications et MQTT</a><a href="#module-07"><span>07</span>Sécurité et vie privée</a><a href="#module-08"><span>08</span>Projet responsable</a></div>
+  </section>
+
+  <section class="course-card iot-teacher-help">
+    <h2>🧑‍🏫 Matériel facultatif</h2>
+    <p>La séquence fonctionne intégralement dans le navigateur. Une carte
+    micro:bit, Arduino ou équivalente peut prolonger les modules 4, 5 et 8,
+    mais elle n’est pas indispensable. Les scripts et les données fictives
+    permettent une mise en œuvre sans achat.</p>
+  </section>
+
+
+<section id="module-01"
+         class="course-module"
+         data-module="module-01">
+  <div class="course-module-header">
+    <div>
+      <span class="course-module-number">01</span>
+      <p class="course-eyebrow">Décomposer l’objet en fonctions · 1 h 10</p>
+      <h2>Identifier un système embarqué et un objet connecté</h2>
+    </div>
+
+    <label class="course-completion">
+      <input type="checkbox"
+             class="course-module-check"
+             data-save="done-module-01">
+      Séance maîtrisée
+    </label>
+  </div>
+
+  <div class="course-meta">
+    <span>🎯 Distinguer système embarqué et objet connecté, puis identifier capteurs, traitement, IHM, communication et actionneurs.</span>
+    <span>🏷️ Systèmes informatiques embarqués · Objets connectés · Chaînes</span>
+  </div>
+
+
+<div class="course-phase course-observer">
+  <div class="course-phase-title">
+    <span>1</span><h3>👀 Observer et décrire</h3>
+  </div>
+
+<div class="iot-grid-2">
+  <div class="iot-card">
+    <h4>Six objets à comparer</h4>
+    <ul>
+      <li>une calculatrice simple ;</li>
+      <li>un lave-linge programmable ;</li>
+      <li>une montre mesurant l’activité et synchronisée ;</li>
+      <li>une ampoule pilotée par une passerelle ;</li>
+      <li>un badge commandant une serrure ;</li>
+      <li>un thermostat relié à un service distant.</li>
+    </ul>
+    <p>Pour chacun, cherche : programme embarqué, capteurs, actionneurs,
+    interface et communication.</p>
+  </div>
+
+  <div class="iot-note">
+    <strong>Deux notions distinctes</strong>
+    <p>Un système peut être <em>embarqué</em> sans être connecté. Il devient un
+    objet connecté lorsqu’il échange des données avec un autre équipement ou
+    un réseau pour rendre un service.</p>
+  </div>
+</div>
+
+<div class="iot-chain">
+  <div class="iot-chain-box"><strong>Milieu physique</strong>température, lumière, présence</div>
+  <div class="iot-arrow">→</div>
+  <div class="iot-chain-box"><strong>Capteurs</strong>mesurer et convertir</div>
+  <div class="iot-arrow">→</div>
+  <div class="iot-chain-box"><strong>Traitement</strong>algorithme embarqué</div>
+  <div class="iot-arrow">→</div>
+  <div class="iot-chain-box"><strong>Actionneurs</strong>éclairer, ventiler, alerter</div>
+</div>
+
+<div class="iot-chain">
+  <div class="iot-chain-box"><strong>Utilisateur</strong>observe et choisit</div>
+  <div class="iot-arrow">↔</div>
+  <div class="iot-chain-box"><strong>IHM</strong>boutons, écran, application</div>
+  <div class="iot-arrow">↔</div>
+  <div class="iot-chain-box"><strong>Communication</strong>radio, câble, réseau</div>
+  <div class="iot-arrow">↔</div>
+  <div class="iot-chain-box"><strong>Services</strong>stockage, historique, commande</div>
+</div>
+
+<p>Classe les composants suivants selon leur fonction.</p>
+<ul id="component-classifier" class="iot-classifier"></ul>
+
+<div class="iot-timeline">
+  <div><strong>Années 1960</strong>Calculateurs embarqués spécialisés</div>
+  <div><strong>Années 1970</strong>Diffusion des microprocesseurs</div>
+  <div><strong>Années 1990–2000</strong>Objets reliés aux réseaux</div>
+  <div><strong>Aujourd’hui</strong>Systèmes distribués, capteurs et services</div>
+</div>
+
+</div>
+
+<div class="course-phase course-notions">
+  <div class="course-phase-title">
+    <span>2</span><h3>📚 Acquérir les notions et le vocabulaire</h3>
+  </div>
+
+<ul class="course-vocabulary">
+  <li><strong>Système informatique embarqué</strong> — Système informatique
+  intégré dans un objet et dédié à des fonctions déterminées.</li>
+  <li><strong>Objet connecté</strong> — Objet capable d’échanger des données
+  avec un autre équipement ou un réseau.</li>
+  <li><strong>Microcontrôleur</strong> — Circuit réunissant processeur,
+  mémoire et interfaces d’entrée-sortie.</li>
+  <li><strong>Capteur</strong> — Composant qui mesure une grandeur ou détecte
+  un événement.</li>
+  <li><strong>Actionneur</strong> — Composant qui agit sur le monde physique.</li>
+  <li><strong>IHM</strong> — Interface homme-machine permettant l’échange entre
+  l’utilisateur et le système.</li>
+  <li><strong>Chaîne d’information</strong> — Acquisition, traitement et
+  communication des informations.</li>
+  <li><strong>Chaîne d’action</strong> — Commande, conversion d’énergie et
+  réalisation d’une action physique.</li>
+</ul>
+
+</div>
+
+<div class="course-phase course-analysis">
+  <div class="course-phase-title">
+    <span>3</span><h3>🔍 Analyser de manière structurée</h3>
+  </div>
+
+<p class="question">Une porte automatique non reliée à Internet est-elle un
+objet connecté ? Est-elle un système informatique embarqué ?</p>
+
+<button type="button"
+        class="course-answer-button"
+        data-closed-label="Voir l’analyse attendue"
+        aria-expanded="false">Voir l’analyse attendue</button>
+<div class="course-answer" hidden>
+Elle peut contenir un microcontrôleur, des capteurs et un programme : c’est
+alors un système informatique embarqué. Elle n’est pas nécessairement un objet
+connecté si elle n’échange aucune donnée avec un autre équipement ou un réseau.
+La connexion n’est pas indispensable à l’automatisation.
+</div>
+
+</div>
+
+<div class="course-phase course-concept">
+  <div class="course-phase-title">
+    <span>4</span><h3>🧠 Conceptualiser : diagnostiquer et proposer</h3>
+  </div>
+
+<p>Un fabricant qualifie de « connecté » un grille-pain dont le seul bouton
+déclenche une temporisation locale. Établis un diagnostic et propose les
+informations nécessaires pour vérifier l’affirmation.</p>
+
+<textarea data-save="diagnostic-module-01"
+          rows="8"
+          placeholder="Programme embarqué, échanges, réseau, service rendu, données..."></textarea>
+
+<button type="button"
+        class="course-answer-button course-teacher-gated"
+        data-closed-label="Comparer avec une proposition"
+        aria-expanded="false">Comparer avec une proposition</button>
+<div class="course-answer" hidden>
+La présence d’un programme embarqué ne suffit pas. Il faut rechercher un moyen
+de communication, les appareils partenaires, le protocole, les données
+échangées et le service associé. Sans échange externe, le grille-pain est
+automatisé ou embarqué, mais pas connecté au sens retenu dans ce cours.
+</div>
+
+</div>
+
+<div class="course-phase course-practice">
+  <div class="course-phase-title">
+    <span>5</span><h3>🛠️ Décomposer et vérifier</h3>
+  </div>
+
+<p>Choisis un objet courant et réalise sa fiche d’architecture :</p>
+<ul>
+  <li>fonction d’usage ;</li>
+  <li>capteurs et actionneurs ;</li>
+  <li>microcontrôleur ou calculateur ;</li>
+  <li>IHM ;</li>
+  <li>communications ;</li>
+  <li>données produites ;</li>
+  <li>fonctionnement possible en cas de coupure du réseau.</li>
+</ul>
+
+<textarea data-save="production-module-01"
+          rows="9"
+          placeholder="Fiche d’architecture de l’objet choisi..."></textarea>
+
+</div>
+
+
+  <div class="course-two-columns">
+    <div class="course-callout course-trap">
+      <h3>⚠️ Pièges à éviter</h3>
+      <ul><li>Confondre automatisé, embarqué et connecté.</li><li>Appeler capteur un composant qui produit une action.</li><li>Oublier le fonctionnement lorsque le réseau ou le serveur est indisponible.</li></ul>
+    </div>
+
+<div class="course-card course-mini-quiz" data-answer="1">
+  <h3>✅ Contrôle rapide</h3>
+  <p>Quel composant transforme une décision numérique en action physique ?</p>
+  <div class="course-quiz-options"><label><input type="radio" name="q-iot-01" value="0"> A. Un capteur</label><label><input type="radio" name="q-iot-01" value="1"> B. Un actionneur</label><label><input type="radio" name="q-iot-01" value="2"> C. Une métadonnée</label></div>
+  <button type="button" class="course-quiz-check">Vérifier</button>
+  <p class="course-quiz-feedback" role="status"></p>
+</div>
+
+  </div>
+</section>
+
+<section id="module-02"
+         class="course-module"
+         data-module="module-02">
+  <div class="course-module-header">
+    <div>
+      <span class="course-module-number">02</span>
+      <p class="course-eyebrow">Observer une chaîne information-action · 1 h 25</p>
+      <h2>Acquérir des mesures et commander des actionneurs</h2>
+    </div>
+
+    <label class="course-completion">
+      <input type="checkbox"
+             class="course-module-check"
+             data-save="done-module-02">
+      Séance maîtrisée
+    </label>
+  </div>
+
+  <div class="course-meta">
+    <span>🎯 Relier les données des capteurs à un algorithme de contrôle et aux actions des actionneurs.</span>
+    <span>🏷️ Capteurs · Actionneurs · Acquisition · Régulation</span>
+  </div>
+
+
+<div class="course-phase course-observer">
+  <div class="course-phase-title">
+    <span>1</span><h3>👀 Observer et expérimenter</h3>
+  </div>
+
+<div class="iot-lab-grid">
+  <div>
+    <svg class="iot-room"
+         viewBox="0 0 620 390"
+         role="img"
+         aria-label="Salle connectée fictive">
+      <rect x="35" y="45" width="550" height="300"
+            rx="12" fill="#f7f8f5" stroke="#7b8798" stroke-width="4"/>
+      <rect x="60" y="75" width="145" height="105"
+            fill="#b9dbef" stroke="#60839a" stroke-width="4"/>
+      <rect x="415" y="70" width="135" height="30"
+            rx="12" fill="#f2f2f2" stroke="#86909f" stroke-width="3"/>
+
+      <circle cx="115" cy="245" r="18" class="iot-sensor"/>
+      <text x="115" y="279" text-anchor="middle">température</text>
+
+      <circle cx="230" cy="245" r="18" class="iot-sensor"/>
+      <text x="230" y="279" text-anchor="middle">lumière</text>
+
+      <circle cx="345" cy="245" r="18" class="iot-sensor"/>
+      <text x="345" y="279" text-anchor="middle">CO₂</text>
+
+      <circle cx="460" cy="245" r="18" class="iot-sensor"/>
+      <text x="460" y="279" text-anchor="middle">présence</text>
+
+      <circle id="room-lamp-svg"
+              cx="315" cy="92" r="27"
+              class="iot-actuator-off"/>
+      <text x="315" y="132" text-anchor="middle">lampe</text>
+
+      <g id="room-fan-svg" transform="translate(482 150)">
+        <circle r="34" fill="#e1e7eb" stroke="#758394" stroke-width="3"/>
+        <g class="iot-fan-blade">
+          <path d="M0 0 C8 -40 38 -33 25 -6 Z"/>
+          <path d="M0 0 C40 8 33 38 6 25 Z"/>
+          <path d="M0 0 C-8 40 -38 33 -25 6 Z"/>
+          <path d="M0 0 C-40 -8 -33 -38 -6 -25 Z"/>
+        </g>
+        <circle r="7" fill="#31445a"/>
+      </g>
+      <text x="482" y="202" text-anchor="middle">ventilation</text>
+
+      <circle id="room-alarm-svg"
+              cx="530" cy="300" r="20"
+              class="iot-actuator-off"/>
+      <text x="530" y="332" text-anchor="middle">alarme</text>
+    </svg>
+  </div>
+
+  <div class="iot-lab">
+    <h4>Laboratoire d’acquisition et de commande</h4>
+
+    <div class="iot-form">
+      <label>Température
+        <input id="sensor-temperature"
+               type="range" min="15" max="36"
+               step=".5" value="22">
+      </label>
+
+      <label>Luminosité
+        <input id="sensor-light"
+               type="range" min="0" max="1000"
+               step="10" value="220">
+      </label>
+
+      <label>CO₂
+        <input id="sensor-co2"
+               type="range" min="400" max="2500"
+               step="25" value="850">
+      </label>
+
+      <label>
+        <input id="sensor-presence" type="checkbox" checked>
+        Présence détectée
+      </label>
+
+      <label>Mode
+        <select id="room-mode">
+          <option value="auto">Automatique</option>
+          <option value="manual">Manuel</option>
+        </select>
+      </label>
+    </div>
+
+    <div class="iot-actions">
+      <button id="manual-lamp"
+              type="button"
+              class="iot-secondary-button">Basculer la lampe</button>
+      <button id="manual-fan"
+              type="button"
+              class="iot-secondary-button">Basculer la ventilation</button>
+    </div>
+  </div>
+</div>
+
+<div class="iot-kpis">
+  <div><strong id="room-temperature"></strong>Température</div>
+  <div><strong id="room-light"></strong>Luminosité</div>
+  <div><strong id="room-co2"></strong>CO₂</div>
+  <div><strong id="room-presence"></strong>Occupation</div>
+  <div><strong id="room-lamp-state"></strong>Éclairage</div>
+  <div><strong id="room-fan-state"></strong>Ventilation</div>
+  <div><strong id="room-alarm-state"></strong>Alarme</div>
+</div>
+
+<pre id="room-output" class="iot-output"></pre>
+
+</div>
+
+<div class="course-phase course-notions">
+  <div class="course-phase-title">
+    <span>2</span><h3>📚 Acquérir les notions et le vocabulaire</h3>
+  </div>
+
+<ul class="course-vocabulary">
+  <li><strong>Grandeur physique</strong> — Propriété mesurable : température,
+  lumière, pression, distance…</li>
+  <li><strong>Signal analogique</strong> — Signal pouvant prendre une infinité
+  de valeurs dans une plage.</li>
+  <li><strong>Signal numérique</strong> — Information représentée par des
+  valeurs discrètes.</li>
+  <li><strong>Acquisition</strong> — Obtention et conversion d’une mesure par
+  un capteur.</li>
+  <li><strong>Échantillonnage</strong> — Mesure réalisée à des instants
+  successifs.</li>
+  <li><strong>Seuil</strong> — Valeur utilisée pour déclencher une décision.</li>
+  <li><strong>Consigne</strong> — Valeur ou état souhaité.</li>
+  <li><strong>Boucle de régulation</strong> — Mesurer, comparer, agir, puis
+  mesurer à nouveau.</li>
+</ul>
+
+</div>
+
+<div class="course-phase course-analysis">
+  <div class="course-phase-title">
+    <span>3</span><h3>🔍 Analyser de manière structurée</h3>
+  </div>
+
+<p class="question">Pourquoi la règle « ventilation ON si température &gt; 24 °C »
+peut-elle provoquer des commutations rapides autour de 24 °C ?</p>
+
+<button type="button"
+        class="course-answer-button"
+        data-closed-label="Voir l’analyse attendue"
+        aria-expanded="false">Voir l’analyse attendue</button>
+<div class="course-answer" hidden>
+Si la mesure oscille entre 23,9 et 24,1 °C, l’actionneur change d’état à chaque
+mesure. On peut introduire une hystérésis : démarrer au-dessus de 24,5 °C et
+arrêter en dessous de 23,5 °C. On peut aussi filtrer les mesures ou imposer une
+durée minimale de fonctionnement.
+</div>
+
+</div>
+
+<div class="course-phase course-concept">
+  <div class="course-phase-title">
+    <span>4</span><h3>🧠 Conceptualiser : diagnostiquer et proposer</h3>
+  </div>
+
+<p>Le capteur de présence reste bloqué sur « oui » et l’éclairage fonctionne
+toute la nuit. Établis un diagnostic et propose des mécanismes de détection et
+de repli.</p>
+
+<textarea data-save="diagnostic-module-02"
+          rows="8"
+          placeholder="Cohérence, durée, second capteur, mode dégradé, alerte..."></textarea>
+
+<button type="button"
+        class="course-answer-button course-teacher-gated"
+        data-closed-label="Comparer avec une proposition"
+        aria-expanded="false">Comparer avec une proposition</button>
+<div class="course-answer" hidden>
+Une valeur constante anormalement longue peut signaler un défaut. Le système
+peut comparer présence, horaires et variations lumineuses, imposer une durée
+maximale, signaler le capteur et permettre une commande manuelle. Le mode
+dégradé doit privilégier la sécurité sans gaspillage permanent.
+</div>
+
+</div>
+
+<div class="course-phase course-practice">
+  <div class="course-phase-title">
+    <span>5</span><h3>🛠️ Régler et vérifier</h3>
+  </div>
+
+<p>Définis trois règles pour la salle :</p>
+<ol>
+  <li>éclairage automatique ;</li>
+  <li>ventilation selon CO₂ et température ;</li>
+  <li>alarme en cas de valeur dangereuse ou incohérente.</li>
+</ol>
+
+<label>Seuil de lumière
+  <input id="threshold-light"
+         type="number" min="0" max="1000"
+         value="300">
+</label>
+
+<label>Seuil de température
+  <input id="threshold-temperature"
+         type="number" min="15" max="35"
+         step=".5" value="24.5">
+</label>
+
+<label>Seuil de CO₂
+  <input id="threshold-co2"
+         type="number" min="400" max="2500"
+         step="50" value="1200">
+</label>
+
+<textarea data-save="production-module-02"
+          rows="8"
+          placeholder="Règles, seuils, justification et tests..."></textarea>
+
+</div>
+
+
+  <div class="course-two-columns">
+    <div class="course-callout course-trap">
+      <h3>⚠️ Pièges à éviter</h3>
+      <ul><li>Prendre une mesure unique pour une vérité exacte.</li><li>Choisir un seuil sans unité ni justification.</li><li>Oublier les pannes de capteur et la commande manuelle.</li></ul>
+    </div>
+
+<div class="course-card course-mini-quiz" data-answer="2">
+  <h3>✅ Contrôle rapide</h3>
+  <p>Quelle opération consiste à mesurer régulièrement une grandeur ?</p>
+  <div class="course-quiz-options"><label><input type="radio" name="q-iot-02" value="0"> A. La compression</label><label><input type="radio" name="q-iot-02" value="1"> B. Le routage</label><label><input type="radio" name="q-iot-02" value="2"> C. L’échantillonnage</label></div>
+  <button type="button" class="course-quiz-check">Vérifier</button>
+  <p class="course-quiz-feedback" role="status"></p>
+</div>
+
+  </div>
+</section>
+
+<section id="module-03"
+         class="course-module"
+         data-module="module-03">
+  <div class="course-module-header">
+    <div>
+      <span class="course-module-number">03</span>
+      <p class="course-eyebrow">Modéliser une porte automatique · 1 h 15</p>
+      <h2>Piloter un comportement par événements et états</h2>
+    </div>
+
+    <label class="course-completion">
+      <input type="checkbox"
+             class="course-module-check"
+             data-save="done-module-03">
+      Séance maîtrisée
+    </label>
+  </div>
+
+  <div class="course-meta">
+    <span>🎯 Identifier les événements, états et transitions d’un algorithme de contrôle physique.</span>
+    <span>🏷️ Événements · États · Automates · Sécurité</span>
+  </div>
+
+
+<div class="course-phase course-observer">
+  <div class="course-phase-title">
+    <span>1</span><h3>👀 Observer et manipuler</h3>
+  </div>
+
+<div class="iot-state-machine">
+  <div class="iot-state" data-door-state="FERMEE">FERMÉE</div>
+  <div class="iot-state" data-door-state="OUVERTURE">OUVERTURE</div>
+  <div class="iot-state" data-door-state="OUVERTE">OUVERTE</div>
+  <div class="iot-state" data-door-state="FERMETURE">FERMETURE</div>
+  <div class="iot-state" data-door-state="BLOQUEE">BLOQUÉE</div>
+</div>
+
+<div class="iot-actions">
+  <button type="button" class="iot-secondary-button"
+          data-door-event="presence_detectee">Présence détectée</button>
+  <button type="button" class="iot-secondary-button"
+          data-door-event="fin_ouverture">Fin d’ouverture</button>
+  <button type="button" class="iot-secondary-button"
+          data-door-event="temporisation_terminee">Temporisation terminée</button>
+  <button type="button" class="iot-secondary-button"
+          data-door-event="fin_fermeture">Fin de fermeture</button>
+  <button type="button" class="iot-secondary-button"
+          data-door-event="obstacle_detecte">Obstacle détecté</button>
+  <button type="button" class="iot-secondary-button"
+          data-door-event="reinitialisation">Réinitialiser</button>
+</div>
+
+<div class="iot-state-grid">
+  <div><strong id="door-current"></strong>État courant</div>
+  <div><strong id="door-event"></strong>Dernier événement</div>
+  <div><strong id="door-motor"></strong>Moteur</div>
+  <div><strong id="door-safety"></strong>Sécurité</div>
+</div>
+
+<pre id="door-log" class="iot-output"></pre>
+
+</div>
+
+<div class="course-phase course-notions">
+  <div class="course-phase-title">
+    <span>2</span><h3>📚 Acquérir les notions et le vocabulaire</h3>
+  </div>
+
+<ul class="course-vocabulary">
+  <li><strong>Événement</strong> — Fait détecté par le système : bouton,
+  message, fin de temporisation, dépassement de seuil…</li>
+  <li><strong>État</strong> — Situation mémorisée du système à un instant.</li>
+  <li><strong>Transition</strong> — Passage d’un état à un autre provoqué par
+  un événement et éventuellement une condition.</li>
+  <li><strong>Automate fini</strong> — Modèle défini par un nombre fini
+  d’états et de transitions.</li>
+  <li><strong>Temporisation</strong> — Attente d’une durée déterminée.</li>
+  <li><strong>Interruption</strong> — Mécanisme permettant de réagir rapidement
+  à un événement matériel ou logiciel.</li>
+  <li><strong>Priorité</strong> — Règle déterminant quel événement traiter
+  lorsqu’ils surviennent presque simultanément.</li>
+  <li><strong>État sûr</strong> — État choisi pour réduire le danger en cas
+  d’anomalie.</li>
+</ul>
+
+</div>
+
+<div class="course-phase course-analysis">
+  <div class="course-phase-title">
+    <span>3</span><h3>🔍 Analyser de manière structurée</h3>
+  </div>
+
+<p class="question">Pourquoi l’obstacle détecté pendant la fermeture doit-il
+être traité avant la fin normale de fermeture ?</p>
+
+<button type="button"
+        class="course-answer-button"
+        data-closed-label="Voir l’analyse attendue"
+        aria-expanded="false">Voir l’analyse attendue</button>
+<div class="course-answer" hidden>
+L’événement de sécurité doit interrompre ou inverser immédiatement le mouvement
+pour éviter un choc. Si la fin de fermeture était traitée d’abord, le système
+pourrait considérer la porte fermée malgré l’obstacle. Les priorités font partie
+du comportement à spécifier et à tester.
+</div>
+
+</div>
+
+<div class="course-phase course-concept">
+  <div class="course-phase-title">
+    <span>4</span><h3>🧠 Conceptualiser : diagnostiquer et proposer</h3>
+  </div>
+
+<p>La porte reçoit presque simultanément « obstacle détecté » et « fin de
+fermeture ». Propose une règle de priorité, un état sûr et une série de tests.</p>
+
+<textarea data-save="diagnostic-module-03"
+          rows="8"
+          placeholder="Priorité, arrêt, inversion, alarme, cas de test..."></textarea>
+
+<button type="button"
+        class="course-answer-button course-teacher-gated"
+        data-closed-label="Comparer avec une proposition"
+        aria-expanded="false">Comparer avec une proposition</button>
+<div class="course-answer" hidden>
+L’obstacle doit être prioritaire. Le moteur s’arrête puis rouvre ou passe dans
+un état bloqué selon le dispositif. Les tests couvrent obstacle au début, au
+milieu et à la fin, capteur maintenu, événement manquant et réinitialisation.
+</div>
+
+</div>
+
+<div class="course-phase course-practice">
+  <div class="course-phase-title">
+    <span>5</span><h3>🛠️ Modéliser et vérifier</h3>
+  </div>
+
+<p>Complète ou modifie l’automate pour gérer :</p>
+<ul>
+  <li>un mode maintenance ;</li>
+  <li>un bouton d’arrêt d’urgence ;</li>
+  <li>une temporisation trop longue ;</li>
+  <li>une panne du capteur d’obstacle.</li>
+</ul>
+
+<textarea data-save="production-module-03"
+          rows="9"
+          placeholder="Nouveaux états, événements, transitions et tests..."></textarea>
+
+</div>
+
+
+  <div class="course-two-columns">
+    <div class="course-callout course-trap">
+      <h3>⚠️ Pièges à éviter</h3>
+      <ul><li>Confondre un état durable avec un événement ponctuel.</li><li>Oublier les événements inattendus.</li><li>Ne tester que le scénario nominal sans obstacle ni panne.</li></ul>
+    </div>
+
+<div class="course-card course-mini-quiz" data-answer="0">
+  <h3>✅ Contrôle rapide</h3>
+  <p>Qu’est-ce qui provoque généralement une transition d’état ?</p>
+  <div class="course-quiz-options"><label><input type="radio" name="q-iot-03" value="0"> A. Un événement</label><label><input type="radio" name="q-iot-03" value="1"> B. Une couleur</label><label><input type="radio" name="q-iot-03" value="2"> C. Une licence</label></div>
+  <button type="button" class="course-quiz-check">Vérifier</button>
+  <p class="course-quiz-feedback" role="status"></p>
+</div>
+
+  </div>
+</section>
+
+<section id="module-04"
+         class="course-module"
+         data-module="module-04">
+  <div class="course-module-header">
+    <div>
+      <span class="course-module-number">04</span>
+      <p class="course-eyebrow">Passer de la règle au programme embarqué · 1 h 25</p>
+      <h2>Programmer l’acquisition et la commande</h2>
+    </div>
+
+    <label class="course-completion">
+      <input type="checkbox"
+             class="course-module-check"
+             data-save="done-module-04">
+      Séance maîtrisée
+    </label>
+  </div>
+
+  <div class="course-meta">
+    <span>🎯 Écrire ou adapter un programme simple d’acquisition de données et de commande d’un actionneur.</span>
+    <span>🏷️ Microcontrôleur · Python · Entrées-sorties · Conditions</span>
+  </div>
+
+
+<div class="course-phase course-observer">
+  <div class="course-phase-title">
+    <span>1</span><h3>👀 Observer et générer</h3>
+  </div>
+
+<div class="iot-lab-grid">
+  <div class="iot-lab">
+    <h4>Construire un programme MicroPython</h4>
+
+    <div class="iot-form">
+      <label>Capteur ou entrée
+        <select id="program-sensor">
+          <option value="temperature">Température</option>
+          <option value="luminosite">Luminosité</option>
+          <option value="bouton">Bouton A</option>
+        </select>
+      </label>
+
+      <label>Comparaison
+        <select id="program-operator">
+          <option value=">">Supérieur à</option>
+          <option value="<">Inférieur à</option>
+        </select>
+      </label>
+
+      <label>Seuil
+        <input id="program-threshold"
+               type="number" value="24">
+      </label>
+
+      <label>Actionneur ou commande
+        <select id="program-actuator">
+          <option value="ventilation">Ventilation</option>
+          <option value="eclairage">Éclairage</option>
+          <option value="alarme">Alarme</option>
+        </select>
+      </label>
+
+      <label>Période de mesure en millisecondes
+        <input id="program-interval"
+               type="number" min="100" value="2000">
+      </label>
+    </div>
+
+    <button id="program-run"
+            type="button"
+            class="course-tool-button">Générer et tester</button>
+  </div>
+
+  <pre id="program-result" class="iot-output"></pre>
+</div>
+
+<pre id="program-code" class="iot-code"></pre>
+
+</div>
+
+<div class="course-phase course-notions">
+  <div class="course-phase-title">
+    <span>2</span><h3>📚 Acquérir les notions et le vocabulaire</h3>
+  </div>
+
+<ul class="course-vocabulary">
+  <li><strong>Entrée</strong> — Valeur reçue d’un capteur, bouton ou message.</li>
+  <li><strong>Sortie</strong> — Signal envoyé vers un actionneur ou une
+  interface.</li>
+  <li><strong>Broche</strong> — Connexion électrique programmable du
+  microcontrôleur.</li>
+  <li><strong>Boucle principale</strong> — Partie du programme répétée pendant
+  le fonctionnement.</li>
+  <li><strong>Condition</strong> — Test qui sélectionne une action.</li>
+  <li><strong>Variable</strong> — Nom associé à une valeur mémorisée.</li>
+  <li><strong>Bibliothèque</strong> — Ensemble de fonctions destinées à un
+  matériel ou un usage.</li>
+  <li><strong>Téléversement</strong> — Transfert du programme vers la carte.</li>
+</ul>
+
+</div>
+
+<div class="course-phase course-analysis">
+  <div class="course-phase-title">
+    <span>3</span><h3>🔍 Analyser de manière structurée</h3>
+  </div>
+
+<p class="question">Pourquoi une boucle sans pause peut-elle être problématique
+sur un objet alimenté par batterie ?</p>
+
+<button type="button"
+        class="course-answer-button"
+        data-closed-label="Voir l’analyse attendue"
+        aria-expanded="false">Voir l’analyse attendue</button>
+<div class="course-answer" hidden>
+Elle exécute des mesures, calculs et transmissions aussi vite que possible,
+augmentant la consommation et produisant trop de données. La période doit être
+adaptée au phénomène : quelques millisecondes pour une réaction rapide, mais
+plusieurs secondes ou minutes pour une température lente.
+</div>
+
+</div>
+
+<div class="course-phase course-concept">
+  <div class="course-phase-title">
+    <span>4</span><h3>🧠 Conceptualiser : diagnostiquer et proposer</h3>
+  </div>
+
+<p>Le programme envoie la température toutes les 10 millisecondes alors que
+celle-ci varie lentement. Le réseau se sature et la batterie se décharge.
+Établis un diagnostic et propose une stratégie d’acquisition et de transmission.</p>
+
+<textarea data-save="diagnostic-module-04"
+          rows="8"
+          placeholder="Période, seuil de variation, stockage local, envoi groupé..."></textarea>
+
+<button type="button"
+        class="course-answer-button course-teacher-gated"
+        data-closed-label="Comparer avec une proposition"
+        aria-expanded="false">Comparer avec une proposition</button>
+<div class="course-answer" hidden>
+Mesurer ou transmettre à cette fréquence est inutile. On choisit une période
+cohérente, on n’envoie qu’en cas de variation significative ou d’alerte, et on
+peut regrouper les mesures. Le système conserve localement les données utiles
+si la connexion est indisponible.
+</div>
+
+</div>
+
+<div class="course-phase course-practice">
+  <div class="course-phase-title">
+    <span>5</span><h3>🛠️ Programmer et vérifier</h3>
+  </div>
+
+<p>Utilise les scripts fournis :</p>
+<ul>
+  <li><code>simuler_salle_connectee.py</code> pour l’algorithme ;</li>
+  <li><code>automate_porte.py</code> pour les états ;</li>
+  <li><code>microbit_station_salle.py</code> comme prolongement matériel.</li>
+</ul>
+
+<p>Modifie au moins un seuil et ajoute une condition de sécurité.</p>
+
+<textarea data-save="production-module-04"
+          rows="8"
+          placeholder="Programme modifié, tests, résultats et correction..."></textarea>
+
+</div>
+
+
+  <div class="course-two-columns">
+    <div class="course-callout course-trap">
+      <h3>⚠️ Pièges à éviter</h3>
+      <ul><li>Commander directement un moteur puissant depuis une broche.</li><li>Mesurer ou transmettre beaucoup plus vite que nécessaire.</li><li>Ne pas prévoir de comportement en cas de valeur absente.</li></ul>
+    </div>
+
+<div class="course-card course-mini-quiz" data-answer="1">
+  <h3>✅ Contrôle rapide</h3>
+  <p>Quel élément permet de choisir entre deux actions dans un programme ?</p>
+  <div class="course-quiz-options"><label><input type="radio" name="q-iot-04" value="0"> A. Une licence</label><label><input type="radio" name="q-iot-04" value="1"> B. Une condition</label><label><input type="radio" name="q-iot-04" value="2"> C. Un boîtier</label></div>
+  <button type="button" class="course-quiz-check">Vérifier</button>
+  <p class="course-quiz-feedback" role="status"></p>
+</div>
+
+  </div>
+</section>
+
+<section id="module-05"
+         class="course-module"
+         data-module="module-05">
+  <div class="course-module-header">
+    <div>
+      <span class="course-module-number">05</span>
+      <p class="course-eyebrow">Observer, commander et confirmer · 1 h 15</p>
+      <h2>Concevoir une interface homme-machine simple</h2>
+    </div>
+
+    <label class="course-completion">
+      <input type="checkbox"
+             class="course-module-check"
+             data-save="done-module-05">
+      Séance maîtrisée
+    </label>
+  </div>
+
+  <div class="course-meta">
+    <span>🎯 Réaliser ou spécifier une IHM simple d’un objet connecté.</span>
+    <span>🏷️ IHM · Retour d’état · Automatique / manuel · Accessibilité</span>
+  </div>
+
+
+<div class="course-phase course-observer">
+  <div class="course-phase-title">
+    <span>1</span><h3>👀 Observer et manipuler</h3>
+  </div>
+
+<div class="iot-dashboard">
+  <div class="iot-widget">
+    <strong>Température</strong>
+    <span id="dashboard-temperature" class="value"></span>
+    <small>capteur</small>
+  </div>
+
+  <div class="iot-widget">
+    <strong>Luminosité</strong>
+    <span id="dashboard-light" class="value"></span>
+    <small>capteur</small>
+  </div>
+
+  <div class="iot-widget">
+    <strong>CO₂</strong>
+    <span id="dashboard-co2" class="value"></span>
+    <small>capteur</small>
+  </div>
+
+  <div class="iot-widget">
+    <strong>Salle</strong>
+    <span id="dashboard-presence" class="value"></span>
+    <small>détection</small>
+  </div>
+
+  <div class="iot-widget">
+    <strong>Éclairage</strong>
+    <span id="dashboard-lamp" class="value"></span>
+    <button id="dashboard-lamp-button"
+            type="button"
+            class="iot-secondary-button">Commander</button>
+  </div>
+
+  <div class="iot-widget">
+    <strong>Ventilation</strong>
+    <span id="dashboard-fan" class="value"></span>
+    <button id="dashboard-fan-button"
+            type="button"
+            class="iot-secondary-button">Commander</button>
+  </div>
+</div>
+
+<div class="iot-switch-row">
+  <label for="dashboard-auto"><strong>Mode automatique</strong><br>
+  Les règles commandent les actionneurs.</label>
+  <input id="dashboard-auto" type="checkbox" checked>
+</div>
+
+<div class="iot-note">
+  <strong>Conseil de l’interface</strong>
+  <p id="dashboard-advice"></p>
+</div>
+
+</div>
+
+<div class="course-phase course-notions">
+  <div class="course-phase-title">
+    <span>2</span><h3>📚 Acquérir les notions et le vocabulaire</h3>
+  </div>
+
+<ul class="course-vocabulary">
+  <li><strong>IHM</strong> — Moyens matériels et logiciels d’interaction entre
+  une personne et un système.</li>
+  <li><strong>Affordance</strong> — Indice aidant à comprendre l’action
+  possible sur un élément.</li>
+  <li><strong>Retour d’état</strong> — Information confirmant l’état réel ou
+  la prise en compte d’une commande.</li>
+  <li><strong>Mode automatique</strong> — Le système décide selon ses règles.</li>
+  <li><strong>Mode manuel</strong> — L’utilisateur commande directement.</li>
+  <li><strong>Priorité de commande</strong> — Règle arbitrant entre automatisme,
+  utilisateur et sécurité.</li>
+  <li><strong>Accessibilité</strong> — Conception utilisable par des personnes
+  ayant des besoins variés.</li>
+  <li><strong>Erreur de manipulation</strong> — Action involontaire que l’IHM
+  doit prévenir ou permettre d’annuler.</li>
+</ul>
+
+</div>
+
+<div class="course-phase course-analysis">
+  <div class="course-phase-title">
+    <span>3</span><h3>🔍 Analyser de manière structurée</h3>
+  </div>
+
+<p class="question">Pourquoi le bouton « Commander » doit-il être accompagné
+de l’état réel de l’actionneur ?</p>
+
+<button type="button"
+        class="course-answer-button"
+        data-closed-label="Voir l’analyse attendue"
+        aria-expanded="false">Voir l’analyse attendue</button>
+<div class="course-answer" hidden>
+Une commande envoyée peut échouer, être retardée ou être annulée par une règle
+de sécurité. L’interface doit distinguer l’intention de l’utilisateur, la
+réception de la commande et l’état réellement confirmé. Sans retour, l’utilisateur
+peut répéter l’action ou croire à tort que le système a réagi.
+</div>
+
+</div>
+
+<div class="course-phase course-concept">
+  <div class="course-phase-title">
+    <span>4</span><h3>🧠 Conceptualiser : diagnostiquer et proposer</h3>
+  </div>
+
+<p>Dans une IHM, le bouton vert signifie parfois « activer » et parfois
+« appareil déjà actif ». Les utilisateurs commettent des erreurs. Diagnostique
+et propose une convention plus claire et accessible.</p>
+
+<textarea data-save="diagnostic-module-05"
+          rows="8"
+          placeholder="Libellé, état, action, couleur, icône, confirmation..."></textarea>
+
+<button type="button"
+        class="course-answer-button course-teacher-gated"
+        data-closed-label="Comparer avec une proposition"
+        aria-expanded="false">Comparer avec une proposition</button>
+<div class="course-answer" hidden>
+Le bouton mélange action et état. Il faut afficher séparément « Ventilation :
+active » et un bouton libellé « Arrêter ». La couleur ne doit pas être le seul
+indice : ajouter texte, icône et retour après commande. Les actions critiques
+peuvent demander confirmation.
+</div>
+
+</div>
+
+<div class="course-phase course-practice">
+  <div class="course-phase-title">
+    <span>5</span><h3>🛠️ Concevoir et tester</h3>
+  </div>
+
+<p>Réalise la maquette d’une IHM simple comprenant :</p>
+<ul>
+  <li>au moins deux mesures ;</li>
+  <li>un mode automatique et un mode manuel ;</li>
+  <li>la commande d’un actionneur ;</li>
+  <li>un retour d’état ;</li>
+  <li>une alerte compréhensible ;</li>
+  <li>des libellés accessibles au clavier et sans dépendre uniquement de la couleur.</li>
+</ul>
+
+<textarea data-save="production-module-05"
+          rows="9"
+          placeholder="Maquette, règles d’interaction et protocole de test..."></textarea>
+
+</div>
+
+
+  <div class="course-two-columns">
+    <div class="course-callout course-trap">
+      <h3>⚠️ Pièges à éviter</h3>
+      <ul><li>Confondre commande envoyée et action réalisée.</li><li>Utiliser seulement une couleur pour signaler un état.</li><li>Laisser une commande manuelle contourner une sécurité critique.</li></ul>
+    </div>
+
+<div class="course-card course-mini-quiz" data-answer="2">
+  <h3>✅ Contrôle rapide</h3>
+  <p>Quelle information confirme que la commande a réellement été exécutée ?</p>
+  <div class="course-quiz-options"><label><input type="radio" name="q-iot-05" value="0"> A. Le nom du fabricant</label><label><input type="radio" name="q-iot-05" value="1"> B. Le prix de l’objet</label><label><input type="radio" name="q-iot-05" value="2"> C. Le retour d’état</label></div>
+  <button type="button" class="course-quiz-check">Vérifier</button>
+  <p class="course-quiz-feedback" role="status"></p>
+</div>
+
+  </div>
+</section>
+
+<section id="module-06"
+         class="course-module"
+         data-module="module-06">
+  <div class="course-module-header">
+    <div>
+      <span class="course-module-number">06</span>
+      <p class="course-eyebrow">Choisir une architecture et simuler MQTT · 1 h 20</p>
+      <h2>Faire communiquer les objets et les services</h2>
+    </div>
+
+    <label class="course-completion">
+      <input type="checkbox"
+             class="course-module-check"
+             data-save="done-module-06">
+      Séance maîtrisée
+    </label>
+  </div>
+
+  <div class="course-meta">
+    <span>🎯 Expliquer les échanges d’un objet connecté et choisir un protocole ou une technologie selon les contraintes.</span>
+    <span>🏷️ Communication · Protocoles · Passerelle · MQTT</span>
+  </div>
+
+
+<div class="course-phase course-observer">
+  <div class="course-phase-title">
+    <span>1</span><h3>👀 Observer et publier</h3>
+  </div>
+
+<div class="iot-broker">
+  <div class="iot-device">
+    <strong>Objets et capteurs</strong>
+    <p>Publient des mesures et des états.</p>
+  </div>
+
+  <div class="iot-broker-center">
+    <strong>Courtier de messages</strong>
+    <p>Reçoit et distribue selon les sujets.</p>
+  </div>
+
+  <div class="iot-device">
+    <strong>IHM et services</strong>
+    <p>S’abonnent aux données utiles.</p>
+  </div>
+</div>
+
+<div class="iot-lab-grid">
+  <div class="iot-lab">
+    <h4>Simulateur publish / subscribe</h4>
+
+    <div class="iot-form">
+      <label>Identifiant du client
+        <input id="mqtt-client"
+               value="capteur-salle-201">
+      </label>
+
+      <label>Sujet
+        <input id="mqtt-topic"
+               value="lycee/salle201/temperature">
+      </label>
+
+      <label>Contenu
+        <input id="mqtt-payload"
+               value="22.4">
+      </label>
+    </div>
+
+    <button id="mqtt-publish"
+            type="button"
+            class="course-tool-button">Publier</button>
+
+    <pre id="mqtt-output" class="iot-output"></pre>
+  </div>
+
+  <ul id="mqtt-message-list" class="iot-message-list"></ul>
+</div>
+
+<div class="iot-table-wrap">
+<table>
+  <thead>
+    <tr>
+      <th>Technologie</th>
+      <th>Portée indicative</th>
+      <th>Débit / énergie</th>
+      <th>Usage possible</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr><td>NFC</td><td>très courte</td><td>faible échange</td><td>badge, appairage</td></tr>
+    <tr><td>Bluetooth LE</td><td>locale</td><td>faible énergie</td><td>capteur et smartphone</td></tr>
+    <tr><td>Wi-Fi</td><td>bâtiment</td><td>débit élevé, énergie supérieure</td><td>caméra, passerelle</td></tr>
+    <tr><td>LoRaWAN</td><td>longue</td><td>petits messages, faible énergie</td><td>capteur distant</td></tr>
+    <tr><td>Ethernet</td><td>câblée</td><td>stable</td><td>contrôleur fixe</td></tr>
+  </tbody>
+</table>
+</div>
+
+</div>
+
+<div class="course-phase course-notions">
+  <div class="course-phase-title">
+    <span>2</span><h3>📚 Acquérir les notions et le vocabulaire</h3>
+  </div>
+
+<ul class="course-vocabulary">
+  <li><strong>Protocole</strong> — Ensemble de règles d’échange entre systèmes.</li>
+  <li><strong>Appairage</strong> — Association contrôlée de deux équipements.</li>
+  <li><strong>Passerelle</strong> — Équipement reliant des réseaux ou protocoles
+  différents.</li>
+  <li><strong>Client</strong> — Programme ou objet participant à un service.</li>
+  <li><strong>Courtier</strong> — Serveur distribuant les messages publiés aux
+  abonnés.</li>
+  <li><strong>Sujet</strong> — Nom hiérarchique utilisé pour classer les messages.</li>
+  <li><strong>Publication / abonnement</strong> — Modèle dans lequel un client
+  publie et d’autres reçoivent les sujets sélectionnés.</li>
+  <li><strong>Latence</strong> — Délai entre émission, transmission et réaction.</li>
+</ul>
+
+</div>
+
+<div class="course-phase course-analysis">
+  <div class="course-phase-title">
+    <span>3</span><h3>🔍 Analyser de manière structurée</h3>
+  </div>
+
+<p class="question">Pourquoi une alarme incendie ne doit-elle pas dépendre
+uniquement d’un serveur cloud et d’une connexion Internet ?</p>
+
+<button type="button"
+        class="course-answer-button"
+        data-closed-label="Voir l’analyse attendue"
+        aria-expanded="false">Voir l’analyse attendue</button>
+<div class="course-answer" hidden>
+La connexion et le service distant peuvent être indisponibles ou trop lents.
+La fonction critique doit continuer localement : détecter, déclencher la sirène
+et afficher le défaut. Le réseau peut transmettre une information complémentaire,
+mais ne doit pas être le seul chemin de sécurité.
+</div>
+
+</div>
+
+<div class="course-phase course-concept">
+  <div class="course-phase-title">
+    <span>4</span><h3>🧠 Conceptualiser : diagnostiquer et proposer</h3>
+  </div>
+
+<p>Une caméra envoie en continu une vidéo haute définition par Wi-Fi alors
+qu’un capteur de température envoie une valeur par heure. Choisis une
+architecture et des communications adaptées à chaque cas.</p>
+
+<textarea data-save="diagnostic-module-06"
+          rows="8"
+          placeholder="Débit, énergie, portée, latence, passerelle, local / distant..."></textarea>
+
+<button type="button"
+        class="course-answer-button course-teacher-gated"
+        data-closed-label="Comparer avec une proposition"
+        aria-expanded="false">Comparer avec une proposition</button>
+<div class="course-answer" hidden>
+La vidéo exige un débit important, une alimentation suffisante et une sécurité
+forte ; un traitement local peut limiter les envois. Le capteur peut utiliser
+une technologie à faible énergie et transmettre de petits messages. Le choix
+dépend du volume, de la portée, de la latence, de l’autonomie et du fonctionnement
+sans réseau.
+</div>
+
+</div>
+
+<div class="course-phase course-practice">
+  <div class="course-phase-title">
+    <span>5</span><h3>🛠️ Architecturer et vérifier</h3>
+  </div>
+
+<p>Conçois le plan de communication de la salle connectée :</p>
+<ul>
+  <li>sujets des mesures ;</li>
+  <li>sujets de commande et d’état ;</li>
+  <li>clients autorisés ;</li>
+  <li>réaction locale en cas de coupure ;</li>
+  <li>données à conserver ou à supprimer.</li>
+</ul>
+
+<textarea data-save="production-module-06"
+          rows="9"
+          placeholder="Architecture, sujets, abonnements et mode dégradé..."></textarea>
+
+</div>
+
+
+  <div class="course-two-columns">
+    <div class="course-callout course-trap">
+      <h3>⚠️ Pièges à éviter</h3>
+      <ul><li>Choisir une technologie uniquement parce qu’elle est connue.</li><li>Envoyer au cloud une donnée qui peut être traitée localement.</li><li>Ne pas prévoir la perte de connexion ou les messages en retard.</li></ul>
+    </div>
+
+<div class="course-card course-mini-quiz" data-answer="0">
+  <h3>✅ Contrôle rapide</h3>
+  <p>Dans MQTT, quel composant distribue les publications aux abonnés ?</p>
+  <div class="course-quiz-options"><label><input type="radio" name="q-iot-06" value="0"> A. Le courtier</label><label><input type="radio" name="q-iot-06" value="1"> B. Le capteur de lumière</label><label><input type="radio" name="q-iot-06" value="2"> C. L’actionneur</label></div>
+  <button type="button" class="course-quiz-check">Vérifier</button>
+  <p class="course-quiz-feedback" role="status"></p>
+</div>
+
+  </div>
+</section>
+
+<section id="module-07"
+         class="course-module"
+         data-module="module-07">
+  <div class="course-module-header">
+    <div>
+      <span class="course-module-number">07</span>
+      <p class="course-eyebrow">Auditer la configuration et le cycle de vie · 1 h 30</p>
+      <h2>Sécuriser les objets et protéger les données</h2>
+    </div>
+
+    <label class="course-completion">
+      <input type="checkbox"
+             class="course-module-check"
+             data-save="done-module-07">
+      Séance maîtrisée
+    </label>
+  </div>
+
+  <div class="course-meta">
+    <span>🎯 Identifier les risques d’un objet connecté et proposer des mesures de sécurité et de minimisation.</span>
+    <span>🏷️ Sécurité · Vie privée · Mises à jour · Fin de support</span>
+  </div>
+
+
+<div class="course-phase course-observer">
+  <div class="course-phase-title">
+    <span>1</span><h3>👀 Observer et auditer</h3>
+  </div>
+
+<div class="iot-lab-grid">
+  <div class="iot-lab">
+    <h4>Audit de configuration fictif</h4>
+
+    <div class="iot-security-row">
+      <label for="security-password">Mot de passe unique, non défini en usine</label>
+      <input id="security-password" type="checkbox">
+    </div>
+
+    <div class="iot-security-row">
+      <label for="security-updates">Mises à jour automatiques ou planifiées</label>
+      <input id="security-updates" type="checkbox">
+    </div>
+
+    <div class="iot-security-row">
+      <label for="security-local">Fonctionnement local en cas de panne du cloud</label>
+      <input id="security-local" type="checkbox">
+    </div>
+
+    <div class="iot-security-row">
+      <label for="security-encryption">Communications protégées</label>
+      <input id="security-encryption" type="checkbox">
+    </div>
+
+    <div class="iot-security-row">
+      <label for="security-minimization">Données limitées à la finalité</label>
+      <input id="security-minimization" type="checkbox">
+    </div>
+
+    <div class="iot-security-row">
+      <label for="security-network">Réseau séparé ou accès limités</label>
+      <input id="security-network" type="checkbox">
+    </div>
+
+    <div class="iot-security-row">
+      <label for="security-reset">Procédure d’effacement et de réinitialisation</label>
+      <input id="security-reset" type="checkbox">
+    </div>
+
+    <div class="iot-security-row">
+      <label for="security-unsupported">Objet arrivé en fin de support</label>
+      <input id="security-unsupported" type="checkbox" checked>
+    </div>
+  </div>
+
+  <div>
+    <div class="iot-security-grid">
+      <div><strong id="security-score"></strong>Score pédagogique</div>
+      <div><strong id="security-level"></strong>Niveau</div>
+    </div>
+    <pre id="security-output" class="iot-output"></pre>
+  </div>
+</div>
+
+<div class="iot-warning iot-note">
+  <strong>Une sécurité proportionnée au risque</strong>
+  <p>Une ampoule et un dispositif médical ne présentent pas les mêmes impacts.
+  Il faut identifier les fonctions, les données, les accès, les pannes et les
+  scénarios d’attaque avant de choisir les mesures.</p>
+</div>
+
+</div>
+
+<div class="course-phase course-notions">
+  <div class="course-phase-title">
+    <span>2</span><h3>📚 Acquérir les notions et le vocabulaire</h3>
+  </div>
+
+<ul class="course-vocabulary">
+  <li><strong>Menace</strong> — Cause possible d’un incident volontaire ou
+  accidentel.</li>
+  <li><strong>Vulnérabilité</strong> — Faiblesse pouvant être exploitée.</li>
+  <li><strong>Risque</strong> — Combinaison d’une vraisemblance et d’un impact.</li>
+  <li><strong>Mise à jour</strong> — Nouvelle version corrigeant notamment des
+  erreurs ou vulnérabilités.</li>
+  <li><strong>Authentification</strong> — Vérification de l’identité ou du droit
+  d’accès.</li>
+  <li><strong>Chiffrement</strong> — Transformation rendant les données
+  illisibles sans la clé adaptée.</li>
+  <li><strong>Minimisation</strong> — Collecte limitée à ce qui est nécessaire.</li>
+  <li><strong>Fin de support</strong> — Date après laquelle le fabricant ne
+  fournit plus certaines corrections ou services.</li>
+</ul>
+
+</div>
+
+<div class="course-phase course-analysis">
+  <div class="course-phase-title">
+    <span>3</span><h3>🔍 Analyser de manière structurée</h3>
+  </div>
+
+<p class="question">Pourquoi changer le mot de passe par défaut ne suffit-il
+pas à sécuriser un objet connecté ?</p>
+
+<button type="button"
+        class="course-answer-button"
+        data-closed-label="Voir l’analyse attendue"
+        aria-expanded="false">Voir l’analyse attendue</button>
+<div class="course-answer" hidden>
+Le risque concerne aussi les mises à jour, les services distants, les
+permissions, les communications, les applications associées, la séparation du
+réseau et la fin de support. Un mot de passe unique est nécessaire, mais il
+s’inscrit dans une architecture et un cycle de vie complets.
+</div>
+
+</div>
+
+<div class="course-phase course-concept">
+  <div class="course-phase-title">
+    <span>4</span><h3>🧠 Conceptualiser : diagnostiquer et proposer</h3>
+  </div>
+
+<p>Une caméra hors support conserve le mot de passe d’usine, enregistre le son
+et reste accessible depuis Internet. Établis un plan d’action priorisé.</p>
+
+<textarea data-save="diagnostic-module-07"
+          rows="9"
+          placeholder="Urgence, isolement, identifiants, données, remplacement, preuves..."></textarea>
+
+<button type="button"
+        class="course-answer-button course-teacher-gated"
+        data-closed-label="Comparer avec une proposition"
+        aria-expanded="false">Comparer avec une proposition</button>
+<div class="course-answer" hidden>
+Désactiver l’accès distant ou isoler l’objet, changer les identifiants et
+vérifier les comptes. Sauvegarder seulement les éléments nécessaires, effacer
+les enregistrements inutiles et contrôler les autorisations. Un objet hors
+support exposé doit être remplacé ou maintenu sur un réseau strictement isolé.
+</div>
+
+</div>
+
+<div class="course-phase course-practice">
+  <div class="course-phase-title">
+    <span>5</span><h3>🛠️ Évaluer et protéger</h3>
+  </div>
+
+<p>Réalise l’analyse de risques d’un objet parmi l’inventaire fourni :</p>
+<ol>
+  <li>actifs et fonctions importantes ;</li>
+  <li>données personnelles ou sensibles ;</li>
+  <li>menaces et vulnérabilités ;</li>
+  <li>impacts physiques et numériques ;</li>
+  <li>mesures préventives ;</li>
+  <li>réaction à l’incident ;</li>
+  <li>fin de vie et effacement.</li>
+</ol>
+
+<textarea data-save="production-module-07"
+          rows="10"
+          placeholder="Analyse de risques et plan de traitement..."></textarea>
+
+</div>
+
+
+  <div class="course-two-columns">
+    <div class="course-callout course-trap">
+      <h3>⚠️ Pièges à éviter</h3>
+      <ul><li>Conserver les paramètres et identifiants par défaut.</li><li>Supposer qu’un objet peu coûteux n’a aucun impact.</li><li>Oublier l’effacement lors d’une revente ou d’une mise au rebut.</li></ul>
+    </div>
+
+<div class="course-card course-mini-quiz" data-answer="1">
+  <h3>✅ Contrôle rapide</h3>
+  <p>Que signifie la fin de support d’un objet ?</p>
+  <div class="course-quiz-options"><label><input type="radio" name="q-iot-07" value="0"> A. L’objet n’utilise plus d’électricité.</label><label><input type="radio" name="q-iot-07" value="1"> B. Certaines mises à jour ou corrections ne sont plus fournies.</label><label><input type="radio" name="q-iot-07" value="2"> C. Le capteur devient automatiquement un actionneur.</label></div>
+  <button type="button" class="course-quiz-check">Vérifier</button>
+  <p class="course-quiz-feedback" role="status"></p>
+</div>
+
+  </div>
+</section>
+
+<section id="module-08"
+         class="course-module"
+         data-module="module-08">
+  <div class="course-module-header">
+    <div>
+      <span class="course-module-number">08</span>
+      <p class="course-eyebrow">Mobiliser architecture, programme, IHM et sécurité · 1 h 50</p>
+      <h2>Projet intégrateur : un objet connecté responsable</h2>
+    </div>
+
+    <label class="course-completion">
+      <input type="checkbox"
+             class="course-module-check"
+             data-save="done-module-08">
+      Séance maîtrisée
+    </label>
+  </div>
+
+  <div class="course-meta">
+    <span>🎯 Concevoir, prototyper et valider un objet connecté répondant à un besoin réel sans négliger sécurité et sobriété.</span>
+    <span>🏷️ Projet · Prototype · Tests · Sobriété</span>
+  </div>
+
+
+<div class="course-phase course-observer">
+  <div class="course-phase-title">
+    <span>1</span><h3>👀 Observer la mission</h3>
+  </div>
+
+<div class="iot-project-grid">
+  <div class="iot-card">
+    <strong>Mission guidée</strong>
+    <p>Concevoir une salle connectée qui améliore le confort sans collecter
+    plus de données que nécessaire.</p>
+  </div>
+
+  <div class="iot-card">
+    <strong>Variantes possibles</strong>
+    <p>Serre, station météo, casier intelligent, alarme, suivi énergétique ou
+    objet d’assistance.</p>
+  </div>
+</div>
+
+<div class="iot-note">
+  <strong>Le prototype peut être entièrement virtuel</strong>
+  <p>Une carte micro:bit, Arduino ou équivalente constitue un prolongement
+  facultatif. Les capacités du programme peuvent être travaillées avec les
+  simulateurs et scripts inclus.</p>
+</div>
+
+<div class="iot-table-wrap">
+<table>
+  <thead>
+    <tr>
+      <th>Horodatage</th>
+      <th>Température</th>
+      <th>Luminosité</th>
+      <th>CO₂</th>
+      <th>Présence</th>
+      <th>Ventilation</th>
+      <th>Éclairage</th>
+    </tr>
+  </thead>
+  <tbody id="measurement-table-body"></tbody>
+</table>
+</div>
+
+<div class="iot-actions">
+  <button id="room-log-add"
+          type="button"
+          class="course-tool-button">Enregistrer l’état actuel</button>
+  <button id="room-log-export"
+          type="button"
+          class="iot-secondary-button">Exporter le journal CSV</button>
+</div>
+
+<pre id="final-log" class="iot-output"></pre>
+
+</div>
+
+<div class="course-phase course-notions">
+  <div class="course-phase-title">
+    <span>2</span><h3>📚 Stabiliser les notions</h3>
+  </div>
+
+<ul class="course-vocabulary">
+  <li><strong>Cahier des charges</strong> — Besoins, contraintes et critères
+  d’acceptation d’un système.</li>
+  <li><strong>Architecture</strong> — Organisation des composants et de leurs
+  échanges.</li>
+  <li><strong>Prototype</strong> — Réalisation destinée à tester des choix.</li>
+  <li><strong>Scénario d’usage</strong> — Description d’une interaction dans
+  un contexte déterminé.</li>
+  <li><strong>Test unitaire</strong> — Vérification d’un composant ou d’une
+  fonction isolée.</li>
+  <li><strong>Test d’intégration</strong> — Vérification des interactions entre
+  plusieurs composants.</li>
+  <li><strong>Mode dégradé</strong> — Fonctionnement limité mais maîtrisé en
+  cas de panne.</li>
+  <li><strong>Sobriété</strong> — Réduction des équipements, données, calculs,
+  transmissions et renouvellements inutiles.</li>
+</ul>
+
+</div>
+
+<div class="course-phase course-analysis">
+  <div class="course-phase-title">
+    <span>3</span><h3>🔍 Analyser la validation</h3>
+  </div>
+
+<p class="question">Pourquoi un prototype qui fonctionne dans le scénario
+normal n’est-il pas encore validé ?</p>
+
+<button type="button"
+        class="course-answer-button"
+        data-closed-label="Voir l’analyse attendue"
+        aria-expanded="false">Voir l’analyse attendue</button>
+<div class="course-answer" hidden>
+Il faut tester les limites et les pannes : mesure absente, valeur aberrante,
+réseau coupé, actionneur bloqué, commande contradictoire, redémarrage, batterie
+faible et utilisateur non autorisé. La validation compare les résultats à des
+critères définis avant les tests.
+</div>
+
+</div>
+
+<div class="course-phase course-concept">
+  <div class="course-phase-title">
+    <span>4</span><h3>🧠 Conceptualiser : diagnostiquer et proposer</h3>
+  </div>
+
+<p>La salle économise de l’énergie mais transmet au cloud l’historique précis
+de présence de chaque élève. Reformule le projet pour conserver le service tout
+en réduisant les données et les risques.</p>
+
+<textarea data-save="diagnostic-module-08"
+          rows="10"
+          placeholder="Finalité, agrégation, traitement local, durée, accès, suppression..."></textarea>
+
+<button type="button"
+        class="course-answer-button course-teacher-gated"
+        data-closed-label="Comparer avec une proposition"
+        aria-expanded="false">Comparer avec une proposition</button>
+<div class="course-answer" hidden>
+La régulation peut utiliser localement une présence binaire ou un nombre agrégé,
+sans identifier les élèves. Les statistiques énergétiques sont regroupées par
+période, conservées pendant une durée définie et accessibles seulement aux
+personnes habilitées. L’objet continue à fonctionner sans le cloud.
+</div>
+
+</div>
+
+<div class="course-phase course-practice">
+  <div class="course-phase-title">
+    <span>5</span><h3>🛠️ Produire et valider</h3>
+  </div>
+
+<h4>Projet final : spécifier et prototyper un objet connecté responsable</h4>
+
+<ol>
+  <li>Définir la fonction et les usagers.</li>
+  <li>Choisir les capteurs, actionneurs et le microcontrôleur.</li>
+  <li>Décrire la chaîne d’information et d’action.</li>
+  <li>Écrire les règles ou l’automate.</li>
+  <li>Programmer une acquisition ou une commande.</li>
+  <li>Réaliser une IHM simple avec retour d’état.</li>
+  <li>Définir les échanges et le mode hors connexion.</li>
+  <li>Limiter les données et sécuriser les accès.</li>
+  <li>Tester le scénario normal, les limites et les pannes.</li>
+  <li>Présenter les impacts matériels, énergétiques et la fin de vie.</li>
+</ol>
+
+<textarea data-save="production-module-08"
+          rows="12"
+          placeholder="Cahier des charges, architecture, programme, IHM, sécurité et tests..."></textarea>
+
+<table class="iot-rubric">
+  <thead>
+    <tr><th>Dimension</th><th>Réussite attendue</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>Architecture</td><td>Capteurs, traitement, communication, IHM et actionneurs identifiés.</td></tr>
+    <tr><td>Algorithme</td><td>Événements, conditions, états et priorités cohérents.</td></tr>
+    <tr><td>Programme</td><td>Acquisition ou commande fonctionnelle et testée.</td></tr>
+    <tr><td>IHM</td><td>Commande, retour d’état et accessibilité.</td></tr>
+    <tr><td>Communication</td><td>Choix justifié et mode hors connexion.</td></tr>
+    <tr><td>Sécurité</td><td>Risques, mises à jour, accès et fin de support traités.</td></tr>
+    <tr><td>Données</td><td>Finalité, minimisation, durée et suppression explicites.</td></tr>
+    <tr><td>Validation</td><td>Tests nominaux, limites et pannes documentés.</td></tr>
+  </tbody>
+</table>
+
+</div>
+
+
+  <div class="course-two-columns">
+    <div class="course-callout course-trap">
+      <h3>⚠️ Pièges à éviter</h3>
+      <ul><li>Ajouter une connexion sans service clairement défini.</li><li>Valider seulement le scénario normal.</li><li>Ignorer les données, la sécurité et la fin de vie du matériel.</li></ul>
+    </div>
+
+<div class="course-card course-mini-quiz" data-answer="2">
+  <h3>✅ Contrôle rapide</h3>
+  <p>Quel test vérifie le comportement lorsque la connexion Internet disparaît ?</p>
+  <div class="course-quiz-options"><label><input type="radio" name="q-iot-08" value="0"> A. Un test de couleur</label><label><input type="radio" name="q-iot-08" value="1"> B. Un test typographique</label><label><input type="radio" name="q-iot-08" value="2"> C. Un test de mode dégradé</label></div>
+  <button type="button" class="course-quiz-check">Vérifier</button>
+  <p class="course-quiz-feedback" role="status"></p>
+</div>
+
+  </div>
+</section>
+
+
+  <section class="course-card">
+    <h2>🧠 Réviser avec des flashcards</h2>
+    <p>Clique ou utilise la touche Entrée pour retourner une carte.</p>
+    <div class="course-flash-grid">
+<article class="course-flashcard"
+         role="button"
+         tabindex="0"
+         aria-pressed="false"
+         aria-label="Retourner la carte">
+  <div class="course-flash-inner">
+    <div class="course-flash-face"><strong>Système embarqué</strong></div>
+    <div class="course-flash-face course-flash-back">Système informatique intégré dans un objet et dédié à des fonctions déterminées.</div>
+  </div>
+</article>
+
+<article class="course-flashcard"
+         role="button"
+         tabindex="0"
+         aria-pressed="false"
+         aria-label="Retourner la carte">
+  <div class="course-flash-inner">
+    <div class="course-flash-face"><strong>Objet connecté</strong></div>
+    <div class="course-flash-face course-flash-back">Objet qui échange des données avec un autre équipement ou un réseau.</div>
+  </div>
+</article>
+
+<article class="course-flashcard"
+         role="button"
+         tabindex="0"
+         aria-pressed="false"
+         aria-label="Retourner la carte">
+  <div class="course-flash-inner">
+    <div class="course-flash-face"><strong>Capteur</strong></div>
+    <div class="course-flash-face course-flash-back">Composant qui mesure une grandeur ou détecte un événement.</div>
+  </div>
+</article>
+
+<article class="course-flashcard"
+         role="button"
+         tabindex="0"
+         aria-pressed="false"
+         aria-label="Retourner la carte">
+  <div class="course-flash-inner">
+    <div class="course-flash-face"><strong>Actionneur</strong></div>
+    <div class="course-flash-face course-flash-back">Composant qui agit sur le monde physique.</div>
+  </div>
+</article>
+
+<article class="course-flashcard"
+         role="button"
+         tabindex="0"
+         aria-pressed="false"
+         aria-label="Retourner la carte">
+  <div class="course-flash-inner">
+    <div class="course-flash-face"><strong>Microcontrôleur</strong></div>
+    <div class="course-flash-face course-flash-back">Circuit réunissant processeur, mémoire et entrées-sorties.</div>
+  </div>
+</article>
+
+<article class="course-flashcard"
+         role="button"
+         tabindex="0"
+         aria-pressed="false"
+         aria-label="Retourner la carte">
+  <div class="course-flash-inner">
+    <div class="course-flash-face"><strong>Événement</strong></div>
+    <div class="course-flash-face course-flash-back">Fait détecté qui peut déclencher une transition ou une action.</div>
+  </div>
+</article>
+
+<article class="course-flashcard"
+         role="button"
+         tabindex="0"
+         aria-pressed="false"
+         aria-label="Retourner la carte">
+  <div class="course-flash-inner">
+    <div class="course-flash-face"><strong>État</strong></div>
+    <div class="course-flash-face course-flash-back">Situation mémorisée du système à un instant.</div>
+  </div>
+</article>
+
+<article class="course-flashcard"
+         role="button"
+         tabindex="0"
+         aria-pressed="false"
+         aria-label="Retourner la carte">
+  <div class="course-flash-inner">
+    <div class="course-flash-face"><strong>IHM</strong></div>
+    <div class="course-flash-face course-flash-back">Interface d’échange entre une personne et le système.</div>
+  </div>
+</article>
+
+<article class="course-flashcard"
+         role="button"
+         tabindex="0"
+         aria-pressed="false"
+         aria-label="Retourner la carte">
+  <div class="course-flash-inner">
+    <div class="course-flash-face"><strong>Passerelle</strong></div>
+    <div class="course-flash-face course-flash-back">Équipement reliant des réseaux ou protocoles différents.</div>
+  </div>
+</article>
+
+<article class="course-flashcard"
+         role="button"
+         tabindex="0"
+         aria-pressed="false"
+         aria-label="Retourner la carte">
+  <div class="course-flash-inner">
+    <div class="course-flash-face"><strong>MQTT</strong></div>
+    <div class="course-flash-face course-flash-back">Protocole de messagerie client-serveur fondé sur publication et abonnement.</div>
+  </div>
+</article>
+
+<article class="course-flashcard"
+         role="button"
+         tabindex="0"
+         aria-pressed="false"
+         aria-label="Retourner la carte">
+  <div class="course-flash-inner">
+    <div class="course-flash-face"><strong>Mise à jour</strong></div>
+    <div class="course-flash-face course-flash-back">Version corrigeant notamment des erreurs ou vulnérabilités.</div>
+  </div>
+</article>
+
+<article class="course-flashcard"
+         role="button"
+         tabindex="0"
+         aria-pressed="false"
+         aria-label="Retourner la carte">
+  <div class="course-flash-inner">
+    <div class="course-flash-face"><strong>Mode dégradé</strong></div>
+    <div class="course-flash-face course-flash-back">Fonctionnement limité mais maîtrisé en cas de panne.</div>
+  </div>
+</article>
+</div>
+  </section>
+
+  <section class="course-card">
+    <h2>✍️ Texte à compléter</h2>
+    <p>
+      Un
+      <input id="iot-fill-1" size="10" aria-label="Mot 1">
+      mesure une grandeur. Un
+      <input id="iot-fill-2" size="11" aria-label="Mot 2">
+      agit sur le milieu. Le programme s’exécute dans un
+      <input id="iot-fill-3" size="16" aria-label="Mot 3">.
+      L’interface avec l’utilisateur est l’
+      <input id="iot-fill-4" size="6" aria-label="Mot 4">.
+      Un fait ponctuel détecté est un
+      <input id="iot-fill-5" size="11" aria-label="Mot 5">.
+    </p>
+
+    <button id="iot-fill-check"
+            type="button"
+            class="course-tool-button">Vérifier</button>
+
+    <p id="iot-fill-feedback"
+       class="iot-feedback"
+       role="status"></p>
+  </section>
+
+  <section class="course-card course-teacher-only">
+    <h2>👩‍🏫 Repères pour l’enseignant</h2>
+    <ul>
+      <li>Le fil conducteur est une salle connectée fictive et non un produit
+      commercial réel.</li>
+      <li>La simulation MQTT reste locale et n’ouvre aucune connexion réseau.</li>
+      <li>Le générateur produit du MicroPython micro:bit sans exécuter de code
+      arbitraire dans la page.</li>
+      <li>Les mesures de présence sont agrégées et fictives.</li>
+      <li>Une fonction de sécurité ne doit jamais dépendre uniquement du cloud.</li>
+      <li>Le mode enseignant ne protège pas les corrections sur un site
+      statique public.</li>
+    </ul>
+  </section>
+
+  <section class="course-card">
+    <h2>📚 Sources, crédits et actualisation</h2>
+    <ul>
+      <li>Ministère de l’Éducation nationale, programme de SNT de seconde,
+      thème « Informatique embarquée et objets connectés », BO spécial
+      n° 1 du 22 janvier 2019.</li>
+      <li>Éduscol, ressources d’accompagnement : frise, impact de
+      l’informatisation, IHM simple et robot Thymio.</li>
+      <li>CNIL, ressources et recommandations concernant les objets connectés,
+      les données personnelles et les réglages de sécurité.</li>
+      <li>ANSSI, recommandations relatives à la sécurité des systèmes
+      d’objets connectés.</li>
+      <li>Micro:bit Educational Foundation, documentation des capteurs,
+      broches, radio et éditeur Python.</li>
+      <li>OASIS, spécification MQTT version 5.0.</li>
+      <li>Documentation officielle Python.</li>
+    </ul>
+
+    <p>Tous les objets, mesures, architectures, schémas et laboratoires du
+    paquet sont des créations pédagogiques originales.</p>
+  </section>
+
+  <footer class="course-footer">
+    <p>© Thibaud Cousin — Tous droits réservés</p>
+    <p>Ressources pédagogiques SNT – Lycée & BTS</p>
+    <p>Compatible : accessibilité, mode sombre, impression et smartphone.</p>
+  </footer>
+</main>
 </body>
 </html>

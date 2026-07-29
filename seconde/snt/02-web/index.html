@@ -1,3 +1,1644 @@
 <!DOCTYPE html>
-<html><head><META http-equiv="Content-Type" content="text/html; charset=UTF-8"><meta http-equiv="Refresh" content="0;URL=co/snt-web.html"><title>Le web</title><style type="text/css">html{position:fixed;height:100%;width:100%;overflow:hidden;}
-</style></head><body><h1 style="position:absolute;top:-10000px;">Le web</h1></body></html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Chemins modifiables selon l’arborescence du site -->
+ <link rel="stylesheet" href="../../../fonts.css">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="matrice-cours.css">
+  <link rel="stylesheet" href="web.css">
+
+  <script src="accessibility.js" defer></script>
+  <script src="enseignant.js" defer></script>
+  <script src="matrice-cours.js" defer></script>
+  <script src="web.js" defer></script>
+
+  <meta name="description"
+        content="Cours complet sur le Web pour la SNT en seconde : hypertexte, HTML, CSS, URL, HTTP, client-serveur, moteurs de recherche, cookies, sécurité et droits.">
+  <title>Le Web — SNT seconde</title>
+</head>
+
+<body class="course-matrix-page"
+      data-storage-key="snt-web-matrice-officielle-v1">
+
+<a class="course-skip-link" href="#contenu">Aller au contenu</a>
+
+<div class="course-teacher-banner">
+  Mode enseignant activé : repères pédagogiques visibles.
+</div>
+
+<div id="accessibility-menu" aria-label="Accessibilité">
+  <button type="button" onclick="toggleTheme()" title="Thème">🌙/☀️</button>
+  <button id="btn-dys" type="button" onclick="toggleDys()">Dys</button>
+  <button type="button" onclick="fontMinus()">A−</button>
+  <button type="button" onclick="fontPlus()">A+</button>
+  <button type="button" onclick="resetAccessibility()">↺</button>
+</div>
+
+<main id="contenu" class="course-matrix">
+  <header class="page-header">
+    <nav class="top-nav" aria-label="Navigation principale">
+      <a href="../index.html">🏠 Accueil</a>
+      <a href="../acces-enseignant.html">🔒 Espace enseignant</a>
+    </nav>
+  </header>
+
+  <header class="course-hero web-hero">
+    <p class="course-eyebrow">Sciences numériques et technologie · Seconde</p>
+    <h1>🌐 Comprendre et construire le Web</h1>
+    <p>Un parcours pour passer de l’observation d’une page à la conception
+    responsable d’un site : hypertexte, HTML, CSS, URL, HTTP, recherche,
+    confidentialité, sécurité et droits.</p>
+
+    <div class="course-chips">
+      <span class="course-chip">Observer</span>
+      <span class="course-chip">Décrire</span>
+      <span class="course-chip">Analyser</span>
+      <span class="course-chip">Diagnostiquer</span>
+      <span class="course-chip">Créer</span>
+      <span class="course-chip">Publier</span>
+    </div>
+
+    <div class="course-actions">
+      <a href="#parcours">Commencer le parcours</a>
+      <a href="#laboratoire">Ouvrir les laboratoires</a>
+      <button type="button" onclick="printCourse()">🖨️ Imprimer</button>
+      <button type="button" onclick="toggleCourseTeacher()">👩‍🏫 Mode enseignant</button>
+    </div>
+  </header>
+
+  <div class="course-progress">
+    <strong>Progression enregistrée sur cet appareil :
+      <span id="course-progress-text">0 / 8</span>
+    </strong>
+    <div class="course-progress-track" aria-hidden="true">
+      <span id="course-progress-fill" class="course-progress-fill"></span>
+    </div>
+  </div>
+
+  <div class="course-grid-2">
+    <section class="course-card">
+      <h2>🎯 Finalité du parcours</h2>
+      <p>À la fin du thème, l’élève doit pouvoir expliquer le fonctionnement
+      général du Web, lire et modifier une page, analyser une URL et une
+      requête, exercer un regard critique sur la recherche, régler son
+      navigateur et publier une ressource respectueuse des droits.</p>
+      <p><strong>Durée indicative :</strong> 10 h 30, adaptable à environ
+      quatre semaines.</p>
+    </section>
+
+    <section class="course-card">
+      <h2>🧭 Démarche commune</h2>
+      <div class="course-ladder">
+        <div><strong>1. Observer</strong>Repérer, nommer et décrire.</div>
+        <div><strong>2. Notions</strong>Construire le vocabulaire.</div>
+        <div><strong>3. Analyser</strong>Expliquer avec des preuves.</div>
+        <div><strong>4. Conceptualiser</strong>Diagnostiquer et proposer.</div>
+      </div>
+    </section>
+  </div>
+
+  <section id="parcours" class="course-card">
+    <h2>🚀 Accès rapide aux huit modules</h2>
+    <div class="course-quick-links"><a href="#module-01"><span>01</span>Internet et Web</a>
+<a href="#module-02"><span>02</span>URL et HTTPS</a>
+<a href="#module-03"><span>03</span>HTML et hypertexte</a>
+<a href="#module-04"><span>04</span>CSS et responsive</a>
+<a href="#module-05"><span>05</span>Client–serveur et HTTP</a>
+<a href="#module-06"><span>06</span>Moteurs de recherche</a>
+<a href="#module-07"><span>07</span>Cookies et confidentialité</a>
+<a href="#module-08"><span>08</span>Droits et projet final</a></div>
+  </section>
+
+  <section class="course-card web-legacy">
+    <h2>♻️ Reprise de votre cours précédent</h2>
+    <p>La nouvelle version conserve les idées les plus efficaces de votre
+    séquence existante : découverte par les usages, distinction client–serveur,
+    présentation des rôles de HTML, CSS et JavaScript, affiche A3 en groupes et
+    création d’une première page.</p>
+    <p>Elle ne dépend plus d’une vidéo extérieure ni d’un paquet Scenari
+    complexe et couvre désormais l’ensemble des capacités du programme :
+    histoire, droits, hypertexte, HTML/CSS, URL, HTTP, client–serveur,
+    moteurs de recherche, cookies, sécurité et confidentialité.</p>
+  </section>
+
+  <div id="laboratoire"></div>
+
+
+<section id="module-01" class="course-module" data-module="module-01">
+  <div class="course-module-header">
+    <div>
+      <span class="course-module-number">01</span>
+      <p class="course-eyebrow">Observer les usages et construire les premiers repères · 1 h</p>
+      <h2>Distinguer Internet et le Web</h2>
+    </div>
+    <label class="course-completion">
+      <input type="checkbox"
+             class="course-module-check"
+             data-save="done-module-01">
+      Séance maîtrisée
+    </label>
+  </div>
+  <div class="course-meta">
+    <span>🎯 Distinguer Internet, le Web, le navigateur et le serveur, puis mobiliser les principaux repères historiques.</span>
+    <span>🏷️ Repères historiques · Hypertexte · Modèle client/serveur</span>
+  </div>
+
+<div class="course-phase course-observer">
+  <div class="course-phase-title">
+    <span>1</span><h3>👀 Observer et décrire</h3>
+  </div>
+
+<p>Classe les situations suivantes. Le but est de distinguer
+<strong>l’infrastructure Internet</strong>, le <strong>service Web</strong>
+et les autres services qui utilisent Internet.</p>
+<ul class="web-sort-list">
+  <li class="web-sort-item" data-expected="Web">
+    <strong>Consulter une page dans un navigateur</strong>
+    <div class="web-sort-actions">
+      <button type="button" class="web-choice" data-web-sort="Internet">Internet</button>
+      <button type="button" class="web-choice" data-web-sort="Web">Web</button>
+      <button type="button" class="web-choice" data-web-sort="Autre service">Autre service</button>
+    </div><p class="web-feedback"></p>
+  </li>
+  <li class="web-sort-item" data-expected="Autre service">
+    <strong>Envoyer un courriel avec une application de messagerie</strong>
+    <div class="web-sort-actions">
+      <button type="button" class="web-choice" data-web-sort="Internet">Internet</button>
+      <button type="button" class="web-choice" data-web-sort="Web">Web</button>
+      <button type="button" class="web-choice" data-web-sort="Autre service">Autre service</button>
+    </div><p class="web-feedback"></p>
+  </li>
+  <li class="web-sort-item" data-expected="Internet">
+    <strong>Faire transiter des données entre des réseaux</strong>
+    <div class="web-sort-actions">
+      <button type="button" class="web-choice" data-web-sort="Internet">Internet</button>
+      <button type="button" class="web-choice" data-web-sort="Web">Web</button>
+      <button type="button" class="web-choice" data-web-sort="Autre service">Autre service</button>
+    </div><p class="web-feedback"></p>
+  </li>
+  <li class="web-sort-item" data-expected="Web">
+    <strong>Suivre un lien hypertexte vers une autre ressource</strong>
+    <div class="web-sort-actions">
+      <button type="button" class="web-choice" data-web-sort="Internet">Internet</button>
+      <button type="button" class="web-choice" data-web-sort="Web">Web</button>
+      <button type="button" class="web-choice" data-web-sort="Autre service">Autre service</button>
+    </div><p class="web-feedback"></p>
+  </li>
+</ul>
+<div class="web-timeline">
+  <div><strong>1965</strong>Concept d’hypertexte programmé par Ted Nelson.</div>
+  <div><strong>1989</strong>Proposition du Web par Tim Berners-Lee au CERN.</div>
+  <div><strong>1990</strong>Premier serveur, premier navigateur et première page.</div>
+  <div><strong>1993</strong>Le CERN rend le logiciel du Web librement accessible.</div>
+  <div><strong>2010+</strong>Applications Web adaptées aux appareils mobiles.</div>
+</div>
+<div class="course-student-task"><strong>Consigne :</strong> rédige une
+phrase distinguant Internet et le Web, puis relève deux repères historiques.</div>
+
+</div>
+
+<div class="course-phase course-notions">
+  <div class="course-phase-title">
+    <span>2</span><h3>📚 Acquérir les notions et le vocabulaire</h3>
+  </div>
+
+<ul class="course-vocabulary">
+  <li><strong>Internet</strong> — Réseau mondial de réseaux reposant sur
+  des protocoles communs.</li>
+  <li><strong>Web</strong> — Système de ressources reliées par des liens
+  hypertextes et accessibles à travers Internet.</li>
+  <li><strong>Ressource</strong> — Page, image, son, vidéo, fichier ou service
+  identifié sur le Web.</li>
+  <li><strong>Navigateur</strong> — Logiciel client qui demande, reçoit et
+  affiche les ressources du Web.</li>
+  <li><strong>Serveur Web</strong> — Logiciel et machine capables de répondre
+  à des requêtes Web.</li>
+  <li><strong>Hypertexte</strong> — Contenu enrichi de renvois vers d’autres
+  ressources.</li>
+</ul>
+
+</div>
+
+<div class="course-phase course-analysis">
+  <div class="course-phase-title">
+    <span>3</span><h3>🔍 Analyser de manière structurée</h3>
+  </div>
+
+<p class="question">Une élève écrit : « Le Web est tombé, donc Internet ne
+fonctionne plus ». Pourquoi ce diagnostic est-il insuffisant ?</p>
+
+<button type="button"
+        class="course-answer-button"
+        data-closed-label="Voir l’analyse attendue"
+        aria-expanded="false">Voir l’analyse attendue</button>
+<div class="course-answer" hidden>Le Web est un service qui utilise Internet. Une panne d’un site, d’un
+serveur Web ou d’un navigateur n’implique pas nécessairement une panne de
+l’infrastructure Internet. Pour conclure, il faut tester d’autres services,
+d’autres sites et éventuellement la connexion au réseau.</div>
+
+<div class="course-method"><strong>Méthode :</strong> distinguer le
+<strong>support de communication</strong>, le <strong>service utilisé</strong>
+et le <strong>logiciel local</strong>.</div>
+
+</div>
+
+<div class="course-phase course-concept">
+  <div class="course-phase-title">
+    <span>4</span><h3>🧠 Conceptualiser : diagnostiquer et proposer</h3>
+  </div>
+
+<p>Le navigateur n’affiche plus le site du lycée, mais la visioconférence et
+la messagerie fonctionnent. Formule un diagnostic provisoire, propose deux
+tests et indique ce qui permettrait de confirmer ton hypothèse.</p>
+<textarea data-save="diagnostic-module-01" rows="6"
+placeholder="Symptôme → hypothèse → tests → conclusion..."></textarea>
+
+<button type="button"
+        class="course-answer-button course-teacher-gated"
+        data-closed-label="Comparer avec une proposition"
+        aria-expanded="false">Comparer avec une proposition</button>
+<div class="course-answer" hidden>Diagnostic provisoire : la connexion Internet fonctionne probablement,
+mais le site ou son serveur Web est indisponible. Tests : ouvrir un autre site,
+essayer l’adresse du lycée depuis un autre appareil ou un autre réseau,
+consulter le code d’état HTTP. La répétition du problème sur plusieurs
+appareils, avec les autres services fonctionnels, renforcerait ce diagnostic.</div>
+
+</div>
+
+<div class="course-phase course-practice">
+  <div class="course-phase-title">
+    <span>5</span><h3>🛠️ Communiquer et vérifier</h3>
+  </div>
+
+<div class="course-card web-legacy">
+  <h4>♻️ Activité conservée de votre cours précédent</h4>
+  <p>Par groupes de trois, réalisez une affiche A3 répondant à la question :
+  <strong>« Qu’est-ce que le Web et comment se distingue-t-il
+  d’Internet ? »</strong></p>
+  <p>L’affiche doit contenir un schéma, cinq mots de vocabulaire, trois repères
+  historiques et une explication orale de deux minutes.</p>
+</div>
+<textarea data-save="production-module-01" rows="5"
+placeholder="Plan de l’affiche et répartition des rôles..."></textarea>
+
+</div>
+
+  <div class="course-two-columns">
+    <div class="course-callout course-trap">
+      <h3>⚠️ Pièges à éviter</h3>
+      <ul><li>Employer « Internet » et « Web » comme des synonymes.</li><li>Confondre le navigateur avec un moteur de recherche.</li><li>Conclure à une panne générale après un seul test.</li></ul>
+    </div>
+
+<div class="course-card course-mini-quiz" data-answer="1">
+  <h3>✅ Contrôle rapide</h3>
+  <p>Quel énoncé est correct ?</p>
+  <div class="course-quiz-options"><label><input type="radio" name="q-web-01" value="0"> A. Internet est une page Web.</label><label><input type="radio" name="q-web-01" value="1"> B. Le Web est un service qui utilise Internet.</label><label><input type="radio" name="q-web-01" value="2"> C. Un navigateur est un serveur DNS.</label></div>
+  <button type="button" class="course-quiz-check">Vérifier</button>
+  <p class="course-quiz-feedback" role="status"></p>
+</div>
+
+  </div>
+</section>
+
+<section id="module-02" class="course-module" data-module="module-02">
+  <div class="course-module-header">
+    <div>
+      <span class="course-module-number">02</span>
+      <p class="course-eyebrow">Repérer les éléments d’une adresse · 1 h</p>
+      <h2>Décomposer une URL et reconnaître une connexion sécurisée</h2>
+    </div>
+    <label class="course-completion">
+      <input type="checkbox"
+             class="course-module-check"
+             data-save="done-module-02">
+      Séance maîtrisée
+    </label>
+  </div>
+  <div class="course-meta">
+    <span>🎯 Décomposer une URL, comprendre le rôle de HTTPS et diagnostiquer une adresse trompeuse.</span>
+    <span>🏷️ URL · HTTPS · Navigation sécurisée</span>
+  </div>
+
+<div class="course-phase course-observer">
+  <div class="course-phase-title">
+    <span>1</span><h3>👀 Observer et décrire</h3>
+  </div>
+
+<div class="web-lab-grid">
+  <div>
+    <p>Observe l’URL suivante puis repère ses différentes parties.</p>
+    <pre><code>https://cours.example.org:443/snt/web/index.html?mode=eleve#activite</code></pre>
+    <div class="course-student-task"><strong>Repérage :</strong> protocole,
+    nom d’hôte, port, chemin, paramètres et fragment.</div>
+  </div>
+  <div class="web-lab">
+    <h4>Laboratoire : décomposer une URL</h4>
+    <div class="web-form">
+      <label>URL à analyser
+        <input id="url-input" type="text"
+        value="https://cours.example.org/snt/web/index.html?mode=eleve#activite">
+      </label>
+      <button id="url-analyze" type="button" class="course-tool-button">
+        Analyser l’URL
+      </button>
+    </div>
+    <p id="url-feedback" class="web-feedback"></p>
+  </div>
+</div>
+<div class="web-url-parts">
+  <div class="web-url-part"><strong>Schéma</strong><span id="url-scheme"></span></div>
+  <div class="web-url-part"><strong>Hôte</strong><span id="url-host"></span></div>
+  <div class="web-url-part"><strong>Port</strong><span id="url-port"></span></div>
+  <div class="web-url-part"><strong>Chemin</strong><span id="url-path"></span></div>
+  <div class="web-url-part"><strong>Requête</strong><span id="url-query"></span></div>
+  <div class="web-url-part"><strong>Fragment</strong><span id="url-fragment"></span></div>
+</div>
+
+</div>
+
+<div class="course-phase course-notions">
+  <div class="course-phase-title">
+    <span>2</span><h3>📚 Acquérir les notions et le vocabulaire</h3>
+  </div>
+
+<ul class="course-vocabulary">
+  <li><strong>URL</strong> — Adresse permettant d’identifier et de demander
+  une ressource.</li>
+  <li><strong>Schéma</strong> — Partie indiquant le protocole, par exemple
+  <code>http</code> ou <code>https</code>.</li>
+  <li><strong>Nom d’hôte</strong> — Nom du serveur ou du domaine demandé.</li>
+  <li><strong>Chemin</strong> — Emplacement logique de la ressource sur le
+  serveur.</li>
+  <li><strong>Paramètre</strong> — Information transmise après le signe
+  <code>?</code>.</li>
+  <li><strong>Fragment</strong> — Repère interne à une ressource, placé après
+  <code>#</code>.</li>
+  <li><strong>HTTPS</strong> — Utilisation de HTTP dans une connexion
+  chiffrée et authentifiée par TLS.</li>
+</ul>
+
+</div>
+
+<div class="course-phase course-analysis">
+  <div class="course-phase-title">
+    <span>3</span><h3>🔍 Analyser de manière structurée</h3>
+  </div>
+
+<p class="question">Pourquoi le cadenas et <code>https://</code> ne suffisent-ils
+pas à prouver qu’un site est digne de confiance ?</p>
+
+<button type="button"
+        class="course-answer-button"
+        data-closed-label="Voir l’analyse attendue"
+        aria-expanded="false">Voir l’analyse attendue</button>
+<div class="course-answer" hidden>HTTPS protège la communication entre le navigateur et le serveur :
+un tiers ne doit pas pouvoir lire ou modifier facilement les échanges.
+Cependant, un escroc peut lui aussi obtenir un certificat pour son propre
+nom de domaine. Il faut donc examiner le domaine, le contexte, l’identité du
+site et la nature des informations demandées.</div>
+
+<div class="course-method"><strong>Raisonnement :</strong> chiffrement de la
+connexion ≠ honnêteté du propriétaire du site.</div>
+
+</div>
+
+<div class="course-phase course-concept">
+  <div class="course-phase-title">
+    <span>4</span><h3>🧠 Conceptualiser : diagnostiquer et proposer</h3>
+  </div>
+
+<p>Un message annonce une urgence et propose le lien
+<code>https://impots.gouv.fr.compte-securise.example/login</code>.
+Établis un diagnostic sans cliquer.</p>
+<textarea data-save="diagnostic-module-02" rows="6"
+placeholder="Nom de domaine réel, indices d’alerte, conduite à tenir..."></textarea>
+
+<button type="button"
+        class="course-answer-button course-teacher-gated"
+        data-closed-label="Comparer avec une proposition"
+        aria-expanded="false">Comparer avec une proposition</button>
+<div class="course-answer" hidden>Le domaine réellement contrôlé est <code>example</code>, pas
+<code>impots.gouv.fr</code>. La présence d’un nom officiel au début de l’URL
+ne suffit pas. Il faut éviter le lien, ouvrir soi-même le site officiel depuis
+un favori ou une adresse connue et signaler le message si nécessaire.</div>
+
+</div>
+
+<div class="course-phase course-practice">
+  <div class="course-phase-title">
+    <span>5</span><h3>🛠️ S’entraîner et vérifier</h3>
+  </div>
+
+<h4>Diagnostic d’URL</h4>
+<ul class="web-phishing-list">
+  <li class="web-phishing-item" data-expected="suspect"
+      data-explanation="Le domaine réel est exemple-securite.test, pas banque.fr.">
+    <code>https://banque.fr.exemple-securite.test/connexion</code>
+    <div class="web-sort-actions">
+      <button type="button" class="web-choice"
+              data-phishing-answer="fiable">Plutôt fiable</button>
+      <button type="button" class="web-choice"
+              data-phishing-answer="suspect">Suspecte</button>
+    </div><p class="web-feedback"></p>
+  </li>
+  <li class="web-phishing-item" data-expected="fiable"
+      data-explanation="Dans cet exemple pédagogique, le domaine est bien service-public.fr.">
+    <code>https://www.service-public.fr/particuliers/vosdroits</code>
+    <div class="web-sort-actions">
+      <button type="button" class="web-choice"
+              data-phishing-answer="fiable">Plutôt fiable</button>
+      <button type="button" class="web-choice"
+              data-phishing-answer="suspect">Suspecte</button>
+    </div><p class="web-feedback"></p>
+  </li>
+</ul>
+
+</div>
+
+  <div class="course-two-columns">
+    <div class="course-callout course-trap">
+      <h3>⚠️ Pièges à éviter</h3>
+      <ul><li>Se fier seulement au texte visible d’un lien.</li><li>Croire que HTTPS certifie la qualité ou la sincérité du contenu.</li><li>Confondre le chemin d’une URL avec le véritable nom de domaine.</li></ul>
+    </div>
+
+<div class="course-card course-mini-quiz" data-answer="2">
+  <h3>✅ Contrôle rapide</h3>
+  <p>Dans une URL, quelle partie se trouve généralement après le signe ?</p>
+  <div class="course-quiz-options"><label><input type="radio" name="q-web-02" value="0"> A. Le protocole</label><label><input type="radio" name="q-web-02" value="1"> B. Le fragment</label><label><input type="radio" name="q-web-02" value="2"> C. La chaîne de paramètres</label></div>
+  <button type="button" class="course-quiz-check">Vérifier</button>
+  <p class="course-quiz-feedback" role="status"></p>
+</div>
+
+  </div>
+</section>
+
+<section id="module-03" class="course-module" data-module="module-03">
+  <div class="course-module-header">
+    <div>
+      <span class="course-module-number">03</span>
+      <p class="course-eyebrow">Étudier et modifier une page simple · 1 h 30</p>
+      <h2>Structurer une page avec HTML et créer des hyperliens</h2>
+    </div>
+    <label class="course-completion">
+      <input type="checkbox"
+             class="course-module-check"
+             data-save="done-module-03">
+      Séance maîtrisée
+    </label>
+  </div>
+  <div class="course-meta">
+    <span>🎯 Identifier les éléments d’un document HTML, construire une structure sémantique et créer des liens.</span>
+    <span>🏷️ Hypertexte · HTML · Étudier et modifier une page</span>
+  </div>
+
+<div class="course-phase course-observer">
+  <div class="course-phase-title">
+    <span>1</span><h3>👀 Observer et décrire</h3>
+  </div>
+
+<div class="web-code-grid">
+  <div>
+    <h4>Document HTML observé</h4>
+    <pre><code>&lt;!doctype html&gt;
+&lt;html lang=&quot;fr&quot;&gt;
+&lt;head&gt;
+  &lt;meta charset=&quot;utf-8&quot;&gt;
+  &lt;title&gt;Mon premier site&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+  &lt;h1&gt;Bienvenue&lt;/h1&gt;
+  &lt;p&gt;Voici mon sujet.&lt;/p&gt;
+  &lt;a href=&quot;source.html&quot;&gt;Ma source&lt;/a&gt;
+&lt;/body&gt;
+&lt;/html&gt;</code></pre>
+  </div>
+  <div>
+    <h4>Questions de repérage</h4>
+    <ol>
+      <li>Quels éléments ne sont pas affichés dans la page ?</li>
+      <li>Quelle balise porte le titre principal visible ?</li>
+      <li>Quel attribut indique la destination du lien ?</li>
+      <li>Quelles balises organisent la structure générale ?</li>
+    </ol>
+  </div>
+</div>
+
+</div>
+
+<div class="course-phase course-notions">
+  <div class="course-phase-title">
+    <span>2</span><h3>📚 Acquérir les notions et le vocabulaire</h3>
+  </div>
+
+<ul class="course-vocabulary">
+  <li><strong>HTML</strong> — Langage de balisage qui décrit la structure
+  et le sens du contenu.</li>
+  <li><strong>Balise</strong> — Marqueur délimitant ou décrivant un élément.</li>
+  <li><strong>Élément</strong> — Ensemble formé par une balise, son contenu et
+  éventuellement sa balise de fermeture.</li>
+  <li><strong>Attribut</strong> — Information complémentaire écrite dans la
+  balise ouvrante.</li>
+  <li><strong>Arborescence</strong> — Organisation imbriquée des éléments du
+  document.</li>
+  <li><strong>Lien hypertexte</strong> — Élément <code>&lt;a&gt;</code>
+  permettant de naviguer vers une ressource.</li>
+  <li><strong>Sémantique</strong> — Choix de balises qui décrivent le rôle du
+  contenu : titre, navigation, article, pied de page…</li>
+</ul>
+
+</div>
+
+<div class="course-phase course-analysis">
+  <div class="course-phase-title">
+    <span>3</span><h3>🔍 Analyser de manière structurée</h3>
+  </div>
+
+<p class="question">Pourquoi utiliser <code>&lt;h1&gt;</code> pour un titre
+principal plutôt qu’un paragraphe agrandi uniquement par le style ?</p>
+
+<button type="button"
+        class="course-answer-button"
+        data-closed-label="Voir l’analyse attendue"
+        aria-expanded="false">Voir l’analyse attendue</button>
+<div class="course-answer" hidden>La balise <code>&lt;h1&gt;</code> donne une signification structurelle au
+titre. Cette information peut être comprise par le navigateur, les moteurs de
+recherche et les technologies d’assistance. Un paragraphe simplement agrandi
+peut lui ressembler visuellement, mais ne porte pas la même sémantique.</div>
+
+</div>
+
+<div class="course-phase course-concept">
+  <div class="course-phase-title">
+    <span>4</span><h3>🧠 Conceptualiser : diagnostiquer et proposer</h3>
+  </div>
+
+<p>Une page affiche tout son texte dans un seul bloc, le lecteur d’écran ne
+repère aucun titre et le moteur de recherche comprend mal son organisation.
+Émets un diagnostic et propose une structure HTML pertinente.</p>
+<textarea data-save="diagnostic-module-03" rows="7"
+placeholder="Diagnostic structurel et proposition de balises..."></textarea>
+
+<button type="button"
+        class="course-answer-button course-teacher-gated"
+        data-closed-label="Comparer avec une proposition"
+        aria-expanded="false">Comparer avec une proposition</button>
+<div class="course-answer" hidden>Le contenu manque de structure sémantique. Il faut identifier un titre
+principal, des titres de sections, des paragraphes, une navigation et un pied
+de page, puis employer des éléments adaptés comme <code>h1</code>,
+<code>h2</code>, <code>p</code>, <code>nav</code>, <code>main</code> et
+<code>footer</code>.</div>
+
+</div>
+
+<div class="course-phase course-practice">
+  <div class="course-phase-title">
+    <span>5</span><h3>🛠️ Créer et vérifier</h3>
+  </div>
+
+<div class="course-card web-legacy">
+  <h4>♻️ Projet conservé et développé</h4>
+  <p>Choisis un sujet qui t’intéresse et réalise une première page contenant :
+  un titre, deux sections, une liste, un lien vers une source et un pied de
+  page comportant l’auteur.</p>
+</div>
+<div class="web-preview-layout">
+  <div class="web-editor-stack">
+    <label><strong>HTML</strong>
+      <textarea id="html-editor" class="web-code-editor"
+      data-save="web-html-editor"></textarea>
+    </label>
+    <label><strong>CSS</strong>
+      <textarea id="css-editor" class="web-code-editor"
+      data-save="web-css-editor"></textarea>
+    </label>
+    <div class="web-inline-actions">
+      <button id="preview-update" type="button"
+              class="course-tool-button">Mettre à jour</button>
+      <button id="preview-reset" type="button"
+              class="web-secondary-button">Réinitialiser</button>
+    </div>
+  </div>
+  <iframe id="web-preview" class="web-preview"
+          title="Aperçu de la page créée"
+          sandbox=""></iframe>
+</div>
+
+</div>
+
+  <div class="course-two-columns">
+    <div class="course-callout course-trap">
+      <h3>⚠️ Pièges à éviter</h3>
+      <ul><li>Oublier de fermer ou d’imbriquer correctement les éléments.</li><li>Utiliser HTML uniquement pour obtenir un effet visuel.</li><li>Créer un lien dont le texte ne permet pas d’anticiper la destination.</li></ul>
+    </div>
+
+<div class="course-card course-mini-quiz" data-answer="1">
+  <h3>✅ Contrôle rapide</h3>
+  <p>Quel langage décrit principalement la structure d’une page ?</p>
+  <div class="course-quiz-options"><label><input type="radio" name="q-web-03" value="0"> A. CSS</label><label><input type="radio" name="q-web-03" value="1"> B. HTML</label><label><input type="radio" name="q-web-03" value="2"> C. HTTP</label></div>
+  <button type="button" class="course-quiz-check">Vérifier</button>
+  <p class="course-quiz-feedback" role="status"></p>
+</div>
+
+  </div>
+</section>
+
+<section id="module-04" class="course-module" data-module="module-04">
+  <div class="course-module-header">
+    <div>
+      <span class="course-module-number">04</span>
+      <p class="course-eyebrow">Comparer, modifier et adapter une mise en forme · 1 h 15</p>
+      <h2>Séparer le contenu et la présentation avec CSS</h2>
+    </div>
+    <label class="course-completion">
+      <input type="checkbox"
+             class="course-module-check"
+             data-save="done-module-04">
+      Séance maîtrisée
+    </label>
+  </div>
+  <div class="course-meta">
+    <span>🎯 Distinguer contenu et présentation, modifier une feuille CSS et adapter une page aux appareils.</span>
+    <span>🏷️ HTML/CSS · Responsive design · Accessibilité</span>
+  </div>
+
+<div class="course-phase course-observer">
+  <div class="course-phase-title">
+    <span>1</span><h3>👀 Observer et décrire</h3>
+  </div>
+
+<div class="web-code-grid">
+  <div>
+    <h4>HTML inchangé</h4>
+    <pre><code>&lt;h1&gt;Le Web responsable&lt;/h1&gt;
+&lt;p class=&quot;important&quot;&gt;Vérifier avant de publier.&lt;/p&gt;</code></pre>
+  </div>
+  <div>
+    <h4>Deux présentations CSS possibles</h4>
+    <pre><code>h1 {
+  color: #3157d5;
+}
+
+.important {
+  padding: 12px;
+  border-left: 5px solid #3157d5;
+}
+
+@media (max-width: 520px) {
+  body {
+    padding: 10px;
+  }
+}</code></pre>
+  </div>
+</div>
+<div class="course-student-task"><strong>Consigne :</strong> repère les
+sélecteurs, les propriétés, les valeurs et la règle réservée aux petits
+écrans.</div>
+
+</div>
+
+<div class="course-phase course-notions">
+  <div class="course-phase-title">
+    <span>2</span><h3>📚 Acquérir les notions et le vocabulaire</h3>
+  </div>
+
+<ul class="course-vocabulary">
+  <li><strong>CSS</strong> — Langage qui décrit la présentation d’un
+  document.</li>
+  <li><strong>Sélecteur</strong> — Expression désignant les éléments à
+  mettre en forme.</li>
+  <li><strong>Propriété</strong> — Aspect modifié, par exemple la couleur ou
+  la marge.</li>
+  <li><strong>Valeur</strong> — Réglage associé à une propriété.</li>
+  <li><strong>Cascade</strong> — Règles déterminant quel style s’applique
+  lorsque plusieurs déclarations se rencontrent.</li>
+  <li><strong>Responsive design</strong> — Conception permettant l’adaptation
+  à différentes tailles d’écran et modalités d’usage.</li>
+  <li><strong>Media query</strong> — Condition CSS permettant d’appliquer des
+  règles selon les caractéristiques de l’affichage.</li>
+</ul>
+
+</div>
+
+<div class="course-phase course-analysis">
+  <div class="course-phase-title">
+    <span>3</span><h3>🔍 Analyser de manière structurée</h3>
+  </div>
+
+<p class="question">Pourquoi séparer le contenu HTML et la présentation CSS
+facilite-t-il la maintenance d’un site ?</p>
+
+<button type="button"
+        class="course-answer-button"
+        data-closed-label="Voir l’analyse attendue"
+        aria-expanded="false">Voir l’analyse attendue</button>
+<div class="course-answer" hidden>Le même contenu peut recevoir plusieurs présentations sans être réécrit.
+Une feuille CSS commune permet aussi de modifier l’apparence de nombreuses
+pages à partir d’un seul fichier. Cette séparation réduit les duplications et
+aide à conserver une structure sémantique indépendante des choix graphiques.</div>
+
+</div>
+
+<div class="course-phase course-concept">
+  <div class="course-phase-title">
+    <span>4</span><h3>🧠 Conceptualiser : diagnostiquer et proposer</h3>
+  </div>
+
+<p>Une page est lisible sur ordinateur, mais le texte déborde sur téléphone,
+les boutons sont trop petits et le contraste est faible. Établis un diagnostic
+et propose trois améliorations mesurables.</p>
+<textarea data-save="diagnostic-module-04" rows="7"
+placeholder="Problèmes observés → causes CSS → solutions → critères de test..."></textarea>
+
+<button type="button"
+        class="course-answer-button course-teacher-gated"
+        data-closed-label="Comparer avec une proposition"
+        aria-expanded="false">Comparer avec une proposition</button>
+<div class="course-answer" hidden>Le style impose probablement des dimensions fixes et ne prévoit pas les
+petits écrans. Il faut utiliser une mise en page flexible, ajouter une media
+query, augmenter la zone cliquable et choisir des couleurs suffisamment
+contrastées. Validation : tester plusieurs largeurs, naviguer au clavier et
+vérifier que le contenu reste lisible sans défilement horizontal.</div>
+
+</div>
+
+<div class="course-phase course-practice">
+  <div class="course-phase-title">
+    <span>5</span><h3>🛠️ Modifier et tester</h3>
+  </div>
+
+<p>Améliore la feuille CSS du laboratoire du module 3. La page doit :</p>
+<ul>
+  <li>rester lisible à 360 px de largeur ;</li>
+  <li>conserver un contraste suffisant ;</li>
+  <li>présenter une hiérarchie visuelle cohérente ;</li>
+  <li>ne pas utiliser la couleur comme unique moyen d’information.</li>
+</ul>
+<textarea data-save="production-module-04" rows="7"
+placeholder="Décris les changements réalisés et les tests effectués..."></textarea>
+
+</div>
+
+  <div class="course-two-columns">
+    <div class="course-callout course-trap">
+      <h3>⚠️ Pièges à éviter</h3>
+      <ul><li>Employer des dimensions fixes pour tous les écrans.</li><li>Masquer un problème de structure HTML uniquement avec du CSS.</li><li>Choisir des couleurs sans vérifier la lisibilité.</li></ul>
+    </div>
+
+<div class="course-card course-mini-quiz" data-answer="0">
+  <h3>✅ Contrôle rapide</h3>
+  <p>Quelle technologie définit principalement la présentation ?</p>
+  <div class="course-quiz-options"><label><input type="radio" name="q-web-04" value="0"> A. CSS</label><label><input type="radio" name="q-web-04" value="1"> B. URL</label><label><input type="radio" name="q-web-04" value="2"> C. DNS</label></div>
+  <button type="button" class="course-quiz-check">Vérifier</button>
+  <p class="course-quiz-feedback" role="status"></p>
+</div>
+
+  </div>
+</section>
+
+<section id="module-05" class="course-module" data-module="module-05">
+  <div class="course-module-header">
+    <div>
+      <span class="course-module-number">05</span>
+      <p class="course-eyebrow">Suivre une demande et interpréter une réponse · 1 h 15</p>
+      <h2>Comprendre le dialogue client–serveur et les requêtes HTTP</h2>
+    </div>
+    <label class="course-completion">
+      <input type="checkbox"
+             class="course-module-check"
+             data-save="done-module-05">
+      Séance maîtrisée
+    </label>
+  </div>
+  <div class="course-meta">
+    <span>🎯 Décomposer une requête HTTP, identifier les paramètres et distinguer les traitements du client et du serveur.</span>
+    <span>🏷️ Requête HTTP · Modèle client/serveur</span>
+  </div>
+
+<div class="course-phase course-observer">
+  <div class="course-phase-title">
+    <span>1</span><h3>👀 Observer et décrire</h3>
+  </div>
+
+<div class="web-request-flow">
+  <div class="web-flow-box">
+    <strong>Client</strong>
+    <p>Navigateur</p>
+    <code>GET /snt/web</code>
+  </div>
+  <div class="web-flow-arrow">⇄</div>
+  <div class="web-flow-box">
+    <strong>Serveur</strong>
+    <p>Traite la requête</p>
+    <code>200 OK</code>
+  </div>
+</div>
+<div class="web-lab-grid">
+  <div class="web-lab">
+    <h4>Laboratoire HTTP</h4>
+    <div class="web-form">
+      <label>Méthode
+        <select id="http-method">
+          <option>GET</option>
+          <option>POST</option>
+        </select>
+      </label>
+      <label>Chemin
+        <select id="http-path">
+          <option value="/">/</option>
+          <option value="/cours">/cours</option>
+          <option value="/introuvable">/introuvable</option>
+          <option value="/prive">/prive</option>
+          <option value="/erreur">/erreur</option>
+        </select>
+      </label>
+      <label>Nom du paramètre
+        <input id="http-param-name" value="theme">
+      </label>
+      <label>Valeur
+        <input id="http-param-value" value="web">
+      </label>
+      <button id="http-send" type="button" class="course-tool-button">
+        Envoyer la requête simulée
+      </button>
+    </div>
+  </div>
+  <pre id="http-output" class="web-protocol-output"></pre>
+</div>
+
+</div>
+
+<div class="course-phase course-notions">
+  <div class="course-phase-title">
+    <span>2</span><h3>📚 Acquérir les notions et le vocabulaire</h3>
+  </div>
+
+<ul class="course-vocabulary">
+  <li><strong>Client</strong> — Programme qui initie une demande auprès d’un
+  serveur.</li>
+  <li><strong>Serveur</strong> — Programme qui écoute, traite les demandes et
+  renvoie des réponses.</li>
+  <li><strong>HTTP</strong> — Protocole applicatif de requête-réponse utilisé
+  par le Web.</li>
+  <li><strong>Méthode</strong> — Intention de la requête, par exemple
+  <code>GET</code> ou <code>POST</code>.</li>
+  <li><strong>En-tête</strong> — Métadonnée accompagnant une requête ou une
+  réponse.</li>
+  <li><strong>Corps</strong> — Données principales éventuellement transportées
+  par le message.</li>
+  <li><strong>Code d’état</strong> — Nombre résumant le résultat :
+  200, 404, 500…</li>
+  <li><strong>Page dynamique</strong> — Ressource produite ou personnalisée
+  au moment de la requête.</li>
+</ul>
+
+</div>
+
+<div class="course-phase course-analysis">
+  <div class="course-phase-title">
+    <span>3</span><h3>🔍 Analyser de manière structurée</h3>
+  </div>
+
+<p class="question">Distingue ce qui est exécuté par le client et par le
+serveur lorsqu’un formulaire de recherche est envoyé.</p>
+
+<button type="button"
+        class="course-answer-button"
+        data-closed-label="Voir l’analyse attendue"
+        aria-expanded="false">Voir l’analyse attendue</button>
+<div class="course-answer" hidden>Le navigateur collecte les valeurs saisies, construit une requête HTTP et
+peut exécuter du JavaScript local. Le serveur reçoit la requête, traite les
+paramètres, consulte éventuellement des données et fabrique une réponse.
+Le navigateur reçoit ensuite cette réponse et l’affiche.</div>
+
+</div>
+
+<div class="course-phase course-concept">
+  <div class="course-phase-title">
+    <span>4</span><h3>🧠 Conceptualiser : diagnostiquer et proposer</h3>
+  </div>
+
+<p>Pour trois utilisateurs, la même adresse produit respectivement les codes
+200, 403 et 404. Propose une interprétation de chaque résultat et un test
+complémentaire.</p>
+<textarea data-save="diagnostic-module-05" rows="7"
+placeholder="Code → signification → hypothèse → test complémentaire..."></textarea>
+
+<button type="button"
+        class="course-answer-button course-teacher-gated"
+        data-closed-label="Comparer avec une proposition"
+        aria-expanded="false">Comparer avec une proposition</button>
+<div class="course-answer" hidden>200 indique que la requête a été traitée avec succès. 403 indique que le
+serveur comprend la demande mais refuse l’accès, par exemple faute
+d’autorisation. 404 indique que la ressource demandée n’a pas été trouvée.
+On peut vérifier l’authentification, le chemin exact et la réponse depuis une
+autre session.</div>
+
+</div>
+
+<div class="course-phase course-practice">
+  <div class="course-phase-title">
+    <span>5</span><h3>🛠️ Construire et vérifier</h3>
+  </div>
+
+<p>Construis manuellement une requête pour rechercher le mot
+<code>hypertexte</code> dans le site pédagogique fictif.</p>
+<pre><code>GET /recherche?________________ HTTP/1.1
+Host: ________________________
+Accept: ______________________</code></pre>
+<textarea data-save="production-module-05" rows="5"
+placeholder="Requête proposée et explication des paramètres..."></textarea>
+
+<button type="button"
+        class="course-answer-button"
+        data-closed-label="Afficher une proposition"
+        aria-expanded="false">Afficher une proposition</button>
+<div class="course-answer" hidden><pre><code>GET /recherche?q=hypertexte HTTP/1.1
+Host: cours.example.org
+Accept: text/html</code></pre></div>
+
+</div>
+
+  <div class="course-two-columns">
+    <div class="course-callout course-trap">
+      <h3>⚠️ Pièges à éviter</h3>
+      <ul><li>Croire que tout le code visible dans une page est exécuté sur le serveur.</li><li>Confondre une URL avec le contenu complet de la requête HTTP.</li><li>Interpréter tous les codes d’erreur comme une panne identique.</li></ul>
+    </div>
+
+<div class="course-card course-mini-quiz" data-answer="2">
+  <h3>✅ Contrôle rapide</h3>
+  <p>Quel code indique généralement une ressource introuvable ?</p>
+  <div class="course-quiz-options"><label><input type="radio" name="q-web-05" value="0"> A. 200</label><label><input type="radio" name="q-web-05" value="1"> B. 403</label><label><input type="radio" name="q-web-05" value="2"> C. 404</label></div>
+  <button type="button" class="course-quiz-check">Vérifier</button>
+  <p class="course-quiz-feedback" role="status"></p>
+</div>
+
+  </div>
+</section>
+
+<section id="module-06" class="course-module" data-module="module-06">
+  <div class="course-module-header">
+    <div>
+      <span class="course-module-number">06</span>
+      <p class="course-eyebrow">Explorer, indexer, classer et exercer son esprit critique · 1 h 15</p>
+      <h2>Comprendre les moteurs de recherche et analyser les résultats</h2>
+    </div>
+    <label class="course-completion">
+      <input type="checkbox"
+             class="course-module-check"
+             data-save="done-module-06">
+      Séance maîtrisée
+    </label>
+  </div>
+  <div class="course-meta">
+    <span>🎯 Expliquer les grandes étapes d’un moteur de recherche et mener une analyse critique des résultats.</span>
+    <span>🏷️ Moteurs de recherche · Indexation · Publication</span>
+  </div>
+
+<div class="course-phase course-observer">
+  <div class="course-phase-title">
+    <span>1</span><h3>👀 Observer et décrire</h3>
+  </div>
+
+<p>Un moteur de recherche ne parcourt pas tout le Web au moment précis de
+chaque requête. Il s’appuie sur un travail préparatoire.</p>
+<ol>
+  <li><strong>Exploration :</strong> des robots découvrent et téléchargent des
+  pages.</li>
+  <li><strong>Indexation :</strong> le contenu est analysé et enregistré dans
+  un index.</li>
+  <li><strong>Classement :</strong> une requête déclenche l’ordonnancement des
+  résultats selon de nombreux signaux.</li>
+</ol>
+<div class="web-lab-grid">
+  <div class="web-lab">
+    <h4>Mini moteur simulé</h4>
+    <div class="web-form">
+      <label>Requête
+        <input id="search-query" value="web histoire">
+      </label>
+      <label>Poids pédagogique de la popularité
+        <input id="search-popularity" type="range"
+               min="0" max="3" step="1" value="1">
+      </label>
+      <button id="search-run" type="button" class="course-tool-button">
+        Classer les résultats
+      </button>
+    </div>
+  </div>
+  <ul id="search-results" class="web-result-list"></ul>
+</div>
+<p class="web-source-note">Cette simulation simplifie volontairement les
+algorithmes réels, qui sont plus nombreux, changeants et en grande partie
+propriétaires.</p>
+
+</div>
+
+<div class="course-phase course-notions">
+  <div class="course-phase-title">
+    <span>2</span><h3>📚 Acquérir les notions et le vocabulaire</h3>
+  </div>
+
+<ul class="course-vocabulary">
+  <li><strong>Robot d’indexation</strong> — Programme qui explore
+  automatiquement les pages et suit les liens.</li>
+  <li><strong>Index</strong> — Structure qui associe des termes et des
+  caractéristiques aux pages analysées.</li>
+  <li><strong>Requête</strong> — Expression saisie par l’utilisateur pour
+  formuler son besoin.</li>
+  <li><strong>Classement</strong> — Ordonnancement des résultats selon des
+  critères de pertinence et d’autres signaux.</li>
+  <li><strong>Popularité</strong> — Indice pouvant notamment être approché par
+  les liens reçus par une page.</li>
+  <li><strong>Référencement</strong> — Ensemble de pratiques visant à rendre
+  une page compréhensible et découvrable.</li>
+  <li><strong>Lien sponsorisé</strong> — Résultat publicitaire dont la
+  visibilité est achetée et qui doit être signalé comme tel.</li>
+</ul>
+
+</div>
+
+<div class="course-phase course-analysis">
+  <div class="course-phase-title">
+    <span>3</span><h3>🔍 Analyser de manière structurée</h3>
+  </div>
+
+<p class="question">Deux élèves effectuent la même recherche et n’obtiennent
+pas exactement les mêmes résultats. Pourquoi cela ne prouve-t-il pas que l’un
+des moteurs « se trompe » automatiquement ?</p>
+
+<button type="button"
+        class="course-answer-button"
+        data-closed-label="Voir l’analyse attendue"
+        aria-expanded="false">Voir l’analyse attendue</button>
+<div class="course-answer" hidden>Le classement dépend du moteur, de la date, de la formulation, de la zone
+géographique, des réglages, de la langue et parfois d’éléments de
+personnalisation. Il faut comparer les critères, examiner les sources et
+distinguer résultat organique et publicité plutôt que supposer un classement
+unique et neutre.</div>
+
+</div>
+
+<div class="course-phase course-concept">
+  <div class="course-phase-title">
+    <span>4</span><h3>🧠 Conceptualiser : diagnostiquer et proposer</h3>
+  </div>
+
+<p>Une page très populaire affirme une information scientifique sans auteur,
+sans date et sans source. Elle apparaît avant une publication institutionnelle.
+Établis un diagnostic sur le classement et propose une méthode de vérification.</p>
+<textarea data-save="diagnostic-module-06" rows="7"
+placeholder="Popularité, pertinence, autorité, recoupement, conclusion..."></textarea>
+
+<button type="button"
+        class="course-answer-button course-teacher-gated"
+        data-closed-label="Comparer avec une proposition"
+        aria-expanded="false">Comparer avec une proposition</button>
+<div class="course-answer" hidden>Le classement mesure la probabilité de répondre à la requête, pas la vérité.
+La popularité ne garantit pas la qualité. Il faut identifier l’auteur, la date,
+les preuves et la finalité du site, puis recouper avec des sources
+institutionnelles ou scientifiques indépendantes.</div>
+
+</div>
+
+<div class="course-phase course-practice">
+  <div class="course-phase-title">
+    <span>5</span><h3>🛠️ Comparer et vérifier</h3>
+  </div>
+
+<div class="web-quality-grid">
+  <div class="web-quality"><strong>Auteur</strong><br>Identifiable et compétent ?</div>
+  <div class="web-quality"><strong>Date</strong><br>Information encore valable ?</div>
+  <div class="web-quality"><strong>Preuves</strong><br>Sources et méthode accessibles ?</div>
+  <div class="web-quality"><strong>Finalité</strong><br>Informer, vendre, convaincre ?</div>
+  <div class="web-quality"><strong>Recoupement</strong><br>D’autres sources concordent ?</div>
+</div>
+<p>Compare deux moteurs ou deux requêtes sur un même sujet, puis justifie le
+choix de deux résultats dignes d’être consultés.</p>
+<textarea data-save="production-module-06" rows="8"
+placeholder="Requête, résultats observés, critères de qualité et conclusion..."></textarea>
+
+</div>
+
+  <div class="course-two-columns">
+    <div class="course-callout course-trap">
+      <h3>⚠️ Pièges à éviter</h3>
+      <ul><li>Confondre la première position avec une preuve de vérité.</li><li>Ignorer la mention indiquant un contenu sponsorisé.</li><li>Formuler une requête trop vague puis accepter le premier résultat.</li></ul>
+    </div>
+
+<div class="course-card course-mini-quiz" data-answer="1">
+  <h3>✅ Contrôle rapide</h3>
+  <p>Quelle étape associe les termes aux pages analysées ?</p>
+  <div class="course-quiz-options"><label><input type="radio" name="q-web-06" value="0"> A. Le chiffrement</label><label><input type="radio" name="q-web-06" value="1"> B. L’indexation</label><label><input type="radio" name="q-web-06" value="2"> C. La mise en cache du navigateur</label></div>
+  <button type="button" class="course-quiz-check">Vérifier</button>
+  <p class="course-quiz-feedback" role="status"></p>
+</div>
+
+  </div>
+</section>
+
+<section id="module-07" class="course-module" data-module="module-07">
+  <div class="course-module-header">
+    <div>
+      <span class="course-module-number">07</span>
+      <p class="course-eyebrow">Observer les données conservées et régler la confidentialité · 1 h 15</p>
+      <h2>Maîtriser cookies, traces et paramètres du navigateur</h2>
+    </div>
+    <label class="course-completion">
+      <input type="checkbox"
+             class="course-module-check"
+             data-save="done-module-07">
+      Séance maîtrisée
+    </label>
+  </div>
+  <div class="course-meta">
+    <span>🎯 Identifier les principales traces de navigation et proposer des réglages adaptés à une situation.</span>
+    <span>🏷️ Cookies · Confidentialité · Sécurité du navigateur</span>
+  </div>
+
+<div class="course-phase course-observer">
+  <div class="course-phase-title">
+    <span>1</span><h3>👀 Observer et décrire</h3>
+  </div>
+
+<div class="web-lab-grid">
+  <div class="web-lab">
+    <h4>Simuler les catégories de cookies</h4>
+    <div class="web-cookie-row">
+      <label for="cookie-essential"><strong>Nécessaires</strong><br>
+      Session, panier ou authentification</label>
+      <input id="cookie-essential" type="checkbox" checked disabled>
+    </div>
+    <div class="web-cookie-row">
+      <label for="cookie-preference"><strong>Préférences</strong><br>
+      Langue ou thème</label>
+      <input id="cookie-preference" type="checkbox" checked>
+    </div>
+    <div class="web-cookie-row">
+      <label for="cookie-analytics"><strong>Mesure d’audience</strong><br>
+      Parcours et pages vues</label>
+      <input id="cookie-analytics" type="checkbox">
+    </div>
+    <div class="web-cookie-row">
+      <label for="cookie-ads"><strong>Publicité personnalisée</strong><br>
+      Profil et reciblage</label>
+      <input id="cookie-ads" type="checkbox">
+    </div>
+  </div>
+  <pre id="cookie-output" class="web-cookie-output"></pre>
+</div>
+<p class="web-source-note">L’« indice de traces » est une représentation
+pédagogique, pas une mesure juridique ou technique réelle.</p>
+
+</div>
+
+<div class="course-phase course-notions">
+  <div class="course-phase-title">
+    <span>2</span><h3>📚 Acquérir les notions et le vocabulaire</h3>
+  </div>
+
+<ul class="course-vocabulary">
+  <li><strong>Cookie</strong> — Petite information enregistrée ou relue par un
+  site à travers le navigateur.</li>
+  <li><strong>Traceur</strong> — Technique permettant de lire ou écrire une
+  information sur l’équipement afin de reconnaître ou suivre un usage.</li>
+  <li><strong>Cookie tiers</strong> — Cookie associé à un domaine différent de
+  celui principalement visité.</li>
+  <li><strong>Historique</strong> — Liste des pages consultées conservée par le
+  navigateur.</li>
+  <li><strong>Cache</strong> — Copie locale de ressources destinée notamment à
+  accélérer l’affichage.</li>
+  <li><strong>Navigation privée</strong> — Mode limitant la conservation locale
+  après la session, sans rendre l’utilisateur invisible sur le réseau.</li>
+  <li><strong>Consentement</strong> — Manifestation libre, spécifique,
+  éclairée et univoque d’un choix.</li>
+  <li><strong>Donnée personnelle</strong> — Information se rapportant à une
+  personne identifiée ou identifiable.</li>
+</ul>
+
+</div>
+
+<div class="course-phase course-analysis">
+  <div class="course-phase-title">
+    <span>3</span><h3>🔍 Analyser de manière structurée</h3>
+  </div>
+
+<p class="question">Pourquoi la navigation privée n’empêche-t-elle pas le site,
+l’établissement ou le fournisseur d’accès de constater une connexion ?</p>
+
+<button type="button"
+        class="course-answer-button"
+        data-closed-label="Voir l’analyse attendue"
+        aria-expanded="false">Voir l’analyse attendue</button>
+<div class="course-answer" hidden>La navigation privée agit principalement sur les données conservées
+localement par le navigateur après la session. Les requêtes continuent de
+transiter sur le réseau et le serveur reçoit toujours des informations
+techniques nécessaires à la communication. Elle ne constitue donc ni un
+anonymat complet ni un chiffrement supplémentaire.</div>
+
+</div>
+
+<div class="course-phase course-concept">
+  <div class="course-phase-title">
+    <span>4</span><h3>🧠 Conceptualiser : diagnostiquer et proposer</h3>
+  </div>
+
+<p>Un site propose un gros bouton « Tout accepter » et dissimule le refus dans
+plusieurs écrans. Il dépose immédiatement des traceurs publicitaires.
+Diagnostique le problème et propose une interface plus loyale.</p>
+<textarea data-save="diagnostic-module-07" rows="7"
+placeholder="Choix de l’utilisateur, catégories, refus, information, preuve..."></textarea>
+
+<button type="button"
+        class="course-answer-button course-teacher-gated"
+        data-closed-label="Comparer avec une proposition"
+        aria-expanded="false">Comparer avec une proposition</button>
+<div class="course-answer" hidden>Le choix n’est pas présenté de manière équilibrée et des traceurs non
+nécessaires sont déposés avant une action positive. L’interface doit expliquer
+les finalités, permettre d’accepter ou de refuser avec une facilité comparable,
+offrir un réglage par catégories et conserver la possibilité de modifier le
+choix.</div>
+
+</div>
+
+<div class="course-phase course-practice">
+  <div class="course-phase-title">
+    <span>5</span><h3>🛠️ Auditer et régler</h3>
+  </div>
+
+<p>Réalise un audit du navigateur utilisé en classe, sans modifier les comptes
+personnels :</p>
+<ul>
+  <li>repérer les réglages des cookies et des données de site ;</li>
+  <li>identifier la commande d’effacement de l’historique ;</li>
+  <li>repérer les permissions accordées aux sites ;</li>
+  <li>expliquer ce que fait et ne fait pas la navigation privée.</li>
+</ul>
+<textarea data-save="production-module-07" rows="8"
+placeholder="Réglages repérés, risques limités, limites et recommandations..."></textarea>
+
+</div>
+
+  <div class="course-two-columns">
+    <div class="course-callout course-trap">
+      <h3>⚠️ Pièges à éviter</h3>
+      <ul><li>Croire que tous les cookies ont la même finalité.</li><li>Penser que supprimer l’historique efface les données détenues par les serveurs.</li><li>Assimiler navigation privée et anonymat complet.</li></ul>
+    </div>
+
+<div class="course-card course-mini-quiz" data-answer="0">
+  <h3>✅ Contrôle rapide</h3>
+  <p>Quelle affirmation décrit le mieux la navigation privée ?</p>
+  <div class="course-quiz-options"><label><input type="radio" name="q-web-07" value="0"> A. Elle limite surtout les traces conservées localement après la session.</label><label><input type="radio" name="q-web-07" value="1"> B. Elle rend l’utilisateur invisible à tous les serveurs.</label><label><input type="radio" name="q-web-07" value="2"> C. Elle remplace HTTPS.</label></div>
+  <button type="button" class="course-quiz-check">Vérifier</button>
+  <p class="course-quiz-feedback" role="status"></p>
+</div>
+
+  </div>
+</section>
+
+<section id="module-08" class="course-module" data-module="module-08">
+  <div class="course-module-header">
+    <div>
+      <span class="course-module-number">08</span>
+      <p class="course-eyebrow">Mobiliser les acquis dans une production complète · 2 h</p>
+      <h2>Publier en respectant les droits et concevoir un site responsable</h2>
+    </div>
+    <label class="course-completion">
+      <input type="checkbox"
+             class="course-module-check"
+             data-save="done-module-08">
+      Séance maîtrisée
+    </label>
+  </div>
+  <div class="course-meta">
+    <span>🎯 Choisir des ressources réutilisables, attribuer correctement les auteurs et publier une page Web testée.</span>
+    <span>🏷️ Notions juridiques · Publication · Projet final</span>
+  </div>
+
+<div class="course-phase course-observer">
+  <div class="course-phase-title">
+    <span>1</span><h3>👀 Observer et décrire</h3>
+  </div>
+
+<div class="web-context-grid">
+  <div class="web-context-card">
+    <strong>Cas A — Image personnelle</strong>
+    L’auteur indique « Tous droits réservés ».
+  </div>
+  <div class="web-context-card">
+    <strong>Cas B — Illustration CC BY 4.0</strong>
+    La réutilisation est autorisée sous réserve d’attribution.
+  </div>
+  <div class="web-context-card">
+    <strong>Cas C — Code sous licence libre</strong>
+    Les conditions relèvent d’une licence destinée au logiciel.
+  </div>
+  <div class="web-context-card">
+    <strong>Cas D — Contenu sans mention</strong>
+    L’absence de symbole ou de licence ne signifie pas « libre de droits ».
+  </div>
+</div>
+<div class="course-student-task"><strong>Consigne :</strong> pour chaque cas,
+repère le titulaire des droits, les usages permis et les obligations.</div>
+
+</div>
+
+<div class="course-phase course-notions">
+  <div class="course-phase-title">
+    <span>2</span><h3>📚 Acquérir les notions et le vocabulaire</h3>
+  </div>
+
+<ul class="course-vocabulary">
+  <li><strong>Droit d’auteur</strong> — Ensemble de droits attachés à une
+  œuvre originale et à son auteur.</li>
+  <li><strong>Droit d’usage</strong> — Autorisation d’utiliser une ressource
+  dans les limites fixées par la loi ou un contrat.</li>
+  <li><strong>Licence</strong> — Texte définissant les permissions et les
+  conditions de réutilisation.</li>
+  <li><strong>Attribution</strong> — Mention du créateur, de la source, de la
+  licence et, lorsque nécessaire, des modifications.</li>
+  <li><strong>Creative Commons</strong> — Ensemble de licences standardisées
+  destinées notamment aux œuvres et ressources pédagogiques.</li>
+  <li><strong>Domaine public</strong> — Situation dans laquelle les droits
+  patrimoniaux ne restreignent plus l’usage, sous réserve des autres droits
+  applicables.</li>
+  <li><strong>Valeur d’un bien numérique</strong> — Valeur qui ne dépend pas
+  seulement du coût de copie, mais aussi du travail, des droits, de la qualité
+  et des usages autorisés.</li>
+</ul>
+
+</div>
+
+<div class="course-phase course-analysis">
+  <div class="course-phase-title">
+    <span>3</span><h3>🔍 Analyser de manière structurée</h3>
+  </div>
+
+<p class="question">Pourquoi « trouvé sur Internet » et « gratuit à consulter »
+ne signifient-ils pas « librement réutilisable » ?</p>
+
+<button type="button"
+        class="course-answer-button"
+        data-closed-label="Voir l’analyse attendue"
+        aria-expanded="false">Voir l’analyse attendue</button>
+<div class="course-answer" hidden>La consultation d’une ressource et sa reproduction sont deux usages
+différents. Une ressource accessible sans paiement peut rester protégée par le
+droit d’auteur. Il faut rechercher la licence, les conditions d’utilisation
+ou une exception légale applicable, puis respecter l’attribution et les
+restrictions éventuelles.</div>
+
+</div>
+
+<div class="course-phase course-concept">
+  <div class="course-phase-title">
+    <span>4</span><h3>🧠 Conceptualiser : diagnostiquer et proposer</h3>
+  </div>
+
+<p>Tu souhaites publier une page de cours réutilisable par d’autres enseignants
+et tu intègres une photographie, un texte adapté et un programme. Propose une
+politique de licences et une méthode d’attribution cohérentes.</p>
+<textarea data-save="diagnostic-module-08" rows="8"
+placeholder="Éléments originaux, ressources tierces, licences, attribution, modifications..."></textarea>
+
+<button type="button"
+        class="course-answer-button course-teacher-gated"
+        data-closed-label="Comparer avec une proposition"
+        aria-expanded="false">Comparer avec une proposition</button>
+<div class="course-answer" hidden>Il faut distinguer les éléments dont on est l’auteur et les ressources
+tierces. Les contenus pédagogiques originaux peuvent recevoir une licence
+Creative Commons compatible avec l’objectif de partage. Les logiciels doivent
+plutôt utiliser une licence de logiciel. Chaque ressource tierce doit conserver
+sa propre attribution et sa licence ; les adaptations doivent être signalées.
+La licence générale de la page ne peut pas effacer les restrictions d’un
+élément incorporé.</div>
+
+</div>
+
+<div class="course-phase course-practice">
+  <div class="course-phase-title">
+    <span>5</span><h3>🛠️ Concevoir, publier et valider</h3>
+  </div>
+
+<h4>Projet final : publier une mini-page Web responsable</h4>
+<p>Produis ou améliore la page commencée dans les modules 3 et 4. Elle doit :</p>
+<ul>
+  <li>présenter une structure HTML sémantique ;</li>
+  <li>séparer contenu et présentation ;</li>
+  <li>contenir au moins deux liens hypertextes compréhensibles ;</li>
+  <li>fonctionner sur petit écran ;</li>
+  <li>citer les sources et les licences ;</li>
+  <li>expliquer ce qui est traité par le client ;</li>
+  <li>ne déposer aucun traceur non nécessaire ;</li>
+  <li>être accompagnée d’un protocole de test.</li>
+</ul>
+<textarea data-save="production-module-08" rows="10"
+placeholder="URL ou code du projet, sources, licences, tests et bilan..."></textarea>
+<table class="web-rubric">
+  <thead><tr><th>Critère</th><th>Réussite attendue</th></tr></thead>
+  <tbody>
+    <tr><td>Structure</td><td>Balises adaptées et hiérarchie cohérente.</td></tr>
+    <tr><td>Présentation</td><td>CSS séparé, lisible et responsive.</td></tr>
+    <tr><td>Analyse</td><td>Client, serveur, URL et requêtes expliqués.</td></tr>
+    <tr><td>Esprit critique</td><td>Sources sélectionnées et justifiées.</td></tr>
+    <tr><td>Droits</td><td>Attributions et licences explicites.</td></tr>
+    <tr><td>Validation</td><td>Tests sur liens, écran, clavier et impression.</td></tr>
+  </tbody>
+</table>
+
+</div>
+
+  <div class="course-two-columns">
+    <div class="course-callout course-trap">
+      <h3>⚠️ Pièges à éviter</h3>
+      <ul><li>Confondre absence de prix et absence de droits.</li><li>Appliquer une licence générale à des ressources tierces incompatibles.</li><li>Citer une adresse sans préciser l’auteur, la licence et les modifications.</li></ul>
+    </div>
+
+<div class="course-card course-mini-quiz" data-answer="1">
+  <h3>✅ Contrôle rapide</h3>
+  <p>Que faut-il vérifier avant de réutiliser une image ?</p>
+  <div class="course-quiz-options"><label><input type="radio" name="q-web-08" value="0"> A. Seulement sa résolution.</label><label><input type="radio" name="q-web-08" value="1"> B. Son auteur, sa licence et les conditions de réutilisation.</label><label><input type="radio" name="q-web-08" value="2"> C. Uniquement qu’elle apparaît dans un moteur de recherche.</label></div>
+  <button type="button" class="course-quiz-check">Vérifier</button>
+  <p class="course-quiz-feedback" role="status"></p>
+</div>
+
+  </div>
+</section>
+
+
+  <section class="course-card">
+    <h2>🧠 Réviser avec des flashcards</h2>
+    <p>Clique ou utilise la touche Entrée pour retourner une carte.</p>
+    <div class="course-flash-grid">
+<article class="course-flashcard" role="button" tabindex="0"
+         aria-pressed="false" aria-label="Retourner la carte">
+  <div class="course-flash-inner">
+    <div class="course-flash-face"><strong>Internet et Web</strong></div>
+    <div class="course-flash-face course-flash-back">Internet est l’infrastructure de réseaux ; le Web est un service de ressources hypertextes qui l’utilise.</div>
+  </div>
+</article>
+
+
+<article class="course-flashcard" role="button" tabindex="0"
+         aria-pressed="false" aria-label="Retourner la carte">
+  <div class="course-flash-inner">
+    <div class="course-flash-face"><strong>URL</strong></div>
+    <div class="course-flash-face course-flash-back">Adresse structurée d’une ressource : schéma, hôte, chemin, paramètres et fragment éventuels.</div>
+  </div>
+</article>
+
+
+<article class="course-flashcard" role="button" tabindex="0"
+         aria-pressed="false" aria-label="Retourner la carte">
+  <div class="course-flash-inner">
+    <div class="course-flash-face"><strong>HTTPS</strong></div>
+    <div class="course-flash-face course-flash-back">HTTP utilisé dans une connexion chiffrée et authentifiée ; cela ne garantit pas l’honnêteté du site.</div>
+  </div>
+</article>
+
+
+<article class="course-flashcard" role="button" tabindex="0"
+         aria-pressed="false" aria-label="Retourner la carte">
+  <div class="course-flash-inner">
+    <div class="course-flash-face"><strong>HTML</strong></div>
+    <div class="course-flash-face course-flash-back">Langage de balisage qui décrit la structure et le sens du contenu.</div>
+  </div>
+</article>
+
+
+<article class="course-flashcard" role="button" tabindex="0"
+         aria-pressed="false" aria-label="Retourner la carte">
+  <div class="course-flash-inner">
+    <div class="course-flash-face"><strong>CSS</strong></div>
+    <div class="course-flash-face course-flash-back">Langage qui décrit la présentation du document.</div>
+  </div>
+</article>
+
+
+<article class="course-flashcard" role="button" tabindex="0"
+         aria-pressed="false" aria-label="Retourner la carte">
+  <div class="course-flash-inner">
+    <div class="course-flash-face"><strong>Client</strong></div>
+    <div class="course-flash-face course-flash-back">Programme qui initie une requête, par exemple un navigateur.</div>
+  </div>
+</article>
+
+
+<article class="course-flashcard" role="button" tabindex="0"
+         aria-pressed="false" aria-label="Retourner la carte">
+  <div class="course-flash-inner">
+    <div class="course-flash-face"><strong>Serveur</strong></div>
+    <div class="course-flash-face course-flash-back">Programme qui reçoit une requête et produit une réponse.</div>
+  </div>
+</article>
+
+
+<article class="course-flashcard" role="button" tabindex="0"
+         aria-pressed="false" aria-label="Retourner la carte">
+  <div class="course-flash-inner">
+    <div class="course-flash-face"><strong>HTTP 404</strong></div>
+    <div class="course-flash-face course-flash-back">Le serveur n’a pas trouvé la ressource demandée.</div>
+  </div>
+</article>
+
+
+<article class="course-flashcard" role="button" tabindex="0"
+         aria-pressed="false" aria-label="Retourner la carte">
+  <div class="course-flash-inner">
+    <div class="course-flash-face"><strong>Indexation</strong></div>
+    <div class="course-flash-face course-flash-back">Analyse et organisation des pages découvertes pour préparer la recherche.</div>
+  </div>
+</article>
+
+
+<article class="course-flashcard" role="button" tabindex="0"
+         aria-pressed="false" aria-label="Retourner la carte">
+  <div class="course-flash-inner">
+    <div class="course-flash-face"><strong>Cookie</strong></div>
+    <div class="course-flash-face course-flash-back">Information qu’un site peut demander au navigateur d’enregistrer ou de relire.</div>
+  </div>
+</article>
+
+
+<article class="course-flashcard" role="button" tabindex="0"
+         aria-pressed="false" aria-label="Retourner la carte">
+  <div class="course-flash-inner">
+    <div class="course-flash-face"><strong>Navigation privée</strong></div>
+    <div class="course-flash-face course-flash-back">Mode limitant certaines traces locales après la session, sans assurer l’anonymat complet.</div>
+  </div>
+</article>
+
+
+<article class="course-flashcard" role="button" tabindex="0"
+         aria-pressed="false" aria-label="Retourner la carte">
+  <div class="course-flash-inner">
+    <div class="course-flash-face"><strong>Licence</strong></div>
+    <div class="course-flash-face course-flash-back">Texte définissant les permissions et les conditions de réutilisation.</div>
+  </div>
+</article>
+</div>
+  </section>
+
+  <section class="course-card">
+    <h2>✍️ Texte à compléter</h2>
+    <p>
+      <input id="fill-1" size="8" aria-label="Mot 1"> décrit la structure,
+      <input id="fill-2" size="8" aria-label="Mot 2"> la présentation.
+      Le protocole <input id="fill-3" size="8" aria-label="Mot 3">
+      organise le dialogue entre le navigateur et le
+      <input id="fill-4" size="10" aria-label="Mot 4">.
+      Un <input id="fill-5" size="9" aria-label="Mot 5">
+      peut mémoriser une préférence.
+    </p>
+    <button id="fill-check" type="button" class="course-tool-button">
+      Vérifier
+    </button>
+    <p id="fill-feedback" class="web-feedback" role="status"></p>
+  </section>
+
+  <section class="course-card course-teacher-only">
+    <h2>👩‍🏫 Repères pour l’enseignant</h2>
+    <ul>
+      <li>Les laboratoires sont des simulations locales : aucune donnée n’est
+      envoyée vers Internet.</li>
+      <li>Le module 1 reprend l’affiche A3 de la séquence antérieure.</li>
+      <li>Les modules 3 et 4 peuvent être conduits en deux séances de projet.</li>
+      <li>Le simulateur de moteur de recherche ne reproduit pas un algorithme
+      commercial réel ; son objectif est de rendre visibles plusieurs critères.</li>
+      <li>Le mode enseignant signale des corrections mais ne constitue pas une
+      protection confidentielle sur un site statique.</li>
+    </ul>
+  </section>
+
+  <section class="course-card">
+    <h2>📚 Sources, crédits et licences</h2>
+    <ul>
+      <li>Ministère de l’Éducation nationale, programme de SNT de seconde,
+      thème « Le Web », BO spécial n° 1 du 22 janvier 2019.</li>
+      <li>CERN, « A short history of the Web » et « The birth of the Web »,
+      consultés le 29 juillet 2026.</li>
+      <li>WHATWG, <em>HTML Living Standard</em>, consulté le 29 juillet 2026.</li>
+      <li>RFC Editor, RFC 3986 pour les URI et RFC 9110 pour la sémantique HTTP.</li>
+      <li>CNIL, ressources sur les cookies, traceurs et réglages du navigateur,
+      consultées le 29 juillet 2026.</li>
+      <li>Google Search Central, description publique des étapes exploration,
+      indexation et diffusion des résultats, consultée le 29 juillet 2026.</li>
+      <li>Cybermalveillance.gouv.fr, conseils relatifs à HTTPS et à
+      l’hameçonnage, consultés le 29 juillet 2026.</li>
+      <li>Creative Commons, outil de choix des licences et recommandations
+      d’attribution, consultés le 29 juillet 2026.</li>
+    </ul>
+    <p>Tous les schémas et laboratoires visuels de ce cours sont des créations
+    originales intégrées au fichier. Aucune photographie externe n’est
+    redistribuée.</p>
+  </section>
+
+  <footer class="course-footer">
+    <p>© Thibaud Cousin — Tous droits réservés</p>
+    <p>Ressources pédagogiques SNT – Lycée & BTS</p>
+    <p>Compatible : accessibilité, mode sombre, impression et smartphone.</p>
+  </footer>
+</main>
+</body>
+</html>

@@ -1,0 +1,384 @@
+.web-hero{
+  background:
+    radial-gradient(circle at 80% 15%,rgba(255,255,255,.18),transparent 22%),
+    linear-gradient(135deg,#173d7a,#006b78 55%,#3f3b98);
+}
+
+.web-context-grid,
+.web-lab-grid,
+.web-audit-grid{
+  display:grid;
+  grid-template-columns:repeat(2,minmax(0,1fr));
+  gap:16px;
+}
+
+.web-context-card,
+.web-lab,
+.web-diagnostic-card{
+  padding:18px;
+  border:1px solid var(--course-border);
+  border-radius:15px;
+  background:var(--course-card);
+}
+
+.web-context-card strong{
+  display:block;
+  margin-bottom:4px;
+}
+
+.web-badge-row{
+  display:flex;
+  flex-wrap:wrap;
+  gap:8px;
+  margin:12px 0;
+}
+
+.web-badge{
+  padding:5px 9px;
+  border:1px solid var(--course-border);
+  border-radius:999px;
+  background:var(--course-card);
+  font-size:.88rem;
+  font-weight:700;
+}
+
+.web-diagram{
+  width:100%;
+  height:auto;
+  border:1px solid var(--course-border);
+  border-radius:16px;
+  background:#f5f8fc;
+}
+
+.web-sort-list{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(210px,1fr));
+  gap:10px;
+  padding:0;
+  list-style:none;
+}
+
+.web-sort-item{
+  padding:13px;
+  border:1px solid var(--course-border);
+  border-radius:12px;
+  background:var(--course-card);
+}
+
+.web-sort-actions{
+  display:flex;
+  gap:8px;
+  flex-wrap:wrap;
+  margin-top:8px;
+}
+
+.web-choice{
+  padding:7px 10px;
+  border:1px solid var(--course-primary);
+  border-radius:9px;
+  color:var(--course-primary);
+  background:var(--course-card);
+  font-weight:700;
+}
+
+.web-choice.good{
+  color:#fff;
+  background:#16824a;
+  border-color:#16824a;
+}
+
+.web-choice.bad{
+  color:#fff;
+  background:#b9313b;
+  border-color:#b9313b;
+}
+
+.web-feedback{
+  min-height:1.5em;
+  margin:.6em 0 0;
+  font-weight:700;
+}
+
+.web-form{
+  display:grid;
+  gap:10px;
+}
+
+.web-form label{
+  display:grid;
+  gap:5px;
+  font-weight:700;
+}
+
+.web-form input,
+.web-form select,
+.web-form textarea{
+  width:100%;
+  padding:10px;
+  border:1px solid var(--course-border);
+  border-radius:10px;
+  color:var(--course-text);
+  background:var(--course-card);
+}
+
+.web-url-parts{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(180px,1fr));
+  gap:10px;
+  margin-top:14px;
+}
+
+.web-url-part{
+  min-height:86px;
+  padding:12px;
+  border:1px solid var(--course-border);
+  border-radius:12px;
+  background:var(--course-card);
+}
+
+.web-url-part strong{
+  display:block;
+  color:var(--course-primary);
+}
+
+.web-preview-layout{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:14px;
+}
+
+.web-editor-stack{
+  display:grid;
+  gap:12px;
+}
+
+.web-code-editor{
+  min-height:245px;
+  font-family:"Cascadia Code","Fira Code",Consolas,monospace;
+  line-height:1.45;
+}
+
+.web-preview{
+  width:100%;
+  min-height:545px;
+  border:1px solid var(--course-border);
+  border-radius:14px;
+  background:#fff;
+}
+
+.web-inline-actions{
+  display:flex;
+  gap:8px;
+  flex-wrap:wrap;
+  margin:10px 0;
+}
+
+.web-secondary-button{
+  padding:8px 12px;
+  border:1px solid var(--course-primary);
+  border-radius:9px;
+  color:var(--course-primary);
+  background:var(--course-card);
+  font-weight:700;
+}
+
+.web-protocol-output,
+.web-search-output,
+.web-cookie-output{
+  min-height:170px;
+  padding:14px;
+  overflow:auto;
+  border-radius:13px;
+  color:#d9f9e4;
+  background:#172231;
+  white-space:pre-wrap;
+  font-family:"Cascadia Code","Fira Code",Consolas,monospace;
+}
+
+.web-request-flow{
+  display:grid;
+  grid-template-columns:1fr auto 1fr;
+  gap:12px;
+  align-items:center;
+}
+
+.web-flow-box{
+  padding:16px;
+  border:1px solid var(--course-border);
+  border-radius:14px;
+  text-align:center;
+  background:var(--course-card);
+}
+
+.web-flow-arrow{
+  color:var(--course-primary);
+  font-size:2rem;
+  font-weight:900;
+}
+
+.web-result-list{
+  display:grid;
+  gap:10px;
+  padding:0;
+  list-style:none;
+}
+
+.web-result{
+  padding:13px;
+  border:1px solid var(--course-border);
+  border-radius:12px;
+  background:var(--course-card);
+}
+
+.web-result.sponsored{
+  border-left:5px solid #d88b00;
+}
+
+.web-result .web-score{
+  float:right;
+  font-weight:800;
+  color:var(--course-primary);
+}
+
+.web-quality-grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(180px,1fr));
+  gap:10px;
+}
+
+.web-quality{
+  padding:12px;
+  border:1px solid var(--course-border);
+  border-radius:12px;
+  background:var(--course-card);
+}
+
+.web-cookie-row{
+  display:flex;
+  justify-content:space-between;
+  gap:12px;
+  align-items:center;
+  padding:10px 0;
+  border-bottom:1px solid var(--course-border);
+}
+
+.web-cookie-row:last-child{
+  border-bottom:0;
+}
+
+.web-cookie-row input{
+  width:auto;
+}
+
+.web-phishing-list{
+  display:grid;
+  gap:10px;
+  padding:0;
+  list-style:none;
+}
+
+.web-phishing-item{
+  padding:12px;
+  border:1px solid var(--course-border);
+  border-radius:12px;
+  background:var(--course-card);
+}
+
+.web-phishing-item code{
+  overflow-wrap:anywhere;
+}
+
+.web-timeline{
+  display:grid;
+  grid-template-columns:repeat(5,1fr);
+  gap:8px;
+  margin:15px 0;
+}
+
+.web-timeline div{
+  padding:12px 8px;
+  border:1px solid var(--course-border);
+  border-radius:12px;
+  background:var(--course-card);
+  text-align:center;
+}
+
+.web-timeline strong{
+  display:block;
+  color:var(--course-primary);
+}
+
+.web-rubric td:first-child{
+  font-weight:700;
+}
+
+.web-legacy{
+  border-left:5px solid #7f52c9;
+}
+
+.web-source-note{
+  padding:12px;
+  border-left:4px solid var(--course-primary);
+  background:var(--course-notions);
+  border-radius:8px;
+}
+
+@media(max-width:850px){
+  .web-context-grid,
+  .web-lab-grid,
+  .web-audit-grid,
+  .web-preview-layout{
+    grid-template-columns:1fr;
+  }
+
+  .web-request-flow{
+    grid-template-columns:1fr;
+  }
+
+  .web-flow-arrow{
+    transform:rotate(90deg);
+    text-align:center;
+  }
+
+  .web-timeline{
+    grid-template-columns:1fr 1fr;
+  }
+}
+
+@media(max-width:520px){
+  .web-timeline{
+    grid-template-columns:1fr;
+  }
+}
+
+@media print{
+  .web-lab button,
+  .web-inline-actions,
+  .web-choice{
+    display:none!important;
+  }
+
+  .web-preview{
+    display:none!important;
+  }
+
+  .web-preview-layout,
+  .web-context-grid,
+  .web-lab-grid,
+  .web-audit-grid{
+    grid-template-columns:1fr!important;
+  }
+
+  .web-protocol-output,
+  .web-search-output,
+  .web-cookie-output{
+    min-height:0!important;
+    color:#000!important;
+    background:#fff!important;
+    border:1px solid #777!important;
+  }
+
+  .web-timeline{
+    grid-template-columns:repeat(5,1fr)!important;
+  }
+}

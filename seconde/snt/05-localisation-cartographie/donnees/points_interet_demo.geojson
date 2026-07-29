@@ -1,0 +1,134 @@
+{
+  "type": "FeatureCollection",
+  "name": "points_interet_demo",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "P01",
+        "nom": "Lycée des Horizons",
+        "categorie": "Éducation",
+        "accessible_pmr": "oui"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.8422,
+          45.7521
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "P02",
+        "nom": "Gare de Ville-Lumière",
+        "categorie": "Transport",
+        "accessible_pmr": "oui"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.8331,
+          45.7564
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "P03",
+        "nom": "Parc des Sources",
+        "categorie": "Loisir",
+        "accessible_pmr": "partiel"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.8517,
+          45.7478
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "P04",
+        "nom": "Médiathèque Atlas",
+        "categorie": "Culture",
+        "accessible_pmr": "oui"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.8465,
+          45.7592
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "P05",
+        "nom": "Belvédère du Levant",
+        "categorie": "Point de vue",
+        "accessible_pmr": "non"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.8614,
+          45.7449
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "P06",
+        "nom": "Centre sportif Olympe",
+        "categorie": "Sport",
+        "accessible_pmr": "oui"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.8572,
+          45.7635
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "P07",
+        "nom": "Hôpital Saint-Clair",
+        "categorie": "Santé",
+        "accessible_pmr": "oui"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.8395,
+          45.7681
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "P08",
+        "nom": "Maison des Associations",
+        "categorie": "Service public",
+        "accessible_pmr": "oui"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.8308,
+          45.7504
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,884 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="../../../fonts.css">
+<link rel="stylesheet" href="../../../style.css">
+<script src="../../accessibility.js" defer></script>
+<script src="../../enseignant.js"></script>
+<!-- accessibility.js gère l’accessibilité ; les interactions du cours restent intégrées à cette page. -->
+<meta name="description" content="Cours complet de Python pour la SNT en classe de seconde : observer, analyser, conceptualiser et programmer un robot virtuel.">
+<title>Python SNT 2de — Parcours complet avec Néo</title>
+<style>
+:root{--bg:#f3f6fb;--card:#fff;--text:#172033;--muted:#5d687c;--border:#d8deea;--primary:#3157d5;--primary2:#6f47d9;--observer:#dff2ff;--notions:#eef2ff;--analyse:#fff3d6;--concept:#e8f8ed;--danger:#fff0f0;--shadow:0 12px 30px rgba(31,45,80,.09);--radius:18px;--font-scale:1}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--text);font-family:Inter,system-ui,-apple-system,"Segoe UI",sans-serif;font-size:calc(16px * var(--font-scale));line-height:1.58}
+body.dark{--bg:#111728;--card:#1b2438;--text:#eef3ff;--muted:#b6c0d4;--border:#34405a;--observer:#17354a;--notions:#242d54;--analyse:#493c1f;--concept:#173c2b;--danger:#49272b;--shadow:none}
+body.dys{font-family:Verdana,Arial,sans-serif;letter-spacing:.035em;word-spacing:.12em;line-height:1.75}
+a{color:var(--primary)}button,input,textarea{font:inherit}button{cursor:pointer}
+.skip-link{position:absolute;left:-9999px}.skip-link:focus{left:10px;top:10px;background:#fff;padding:10px;z-index:999}
+#accessibility-menu{position:fixed;right:14px;top:14px;z-index:20;display:flex;gap:5px;padding:7px;background:var(--card);border:1px solid var(--border);border-radius:14px;box-shadow:var(--shadow)}
+#accessibility-menu button{border:1px solid var(--border);background:transparent;color:var(--text);border-radius:9px;padding:6px 9px}
+.container{width:min(1180px,calc(100% - 28px));margin:auto;padding:28px 0 60px}
+.hero{position:relative;overflow:hidden;background:linear-gradient(135deg,#1f3f99,#663ab5);color:#fff;border-radius:28px;padding:42px;margin-top:35px;box-shadow:var(--shadow)}
+.hero:after{content:"";position:absolute;width:330px;height:330px;border-radius:50%;background:rgba(255,255,255,.09);right:-80px;top:-120px}
+.hero h1{font-size:clamp(2.1rem,5vw,4.3rem);line-height:1.02;margin:.2em 0}.hero p{max-width:760px;font-size:1.12rem}.hero .chips{display:flex;flex-wrap:wrap;gap:8px}.chip{display:inline-block;padding:7px 11px;border-radius:999px;background:rgba(255,255,255,.15);border:1px solid rgba(255,255,255,.25)}
+.hero-actions{display:flex;flex-wrap:wrap;gap:10px;margin-top:22px}.hero-actions a,.hero-actions button{padding:11px 15px;border-radius:12px;border:0;text-decoration:none;font-weight:700}.hero-actions a{background:#fff;color:#243d91}.hero-actions button{background:rgba(255,255,255,.15);color:#fff;border:1px solid rgba(255,255,255,.35)}
+.progress-wrap{margin:20px 0;background:var(--card);border:1px solid var(--border);border-radius:16px;padding:15px}.progress-bar{height:12px;background:var(--border);border-radius:999px;overflow:hidden}.progress-bar span{display:block;height:100%;width:0;background:linear-gradient(90deg,var(--primary),var(--primary2));transition:.3s}
+.snt-section,.snt-card,.callout{background:var(--card);border:1px solid var(--border);border-radius:var(--radius);box-shadow:var(--shadow)}
+.intro-grid{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin:22px 0}.snt-card,.callout{padding:22px}.snt-card h2,.snt-card h3,.callout h3{margin-top:0}
+.quick-links{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:10px}.quick-links a{display:flex;gap:10px;align-items:center;padding:12px;border:1px solid var(--border);border-radius:12px;text-decoration:none;background:var(--card);color:var(--text)}.quick-links a span{display:grid;place-items:center;width:31px;height:31px;border-radius:50%;background:var(--notions);font-weight:800}
+.ladder{display:grid;grid-template-columns:repeat(4,1fr);gap:10px}.ladder div{padding:14px;border-radius:14px;border:1px solid var(--border)}.ladder strong{display:block}.ladder div:nth-child(1){background:var(--observer)}.ladder div:nth-child(2){background:var(--notions)}.ladder div:nth-child(3){background:var(--analyse)}.ladder div:nth-child(4){background:var(--concept)}
+.module{margin:26px 0;padding:0;overflow:hidden;scroll-margin-top:20px}.module-header{display:flex;justify-content:space-between;gap:20px;align-items:center;padding:26px 28px;background:linear-gradient(100deg,var(--card),var(--notions))}.module-header h2{margin:.1em 0;font-size:clamp(1.45rem,3vw,2.2rem)}.module-number{float:left;margin-right:15px;width:52px;height:52px;display:grid;place-items:center;border-radius:16px;background:var(--primary);color:#fff;font-size:1.25rem;font-weight:900}.eyebrow{margin:0;color:var(--muted);font-weight:700;text-transform:uppercase;font-size:.78rem;letter-spacing:.08em}.completion{white-space:nowrap;background:var(--card);border:1px solid var(--border);padding:9px 12px;border-radius:999px}.module-meta{display:flex;flex-wrap:wrap;gap:9px;padding:0 28px 20px}.module-meta span{padding:8px 11px;border-radius:10px;background:var(--bg);font-size:.92rem}
+.phase{padding:25px 28px;border-top:1px solid var(--border)}.phase-title{display:flex;align-items:center;gap:10px}.phase-title>span{display:grid;place-items:center;width:34px;height:34px;border-radius:50%;background:var(--primary);color:#fff;font-weight:900}.phase-title h3{margin:0}.phase-observer{background:var(--observer)}.phase-notions{background:var(--notions)}.phase-analyser{background:var(--analyse)}.phase-concept{background:var(--concept)}.phase-practice{background:var(--card)}
+.code-grid,.two-cols{display:grid;grid-template-columns:1fr 1fr;gap:16px}pre{overflow:auto;padding:16px;border-radius:14px;background:#101725;color:#e9f1ff;tab-size:4}pre.output{background:#222a38;color:#bff6d2}code{font-family:"Cascadia Code","Fira Code",Consolas,monospace}.student-task,.method-box{padding:13px;border-left:5px solid var(--primary);background:rgba(255,255,255,.55);border-radius:8px}
+.vocab-list{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:10px;padding:0;list-style:none}.vocab-list li{padding:13px;background:var(--card);border:1px solid var(--border);border-radius:12px}
+.question{font-weight:700}.answer-btn,.quiz-check,.tool-btn{border:0;border-radius:10px;padding:9px 13px;background:var(--primary);color:#fff;font-weight:700}.answer{margin-top:10px;padding:14px;border-radius:10px;background:var(--card);border:1px dashed var(--primary)}textarea{width:100%;padding:13px;border:1px solid var(--border);background:var(--card);color:var(--text);border-radius:12px;margin:10px 0;resize:vertical}
+.trap{background:var(--danger);box-shadow:none;margin:0}.mini-quiz{box-shadow:none}.quiz-options{display:grid;gap:8px;margin:10px 0}.quiz-options label{padding:8px;border:1px solid var(--border);border-radius:9px}.quiz-feedback.good{color:#08783d;font-weight:800}.quiz-feedback.bad{color:#b3262e;font-weight:800}
+.robot-project{margin:26px 0;padding:25px}.robot-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:24px;align-items:center}.maze-svg{width:100%;height:auto;background:#eef3f8;border-radius:18px;border:1px solid var(--border)}
+.reference{margin:26px 0;padding:24px}table{width:100%;border-collapse:collapse}th,td{padding:10px;border:1px solid var(--border);text-align:left;vertical-align:top}th{background:var(--notions)}
+.flash-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:12px}.flashcard{min-height:150px;perspective:900px;cursor:pointer}.flash-inner{position:relative;width:100%;height:150px;transition:transform .55s;transform-style:preserve-3d}.flashcard.flipped .flash-inner{transform:rotateY(180deg)}.flash-face{position:absolute;inset:0;display:grid;place-items:center;text-align:center;padding:20px;border-radius:16px;border:1px solid var(--border);background:var(--card);backface-visibility:hidden;box-shadow:var(--shadow)}.flash-back{transform:rotateY(180deg);background:var(--concept)}
+.global-eval{margin:26px 0;padding:25px}.eval-question{padding:15px 0;border-bottom:1px solid var(--border)}.fill-row{display:flex;gap:8px;align-items:center;flex-wrap:wrap}.fill-row input{padding:8px;border:1px solid var(--border);border-radius:8px;background:var(--card);color:var(--text)}
+.teacher-only{display:none}body.teacher .teacher-only{display:block}body.teacher .teacher-gated{outline:3px solid #f0a500}.teacher-banner{display:none;background:#332301;color:#fff4c2;padding:10px;text-align:center;position:sticky;top:0;z-index:15}body.teacher .teacher-banner{display:block}
+.sources{font-size:.93rem}.sources li{margin:.6em 0}.site-footer{margin-top:35px;padding:28px;text-align:center;color:var(--muted)}
+@media(max-width:800px){.intro-grid,.code-grid,.two-cols,.robot-grid{grid-template-columns:1fr}.ladder{grid-template-columns:1fr 1fr}.module-header{align-items:flex-start;flex-direction:column}#accessibility-menu{position:static;margin:10px auto;width:max-content}.hero{margin-top:10px;padding:28px}}
+@media(max-width:520px){.ladder{grid-template-columns:1fr}.container{width:min(100% - 16px,1180px)}.phase,.module-header{padding:20px}}
+html.print-dialog-open,
+body.print-dialog-open{
+  overflow:hidden!important;
+}
+
+@media print{
+  @page{
+    size:A4 portrait;
+    margin:12mm;
+  }
+
+  html,
+  body{
+    width:auto!important;
+    min-width:0!important;
+    height:auto!important;
+    overflow:visible!important;
+    background:#fff!important;
+    color:#000!important;
+  }
+
+  body{
+    font-size:10.5pt!important;
+    line-height:1.42!important;
+  }
+
+  main.container{
+    width:auto!important;
+    max-width:none!important;
+    margin:0!important;
+    padding:0!important;
+  }
+
+  #accessibility-menu,
+  .top-nav,
+  .hero-actions,
+  .progress-wrap,
+  .completion,
+  .answer-btn,
+  .quiz-check,
+  .teacher-banner{
+    display:none!important;
+  }
+
+  .hero{
+    margin:0 0 8mm!important;
+    padding:8mm!important;
+    border-radius:0!important;
+    overflow:visible!important;
+    box-shadow:none!important;
+    break-after:avoid-page;
+  }
+
+  /*
+   * Un module complet occupe plusieurs feuilles :
+   * il faut donc autoriser sa coupure entre les pages.
+   */
+  .module{
+    margin:0 0 8mm!important;
+    overflow:visible!important;
+    break-inside:auto!important;
+    page-break-inside:auto!important;
+    box-shadow:none!important;
+  }
+
+  .phase{
+    break-inside:auto!important;
+    page-break-inside:auto!important;
+  }
+
+  .module-header,
+  .module-meta,
+  .phase,
+  .reference,
+  .global-eval,
+  .robot-project,
+  .snt-card,
+  .callout{
+    box-shadow:none!important;
+  }
+
+  /*
+   * En revanche, on évite de couper les petits éléments
+   * dont la lecture doit rester continue.
+   */
+  .module-header,
+  .phase-title,
+  h2,
+  h3,
+  h4,
+  pre,
+  table,
+  .trap,
+  .mini-quiz,
+  .answer{
+    break-inside:avoid!important;
+    page-break-inside:avoid!important;
+  }
+
+  .code-grid,
+  .two-cols,
+  .robot-grid{
+    grid-template-columns:1fr!important;
+  }
+
+  pre{
+    white-space:pre-wrap!important;
+    overflow:visible!important;
+    overflow-wrap:anywhere!important;
+    word-break:break-word!important;
+  }
+
+  textarea{
+    min-height:22mm!important;
+    overflow:visible!important;
+    resize:none!important;
+  }
+
+  .answer[hidden]{
+    display:block!important;
+  }
+
+  /*
+   * Les effets 3D des flashcards sont aplatis pour l'impression :
+   * question et réponse sont imprimées côte à côte.
+   */
+  .flash-grid{
+    display:block!important;
+  }
+
+  .flashcard{
+    min-height:0!important;
+    margin:0 0 4mm!important;
+    break-inside:avoid!important;
+    page-break-inside:avoid!important;
+  }
+
+  .flash-inner{
+    height:auto!important;
+    transform:none!important;
+    display:grid!important;
+    grid-template-columns:1fr 1fr!important;
+    gap:4mm!important;
+  }
+
+  .flash-face{
+    position:static!important;
+    transform:none!important;
+    backface-visibility:visible!important;
+    min-height:28mm!important;
+    box-shadow:none!important;
+  }
+
+  a{
+    color:#000!important;
+    text-decoration:none!important;
+  }
+}
+</style>
+</head>
+<body class="management-page" data-storage-key="python-snt-2de-complet">
+<a class="skip-link" href="#contenu">Aller au contenu</a>
+<div class="teacher-banner">Mode enseignant activé : corrections et repères pédagogiques visibles.</div>
+<div id="accessibility-menu" aria-label="Accessibilité">
+<button type="button" onclick="toggleTheme()" title="Thème">🌙/☀️</button><button type="button" onclick="toggleDys()">Dys</button><button type="button" onclick="fontMinus()">A−</button><button type="button" onclick="fontPlus()">A+</button><button type="button" onclick="resetAccessibility()">↺</button>
+</div>
+<main id="contenu" class="container">
+<header class="page-header">
+
+  <nav class="top-nav">
+    <a href="../../../index.html">🏠 Accueil</a>
+    <a href="../../../acces-enseignant.html">🔒 Espace enseignant</a>
+  </nav>
+
+</header>
+<header class="hero">
+<p class="eyebrow" style="color:#dfe7ff">Sciences numériques et technologie · Seconde</p>
+<h1>🐍 Python avec Néo</h1>
+<p>Un cours complet pour passer de l’observation d’un programme à la conception argumentée d’une solution. Le fil conducteur est un robot virtuel qui doit comprendre son environnement et retrouver la sortie d’un labyrinthe.</p>
+<div class="chips"><span class="chip">Observer</span><span class="chip">Décrire</span><span class="chip">Analyser</span><span class="chip">Diagnostiquer</span><span class="chip">Concevoir</span><span class="chip">Tester</span></div>
+<div class="hero-actions"><a href="#parcours">Commencer le parcours</a><a href="laboratoire-neo/index.html">Ouvrir le laboratoire Néo</a><button type="button" onclick="printCourse()">🖨️ Imprimer</button><button type="button" onclick="toggleTeacher()">👩‍🏫 Mode enseignant</button></div>
+</header>
+
+<div class="progress-wrap"><strong>Progression enregistrée sur cet appareil : <span id="progress-text">0 / 8</span></strong><div class="progress-bar" aria-hidden="true"><span id="progress-fill"></span></div></div>
+
+<div class="intro-grid">
+<section class="snt-card"><h2>🎯 Finalité du parcours</h2><p>À la fin, l’élève doit être capable de lire un programme court, employer le vocabulaire Python, expliquer un comportement, repérer une erreur, formuler un diagnostic et proposer une solution testable.</p><p><strong>Prérequis :</strong> repérage dans un plan, calcul élémentaire, expérience de l’algorithmique au collège.</p></section>
+<section class="snt-card"><h2>🧭 Démarche commune</h2><div class="ladder"><div><strong>1. Observer</strong>Repérer, nommer, décrire.</div><div><strong>2. Notions</strong>Construire le vocabulaire.</div><div><strong>3. Analyser</strong>Expliquer avec des preuves.</div><div><strong>4. Conceptualiser</strong>Diagnostiquer et proposer.</div></div></section>
+</div>
+
+<section id="parcours" class="snt-card"><h2>🚀 Accès rapide aux huit modules</h2><div class="quick-links"><a href="#m1"><span>01</span>Lire un programme et dialoguer avec la machine</a><a href="#m2"><span>02</span>Mémoriser l’état du robot avec des variables</a><a href="#m3"><span>03</span>Prendre une décision avec une condition</a><a href="#m4"><span>04</span>Répéter et contrôler une action avec des boucles</a><a href="#m5"><span>05</span>Organiser des observations avec chaînes et listes</a><a href="#m6"><span>06</span>Décomposer un problème avec des fonctions</a><a href="#m7"><span>07</span>Enrichir un programme avec modules, hasard et graphiques</a><a href="#m8"><span>08</span>Projet intégrateur : guider Néo dans le labyrinthe</a></div></section>
+
+<section class="robot-project snt-card">
+<div class="robot-grid"><div><p class="eyebrow">Situation déclenchante</p><h2>🤖 Néo est perdu</h2><p>Néo connaît quelques commandes, mais aucune stratégie. À chaque étape du parcours, l’élève lui apporte une nouvelle capacité : mémoriser, observer, décider, répéter, conserver une trace, organiser son code et comparer des stratégies.</p><ul><li><code>avancer()</code>, <code>tourner_gauche()</code>, <code>tourner_droite()</code></li><li><code>obstacle_devant()</code>, <code>obstacle_gauche()</code>, <code>obstacle_droite()</code></li><li><code>objectif_atteint()</code>, <code>dire()</code>, <code>position()</code></li></ul><p><a class="tool-btn" href="laboratoire-neo/index.html">Lancer le mini-laboratoire</a></p></div>
+<svg class="maze-svg" viewBox="0 0 520 350" role="img" aria-label="Labyrinthe vu du dessus avec Néo et une sortie verte">
+<defs><pattern id="grid" width="50" height="50" patternUnits="userSpaceOnUse"><rect width="50" height="50" fill="#f5f7fb"/><path d="M50 0H0V50" fill="none" stroke="#d9dfeb"/></pattern></defs><rect x="10" y="10" width="500" height="330" rx="18" fill="url(#grid)"/><g fill="#263448"><rect x="10" y="10" width="500" height="18"/><rect x="10" y="322" width="500" height="18"/><rect x="10" y="10" width="18" height="330"/><rect x="492" y="10" width="18" height="330"/><rect x="110" y="28" width="18" height="145"/><rect x="210" y="92" width="18" height="180"/><rect x="310" y="28" width="18" height="145"/><rect x="410" y="92" width="18" height="230"/><rect x="28" y="172" width="100" height="18"/><rect x="128" y="254" width="100" height="18"/><rect x="228" y="172" width="100" height="18"/><rect x="328" y="254" width="100" height="18"/></g><rect x="445" y="285" width="38" height="28" rx="6" fill="#35b86b"/><text x="464" y="304" text-anchor="middle" font-size="14" fill="white">SORTIE</text><g transform="translate(56 65)"><circle cx="0" cy="0" r="24" fill="#3157d5"/><rect x="-15" y="-10" width="30" height="22" rx="6" fill="#fff"/><circle cx="-7" cy="0" r="3" fill="#3157d5"/><circle cx="7" cy="0" r="3" fill="#3157d5"/><path d="M0 -24L10 -38H-10Z" fill="#ffbe3d"/></g><path d="M82 65 C165 55 145 220 260 220 S370 110 455 285" fill="none" stroke="#e96d51" stroke-width="5" stroke-dasharray="10 9"/><g><rect x="55" y="96" width="165" height="47" rx="18" fill="white" stroke="#3157d5"/><path d="M78 96L68 80L95 96" fill="white" stroke="#3157d5"/><text x="137" y="117" text-anchor="middle" font-size="13" fill="#172033">Que vois-tu ?</text><text x="137" y="135" text-anchor="middle" font-size="12" fill="#3157d5">Un mur à droite.</text></g></svg></div></section>
+
+
+<section id="m1" class="snt-section module" data-module="m1">
+  <div class="module-header">
+    <div><span class="module-number">01</span><p class="eyebrow">Observer et décrire · 1 h</p><h2>Lire un programme et dialoguer avec la machine</h2></div>
+    <label class="completion"><input type="checkbox" class="module-check" data-save="done-m1"> Séance maîtrisée</label>
+  </div>
+  <div class="module-meta"><span>🎯 Faire parler Néo et expliquer, avec le vocabulaire adapté, l’ordre dans lequel les instructions sont exécutées.</span><span>🏷️ SNT.PY.002 · SNT.PY.015 · SNT.PY.016</span></div>
+
+  <div class="phase phase-observer">
+    <div class="phase-title"><span>1</span><h3>👀 Observer et décrire</h3></div>
+    <p>Exécutez mentalement le programme, repérez les éléments et décrivez le résultat sans encore expliquer les mécanismes.</p>
+    <div class="code-grid"><div><h4>Programme observé</h4><pre><code class="language-python">print("Initialisation de Néo")
+print("Capteurs prêts")
+nom = input("Ton prénom : ")
+print("Bonjour", nom)</code></pre></div><div><h4>Trace possible</h4><pre class="output"><code>Initialisation de Néo
+Capteurs prêts
+Ton prénom : Lina
+Bonjour Lina</code></pre></div></div>
+    <div class="student-task"><strong>Consigne d’observation :</strong> entourez les mots-clés, soulignez les variables et numérotez l’ordre d’exécution.</div>
+  </div>
+
+  <div class="phase phase-notions">
+    <div class="phase-title"><span>2</span><h3>📚 Acquérir les notions et le vocabulaire</h3></div>
+    <ul class="vocab-list"><li><strong>Programme</strong> — Suite ordonnée d’instructions exécutées par une machine.</li><li><strong>Instruction</strong> — Commande élémentaire écrite dans le programme.</li><li><strong>Séquence</strong> — Enchaînement d’instructions exécutées dans l’ordre.</li><li><strong>Entrée / sortie</strong> — Une entrée fournit une information au programme ; une sortie restitue un résultat.</li><li><strong>Console</strong> — Zone où s’affichent les messages et les erreurs.</li></ul>
+  </div>
+
+  <div class="phase phase-analyser">
+    <div class="phase-title"><span>3</span><h3>🔍 Analyser de manière structurée</h3></div>
+    <p class="question">Repérez les instructions d’entrée et de sortie. Pourquoi la dernière instruction ne peut-elle pas être placée avant input() ?</p>
+    <button class="answer-btn" aria-expanded="false">Voir l’analyse attendue</button>
+    <div class="answer" hidden>input() est l’entrée : il fournit une valeur au programme. Les trois appels à print() sont des sorties. La dernière instruction utilise la variable nom ; elle doit donc être exécutée après l’affectation réalisée avec input().</div>
+    <div class="method-box"><strong>Méthode :</strong> je cite l’élément observé → je nomme la notion → j’explique son effet → je conclus.</div>
+  </div>
+
+  <div class="phase phase-concept">
+    <div class="phase-title"><span>4</span><h3>🧠 Conceptualiser : diagnostiquer et proposer</h3></div>
+    <p>Le programme affiche « Bonjour » sans prénom. Émettez un diagnostic précis, puis proposez une correction.</p>
+    <textarea class="diagnostic" data-save="diag-m1" rows="5" placeholder="Mon diagnostic argumenté et ma proposition..."></textarea>
+    <button class="answer-btn teacher-gated" aria-expanded="false">Comparer avec une proposition</button>
+    <div class="answer teacher-answer" hidden>Diagnostic : la valeur saisie n’est pas mémorisée ou la variable utilisée n’a pas le même nom. Solution : écrire nom = input(...) puis print("Bonjour", nom).</div>
+  </div>
+
+  <div class="phase phase-practice">
+    <div class="phase-title"><span>5</span><h3>🛠️ Programmer et vérifier</h3></div>
+    <pre><code># Compléter le programme
+print("Démarrage de Néo")
+prenom = __________
+print("Pilote :", __________)</code></pre>
+    <textarea class="code-answer" data-save="code-m1" rows="6" placeholder="Écrivez ici votre solution ou collez le programme testé dans EduPython / Capytale."></textarea>
+    <button class="answer-btn" aria-expanded="false">Afficher les éléments attendus</button>
+    <div class="answer" hidden><code>input("Ton prénom : ") ; prenom</code></div>
+  </div>
+
+  <div class="two-cols">
+    <div class="callout trap"><h3>⚠️ Pièges à éviter</h3><ul><li>Oublier les parenthèses de print() ou input().</li><li>Utiliser une variable avant de lui avoir donné une valeur.</li><li>Croire que Python comprend une phrase libre : il faut respecter la syntaxe.</li></ul></div>
+    <div class="snt-card mini-quiz" data-answer="1"><h3>✅ Contrôle rapide</h3><p>Quelle fonction permet de lire une saisie utilisateur ?</p><div class="quiz-options"><label><input type="radio" name="q-m1" value="0"> A. print()</label><label><input type="radio" name="q-m1" value="1"> B. input()</label><label><input type="radio" name="q-m1" value="2"> C. range()</label></div><button class="quiz-check">Vérifier</button><p class="quiz-feedback" role="status"></p></div>
+  </div>
+</section>
+<section id="m2" class="snt-section module" data-module="m2">
+  <div class="module-header">
+    <div><span class="module-number">02</span><p class="eyebrow">Observer, nommer, comparer · 1 h 15</p><h2>Mémoriser l’état du robot avec des variables</h2></div>
+    <label class="completion"><input type="checkbox" class="module-check" data-save="done-m2"> Séance maîtrisée</label>
+  </div>
+  <div class="module-meta"><span>🎯 Décrire l’état de Néo à l’aide de variables puis mettre à jour cet état après un déplacement.</span><span>🏷️ SNT.PY.001 · SNT.PY.002</span></div>
+
+  <div class="phase phase-observer">
+    <div class="phase-title"><span>1</span><h3>👀 Observer et décrire</h3></div>
+    <p>Exécutez mentalement le programme, repérez les éléments et décrivez le résultat sans encore expliquer les mécanismes.</p>
+    <div class="code-grid"><div><h4>Programme observé</h4><pre><code class="language-python">x = 1
+y = 4
+orientation = "Est"
+batterie = 100
+
+x = x + 1
+batterie = batterie - 2
+print(x, y, orientation, batterie)</code></pre></div><div><h4>Trace possible</h4><pre class="output"><code>2 4 Est 98</code></pre></div></div>
+    <div class="student-task"><strong>Consigne d’observation :</strong> entourez les mots-clés, soulignez les variables et numérotez l’ordre d’exécution.</div>
+  </div>
+
+  <div class="phase phase-notions">
+    <div class="phase-title"><span>2</span><h3>📚 Acquérir les notions et le vocabulaire</h3></div>
+    <ul class="vocab-list"><li><strong>Variable</strong> — Nom associé à une valeur mémorisée.</li><li><strong>Affectation</strong> — Instruction qui associe une valeur à une variable avec =.</li><li><strong>Type</strong> — Nature d’une valeur : entier, nombre décimal, texte, booléen…</li><li><strong>État</strong> — Ensemble des valeurs qui décrivent une situation à un instant donné.</li><li><strong>Expression</strong> — Calcul ou combinaison de valeurs produisant un résultat.</li></ul>
+  </div>
+
+  <div class="phase phase-analyser">
+    <div class="phase-title"><span>3</span><h3>🔍 Analyser de manière structurée</h3></div>
+    <p class="question">Décrivez l’évolution de x et de batterie. Dans x = x + 1, pourquoi le signe = ne signifie-t-il pas « est égal à » au sens mathématique ?</p>
+    <button class="answer-btn" aria-expanded="false">Voir l’analyse attendue</button>
+    <div class="answer" hidden>x passe de 1 à 2 et batterie de 100 à 98. L’affectation évalue d’abord x + 1 avec l’ancienne valeur, puis remplace la valeur de x par le résultat. Le signe = commande une mémorisation ; le test d’égalité s’écrit ==.</div>
+    <div class="method-box"><strong>Méthode :</strong> je cite l’élément observé → je nomme la notion → j’explique son effet → je conclus.</div>
+  </div>
+
+  <div class="phase phase-concept">
+    <div class="phase-title"><span>4</span><h3>🧠 Conceptualiser : diagnostiquer et proposer</h3></div>
+    <p>Néo annonce une batterie de 104 % après trois déplacements. Diagnostiquez la cause probable et proposez une règle de mise à jour fiable.</p>
+    <textarea class="diagnostic" data-save="diag-m2" rows="5" placeholder="Mon diagnostic argumenté et ma proposition..."></textarea>
+    <button class="answer-btn teacher-gated" aria-expanded="false">Comparer avec une proposition</button>
+    <div class="answer teacher-answer" hidden>La batterie a probablement été augmentée au lieu d’être diminuée, ou réinitialisée à chaque déplacement. Une règle cohérente est batterie = batterie - cout, éventuellement complétée par batterie = max(0, batterie).</div>
+  </div>
+
+  <div class="phase phase-practice">
+    <div class="phase-title"><span>5</span><h3>🛠️ Programmer et vérifier</h3></div>
+    <pre><code>x = 2
+y = 3
+batterie = 100
+
+# Néo avance d’une case vers l’Est
+__________
+__________
+print("Position :", x, y)
+print("Batterie :", batterie)</code></pre>
+    <textarea class="code-answer" data-save="code-m2" rows="6" placeholder="Écrivez ici votre solution ou collez le programme testé dans EduPython / Capytale."></textarea>
+    <button class="answer-btn" aria-expanded="false">Afficher les éléments attendus</button>
+    <div class="answer" hidden><code>x = x + 1 ; batterie = batterie - 2</code></div>
+  </div>
+
+  <div class="two-cols">
+    <div class="callout trap"><h3>⚠️ Pièges à éviter</h3><ul><li>Confondre =, qui affecte, et ==, qui compare.</li><li>Changer de nom de variable en cours de programme : batterie puis baterie.</li><li>Mettre les nombres entre guillemets : "100" est un texte, pas un entier.</li></ul></div>
+    <div class="snt-card mini-quiz" data-answer="1"><h3>✅ Contrôle rapide</h3><p>Après x = 3 puis x = x + 2, quelle est la valeur de x ?</p><div class="quiz-options"><label><input type="radio" name="q-m2" value="0"> A. 3</label><label><input type="radio" name="q-m2" value="1"> B. 5</label><label><input type="radio" name="q-m2" value="2"> C. 32</label></div><button class="quiz-check">Vérifier</button><p class="quiz-feedback" role="status"></p></div>
+  </div>
+</section>
+<section id="m3" class="snt-section module" data-module="m3">
+  <div class="module-header">
+    <div><span class="module-number">03</span><p class="eyebrow">Analyser une situation · 1 h 30</p><h2>Prendre une décision avec une condition</h2></div>
+    <label class="completion"><input type="checkbox" class="module-check" data-save="done-m3"> Séance maîtrisée</label>
+  </div>
+  <div class="module-meta"><span>🎯 Programmer une réaction différente selon la présence d’un obstacle et justifier le test choisi.</span><span>🏷️ SNT.PY.003 · SNT.PY.011</span></div>
+
+  <div class="phase phase-observer">
+    <div class="phase-title"><span>1</span><h3>👀 Observer et décrire</h3></div>
+    <p>Exécutez mentalement le programme, repérez les éléments et décrivez le résultat sans encore expliquer les mécanismes.</p>
+    <div class="code-grid"><div><h4>Programme observé</h4><pre><code class="language-python">distance = 12
+
+if distance < 15:
+    print("Obstacle proche")
+    print("Je tourne")
+else:
+    print("Passage libre")
+    print("J’avance")</code></pre></div><div><h4>Trace possible</h4><pre class="output"><code>Obstacle proche
+Je tourne</code></pre></div></div>
+    <div class="student-task"><strong>Consigne d’observation :</strong> entourez les mots-clés, soulignez les variables et numérotez l’ordre d’exécution.</div>
+  </div>
+
+  <div class="phase phase-notions">
+    <div class="phase-title"><span>2</span><h3>📚 Acquérir les notions et le vocabulaire</h3></div>
+    <ul class="vocab-list"><li><strong>Condition</strong> — Expression évaluée comme vraie ou fausse.</li><li><strong>Booléen</strong> — Valeur logique True ou False.</li><li><strong>Comparaison</strong> — Test utilisant par exemple <, >, <=, >=, == ou !=.</li><li><strong>Branche</strong> — Groupe d’instructions choisi selon le résultat d’un test.</li><li><strong>Indentation</strong> — Décalage qui délimite les blocs d’instructions en Python.</li></ul>
+  </div>
+
+  <div class="phase phase-analyser">
+    <div class="phase-title"><span>3</span><h3>🔍 Analyser de manière structurée</h3></div>
+    <p class="question">Pourquoi le programme n’affiche-t-il pas « J’avance » ? Que se passerait-il pour distance = 15 ?</p>
+    <button class="answer-btn" aria-expanded="false">Voir l’analyse attendue</button>
+    <div class="answer" hidden>La condition distance < 15 est vraie pour 12 : seule la branche if est exécutée. Pour 15, le test est faux car 15 n’est pas strictement inférieur à 15 ; la branche else serait exécutée.</div>
+    <div class="method-box"><strong>Méthode :</strong> je cite l’élément observé → je nomme la notion → j’explique son effet → je conclus.</div>
+  </div>
+
+  <div class="phase phase-concept">
+    <div class="phase-title"><span>4</span><h3>🧠 Conceptualiser : diagnostiquer et proposer</h3></div>
+    <p>Néo heurte parfois un mur placé exactement à 15 cm. Émettez un diagnostic sur l’opérateur de comparaison et proposez une correction argumentée.</p>
+    <textarea class="diagnostic" data-save="diag-m3" rows="5" placeholder="Mon diagnostic argumenté et ma proposition..."></textarea>
+    <button class="answer-btn teacher-gated" aria-expanded="false">Comparer avec une proposition</button>
+    <div class="answer teacher-answer" hidden>Le seuil exact n’est pas inclus avec <. Si 15 cm doit déclencher l’arrêt, il faut utiliser distance <= 15. Le choix de l’opérateur traduit précisément la règle du système.</div>
+  </div>
+
+  <div class="phase phase-practice">
+    <div class="phase-title"><span>5</span><h3>🛠️ Programmer et vérifier</h3></div>
+    <pre><code>distance = 8
+
+# Compléter pour éviter l’obstacle
+if __________:
+    print("Je tourne à gauche")
+else:
+    print("J’avance")</code></pre>
+    <textarea class="code-answer" data-save="code-m3" rows="6" placeholder="Écrivez ici votre solution ou collez le programme testé dans EduPython / Capytale."></textarea>
+    <button class="answer-btn" aria-expanded="false">Afficher les éléments attendus</button>
+    <div class="answer" hidden><code>distance <= 15</code></div>
+  </div>
+
+  <div class="two-cols">
+    <div class="callout trap"><h3>⚠️ Pièges à éviter</h3><ul><li>Oublier les deux-points après if ou else.</li><li>Ne pas indenter les instructions du bloc.</li><li>Écrire = au lieu de == dans un test d’égalité.</li><li>Choisir un seuil sans expliquer ce qu’il représente.</li></ul></div>
+    <div class="snt-card mini-quiz" data-answer="1"><h3>✅ Contrôle rapide</h3><p>Quel test inclut la valeur 15 dans la zone de danger ?</p><div class="quiz-options"><label><input type="radio" name="q-m3" value="0"> A. distance < 15</label><label><input type="radio" name="q-m3" value="1"> B. distance <= 15</label><label><input type="radio" name="q-m3" value="2"> C. distance == 0</label></div><button class="quiz-check">Vérifier</button><p class="quiz-feedback" role="status"></p></div>
+  </div>
+</section>
+<section id="m4" class="snt-section module" data-module="m4">
+  <div class="module-header">
+    <div><span class="module-number">04</span><p class="eyebrow">Analyser une évolution · 1 h 30</p><h2>Répéter et contrôler une action avec des boucles</h2></div>
+    <label class="completion"><input type="checkbox" class="module-check" data-save="done-m4"> Séance maîtrisée</label>
+  </div>
+  <div class="module-meta"><span>🎯 Choisir entre une boucle bornée et une boucle conditionnelle pour contrôler le déplacement de Néo.</span><span>🏷️ SNT.PY.004 · SNT.PY.011</span></div>
+
+  <div class="phase phase-observer">
+    <div class="phase-title"><span>1</span><h3>👀 Observer et décrire</h3></div>
+    <p>Exécutez mentalement le programme, repérez les éléments et décrivez le résultat sans encore expliquer les mécanismes.</p>
+    <div class="code-grid"><div><h4>Programme observé</h4><pre><code class="language-python">for etape in range(4):
+    print("Avance", etape + 1)
+
+energie = 3
+while energie > 0:
+    print("Analyse du capteur")
+    energie = energie - 1</code></pre></div><div><h4>Trace possible</h4><pre class="output"><code>Avance 1
+Avance 2
+Avance 3
+Avance 4
+Analyse du capteur
+Analyse du capteur
+Analyse du capteur</code></pre></div></div>
+    <div class="student-task"><strong>Consigne d’observation :</strong> entourez les mots-clés, soulignez les variables et numérotez l’ordre d’exécution.</div>
+  </div>
+
+  <div class="phase phase-notions">
+    <div class="phase-title"><span>2</span><h3>📚 Acquérir les notions et le vocabulaire</h3></div>
+    <ul class="vocab-list"><li><strong>Boucle bornée</strong> — Répétition dont le nombre d’itérations est connu, souvent avec for et range().</li><li><strong>Boucle non bornée</strong> — Répétition poursuivie tant qu’une condition reste vraie, avec while.</li><li><strong>Itération</strong> — Une exécution du corps de la boucle.</li><li><strong>Compteur</strong> — Variable utilisée pour compter les répétitions.</li><li><strong>Condition d’arrêt</strong> — Règle qui permet de sortir d’une boucle.</li></ul>
+  </div>
+
+  <div class="phase phase-analyser">
+    <div class="phase-title"><span>3</span><h3>🔍 Analyser de manière structurée</h3></div>
+    <p class="question">Combien d’itérations réalisent les deux boucles ? Identifiez la condition d’arrêt de la boucle while.</p>
+    <button class="answer-btn" aria-expanded="false">Voir l’analyse attendue</button>
+    <div class="answer" hidden>La boucle for réalise quatre itérations car range(4) produit 0, 1, 2 et 3. La boucle while réalise trois itérations. Sa condition d’arrêt devient fausse lorsque energie atteint 0.</div>
+    <div class="method-box"><strong>Méthode :</strong> je cite l’élément observé → je nomme la notion → j’explique son effet → je conclus.</div>
+  </div>
+
+  <div class="phase phase-concept">
+    <div class="phase-title"><span>4</span><h3>🧠 Conceptualiser : diagnostiquer et proposer</h3></div>
+    <p>Un programme reste bloqué et affiche indéfiniment « Analyse du capteur ». Diagnostiquez le défaut puis proposez deux solutions possibles.</p>
+    <textarea class="diagnostic" data-save="diag-m4" rows="5" placeholder="Mon diagnostic argumenté et ma proposition..."></textarea>
+    <button class="answer-btn teacher-gated" aria-expanded="false">Comparer avec une proposition</button>
+    <div class="answer teacher-answer" hidden>La variable utilisée dans la condition ne change probablement jamais. Solutions : mettre à jour cette variable dans la boucle ; ou ajouter une limite de sécurité avec un compteur maximal.</div>
+  </div>
+
+  <div class="phase phase-practice">
+    <div class="phase-title"><span>5</span><h3>🛠️ Programmer et vérifier</h3></div>
+    <pre><code>actions = 0
+
+# Néo cherche pendant au maximum 10 actions
+while not objectif_atteint() and __________:
+    avancer()
+    __________
+
+print("Actions :", actions)</code></pre>
+    <textarea class="code-answer" data-save="code-m4" rows="6" placeholder="Écrivez ici votre solution ou collez le programme testé dans EduPython / Capytale."></textarea>
+    <button class="answer-btn" aria-expanded="false">Afficher les éléments attendus</button>
+    <div class="answer" hidden><code>actions < 10 ; actions = actions + 1</code></div>
+  </div>
+
+  <div class="two-cols">
+    <div class="callout trap"><h3>⚠️ Pièges à éviter</h3><ul><li>Créer une boucle infinie sans condition d’arrêt contrôlable.</li><li>Modifier la mauvaise variable dans la boucle.</li><li>Croire que range(4) produit 1, 2, 3, 4.</li><li>Oublier que l’indentation détermine ce qui est répété.</li></ul></div>
+    <div class="snt-card mini-quiz" data-answer="0"><h3>✅ Contrôle rapide</h3><p>Quelle boucle convient quand on connaît le nombre de répétitions ?</p><div class="quiz-options"><label><input type="radio" name="q-m4" value="0"> A. for</label><label><input type="radio" name="q-m4" value="1"> B. if</label><label><input type="radio" name="q-m4" value="2"> C. input</label></div><button class="quiz-check">Vérifier</button><p class="quiz-feedback" role="status"></p></div>
+  </div>
+</section>
+<section id="m5" class="snt-section module" data-module="m5">
+  <div class="module-header">
+    <div><span class="module-number">05</span><p class="eyebrow">Décrire des données structurées · 1 h 30</p><h2>Organiser des observations avec chaînes et listes</h2></div>
+    <label class="completion"><input type="checkbox" class="module-check" data-save="done-m5"> Séance maîtrisée</label>
+  </div>
+  <div class="module-meta"><span>🎯 Mémoriser le trajet de Néo, exploiter les indices d’une liste et produire un compte rendu lisible.</span><span>🏷️ SNT.PY.005 · SNT.PY.006 · SNT.PY.007</span></div>
+
+  <div class="phase phase-observer">
+    <div class="phase-title"><span>1</span><h3>👀 Observer et décrire</h3></div>
+    <p>Exécutez mentalement le programme, repérez les éléments et décrivez le résultat sans encore expliquer les mécanismes.</p>
+    <div class="code-grid"><div><h4>Programme observé</h4><pre><code class="language-python">trajet = ["Nord", "Nord", "Est"]
+trajet.append("Sud")
+
+print("Nombre d’actions :", len(trajet))
+print("Première action :", trajet[0])
+print("Dernière action :", trajet[-1])</code></pre></div><div><h4>Trace possible</h4><pre class="output"><code>Nombre d’actions : 4
+Première action : Nord
+Dernière action : Sud</code></pre></div></div>
+    <div class="student-task"><strong>Consigne d’observation :</strong> entourez les mots-clés, soulignez les variables et numérotez l’ordre d’exécution.</div>
+  </div>
+
+  <div class="phase phase-notions">
+    <div class="phase-title"><span>2</span><h3>📚 Acquérir les notions et le vocabulaire</h3></div>
+    <ul class="vocab-list"><li><strong>Chaîne de caractères</strong> — Suite de caractères représentant un texte.</li><li><strong>Liste</strong> — Collection ordonnée et modifiable de valeurs.</li><li><strong>Indice</strong> — Position d’un élément ; le premier indice est 0.</li><li><strong>Parcours</strong> — Lecture successive des éléments d’une collection.</li><li><strong>Méthode append()</strong> — Ajoute une valeur à la fin d’une liste.</li><li><strong>Codage de caractères</strong> — Association entre un caractère et un nombre ; ord() et chr() permettent de l’observer.</li></ul>
+  </div>
+
+  <div class="phase phase-analyser">
+    <div class="phase-title"><span>3</span><h3>🔍 Analyser de manière structurée</h3></div>
+    <p class="question">Pourquoi la première action est-elle trajet[0] ? Expliquez l’effet de append() et de l’indice -1.</p>
+    <button class="answer-btn" aria-expanded="false">Voir l’analyse attendue</button>
+    <div class="answer" hidden>Les indices commencent à 0 en Python. append("Sud") ajoute un quatrième élément sans remplacer les précédents. L’indice -1 désigne le dernier élément de la liste.</div>
+    <div class="method-box"><strong>Méthode :</strong> je cite l’élément observé → je nomme la notion → j’explique son effet → je conclus.</div>
+  </div>
+
+  <div class="phase phase-concept">
+    <div class="phase-title"><span>4</span><h3>🧠 Conceptualiser : diagnostiquer et proposer</h3></div>
+    <p>Le compte rendu de Néo indique une action de moins que la liste observée. Proposez un diagnostic portant sur les indices ou sur le moment de l’ajout.</p>
+    <textarea class="diagnostic" data-save="diag-m5" rows="5" placeholder="Mon diagnostic argumenté et ma proposition..."></textarea>
+    <button class="answer-btn teacher-gated" aria-expanded="false">Comparer avec une proposition</button>
+    <div class="answer teacher-answer" hidden>Le programme peut avoir calculé len(trajet) avant le dernier append(), ou parcouru range(len(trajet)-1), qui exclut le dernier élément. Il faut déplacer le calcul après l’ajout ou parcourir toute la liste.</div>
+  </div>
+
+  <div class="phase phase-practice">
+    <div class="phase-title"><span>5</span><h3>🛠️ Programmer et vérifier</h3></div>
+    <pre><code>mesures = [18, 12, 9, 20]
+alertes = []
+
+for distance in mesures:
+    if distance < 15:
+        __________
+
+print("Nombre d’alertes :", __________)</code></pre>
+    <textarea class="code-answer" data-save="code-m5" rows="6" placeholder="Écrivez ici votre solution ou collez le programme testé dans EduPython / Capytale."></textarea>
+    <button class="answer-btn" aria-expanded="false">Afficher les éléments attendus</button>
+    <div class="answer" hidden><code>alertes.append(distance) ; len(alertes)</code></div>
+  </div>
+
+  <div class="two-cols">
+    <div class="callout trap"><h3>⚠️ Pièges à éviter</h3><ul><li>Confondre l’indice et la valeur.</li><li>Accéder à une position inexistante.</li><li>Modifier une liste pendant qu’on la parcourt sans anticiper les effets.</li><li>Oublier que input() renvoie toujours une chaîne de caractères.</li></ul></div>
+    <div class="snt-card mini-quiz" data-answer="0"><h3>✅ Contrôle rapide</h3><p>Quel est le premier indice d’une liste Python ?</p><div class="quiz-options"><label><input type="radio" name="q-m5" value="0"> A. 0</label><label><input type="radio" name="q-m5" value="1"> B. 1</label><label><input type="radio" name="q-m5" value="2"> C. -1</label></div><button class="quiz-check">Vérifier</button><p class="quiz-feedback" role="status"></p></div>
+  </div>
+</section>
+<section id="m6" class="snt-section module" data-module="m6">
+  <div class="module-header">
+    <div><span class="module-number">06</span><p class="eyebrow">Conceptualiser une solution · 1 h 30</p><h2>Décomposer un problème avec des fonctions</h2></div>
+    <label class="completion"><input type="checkbox" class="module-check" data-save="done-m6"> Séance maîtrisée</label>
+  </div>
+  <div class="module-meta"><span>🎯 Transformer une suite répétitive d’instructions en fonctions nommées, testables et réutilisables.</span><span>🏷️ SNT.PY.012 · SNT.PY.013</span></div>
+
+  <div class="phase phase-observer">
+    <div class="phase-title"><span>1</span><h3>👀 Observer et décrire</h3></div>
+    <p>Exécutez mentalement le programme, repérez les éléments et décrivez le résultat sans encore expliquer les mécanismes.</p>
+    <div class="code-grid"><div><h4>Programme observé</h4><pre><code class="language-python">def est_dangereux(distance, seuil=15):
+    return distance <= seuil
+
+def reagir(distance):
+    if est_dangereux(distance):
+        return "tourner"
+    return "avancer"
+
+print(reagir(8))</code></pre></div><div><h4>Trace possible</h4><pre class="output"><code>tourner</code></pre></div></div>
+    <div class="student-task"><strong>Consigne d’observation :</strong> entourez les mots-clés, soulignez les variables et numérotez l’ordre d’exécution.</div>
+  </div>
+
+  <div class="phase phase-notions">
+    <div class="phase-title"><span>2</span><h3>📚 Acquérir les notions et le vocabulaire</h3></div>
+    <ul class="vocab-list"><li><strong>Fonction</strong> — Bloc nommé réalisant une tâche précise.</li><li><strong>Paramètre</strong> — Nom recevant une valeur lors de l’appel.</li><li><strong>Argument</strong> — Valeur effectivement transmise à une fonction.</li><li><strong>Valeur de retour</strong> — Résultat renvoyé avec return.</li><li><strong>Portée locale</strong> — Une variable créée dans une fonction n’existe normalement que dans cette fonction.</li><li><strong>Décomposition</strong> — Découpage d’un problème complexe en sous-problèmes simples.</li></ul>
+  </div>
+
+  <div class="phase phase-analyser">
+    <div class="phase-title"><span>3</span><h3>🔍 Analyser de manière structurée</h3></div>
+    <p class="question">Distinguez le rôle de est_dangereux() et de reagir(). Quelle valeur est retournée pour une distance de 20 ?</p>
+    <button class="answer-btn" aria-expanded="false">Voir l’analyse attendue</button>
+    <div class="answer" hidden>est_dangereux() produit un booléen en comparant la distance au seuil. reagir() transforme ce diagnostic en décision. Pour 20, le test est faux et reagir() retourne "avancer".</div>
+    <div class="method-box"><strong>Méthode :</strong> je cite l’élément observé → je nomme la notion → j’explique son effet → je conclus.</div>
+  </div>
+
+  <div class="phase phase-concept">
+    <div class="phase-title"><span>4</span><h3>🧠 Conceptualiser : diagnostiquer et proposer</h3></div>
+    <p>Trois parties du programme répètent le même test de distance avec des seuils différents. Émettez un diagnostic de conception et proposez une fonction plus fiable.</p>
+    <textarea class="diagnostic" data-save="diag-m6" rows="5" placeholder="Mon diagnostic argumenté et ma proposition..."></textarea>
+    <button class="answer-btn teacher-gated" aria-expanded="false">Comparer avec une proposition</button>
+    <div class="answer teacher-answer" hidden>La duplication rend les corrections difficiles et peut créer des incohérences. Il faut centraliser la règle dans une fonction paramétrée, par exemple est_dangereux(distance, seuil), puis appeler cette fonction partout.</div>
+  </div>
+
+  <div class="phase phase-practice">
+    <div class="phase-title"><span>5</span><h3>🛠️ Programmer et vérifier</h3></div>
+    <pre><code># Créer une fonction qui renvoie le coût total
+def cout_trajet(nombre_actions, cout_action):
+    __________
+
+resultat = cout_trajet(8, 2)
+print(resultat)</code></pre>
+    <textarea class="code-answer" data-save="code-m6" rows="6" placeholder="Écrivez ici votre solution ou collez le programme testé dans EduPython / Capytale."></textarea>
+    <button class="answer-btn" aria-expanded="false">Afficher les éléments attendus</button>
+    <div class="answer" hidden><code>return nombre_actions * cout_action</code></div>
+  </div>
+
+  <div class="two-cols">
+    <div class="callout trap"><h3>⚠️ Pièges à éviter</h3><ul><li>Confondre afficher avec print() et renvoyer avec return.</li><li>Utiliser une variable locale en dehors de la fonction.</li><li>Créer une fonction trop longue qui accomplit plusieurs tâches différentes.</li><li>Oublier d’appeler la fonction après l’avoir définie.</li></ul></div>
+    <div class="snt-card mini-quiz" data-answer="1"><h3>✅ Contrôle rapide</h3><p>Quel mot-clé renvoie un résultat à l’appelant ?</p><div class="quiz-options"><label><input type="radio" name="q-m6" value="0"> A. print</label><label><input type="radio" name="q-m6" value="1"> B. return</label><label><input type="radio" name="q-m6" value="2"> C. def</label></div><button class="quiz-check">Vérifier</button><p class="quiz-feedback" role="status"></p></div>
+  </div>
+</section>
+<section id="m7" class="snt-section module" data-module="m7">
+  <div class="module-header">
+    <div><span class="module-number">07</span><p class="eyebrow">Choisir un outil adapté · 1 h 30</p><h2>Enrichir un programme avec modules, hasard et graphiques</h2></div>
+    <label class="completion"><input type="checkbox" class="module-check" data-save="done-m7"> Séance maîtrisée</label>
+  </div>
+  <div class="module-meta"><span>🎯 Simuler plusieurs trajets, comparer leurs performances et justifier le choix d’une représentation graphique.</span><span>🏷️ SNT.PY.008 · SNT.PY.009 · SNT.PY.014 · SNT.PY.016</span></div>
+
+  <div class="phase phase-observer">
+    <div class="phase-title"><span>1</span><h3>👀 Observer et décrire</h3></div>
+    <p>Exécutez mentalement le programme, repérez les éléments et décrivez le résultat sans encore expliquer les mécanismes.</p>
+    <div class="code-grid"><div><h4>Programme observé</h4><pre><code class="language-python">from random import randint
+
+resultats = []
+for essai in range(5):
+    actions = randint(8, 20)
+    resultats.append(actions)
+
+print(resultats)
+print("Meilleur résultat :", min(resultats))</code></pre></div><div><h4>Trace possible</h4><pre class="output"><code>Exemple : [13, 8, 19, 12, 16]
+Meilleur résultat : 8</code></pre></div></div>
+    <div class="student-task"><strong>Consigne d’observation :</strong> entourez les mots-clés, soulignez les variables et numérotez l’ordre d’exécution.</div>
+  </div>
+
+  <div class="phase phase-notions">
+    <div class="phase-title"><span>2</span><h3>📚 Acquérir les notions et le vocabulaire</h3></div>
+    <ul class="vocab-list"><li><strong>Module</strong> — Fichier regroupant des fonctions et objets réutilisables.</li><li><strong>Importation</strong> — Instruction donnant accès à un module ou à certains de ses éléments.</li><li><strong>Simulation</strong> — Expérience reproduite par un programme à partir d’un modèle.</li><li><strong>Aléatoire pseudo-aléatoire</strong> — Valeurs produites par un algorithme, utiles pour simuler des situations.</li><li><strong>Visualisation</strong> — Représentation graphique facilitant la comparaison et l’interprétation de données.</li><li><strong>Documentation</strong> — Source décrivant l’usage, les paramètres et les résultats d’un outil.</li></ul>
+  </div>
+
+  <div class="phase phase-analyser">
+    <div class="phase-title"><span>3</span><h3>🔍 Analyser de manière structurée</h3></div>
+    <p class="question">Pourquoi cinq essais sont-ils préférables à un seul ? Quelle information apporte min(resultats) et que ne montre-t-elle pas ?</p>
+    <button class="answer-btn" aria-expanded="false">Voir l’analyse attendue</button>
+    <div class="answer" hidden>Plusieurs essais permettent d’observer la variabilité d’une stratégie aléatoire. min() donne la meilleure performance, mais ne décrit ni la performance moyenne, ni la dispersion, ni la fréquence des mauvais résultats.</div>
+    <div class="method-box"><strong>Méthode :</strong> je cite l’élément observé → je nomme la notion → j’explique son effet → je conclus.</div>
+  </div>
+
+  <div class="phase phase-concept">
+    <div class="phase-title"><span>4</span><h3>🧠 Conceptualiser : diagnostiquer et proposer</h3></div>
+    <p>Deux stratégies obtiennent le même meilleur score, mais l’une échoue souvent. Proposez les indicateurs et le graphique permettant d’établir un diagnostic plus solide.</p>
+    <textarea class="diagnostic" data-save="diag-m7" rows="5" placeholder="Mon diagnostic argumenté et ma proposition..."></textarea>
+    <button class="answer-btn teacher-gated" aria-expanded="false">Comparer avec une proposition</button>
+    <div class="answer teacher-answer" hidden>Il faut comparer au minimum le taux de réussite, la moyenne ou médiane du nombre d’actions et la dispersion. Un diagramme en barres convient aux taux ; un histogramme ou une boîte à moustaches convient à la distribution des nombres d’actions.</div>
+  </div>
+
+  <div class="phase phase-practice">
+    <div class="phase-title"><span>5</span><h3>🛠️ Programmer et vérifier</h3></div>
+    <pre><code>import matplotlib.pyplot as plt
+
+strategies = ["Aléatoire", "Mur à droite"]
+taux_reussite = [42, 95]
+
+# Tracer un diagramme en barres
+plt.__________(strategies, taux_reussite)
+plt.ylabel("Réussite (%)")
+plt.__________()</code></pre>
+    <textarea class="code-answer" data-save="code-m7" rows="6" placeholder="Écrivez ici votre solution ou collez le programme testé dans EduPython / Capytale."></textarea>
+    <button class="answer-btn" aria-expanded="false">Afficher les éléments attendus</button>
+    <div class="answer" hidden><code>bar ; show</code></div>
+  </div>
+
+  <div class="two-cols">
+    <div class="callout trap"><h3>⚠️ Pièges à éviter</h3><ul><li>Importer une bibliothèque sans savoir quelle fonction est utilisée.</li><li>Tirer une conclusion générale à partir d’un seul essai.</li><li>Tracer un graphique sans titre, unité ou légende adaptée.</li><li>Copier du code documentaire sans lire les paramètres.</li></ul></div>
+    <div class="snt-card mini-quiz" data-answer="0"><h3>✅ Contrôle rapide</h3><p>Quel outil compare simplement deux taux de réussite ?</p><div class="quiz-options"><label><input type="radio" name="q-m7" value="0"> A. Un diagramme en barres</label><label><input type="radio" name="q-m7" value="1"> B. Une chaîne de caractères</label><label><input type="radio" name="q-m7" value="2"> C. input()</label></div><button class="quiz-check">Vérifier</button><p class="quiz-feedback" role="status"></p></div>
+  </div>
+</section>
+<section id="m8" class="snt-section module" data-module="m8">
+  <div class="module-header">
+    <div><span class="module-number">08</span><p class="eyebrow">Diagnostiquer et proposer une solution · 2 h 15</p><h2>Projet intégrateur : guider Néo dans le labyrinthe</h2></div>
+    <label class="completion"><input type="checkbox" class="module-check" data-save="done-m8"> Séance maîtrisée</label>
+  </div>
+  <div class="module-meta"><span>🎯 Concevoir, tester et justifier une stratégie permettant à Néo de rejoindre la sortie sans boucle infinie.</span><span>🏷️ SNT.PY.001 · SNT.PY.003 · SNT.PY.004 · SNT.PY.007 · SNT.PY.012 · SNT.PY.014</span></div>
+
+  <div class="phase phase-observer">
+    <div class="phase-title"><span>1</span><h3>👀 Observer et décrire</h3></div>
+    <p>Exécutez mentalement le programme, repérez les éléments et décrivez le résultat sans encore expliquer les mécanismes.</p>
+    <div class="code-grid"><div><h4>Programme observé</h4><pre><code class="language-python">def decision():
+    if not obstacle_droite():
+        tourner_droite()
+        avancer()
+    elif not obstacle_devant():
+        avancer()
+    else:
+        tourner_gauche()
+
+actions = 0
+while not objectif_atteint() and actions < 100:
+    decision()
+    actions = actions + 1</code></pre></div><div><h4>Trace possible</h4><pre class="output"><code>Le robot garde le mur à sa droite.
+La limite de 100 actions évite une exécution sans fin.</code></pre></div></div>
+    <div class="student-task"><strong>Consigne d’observation :</strong> entourez les mots-clés, soulignez les variables et numérotez l’ordre d’exécution.</div>
+  </div>
+
+  <div class="phase phase-notions">
+    <div class="phase-title"><span>2</span><h3>📚 Acquérir les notions et le vocabulaire</h3></div>
+    <ul class="vocab-list"><li><strong>Algorithme</strong> — Description précise et finie d’une méthode de résolution.</li><li><strong>Stratégie</strong> — Règle de décision appliquée de façon cohérente.</li><li><strong>Invariant</strong> — Propriété que l’algorithme cherche à conserver, ici garder un mur à droite.</li><li><strong>Test</strong> — Essai destiné à vérifier le comportement dans une situation déterminée.</li><li><strong>Diagnostic</strong> — Explication fondée sur des observations, des traces et des critères.</li><li><strong>Robustesse</strong> — Capacité à fonctionner malgré des situations variées ou imprévues.</li></ul>
+  </div>
+
+  <div class="phase phase-analyser">
+    <div class="phase-title"><span>3</span><h3>🔍 Analyser de manière structurée</h3></div>
+    <p class="question">Décrivez l’ordre de priorité des trois décisions. À quoi sert la limite actions < 100 ?</p>
+    <button class="answer-btn" aria-expanded="false">Voir l’analyse attendue</button>
+    <div class="answer" hidden>Néo prend d’abord un passage à droite lorsqu’il existe ; sinon il avance si le passage frontal est libre ; sinon il tourne à gauche. La limite constitue une sécurité : elle interrompt le programme si la sortie n’est pas atteinte.</div>
+    <div class="method-box"><strong>Méthode :</strong> je cite l’élément observé → je nomme la notion → j’explique son effet → je conclus.</div>
+  </div>
+
+  <div class="phase phase-concept">
+    <div class="phase-title"><span>4</span><h3>🧠 Conceptualiser : diagnostiquer et proposer</h3></div>
+    <p>Une première stratégie choisit une direction au hasard et réussit 4 fois sur 10. Formulez un diagnostic, proposez une stratégie améliorée, puis indiquez comment la valider expérimentalement.</p>
+    <textarea class="diagnostic" data-save="diag-m8" rows="5" placeholder="Mon diagnostic argumenté et ma proposition..."></textarea>
+    <button class="answer-btn teacher-gated" aria-expanded="false">Comparer avec une proposition</button>
+    <div class="answer teacher-answer" hidden>Diagnostic : le hasard ne conserve aucune information sur la structure du labyrinthe et peut produire des retours inutiles. Solution : appliquer une règle déterministe, mémoriser les cases visitées ou utiliser une recherche systématique. Validation : tester sur plusieurs labyrinthes, relever réussite, nombre d’actions et boucles, puis comparer aux critères.</div>
+  </div>
+
+  <div class="phase phase-practice">
+    <div class="phase-title"><span>5</span><h3>🛠️ Programmer et vérifier</h3></div>
+    <pre><code>def decision():
+    # Priorité : droite, devant, gauche
+    if __________:
+        tourner_droite()
+        avancer()
+    elif __________:
+        avancer()
+    else:
+        tourner_gauche()
+
+actions = 0
+while not objectif_atteint() and actions < 100:
+    __________
+    actions = actions + 1</code></pre>
+    <textarea class="code-answer" data-save="code-m8" rows="6" placeholder="Écrivez ici votre solution ou collez le programme testé dans EduPython / Capytale."></textarea>
+    <button class="answer-btn" aria-expanded="false">Afficher les éléments attendus</button>
+    <div class="answer" hidden><code>not obstacle_droite() ; not obstacle_devant() ; decision()</code></div>
+  </div>
+
+  <div class="two-cols">
+    <div class="callout trap"><h3>⚠️ Pièges à éviter</h3><ul><li>Proposer une solution sans critères de réussite mesurables.</li><li>Utiliser while True sans limite ni justification.</li><li>Confondre « le programme fonctionne une fois » et « la stratégie est robuste ».</li><li>Modifier plusieurs éléments simultanément, ce qui empêche d’identifier la cause d’une amélioration.</li></ul></div>
+    <div class="snt-card mini-quiz" data-answer="1"><h3>✅ Contrôle rapide</h3><p>Pourquoi ajouter actions < 100 ?</p><div class="quiz-options"><label><input type="radio" name="q-m8" value="0"> A. Pour accélérer chaque mouvement</label><label><input type="radio" name="q-m8" value="1"> B. Pour éviter une exécution sans fin</label><label><input type="radio" name="q-m8" value="2"> C. Pour créer une variable texte</label></div><button class="quiz-check">Vérifier</button><p class="quiz-feedback" role="status"></p></div>
+  </div>
+</section>
+
+<section id="reference" class="reference snt-card"><h2>📖 Référence Python SNT</h2><p>Cette référence distingue les éléments indispensables du programme de seconde et les outils complémentaires mobilisables dans les thèmes de SNT.</p>
+<table><thead><tr><th>Besoin</th><th>Syntaxe</th><th>Question de contrôle</th></tr></thead><tbody>
+<tr><td>Mémoriser une valeur</td><td><code>temperature = 21</code></td><td>Quel nom et quel type décrivent cette donnée ?</td></tr>
+<tr><td>Afficher / saisir</td><td><code>print(valeur)</code><br><code>texte = input("...")</code></td><td>L’information entre-t-elle ou sort-elle du programme ?</td></tr>
+<tr><td>Convertir un type</td><td><code>int(texte)</code>, <code>float(texte)</code>, <code>str(nombre)</code></td><td>La valeur est-elle un texte ou un nombre ?</td></tr>
+<tr><td>Tester</td><td><code>if condition:</code> / <code>elif</code> / <code>else</code></td><td>Le test couvre-t-il les valeurs limites ?</td></tr>
+<tr><td>Répéter</td><td><code>for i in range(n):</code><br><code>while condition:</code></td><td>La condition d’arrêt est-elle garantie ?</td></tr>
+<tr><td>Regrouper</td><td><code>liste = []</code><br><code>liste.append(valeur)</code></td><td>Ai-je besoin d’une valeur ou de plusieurs ?</td></tr>
+<tr><td>Décomposer</td><td><code>def fonction(parametre):</code><br><code>return resultat</code></td><td>La fonction accomplit-elle une tâche précise ?</td></tr>
+<tr><td>Importer</td><td><code>import module</code><br><code>from module import fonction</code></td><td>Ai-je vérifié la documentation et la licence ?</td></tr>
+</tbody></table></section>
+
+<section class="reference snt-card"><h2>🩺 Atelier de diagnostic : lire les erreurs</h2><table><thead><tr><th>Message ou symptôme</th><th>Diagnostic probable</th><th>Démarche</th></tr></thead><tbody>
+<tr><td><code>SyntaxError</code></td><td>La phrase Python n’est pas correctement écrite.</td><td>Regarder la ligne indiquée et la ligne précédente : parenthèse, guillemet, deux-points.</td></tr>
+<tr><td><code>IndentationError</code></td><td>Un bloc n’est pas aligné correctement.</td><td>Comparer les retraits après <code>if</code>, <code>for</code>, <code>while</code> ou <code>def</code>.</td></tr>
+<tr><td><code>NameError</code></td><td>Un nom est inconnu ou mal orthographié.</td><td>Vérifier l’affectation antérieure, l’orthographe et la portée.</td></tr>
+<tr><td><code>TypeError</code></td><td>Une opération combine des types incompatibles.</td><td>Afficher <code>type(valeur)</code> et convertir si nécessaire.</td></tr>
+<tr><td>Le programme ne s’arrête pas</td><td>Condition de boucle toujours vraie.</td><td>Tracer les variables de contrôle et ajouter une limite de sécurité.</td></tr>
+<tr><td>Résultat plausible mais faux</td><td>Erreur de logique, de seuil, d’indice ou d’unité.</td><td>Construire des cas tests simples avec résultat connu.</td></tr>
+</tbody></table></section>
+
+<section id="flashcards" class="reference snt-card"><h2>🃏 Flashcards de révision</h2><p>Cliquez sur une carte pour la retourner.</p><div class="flash-grid">
+<div class="flashcard" tabindex="0"><div class="flash-inner"><div class="flash-face">Que fait une affectation ?</div><div class="flash-face flash-back">Elle mémorise une valeur dans une variable.</div></div></div>
+<div class="flashcard" tabindex="0"><div class="flash-inner"><div class="flash-face">Différence entre = et == ?</div><div class="flash-face flash-back"><code>=</code> affecte ; <code>==</code> compare.</div></div></div>
+<div class="flashcard" tabindex="0"><div class="flash-inner"><div class="flash-face">Quand utiliser for ?</div><div class="flash-face flash-back">Quand le nombre de répétitions est connu ou qu’on parcourt une collection.</div></div></div>
+<div class="flashcard" tabindex="0"><div class="flash-inner"><div class="flash-face">Rôle de return ?</div><div class="flash-face flash-back">Renvoyer le résultat d’une fonction à l’appelant.</div></div></div>
+<div class="flashcard" tabindex="0"><div class="flash-inner"><div class="flash-face">Premier indice d’une liste ?</div><div class="flash-face flash-back">0.</div></div></div>
+<div class="flashcard" tabindex="0"><div class="flash-inner"><div class="flash-face">Qu’est-ce qu’un test robuste ?</div><div class="flash-face flash-back">Un ensemble de cas variés, incluant les limites et les erreurs possibles.</div></div></div>
+</div></section>
+
+<section id="evaluation" class="global-eval snt-card"><h2>✅ Évaluation bilan interactive</h2>
+<div class="eval-question"><h3>1. QCM</h3><p>Quelle proposition décrit le mieux une fonction ?</p><label><input type="radio" name="global1" value="0"> Une valeur qui change</label><br><label><input type="radio" name="global1" value="1"> Un bloc nommé, réutilisable et éventuellement paramétré</label><br><label><input type="radio" name="global1" value="2"> Une erreur affichée par Python</label></div>
+<div class="eval-question"><h3>2. Texte à compléter</h3><div class="fill-row">Une <input id="fill1" size="12" aria-label="mot manquant 1"> permet de répéter des instructions, tandis qu’une <input id="fill2" size="12" aria-label="mot manquant 2"> permet de choisir une branche.</div></div>
+<div class="eval-question"><h3>3. Remise en ordre</h3><p>Numérotez mentalement : tester l’obstacle — avancer — mesurer la distance — afficher le diagnostic.</p><button class="answer-btn">Voir un ordre cohérent</button><div class="answer" hidden>1. mesurer la distance ; 2. tester l’obstacle ; 3. afficher le diagnostic ; 4. avancer si la situation le permet.</div></div>
+<div class="eval-question"><h3>4. Diagnostic</h3><pre><code>energie = 3
+while energie > 0:
+    print("Néo avance")</code></pre><textarea data-save="eval-diagnostic" rows="4" placeholder="Expliquez le défaut et proposez une correction..."></textarea></div>
+<button id="global-check" class="quiz-check">Corriger le QCM et le texte</button><p id="global-feedback" role="status"></p>
+</section>
+
+<section class="reference snt-card teacher-only"><h2>👩‍🏫 Repères pour l’enseignant</h2><ul><li><strong>Durée indicative :</strong> 12 heures environ, modulables en séances de 55 minutes.</li><li><strong>Organisation :</strong> binômes avec rôles « pilote » et « observateur », puis inversion à mi-séance.</li><li><strong>Différenciation :</strong> indices progressifs, programmes à trous, extension par mémorisation des cases visitées.</li><li><strong>Évaluation :</strong> distinguer lecture du code, vocabulaire, justification, qualité du diagnostic et robustesse de la solution.</li><li><strong>Trace écrite :</strong> faire compléter la référence au fur et à mesure plutôt que la distribuer intégralement au départ.</li></ul>
+<h3>Grille du projet final</h3><table><thead><tr><th>Critère</th><th>Insuffisant</th><th>Satisfaisant</th><th>Très bonne maîtrise</th></tr></thead><tbody><tr><td>Lecture et vocabulaire</td><td>Repérage imprécis</td><td>Notions correctement nommées</td><td>Explication précise et reliée au code</td></tr><tr><td>Diagnostic</td><td>Constat sans cause</td><td>Cause probable appuyée sur une trace</td><td>Plusieurs hypothèses testées et hiérarchisées</td></tr><tr><td>Solution</td><td>Programme incomplet</td><td>Stratégie fonctionnelle</td><td>Stratégie robuste, structurée et commentée</td></tr><tr><td>Validation</td><td>Un seul essai</td><td>Cas normaux et limites</td><td>Protocole comparatif et indicateurs pertinents</td></tr></tbody></table></section>
+
+<section id="sources" class="reference snt-card sources"><h2>📚 Sources, licences et propriété intellectuelle</h2><p>Les textes pédagogiques, exercices, schémas et SVG de cette page sont des créations originales réalisées pour ce parcours. Aucune image externe n’est incorporée.</p><ul>
+<li><strong>Ministère de l’Éducation nationale et de la Jeunesse</strong>, « Programme de sciences numériques et technologie de seconde générale et technologique », BO spécial n° 1 du 22 janvier 2019. Source institutionnelle utilisée pour les capacités de programmation et les thèmes SNT.</li>
+<li><strong>Éduscol</strong>, « Programmes et ressources en sciences numériques et technologie — voie générale et technologique », page consultée en juillet 2026.</li>
+<li><strong>Python Software Foundation</strong>, Documentation Python 3, tutoriel et documentation des erreurs. Documentation sous Python Software Foundation License Version 2 ; les exemples repris ici sont très courts, adaptés et réécrits.</li>
+<li><strong>Matplotlib Development Team</strong>, documentation et guide de démarrage de Matplotlib. Matplotlib est distribué sous une licence de type BSD compatible avec un usage éducatif.</li>
+</ul><p>Liens : <a href="https://www.education.gouv.fr/bo/19/Special1/MENE1901641A.htm">programme officiel</a> · <a href="https://eduscol.education.gouv.fr/5841/programmes-et-ressources-en-sciences-numeriques-et-technologie-voie-gt">Éduscol SNT</a> · <a href="https://docs.python.org/fr/3/tutorial/">documentation Python</a> · <a href="https://matplotlib.org/stable/users/explain/quick_start.html">guide Matplotlib</a>.</p></section>
+
+<div class="callout"><h2>📌 L’essentiel en 30 secondes</h2><ul><li>Un programme est une séquence d’instructions.</li><li>Les variables décrivent l’état du système.</li><li>Les conditions choisissent une action selon un test.</li><li>Les boucles répètent en contrôlant une condition d’arrêt.</li><li>Les listes regroupent les observations.</li><li>Les fonctions décomposent et réutilisent une solution.</li><li>Un diagnostic s’appuie sur une trace, un vocabulaire précis et des tests.</li><li>Une solution n’est convaincante que si elle est justifiée et validée.</li></ul></div>
+
+<footer class="site-footer">
+
+<p>
+© Thibaud Cousin — Tous droits réservés
+</p>
+
+<p>
+Ressources pédagogiques SNT – Lycée & BTS
+</p>
+
+<p>
+Compatible : ♿ Accessibilité • 🌙 Mode sombre • 🖨️ Impression • 📱 Smartphone
+</p>
+
+<p>
+Compatible avec style.css, fonts.css et accessibility.js
+</p>
+
+<p>
+Les ressources externes éventuellement utilisées restent la propriété de leurs auteurs respectifs.
+</p>
+
+</footer>
+</main>
+<script>
+function setPrintDialogState(active){
+  document.documentElement.classList.toggle('print-dialog-open', active);
+  document.body.classList.toggle('print-dialog-open', active);
+}
+
+function printCourse(){
+  /*
+   * Le document situé derrière l'aperçu natif ne défile plus :
+   * un seul ascenseur reste visible, celui de l'aperçu d'impression.
+   */
+  setPrintDialogState(true);
+  requestAnimationFrame(() => window.print());
+}
+
+window.addEventListener('beforeprint', () => setPrintDialogState(true));
+window.addEventListener('afterprint', () => setPrintDialogState(false));
+
+/*
+ * Repli pour certains navigateurs qui ne déclenchent pas afterprint
+ * lorsque l'utilisateur annule l'impression.
+ */
+window.addEventListener('focus', () => {
+  if(document.documentElement.classList.contains('print-dialog-open')){
+    window.setTimeout(() => setPrintDialogState(false), 250);
+  }
+});
+const STORE='python-snt-2de-complet';
+function getState(){try{return JSON.parse(localStorage.getItem(STORE)||'{}')}catch(e){return {}}}
+function setState(s){localStorage.setItem(STORE,JSON.stringify(s))}
+function saveField(el){const s=getState();s[el.dataset.save]=el.type==='checkbox'?el.checked:el.value;setState(s);updateProgress()}
+function restore(){const s=getState();document.querySelectorAll('[data-save]').forEach(el=>{if(s[el.dataset.save]!==undefined){if(el.type==='checkbox')el.checked=s[el.dataset.save];else el.value=s[el.dataset.save]}});if(s.theme==='dark')document.body.classList.add('dark');if(s.dys)document.body.classList.add('dys');if(s.teacher)document.body.classList.add('teacher');if(s.scale)document.documentElement.style.setProperty('--font-scale',s.scale);updateProgress()}
+function updateProgress(){const checks=[...document.querySelectorAll('.module-check')];const n=checks.filter(c=>c.checked).length;document.getElementById('progress-text').textContent=`${n} / ${checks.length}`;document.getElementById('progress-fill').style.width=`${100*n/checks.length}%`}
+function toggleTheme(){document.body.classList.toggle('dark');const s=getState();s.theme=document.body.classList.contains('dark')?'dark':'light';setState(s)}
+function toggleDys(){document.body.classList.toggle('dys');const s=getState();s.dys=document.body.classList.contains('dys');setState(s)}
+function changeFont(d){const s=getState();let v=parseFloat(s.scale||1);v=Math.min(1.35,Math.max(.85,v+d));s.scale=v;setState(s);document.documentElement.style.setProperty('--font-scale',v)}
+function fontMinus(){changeFont(-.05)} function fontPlus(){changeFont(.05)}
+function resetAccessibility(){const s=getState();delete s.theme;delete s.dys;delete s.scale;setState(s);document.body.classList.remove('dark','dys');document.documentElement.style.setProperty('--font-scale',1)}
+function toggleTeacher(){document.body.classList.toggle('teacher');const s=getState();s.teacher=document.body.classList.contains('teacher');setState(s)}
+document.addEventListener('click',e=>{
+ const b=e.target.closest('.answer-btn');if(b){const a=b.nextElementSibling;if(a&&a.classList.contains('answer')){const show=a.hidden;a.hidden=!show;b.setAttribute('aria-expanded',show);b.textContent=show?'Masquer la correction':(b.dataset.label||'Voir la correction')}}
+ const q=e.target.closest('.quiz-check');if(q&&q.id!=='global-check'){const box=q.closest('.mini-quiz');const chosen=box.querySelector('input:checked');const f=box.querySelector('.quiz-feedback');if(!chosen){f.textContent='Choisissez une réponse.';f.className='quiz-feedback bad';return}const ok=Number(chosen.value)===Number(box.dataset.answer);f.textContent=ok?'Bonne réponse : vous pouvez justifier ce choix.':'Réponse à revoir : relisez la notion et testez un exemple.';f.className='quiz-feedback '+(ok?'good':'bad')}
+ const fc=e.target.closest('.flashcard');if(fc)fc.classList.toggle('flipped');
+});
+document.addEventListener('keydown',e=>{if((e.key==='Enter'||e.key===' ')&&e.target.classList.contains('flashcard')){e.preventDefault();e.target.classList.toggle('flipped')}});
+document.querySelectorAll('[data-save]').forEach(el=>el.addEventListener(el.type==='checkbox'?'change':'input',()=>saveField(el)));
+document.getElementById('global-check').addEventListener('click',()=>{let score=0;const q=document.querySelector('input[name=global1]:checked');if(q&&q.value==='1')score++;const f1=document.getElementById('fill1').value.trim().toLowerCase();const f2=document.getElementById('fill2').value.trim().toLowerCase();if(['boucle','itération'].includes(f1))score++;if(['condition','instruction conditionnelle'].includes(f2))score++;document.getElementById('global-feedback').textContent=`Score : ${score} / 3. ${score===3?'Maîtrise solide.':'Reprenez les cartes et les modules concernés.'}`;});
+restore();
+</script>
+
+</body></html>

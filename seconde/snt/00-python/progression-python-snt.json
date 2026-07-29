@@ -1,0 +1,122 @@
+{
+  "metadata": {
+    "titre": "Python SNT 2de — Observer, analyser, conceptualiser",
+    "version": "2.0",
+    "niveau": "Seconde",
+    "duree_indicative": "12 h",
+    "fil_conducteur": "Néo, robot virtuel dans un labyrinthe"
+  },
+  "demarche": [
+    "Observer et décrire",
+    "Acquérir les notions et le vocabulaire",
+    "Analyser de manière structurée",
+    "Conceptualiser : diagnostiquer et proposer",
+    "Programmer, tester et valider"
+  ],
+  "modules": [
+    {
+      "id": "m1",
+      "num": "01",
+      "title": "Lire un programme et dialoguer avec la machine",
+      "duration": "1 h",
+      "level": "Observer et décrire",
+      "skills": [
+        "SNT.PY.002",
+        "SNT.PY.015",
+        "SNT.PY.016"
+      ],
+      "mission": "Faire parler Néo et expliquer, avec le vocabulaire adapté, l’ordre dans lequel les instructions sont exécutées."
+    },
+    {
+      "id": "m2",
+      "num": "02",
+      "title": "Mémoriser l’état du robot avec des variables",
+      "duration": "1 h 15",
+      "level": "Observer, nommer, comparer",
+      "skills": [
+        "SNT.PY.001",
+        "SNT.PY.002"
+      ],
+      "mission": "Décrire l’état de Néo à l’aide de variables puis mettre à jour cet état après un déplacement."
+    },
+    {
+      "id": "m3",
+      "num": "03",
+      "title": "Prendre une décision avec une condition",
+      "duration": "1 h 30",
+      "level": "Analyser une situation",
+      "skills": [
+        "SNT.PY.003",
+        "SNT.PY.011"
+      ],
+      "mission": "Programmer une réaction différente selon la présence d’un obstacle et justifier le test choisi."
+    },
+    {
+      "id": "m4",
+      "num": "04",
+      "title": "Répéter et contrôler une action avec des boucles",
+      "duration": "1 h 30",
+      "level": "Analyser une évolution",
+      "skills": [
+        "SNT.PY.004",
+        "SNT.PY.011"
+      ],
+      "mission": "Choisir entre une boucle bornée et une boucle conditionnelle pour contrôler le déplacement de Néo."
+    },
+    {
+      "id": "m5",
+      "num": "05",
+      "title": "Organiser des observations avec chaînes et listes",
+      "duration": "1 h 30",
+      "level": "Décrire des données structurées",
+      "skills": [
+        "SNT.PY.005",
+        "SNT.PY.006",
+        "SNT.PY.007"
+      ],
+      "mission": "Mémoriser le trajet de Néo, exploiter les indices d’une liste et produire un compte rendu lisible."
+    },
+    {
+      "id": "m6",
+      "num": "06",
+      "title": "Décomposer un problème avec des fonctions",
+      "duration": "1 h 30",
+      "level": "Conceptualiser une solution",
+      "skills": [
+        "SNT.PY.012",
+        "SNT.PY.013"
+      ],
+      "mission": "Transformer une suite répétitive d’instructions en fonctions nommées, testables et réutilisables."
+    },
+    {
+      "id": "m7",
+      "num": "07",
+      "title": "Enrichir un programme avec modules, hasard et graphiques",
+      "duration": "1 h 30",
+      "level": "Choisir un outil adapté",
+      "skills": [
+        "SNT.PY.008",
+        "SNT.PY.009",
+        "SNT.PY.014",
+        "SNT.PY.016"
+      ],
+      "mission": "Simuler plusieurs trajets, comparer leurs performances et justifier le choix d’une représentation graphique."
+    },
+    {
+      "id": "m8",
+      "num": "08",
+      "title": "Projet intégrateur : guider Néo dans le labyrinthe",
+      "duration": "2 h 15",
+      "level": "Diagnostiquer et proposer une solution",
+      "skills": [
+        "SNT.PY.001",
+        "SNT.PY.003",
+        "SNT.PY.004",
+        "SNT.PY.007",
+        "SNT.PY.012",
+        "SNT.PY.014"
+      ],
+      "mission": "Concevoir, tester et justifier une stratégie permettant à Néo de rejoindre la sortie sans boucle infinie."
+    }
+  ]
+}

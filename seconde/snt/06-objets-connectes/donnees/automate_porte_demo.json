@@ -1,0 +1,56 @@
+{
+  "nom": "Porte automatique fictive",
+  "etats": [
+    "FERMEE",
+    "OUVERTURE",
+    "OUVERTE",
+    "FERMETURE",
+    "BLOQUEE"
+  ],
+  "etat_initial": "FERMEE",
+  "evenements": [
+    "presence_detectee",
+    "fin_ouverture",
+    "temporisation_terminee",
+    "fin_fermeture",
+    "obstacle_detecte",
+    "reinitialisation"
+  ],
+  "transitions": [
+    {
+      "de": "FERMEE",
+      "evenement": "presence_detectee",
+      "vers": "OUVERTURE"
+    },
+    {
+      "de": "OUVERTURE",
+      "evenement": "fin_ouverture",
+      "vers": "OUVERTE"
+    },
+    {
+      "de": "OUVERTE",
+      "evenement": "temporisation_terminee",
+      "vers": "FERMETURE"
+    },
+    {
+      "de": "FERMETURE",
+      "evenement": "fin_fermeture",
+      "vers": "FERMEE"
+    },
+    {
+      "de": "FERMETURE",
+      "evenement": "obstacle_detecte",
+      "vers": "OUVERTURE"
+    },
+    {
+      "de": "OUVERTURE",
+      "evenement": "obstacle_detecte",
+      "vers": "BLOQUEE"
+    },
+    {
+      "de": "BLOQUEE",
+      "evenement": "reinitialisation",
+      "vers": "FERMEE"
+    }
+  ]
+}

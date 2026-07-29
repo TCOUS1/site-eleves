@@ -1,0 +1,75 @@
+{
+  "metadata": {
+    "title": "Internet : faire voyager l’information",
+    "discipline": "SNT",
+    "niveau": "Seconde",
+    "version": "1.0",
+    "duration_minutes": 455
+  },
+  "source_basis": "Programme officiel fourni, pages 4 à 6, thème Internet",
+  "modules": [
+    {
+      "id": "module-01",
+      "title": "Internet, Web et réseaux physiques",
+      "duration_minutes": 55,
+      "capacities": [
+        "Distinguer Internet et Web",
+        "Identifier machines, protocoles et supports"
+      ]
+    },
+    {
+      "id": "module-02",
+      "title": "Adresses IP et DNS",
+      "duration_minutes": 60,
+      "capacities": [
+        "Associer adresse symbolique et adresse IP",
+        "Diagnostiquer une panne DNS"
+      ]
+    },
+    {
+      "id": "module-03",
+      "title": "Paquets, routeurs et routage",
+      "duration_minutes": 75,
+      "capacities": [
+        "Caractériser le routage",
+        "Expliquer ses limites et le TTL"
+      ]
+    },
+    {
+      "id": "module-04",
+      "title": "Fiabilité de transmission avec TCP",
+      "duration_minutes": 60,
+      "capacities": [
+        "Distinguer IP et TCP",
+        "Distinguer fiabilité et garantie temporelle"
+      ]
+    },
+    {
+      "id": "module-05",
+      "title": "Réseaux physiques et performances",
+      "duration_minutes": 55,
+      "capacities": [
+        "Caractériser plusieurs réseaux physiques",
+        "Comparer débit et latence"
+      ]
+    },
+    {
+      "id": "module-06",
+      "title": "Pair-à-pair, neutralité et sécurité",
+      "duration_minutes": 60,
+      "capacities": [
+        "Décrire le pair-à-pair",
+        "Argumenter sur usages et enjeux"
+      ]
+    },
+    {
+      "id": "module-07",
+      "title": "Mission finale de diagnostic",
+      "duration_minutes": 90,
+      "capacities": [
+        "Émettre un diagnostic",
+        "Proposer et valider une solution"
+      ]
+    }
+  ]
+}

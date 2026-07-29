@@ -1,13 +1,2035 @@
 <!DOCTYPE html>
-<html lang='fr'>
+<html lang="fr">
 <head>
-<meta charset='UTF-8'>
-<title>07-photographie-numerique</title>
-<link rel='stylesheet' href='/style.css'>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Chemins modifiables selon l’arborescence du site -->
+  <link rel="stylesheet" href="../../../fonts.css">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="matrice-cours.css">
+  <link rel="stylesheet" href="photographie-numerique.css">
+
+  <script src="accessibility.js" defer></script>
+  <script src="enseignant.js" defer></script>
+  <script src="matrice-cours.js" defer></script>
+  <script src="photographie-numerique.js" defer></script>
+
+  <meta name="description"
+        content="Cours complet SNT seconde sur la photographie numérique : photosites, pixels, RVB, EXIF, compression, traitement d’image en Python et algorithmes de prise de vue.">
+  <title>La photographie numérique — SNT seconde</title>
 </head>
-<body>
-<nav><a href='/index.html'>Accueil</a> | <a href='../index.html'>Retour</a></nav>
-<h1>07-photographie-numerique</h1>
-<ul></ul>
+
+<body class="course-matrix-page"
+      data-storage-key="snt-photographie-numerique-matrice-v1">
+
+<a class="course-skip-link" href="#contenu">Aller au contenu</a>
+
+<div class="course-teacher-banner">
+  Mode enseignant activé : repères pédagogiques visibles.
+</div>
+
+<div id="accessibility-menu" aria-label="Accessibilité">
+  <button type="button" onclick="toggleTheme()" title="Thème">🌙/☀️</button>
+  <button id="btn-dys" type="button" onclick="toggleDys()">Dys</button>
+  <button type="button" onclick="fontMinus()">A−</button>
+  <button type="button" onclick="fontPlus()">A+</button>
+  <button type="button" onclick="resetAccessibility()">↺</button>
+</div>
+
+<main id="contenu" class="course-matrix">
+  <header class="page-header">
+    <nav class="top-nav" aria-label="Navigation principale">
+      <a href="../index.html">🏠 Accueil</a>
+      <a href="../acces-enseignant.html">🔒 Espace enseignant</a>
+    </nav>
+  </header>
+
+  <header class="course-hero photo-hero">
+    <p class="course-eyebrow">Sciences numériques et technologie · Seconde</p>
+    <h1>📷 La photographie numérique</h1>
+
+    <p>Un parcours clé en main pour suivre la lumière jusqu’aux pixels,
+    comprendre les couleurs et les EXIF, comparer la compression et transformer
+    une image par programme.</p>
+
+    <div class="course-chips">
+      <span class="course-chip">Observer</span>
+      <span class="course-chip">Mesurer</span>
+      <span class="course-chip">Coder</span>
+      <span class="course-chip">Transformer</span>
+      <span class="course-chip">Diagnostiquer</span>
+      <span class="course-chip">Publier</span>
+    </div>
+
+    <div class="course-actions">
+      <a href="#parcours">Commencer le parcours</a>
+      <a href="#module-06">Ouvrir le laboratoire de pixels</a>
+      <a href="images/photo_exif_demo.jpg"
+         download>Télécharger la photo EXIF</a>
+      <button type="button" onclick="printCourse()">🖨️ Imprimer</button>
+      <button type="button"
+              onclick="toggleCourseTeacher()">👩‍🏫 Mode enseignant</button>
+    </div>
+  </header>
+
+  <div class="course-progress">
+    <strong>Progression enregistrée sur cet appareil :
+      <span id="course-progress-text">0 / 8</span>
+    </strong>
+
+    <div class="course-progress-track" aria-hidden="true">
+      <span id="course-progress-fill"
+            class="course-progress-fill"></span>
+    </div>
+  </div>
+
+  <div class="course-grid-2">
+    <section class="course-card">
+      <h2>🎯 Finalité du parcours</h2>
+      <p>À la fin, l’élève doit distinguer les photosites du capteur et les
+      pixels de l’image, retrouver les EXIF, transformer les trois composantes
+      des pixels par programme et expliquer les algorithmes de construction de
+      l’image finale.</p>
+
+      <p><strong>Durée indicative :</strong> 10 h 55, adaptable à environ
+      quatre semaines.</p>
+    </section>
+
+    <section class="course-card">
+      <h2>🧭 Démarche commune</h2>
+
+      <div class="course-ladder">
+        <div><strong>1. Observer</strong>Repérer et décrire.</div>
+        <div><strong>2. Notions</strong>Construire le vocabulaire.</div>
+        <div><strong>3. Analyser</strong>Expliquer avec des preuves.</div>
+        <div><strong>4. Conceptualiser</strong>Diagnostiquer et proposer.</div>
+      </div>
+    </section>
+  </div>
+
+  <section id="parcours" class="course-card">
+    <h2>🚀 Accès rapide aux huit modules</h2>
+    <div class="course-quick-links"><a href="#module-01"><span>01</span>De la lumière au fichier</a><a href="#module-02"><span>02</span>Photosites, pixels et résolution</a><a href="#module-03"><span>03</span>Couleurs RVB et Bayer</a><a href="#module-04"><span>04</span>Métadonnées EXIF</a><a href="#module-05"><span>05</span>Formats et compression</a><a href="#module-06"><span>06</span>Traitement par programme</a><a href="#module-07"><span>07</span>Algorithmes de l’appareil</a><a href="#module-08"><span>08</span>Projet photographique</a></div>
+  </section>
+
+  <section class="course-card photo-teacher-help">
+    <h2>🧑‍🏫 Parcours sans dépendance à des photographies externes</h2>
+    <p>Les images, mires, métadonnées et fichiers compressés du paquet sont des
+    créations originales. La séquence peut donc être utilisée immédiatement,
+    sans problème de droit d’auteur ni collecte de photographies personnelles.</p>
+  </section>
+
+
+<section id="module-01"
+         class="course-module"
+         data-module="module-01">
+  <div class="course-module-header">
+    <div>
+      <span class="course-module-number">01</span>
+      <p class="course-eyebrow">Observer la chaîne d’acquisition · 1 h 15</p>
+      <h2>De la lumière au fichier photographique</h2>
+    </div>
+
+    <label class="course-completion">
+      <input type="checkbox"
+             class="course-module-check"
+             data-save="done-module-01">
+      Séance maîtrisée
+    </label>
+  </div>
+
+  <div class="course-meta">
+    <span>🎯 Identifier les étapes physiques et algorithmiques qui conduisent de la scène au fichier.</span>
+    <span>🏷️ Prise de vue · Capteur · Développement numérique</span>
+  </div>
+
+
+<div class="course-phase course-observer">
+  <div class="course-phase-title">
+    <span>1</span><h3>👀 Observer et expérimenter</h3>
+  </div>
+
+<div class="photo-chain">
+  <div class="photo-chain-box"><strong>Scène</strong>lumière réfléchie ou émise</div>
+  <div class="photo-arrow">→</div>
+  <div class="photo-chain-box"><strong>Optique</strong>objectif, ouverture, mise au point</div>
+  <div class="photo-arrow">→</div>
+  <div class="photo-chain-box"><strong>Capteur</strong>matrice de photosites</div>
+  <div class="photo-arrow">→</div>
+  <div class="photo-chain-box"><strong>Conversion</strong>mesures numériques</div>
+  <div class="photo-arrow">→</div>
+  <div class="photo-chain-box"><strong>Image finale</strong>pixels, algorithmes, fichier</div>
+</div>
+
+<div class="photo-lab-grid">
+  <canvas id="acquisition-canvas"
+          class="photo-canvas"
+          width="640"
+          height="420"
+          aria-label="Simulation de prise de vue"></canvas>
+
+  <div class="photo-lab">
+    <h4>Simuler quelques effets de prise de vue</h4>
+
+    <div class="photo-form">
+      <label>Exposition
+        <input id="acquisition-exposure"
+               type="range"
+               min="-2" max="2" step=".25" value="0">
+      </label>
+
+      <label>Balance des blancs
+        <input id="acquisition-balance"
+               type="range"
+               min="-100" max="100" value="0">
+      </label>
+
+      <label>Bruit
+        <input id="acquisition-noise"
+               type="range"
+               min="0" max="70" value="0">
+      </label>
+
+      <label>Flou
+        <input id="acquisition-blur"
+               type="range"
+               min="0" max="8" step=".5" value="0">
+      </label>
+    </div>
+
+    <pre id="acquisition-output" class="photo-output"></pre>
+  </div>
+</div>
+
+<div class="photo-timeline">
+  <div><strong>1826</strong>Première photographie durable connue</div>
+  <div><strong>1900</strong>Développement de la couleur</div>
+  <div><strong>1969</strong>Premiers capteurs CCD</div>
+  <div><strong>1975</strong>Premier prototype d’appareil numérique</div>
+  <div><strong>2007</strong>Diffusion de la photographie sur smartphone</div>
+</div>
+
+</div>
+
+<div class="course-phase course-notions">
+  <div class="course-phase-title">
+    <span>2</span><h3>📚 Acquérir les notions et le vocabulaire</h3>
+  </div>
+
+<ul class="course-vocabulary">
+  <li><strong>Photographie numérique</strong> — Acquisition, traitement et
+  stockage d’une image sous forme de données numériques.</li>
+  <li><strong>Objectif</strong> — Ensemble optique formant une image de la
+  scène sur le capteur.</li>
+  <li><strong>Ouverture</strong> — Taille du passage de lumière dans
+  l’objectif.</li>
+  <li><strong>Temps d’exposition</strong> — Durée pendant laquelle le capteur
+  reçoit la lumière.</li>
+  <li><strong>Sensibilité ISO</strong> — Réglage d’amplification associé à la
+  luminosité et au bruit de l’image.</li>
+  <li><strong>Capteur</strong> — Composant convertissant la lumière en mesures
+  électriques puis numériques.</li>
+  <li><strong>Développement numérique</strong> — Ensemble des traitements
+  transformant les données du capteur en image affichable.</li>
+  <li><strong>Photographie computationnelle</strong> — Utilisation importante
+  d’algorithmes, parfois sur plusieurs prises de vue, pour produire l’image.</li>
+</ul>
+
+</div>
+
+<div class="course-phase course-analysis">
+  <div class="course-phase-title">
+    <span>3</span><h3>🔍 Analyser de manière structurée</h3>
+  </div>
+
+<p class="question">Pourquoi l’image enregistrée n’est-elle pas une copie
+directe et neutre de la lumière reçue par le capteur ?</p>
+
+<button type="button"
+        class="course-answer-button"
+        data-closed-label="Voir l’analyse attendue"
+        aria-expanded="false">Voir l’analyse attendue</button>
+<div class="course-answer" hidden>
+Le capteur produit des mesures qui doivent être converties et interprétées.
+L’appareil calcule notamment les couleurs, l’exposition, la balance des blancs,
+la réduction du bruit, la netteté et la compression. Des réglages et des
+algorithmes différents peuvent produire des images différentes à partir d’une
+même scène.
+</div>
+
+</div>
+
+<div class="course-phase course-concept">
+  <div class="course-phase-title">
+    <span>4</span><h3>🧠 Conceptualiser : diagnostiquer et proposer</h3>
+  </div>
+
+<p>Deux téléphones photographient la même scène, au même endroit et au même
+moment, mais produisent des couleurs, une netteté et un ciel différents.
+Établis plusieurs hypothèses et propose une comparaison équitable.</p>
+
+<textarea data-save="diagnostic-module-01"
+          rows="8"
+          placeholder="Optique, capteur, exposition, HDR, logiciel, écran, protocole..."></textarea>
+
+<button type="button"
+        class="course-answer-button course-teacher-gated"
+        data-closed-label="Comparer avec une proposition"
+        aria-expanded="false">Comparer avec une proposition</button>
+<div class="course-answer" hidden>
+Les objectifs, tailles de capteur, réglages, algorithmes de HDR, réduction du
+bruit et netteté peuvent différer. Il faut comparer les fichiers originaux sur
+le même écran, relever les EXIF, désactiver les filtres artistiques, photographier
+une mire et répéter plusieurs prises de vue dans des conditions contrôlées.
+</div>
+
+</div>
+
+<div class="course-phase course-practice">
+  <div class="course-phase-title">
+    <span>5</span><h3>🛠️ Schématiser et vérifier</h3>
+  </div>
+
+<p>Construis un schéma légendé de l’appareil photo de ton choix. Il doit
+présenter les étapes :</p>
+<ol>
+  <li>entrée de lumière ;</li>
+  <li>formation de l’image par l’optique ;</li>
+  <li>mesure par les photosites ;</li>
+  <li>conversion et traitement ;</li>
+  <li>création du fichier et des métadonnées.</li>
+</ol>
+
+<textarea data-save="production-module-01"
+          rows="8"
+          placeholder="Schéma décrit, réglages et rôle des algorithmes..."></textarea>
+
+</div>
+
+
+  <div class="course-two-columns">
+    <div class="course-callout course-trap">
+      <h3>⚠️ Pièges à éviter</h3>
+      <ul><li>Croire que le capteur produit directement un fichier JPEG terminé.</li><li>Présenter le réglage ISO comme une quantité de lumière entrant dans l’objectif.</li><li>Attribuer toutes les différences entre appareils au seul nombre de mégapixels.</li></ul>
+    </div>
+
+<div class="course-card course-mini-quiz" data-answer="2">
+  <h3>✅ Contrôle rapide</h3>
+  <p>Quelle étape calcule les couleurs et corrige l’image brute ?</p>
+  <div class="course-quiz-options"><label><input type="radio" name="q-photo-01" value="0"> A. La copie du fichier</label><label><input type="radio" name="q-photo-01" value="1"> B. L’impression</label><label><input type="radio" name="q-photo-01" value="2"> C. Le développement numérique</label></div>
+  <button type="button" class="course-quiz-check">Vérifier</button>
+  <p class="course-quiz-feedback" role="status"></p>
+</div>
+
+  </div>
+</section>
+
+<section id="module-02"
+         class="course-module"
+         data-module="module-02">
+  <div class="course-module-header">
+    <div>
+      <span class="course-module-number">02</span>
+      <p class="course-eyebrow">Examiner une image pixel par pixel · 1 h 25</p>
+      <h2>Distinguer photosites, pixels, définition et résolution</h2>
+    </div>
+
+    <label class="course-completion">
+      <input type="checkbox"
+             class="course-module-check"
+             data-save="done-module-02">
+      Séance maîtrisée
+    </label>
+  </div>
+
+  <div class="course-meta">
+    <span>🎯 Comparer les résolutions du capteur et de l’image, puis calculer définition, taille brute et taille d’impression.</span>
+    <span>🏷️ Photosites · Pixels · Résolution · Profondeur</span>
+  </div>
+
+
+<div class="course-phase course-observer">
+  <div class="course-phase-title">
+    <span>1</span><h3>👀 Observer et mesurer</h3>
+  </div>
+
+<div class="photo-pixel-layout">
+  <div>
+    <canvas id="pixel-canvas"
+            class="photo-canvas"
+            width="640"
+            height="480"
+            aria-label="Image de 16 par 12 pixels agrandie"></canvas>
+    <p class="photo-note">Déplace le pointeur sur l’image pour lire les
+    coordonnées et les trois composantes du pixel.</p>
+  </div>
+
+  <div class="photo-pixel-info photo-card">
+    <h4>Pixel sélectionné</h4>
+    <div id="pixel-swatch"
+         class="photo-color-preview">Couleur</div>
+
+    <div class="photo-metadata-grid">
+      <div class="photo-metadata">
+        <strong>Position</strong>
+        <span id="pixel-position">—</span>
+      </div>
+      <div class="photo-metadata">
+        <strong>RVB</strong>
+        <span id="pixel-rgb">—</span>
+      </div>
+      <div class="photo-metadata">
+        <strong>Hexadécimal</strong>
+        <span id="pixel-hex">—</span>
+      </div>
+    </div>
+  </div>
+</div>
+
+<h4>Calculateur de définition et d’impression</h4>
+
+<div class="photo-lab-grid">
+  <div class="photo-lab">
+    <div class="photo-form">
+      <label>Largeur en pixels
+        <input id="resolution-width"
+               type="number" min="1" value="4000">
+      </label>
+
+      <label>Hauteur en pixels
+        <input id="resolution-height"
+               type="number" min="1" value="3000">
+      </label>
+
+      <label>Bits par composante
+        <select id="resolution-bits">
+          <option value="8" selected>8 bits</option>
+          <option value="10">10 bits</option>
+          <option value="12">12 bits</option>
+          <option value="16">16 bits</option>
+        </select>
+      </label>
+
+      <label>Résolution d’impression
+        <input id="resolution-dpi"
+               type="number" min="30" value="300">
+      </label>
+    </div>
+  </div>
+
+  <div>
+    <div class="photo-kpis">
+      <div><strong id="resolution-megapixels"></strong>Définition</div>
+      <div><strong id="resolution-raw"></strong>Taille RVB brute</div>
+      <div><strong id="resolution-print"></strong>Impression</div>
+    </div>
+    <pre id="resolution-output" class="photo-output"></pre>
+  </div>
+</div>
+
+</div>
+
+<div class="course-phase course-notions">
+  <div class="course-phase-title">
+    <span>2</span><h3>📚 Acquérir les notions et le vocabulaire</h3>
+  </div>
+
+<ul class="course-vocabulary">
+  <li><strong>Photosite</strong> — Élément physique du capteur qui mesure une
+  partie de la lumière reçue.</li>
+  <li><strong>Pixel</strong> — Élément de l’image numérique finale décrit par
+  des valeurs de couleur.</li>
+  <li><strong>Dimensions</strong> — Largeur et hauteur de l’image en pixels.</li>
+  <li><strong>Définition</strong> — Nombre total de pixels de l’image.</li>
+  <li><strong>Résolution du capteur</strong> — Nombre de photosites du capteur,
+  souvent annoncé en millions.</li>
+  <li><strong>Résolution d’impression</strong> — Densité de pixels imprimés,
+  souvent exprimée en pixels ou points par pouce.</li>
+  <li><strong>Recadrage</strong> — Suppression d’une partie des pixels de
+  l’image.</li>
+  <li><strong>Rééchantillonnage</strong> — Calcul de nouveaux pixels lors d’un
+  changement de dimensions.</li>
+</ul>
+
+</div>
+
+<div class="course-phase course-analysis">
+  <div class="course-phase-title">
+    <span>3</span><h3>🔍 Analyser de manière structurée</h3>
+  </div>
+
+<p class="question">Pourquoi un capteur annoncé à 48 millions de photosites ne
+produit-il pas toujours des images finales de 48 millions de pixels ?</p>
+
+<button type="button"
+        class="course-answer-button"
+        data-closed-label="Voir l’analyse attendue"
+        aria-expanded="false">Voir l’analyse attendue</button>
+<div class="course-answer" hidden>
+L’appareil peut regrouper plusieurs photosites, recadrer le capteur, corriger
+des bords, changer le ratio ou produire une image de dimensions inférieures
+selon le réglage. Les pixels finaux sont calculés par les algorithmes et leur
+nombre n’est donc pas nécessairement identique au nombre de photosites.
+</div>
+
+</div>
+
+<div class="course-phase course-concept">
+  <div class="course-phase-title">
+    <span>4</span><h3>🧠 Conceptualiser : diagnostiquer et proposer</h3>
+  </div>
+
+<p>Une image de 800 × 600 pixels est annoncée comme « 300 dpi », puis affichée
+sur deux écrans de tailles différentes. Explique ce qui reste identique et ce
+qui change.</p>
+
+<textarea data-save="diagnostic-module-02"
+          rows="8"
+          placeholder="Dimensions, définition, affichage, densité, impression..."></textarea>
+
+<button type="button"
+        class="course-answer-button course-teacher-gated"
+        data-closed-label="Comparer avec une proposition"
+        aria-expanded="false">Comparer avec une proposition</button>
+<div class="course-answer" hidden>
+Le fichier conserve 800 × 600 pixels, soit 480 000 pixels. La taille physique
+à l’écran dépend de l’écran et du zoom ; l’étiquette 300 dpi n’ajoute aucun
+pixel. Pour l’impression, elle propose une taille physique d’environ
+6,8 × 5,1 cm si elle est respectée.
+</div>
+
+</div>
+
+<div class="course-phase course-practice">
+  <div class="course-phase-title">
+    <span>5</span><h3>🛠️ Calculer et vérifier</h3>
+  </div>
+
+<p>À partir de l’inventaire du dossier <code>donnees</code>, compare :</p>
+<ul>
+  <li>les dimensions ;</li>
+  <li>la définition ;</li>
+  <li>le format ;</li>
+  <li>la taille du fichier ;</li>
+  <li>l’effet d’un agrandissement sans lissage.</li>
+</ul>
+
+<textarea data-save="production-module-02"
+          rows="8"
+          placeholder="Calculs et comparaison des fichiers..."></textarea>
+
+</div>
+
+
+  <div class="course-two-columns">
+    <div class="course-callout course-trap">
+      <h3>⚠️ Pièges à éviter</h3>
+      <ul><li>Employer définition et résolution comme des synonymes sans préciser le contexte.</li><li>Confondre un photosite matériel avec un pixel calculé.</li><li>Croire qu’une valeur dpi augmente les dimensions en pixels.</li></ul>
+    </div>
+
+<div class="course-card course-mini-quiz" data-answer="1">
+  <h3>✅ Contrôle rapide</h3>
+  <p>Combien de pixels contient une image de 4000 × 3000 pixels ?</p>
+  <div class="course-quiz-options"><label><input type="radio" name="q-photo-02" value="0"> A. 7 millions</label><label><input type="radio" name="q-photo-02" value="1"> B. 12 millions</label><label><input type="radio" name="q-photo-02" value="2"> C. 24 millions</label></div>
+  <button type="button" class="course-quiz-check">Vérifier</button>
+  <p class="course-quiz-feedback" role="status"></p>
+</div>
+
+  </div>
+</section>
+
+<section id="module-03"
+         class="course-module"
+         data-module="module-03">
+  <div class="course-module-header">
+    <div>
+      <span class="course-module-number">03</span>
+      <p class="course-eyebrow">Manipuler RVB et la mosaïque de Bayer · 1 h 20</p>
+      <h2>Coder les couleurs et reconstruire les pixels</h2>
+    </div>
+
+    <label class="course-completion">
+      <input type="checkbox"
+             class="course-module-check"
+             data-save="done-module-03">
+      Séance maîtrisée
+    </label>
+  </div>
+
+  <div class="course-meta">
+    <span>🎯 Expliquer la profondeur de couleur, la quantification et le passage des photosites filtrés aux pixels RVB.</span>
+    <span>🏷️ RVB · Profondeur · Bayer · Dématriçage</span>
+  </div>
+
+
+<div class="course-phase course-observer">
+  <div class="course-phase-title">
+    <span>1</span><h3>👀 Observer et mélanger</h3>
+  </div>
+
+<div class="photo-lab-grid">
+  <div class="photo-lab">
+    <h4>Mélange et quantification RVB</h4>
+
+    <div class="photo-form">
+      <label>Rouge
+        <input id="color-r"
+               type="range" min="0" max="255" value="210">
+      </label>
+
+      <label>Vert
+        <input id="color-g"
+               type="range" min="0" max="255" value="90">
+      </label>
+
+      <label>Bleu
+        <input id="color-b"
+               type="range" min="0" max="255" value="145">
+      </label>
+
+      <label>Profondeur par composante
+        <select id="color-depth">
+          <option value="1">1 bit</option>
+          <option value="2">2 bits</option>
+          <option value="3">3 bits</option>
+          <option value="4">4 bits</option>
+          <option value="5">5 bits</option>
+          <option value="6">6 bits</option>
+          <option value="7">7 bits</option>
+          <option value="8" selected>8 bits</option>
+        </select>
+      </label>
+    </div>
+
+    <div id="color-preview"
+         class="photo-color-preview"></div>
+  </div>
+
+  <div>
+    <div class="photo-kpis">
+      <div><strong id="color-r-value"></strong>Rouge</div>
+      <div><strong id="color-g-value"></strong>Vert</div>
+      <div><strong id="color-b-value"></strong>Bleu</div>
+      <div><strong id="color-count"></strong>Couleurs possibles</div>
+    </div>
+
+    <pre id="color-output" class="photo-output"></pre>
+  </div>
+</div>
+
+<h4>Une mosaïque de filtres colorés</h4>
+
+<div class="photo-lab-grid">
+  <div id="bayer-grid"
+       class="photo-bayer-grid"
+       aria-label="Mosaïque de Bayer rouge vert bleu"></div>
+
+  <div class="photo-note">
+    <strong>À observer</strong>
+    <p>Chaque photosite mesure principalement une composante derrière son
+    filtre. L’algorithme de dématriçage estime ensuite les composantes manquantes
+    de chaque pixel à partir des photosites voisins.</p>
+    <p>Le motif contient deux fois plus de filtres verts que de rouges ou de
+    bleus dans cette représentation classique.</p>
+  </div>
+</div>
+
+</div>
+
+<div class="course-phase course-notions">
+  <div class="course-phase-title">
+    <span>2</span><h3>📚 Acquérir les notions et le vocabulaire</h3>
+  </div>
+
+<ul class="course-vocabulary">
+  <li><strong>RVB</strong> — Modèle additif décrivant une couleur par ses
+  composantes rouge, verte et bleue.</li>
+  <li><strong>Synthèse additive</strong> — Production de couleurs par addition
+  de lumières colorées.</li>
+  <li><strong>Profondeur de couleur</strong> — Nombre de bits utilisés pour
+  coder les composantes.</li>
+  <li><strong>Quantification</strong> — Remplacement d’une mesure continue par
+  une valeur choisie dans un ensemble fini.</li>
+  <li><strong>Filtre coloré</strong> — Filtre placé devant un photosite pour
+  sélectionner une partie du spectre lumineux.</li>
+  <li><strong>Mosaïque de Bayer</strong> — Organisation fréquente de filtres
+  rouges, verts et bleus sur le capteur.</li>
+  <li><strong>Dématriçage</strong> — Calcul estimant trois composantes de
+  couleur par pixel à partir de mesures voisines.</li>
+  <li><strong>Balance des blancs</strong> — Correction destinée à neutraliser
+  une dominante liée à l’éclairage.</li>
+</ul>
+
+</div>
+
+<div class="course-phase course-analysis">
+  <div class="course-phase-title">
+    <span>3</span><h3>🔍 Analyser de manière structurée</h3>
+  </div>
+
+<p class="question">Pourquoi un photosite placé derrière un filtre rouge ne
+fournit-il pas à lui seul un pixel RVB complet ?</p>
+
+<button type="button"
+        class="course-answer-button"
+        data-closed-label="Voir l’analyse attendue"
+        aria-expanded="false">Voir l’analyse attendue</button>
+<div class="course-answer" hidden>
+Il mesure principalement l’intensité transmise par son filtre rouge. Les
+composantes verte et bleue du pixel final doivent être estimées à partir des
+photosites voisins. Un pixel est donc une donnée calculée, pas toujours la
+copie d’un photosite unique.
+</div>
+
+</div>
+
+<div class="course-phase course-concept">
+  <div class="course-phase-title">
+    <span>4</span><h3>🧠 Conceptualiser : diagnostiquer et proposer</h3>
+  </div>
+
+<p>Une image prise sous une lampe présente une dominante orange. Propose une
+méthode automatique, puis explique un risque d’erreur.</p>
+
+<textarea data-save="diagnostic-module-03"
+          rows="8"
+          placeholder="Zone neutre, moyennes RVB, correction, scène réellement colorée..."></textarea>
+
+<button type="button"
+        class="course-answer-button course-teacher-gated"
+        data-closed-label="Comparer avec une proposition"
+        aria-expanded="false">Comparer avec une proposition</button>
+<div class="course-answer" hidden>
+L’algorithme peut rechercher des zones supposées neutres ou estimer la couleur
+de l’éclairage, puis multiplier différemment les composantes. Il peut se tromper
+si la scène est volontairement dominée par une couleur, par exemple un coucher
+de soleil ou une pièce entièrement orange.
+</div>
+
+</div>
+
+<div class="course-phase course-practice">
+  <div class="course-phase-title">
+    <span>5</span><h3>🛠️ Coder et comparer</h3>
+  </div>
+
+<p>Crée une palette de huit couleurs en indiquant pour chacune :</p>
+<ul>
+  <li>les valeurs RVB ;</li>
+  <li>le code hexadécimal ;</li>
+  <li>le résultat à 2 bits puis à 8 bits par composante ;</li>
+  <li>les couleurs primaires qui sont additionnées.</li>
+</ul>
+
+<textarea data-save="production-module-03"
+          rows="8"
+          placeholder="Palette et observations sur la quantification..."></textarea>
+
+</div>
+
+
+  <div class="course-two-columns">
+    <div class="course-callout course-trap">
+      <h3>⚠️ Pièges à éviter</h3>
+      <ul><li>Confondre synthèse additive d’un écran et mélange de peintures.</li><li>Croire que chaque photosite mesure directement trois couleurs.</li><li>Oublier que réduire la profondeur diminue le nombre de niveaux.</li></ul>
+    </div>
+
+<div class="course-card course-mini-quiz" data-answer="2">
+  <h3>✅ Contrôle rapide</h3>
+  <p>Avec 8 bits par composante, combien de niveaux possède chaque composante ?</p>
+  <div class="course-quiz-options"><label><input type="radio" name="q-photo-03" value="0"> A. 8</label><label><input type="radio" name="q-photo-03" value="1"> B. 128</label><label><input type="radio" name="q-photo-03" value="2"> C. 256</label></div>
+  <button type="button" class="course-quiz-check">Vérifier</button>
+  <p class="course-quiz-feedback" role="status"></p>
+</div>
+
+  </div>
+</section>
+
+<section id="module-04"
+         class="course-module"
+         data-module="module-04">
+  <div class="course-module-header">
+    <div>
+      <span class="course-module-number">04</span>
+      <p class="course-eyebrow">Lire ce que le fichier raconte sur sa prise de vue · 1 h 15</p>
+      <h2>Retrouver les métadonnées EXIF et protéger la localisation</h2>
+    </div>
+
+    <label class="course-completion">
+      <input type="checkbox"
+             class="course-module-check"
+             data-save="done-module-04">
+      Séance maîtrisée
+    </label>
+  </div>
+
+  <div class="course-meta">
+    <span>🎯 Retrouver les métadonnées d’une photographie et évaluer les risques liés à leur publication.</span>
+    <span>🏷️ EXIF · Horodatage · Géolocalisation · Vie privée</span>
+  </div>
+
+
+<div class="course-phase course-observer">
+  <div class="course-phase-title">
+    <span>1</span><h3>👀 Observer et lire</h3>
+  </div>
+
+<div class="photo-metadata-grid">
+  <div class="photo-metadata"><strong>Fichier</strong><span id="demo-meta-file"></span></div>
+  <div class="photo-metadata"><strong>Appareil</strong><span id="demo-meta-device"></span></div>
+  <div class="photo-metadata"><strong>Date</strong><span id="demo-meta-date"></span></div>
+  <div class="photo-metadata"><strong>Exposition</strong><span id="demo-meta-exposure"></span></div>
+  <div class="photo-metadata"><strong>ISO</strong><span id="demo-meta-iso"></span></div>
+  <div class="photo-metadata"><strong>Focale</strong><span id="demo-meta-focal"></span></div>
+  <div class="photo-metadata"><strong>Auteur</strong><span id="demo-meta-author"></span></div>
+  <div class="photo-metadata"><strong>GPS fictif</strong><span id="demo-meta-gps"></span></div>
+</div>
+
+<pre id="metadata-demo-output" class="photo-output"></pre>
+
+<div class="photo-lab-grid">
+  <div class="photo-lab">
+    <h4>Examiner localement un fichier personnel</h4>
+
+    <label>Sélectionner une image
+      <input id="metadata-file"
+             type="file"
+             accept="image/*">
+    </label>
+
+    <p>Aucun fichier n’est transmis : la lecture est effectuée dans le
+    navigateur. Le décodeur intégré ne prend en charge qu’une sélection de
+    balises EXIF JPEG.</p>
+
+    <a href="images/photo_exif_demo.jpg"
+       download
+       class="photo-secondary-button">Télécharger l’exemple EXIF</a>
+  </div>
+
+  <pre id="metadata-local-output"
+       class="photo-output">Sélectionne un fichier pour afficher ses informations.</pre>
+</div>
+
+</div>
+
+<div class="course-phase course-notions">
+  <div class="course-phase-title">
+    <span>2</span><h3>📚 Acquérir les notions et le vocabulaire</h3>
+  </div>
+
+<ul class="course-vocabulary">
+  <li><strong>Métadonnée</strong> — Donnée qui décrit un fichier, sa création
+  ou son contenu.</li>
+  <li><strong>EXIF</strong> — Standard de métadonnées utilisé notamment dans
+  les fichiers issus d’appareils photographiques.</li>
+  <li><strong>Horodatage</strong> — Date et heure associées à la prise de vue
+  ou à une modification.</li>
+  <li><strong>Géolocalisation</strong> — Coordonnées pouvant indiquer le lieu
+  de prise de vue.</li>
+  <li><strong>Données de prise de vue</strong> — Ouverture, durée d’exposition,
+  ISO, focale, orientation…</li>
+  <li><strong>Miniature</strong> — Petite image pouvant être intégrée aux
+  métadonnées ou au fichier.</li>
+  <li><strong>Suppression des métadonnées</strong> — Création d’une copie ne
+  contenant plus certaines informations.</li>
+  <li><strong>Provenance</strong> — Informations sur l’origine et l’historique
+  d’un média.</li>
+</ul>
+
+</div>
+
+<div class="course-phase course-analysis">
+  <div class="course-phase-title">
+    <span>3</span><h3>🔍 Analyser de manière structurée</h3>
+  </div>
+
+<p class="question">Pourquoi retirer les coordonnées GPS avant de publier une
+photo ne suffit-il pas toujours à masquer le lieu ?</p>
+
+<button type="button"
+        class="course-answer-button"
+        data-closed-label="Voir l’analyse attendue"
+        aria-expanded="false">Voir l’analyse attendue</button>
+<div class="course-answer" hidden>
+Le décor visible, un panneau, un monument, une plaque ou le nom du fichier
+peuvent révéler le lieu. D’autres copies peuvent aussi conserver les EXIF.
+La protection demande donc de contrôler à la fois les métadonnées, le contenu
+visible, les destinataires et les versions déjà publiées.
+</div>
+
+</div>
+
+<div class="course-phase course-concept">
+  <div class="course-phase-title">
+    <span>4</span><h3>🧠 Conceptualiser : diagnostiquer et proposer</h3>
+  </div>
+
+<p>Une photographie scolaire contient le nom de l’élève dans les métadonnées,
+la position du domicile et une miniature ancienne qui n’a pas été recadrée.
+Établis une procédure de publication sûre.</p>
+
+<textarea data-save="diagnostic-module-04"
+          rows="9"
+          placeholder="Copie, suppression, recadrage, vérification, autorisation, destinataires..."></textarea>
+
+<button type="button"
+        class="course-answer-button course-teacher-gated"
+        data-closed-label="Comparer avec une proposition"
+        aria-expanded="false">Comparer avec une proposition</button>
+<div class="course-answer" hidden>
+Travailler sur une copie, supprimer les champs non nécessaires et régénérer
+le fichier pour éviter une miniature résiduelle. Vérifier les données avec un
+outil indépendant, contrôler le contenu visible, définir les destinataires et
+respecter les autorisations de publication. Conserver l’original hors ligne si
+nécessaire.
+</div>
+
+</div>
+
+<div class="course-phase course-practice">
+  <div class="course-phase-title">
+    <span>5</span><h3>🛠️ Examiner et vérifier</h3>
+  </div>
+
+<p>Compare les métadonnées du fichier d’exemple avant et après une transformation
+ou un export depuis un logiciel. Relève les champs conservés, modifiés ou
+supprimés.</p>
+
+<textarea data-save="production-module-04"
+          rows="9"
+          placeholder="Fichiers comparés, champs EXIF et conclusion de confidentialité..."></textarea>
+
+</div>
+
+
+  <div class="course-two-columns">
+    <div class="course-callout course-trap">
+      <h3>⚠️ Pièges à éviter</h3>
+      <ul><li>Croire que toutes les images contiennent les mêmes EXIF.</li><li>Publier un original sans vérifier la localisation et l’auteur.</li><li>Considérer les métadonnées comme une preuve infaillible et impossible à modifier.</li></ul>
+    </div>
+
+<div class="course-card course-mini-quiz" data-answer="0">
+  <h3>✅ Contrôle rapide</h3>
+  <p>Quelle information peut être enregistrée dans les EXIF ?</p>
+  <div class="course-quiz-options"><label><input type="radio" name="q-photo-04" value="0"> A. La focale et la date de prise de vue</label><label><input type="radio" name="q-photo-04" value="1"> B. Le mot de passe du réseau social</label><label><input type="radio" name="q-photo-04" value="2"> C. La totalité de la page Web</label></div>
+  <button type="button" class="course-quiz-check">Vérifier</button>
+  <p class="course-quiz-feedback" role="status"></p>
+</div>
+
+  </div>
+</section>
+
+<section id="module-05"
+         class="course-module"
+         data-module="module-05">
+  <div class="course-module-header">
+    <div>
+      <span class="course-module-number">05</span>
+      <p class="course-eyebrow">Comparer volume et qualité · 1 h 15</p>
+      <h2>Choisir un format et comprendre la compression</h2>
+    </div>
+
+    <label class="course-completion">
+      <input type="checkbox"
+             class="course-module-check"
+             data-save="done-module-05">
+      Séance maîtrisée
+    </label>
+  </div>
+
+  <div class="course-meta">
+    <span>🎯 Distinguer formats et compressions avec ou sans perte, puis choisir un export adapté.</span>
+    <span>🏷️ RAW · PNG · JPEG · Compression</span>
+  </div>
+
+
+<div class="course-phase course-observer">
+  <div class="course-phase-title">
+    <span>1</span><h3>👀 Observer et compresser</h3>
+  </div>
+
+<div class="photo-lab-grid">
+  <div>
+    <canvas id="compression-canvas"
+            class="photo-canvas"
+            width="640"
+            height="420"
+            aria-label="Image source pour la compression"></canvas>
+
+    <label>Qualité JPEG
+      <input id="compression-quality"
+             type="range"
+             min="5" max="100" value="85">
+    </label>
+
+    <div class="photo-kpis">
+      <div><strong id="compression-quality-value"></strong>Qualité</div>
+      <div><strong id="compression-size"></strong>Taille obtenue</div>
+    </div>
+  </div>
+
+  <div>
+    <img id="compression-preview"
+         class="photo-compression-preview"
+         alt="Aperçu JPEG compressé">
+
+    <pre id="compression-output" class="photo-output"></pre>
+  </div>
+</div>
+
+<div class="photo-compare">
+  <figure>
+    <img src="images/scene_demo_originale.png"
+         alt="Scène originale PNG">
+    <figcaption>PNG original</figcaption>
+  </figure>
+
+  <figure>
+    <img src="images/scene_demo_qualite_95.jpg"
+         alt="Scène JPEG qualité élevée">
+    <figcaption>JPEG qualité 95</figcaption>
+  </figure>
+
+  <figure>
+    <img src="images/scene_demo_qualite_30.jpg"
+         alt="Scène JPEG qualité faible">
+    <figcaption>JPEG qualité 30</figcaption>
+  </figure>
+</div>
+
+</div>
+
+<div class="course-phase course-notions">
+  <div class="course-phase-title">
+    <span>2</span><h3>📚 Acquérir les notions et le vocabulaire</h3>
+  </div>
+
+<ul class="course-vocabulary">
+  <li><strong>Format</strong> — Convention de représentation et d’organisation
+  des données dans un fichier.</li>
+  <li><strong>RAW</strong> — Données proches des mesures du capteur, dépendantes
+  du matériel et destinées au développement.</li>
+  <li><strong>JPEG</strong> — Famille de codages adaptée aux photographies,
+  couramment utilisée avec perte.</li>
+  <li><strong>PNG</strong> — Format d’image utilisant une compression sans perte
+  et permettant la transparence.</li>
+  <li><strong>Compression</strong> — Réduction du nombre d’octets nécessaires
+  pour stocker ou transmettre.</li>
+  <li><strong>Avec perte</strong> — Compression qui ne permet pas de retrouver
+  exactement toutes les valeurs initiales.</li>
+  <li><strong>Sans perte</strong> — Compression réversible pour les données
+  représentées.</li>
+  <li><strong>Artefact</strong> — Défaut visible introduit ou renforcé par un
+  traitement ou une compression.</li>
+</ul>
+
+</div>
+
+<div class="course-phase course-analysis">
+  <div class="course-phase-title">
+    <span>3</span><h3>🔍 Analyser de manière structurée</h3>
+  </div>
+
+<p class="question">Pourquoi enregistrer plusieurs fois une image JPEG après
+des modifications peut-il dégrader progressivement sa qualité ?</p>
+
+<button type="button"
+        class="course-answer-button"
+        data-closed-label="Voir l’analyse attendue"
+        aria-expanded="false">Voir l’analyse attendue</button>
+<div class="course-answer" hidden>
+Chaque nouvel encodage avec perte peut quantifier et simplifier à nouveau les
+données déjà altérées. Les erreurs s’accumulent, surtout avec une qualité
+faible. Il est préférable de conserver un original ou un format de travail sans
+perte et de produire le JPEG de diffusion à la fin.
+</div>
+
+</div>
+
+<div class="course-phase course-concept">
+  <div class="course-phase-title">
+    <span>4</span><h3>🧠 Conceptualiser : diagnostiquer et proposer</h3>
+  </div>
+
+<p>Un site accepte une image de 2 Mio maximum. La photographie doit rester
+lisible sur un écran mais ne sera pas imprimée. Propose une procédure de
+réduction justifiée.</p>
+
+<textarea data-save="diagnostic-module-05"
+          rows="8"
+          placeholder="Copie, dimensions, recadrage, qualité, comparaison et contrôle..."></textarea>
+
+<button type="button"
+        class="course-answer-button course-teacher-gated"
+        data-closed-label="Comparer avec une proposition"
+        aria-expanded="false">Comparer avec une proposition</button>
+<div class="course-answer" hidden>
+Conserver l’original, recadrer l’inutile, réduire les dimensions à l’usage
+d’écran, puis encoder une copie JPEG avec une qualité suffisante. Comparer la
+taille et les détails importants à 100 %, vérifier les EXIF et ne pas se limiter
+à changer l’extension du fichier.
+</div>
+
+</div>
+
+<div class="course-phase course-practice">
+  <div class="course-phase-title">
+    <span>5</span><h3>🛠️ Comparer et vérifier</h3>
+  </div>
+
+<p>Exécute <code>comparer_compression.py</code> et construis un tableau
+comparant PNG, JPEG qualité élevée et JPEG qualité faible :</p>
+<ul>
+  <li>taille en octets ;</li>
+  <li>dimensions ;</li>
+  <li>pertes visibles ;</li>
+  <li>erreur calculée ;</li>
+  <li>usage conseillé.</li>
+</ul>
+
+<textarea data-save="production-module-05"
+          rows="8"
+          placeholder="Tableau comparatif et choix de format..."></textarea>
+
+</div>
+
+
+  <div class="course-two-columns">
+    <div class="course-callout course-trap">
+      <h3>⚠️ Pièges à éviter</h3>
+      <ul><li>Confondre extension du nom et véritable format du fichier.</li><li>Réenregistrer l’unique original avec une compression destructive.</li><li>Comparer les tailles sans vérifier les dimensions et la qualité.</li></ul>
+    </div>
+
+<div class="course-card course-mini-quiz" data-answer="1">
+  <h3>✅ Contrôle rapide</h3>
+  <p>Quelle affirmation décrit une compression avec perte ?</p>
+  <div class="course-quiz-options"><label><input type="radio" name="q-photo-05" value="0"> A. Elle augmente toujours les dimensions.</label><label><input type="radio" name="q-photo-05" value="1"> B. Elle ne restitue pas exactement toutes les valeurs initiales.</label><label><input type="radio" name="q-photo-05" value="2"> C. Elle supprime nécessairement les métadonnées.</label></div>
+  <button type="button" class="course-quiz-check">Vérifier</button>
+  <p class="course-quiz-feedback" role="status"></p>
+</div>
+
+  </div>
+</section>
+
+<section id="module-06"
+         class="course-module"
+         data-module="module-06">
+  <div class="course-module-header">
+    <div>
+      <span class="course-module-number">06</span>
+      <p class="course-eyebrow">Agir sur les trois composantes des pixels · 1 h 35</p>
+      <h2>Transformer une image par programme</h2>
+    </div>
+
+    <label class="course-completion">
+      <input type="checkbox"
+             class="course-module-check"
+             data-save="done-module-06">
+      Séance maîtrisée
+    </label>
+  </div>
+
+  <div class="course-meta">
+    <span>🎯 Programmer ou expliquer le négatif, les niveaux de gris, le seuillage et l’extraction de contours.</span>
+    <span>🏷️ Traitement d’image · Python · Pixels voisins</span>
+  </div>
+
+
+<div class="course-phase course-observer">
+  <div class="course-phase-title">
+    <span>1</span><h3>👀 Observer et transformer</h3>
+  </div>
+
+<div class="photo-lab-grid">
+  <div>
+    <canvas id="transform-canvas"
+            class="photo-canvas"
+            width="480"
+            height="320"
+            aria-label="Image transformée pixel par pixel"></canvas>
+
+    <canvas id="histogram-canvas"
+            class="photo-histogram"
+            width="600"
+            height="180"
+            aria-label="Histogramme rouge vert bleu"></canvas>
+  </div>
+
+  <div class="photo-lab">
+    <h4>Transformer les composantes des pixels</h4>
+
+    <div class="photo-form">
+      <label>Opération
+        <select id="transform-operation">
+          <option value="original">Original</option>
+          <option value="negative">Négatif</option>
+          <option value="gray-average">Gris par moyenne</option>
+          <option value="gray-luminance">Gris par luminance</option>
+          <option value="threshold">Noir et blanc par seuil</option>
+          <option value="rgb">Multiplication RVB</option>
+          <option value="edges">Extraction de contours</option>
+        </select>
+      </label>
+
+      <label>Seuil
+        <input id="transform-threshold"
+               type="range"
+               min="0" max="255" value="128">
+      </label>
+
+      <label>Rouge
+        <input id="transform-red"
+               type="range"
+               min="0" max="200" value="100">
+      </label>
+
+      <label>Vert
+        <input id="transform-green"
+               type="range"
+               min="0" max="200" value="100">
+      </label>
+
+      <label>Bleu
+        <input id="transform-blue"
+               type="range"
+               min="0" max="200" value="100">
+      </label>
+    </div>
+
+    <pre id="transform-output" class="photo-output"></pre>
+  </div>
+</div>
+
+</div>
+
+<div class="course-phase course-notions">
+  <div class="course-phase-title">
+    <span>2</span><h3>📚 Acquérir les notions et le vocabulaire</h3>
+  </div>
+
+<ul class="course-vocabulary">
+  <li><strong>Traitement d’image</strong> — Algorithme transformant les pixels
+  ou produisant des informations à partir d’eux.</li>
+  <li><strong>Négatif</strong> — Transformation remplaçant chaque composante
+  <code>c</code> par <code>255 − c</code> en 8 bits.</li>
+  <li><strong>Niveau de gris</strong> — Pixel dont les trois composantes sont
+  égales.</li>
+  <li><strong>Luminance</strong> — Mesure calculée de la clarté perçue à partir
+  des composantes.</li>
+  <li><strong>Seuillage</strong> — Classement des pixels de part et d’autre
+  d’une valeur limite.</li>
+  <li><strong>Pixel voisin</strong> — Pixel situé à proximité dans la matrice.</li>
+  <li><strong>Contour</strong> — Zone de forte variation entre pixels voisins.</li>
+  <li><strong>Histogramme</strong> — Répartition du nombre de pixels selon leurs
+  valeurs.</li>
+</ul>
+
+</div>
+
+<div class="course-phase course-analysis">
+  <div class="course-phase-title">
+    <span>3</span><h3>🔍 Analyser de manière structurée</h3>
+  </div>
+
+<p class="question">Pourquoi la moyenne simple
+<code>(R + V + B) / 3</code> et une formule de luminance ne donnent-elles pas
+exactement le même niveau de gris ?</p>
+
+<button type="button"
+        class="course-answer-button"
+        data-closed-label="Voir l’analyse attendue"
+        aria-expanded="false">Voir l’analyse attendue</button>
+<div class="course-answer" hidden>
+La moyenne attribue le même poids aux trois composantes. Une formule de
+luminance donne davantage de poids au vert et moins au bleu pour approcher la
+sensibilité visuelle humaine. Les deux algorithmes sont cohérents mais répondent
+à des modèles différents.
+</div>
+
+</div>
+
+<div class="course-phase course-concept">
+  <div class="course-phase-title">
+    <span>4</span><h3>🧠 Conceptualiser : diagnostiquer et proposer</h3>
+  </div>
+
+<p>Un algorithme de contours détecte trop de détails dans une image bruitée et
+presque aucun dans une image sombre. Établis un diagnostic et propose une
+chaîne de traitement.</p>
+
+<textarea data-save="diagnostic-module-06"
+          rows="9"
+          placeholder="Gris, contraste, réduction du bruit, voisinage, seuil adaptatif, tests..."></textarea>
+
+<button type="button"
+        class="course-answer-button course-teacher-gated"
+        data-closed-label="Comparer avec une proposition"
+        aria-expanded="false">Comparer avec une proposition</button>
+<div class="course-answer" hidden>
+Convertir en luminance, réduire le bruit, éventuellement corriger le contraste,
+puis comparer des voisins sur une zone plus large. Le seuil peut être adapté à
+l’image ou à des régions. On valide sur plusieurs images et on distingue faux
+contours et contours manqués.
+</div>
+
+</div>
+
+<div class="course-phase course-practice">
+  <div class="course-phase-title">
+    <span>5</span><h3>🛠️ Programmer et vérifier</h3>
+  </div>
+
+<p>Exécute et modifie les scripts :</p>
+<ul>
+  <li><code>transformer_pixels.py</code> ;</li>
+  <li><code>extraire_contours.py</code> ;</li>
+  <li><code>analyser_image.py</code>.</li>
+</ul>
+
+<p>Ajoute une transformation personnelle agissant explicitement sur les trois
+composantes RVB et documente son effet.</p>
+
+<textarea data-save="production-module-06"
+          rows="9"
+          placeholder="Algorithme, formule, tests et résultats..."></textarea>
+
+</div>
+
+
+  <div class="course-two-columns">
+    <div class="course-callout course-trap">
+      <h3>⚠️ Pièges à éviter</h3>
+      <ul><li>Modifier l’image source sans conserver l’original.</li><li>Oublier de maintenir les valeurs entre 0 et 255.</li><li>Conclure qu’un contour détecté correspond nécessairement à un objet réel.</li></ul>
+    </div>
+
+<div class="course-card course-mini-quiz" data-answer="0">
+  <h3>✅ Contrôle rapide</h3>
+  <p>Quel négatif correspond à une composante de valeur 40 en 8 bits ?</p>
+  <div class="course-quiz-options"><label><input type="radio" name="q-photo-06" value="0"> A. 215</label><label><input type="radio" name="q-photo-06" value="1"> B. 40</label><label><input type="radio" name="q-photo-06" value="2"> C. 295</label></div>
+  <button type="button" class="course-quiz-check">Vérifier</button>
+  <p class="course-quiz-feedback" role="status"></p>
+</div>
+
+  </div>
+</section>
+
+<section id="module-07"
+         class="course-module"
+         data-module="module-07">
+  <div class="course-module-header">
+    <div>
+      <span class="course-module-number">07</span>
+      <p class="course-eyebrow">Du calcul automatique à la photographie computationnelle · 1 h 20</p>
+      <h2>Expliquer les algorithmes de construction de l’image finale</h2>
+    </div>
+
+    <label class="course-completion">
+      <input type="checkbox"
+             class="course-module-check"
+             data-save="done-module-07">
+      Séance maîtrisée
+    </label>
+  </div>
+
+  <div class="course-meta">
+    <span>🎯 Expliciter les algorithmes de prise de vue et identifier les étapes de construction de l’image finale.</span>
+    <span>🏷️ Exposition · Autofocus · Fusion · Provenance</span>
+  </div>
+
+
+<div class="course-phase course-observer">
+  <div class="course-phase-title">
+    <span>1</span><h3>👀 Observer la chaîne algorithmique</h3>
+  </div>
+
+<div class="photo-pipeline-grid">
+
+<div class="photo-pipeline-step"
+     data-pipeline-card="pipeline-exposure">
+  <label>
+    <input id="pipeline-exposure"
+           type="checkbox"
+           data-pipeline-control
+           checked>
+    <strong>Exposition</strong>
+    Choisir une luminosité exploitable.
+  </label>
+</div>
+
+<div class="photo-pipeline-step"
+     data-pipeline-card="pipeline-focus">
+  <label>
+    <input id="pipeline-focus"
+           type="checkbox"
+           data-pipeline-control
+           checked>
+    <strong>Mise au point</strong>
+    Déterminer la zone nette.
+  </label>
+</div>
+
+<div class="photo-pipeline-step"
+     data-pipeline-card="pipeline-demosaic">
+  <label>
+    <input id="pipeline-demosaic"
+           type="checkbox"
+           data-pipeline-control
+           checked>
+    <strong>Dématriçage</strong>
+    Calculer les pixels RVB.
+  </label>
+</div>
+
+<div class="photo-pipeline-step"
+     data-pipeline-card="pipeline-whitebalance">
+  <label>
+    <input id="pipeline-whitebalance"
+           type="checkbox"
+           data-pipeline-control
+           checked>
+    <strong>Balance des blancs</strong>
+    Corriger une dominante.
+  </label>
+</div>
+
+<div class="photo-pipeline-step"
+     data-pipeline-card="pipeline-denoise">
+  <label>
+    <input id="pipeline-denoise"
+           type="checkbox"
+           data-pipeline-control
+           checked>
+    <strong>Réduction du bruit</strong>
+    Limiter les variations aléatoires.
+  </label>
+</div>
+
+<div class="photo-pipeline-step"
+     data-pipeline-card="pipeline-hdr">
+  <label>
+    <input id="pipeline-hdr"
+           type="checkbox"
+           data-pipeline-control
+           >
+    <strong>Fusion / HDR</strong>
+    Combiner plusieurs expositions.
+  </label>
+</div>
+
+<div class="photo-pipeline-step"
+     data-pipeline-card="pipeline-lens">
+  <label>
+    <input id="pipeline-lens"
+           type="checkbox"
+           data-pipeline-control
+           checked>
+    <strong>Correction optique</strong>
+    Compenser certaines distorsions.
+  </label>
+</div>
+
+<div class="photo-pipeline-step"
+     data-pipeline-card="pipeline-sharpen">
+  <label>
+    <input id="pipeline-sharpen"
+           type="checkbox"
+           data-pipeline-control
+           checked>
+    <strong>Netteté</strong>
+    Renforcer les variations locales.
+  </label>
+</div>
+
+<div class="photo-pipeline-step"
+     data-pipeline-card="pipeline-compress">
+  <label>
+    <input id="pipeline-compress"
+           type="checkbox"
+           data-pipeline-control
+           checked>
+    <strong>Compression</strong>
+    Créer le fichier de diffusion.
+  </label>
+</div>
+
+</div>
+
+<pre id="pipeline-output" class="photo-output"></pre>
+
+<div class="photo-grid-2">
+  <div class="photo-note">
+    <strong>Fusion d’images</strong>
+    <p>Un smartphone peut combiner plusieurs prises pour réduire le bruit,
+    étendre la dynamique, créer un panorama ou améliorer la netteté. L’image
+    finale peut donc ne correspondre à aucun instant unique.</p>
+  </div>
+
+  <div class="photo-warning photo-note">
+    <strong>Image, preuve et confiance</strong>
+    <p>Les retouches, montages et images générées rendent l’examen du contexte,
+    de la source et de la provenance indispensable. Une métadonnée peut aider,
+    mais elle peut aussi manquer ou être modifiée.</p>
+  </div>
+</div>
+
+</div>
+
+<div class="course-phase course-notions">
+  <div class="course-phase-title">
+    <span>2</span><h3>📚 Acquérir les notions et le vocabulaire</h3>
+  </div>
+
+<ul class="course-vocabulary">
+  <li><strong>Exposition automatique</strong> — Calcul de réglages destinés à
+  obtenir une image exploitable.</li>
+  <li><strong>Autofocus</strong> — Algorithme et mécanisme de mise au point
+  automatique.</li>
+  <li><strong>Stabilisation</strong> — Compensation partielle des mouvements
+  de l’appareil.</li>
+  <li><strong>Réduction du bruit</strong> — Traitement limitant les variations
+  indésirables, au risque de lisser des détails.</li>
+  <li><strong>HDR</strong> — Combinaison ou représentation d’une plage étendue
+  de luminosités.</li>
+  <li><strong>Fusion d’images</strong> — Calcul utilisant plusieurs images pour
+  en produire une nouvelle.</li>
+  <li><strong>Retouche</strong> — Modification volontaire d’une image après ou
+  pendant sa construction.</li>
+  <li><strong>Authenticité et provenance</strong> — Informations permettant
+  d’évaluer l’origine et l’historique du média.</li>
+</ul>
+
+</div>
+
+<div class="course-phase course-analysis">
+  <div class="course-phase-title">
+    <span>3</span><h3>🔍 Analyser de manière structurée</h3>
+  </div>
+
+<p class="question">Pourquoi un algorithme de réduction du bruit peut-il
+supprimer de vrais détails de l’image ?</p>
+
+<button type="button"
+        class="course-answer-button"
+        data-closed-label="Voir l’analyse attendue"
+        aria-expanded="false">Voir l’analyse attendue</button>
+<div class="course-answer" hidden>
+Le bruit et certains détails fins sont tous deux des variations locales. Si le
+traitement considère une texture, des cheveux ou des étoiles comme des
+variations aléatoires, il les lisse. Le réglage cherche donc un compromis entre
+bruit visible et conservation des détails.
+</div>
+
+</div>
+
+<div class="course-phase course-concept">
+  <div class="course-phase-title">
+    <span>4</span><h3>🧠 Conceptualiser : diagnostiquer et proposer</h3>
+  </div>
+
+<p>Une photographie très impressionnante circule sans fichier original, sans
+source identifiable et avec des ombres incohérentes. Propose une démarche de
+vérification sans prétendre conclure uniquement à l’œil.</p>
+
+<textarea data-save="diagnostic-module-07"
+          rows="9"
+          placeholder="Source première, recherche, contexte, métadonnées, versions, experts..."></textarea>
+
+<button type="button"
+        class="course-answer-button course-teacher-gated"
+        data-closed-label="Comparer avec une proposition"
+        aria-expanded="false">Comparer avec une proposition</button>
+<div class="course-answer" hidden>
+Rechercher la publication la plus ancienne et son auteur, comparer les versions,
+examiner le contexte et les affirmations associées, vérifier les métadonnées si
+l’original existe et chercher des confirmations indépendantes. Les anomalies
+visuelles sont des indices, pas une preuve suffisante de trucage.
+</div>
+
+</div>
+
+<div class="course-phase course-practice">
+  <div class="course-phase-title">
+    <span>5</span><h3>🛠️ Expliquer et vérifier</h3>
+  </div>
+
+<p>Choisis une fonctionnalité parmi HDR, panorama, mode nuit, portrait ou
+stabilisation. Produis une fiche expliquant :</p>
+<ul>
+  <li>les données d’entrée ;</li>
+  <li>les étapes algorithmiques ;</li>
+  <li>le bénéfice recherché ;</li>
+  <li>les erreurs ou artefacts possibles ;</li>
+  <li>les tests permettant de l’évaluer.</li>
+</ul>
+
+<textarea data-save="production-module-07"
+          rows="9"
+          placeholder="Fiche d’un algorithme photographique..."></textarea>
+
+</div>
+
+
+  <div class="course-two-columns">
+    <div class="course-callout course-trap">
+      <h3>⚠️ Pièges à éviter</h3>
+      <ul><li>Présenter une image finale comme une mesure brute du capteur.</li><li>Croire qu’un traitement améliore tous les détails sans compromis.</li><li>Déclarer une image vraie ou fausse uniquement à partir d’un indice visuel.</li></ul>
+    </div>
+
+<div class="course-card course-mini-quiz" data-answer="1">
+  <h3>✅ Contrôle rapide</h3>
+  <p>Quel procédé peut combiner plusieurs expositions d’une même scène ?</p>
+  <div class="course-quiz-options"><label><input type="radio" name="q-photo-07" value="0"> A. Le DNS</label><label><input type="radio" name="q-photo-07" value="1"> B. Le HDR</label><label><input type="radio" name="q-photo-07" value="2"> C. Le routage IP</label></div>
+  <button type="button" class="course-quiz-check">Vérifier</button>
+  <p class="course-quiz-feedback" role="status"></p>
+</div>
+
+  </div>
+</section>
+
+<section id="module-08"
+         class="course-module"
+         data-module="module-08">
+  <div class="course-module-header">
+    <div>
+      <span class="course-module-number">08</span>
+      <p class="course-eyebrow">Produire, transformer, documenter et publier · 1 h 50</p>
+      <h2>Projet intégrateur : un laboratoire photographique responsable</h2>
+    </div>
+
+    <label class="course-completion">
+      <input type="checkbox"
+             class="course-module-check"
+             data-save="done-module-08">
+      Séance maîtrisée
+    </label>
+  </div>
+
+  <div class="course-meta">
+    <span>🎯 Mobiliser l’ensemble du thème dans une production reproductible, critique et respectueuse des données et des droits.</span>
+    <span>🏷️ Projet · Publication · Archivage · Validation</span>
+  </div>
+
+
+<div class="course-phase course-observer">
+  <div class="course-phase-title">
+    <span>1</span><h3>👀 Observer la mission</h3>
+  </div>
+
+<div class="photo-project-grid">
+  <div class="photo-card">
+    <strong>Mission</strong>
+    <p>Produire une photographie numérique documentée, transformée par un
+    programme et préparée pour une publication responsable.</p>
+  </div>
+
+  <div class="photo-card">
+    <strong>Ressources</strong>
+    <p>Utiliser les images originales fournies ou une photographie autorisée ne
+    révélant aucune donnée personnelle sensible.</p>
+  </div>
+</div>
+
+<div class="photo-lab-grid">
+  <div class="photo-lab">
+    <h4>Préparer le rapport de projet</h4>
+
+    <div class="photo-form">
+      <label>Titre
+        <input id="project-title"
+               value="Laboratoire photographique SNT">
+      </label>
+
+      <label>Objectif
+        <textarea id="project-objective"
+                  rows="3"></textarea>
+      </label>
+
+      <label>Dimensions et définition
+        <input id="project-dimensions"
+               placeholder="ex. 1920 × 1280, 2,46 Mpx">
+      </label>
+
+      <label>Format de diffusion
+        <select id="project-format">
+          <option>PNG</option>
+          <option selected>JPEG</option>
+          <option>TIFF</option>
+        </select>
+      </label>
+
+      <label>Métadonnées conservées ou supprimées
+        <textarea id="project-metadata"
+                  rows="3"></textarea>
+      </label>
+
+      <label>Transformation programmée
+        <textarea id="project-transform"
+                  rows="3"></textarea>
+      </label>
+
+      <label>Algorithmes de l’appareil
+        <textarea id="project-algorithms"
+                  rows="3"></textarea>
+      </label>
+
+      <label>Publication, droits et destinataires
+        <textarea id="project-publication"
+                  rows="3"></textarea>
+      </label>
+
+      <label>Protocole de validation
+        <textarea id="project-validation"
+                  rows="3"></textarea>
+      </label>
+    </div>
+
+    <div class="photo-actions">
+      <button id="project-preview"
+              type="button"
+              class="course-tool-button">Prévisualiser le rapport</button>
+      <button id="project-export"
+              type="button"
+              class="photo-secondary-button">Exporter en JSON</button>
+    </div>
+  </div>
+
+  <pre id="project-output" class="photo-output"></pre>
+</div>
+
+</div>
+
+<div class="course-phase course-notions">
+  <div class="course-phase-title">
+    <span>2</span><h3>📚 Stabiliser les notions</h3>
+  </div>
+
+<ul class="course-vocabulary">
+  <li><strong>Cahier des charges</strong> — Objectif, public, contraintes et
+  critères de réussite du projet.</li>
+  <li><strong>Original</strong> — Fichier source conservé sans écrasement par
+  les transformations de diffusion.</li>
+  <li><strong>Copie de travail</strong> — Version destinée aux transformations
+  et aux essais.</li>
+  <li><strong>Licence et droit d’usage</strong> — Conditions permettant de
+  modifier et diffuser une image.</li>
+  <li><strong>Crédit</strong> — Mention de l’auteur ou de la source.</li>
+  <li><strong>Validation</strong> — Comparaison des résultats à des critères
+  définis.</li>
+  <li><strong>Archivage</strong> — Conservation organisée des fichiers, formats,
+  métadonnées et copies.</li>
+  <li><strong>Sobriété</strong> — Choix de dimensions, formats et duplications
+  adaptés à l’usage réel.</li>
+</ul>
+
+</div>
+
+<div class="course-phase course-analysis">
+  <div class="course-phase-title">
+    <span>3</span><h3>🔍 Analyser l’archivage</h3>
+  </div>
+
+<p class="question">Pourquoi le fichier de publication ne doit-il pas être la
+seule copie conservée du projet ?</p>
+
+<button type="button"
+        class="course-answer-button"
+        data-closed-label="Voir l’analyse attendue"
+        aria-expanded="false">Voir l’analyse attendue</button>
+<div class="course-answer" hidden>
+La publication peut être redimensionnée, compressée et dépourvue de métadonnées.
+Elle ne permet pas toujours une nouvelle édition ou un archivage de qualité.
+Il faut conserver l’original, le code ou les réglages, une copie de travail et
+la documentation, selon une politique de sauvegarde proportionnée.
+</div>
+
+</div>
+
+<div class="course-phase course-concept">
+  <div class="course-phase-title">
+    <span>4</span><h3>🧠 Conceptualiser : diagnostiquer et proposer</h3>
+  </div>
+
+<p>Le projet final est techniquement réussi, mais utilise une photo trouvée en
+ligne sans auteur, conserve une position GPS privée et ne documente pas les
+transformations. Reformule le processus de production.</p>
+
+<textarea data-save="diagnostic-module-08"
+          rows="10"
+          placeholder="Source, autorisation, original, métadonnées, code, export, crédit..."></textarea>
+
+<button type="button"
+        class="course-answer-button course-teacher-gated"
+        data-closed-label="Comparer avec une proposition"
+        aria-expanded="false">Comparer avec une proposition</button>
+<div class="course-answer" hidden>
+Utiliser une image originale ou sous licence compatible, conserver la source et
+le crédit, travailler sur une copie, documenter le code et les paramètres,
+retirer les données non nécessaires, puis produire un export adapté. Le rapport
+doit permettre de reproduire la transformation et d’identifier ses limites.
+</div>
+
+</div>
+
+<div class="course-phase course-practice">
+  <div class="course-phase-title">
+    <span>5</span><h3>🛠️ Produire et valider</h3>
+  </div>
+
+<h4>Livrables attendus</h4>
+
+<ol>
+  <li>image originale ou source autorisée ;</li>
+  <li>fiche des dimensions, pixels et profondeur ;</li>
+  <li>métadonnées analysées ;</li>
+  <li>programme transformant les composantes RVB ;</li>
+  <li>image obtenue et histogramme ;</li>
+  <li>comparaison d’au moins deux formats ou qualités ;</li>
+  <li>explication des algorithmes de construction ;</li>
+  <li>version de publication sans donnée excessive ;</li>
+  <li>sources, droits et crédits ;</li>
+  <li>protocole de validation.</li>
+</ol>
+
+<table class="photo-rubric">
+  <thead>
+    <tr><th>Dimension</th><th>Réussite attendue</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>Acquisition</td><td>Étapes physiques et algorithmiques correctement distinguées.</td></tr>
+    <tr><td>Pixels</td><td>Photosites, pixels, définition, résolution et profondeur maîtrisés.</td></tr>
+    <tr><td>Métadonnées</td><td>EXIF retrouvées et risques de publication analysés.</td></tr>
+    <tr><td>Programme</td><td>Transformation explicite des composantes RVB.</td></tr>
+    <tr><td>Formats</td><td>Compression et export adaptés à l’usage.</td></tr>
+    <tr><td>Esprit critique</td><td>Provenance, retouche et limites discutées.</td></tr>
+    <tr><td>Droits</td><td>Source, licence, autorisations et crédits indiqués.</td></tr>
+    <tr><td>Validation</td><td>Résultats comparés à des critères et reproductibles.</td></tr>
+  </tbody>
+</table>
+
+</div>
+
+
+  <div class="course-two-columns">
+    <div class="course-callout course-trap">
+      <h3>⚠️ Pièges à éviter</h3>
+      <ul><li>Écraser l’original avec la version compressée.</li><li>Diffuser une image sans vérifier droits, personnes et localisation.</li><li>Présenter une transformation sans conserver le code ou les paramètres.</li></ul>
+    </div>
+
+<div class="course-card course-mini-quiz" data-answer="2">
+  <h3>✅ Contrôle rapide</h3>
+  <p>Quel ensemble permet le mieux de reproduire une transformation ?</p>
+  <div class="course-quiz-options"><label><input type="radio" name="q-photo-08" value="0"> A. Seulement l’image finale</label><label><input type="radio" name="q-photo-08" value="1"> B. Seulement le nom du logiciel</label><label><input type="radio" name="q-photo-08" value="2"> C. L’original, le code ou les réglages et la documentation</label></div>
+  <button type="button" class="course-quiz-check">Vérifier</button>
+  <p class="course-quiz-feedback" role="status"></p>
+</div>
+
+  </div>
+</section>
+
+
+  <section class="course-card">
+    <h2>🧠 Réviser avec des flashcards</h2>
+    <p>Clique ou utilise la touche Entrée pour retourner une carte.</p>
+    <div class="course-flash-grid">
+<article class="course-flashcard"
+         role="button"
+         tabindex="0"
+         aria-pressed="false"
+         aria-label="Retourner la carte">
+  <div class="course-flash-inner">
+    <div class="course-flash-face"><strong>Photosite</strong></div>
+    <div class="course-flash-face course-flash-back">Élément physique du capteur qui mesure une partie de la lumière.</div>
+  </div>
+</article>
+
+<article class="course-flashcard"
+         role="button"
+         tabindex="0"
+         aria-pressed="false"
+         aria-label="Retourner la carte">
+  <div class="course-flash-inner">
+    <div class="course-flash-face"><strong>Pixel</strong></div>
+    <div class="course-flash-face course-flash-back">Élément de l’image finale décrit par des composantes de couleur.</div>
+  </div>
+</article>
+
+<article class="course-flashcard"
+         role="button"
+         tabindex="0"
+         aria-pressed="false"
+         aria-label="Retourner la carte">
+  <div class="course-flash-inner">
+    <div class="course-flash-face"><strong>Définition</strong></div>
+    <div class="course-flash-face course-flash-back">Nombre total de pixels d’une image.</div>
+  </div>
+</article>
+
+<article class="course-flashcard"
+         role="button"
+         tabindex="0"
+         aria-pressed="false"
+         aria-label="Retourner la carte">
+  <div class="course-flash-inner">
+    <div class="course-flash-face"><strong>Profondeur</strong></div>
+    <div class="course-flash-face course-flash-back">Nombre de bits utilisés pour coder une composante ou une couleur.</div>
+  </div>
+</article>
+
+<article class="course-flashcard"
+         role="button"
+         tabindex="0"
+         aria-pressed="false"
+         aria-label="Retourner la carte">
+  <div class="course-flash-inner">
+    <div class="course-flash-face"><strong>RVB</strong></div>
+    <div class="course-flash-face course-flash-back">Modèle additif rouge, vert et bleu.</div>
+  </div>
+</article>
+
+<article class="course-flashcard"
+         role="button"
+         tabindex="0"
+         aria-pressed="false"
+         aria-label="Retourner la carte">
+  <div class="course-flash-inner">
+    <div class="course-flash-face"><strong>Dématriçage</strong></div>
+    <div class="course-flash-face course-flash-back">Calcul des composantes manquantes à partir de photosites voisins.</div>
+  </div>
+</article>
+
+<article class="course-flashcard"
+         role="button"
+         tabindex="0"
+         aria-pressed="false"
+         aria-label="Retourner la carte">
+  <div class="course-flash-inner">
+    <div class="course-flash-face"><strong>EXIF</strong></div>
+    <div class="course-flash-face course-flash-back">Métadonnées décrivant notamment l’appareil et la prise de vue.</div>
+  </div>
+</article>
+
+<article class="course-flashcard"
+         role="button"
+         tabindex="0"
+         aria-pressed="false"
+         aria-label="Retourner la carte">
+  <div class="course-flash-inner">
+    <div class="course-flash-face"><strong>JPEG</strong></div>
+    <div class="course-flash-face course-flash-back">Famille de codages d’images, couramment utilisée avec perte.</div>
+  </div>
+</article>
+
+<article class="course-flashcard"
+         role="button"
+         tabindex="0"
+         aria-pressed="false"
+         aria-label="Retourner la carte">
+  <div class="course-flash-inner">
+    <div class="course-flash-face"><strong>Négatif</strong></div>
+    <div class="course-flash-face course-flash-back">Transformation remplaçant chaque composante c par 255 − c.</div>
+  </div>
+</article>
+
+<article class="course-flashcard"
+         role="button"
+         tabindex="0"
+         aria-pressed="false"
+         aria-label="Retourner la carte">
+  <div class="course-flash-inner">
+    <div class="course-flash-face"><strong>Histogramme</strong></div>
+    <div class="course-flash-face course-flash-back">Répartition des pixels selon leurs valeurs.</div>
+  </div>
+</article>
+
+<article class="course-flashcard"
+         role="button"
+         tabindex="0"
+         aria-pressed="false"
+         aria-label="Retourner la carte">
+  <div class="course-flash-inner">
+    <div class="course-flash-face"><strong>HDR</strong></div>
+    <div class="course-flash-face course-flash-back">Technique liée à une plage étendue de luminosités, souvent par fusion.</div>
+  </div>
+</article>
+
+<article class="course-flashcard"
+         role="button"
+         tabindex="0"
+         aria-pressed="false"
+         aria-label="Retourner la carte">
+  <div class="course-flash-inner">
+    <div class="course-flash-face"><strong>Provenance</strong></div>
+    <div class="course-flash-face course-flash-back">Informations sur l’origine et l’historique d’un média.</div>
+  </div>
+</article>
+</div>
+  </section>
+
+  <section class="course-card">
+    <h2>✍️ Texte à compléter</h2>
+    <p>
+      L’élément physique du capteur est un
+      <input id="photo-fill-1" size="11" aria-label="Mot 1">.
+      L’élément coloré de l’image finale est un
+      <input id="photo-fill-2" size="8" aria-label="Mot 2">.
+      Le modèle rouge, vert, bleu est
+      <input id="photo-fill-3" size="6" aria-label="Mot 3">.
+      Les métadonnées photographiques sont souvent au format
+      <input id="photo-fill-4" size="7" aria-label="Mot 4">.
+      La réduction du volume d’un fichier est la
+      <input id="photo-fill-5" size="12" aria-label="Mot 5">.
+    </p>
+
+    <button id="photo-fill-check"
+            type="button"
+            class="course-tool-button">Vérifier</button>
+
+    <p id="photo-fill-feedback"
+       class="photo-feedback"
+       role="status"></p>
+  </section>
+
+  <section class="course-card course-teacher-only">
+    <h2>👩‍🏫 Repères pour l’enseignant</h2>
+    <ul>
+      <li>Employer « définition » pour le nombre de pixels et préciser le
+      contexte lorsque le mot « résolution » est utilisé.</li>
+      <li>Le laboratoire d’acquisition illustre des effets mais ne simule pas
+      exactement l’optique et le capteur d’un appareil réel.</li>
+      <li>Le lecteur EXIF du navigateur ne décode qu’un sous-ensemble de
+      balises JPEG ; le script Pillow est plus complet.</li>
+      <li>Les coordonnées GPS de démonstration sont fictives.</li>
+      <li>Les transformations sont réalisées localement, sans téléversement.</li>
+      <li>Le mode enseignant ne protège pas les corrections sur un site
+      statique public.</li>
+    </ul>
+  </section>
+
+  <section class="course-card">
+    <h2>📚 Sources, crédits et actualisation</h2>
+    <ul>
+      <li>Ministère de l’Éducation nationale, programme de SNT de seconde,
+      thème « La photographie numérique », BO spécial n° 1 du
+      22 janvier 2019.</li>
+      <li>Éduscol, ressources d’accompagnement « Apprendre à manipuler une
+      image numérique », « Traitement d’images », activités d’acquisition et
+      Python.</li>
+      <li>CIPA, standard Exif version 3.0 et documents de présentation.</li>
+      <li>JPEG Committee, présentation du standard JPEG 1 et du cadre
+      JPEG Trust.</li>
+      <li>Documentation officielle de Pillow et de Python.</li>
+    </ul>
+
+    <p>Toutes les images et données du paquet sont originales et peuvent être
+    adaptées pour les activités pédagogiques de cette séquence.</p>
+  </section>
+
+  <footer class="course-footer">
+    <p>© Thibaud Cousin — Tous droits réservés</p>
+    <p>Ressources pédagogiques SNT – Lycée & BTS</p>
+    <p>Compatible : accessibilité, mode sombre, impression et smartphone.</p>
+  </footer>
+</main>
 </body>
 </html>

@@ -1,0 +1,123 @@
+{
+  "metadata": {
+    "id": "SNT-WEB-MATRICE-OFFICIELLE",
+    "titre": "Comprendre et construire le Web",
+    "niveau": "Seconde",
+    "discipline": "Sciences numériques et technologie",
+    "version": "1.0",
+    "date": "2026-07-29",
+    "duree_totale_minutes": 630,
+    "source_programme": "BO spécial n°1 du 22 janvier 2019"
+  },
+  "modules": [
+    {
+      "id": "WEB-01",
+      "titre": "Distinguer Internet et le Web",
+      "duree_minutes": 60,
+      "progression_cognitive": [
+        "observer_decrire",
+        "acquerir_notions",
+        "analyser",
+        "conceptualiser",
+        "entrainer_verifier"
+      ]
+    },
+    {
+      "id": "WEB-02",
+      "titre": "Décomposer une URL et reconnaître HTTPS",
+      "duree_minutes": 60,
+      "progression_cognitive": [
+        "observer_decrire",
+        "acquerir_notions",
+        "analyser",
+        "conceptualiser",
+        "entrainer_verifier"
+      ]
+    },
+    {
+      "id": "WEB-03",
+      "titre": "Structurer une page avec HTML",
+      "duree_minutes": 90,
+      "progression_cognitive": [
+        "observer_decrire",
+        "acquerir_notions",
+        "analyser",
+        "conceptualiser",
+        "entrainer_verifier"
+      ]
+    },
+    {
+      "id": "WEB-04",
+      "titre": "Séparer contenu et présentation avec CSS",
+      "duree_minutes": 75,
+      "progression_cognitive": [
+        "observer_decrire",
+        "acquerir_notions",
+        "analyser",
+        "conceptualiser",
+        "entrainer_verifier"
+      ]
+    },
+    {
+      "id": "WEB-05",
+      "titre": "Comprendre client-serveur et HTTP",
+      "duree_minutes": 75,
+      "progression_cognitive": [
+        "observer_decrire",
+        "acquerir_notions",
+        "analyser",
+        "conceptualiser",
+        "entrainer_verifier"
+      ]
+    },
+    {
+      "id": "WEB-06",
+      "titre": "Comprendre les moteurs de recherche",
+      "duree_minutes": 75,
+      "progression_cognitive": [
+        "observer_decrire",
+        "acquerir_notions",
+        "analyser",
+        "conceptualiser",
+        "entrainer_verifier"
+      ]
+    },
+    {
+      "id": "WEB-07",
+      "titre": "Maîtriser cookies et paramètres du navigateur",
+      "duree_minutes": 75,
+      "progression_cognitive": [
+        "observer_decrire",
+        "acquerir_notions",
+        "analyser",
+        "conceptualiser",
+        "entrainer_verifier"
+      ]
+    },
+    {
+      "id": "WEB-08",
+      "titre": "Publier en respectant les droits",
+      "duree_minutes": 120,
+      "progression_cognitive": [
+        "observer_decrire",
+        "acquerir_notions",
+        "analyser",
+        "conceptualiser",
+        "entrainer_verifier"
+      ]
+    }
+  ],
+  "capacites_programme": [
+    "Connaître les étapes du développement du Web",
+    "Connaître certaines notions juridiques",
+    "Maîtriser les renvois hypertextes",
+    "Distinguer contenu HTML et style CSS",
+    "Étudier et modifier une page HTML simple",
+    "Décomposer une URL et reconnaître une page sécurisée",
+    "Décomposer une requête HTTP et identifier les paramètres",
+    "Distinguer les traitements du client et du serveur",
+    "Mener une analyse critique des résultats d’un moteur de recherche",
+    "Comprendre les enjeux de la publication",
+    "Maîtriser les principaux réglages de sécurité et de confidentialité"
+  ]
+}

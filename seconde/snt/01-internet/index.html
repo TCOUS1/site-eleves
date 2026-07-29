@@ -1,13 +1,523 @@
 <!DOCTYPE html>
-<html lang='fr'>
+<html lang="fr">
 <head>
-<meta charset='UTF-8'>
-<title>01-internet</title>
-<link rel='stylesheet' href='/style.css'>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="../../../fonts.css">
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="matrice-cours.css">
+<link rel="stylesheet" href="internet.css">
+<script src="accessibility.js" defer></script>
+<script src="enseignant.js" defer></script>
+<script src="matrice-cours.js" defer></script>
+<script src="internet.js" defer></script>
+<meta name="description" content="Cours complet de SNT en seconde sur Internet : IP, DNS, paquets, routage, TCP, réseaux physiques, pair-à-pair et diagnostic.">
+<title>Internet — SNT seconde</title>
 </head>
-<body>
-<nav><a href='/index.html'>Accueil</a> | <a href='../index.html'>Retour</a></nav>
-<h1>01-internet</h1>
-<ul></ul>
-</body>
-</html>
+<body class="course-matrix-page" data-storage-key="snt-internet-seconde-v1">
+<a class="course-skip-link" href="#contenu">Aller au contenu</a>
+<div class="course-teacher-banner">Mode enseignant activé : repères pédagogiques et corrections approfondies visibles.</div>
+<div id="accessibility-menu" aria-label="Accessibilité"><button type="button" onclick="toggleTheme()" title="Thème">🌙/☀️</button><button id="btn-dys" type="button" onclick="toggleDys()">Dys</button><button type="button" onclick="fontMinus()">A−</button><button type="button" onclick="fontPlus()">A+</button><button type="button" onclick="resetAccessibility()">↺</button></div>
+<main id="contenu" class="course-matrix">
+<header class="page-header"><nav class="top-nav" aria-label="Navigation principale"><a href="../index.html">🏠 Accueil</a> <a href="../acces-enseignant.html">🔒 Espace enseignant</a></nav></header>
+<header class="course-hero internet-hero"><p class="course-eyebrow">Sciences numériques et technologie · Seconde</p><h1>🌐 Internet : faire voyager l’information</h1><p>Comment un message trouve-t-il son destinataire, change-t-il de chemin après une panne et arrive-t-il malgré la perte de certains paquets ? Ce parcours conduit de l’observation d’une communication à un diagnostic réseau argumenté.</p><div class="course-chips"><span class="course-chip">IP</span><span class="course-chip">DNS</span><span class="course-chip">Paquets</span><span class="course-chip">Routage</span><span class="course-chip">TCP</span><span class="course-chip">Pair-à-pair</span></div><div class="course-actions"><a href="#parcours">Commencer</a><a href="#simulateur">Simuler un routage</a><button type="button" onclick="printCourse()">🖨️ Imprimer</button><button type="button" onclick="toggleCourseTeacher()">👩‍🏫 Mode enseignant</button></div></header>
+<div class="course-progress"><strong>Progression enregistrée sur cet appareil : <span id="course-progress-text">0 / 7</span></strong><div class="course-progress-track" aria-hidden="true"><span id="course-progress-fill" class="course-progress-fill"></span></div></div>
+<div class="course-grid-2"><section class="course-card"><h2>🎯 Finalité</h2><p>À la fin du parcours, l’élève doit savoir expliquer une communication sur Internet, distinguer les rôles d’IP et de TCP, caractériser le routage et ses limites, utiliser le vocabulaire DNS et proposer un diagnostic structuré face à un dysfonctionnement.</p><p><strong>Durée indicative :</strong> 7 h 35, réparties sur environ quatre semaines.</p></section><section class="course-card"><h2>🧭 Démarche</h2><div class="course-ladder"><div><strong>1. Observer</strong>Repérer les machines, adresses, paquets et traces.</div><div><strong>2. Notions</strong>Construire le vocabulaire des protocoles.</div><div><strong>3. Analyser</strong>Relier symptômes et mécanismes.</div><div><strong>4. Conceptualiser</strong>Diagnostiquer, proposer et tester.</div></div></section></div>
+<section class="course-card"><h2>📜 Repères historiques</h2><div class="timeline"><div><strong>1970</strong><span>ArpaNet</span></div><div><strong>1971</strong><span>Cyclades</span></div><div><strong>1983</strong><span>Naissance d’Internet fondé sur TCP/IP</span></div></div><p>Ces repères sont ceux retenus par le programme officiel fourni avec le cours.</p></section>
+<section class="course-card"><h2>✅ Capacités travaillées</h2><ul class="capacity-list"><li>Distinguer le rôle des protocoles IP et TCP.</li><li>Caractériser les principes du routage et ses limites.</li><li>Distinguer fiabilité de transmission et absence de garantie temporelle.</li><li>Associer adresses symboliques et adresses IP grâce au DNS.</li><li>Décrire l’intérêt du pair-à-pair et ses usages licites ou illicites.</li><li>Caractériser plusieurs réseaux physiques, filaires ou sans fil.</li><li>Formuler un diagnostic et proposer des tests non intrusifs.</li></ul></section>
+<section id="parcours" class="course-card"><h2>🚀 Accès rapide aux sept modules</h2><div class="course-quick-links"><a href="#module-01"><span>01</span>Internet, Web et réseaux physiques</a><a href="#module-02"><span>02</span>Adresses IP et DNS</a><a href="#module-03"><span>03</span>Paquets et routage</a><a href="#module-04"><span>04</span>Fiabilité avec TCP</a><a href="#module-05"><span>05</span>Performances des réseaux</a><a href="#module-06"><span>06</span>Pair-à-pair et enjeux</a><a href="#module-07"><span>07</span>Mission finale de diagnostic</a></div></section>
+
+<section id="module-01" class="course-module" data-module="module-01">
+  <div class="course-module-header">
+    <div><span class="course-module-number">01</span><p class="course-eyebrow">Observer une communication · 55 min</p><h2>Internet, Web et réseaux physiques</h2></div>
+    <label class="course-completion"><input type="checkbox" class="course-module-check" data-save="done-module-01"> Séance maîtrisée</label>
+  </div>
+  <div class="course-meta"><span>🎯 Distinguer Internet du Web et repérer les différentes couches matérielles et logicielles d’une communication.</span><span>🏷️ Internet · Réseaux physiques · Protocoles</span></div>
+
+  <div class="course-phase course-observer">
+    <div class="course-phase-title"><span>1</span><h3>👀 Observer et décrire</h3></div>
+    
+<p>Un élève ouvre une page depuis son téléphone connecté au Wi‑Fi du lycée. Observez le trajet simplifié ci-dessous et nommez les éléments traversés.</p>
+<div class="internet-chain" role="img" aria-label="Trajet d'une requête du téléphone vers un serveur">
+  <div>📱<strong>Téléphone</strong><small>navigateur</small></div><span>Wi‑Fi</span>
+  <div>📡<strong>Point d’accès</strong><small>réseau local</small></div><span>Ethernet / fibre</span>
+  <div>📦<strong>Routeur</strong><small>passerelle</small></div><span>Internet</span>
+  <div>🖥️<strong>Serveur</strong><small>service distant</small></div>
+</div>
+<div class="course-student-task"><strong>Consigne :</strong> relevez ce qui relève du matériel, du logiciel, du réseau physique et du service utilisé.</div>
+
+  </div>
+
+  <div class="course-phase course-notions">
+    <div class="course-phase-title"><span>2</span><h3>📚 Acquérir les notions et le vocabulaire</h3></div>
+    <ul class="course-vocabulary"><li><strong>Internet</strong> — Réseau mondial de réseaux interconnectés qui utilisent des protocoles communs.</li><li><strong>Web</strong> — Service accessible sur Internet, fondé notamment sur les URL, HTTP/HTTPS et les navigateurs.</li><li><strong>Protocole</strong> — Ensemble de règles partagées permettant à des machines de communiquer.</li><li><strong>Réseau physique</strong> — Support matériel de transmission : fibre, Ethernet, Wi‑Fi, réseau mobile, etc.</li><li><strong>Routeur</strong> — Machine qui fait passer les paquets d’un réseau à un autre.</li><li><strong>Client / serveur</strong> — Le client demande un service ; le serveur traite la demande et renvoie une réponse.</li></ul>
+  </div>
+
+  <div class="course-phase course-analysis">
+    <div class="course-phase-title"><span>3</span><h3>🔍 Analyser de manière structurée</h3></div>
+    <p class="question">Pourquoi peut-on dire que le Wi‑Fi n’est pas Internet et que le Web n’est qu’un service parmi d’autres ?</p>
+    <button type="button" class="course-answer-button" data-closed-label="Voir l’analyse attendue" aria-expanded="false">Voir l’analyse attendue</button>
+<div class="course-answer" hidden>Le Wi‑Fi est un moyen physique et local d’accéder à un réseau. Internet est l’ensemble mondial des réseaux interconnectés par IP. Le Web utilise cette infrastructure pour transporter des requêtes HTTP/HTTPS, mais d’autres services — messagerie, synchronisation de l’heure ou voix sur IP — utilisent aussi Internet.</div>
+    <div class="course-method"><strong>Méthode :</strong> je cite l’élément observé → je nomme la notion → j’explique le mécanisme → je conclus.</div>
+  </div>
+
+  <div class="course-phase course-concept">
+    <div class="course-phase-title"><span>4</span><h3>🧠 Conceptualiser : diagnostiquer et proposer</h3></div>
+    <p>Le navigateur n’affiche plus aucun site, mais une application de messagerie continue de recevoir des messages. Formulez un diagnostic sans conclure trop vite que « tout Internet est en panne ».</p>
+    <textarea data-save="diagnostic-module-01" rows="5" placeholder="Mon diagnostic argumenté, ma solution et mon protocole de vérification..."></textarea>
+    <button type="button" class="course-answer-button course-teacher-gated" data-closed-label="Comparer avec une proposition" aria-expanded="false">Comparer avec une proposition</button>
+<div class="course-answer" hidden>Le fonctionnement de la messagerie montre que la connexion Internet et au moins une partie du réseau sont encore disponibles. Le dysfonctionnement peut concerner le navigateur, le DNS, le protocole Web, un serveur précis ou un filtrage. Il faut tester plusieurs sites, essayer une adresse IP connue dans un environnement autorisé, contrôler le DNS et comparer avec un autre navigateur.</div>
+  </div>
+
+  <div class="course-phase course-practice">
+    <div class="course-phase-title"><span>5</span><h3>🛠️ S’entraîner et vérifier</h3></div>
+    <p>Classez les éléments suivants dans quatre catégories : <em>machine</em>, <em>protocole</em>, <em>support physique</em>, <em>service</em>.</p>
+<p><code>routeur</code> · <code>TCP</code> · <code>fibre optique</code> · <code>Web</code> · <code>DNS</code> · <code>Wi‑Fi</code> · <code>serveur</code> · <code>messagerie</code></p>
+    <textarea data-save="production-module-01" rows="7" placeholder="Ma réponse, mon tableau, mon programme ou mon protocole..."></textarea>
+    <button type="button" class="course-answer-button" data-closed-label="Afficher les éléments attendus" aria-expanded="false">Afficher les éléments attendus</button>
+<div class="course-answer" hidden><strong>Machines :</strong> routeur, serveur. <strong>Protocoles ou systèmes de protocoles :</strong> TCP, DNS. <strong>Supports ou technologies physiques :</strong> fibre optique, Wi‑Fi. <strong>Services :</strong> Web, messagerie.</div>
+  </div>
+
+  <div class="course-two-columns">
+    <div class="course-callout course-trap"><h3>⚠️ Pièges à éviter</h3><ul><li>Confondre Internet et le Web.</li><li>Présenter le Wi‑Fi comme un site ou un service.</li><li>Croire qu’un même réseau physique impose un seul protocole.</li></ul></div>
+    <div class="course-card course-mini-quiz" data-answer="1">
+<h3>✅ Contrôle rapide</h3>
+<p>Quel énoncé est exact ?</p>
+<div class="course-quiz-options"><label><input type="radio" name="q-module-01" value="0"> A. Internet et le Web sont deux noms pour la même chose.</label><label><input type="radio" name="q-module-01" value="1"> B. Le Web est un service qui s’appuie sur Internet.</label><label><input type="radio" name="q-module-01" value="2"> C. Le Wi‑Fi est un protocole de transport fiable comme TCP.</label></div>
+<button type="button" class="course-quiz-check">Vérifier</button>
+<p class="course-quiz-feedback" role="status"></p>
+</div>
+  </div>
+</section>
+
+<section id="module-02" class="course-module" data-module="module-02">
+  <div class="course-module-header">
+    <div><span class="course-module-number">02</span><p class="course-eyebrow">Identifier et nommer · 1 h</p><h2>Adresses IP et système DNS</h2></div>
+    <label class="course-completion"><input type="checkbox" class="course-module-check" data-save="done-module-02"> Séance maîtrisée</label>
+  </div>
+  <div class="course-meta"><span>🎯 Expliquer comment une adresse symbolique est transformée en adresse IP et diagnostiquer une panne de résolution de noms.</span><span>🏷️ Adresses IP · Adresses symboliques · DNS</span></div>
+
+  <div class="course-phase course-observer">
+    <div class="course-phase-title"><span>1</span><h3>👀 Observer et décrire</h3></div>
+    
+<p>Observez cette table de résolution simulée. Les adresses utilisées appartiennent à des plages réservées à la documentation.</p>
+<div class="table-scroll"><table><thead><tr><th>Nom demandé</th><th>Type</th><th>Réponse simulée</th></tr></thead><tbody>
+<tr><td><code>serveur.snt.test</code></td><td>A</td><td><code>192.0.2.25</code></td></tr>
+<tr><td><code>ipv6.snt.test</code></td><td>AAAA</td><td><code>2001:db8::25</code></td></tr>
+<tr><td><code>inconnu.snt.test</code></td><td>—</td><td>nom introuvable</td></tr>
+</tbody></table></div>
+<div class="dns-lab course-card">
+  <h4>Mini-laboratoire DNS</h4>
+  <label>Nom symbolique <select id="dns-name"><option value="serveur.snt.test">serveur.snt.test</option><option value="ipv6.snt.test">ipv6.snt.test</option><option value="inconnu.snt.test">inconnu.snt.test</option></select></label>
+  <button type="button" id="dns-resolve" class="course-tool-button">Résoudre</button>
+  <p id="dns-result" class="internet-status" role="status">Choisissez un nom puis lancez la résolution.</p>
+</div>
+<div class="course-student-task"><strong>Consigne :</strong> repérez la différence entre le nom choisi par l’humain et l’adresse utilisée pour acheminer les paquets.</div>
+
+  </div>
+
+  <div class="course-phase course-notions">
+    <div class="course-phase-title"><span>2</span><h3>📚 Acquérir les notions et le vocabulaire</h3></div>
+    <ul class="course-vocabulary"><li><strong>Adresse IP</strong> — Adresse numérique utilisée par IP pour identifier une interface dans un réseau.</li><li><strong>IPv4</strong> — Version utilisant des adresses sur 32 bits, souvent écrites avec quatre nombres décimaux.</li><li><strong>IPv6</strong> — Version utilisant des adresses sur 128 bits, écrites en hexadécimal et séparées par des deux-points.</li><li><strong>Adresse symbolique</strong> — Nom plus lisible pour l’humain, par exemple un nom de domaine.</li><li><strong>DNS</strong> — Système distribué qui associe des noms de domaine à des informations, notamment des adresses IP.</li><li><strong>Résolveur</strong> — Service qui interroge le DNS au nom de l’application cliente.</li></ul>
+  </div>
+
+  <div class="course-phase course-analysis">
+    <div class="course-phase-title"><span>3</span><h3>🔍 Analyser de manière structurée</h3></div>
+    <p class="question">Décrivez les étapes entre la saisie d’un nom de domaine dans une application et l’envoi du premier paquet vers le serveur.</p>
+    <button type="button" class="course-answer-button" data-closed-label="Voir l’analyse attendue" aria-expanded="false">Voir l’analyse attendue</button>
+<div class="course-answer" hidden>L’application transmet le nom au résolveur DNS. Celui-ci cherche une réponse dans son cache ou interroge des serveurs DNS. La réponse fournit une adresse IP. L’application peut alors préparer une communication vers cette adresse. Le DNS ne transporte pas la page : il fournit l’information nécessaire pour joindre le serveur.</div>
+    <div class="course-method"><strong>Méthode :</strong> je cite l’élément observé → je nomme la notion → j’explique le mécanisme → je conclus.</div>
+  </div>
+
+  <div class="course-phase course-concept">
+    <div class="course-phase-title"><span>4</span><h3>🧠 Conceptualiser : diagnostiquer et proposer</h3></div>
+    <p>Un poste peut joindre un serveur lorsqu’on utilise son adresse IP, mais échoue lorsqu’on utilise son nom. Quel diagnostic proposer et quels tests réaliser ?</p>
+    <textarea data-save="diagnostic-module-02" rows="5" placeholder="Mon diagnostic argumenté, ma solution et mon protocole de vérification..."></textarea>
+    <button type="button" class="course-answer-button course-teacher-gated" data-closed-label="Comparer avec une proposition" aria-expanded="false">Comparer avec une proposition</button>
+<div class="course-answer" hidden>La connectivité IP semble fonctionner, mais la résolution DNS est probablement défaillante ou mal configurée. Il faut vérifier l’adresse du serveur DNS, tester une résolution avec un outil autorisé comme nslookup, comparer avec un autre nom et contrôler le cache. Modifier les réglages réseau ne doit être fait que dans le cadre fixé par l’établissement.</div>
+  </div>
+
+  <div class="course-phase course-practice">
+    <div class="course-phase-title"><span>5</span><h3>🛠️ S’entraîner et vérifier</h3></div>
+    <p>Complétez puis testez mentalement ce programme qui cherche une adresse dans un dictionnaire DNS simulé.</p><pre><code>dns = {
+    &quot;serveur.snt.test&quot;: &quot;192.0.2.25&quot;,
+    &quot;fichiers.snt.test&quot;: &quot;198.51.100.8&quot;
+}
+
+nom = input(&quot;Nom à résoudre : &quot;)
+
+if nom in dns:
+    print(&quot;Adresse :&quot;, __________)
+else:
+    print(&quot;Nom introuvable&quot;)</code></pre>
+    <textarea data-save="production-module-02" rows="7" placeholder="Ma réponse, mon tableau, mon programme ou mon protocole..."></textarea>
+    <button type="button" class="course-answer-button" data-closed-label="Afficher les éléments attendus" aria-expanded="false">Afficher les éléments attendus</button>
+<div class="course-answer" hidden><code>dns[nom]</code>. La condition vérifie d’abord la présence de la clé afin d’éviter une erreur.</div>
+  </div>
+
+  <div class="course-two-columns">
+    <div class="course-callout course-trap"><h3>⚠️ Pièges à éviter</h3><ul><li>Dire que le DNS « traduit Internet » : il associe surtout des noms à des données.</li><li>Confondre une adresse IP privée du réseau local et une adresse publique.</li><li>Utiliser des adresses réelles dans un exercice sans nécessité ; préférer les plages de documentation.</li></ul></div>
+    <div class="course-card course-mini-quiz" data-answer="1">
+<h3>✅ Contrôle rapide</h3>
+<p>À quoi sert principalement le DNS dans cette séquence ?</p>
+<div class="course-quiz-options"><label><input type="radio" name="q-module-02" value="0"> A. À chiffrer tous les paquets.</label><label><input type="radio" name="q-module-02" value="1"> B. À associer un nom symbolique à une adresse IP.</label><label><input type="radio" name="q-module-02" value="2"> C. À choisir le chemin de chaque paquet dans tous les routeurs.</label></div>
+<button type="button" class="course-quiz-check">Vérifier</button>
+<p class="course-quiz-feedback" role="status"></p>
+</div>
+  </div>
+</section>
+
+<section id="module-03" class="course-module" data-module="module-03">
+  <div class="course-module-header">
+    <div><span class="course-module-number">03</span><p class="course-eyebrow">Suivre un paquet · 1 h 15</p><h2>Paquets, routeurs et routage</h2></div>
+    <label class="course-completion"><input type="checkbox" class="course-module-check" data-save="done-module-03"> Séance maîtrisée</label>
+  </div>
+  <div class="course-meta"><span>🎯 Caractériser le routage comme une succession de décisions locales et expliquer ses limites.</span><span>🏷️ Paquet · En-tête · Routage · TTL</span></div>
+
+  <div class="course-phase course-observer">
+    <div class="course-phase-title"><span>1</span><h3>👀 Observer et décrire</h3></div>
+    
+<p>Un message est découpé en paquets. Utilisez le simulateur pour suivre un paquet puis coupez une liaison afin d’observer un autre chemin.</p>
+<div class="packet-sim course-card">
+  <div class="packet-controls"><button type="button" id="packet-send" class="course-tool-button">Envoyer un paquet</button><button type="button" id="packet-cut" class="course-tool-button">Couper / rétablir R2–R4</button><button type="button" id="packet-reset" class="course-tool-button">Réinitialiser</button></div>
+  <svg id="network-svg" viewBox="0 0 760 330" role="img" aria-label="Réseau de routeurs avec chemins alternatifs">
+    <g class="links">
+      <line id="link-c-r1" x1="80" y1="165" x2="200" y2="165"/>
+      <line id="link-r1-r2" x1="220" y1="155" x2="350" y2="80"/>
+      <line id="link-r1-r3" x1="220" y1="175" x2="350" y2="250"/>
+      <line id="link-r2-r4" x1="390" y1="80" x2="535" y2="155"/>
+      <line id="link-r3-r4" x1="390" y1="250" x2="535" y2="175"/>
+      <line id="link-r2-r3" x1="370" y1="105" x2="370" y2="225"/>
+      <line id="link-r4-s" x1="575" y1="165" x2="690" y2="165"/>
+    </g>
+    <g class="nodes"><g data-node="client" transform="translate(65 165)"><circle r="34"/><text y="5">Client</text></g><g data-node="r1" transform="translate(210 165)"><circle r="30"/><text y="5">R1</text></g><g data-node="r2" transform="translate(370 80)"><circle r="30"/><text y="5">R2</text></g><g data-node="r3" transform="translate(370 250)"><circle r="30"/><text y="5">R3</text></g><g data-node="r4" transform="translate(555 165)"><circle r="30"/><text y="5">R4</text></g><g data-node="server" transform="translate(705 165)"><circle r="34"/><text y="5">Serveur</text></g></g>
+    <g id="packet-icon" transform="translate(65 165)" hidden><rect x="-19" y="-13" width="38" height="26" rx="5"/><text y="5">P</text></g>
+  </svg>
+  <p id="packet-status" class="internet-status" role="status">Le paquet attend au départ.</p>
+</div>
+<div class="course-student-task"><strong>Consigne :</strong> notez les routeurs traversés et décrivez ce qui change lorsque la liaison est coupée.</div>
+
+  </div>
+
+  <div class="course-phase course-notions">
+    <div class="course-phase-title"><span>2</span><h3>📚 Acquérir les notions et le vocabulaire</h3></div>
+    <ul class="course-vocabulary"><li><strong>Paquet</strong> — Unité de données transportée dans un réseau à commutation de paquets.</li><li><strong>En-tête</strong> — Informations de contrôle ajoutées aux données : source, destination, durée de vie, numéro, etc.</li><li><strong>Charge utile</strong> — Partie du paquet qui contient les données transportées.</li><li><strong>Routage</strong> — Choix du prochain routeur ou de la prochaine interface pour rapprocher le paquet de sa destination.</li><li><strong>Saut</strong> — Passage d’un routeur au suivant.</li><li><strong>TTL / limite de sauts</strong> — Valeur décrémentée à chaque saut afin d’éviter qu’un paquet boucle indéfiniment.</li></ul>
+  </div>
+
+  <div class="course-phase course-analysis">
+    <div class="course-phase-title"><span>3</span><h3>🔍 Analyser de manière structurée</h3></div>
+    <p class="question">Pourquoi un routeur n’a-t-il pas besoin de connaître une carte complète et définitive d’Internet pour transmettre un paquet ?</p>
+    <button type="button" class="course-answer-button" data-closed-label="Voir l’analyse attendue" aria-expanded="false">Voir l’analyse attendue</button>
+<div class="course-answer" hidden>Chaque routeur consulte sa table locale et choisit un prochain saut en fonction de la destination. Les routeurs échangent des informations et adaptent leurs tables lorsque le réseau change. L’acheminement global résulte donc d’une succession de décisions locales. Cette souplesse permet de changer de chemin après une panne, mais ne garantit pas qu’un paquet arrive toujours.</div>
+    <div class="course-method"><strong>Méthode :</strong> je cite l’élément observé → je nomme la notion → j’explique le mécanisme → je conclus.</div>
+  </div>
+
+  <div class="course-phase course-concept">
+    <div class="course-phase-title"><span>4</span><h3>🧠 Conceptualiser : diagnostiquer et proposer</h3></div>
+    <p>Des paquets circulent en boucle entre plusieurs routeurs après une erreur de configuration. Émettez un diagnostic et expliquez le rôle de la limite de sauts.</p>
+    <textarea data-save="diagnostic-module-03" rows="5" placeholder="Mon diagnostic argumenté, ma solution et mon protocole de vérification..."></textarea>
+    <button type="button" class="course-answer-button course-teacher-gated" data-closed-label="Comparer avec une proposition" aria-expanded="false">Comparer avec une proposition</button>
+<div class="course-answer" hidden>Les tables de routage contiennent probablement des routes incohérentes qui se renvoient le paquet. La limite de sauts diminue à chaque routeur ; lorsqu’elle atteint zéro, le paquet est détruit. Cette règle limite l’encombrement, mais elle ne corrige pas la route : il faut ensuite réparer la configuration ou la convergence du routage.</div>
+  </div>
+
+  <div class="course-phase course-practice">
+    <div class="course-phase-title"><span>5</span><h3>🛠️ S’entraîner et vérifier</h3></div>
+    <p>Complétez la simulation d’une limite de sauts.</p><pre><code>ttl = 4
+route = [&quot;R1&quot;, &quot;R2&quot;, &quot;R3&quot;, &quot;R2&quot;, &quot;R3&quot;, &quot;R2&quot;]
+
+for routeur in route:
+    if ttl == 0:
+        print(&quot;Paquet détruit&quot;)
+        break
+    print(&quot;Passage par&quot;, routeur)
+    ttl = __________</code></pre>
+    <textarea data-save="production-module-03" rows="7" placeholder="Ma réponse, mon tableau, mon programme ou mon protocole..."></textarea>
+    <button type="button" class="course-answer-button" data-closed-label="Afficher les éléments attendus" aria-expanded="false">Afficher les éléments attendus</button>
+<div class="course-answer" hidden><code>ttl - 1</code>, donc <code>ttl = ttl - 1</code>. Le paquet est détruit avant de parcourir indéfiniment la boucle.</div>
+  </div>
+
+  <div class="course-two-columns">
+    <div class="course-callout course-trap"><h3>⚠️ Pièges à éviter</h3><ul><li>Croire qu’un paquet suit obligatoirement le même chemin que les autres.</li><li>Confondre routeur et serveur DNS.</li><li>Présenter le TTL comme une durée exacte en secondes dans tous les cas.</li></ul></div>
+    <div class="course-card course-mini-quiz" data-answer="0">
+<h3>✅ Contrôle rapide</h3>
+<p>Quelle affirmation décrit le mieux le routage ?</p>
+<div class="course-quiz-options"><label><input type="radio" name="q-module-03" value="0"> A. Chaque routeur choisit localement un prochain saut.</label><label><input type="radio" name="q-module-03" value="1"> B. Le client impose une liste immuable de tous les routeurs.</label><label><input type="radio" name="q-module-03" value="2"> C. Le DNS transporte lui-même les paquets jusqu’au serveur.</label></div>
+<button type="button" class="course-quiz-check">Vérifier</button>
+<p class="course-quiz-feedback" role="status"></p>
+</div>
+  </div>
+</section>
+
+<section id="module-04" class="course-module" data-module="module-04">
+  <div class="course-module-header">
+    <div><span class="course-module-number">04</span><p class="course-eyebrow">Comparer IP et TCP · 1 h</p><h2>Fiabilité de transmission et absence de garantie temporelle</h2></div>
+    <label class="course-completion"><input type="checkbox" class="course-module-check" data-save="done-module-04"> Séance maîtrisée</label>
+  </div>
+  <div class="course-meta"><span>🎯 Distinguer le rôle d’IP et celui de TCP, puis expliquer pourquoi une communication fiable peut néanmoins arriver trop tard.</span><span>🏷️ IP · TCP · Numéros de séquence · Accusés de réception</span></div>
+
+  <div class="course-phase course-observer">
+    <div class="course-phase-title"><span>1</span><h3>👀 Observer et décrire</h3></div>
+    
+<p>Le message est découpé en quatre segments. Lancez la simulation puis provoquez une perte.</p>
+<div class="tcp-lab course-card">
+  <div class="packet-controls"><button type="button" id="tcp-run" class="course-tool-button">Transmission normale</button><button type="button" id="tcp-loss" class="course-tool-button">Simuler une perte</button><button type="button" id="tcp-reset" class="course-tool-button">Réinitialiser</button></div>
+  <div id="tcp-segments" class="tcp-segments"><span data-seq="1">1 · BON</span><span data-seq="2">2 · JOU</span><span data-seq="3">3 · R N</span><span data-seq="4">4 · ÉO</span></div>
+  <p id="tcp-status" class="internet-status" role="status">Les segments sont prêts.</p>
+</div>
+<div class="course-student-task"><strong>Consigne :</strong> observez l’ordre d’arrivée, les segments manquants et le moment où le message peut être reconstitué.</div>
+
+  </div>
+
+  <div class="course-phase course-notions">
+    <div class="course-phase-title"><span>2</span><h3>📚 Acquérir les notions et le vocabulaire</h3></div>
+    <ul class="course-vocabulary"><li><strong>IP</strong> — Protocole chargé de l’adressage et de l’acheminement des paquets, sans garantir à lui seul leur livraison.</li><li><strong>TCP</strong> — Protocole de transport fiable qui utilise notamment numéros de séquence, accusés de réception et retransmissions.</li><li><strong>Numéro de séquence</strong> — Information permettant de remettre les données dans le bon ordre.</li><li><strong>Accusé de réception</strong> — Message confirmant la réception de données.</li><li><strong>Retransmission</strong> — Nouvel envoi d’une donnée considérée comme perdue.</li><li><strong>Latence et gigue</strong> — Délai de transmission et variation de ce délai au cours du temps.</li></ul>
+  </div>
+
+  <div class="course-phase course-analysis">
+    <div class="course-phase-title"><span>3</span><h3>🔍 Analyser de manière structurée</h3></div>
+    <p class="question">Comment TCP peut-il reconstituer un message si les données arrivent dans le désordre ou si un segment manque ?</p>
+    <button type="button" class="course-answer-button" data-closed-label="Voir l’analyse attendue" aria-expanded="false">Voir l’analyse attendue</button>
+<div class="course-answer" hidden>Les numéros de séquence permettent de replacer les segments dans l’ordre. Les accusés de réception indiquent ce qui a été reçu ; une absence de confirmation ou d’autres mécanismes de détection entraînent une retransmission. TCP vise donc la fiabilité et l’ordre, mais les délais de retransmission peuvent retarder la livraison.</div>
+    <div class="course-method"><strong>Méthode :</strong> je cite l’élément observé → je nomme la notion → j’explique le mécanisme → je conclus.</div>
+  </div>
+
+  <div class="course-phase course-concept">
+    <div class="course-phase-title"><span>4</span><h3>🧠 Conceptualiser : diagnostiquer et proposer</h3></div>
+    <p>Une visioconférence se fige puis reprend avec plusieurs secondes de retard, alors qu’aucun fichier n’est finalement perdu. Expliquez ce paradoxe et proposez des indicateurs à observer.</p>
+    <textarea data-save="diagnostic-module-04" rows="5" placeholder="Mon diagnostic argumenté, ma solution et mon protocole de vérification..."></textarea>
+    <button type="button" class="course-answer-button course-teacher-gated" data-closed-label="Comparer avec une proposition" aria-expanded="false">Comparer avec une proposition</button>
+<div class="course-answer" hidden>La transmission peut être fiable tout en étant trop lente pour un usage en temps réel. Des pertes, retransmissions, congestions ou variations de délai augmentent latence et gigue. Il faut observer le délai aller-retour, la variation du délai, le taux de perte et le débit disponible, puis comparer avec un autre réseau ou réduire la charge.</div>
+  </div>
+
+  <div class="course-phase course-practice">
+    <div class="course-phase-title"><span>5</span><h3>🛠️ S’entraîner et vérifier</h3></div>
+    <p>Le programme reçoit des segments dans le désordre. Complétez la reconstruction.</p><pre><code>segments = [(3, &quot;R &quot;), (1, &quot;BON&quot;), (4, &quot;NÉO&quot;), (2, &quot;JOU&quot;)]
+segments.sort()
+
+message = &quot;&quot;
+for numero, contenu in segments:
+    message = message + __________
+
+print(message)</code></pre>
+    <textarea data-save="production-module-04" rows="7" placeholder="Ma réponse, mon tableau, mon programme ou mon protocole..."></textarea>
+    <button type="button" class="course-answer-button" data-closed-label="Afficher les éléments attendus" aria-expanded="false">Afficher les éléments attendus</button>
+<div class="course-answer" hidden><code>contenu</code>. Après le tri sur le premier élément des couples, le message devient <code>BONJOUR NÉO</code>.</div>
+  </div>
+
+  <div class="course-two-columns">
+    <div class="course-callout course-trap"><h3>⚠️ Pièges à éviter</h3><ul><li>Dire que TCP choisit les routes : le routage relève principalement d’IP et des routeurs.</li><li>Confondre fiabilité et rapidité.</li><li>Croire que des paquets arrivés dans le désordre sont forcément inutilisables.</li></ul></div>
+    <div class="course-card course-mini-quiz" data-answer="0">
+<h3>✅ Contrôle rapide</h3>
+<p>Quelle situation TCP sait-il corriger ?</p>
+<div class="course-quiz-options"><label><input type="radio" name="q-module-04" value="0"> A. Un segment manquant en demandant ou déclenchant sa retransmission.</label><label><input type="radio" name="q-module-04" value="1"> B. Une fibre physiquement coupée sans aucun chemin alternatif.</label><label><input type="radio" name="q-module-04" value="2"> C. Une garantie absolue d’arrivée avant 20 ms.</label></div>
+<button type="button" class="course-quiz-check">Vérifier</button>
+<p class="course-quiz-feedback" role="status"></p>
+</div>
+  </div>
+</section>
+
+<section id="module-05" class="course-module" data-module="module-05">
+  <div class="course-module-header">
+    <div><span class="course-module-number">05</span><p class="course-eyebrow">Comparer des performances · 55 min</p><h2>Réseaux physiques, débit et latence</h2></div>
+    <label class="course-completion"><input type="checkbox" class="course-module-check" data-save="done-module-05"> Séance maîtrisée</label>
+  </div>
+  <div class="course-meta"><span>🎯 Caractériser plusieurs technologies d’accès et choisir des critères adaptés à un usage.</span><span>🏷️ Fibre · Ethernet · Wi‑Fi · Réseau mobile · Débit · Latence</span></div>
+
+  <div class="course-phase course-observer">
+    <div class="course-phase-title"><span>1</span><h3>👀 Observer et décrire</h3></div>
+    
+<p>Les valeurs ci-dessous sont fictives et servent uniquement à comparer des profils de connexion.</p>
+<div class="table-scroll"><table><thead><tr><th>Connexion</th><th>Débit descendant simulé</th><th>Latence simulée</th><th>Mobilité</th></tr></thead><tbody>
+<tr><td>Ethernet sur fibre</td><td>800 Mbit/s</td><td>8 ms</td><td>Non</td></tr>
+<tr><td>Wi‑Fi du domicile</td><td>180 Mbit/s</td><td>18 ms</td><td>Dans le logement</td></tr>
+<tr><td>Réseau mobile</td><td>90 Mbit/s</td><td>35 ms</td><td>Oui</td></tr>
+<tr><td>Connexion ancienne</td><td>12 Mbit/s</td><td>45 ms</td><td>Non</td></tr>
+</tbody></table></div>
+<div class="course-student-task"><strong>Consigne :</strong> classez les connexions selon trois usages : téléchargement volumineux, jeu interactif, déplacement.</div>
+
+  </div>
+
+  <div class="course-phase course-notions">
+    <div class="course-phase-title"><span>2</span><h3>📚 Acquérir les notions et le vocabulaire</h3></div>
+    <ul class="course-vocabulary"><li><strong>Débit</strong> — Quantité de données transmise par unité de temps, souvent exprimée en bit/s.</li><li><strong>Latence</strong> — Temps nécessaire pour qu’une information parcoure le réseau et obtienne éventuellement une réponse.</li><li><strong>Filaire</strong> — Connexion utilisant un conducteur ou une fibre : Ethernet, fibre optique, etc.</li><li><strong>Sans fil</strong> — Connexion utilisant des ondes : Wi‑Fi, réseau mobile, Bluetooth, etc.</li><li><strong>Indépendance d’Internet</strong> — Les protocoles IP peuvent fonctionner sur des technologies physiques très différentes.</li><li><strong>Goulot d’étranglement</strong> — Élément le plus limitant d’un trajet de communication.</li></ul>
+  </div>
+
+  <div class="course-phase course-analysis">
+    <div class="course-phase-title"><span>3</span><h3>🔍 Analyser de manière structurée</h3></div>
+    <p class="question">Pourquoi le débit maximal annoncé d’une connexion ne suffit-il pas pour prédire la qualité d’une visioconférence ou d’un jeu en ligne ?</p>
+    <button type="button" class="course-answer-button" data-closed-label="Voir l’analyse attendue" aria-expanded="false">Voir l’analyse attendue</button>
+<div class="course-answer" hidden>Ces usages dépendent aussi de la latence, de sa variation, des pertes, de la stabilité du signal et du partage de la connexion. Un débit élevé n’empêche pas des retards importants ou irréguliers. Il faut donc choisir plusieurs indicateurs en fonction de l’usage.</div>
+    <div class="course-method"><strong>Méthode :</strong> je cite l’élément observé → je nomme la notion → j’explique le mécanisme → je conclus.</div>
+  </div>
+
+  <div class="course-phase course-concept">
+    <div class="course-phase-title"><span>4</span><h3>🧠 Conceptualiser : diagnostiquer et proposer</h3></div>
+    <p>Une salle possède une fibre rapide, mais les élèves observent des coupures uniquement lorsqu’ils utilisent le Wi‑Fi. Établissez un diagnostic et proposez un protocole de comparaison.</p>
+    <textarea data-save="diagnostic-module-05" rows="5" placeholder="Mon diagnostic argumenté, ma solution et mon protocole de vérification..."></textarea>
+    <button type="button" class="course-answer-button course-teacher-gated" data-closed-label="Comparer avec une proposition" aria-expanded="false">Comparer avec une proposition</button>
+<div class="course-answer" hidden>La liaison Internet en amont peut être correcte tandis que le réseau local sans fil est saturé, perturbé ou mal couvert. Il faut comparer un poste en Ethernet et un poste en Wi‑Fi, mesurer débit, latence et pertes à plusieurs endroits et moments, puis contrôler le nombre de clients et la puissance du signal. La solution peut concerner la couverture, les canaux, le nombre de points d’accès ou la répartition des usages.</div>
+  </div>
+
+  <div class="course-phase course-practice">
+    <div class="course-phase-title"><span>5</span><h3>🛠️ S’entraîner et vérifier</h3></div>
+    <p>Calculez un temps théorique de transfert, sans oublier que la réalité comporte des surcoûts.</p><pre><code>taille_mo = 120
+# 1 octet = 8 bits
+nb_bits = taille_mo * 8
+
+debit_mbits_s = 40
+temps_s = nb_bits / __________
+print(temps_s)</code></pre><p>Ici, les unités ont été volontairement simplifiées : Mo et Mbit utilisent le même préfixe décimal.</p>
+    <textarea data-save="production-module-05" rows="7" placeholder="Ma réponse, mon tableau, mon programme ou mon protocole..."></textarea>
+    <button type="button" class="course-answer-button" data-closed-label="Afficher les éléments attendus" aria-expanded="false">Afficher les éléments attendus</button>
+<div class="course-answer" hidden><code>debit_mbits_s</code>. Le résultat théorique est 24 secondes. Les protocoles, les variations de débit et les autres utilisateurs augmentent souvent le temps réel.</div>
+  </div>
+
+  <div class="course-two-columns">
+    <div class="course-callout course-trap"><h3>⚠️ Pièges à éviter</h3><ul><li>Comparer un débit en octets/s avec un débit en bits/s sans conversion.</li><li>Conclure à partir d’une seule mesure.</li><li>Attribuer automatiquement toute lenteur au fournisseur d’accès.</li></ul></div>
+    <div class="course-card course-mini-quiz" data-answer="0">
+<h3>✅ Contrôle rapide</h3>
+<p>Quel indicateur est particulièrement important pour une interaction en temps réel ?</p>
+<div class="course-quiz-options"><label><input type="radio" name="q-module-05" value="0"> A. La latence.</label><label><input type="radio" name="q-module-05" value="1"> B. Le nombre de caractères du nom de domaine.</label><label><input type="radio" name="q-module-05" value="2"> C. La couleur du câble.</label></div>
+<button type="button" class="course-quiz-check">Vérifier</button>
+<p class="course-quiz-feedback" role="status"></p>
+</div>
+  </div>
+</section>
+
+<section id="module-06" class="course-module" data-module="module-06">
+  <div class="course-module-header">
+    <div><span class="course-module-number">06</span><p class="course-eyebrow">Étudier des architectures et des enjeux · 1 h</p><h2>Pair-à-pair, neutralité et sécurité</h2></div>
+    <label class="course-completion"><input type="checkbox" class="course-module-check" data-save="done-module-06"> Séance maîtrisée</label>
+  </div>
+  <div class="course-meta"><span>🎯 Comparer client-serveur et pair-à-pair, puis argumenter sur les usages, les risques et la neutralité du réseau.</span><span>🏷️ Pair-à-pair · Neutralité du Net · Déni de service</span></div>
+
+  <div class="course-phase course-observer">
+    <div class="course-phase-title"><span>1</span><h3>👀 Observer et décrire</h3></div>
+    
+<div class="course-code-grid">
+  <div><h4>Architecture client-serveur</h4><div class="architecture-diagram"><span>👤 Client A</span><span>👤 Client B</span><strong>🖥️ Serveur central</strong><span>👤 Client C</span></div></div>
+  <div><h4>Architecture pair-à-pair</h4><div class="architecture-diagram peer"><span>💻 Pair A</span><span>💻 Pair B</span><span>💻 Pair C</span><span>💻 Pair D</span></div></div>
+</div>
+<div class="course-student-task"><strong>Consigne :</strong> repérez qui fournit les données, qui les reçoit et ce qui se passe si une machine disparaît.</div>
+
+  </div>
+
+  <div class="course-phase course-notions">
+    <div class="course-phase-title"><span>2</span><h3>📚 Acquérir les notions et le vocabulaire</h3></div>
+    <ul class="course-vocabulary"><li><strong>Client-serveur</strong> — Architecture dans laquelle des clients demandent des services à un ou plusieurs serveurs identifiés.</li><li><strong>Pair-à-pair</strong> — Architecture où chaque participant peut à la fois recevoir et fournir des données.</li><li><strong>Disponibilité</strong> — Capacité d’un service ou d’une donnée à rester accessible.</li><li><strong>Neutralité du Net</strong> — Principe selon lequel les paquets sont transmis sans discrimination fondée sur leur contenu, leur source ou leur destination, sous réserve de règles légitimes de gestion.</li><li><strong>Déni de service</strong> — Attaque visant à rendre un service indisponible, notamment en le saturant de requêtes ou de trafic.</li><li><strong>Usage illicite</strong> — Usage qui enfreint la loi ou les droits, par exemple la diffusion non autorisée d’œuvres protégées.</li></ul>
+  </div>
+
+  <div class="course-phase course-analysis">
+    <div class="course-phase-title"><span>3</span><h3>🔍 Analyser de manière structurée</h3></div>
+    <p class="question">Quels avantages et quelles limites une architecture pair-à-pair présente-t-elle par rapport à un serveur unique ?</p>
+    <button type="button" class="course-answer-button" data-closed-label="Voir l’analyse attendue" aria-expanded="false">Voir l’analyse attendue</button>
+<div class="course-answer" hidden>Le pair-à-pair répartit le stockage et la transmission entre plusieurs machines, ce qui peut améliorer la diffusion et éviter un point central unique. En revanche, la disponibilité dépend des pairs présents, la maîtrise des versions et des droits peut être plus complexe, et le même mécanisme peut servir à des partages licites ou illicites.</div>
+    <div class="course-method"><strong>Méthode :</strong> je cite l’élément observé → je nomme la notion → j’explique le mécanisme → je conclus.</div>
+  </div>
+
+  <div class="course-phase course-concept">
+    <div class="course-phase-title"><span>4</span><h3>🧠 Conceptualiser : diagnostiquer et proposer</h3></div>
+    <p>Un opérateur ralentit systématiquement un type de contenu commercial concurrent, tandis qu’un site scolaire subit un afflux massif de requêtes. Distinguez les deux problèmes et proposez des réponses adaptées.</p>
+    <textarea data-save="diagnostic-module-06" rows="5" placeholder="Mon diagnostic argumenté, ma solution et mon protocole de vérification..."></textarea>
+    <button type="button" class="course-answer-button course-teacher-gated" data-closed-label="Comparer avec une proposition" aria-expanded="false">Comparer avec une proposition</button>
+<div class="course-answer" hidden>Le ralentissement ciblé pose une question de neutralité et de discrimination du trafic. L’afflux massif peut relever d’une saturation accidentelle ou d’un déni de service. Les réponses diffèrent : transparence et règles de traitement équitable pour le premier cas ; filtrage, limitation de débit, capacité supplémentaire, répartition de charge et coordination avec l’hébergeur pour le second.</div>
+  </div>
+
+  <div class="course-phase course-practice">
+    <div class="course-phase-title"><span>5</span><h3>🛠️ S’entraîner et vérifier</h3></div>
+    <p>Préparez une argumentation en quatre colonnes : <em>usage</em>, <em>architecture</em>, <em>avantage</em>, <em>risque ou précaution</em>. Traitez au moins ces situations : distribution d’un logiciel libre, stockage d’un dossier médical, partage non autorisé d’un film, diffusion d’une mise à jour.</p>
+    <textarea data-save="production-module-06" rows="7" placeholder="Ma réponse, mon tableau, mon programme ou mon protocole..."></textarea>
+    <button type="button" class="course-answer-button" data-closed-label="Afficher les éléments attendus" aria-expanded="false">Afficher les éléments attendus</button>
+<div class="course-answer" hidden><strong>Attendu :</strong> le choix ne dépend pas seulement de la technique. Il faut prendre en compte disponibilité, contrôle, confidentialité, droits d’auteur, traçabilité et responsabilité. Le pair-à-pair peut être parfaitement licite, par exemple pour distribuer un logiciel libre.</div>
+  </div>
+
+  <div class="course-two-columns">
+    <div class="course-callout course-trap"><h3>⚠️ Pièges à éviter</h3><ul><li>Assimiler automatiquement pair-à-pair et piratage.</li><li>Confondre neutralité du réseau et absence de toute gestion technique.</li><li>Donner des détails opérationnels permettant de mener une attaque par déni de service.</li></ul></div>
+    <div class="course-card course-mini-quiz" data-answer="1">
+<h3>✅ Contrôle rapide</h3>
+<p>Dans un réseau pair-à-pair, un participant peut généralement…</p>
+<div class="course-quiz-options"><label><input type="radio" name="q-module-06" value="0"> A. être seulement client.</label><label><input type="radio" name="q-module-06" value="1"> B. être à la fois émetteur et récepteur.</label><label><input type="radio" name="q-module-06" value="2"> C. remplacer le protocole IP par une page Web.</label></div>
+<button type="button" class="course-quiz-check">Vérifier</button>
+<p class="course-quiz-feedback" role="status"></p>
+</div>
+  </div>
+</section>
+
+<section id="module-07" class="course-module" data-module="module-07">
+  <div class="course-module-header">
+    <div><span class="course-module-number">07</span><p class="course-eyebrow">Mobiliser les connaissances · 1 h 30</p><h2>Mission finale : diagnostiquer une communication défaillante</h2></div>
+    <label class="course-completion"><input type="checkbox" class="course-module-check" data-save="done-module-07"> Séance maîtrisée</label>
+  </div>
+  <div class="course-meta"><span>🎯 Utiliser les connaissances acquises pour localiser une panne, proposer des solutions et construire un protocole de validation.</span><span>🏷️ Synthèse · Diagnostic · Argumentation · Tests</span></div>
+
+  <div class="course-phase course-observer">
+    <div class="course-phase-title"><span>1</span><h3>👀 Observer et décrire</h3></div>
+    
+<p>Le centre de supervision reçoit les informations suivantes :</p>
+<div class="incident-grid">
+  <article><strong>Poste A</strong><p>Accède au serveur par son IP, mais pas par son nom.</p></article>
+  <article><strong>Poste B</strong><p>Résout les noms, mais le trajet s’arrête après plusieurs routeurs.</p></article>
+  <article><strong>Poste C</strong><p>Télécharge correctement, mais la visioconférence est saccadée.</p></article>
+  <article><strong>Service D</strong><p>Reçoit un volume inhabituel de requêtes et devient indisponible.</p></article>
+</div>
+<div class="course-student-task"><strong>Consigne :</strong> associez chaque symptôme à une couche ou à une notion, sans proposer immédiatement une solution unique.</div>
+
+  </div>
+
+  <div class="course-phase course-notions">
+    <div class="course-phase-title"><span>2</span><h3>📚 Acquérir les notions et le vocabulaire</h3></div>
+    <ul class="course-vocabulary"><li><strong>Symptôme</strong> — Manifestation observable d’un dysfonctionnement.</li><li><strong>Hypothèse</strong> — Cause possible qui doit encore être testée.</li><li><strong>Test discriminant</strong> — Test qui permet de départager plusieurs hypothèses.</li><li><strong>Diagnostic</strong> — Conclusion argumentée fondée sur des observations et des tests.</li><li><strong>Critère de réussite</strong> — Indicateur mesurable permettant de juger si la solution fonctionne.</li><li><strong>Traçabilité</strong> — Conservation structurée des observations, actions et résultats.</li></ul>
+  </div>
+
+  <div class="course-phase course-analysis">
+    <div class="course-phase-title"><span>3</span><h3>🔍 Analyser de manière structurée</h3></div>
+    <p class="question">Pour chacun des quatre incidents, indiquez au moins deux hypothèses et un test permettant de les départager.</p>
+    <button type="button" class="course-answer-button" data-closed-label="Voir l’analyse attendue" aria-expanded="false">Voir l’analyse attendue</button>
+<div class="course-answer" hidden><ul><li><strong>A :</strong> DNS mal configuré ou en panne ; comparer résolution locale et autre résolveur autorisé.</li><li><strong>B :</strong> route absente, boucle ou limite de sauts atteinte ; examiner un traceroute simulé et les tables.</li><li><strong>C :</strong> latence, gigue, perte ou saturation locale ; comparer mesures et réseau filaire.</li><li><strong>D :</strong> succès soudain, saturation ou attaque ; analyser la répartition des requêtes, les journaux et la capacité, sans lancer de trafic supplémentaire.</li></ul></div>
+    <div class="course-method"><strong>Méthode :</strong> je cite l’élément observé → je nomme la notion → j’explique le mécanisme → je conclus.</div>
+  </div>
+
+  <div class="course-phase course-concept">
+    <div class="course-phase-title"><span>4</span><h3>🧠 Conceptualiser : diagnostiquer et proposer</h3></div>
+    <p>Rédigez un plan d’intervention complet pour un incident au choix. Il doit contenir : observations, hypothèses, tests, risques, solution provisoire, solution durable et critères de validation.</p>
+    <textarea data-save="diagnostic-module-07" rows="5" placeholder="Mon diagnostic argumenté, ma solution et mon protocole de vérification..."></textarea>
+    <button type="button" class="course-answer-button course-teacher-gated" data-closed-label="Comparer avec une proposition" aria-expanded="false">Comparer avec une proposition</button>
+<div class="course-answer" hidden>Une réponse solide sépare les faits des hypothèses, commence par des tests non destructifs, évite de modifier plusieurs paramètres à la fois, conserve les traces et prévoit un retour arrière. Les critères peuvent porter sur le taux de réussite, la résolution DNS, le nombre de sauts, la latence, les pertes, le débit et la disponibilité du service.</div>
+  </div>
+
+  <div class="course-phase course-practice">
+    <div class="course-phase-title"><span>5</span><h3>🛠️ S’entraîner et vérifier</h3></div>
+    <h4>Production finale</h4><ol><li>Choisissez un incident.</li><li>Construisez un arbre de diagnostic.</li><li>Proposez un protocole de cinq tests maximum.</li><li>Justifiez l’ordre des tests.</li><li>Présentez une solution et ses limites.</li></ol><p>Un modèle de tableau est proposé ci-dessous.</p><div class="table-scroll"><table><thead><tr><th>Observation</th><th>Hypothèse</th><th>Test</th><th>Résultat attendu</th><th>Décision</th></tr></thead><tbody><tr><td>…</td><td>…</td><td>…</td><td>…</td><td>…</td></tr><tr><td>…</td><td>…</td><td>…</td><td>…</td><td>…</td></tr></tbody></table></div>
+    <textarea data-save="production-module-07" rows="7" placeholder="Ma réponse, mon tableau, mon programme ou mon protocole..."></textarea>
+    <button type="button" class="course-answer-button" data-closed-label="Afficher les éléments attendus" aria-expanded="false">Afficher les éléments attendus</button>
+<div class="course-answer" hidden><strong>Éléments évalués :</strong> emploi du vocabulaire, distinction fait/hypothèse, pertinence et innocuité des tests, cohérence du diagnostic, justification de la solution, présence de critères mesurables et prise en compte des limites.</div>
+  </div>
+
+  <div class="course-two-columns">
+    <div class="course-callout course-trap"><h3>⚠️ Pièges à éviter</h3><ul><li>Changer plusieurs réglages simultanément et ne plus savoir lequel a eu un effet.</li><li>Confondre corrélation et cause.</li><li>Effectuer des scans ou des tests intrusifs sans autorisation.</li><li>Oublier de consigner les résultats et de prévoir un retour arrière.</li></ul></div>
+    <div class="course-card course-mini-quiz" data-answer="1">
+<h3>✅ Contrôle rapide</h3>
+<p>Quel ordre de travail est le plus rigoureux ?</p>
+<div class="course-quiz-options"><label><input type="radio" name="q-module-07" value="0"> A. Modifier plusieurs réglages, puis chercher ce qui a changé.</label><label><input type="radio" name="q-module-07" value="1"> B. Observer, formuler des hypothèses, tester, conclure et valider.</label><label><input type="radio" name="q-module-07" value="2"> C. Conclure à une panne générale dès le premier symptôme.</label></div>
+<button type="button" class="course-quiz-check">Vérifier</button>
+<p class="course-quiz-feedback" role="status"></p>
+</div>
+  </div>
+</section>
+
+<section id="simulateur" class="course-card"><h2>🧪 Laboratoire de synthèse</h2><p>Rejouez le simulateur de routage du module 3, puis construisez trois scénarios : trajet normal, liaison coupée et limite de sauts atteinte. Pour chaque scénario, écrivez une observation, une explication et une conclusion.</p><textarea data-save="synthese-simulateur" rows="8" placeholder="Scénario 1…
+Scénario 2…
+Scénario 3…"></textarea></section>
+<section class="course-card"><h2>🧠 Réviser avec des flashcards</h2><p>Cliquez sur une carte ou utilisez Entrée / Espace.</p><div class="course-flash-grid"><article class="course-flashcard" role="button" tabindex="0" aria-pressed="false" aria-label="Retourner la carte"><div class="course-flash-inner"><div class="course-flash-face">Internet</div><div class="course-flash-face course-flash-back">Réseau mondial de réseaux utilisant des protocoles communs.</div></div></article><article class="course-flashcard" role="button" tabindex="0" aria-pressed="false" aria-label="Retourner la carte"><div class="course-flash-inner"><div class="course-flash-face">Web</div><div class="course-flash-face course-flash-back">Service hypertexte accessible sur Internet, notamment par HTTP/HTTPS.</div></div></article><article class="course-flashcard" role="button" tabindex="0" aria-pressed="false" aria-label="Retourner la carte"><div class="course-flash-inner"><div class="course-flash-face">IP</div><div class="course-flash-face course-flash-back">Adressage et acheminement des paquets.</div></div></article><article class="course-flashcard" role="button" tabindex="0" aria-pressed="false" aria-label="Retourner la carte"><div class="course-flash-inner"><div class="course-flash-face">DNS</div><div class="course-flash-face course-flash-back">Association distribuée entre noms de domaine et informations, dont les adresses IP.</div></div></article><article class="course-flashcard" role="button" tabindex="0" aria-pressed="false" aria-label="Retourner la carte"><div class="course-flash-inner"><div class="course-flash-face">Routeur</div><div class="course-flash-face course-flash-back">Machine qui choisit un prochain saut pour un paquet.</div></div></article><article class="course-flashcard" role="button" tabindex="0" aria-pressed="false" aria-label="Retourner la carte"><div class="course-flash-inner"><div class="course-flash-face">TTL</div><div class="course-flash-face course-flash-back">Limite de sauts évitant une circulation indéfinie.</div></div></article><article class="course-flashcard" role="button" tabindex="0" aria-pressed="false" aria-label="Retourner la carte"><div class="course-flash-inner"><div class="course-flash-face">TCP</div><div class="course-flash-face course-flash-back">Transport fiable, ordonné, avec retransmissions.</div></div></article><article class="course-flashcard" role="button" tabindex="0" aria-pressed="false" aria-label="Retourner la carte"><div class="course-flash-inner"><div class="course-flash-face">Latence</div><div class="course-flash-face course-flash-back">Délai de transmission ou de réponse.</div></div></article><article class="course-flashcard" role="button" tabindex="0" aria-pressed="false" aria-label="Retourner la carte"><div class="course-flash-inner"><div class="course-flash-face">Débit</div><div class="course-flash-face course-flash-back">Quantité de données transmise par unité de temps.</div></div></article><article class="course-flashcard" role="button" tabindex="0" aria-pressed="false" aria-label="Retourner la carte"><div class="course-flash-inner"><div class="course-flash-face">Pair-à-pair</div><div class="course-flash-face course-flash-back">Chaque participant peut recevoir et fournir des données.</div></div></article><article class="course-flashcard" role="button" tabindex="0" aria-pressed="false" aria-label="Retourner la carte"><div class="course-flash-inner"><div class="course-flash-face">Neutralité du Net</div><div class="course-flash-face course-flash-back">Transmission non discriminatoire des paquets selon leur contenu ou origine.</div></div></article><article class="course-flashcard" role="button" tabindex="0" aria-pressed="false" aria-label="Retourner la carte"><div class="course-flash-inner"><div class="course-flash-face">Diagnostic</div><div class="course-flash-face course-flash-back">Conclusion fondée sur des observations, hypothèses et tests.</div></div></article></div></section>
+<section class="course-card final-eval"><h2>🎯 Évaluation bilan</h2>
+<div class="eval-item"><h3>1. Texte à compléter</h3><p>Le système ______ associe un nom symbolique à une adresse IP. Un ______ choisit le prochain saut d’un paquet. Le protocole ______ fiabilise la transmission.</p><button type="button" class="course-answer-button" data-closed-label="Voir la correction" aria-expanded="false">Voir la correction</button>
+<div class="course-answer" hidden>DNS · routeur · TCP</div></div>
+<div class="eval-item"><h3>2. Remise en ordre</h3><ol><li>Le serveur renvoie des données.</li><li>Le DNS fournit une adresse IP.</li><li>Le client saisit un nom.</li><li>Les routeurs acheminent les paquets.</li></ol><button type="button" class="course-answer-button" data-closed-label="Voir l’ordre attendu" aria-expanded="false">Voir l’ordre attendu</button>
+<div class="course-answer" hidden>1. Le client saisit un nom. 2. Le DNS fournit une adresse IP. 3. Les routeurs acheminent les paquets. 4. Le serveur renvoie des données.</div></div>
+<div class="eval-item"><h3>3. Diagnostic</h3><p>Un fichier finit par arriver correctement, mais en trente secondes au lieu de deux. Expliquez pourquoi cela ne contredit pas la fiabilité de TCP.</p><textarea data-save="eval-diagnostic" rows="5"></textarea><button type="button" class="course-answer-button" data-closed-label="Comparer avec une réponse attendue" aria-expanded="false">Comparer avec une réponse attendue</button>
+<div class="course-answer" hidden>TCP peut retransmettre des données perdues et remettre les segments dans l’ordre. Le résultat final peut donc être exact malgré un délai important. La fiabilité ne constitue pas une garantie temporelle.</div></div>
+</section>
+<section class="course-card course-teacher-only"><h2>👩‍🏫 Repères pour l’enseignant</h2><h3>Organisation suggérée</h3><ul><li>Modules 1 et 2 : observation guidée, vocabulaire et diagnostic simple.</li><li>Modules 3 et 4 : manipulation des simulateurs et traces écrites structurées.</li><li>Modules 5 et 6 : comparaison, argumentation et enjeux.</li><li>Module 7 : travail en binômes, restitution orale de trois minutes et grille d’évaluation.</li></ul><h3>Différenciation</h3><ul><li>Version guidée : fournir les hypothèses et demander de choisir le test.</li><li>Version autonome : construire l’arbre de diagnostic sans liste préalable.</li><li>Approfondissement : comparer une trace IPv4 et une trace IPv6 ou analyser une capture fournie par l’enseignant.</li></ul><h3>Grille du projet final</h3><div class="table-scroll"><table><thead><tr><th>Critère</th><th>Maîtrise insuffisante</th><th>Maîtrise satisfaisante</th><th>Très bonne maîtrise</th></tr></thead><tbody><tr><td>Observation</td><td>Symptômes peu précis</td><td>Faits identifiés</td><td>Faits hiérarchisés et tracés</td></tr><tr><td>Vocabulaire</td><td>Confusions importantes</td><td>Notions adaptées</td><td>Notions précises et articulées</td></tr><tr><td>Diagnostic</td><td>Conclusion sans test</td><td>Hypothèse et test cohérents</td><td>Plusieurs hypothèses départagées</td></tr><tr><td>Solution</td><td>Proposition vague</td><td>Solution justifiée</td><td>Solution, limites et retour arrière</td></tr></tbody></table></div></section>
+<section class="course-card sources"><h2>📚 Sources, crédits et droits</h2><ul><li>Ministère de l’Éducation nationale et de la Jeunesse, <em>Programme de sciences numériques et technologie de seconde générale et technologique</em>, partie « Internet », document officiel fourni avec le cours.</li><li>RFC Editor, <em>RFC 8200 — Internet Protocol, Version 6 (IPv6) Specification</em>, standard ouvert de l’IETF.</li><li>RFC Editor, <em>RFC 9293 — Transmission Control Protocol (TCP)</em>, standard ouvert de l’IETF.</li><li>P. Mockapetris, <em>RFC 1034</em> et <em>RFC 1035</em>, concepts et spécification du DNS.</li></ul><p>Les schémas, simulateurs et données d’exercice de cette page sont des créations originales. Les adresses IP d’exemple utilisent des plages réservées à la documentation.</p></section>
+<footer class="course-footer"><p>© Thibaud Cousin — Tous droits réservés</p><p>Ressources pédagogiques SNT – Lycée</p><p>Compatible : accessibilité, mode sombre, impression et smartphone.</p></footer>
+</main></body></html>

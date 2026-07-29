@@ -1,0 +1,11 @@
+id_equipement;commune;departement;nom;type;places;visiteurs_2025;wifi;accessibilite_pmr;mise_a_jour
+EQ001;Valmont;Loire-Claire;Médiathèque des Tilleuls;Médiathèque;82;18420;oui;oui;2026-01-15
+EQ002;Belrive;Loire-Claire;Bibliothèque du Port;Bibliothèque;34;7420;non;oui;2026-01-10
+EQ003;Montfleur;Monts-d’Orbe;Médiathèque Louise-Michel;Médiathèque;116;25310;oui;oui;2026-02-01
+EQ004;Saint-Roch-sur-Lys;Monts-d’Orbe;Point lecture du Lys;Point lecture;12;2180;non;non;2025-11-30
+EQ005;Clairbois;Rives-du-Nord;Médiathèque des Arts;Médiathèque;68;16100;oui;oui;2026-01-22
+EQ006;Rochebrune;Rives-du-Nord;Bibliothèque Jules-Verne;Bibliothèque;45;9125;oui;non;2026-01-08
+EQ007;Aubecourt;Plaine-Verte;Médiathèque Simone-Veil;Médiathèque;94;22180;oui;oui;2026-02-05
+EQ008;Villers-des-Prés;Plaine-Verte;Bibliothèque des Prés;Bibliothèque;28;5820;non;oui;2025-12-18
+EQ009;Lacépine;Lacs-du-Centre;Médiathèque du Lac;Médiathèque;74;14680;oui;oui;2026-01-29
+EQ010;Grand-Chêne;Lacs-du-Centre;Point lecture du Chêne;Point lecture;16;3310;oui;non;2025-10-20

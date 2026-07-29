@@ -1,0 +1,9 @@
+fichier;format;largeur_px;hauteur_px;pixels;mode;taille_octets
+scene_demo_originale.png;PNG;720;480;345600;RGB;13739
+scene_demo_qualite_95.jpg;JPEG;720;480;345600;RGB;45509
+scene_demo_qualite_30.jpg;JPEG;720;480;345600;RGB;10708
+photo_exif_demo.jpg;JPEG;720;480;345600;RGB;39233
+pixel_art_16x12.png;PNG;16;12;192;RGB;168
+pixel_art_agrandi.png;PNG;640;480;307200;RGB;2138
+mire_couleurs.png;PNG;640;420;268800;RGB;5348
+mosaique_bayer_demo.png;PNG;480;480;230400;RGB;5318

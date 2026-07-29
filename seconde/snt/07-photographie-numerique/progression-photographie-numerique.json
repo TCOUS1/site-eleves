@@ -1,0 +1,61 @@
+{
+  "metadata": {
+    "id": "SNT-PHOTOGRAPHIE-NUMERIQUE-MATRICE-OFFICIELLE",
+    "titre": "La photographie numérique",
+    "niveau": "Seconde",
+    "discipline": "Sciences numériques et technologie",
+    "version": "1.0",
+    "date": "2026-07-29",
+    "duree_totale_minutes": 655,
+    "source_programme": "BO spécial n°1 du 22 janvier 2019"
+  },
+  "modules": [
+    {
+      "id": "PHOTO-01",
+      "titre": "De la lumière au fichier",
+      "duree_minutes": 75
+    },
+    {
+      "id": "PHOTO-02",
+      "titre": "Photosites, pixels et résolution",
+      "duree_minutes": 85
+    },
+    {
+      "id": "PHOTO-03",
+      "titre": "Couleurs RVB et Bayer",
+      "duree_minutes": 80
+    },
+    {
+      "id": "PHOTO-04",
+      "titre": "Métadonnées EXIF",
+      "duree_minutes": 75
+    },
+    {
+      "id": "PHOTO-05",
+      "titre": "Formats et compression",
+      "duree_minutes": 75
+    },
+    {
+      "id": "PHOTO-06",
+      "titre": "Traitement par programme",
+      "duree_minutes": 95
+    },
+    {
+      "id": "PHOTO-07",
+      "titre": "Algorithmes de l’appareil",
+      "duree_minutes": 80
+    },
+    {
+      "id": "PHOTO-08",
+      "titre": "Projet photographique",
+      "duree_minutes": 110
+    }
+  ],
+  "capacites_programme": [
+    "Distinguer les photosites du capteur et les pixels de l’image en comparant les résolutions du capteur et de l’image selon les réglages de l’appareil",
+    "Retrouver les métadonnées d’une photographie",
+    "Traiter par programme une image pour la transformer en agissant sur les trois composantes de ses pixels",
+    "Expliciter des algorithmes associés à la prise de vue",
+    "Identifier les étapes de la construction de l’image finale"
+  ]
+}

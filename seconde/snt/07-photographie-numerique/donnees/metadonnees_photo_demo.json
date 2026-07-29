@@ -1,0 +1,20 @@
+{
+  "fichier": "photo_exif_demo.jpg",
+  "dimensions": [
+    720,
+    480
+  ],
+  "appareil": "Appareil pédagogique PX-2",
+  "date_prise_de_vue": "2026-03-16T10:24:32+01:00",
+  "temps_exposition": "1/125 s",
+  "ouverture": "f/2,8",
+  "sensibilite_iso": 200,
+  "distance_focale": "35 mm",
+  "auteur": "Classe fictive de seconde",
+  "copyright": "Image originale pédagogique",
+  "gps_fictif": {
+    "latitude": 48.8566,
+    "longitude": 2.3522,
+    "avertissement": "Coordonnées fictives ajoutées dans ce fichier JSON pour l’activité."
+  }
+}

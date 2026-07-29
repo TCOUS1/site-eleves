@@ -1,0 +1,6 @@
+{"timestamp": "2026-03-16T08:00:00", "client_id": "capteur-salle-201", "topic": "lycee/salle201/temperature", "payload": 20.4, "qos": 0, "retain": false}
+{"timestamp": "2026-03-16T08:00:01", "client_id": "capteur-salle-201", "topic": "lycee/salle201/co2", "payload": 612, "qos": 1, "retain": false}
+{"timestamp": "2026-03-16T08:00:02", "client_id": "capteur-salle-201", "topic": "lycee/salle201/presence", "payload": true, "qos": 1, "retain": true}
+{"timestamp": "2026-03-16T08:00:03", "client_id": "ihm-salle-201", "topic": "lycee/salle201/commande/eclairage", "payload": "auto", "qos": 1, "retain": true}
+{"timestamp": "2026-03-16T08:10:00", "client_id": "capteur-salle-201", "topic": "lycee/salle201/luminosite", "payload": 245, "qos": 0, "retain": false}
+{"timestamp": "2026-03-16T08:10:01", "client_id": "controleur-salle-201", "topic": "lycee/salle201/etat/eclairage", "payload": "allume", "qos": 1, "retain": true}

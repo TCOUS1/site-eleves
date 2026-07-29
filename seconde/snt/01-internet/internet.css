@@ -1,0 +1,33 @@
+/* Adaptation du thème aux fonctions de accessibility.js */
+.course-matrix-page .course-matrix{max-width:1180px!important;}
+.table-scroll table{table-layout:auto!important;}
+body.course-matrix-page:not(.light){
+  --course-bg:#111728;--course-card:#1b2438;--course-text:#eef3ff;
+  --course-muted:#b6c0d4;--course-border:#34405a;--course-observer:#17354a;
+  --course-notions:#242d54;--course-analysis:#493c1f;--course-concept:#173c2b;
+  --course-danger:#49272b;--course-shadow:none;
+}
+body.course-matrix-page.light{
+  --course-bg:#f3f6fb;--course-card:#fff;--course-text:#172033;
+  --course-muted:#5d687c;--course-border:#d8deea;--course-observer:#dff2ff;
+  --course-notions:#eef2ff;--course-analysis:#fff3d6;--course-concept:#e8f8ed;
+  --course-danger:#fff0f0;--course-shadow:0 12px 30px rgba(31,45,80,.09);
+}
+.internet-hero{background:linear-gradient(135deg,#063b66,#0d9488)}
+.internet-chain{display:flex;align-items:center;justify-content:center;gap:10px;flex-wrap:wrap;margin:22px 0}
+.internet-chain div{min-width:135px;padding:16px;border:1px solid var(--course-border);border-radius:16px;background:var(--course-card);text-align:center;font-size:1.8rem}
+.internet-chain strong,.internet-chain small{display:block;font-size:.9rem}.internet-chain small{color:var(--course-muted)}
+.internet-chain>span{font-weight:700;color:var(--course-primary)}
+.timeline{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}.timeline div{padding:16px;border-left:5px solid var(--course-primary);border-radius:12px;background:var(--course-notions)}.timeline strong,.timeline span{display:block}.timeline strong{font-size:1.5rem}
+.capacity-list{columns:2;column-gap:34px}.capacity-list li{break-inside:avoid;margin:.5em 0}
+.table-scroll{overflow-x:auto}.table-scroll table{min-width:650px;width:100%;border-collapse:collapse}.table-scroll th,.table-scroll td{padding:10px;border:1px solid var(--course-border);text-align:left}.table-scroll th{background:var(--course-notions)}
+.dns-lab label{display:block;margin-bottom:10px}.dns-lab select{padding:8px;border:1px solid var(--course-border);border-radius:8px;background:var(--course-card);color:var(--course-text)}
+.internet-status{padding:12px;border-left:5px solid var(--course-primary);border-radius:8px;background:var(--course-notions)}
+.packet-controls{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:12px}
+.packet-sim svg{width:100%;height:auto;border:1px solid var(--course-border);border-radius:16px;background:#f3f7fb}.packet-sim .links line{stroke:#718096;stroke-width:8;stroke-linecap:round}.packet-sim .links line.cut{stroke:#d64545;stroke-dasharray:12 10}.packet-sim .nodes circle{fill:#163a63;stroke:#fff;stroke-width:4}.packet-sim .nodes text{fill:#fff;text-anchor:middle;font-size:14px;font-weight:700}.packet-sim #packet-icon rect{fill:#ffd166;stroke:#7a5200;stroke-width:2}.packet-sim #packet-icon text{text-anchor:middle;font-weight:900}.packet-sim [data-node].active circle{fill:#0d9488}
+.tcp-segments{display:flex;gap:8px;flex-wrap:wrap;margin:15px 0}.tcp-segments span{padding:12px;border:2px solid var(--course-primary);border-radius:10px;background:var(--course-card);font-family:monospace;font-weight:700;transition:.25s}.tcp-segments span.sent{transform:translateY(-8px);background:var(--course-notions)}.tcp-segments span.lost{opacity:.25;text-decoration:line-through}.tcp-segments span.retransmitted{background:var(--course-concept);outline:3px solid #159a55}
+.architecture-diagram{display:grid;grid-template-columns:repeat(2,1fr);gap:12px;padding:18px;border:1px dashed var(--course-primary);border-radius:14px}.architecture-diagram strong{grid-column:1/-1;text-align:center;padding:20px;border-radius:12px;background:var(--course-notions)}.architecture-diagram span{padding:14px;text-align:center;border-radius:12px;background:var(--course-card);border:1px solid var(--course-border)}.architecture-diagram.peer span{border:2px solid var(--course-primary)}
+.incident-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:12px}.incident-grid article{padding:16px;border:1px solid var(--course-border);border-left:5px solid var(--course-primary);border-radius:12px;background:var(--course-card)}.incident-grid p{margin:.4em 0 0}
+.final-eval .eval-item{padding:18px 0;border-bottom:1px solid var(--course-border)}
+@media(max-width:760px){.timeline,.incident-grid{grid-template-columns:1fr}.capacity-list{columns:1}.internet-chain>span{width:100%;text-align:center}}
+@media print{.packet-controls,#dns-resolve{display:none!important}.packet-sim svg{max-height:120mm}.internet-chain div{font-size:1rem}.timeline,.incident-grid{grid-template-columns:1fr 1fr!important}.capacity-list{columns:2}}

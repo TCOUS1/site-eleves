@@ -1,0 +1,62 @@
+{
+  "metadata": {
+    "id": "SNT-LOCALISATION-CARTOGRAPHIE-MATRICE-OFFICIELLE",
+    "titre": "Localisation, cartographie et mobilité",
+    "niveau": "Seconde",
+    "discipline": "Sciences numériques et technologie",
+    "version": "1.0",
+    "date": "2026-07-29",
+    "duree_totale_minutes": 650,
+    "source_programme": "BO spécial n°1 du 22 janvier 2019"
+  },
+  "modules": [
+    {
+      "id": "GEO-01",
+      "titre": "Cartes, couches et échelle",
+      "duree_minutes": 70
+    },
+    {
+      "id": "GEO-02",
+      "titre": "Latitude, longitude et distance",
+      "duree_minutes": 75
+    },
+    {
+      "id": "GEO-03",
+      "titre": "GPS, Galileo et géolocalisation",
+      "duree_minutes": 80
+    },
+    {
+      "id": "GEO-04",
+      "titre": "NMEA et traces GPS",
+      "duree_minutes": 90
+    },
+    {
+      "id": "GEO-05",
+      "titre": "Sources et OpenStreetMap",
+      "duree_minutes": 70
+    },
+    {
+      "id": "GEO-06",
+      "titre": "Itinéraires et graphes",
+      "duree_minutes": 90
+    },
+    {
+      "id": "GEO-07",
+      "titre": "Vie privée et fiabilité",
+      "duree_minutes": 75
+    },
+    {
+      "id": "GEO-08",
+      "titre": "Projet de mobilité responsable",
+      "duree_minutes": 110
+    }
+  ],
+  "capacites_programme": [
+    "Décrire le principe de fonctionnement de la géolocalisation",
+    "Identifier les différentes couches d’information d’un portail cartographique public",
+    "Contribuer à OpenStreetMap de façon collaborative",
+    "Décoder une trame NMEA pour trouver des coordonnées géographiques",
+    "Utiliser un logiciel pour calculer un itinéraire",
+    "Représenter un calcul d’itinéraire comme un problème sur un graphe"
+  ]
+}

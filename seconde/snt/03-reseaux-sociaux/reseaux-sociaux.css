@@ -1,0 +1,421 @@
+.social-hero{
+  background:
+    radial-gradient(circle at 83% 12%,rgba(255,255,255,.2),transparent 24%),
+    linear-gradient(135deg,#4f278f,#9a315f 55%,#c25a2a);
+}
+
+.social-grid-2,
+.social-lab-grid,
+.social-audit-grid{
+  display:grid;
+  grid-template-columns:repeat(2,minmax(0,1fr));
+  gap:16px;
+}
+
+.social-card,
+.social-lab,
+.social-case{
+  padding:18px;
+  border:1px solid var(--course-border);
+  border-radius:15px;
+  background:var(--course-card);
+}
+
+.social-card strong,
+.social-case strong{
+  display:block;
+  margin-bottom:5px;
+}
+
+.social-note{
+  padding:12px 14px;
+  border-left:5px solid var(--course-primary);
+  border-radius:9px;
+  background:var(--course-notions);
+}
+
+.social-warning{
+  border-left-color:#c43d49;
+  background:var(--course-danger);
+}
+
+.social-timeline{
+  display:grid;
+  grid-template-columns:repeat(4,1fr);
+  gap:9px;
+  margin:14px 0;
+}
+
+.social-timeline div{
+  padding:12px 8px;
+  border:1px solid var(--course-border);
+  border-radius:12px;
+  background:var(--course-card);
+  text-align:center;
+}
+
+.social-timeline strong{
+  display:block;
+  color:var(--course-primary);
+}
+
+.social-platform-table td:nth-child(3),
+.social-platform-table td:nth-child(4){
+  font-size:.92rem;
+}
+
+.social-metric{
+  display:inline-block;
+  margin:3px 0;
+  padding:4px 8px;
+  border-radius:999px;
+  background:var(--course-notions);
+  font-weight:700;
+}
+
+.social-classifier{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+  gap:10px;
+  padding:0;
+  list-style:none;
+}
+
+.social-classifier-item{
+  padding:13px;
+  border:1px solid var(--course-border);
+  border-radius:12px;
+  background:var(--course-card);
+}
+
+.social-actions{
+  display:flex;
+  flex-wrap:wrap;
+  gap:8px;
+  margin-top:9px;
+}
+
+.social-choice,
+.social-secondary-button{
+  padding:8px 11px;
+  border:1px solid var(--course-primary);
+  border-radius:9px;
+  color:var(--course-primary);
+  background:var(--course-card);
+  font-weight:700;
+}
+
+.social-choice.good{
+  color:#fff;
+  border-color:#16824a;
+  background:#16824a;
+}
+
+.social-choice.bad{
+  color:#fff;
+  border-color:#b9313b;
+  background:#b9313b;
+}
+
+.social-feedback{
+  min-height:1.5em;
+  margin:.55em 0 0;
+  font-weight:700;
+}
+
+.social-profile{
+  display:grid;
+  grid-template-columns:auto 1fr;
+  gap:15px;
+  align-items:center;
+}
+
+.social-avatar{
+  display:grid;
+  place-items:center;
+  width:86px;
+  height:86px;
+  border-radius:50%;
+  color:#fff;
+  background:linear-gradient(135deg,#4f278f,#c25a2a);
+  font-size:2rem;
+  font-weight:900;
+}
+
+.social-setting-row,
+.social-revenue-row{
+  display:grid;
+  grid-template-columns:1fr auto;
+  gap:14px;
+  align-items:center;
+  padding:11px 0;
+  border-bottom:1px solid var(--course-border);
+}
+
+.social-setting-row:last-child,
+.social-revenue-row:last-child{
+  border-bottom:0;
+}
+
+.social-setting-row select,
+.social-setting-row input,
+.social-revenue-row input{
+  width:auto;
+  min-width:150px;
+  padding:8px;
+  border:1px solid var(--course-border);
+  border-radius:8px;
+  color:var(--course-text);
+  background:var(--course-card);
+}
+
+.social-output{
+  min-height:170px;
+  padding:14px;
+  overflow:auto;
+  border-radius:13px;
+  color:#d9f9e4;
+  background:#172231;
+  white-space:pre-wrap;
+  font-family:"Cascadia Code","Fira Code",Consolas,monospace;
+}
+
+.social-graph-wrap{
+  display:grid;
+  grid-template-columns:minmax(0,1.25fr) minmax(250px,.75fr);
+  gap:18px;
+  align-items:start;
+}
+
+.social-graph{
+  width:100%;
+  height:auto;
+  border:1px solid var(--course-border);
+  border-radius:16px;
+  background:#f7f9fc;
+}
+
+.social-edge{
+  stroke:#9aa8be;
+  stroke-width:4;
+}
+
+.social-edge.bridge{
+  stroke:#d46a2e;
+  stroke-dasharray:10 7;
+}
+
+.social-node circle{
+  fill:#3157d5;
+  stroke:#fff;
+  stroke-width:3;
+  cursor:pointer;
+}
+
+.social-node text{
+  fill:#fff;
+  font-weight:800;
+  pointer-events:none;
+  text-anchor:middle;
+  dominant-baseline:middle;
+}
+
+.social-node.selected circle{
+  fill:#b43d70;
+  stroke:#ffd460;
+  stroke-width:5;
+}
+
+.social-metric-box{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:9px;
+  margin:12px 0;
+}
+
+.social-metric-box div{
+  padding:11px;
+  border:1px solid var(--course-border);
+  border-radius:11px;
+  background:var(--course-card);
+}
+
+.social-metric-box strong{
+  display:block;
+  color:var(--course-primary);
+}
+
+.social-feed-controls{
+  display:grid;
+  gap:10px;
+}
+
+.social-feed-controls label{
+  display:grid;
+  gap:4px;
+  font-weight:700;
+}
+
+.social-feed-controls input{
+  width:100%;
+}
+
+.social-feed-list{
+  display:grid;
+  gap:10px;
+  padding:0;
+  list-style:none;
+}
+
+.social-post{
+  padding:13px;
+  border:1px solid var(--course-border);
+  border-left:5px solid var(--course-primary);
+  border-radius:12px;
+  background:var(--course-card);
+}
+
+.social-post .score{
+  float:right;
+  font-weight:900;
+  color:var(--course-primary);
+}
+
+.social-post small{
+  display:block;
+  margin-top:7px;
+  color:var(--course-muted);
+}
+
+.social-revenue-kpi{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(170px,1fr));
+  gap:10px;
+  margin:12px 0;
+}
+
+.social-revenue-kpi div{
+  padding:13px;
+  border:1px solid var(--course-border);
+  border-radius:12px;
+  background:var(--course-card);
+}
+
+.social-revenue-kpi strong{
+  display:block;
+  color:var(--course-primary);
+  font-size:1.2rem;
+}
+
+.social-report-flow{
+  display:grid;
+  grid-template-columns:repeat(5,1fr);
+  gap:8px;
+  margin:14px 0;
+}
+
+.social-report-flow div{
+  padding:11px 8px;
+  border:1px solid var(--course-border);
+  border-radius:11px;
+  background:var(--course-card);
+  text-align:center;
+}
+
+.social-report-flow strong{
+  display:block;
+  color:var(--course-primary);
+}
+
+.social-legal{
+  border-left:5px solid #5f3baa;
+}
+
+.social-rubric td:first-child{
+  font-weight:700;
+}
+
+.social-legacy{
+  border-left:5px solid #8d4db5;
+}
+
+.social-claim{
+  display:grid;
+  grid-template-columns:auto 1fr;
+  gap:12px;
+  align-items:start;
+  padding:13px;
+  border:1px solid var(--course-border);
+  border-radius:12px;
+  background:var(--course-card);
+}
+
+.social-claim .mark{
+  display:grid;
+  place-items:center;
+  width:36px;
+  height:36px;
+  border-radius:50%;
+  color:#fff;
+  background:var(--course-primary);
+  font-weight:900;
+}
+
+@media(max-width:850px){
+  .social-grid-2,
+  .social-lab-grid,
+  .social-audit-grid,
+  .social-graph-wrap{
+    grid-template-columns:1fr;
+  }
+
+  .social-timeline{
+    grid-template-columns:1fr 1fr;
+  }
+
+  .social-report-flow{
+    grid-template-columns:1fr;
+  }
+}
+
+@media(max-width:520px){
+  .social-timeline{
+    grid-template-columns:1fr;
+  }
+
+  .social-setting-row,
+  .social-revenue-row{
+    grid-template-columns:1fr;
+  }
+}
+
+@media print{
+  .social-actions,
+  .social-choice,
+  .social-secondary-button,
+  .social-lab button{
+    display:none!important;
+  }
+
+  .social-grid-2,
+  .social-lab-grid,
+  .social-audit-grid,
+  .social-graph-wrap{
+    grid-template-columns:1fr!important;
+  }
+
+  .social-output{
+    min-height:0!important;
+    color:#000!important;
+    background:#fff!important;
+    border:1px solid #777!important;
+  }
+
+  .social-timeline{
+    grid-template-columns:repeat(4,1fr)!important;
+  }
+
+  .social-report-flow{
+    grid-template-columns:repeat(5,1fr)!important;
+  }
+}

@@ -1,0 +1,865 @@
+{
+  "metadata": {
+    "id": "SNT_PYTHON_ROBOT_MAZE",
+    "titre": "Programmer Néo, un robot virtuel dans un labyrinthe",
+    "version": "2.0",
+    "langue": "fr-FR",
+    "niveau": "Seconde",
+    "discipline": "Sciences numériques et technologie",
+    "duree_totale_minutes": 525,
+    "format": "Parcours interactif HTML autonome + JSON maître",
+    "date_generation": "2026-07-29"
+  },
+  "intentions_pedagogiques": {
+    "fil_conducteur": "Aider Néo à sortir progressivement d'un labyrinthe en acquérant les bases de Python.",
+    "principes": [
+      "Une nouvelle notion Python est introduite par un besoin concret du robot.",
+      "La complexité graphique est masquée derrière une petite API pédagogique.",
+      "Chaque séance alterne cours bref, exemple, défi, indices, test et synthèse.",
+      "Les infos-bulles rendent visibles les décisions du programme sans surcharger l'écran.",
+      "Le projet final mobilise les notions acquises dans une situation ouverte."
+    ],
+    "differenciation": [
+      "Code initial modifiable",
+      "Indices progressifs",
+      "Exécution complète ou pas à pas",
+      "Correction accessible en mode professeur",
+      "Défis d'extension pour les élèves rapides"
+    ]
+  },
+  "referentiel": [
+    {
+      "id": "SNT.PY.001",
+      "titre": "Variables et affectations",
+      "definition": "Stocker et modifier une valeur dans une variable.",
+      "concepts": [
+        "variable",
+        "affectation",
+        "opérateur"
+      ]
+    },
+    {
+      "id": "SNT.PY.002",
+      "titre": "Entrées et sorties",
+      "definition": "Afficher une information et lire une saisie.",
+      "concepts": [
+        "print",
+        "input"
+      ]
+    },
+    {
+      "id": "SNT.PY.003",
+      "titre": "Conditions",
+      "definition": "Exécuter des instructions selon un test.",
+      "concepts": [
+        "if",
+        "elif",
+        "else",
+        "comparaison"
+      ]
+    },
+    {
+      "id": "SNT.PY.004",
+      "titre": "Boucles",
+      "definition": "Répéter des instructions.",
+      "concepts": [
+        "for",
+        "while",
+        "range"
+      ]
+    },
+    {
+      "id": "SNT.PY.005",
+      "titre": "Chaînes de caractères",
+      "definition": "Manipuler du texte.",
+      "concepts": [
+        "len",
+        "indexation",
+        "concaténation"
+      ]
+    },
+    {
+      "id": "SNT.PY.006",
+      "titre": "ASCII",
+      "definition": "Relier caractères et codes numériques.",
+      "concepts": [
+        "ord",
+        "chr"
+      ]
+    },
+    {
+      "id": "SNT.PY.007",
+      "titre": "Listes",
+      "definition": "Stocker une collection ordonnée de valeurs.",
+      "concepts": [
+        "liste",
+        "append",
+        "parcours"
+      ]
+    },
+    {
+      "id": "SNT.PY.008",
+      "titre": "Graphiques",
+      "definition": "Tracer et lire des données.",
+      "concepts": [
+        "courbe",
+        "histogramme",
+        "grille"
+      ]
+    },
+    {
+      "id": "SNT.PY.009",
+      "titre": "Aléatoire",
+      "definition": "Simuler le hasard.",
+      "concepts": [
+        "randint",
+        "random"
+      ]
+    },
+    {
+      "id": "SNT.PY.010",
+      "titre": "Déplacements graphiques",
+      "definition": "Piloter un objet par des déplacements et des rotations.",
+      "concepts": [
+        "avancer",
+        "gauche",
+        "droite",
+        "orientation"
+      ]
+    },
+    {
+      "id": "SNT.PY.011",
+      "titre": "Indentation et blocs",
+      "definition": "Organiser les instructions appartenant à une même structure.",
+      "concepts": [
+        "indentation",
+        "bloc"
+      ]
+    },
+    {
+      "id": "SNT.PY.012",
+      "titre": "Fonctions et paramètres",
+      "definition": "Créer des blocs réutilisables.",
+      "concepts": [
+        "def",
+        "paramètre",
+        "return"
+      ]
+    },
+    {
+      "id": "SNT.PY.013",
+      "titre": "Portée des variables",
+      "definition": "Distinguer variables locales et globales.",
+      "concepts": [
+        "locale",
+        "globale"
+      ]
+    },
+    {
+      "id": "SNT.PY.014",
+      "titre": "Bibliothèques et modules",
+      "definition": "Importer des fonctionnalités externes.",
+      "concepts": [
+        "import",
+        "module",
+        "bibliothèque"
+      ]
+    },
+    {
+      "id": "SNT.PY.015",
+      "titre": "Environnement de développement",
+      "definition": "Écrire, exécuter et corriger un programme.",
+      "concepts": [
+        "IDE",
+        "console",
+        "débogage"
+      ]
+    },
+    {
+      "id": "SNT.PY.016",
+      "titre": "Documentation et aide",
+      "definition": "Lire une documentation et utiliser une aide intégrée.",
+      "concepts": [
+        "help",
+        "docstring"
+      ]
+    }
+  ],
+  "robot": {
+    "nom": "Néo",
+    "description": "Petit robot virtuel vu du dessus, représenté par un disque orienté.",
+    "etat_initial": {
+      "x": 1,
+      "y": 1,
+      "orientation": "E",
+      "energie": 100
+    },
+    "objectif": {
+      "x": 10,
+      "y": 7
+    },
+    "orientations": [
+      "N",
+      "E",
+      "S",
+      "O"
+    ],
+    "commandes": [
+      {
+        "nom": "avancer",
+        "signature": "avancer()",
+        "effet": "Avance d'une case si elle est libre."
+      },
+      {
+        "nom": "tourner_gauche",
+        "signature": "tourner_gauche()",
+        "effet": "Tourne de 90° vers la gauche."
+      },
+      {
+        "nom": "tourner_droite",
+        "signature": "tourner_droite()",
+        "effet": "Tourne de 90° vers la droite."
+      },
+      {
+        "nom": "obstacle_devant",
+        "signature": "obstacle_devant()",
+        "retour": "bool",
+        "effet": "Indique si la case située devant est un mur."
+      },
+      {
+        "nom": "obstacle_droite",
+        "signature": "obstacle_droite()",
+        "retour": "bool",
+        "effet": "Indique si la case située à droite est un mur."
+      },
+      {
+        "nom": "obstacle_gauche",
+        "signature": "obstacle_gauche()",
+        "retour": "bool",
+        "effet": "Indique si la case située à gauche est un mur."
+      },
+      {
+        "nom": "objectif_atteint",
+        "signature": "objectif_atteint()",
+        "retour": "bool",
+        "effet": "Indique si Néo est sur la case d'arrivée."
+      },
+      {
+        "nom": "position",
+        "signature": "position()",
+        "retour": "liste",
+        "effet": "Renvoie les coordonnées [x, y]."
+      },
+      {
+        "nom": "dire",
+        "signature": "dire(message)",
+        "effet": "Affiche une info-bulle brève au-dessus du robot."
+      }
+    ],
+    "dialogue": {
+      "questions_reconnues": [
+        "où es-tu ?",
+        "que vois-tu ?",
+        "quel est ton objectif ?",
+        "aide"
+      ],
+      "principe": "Les réponses apparaissent dans une info-bulle de moins de 90 caractères."
+    }
+  },
+  "labyrinthe": {
+    "largeur": 12,
+    "hauteur": 9,
+    "legende": {
+      "#": "mur",
+      ".": "case libre",
+      "S": "départ",
+      "G": "objectif"
+    },
+    "grille": [
+      "############",
+      "#S...#.....#",
+      "###..#.###.#",
+      "#....#...#.#",
+      "#.######.#.#",
+      "#........#.#",
+      "#.########.#",
+      "#.........G#",
+      "############"
+    ]
+  },
+  "progression": [
+    {
+      "id": "SEANCE_00",
+      "ordre": 0,
+      "titre": "Prendre en main le laboratoire",
+      "duree_minutes": 30,
+      "accroche": "Néo est bloqué dans un laboratoire. Avant de l'aider, il faut comprendre son environnement.",
+      "mission": "Repérer le départ, l'arrivée, les murs et exécuter une première instruction.",
+      "competences": [
+        "SNT.PY.015",
+        "SNT.PY.002"
+      ],
+      "notions": [
+        "programme",
+        "instruction",
+        "exécution",
+        "erreur"
+      ],
+      "cours": [
+        {
+          "titre": "Un programme",
+          "texte": "Un programme est une suite d'instructions exécutées dans un ordre précis."
+        },
+        {
+          "titre": "Le simulateur",
+          "texte": "Le laboratoire interprète un sous-ensemble pédagogique de Python. Les commandes du robot sont réutilisées tout au long du parcours."
+        }
+      ],
+      "starter_code": "dire(\"Bonjour, je suis Néo !\")\navancer()",
+      "solution_code": "dire(\"Bonjour, je suis Néo !\")\navancer()",
+      "consigne": "Exécuter le programme, puis remplacer le message affiché par une phrase personnelle.",
+      "tests": [
+        "Le programme s'exécute sans erreur.",
+        "Une info-bulle apparaît.",
+        "Le robot tente un déplacement."
+      ],
+      "indices": [
+        "Le texte doit être placé entre guillemets.",
+        "Une instruction se termine par des parenthèses."
+      ],
+      "synthese": [
+        "Python exécute les instructions de haut en bas.",
+        "Les messages d'erreur aident à corriger le programme."
+      ],
+      "quiz": [
+        {
+          "question": "Quel est le rôle de dire(\"Bonjour\") ?",
+          "choix": [
+            "Déplacer le robot",
+            "Afficher une info-bulle",
+            "Créer un mur"
+          ],
+          "reponse": 1
+        }
+      ]
+    },
+    {
+      "id": "SEANCE_01",
+      "ordre": 1,
+      "titre": "Donner un état au robot",
+      "duree_minutes": 55,
+      "accroche": "Néo doit mémoriser son nom et le nombre de pas prévus.",
+      "mission": "Créer des variables puis les utiliser dans une info-bulle.",
+      "competences": [
+        "SNT.PY.001",
+        "SNT.PY.002",
+        "SNT.PY.005"
+      ],
+      "notions": [
+        "variable",
+        "affectation",
+        "chaîne de caractères",
+        "concaténation"
+      ],
+      "cours": [
+        {
+          "titre": "Variable",
+          "texte": "Une variable associe un nom à une valeur. L'instruction nom = \"Néo\" mémorise un texte."
+        },
+        {
+          "titre": "Afficher une valeur",
+          "texte": "La commande dire() peut recevoir une variable ou un texte construit avec plusieurs valeurs."
+        }
+      ],
+      "starter_code": "nom = \"Néo\"\npas = 2\ndire(nom)\navancer()\navancer()",
+      "solution_code": "nom = \"Néo\"\npas = 2\ndire(nom + \" avance de \" + str(pas) + \" cases\")\navancer()\navancer()",
+      "consigne": "Faire annoncer au robot son nom et le nombre de cases qu'il va parcourir, puis le déplacer deux fois.",
+      "tests": [
+        "Les variables nom et pas existent.",
+        "Le message contient le nom du robot.",
+        "Deux déplacements sont demandés."
+      ],
+      "indices": [
+        "Une valeur textuelle est placée entre guillemets.",
+        "str(pas) transforme un nombre en texte."
+      ],
+      "synthese": [
+        "Le signe = réalise une affectation.",
+        "Le signe + peut concaténer des chaînes de caractères."
+      ],
+      "quiz": [
+        {
+          "question": "Dans pas = 2, que représente 2 ?",
+          "choix": [
+            "Le nom de la variable",
+            "La valeur affectée",
+            "Une condition"
+          ],
+          "reponse": 1
+        }
+      ]
+    },
+    {
+      "id": "SEANCE_02",
+      "ordre": 2,
+      "titre": "Observer avant d'agir",
+      "duree_minutes": 55,
+      "accroche": "Un mur peut se trouver devant Néo. Il doit prendre une décision.",
+      "mission": "Utiliser une condition pour avancer ou tourner.",
+      "competences": [
+        "SNT.PY.003",
+        "SNT.PY.011"
+      ],
+      "notions": [
+        "booléen",
+        "if",
+        "else",
+        "indentation",
+        "capteur"
+      ],
+      "cours": [
+        {
+          "titre": "Capteur virtuel",
+          "texte": "obstacle_devant() renvoie True lorsqu'un mur se trouve juste devant le robot."
+        },
+        {
+          "titre": "Condition",
+          "texte": "Le bloc if est exécuté lorsque le test est vrai. L'indentation indique les instructions appartenant au bloc."
+        }
+      ],
+      "starter_code": "if obstacle_devant():\n    dire(\"Mur devant moi\")\n    tourner_droite()\nelse:\n    avancer()",
+      "solution_code": "if obstacle_devant():\n    dire(\"Je tourne à droite\")\n    tourner_droite()\nelse:\n    dire(\"La voie est libre\")\n    avancer()",
+      "consigne": "Faire annoncer au robot ce qu'il détecte, puis choisir entre avancer et tourner à droite.",
+      "tests": [
+        "Le programme contient if et else.",
+        "Les blocs sont indentés.",
+        "Le robot ne traverse pas un mur."
+      ],
+      "indices": [
+        "La ligne if se termine par deux-points.",
+        "Les instructions du bloc sont décalées de quatre espaces."
+      ],
+      "synthese": [
+        "Une condition permet de choisir un comportement.",
+        "L'indentation est obligatoire en Python."
+      ],
+      "quiz": [
+        {
+          "question": "Que renvoie obstacle_devant() ?",
+          "choix": [
+            "Un texte",
+            "Un booléen",
+            "Une liste"
+          ],
+          "reponse": 1
+        }
+      ]
+    },
+    {
+      "id": "SEANCE_03",
+      "ordre": 3,
+      "titre": "Répéter un déplacement",
+      "duree_minutes": 55,
+      "accroche": "Une longue portion du couloir est libre. Écrire avancer() plusieurs fois serait répétitif.",
+      "mission": "Utiliser une boucle bornée pour avancer plusieurs fois.",
+      "competences": [
+        "SNT.PY.004",
+        "SNT.PY.011"
+      ],
+      "notions": [
+        "for",
+        "range",
+        "compteur",
+        "boucle bornée"
+      ],
+      "cours": [
+        {
+          "titre": "Boucle for",
+          "texte": "for etape in range(3) répète trois fois le bloc indenté."
+        },
+        {
+          "titre": "Compteur",
+          "texte": "La variable de boucle prend successivement les valeurs 0, 1 et 2."
+        }
+      ],
+      "starter_code": "for etape in range(3):\n    dire(\"Pas \" + str(etape + 1))\n    avancer()",
+      "solution_code": "for etape in range(3):\n    if obstacle_devant():\n        dire(\"Je m'arrête : mur détecté\")\n    else:\n        dire(\"Pas \" + str(etape + 1))\n        avancer()",
+      "consigne": "Répéter trois déplacements et afficher le numéro du pas. Ajouter ensuite une vérification de sécurité.",
+      "tests": [
+        "Une boucle for est utilisée.",
+        "range(3) provoque trois répétitions.",
+        "Le robot affiche le numéro du pas."
+      ],
+      "indices": [
+        "La variable etape commence à 0.",
+        "Pour afficher 1 au premier tour, utiliser etape + 1."
+      ],
+      "synthese": [
+        "Une boucle évite de recopier les mêmes instructions.",
+        "Une boucle peut contenir une condition."
+      ],
+      "quiz": [
+        {
+          "question": "Combien de répétitions produit range(4) ?",
+          "choix": [
+            "3",
+            "4",
+            "5"
+          ],
+          "reponse": 1
+        }
+      ]
+    },
+    {
+      "id": "SEANCE_04",
+      "ordre": 4,
+      "titre": "Mémoriser les observations",
+      "duree_minutes": 55,
+      "accroche": "Néo doit garder la trace des événements rencontrés dans le labyrinthe.",
+      "mission": "Créer une liste de messages et la parcourir.",
+      "competences": [
+        "SNT.PY.005",
+        "SNT.PY.007"
+      ],
+      "notions": [
+        "liste",
+        "append",
+        "indice",
+        "parcours"
+      ],
+      "cours": [
+        {
+          "titre": "Liste",
+          "texte": "Une liste stocke plusieurs valeurs dans un ordre précis."
+        },
+        {
+          "titre": "Ajouter une valeur",
+          "texte": "journal.append(\"mur\") ajoute une nouvelle information à la fin de la liste."
+        }
+      ],
+      "starter_code": "journal = []\n\nif obstacle_devant():\n    journal.append(\"mur\")\n    tourner_droite()\nelse:\n    journal.append(\"voie libre\")\n    avancer()\n\nfor message in journal:\n    dire(message)",
+      "solution_code": "journal = []\n\nfor etape in range(3):\n    if obstacle_devant():\n        journal.append(\"mur à l'étape \" + str(etape + 1))\n        tourner_droite()\n    else:\n        journal.append(\"avance à l'étape \" + str(etape + 1))\n        avancer()\n\nfor message in journal:\n    dire(message)",
+      "consigne": "Enregistrer trois observations dans une liste, puis faire lire le journal au robot.",
+      "tests": [
+        "La variable journal est une liste.",
+        "append() est utilisé.",
+        "Une boucle parcourt le journal."
+      ],
+      "indices": [
+        "Une liste vide s'écrit [].",
+        "append ajoute un élément sans remplacer les précédents."
+      ],
+      "synthese": [
+        "Une liste permet de regrouper des données.",
+        "On peut parcourir une liste avec for."
+      ],
+      "quiz": [
+        {
+          "question": "Que fait append ?",
+          "choix": [
+            "Supprime la liste",
+            "Ajoute un élément",
+            "Trie la liste"
+          ],
+          "reponse": 1
+        }
+      ]
+    },
+    {
+      "id": "SEANCE_05",
+      "ordre": 5,
+      "titre": "Créer des commandes réutilisables",
+      "duree_minutes": 55,
+      "accroche": "Néo répète souvent la même stratégie : observer, puis avancer ou tourner.",
+      "mission": "Créer une fonction agir() qui regroupe cette stratégie.",
+      "competences": [
+        "SNT.PY.012",
+        "SNT.PY.013"
+      ],
+      "notions": [
+        "fonction",
+        "appel",
+        "paramètre",
+        "variable locale"
+      ],
+      "cours": [
+        {
+          "titre": "Définir une fonction",
+          "texte": "def agir(): crée une nouvelle commande. Son contenu n'est exécuté qu'au moment de l'appel agir()."
+        },
+        {
+          "titre": "Variable locale",
+          "texte": "Une variable créée dans une fonction appartient en principe à cette fonction."
+        }
+      ],
+      "starter_code": "def agir():\n    if obstacle_devant():\n        tourner_droite()\n    else:\n        avancer()\n\nfor tour in range(5):\n    agir()",
+      "solution_code": "def agir(message):\n    if obstacle_devant():\n        dire(message + \" : je tourne\")\n        tourner_droite()\n    else:\n        dire(message + \" : j'avance\")\n        avancer()\n\nfor tour in range(5):\n    agir(\"Étape \" + str(tour + 1))",
+      "consigne": "Transformer la stratégie en fonction, puis lui transmettre un message en paramètre.",
+      "tests": [
+        "Une fonction est définie avec def.",
+        "La fonction est appelée dans une boucle.",
+        "Un paramètre est utilisé dans la version finale."
+      ],
+      "indices": [
+        "Définir une fonction ne l'exécute pas.",
+        "Le paramètre est écrit entre les parenthèses après le nom de la fonction."
+      ],
+      "synthese": [
+        "Une fonction rend le programme plus lisible et réutilisable.",
+        "Un paramètre permet d'adapter son comportement."
+      ],
+      "quiz": [
+        {
+          "question": "Quand le corps d'une fonction est-il exécuté ?",
+          "choix": [
+            "À sa définition",
+            "À son appel",
+            "À la fermeture du programme"
+          ],
+          "reponse": 1
+        }
+      ]
+    },
+    {
+      "id": "SEANCE_06",
+      "ordre": 6,
+      "titre": "Choisir une stratégie",
+      "duree_minutes": 55,
+      "accroche": "À certains carrefours, plusieurs directions sont possibles. Néo peut tester une stratégie aléatoire.",
+      "mission": "Importer un module et produire un choix aléatoire contrôlé.",
+      "competences": [
+        "SNT.PY.009",
+        "SNT.PY.014",
+        "SNT.PY.016"
+      ],
+      "notions": [
+        "module",
+        "import",
+        "randint",
+        "documentation"
+      ],
+      "cours": [
+        {
+          "titre": "Module",
+          "texte": "Un module regroupe des fonctions prêtes à l'emploi. Le simulateur accepte from random import randint."
+        },
+        {
+          "titre": "Aléatoire",
+          "texte": "randint(0, 1) renvoie au hasard 0 ou 1. Une simulation doit être répétée pour être étudiée."
+        }
+      ],
+      "starter_code": "from random import randint\n\nchoix = randint(0, 1)\nif choix == 0:\n    dire(\"Je tente à gauche\")\n    tourner_gauche()\nelse:\n    dire(\"Je tente à droite\")\n    tourner_droite()",
+      "solution_code": "from random import randint\n\ndef choisir_direction():\n    choix = randint(0, 1)\n    if choix == 0:\n        tourner_gauche()\n    else:\n        tourner_droite()\n\nif obstacle_devant():\n    dire(\"Obstacle : je choisis une direction\")\n    choisir_direction()\nelse:\n    avancer()",
+      "consigne": "Utiliser randint pour choisir une rotation lorsque le robot rencontre un obstacle.",
+      "tests": [
+        "Le module random est importé.",
+        "randint(0, 1) est utilisé.",
+        "Le choix influence la direction."
+      ],
+      "indices": [
+        "Deux valeurs possibles suffisent pour choisir entre gauche et droite.",
+        "L'aléatoire n'assure pas de trouver le chemin le plus court."
+      ],
+      "synthese": [
+        "Un import donne accès à une fonctionnalité externe.",
+        "Une stratégie aléatoire peut fonctionner sans être optimale."
+      ],
+      "quiz": [
+        {
+          "question": "Quelles valeurs peut renvoyer randint(0, 1) ?",
+          "choix": [
+            "Seulement 0",
+            "0 ou 1",
+            "Tous les nombres réels"
+          ],
+          "reponse": 1
+        }
+      ]
+    },
+    {
+      "id": "SEANCE_07",
+      "ordre": 7,
+      "titre": "Suivre une règle de labyrinthe",
+      "duree_minutes": 55,
+      "accroche": "Une règle simple consiste à garder le mur à droite pour explorer un labyrinthe.",
+      "mission": "Combiner capteurs, conditions, boucle et fonction pour progresser jusqu'à l'objectif.",
+      "competences": [
+        "SNT.PY.003",
+        "SNT.PY.004",
+        "SNT.PY.012"
+      ],
+      "notions": [
+        "algorithme",
+        "boucle non bornée",
+        "condition d'arrêt",
+        "décomposition"
+      ],
+      "cours": [
+        {
+          "titre": "Condition d'arrêt",
+          "texte": "Une boucle while doit posséder une condition permettant de terminer l'exécution."
+        },
+        {
+          "titre": "Algorithme",
+          "texte": "Un algorithme décrit une méthode finie et non ambiguë pour résoudre un problème."
+        }
+      ],
+      "starter_code": "def avancer_prudemment():\n    if obstacle_droite():\n        if obstacle_devant():\n            tourner_gauche()\n        else:\n            avancer()\n    else:\n        tourner_droite()\n        avancer()\n\nwhile not objectif_atteint():\n    avancer_prudemment()",
+      "solution_code": "def suivre_mur_droit():\n    if obstacle_droite():\n        if obstacle_devant():\n            dire(\"Coin : je tourne à gauche\")\n            tourner_gauche()\n        else:\n            avancer()\n    else:\n        dire(\"Passage à droite\")\n        tourner_droite()\n        avancer()\n\nwhile not objectif_atteint():\n    suivre_mur_droit()\n\ndire(\"Objectif atteint !\")",
+      "consigne": "Créer une fonction de déplacement puis la répéter jusqu'à atteindre l'arrivée. Observer les limites de la stratégie.",
+      "tests": [
+        "Une boucle while utilise objectif_atteint().",
+        "Une fonction applique la règle de la main droite.",
+        "Le programme possède une limite de sécurité de 200 actions dans le simulateur."
+      ],
+      "indices": [
+        "Tester d'abord la case de droite, puis la case de devant.",
+        "Si la droite est libre, tourner à droite puis avancer."
+      ],
+      "synthese": [
+        "Un programme complexe combine plusieurs structures simples.",
+        "Il faut prévoir l'arrêt et tester les cas limites."
+      ],
+      "quiz": [
+        {
+          "question": "Pourquoi limiter le nombre d'actions ?",
+          "choix": [
+            "Pour changer la couleur du robot",
+            "Pour éviter une boucle infinie",
+            "Pour ajouter un mur"
+          ],
+          "reponse": 1
+        }
+      ]
+    },
+    {
+      "id": "SEANCE_08",
+      "ordre": 8,
+      "titre": "Projet final : sortir du labyrinthe",
+      "duree_minutes": 110,
+      "accroche": "Néo doit atteindre la balise verte en expliquant brièvement ses décisions.",
+      "mission": "Concevoir, tester et améliorer un programme autonome de navigation.",
+      "competences": [
+        "SNT.PY.001",
+        "SNT.PY.003",
+        "SNT.PY.004",
+        "SNT.PY.007",
+        "SNT.PY.012",
+        "SNT.PY.015",
+        "SNT.PY.016"
+      ],
+      "notions": [
+        "conception",
+        "test",
+        "débogage",
+        "trace",
+        "amélioration"
+      ],
+      "cours": [
+        {
+          "titre": "Démarche de projet",
+          "texte": "Analyser le problème, proposer une stratégie, coder, tester, relever les erreurs puis améliorer."
+        },
+        {
+          "titre": "Communication",
+          "texte": "Les infos-bulles doivent expliquer les décisions sans afficher un texte trop long."
+        }
+      ],
+      "starter_code": "# Projet final\n# 1. Créer une fonction de décision\n# 2. Utiliser une boucle avec condition d'arrêt\n# 3. Faire parler Néo aux moments importants\n\ndef decision():\n    pass\n\nwhile not objectif_atteint():\n    decision()\n\ndire(\"Sortie trouvée !\")",
+      "solution_code": "def decision():\n    if obstacle_droite():\n        if obstacle_devant():\n            dire(\"Je tourne à gauche\")\n            tourner_gauche()\n        else:\n            avancer()\n    else:\n        dire(\"Je prends le passage à droite\")\n        tourner_droite()\n        avancer()\n\nwhile not objectif_atteint():\n    decision()\n\ndire(\"Sortie trouvée !\")",
+      "consigne": "Écrire une solution autonome, documenter la stratégie et obtenir au moins 3 critères sur 4 dans la grille d'évaluation.",
+      "tests": [
+        "Le robot atteint l'objectif.",
+        "Le programme s'arrête.",
+        "La stratégie est organisée en fonction.",
+        "Les messages du robot sont courts et utiles."
+      ],
+      "indices": [
+        "Commencer par une stratégie simple et observer la trace.",
+        "Utiliser le bouton Pas à pas pour localiser une erreur.",
+        "Une solution qui fonctionne peut ensuite être raccourcie."
+      ],
+      "synthese": [
+        "Un programme se construit par essais, tests et corrections.",
+        "La lisibilité compte autant que le résultat."
+      ],
+      "evaluation": {
+        "bareme": [
+          {
+            "critere": "Atteinte de l'objectif",
+            "points": 4
+          },
+          {
+            "critere": "Utilisation pertinente des structures Python",
+            "points": 4
+          },
+          {
+            "critere": "Lisibilité et organisation du code",
+            "points": 4
+          },
+          {
+            "critere": "Tests, corrections et justification",
+            "points": 4
+          },
+          {
+            "critere": "Messages courts et utiles du robot",
+            "points": 4
+          }
+        ],
+        "total": 20
+      },
+      "quiz": [
+        {
+          "question": "Quelle étape vient après un test non concluant ?",
+          "choix": [
+            "Ignorer l'erreur",
+            "Corriger puis tester à nouveau",
+            "Supprimer le programme"
+          ],
+          "reponse": 1
+        }
+      ]
+    }
+  ],
+  "extensions": [
+    {
+      "id": "EXT_01",
+      "titre": "Messages codés",
+      "competences": [
+        "SNT.PY.005",
+        "SNT.PY.006"
+      ],
+      "description": "Coder une courte instruction avec ord() et chr()."
+    },
+    {
+      "id": "EXT_02",
+      "titre": "Tracer les performances",
+      "competences": [
+        "SNT.PY.007",
+        "SNT.PY.008"
+      ],
+      "description": "Comparer le nombre d'actions de plusieurs stratégies."
+    },
+    {
+      "id": "EXT_03",
+      "titre": "Créer un nouveau labyrinthe",
+      "competences": [
+        "SNT.PY.007"
+      ],
+      "description": "Modifier la grille en respectant les contraintes de départ et d'arrivée."
+    }
+  ],
+  "schema_html": {
+    "zones": [
+      "navigation des séances",
+      "fiche de séance",
+      "labyrinthe",
+      "éditeur de code",
+      "console",
+      "dialogue avec le robot",
+      "quiz"
+    ],
+    "persistance": "Progression et code sauvegardés dans localStorage.",
+    "execution": "Interpréteur pédagogique local d'un sous-ensemble de Python, sans connexion Internet."
+  }
+}

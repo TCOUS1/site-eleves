@@ -1,0 +1,7 @@
+id_objet;nom;usage;capteurs;actionneurs;communications;traitement;donnees_personnelles;mise_a_jour;mot_de_passe_defaut;fin_support
+OC001;Thermostat ÉcoSalle;Régulation thermique;"température;présence";"relais_chauffage;écran";Wi-Fi;local+serveur;"présence;habitudes";automatique;non;2030-12-31
+OC002;Bracelet Forme+;Suivi d’activité;"accéléromètre;fréquence_cardiaque";"vibreur;écran";Bluetooth;smartphone+cloud;"santé;activité;sommeil";application;non;2029-06-30
+OC003;Ampoule LumièreNet;Éclairage;aucun;LED;Zigbee;passerelle;horaires_utilisation;manuelle;non_applicable;2028-03-31
+OC004;Caméra EntréeVision;Surveillance;"caméra;microphone;mouvement";"sirène;LED";Wi-Fi;local+cloud;"image;voix;présence";irrégulière;oui;2027-01-15
+OC005;Capteur Jardin;Arrosage;"humidité_sol;température";électrovanne;LoRaWAN;local+passerelle;aucune_prévue;passerelle;non;2031-09-30
+OC006;Badge AccèsCampus;Contrôle d’accès;lecteur_NFC;"serrure;voyant;buzzer";"NFC;Ethernet";local+serveur;"identifiant;horodatage;accès";administrateur;non;2032-12-31

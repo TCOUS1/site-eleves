@@ -1,0 +1,9 @@
+id;nom;categorie;latitude;longitude;altitude_m;accessible_pmr;description
+P01;Lycée des Horizons;Éducation;45.7521;4.8422;192;oui;Point de départ du parcours.
+P02;Gare de Ville-Lumière;Transport;45.7564;4.8331;188;oui;Gare fictive et pôle d’échanges.
+P03;Parc des Sources;Loisir;45.7478;4.8517;201;partiel;Parc traversé par une voie verte.
+P04;Médiathèque Atlas;Culture;45.7592;4.8465;196;oui;Équipement culturel fictif.
+P05;Belvédère du Levant;Point de vue;45.7449;4.8614;248;non;Accès par un escalier et un sentier pentu.
+P06;Centre sportif Olympe;Sport;45.7635;4.8572;205;oui;Gymnase et terrains fictifs.
+P07;Hôpital Saint-Clair;Santé;45.7681;4.8395;199;oui;Établissement de santé fictif.
+P08;Maison des Associations;Service public;45.7504;4.8308;186;oui;Lieu de réunion fictif.

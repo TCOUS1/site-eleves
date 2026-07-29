@@ -1,0 +1,143 @@
+{
+  "description": "Réseau fictif pour le calcul d’itinéraires.",
+  "nodes": {
+    "A": {
+      "nom": "Lycée",
+      "x": 70,
+      "y": 180
+    },
+    "B": {
+      "nom": "Place",
+      "x": 170,
+      "y": 135
+    },
+    "C": {
+      "nom": "Gare",
+      "x": 170,
+      "y": 245
+    },
+    "D": {
+      "nom": "Pont",
+      "x": 285,
+      "y": 120
+    },
+    "E": {
+      "nom": "Parc",
+      "x": 295,
+      "y": 235
+    },
+    "F": {
+      "nom": "Médiathèque",
+      "x": 415,
+      "y": 100
+    },
+    "G": {
+      "nom": "Centre sportif",
+      "x": 420,
+      "y": 235
+    },
+    "H": {
+      "nom": "Hôpital",
+      "x": 545,
+      "y": 165
+    }
+  },
+  "edges": [
+    {
+      "a": "A",
+      "b": "B",
+      "distance": 900,
+      "time": 11,
+      "accessible": true,
+      "type": "rue"
+    },
+    {
+      "a": "A",
+      "b": "C",
+      "distance": 760,
+      "time": 10,
+      "accessible": true,
+      "type": "voie verte"
+    },
+    {
+      "a": "B",
+      "b": "C",
+      "distance": 520,
+      "time": 7,
+      "accessible": true,
+      "type": "rue"
+    },
+    {
+      "a": "B",
+      "b": "D",
+      "distance": 880,
+      "time": 11,
+      "accessible": true,
+      "type": "rue"
+    },
+    {
+      "a": "C",
+      "b": "E",
+      "distance": 940,
+      "time": 12,
+      "accessible": true,
+      "type": "voie verte"
+    },
+    {
+      "a": "D",
+      "b": "E",
+      "distance": 470,
+      "time": 8,
+      "accessible": false,
+      "type": "escaliers"
+    },
+    {
+      "a": "D",
+      "b": "F",
+      "distance": 910,
+      "time": 12,
+      "accessible": true,
+      "type": "rue"
+    },
+    {
+      "a": "E",
+      "b": "G",
+      "distance": 810,
+      "time": 10,
+      "accessible": true,
+      "type": "voie verte"
+    },
+    {
+      "a": "F",
+      "b": "G",
+      "distance": 690,
+      "time": 9,
+      "accessible": true,
+      "type": "rue"
+    },
+    {
+      "a": "F",
+      "b": "H",
+      "distance": 970,
+      "time": 12,
+      "accessible": true,
+      "type": "rue"
+    },
+    {
+      "a": "G",
+      "b": "H",
+      "distance": 880,
+      "time": 11,
+      "accessible": true,
+      "type": "rue"
+    },
+    {
+      "a": "E",
+      "b": "H",
+      "distance": 1540,
+      "time": 18,
+      "accessible": true,
+      "type": "avenue"
+    }
+  ]
+}

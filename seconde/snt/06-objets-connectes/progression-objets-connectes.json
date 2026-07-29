@@ -1,0 +1,59 @@
+{
+  "metadata": {
+    "id": "SNT-INFORMATIQUE-EMBARQUEE-OBJETS-CONNECTES-MATRICE-OFFICIELLE",
+    "titre": "Informatique embarquée et objets connectés",
+    "niveau": "Seconde",
+    "discipline": "Sciences numériques et technologie",
+    "version": "1.0",
+    "date": "2026-07-29",
+    "duree_totale_minutes": 670,
+    "source_programme": "BO spécial n°1 du 22 janvier 2019"
+  },
+  "modules": [
+    {
+      "id": "IOT-01",
+      "titre": "Systèmes embarqués et objets connectés",
+      "duree_minutes": 70
+    },
+    {
+      "id": "IOT-02",
+      "titre": "Capteurs et actionneurs",
+      "duree_minutes": 85
+    },
+    {
+      "id": "IOT-03",
+      "titre": "Événements et états",
+      "duree_minutes": 75
+    },
+    {
+      "id": "IOT-04",
+      "titre": "Programmation embarquée",
+      "duree_minutes": 85
+    },
+    {
+      "id": "IOT-05",
+      "titre": "Interface homme-machine",
+      "duree_minutes": 75
+    },
+    {
+      "id": "IOT-06",
+      "titre": "Communications et MQTT",
+      "duree_minutes": 80
+    },
+    {
+      "id": "IOT-07",
+      "titre": "Sécurité et vie privée",
+      "duree_minutes": 90
+    },
+    {
+      "id": "IOT-08",
+      "titre": "Projet responsable",
+      "duree_minutes": 110
+    }
+  ],
+  "capacites_programme": [
+    "Identifier des algorithmes de contrôle des comportements physiques à travers les données des capteurs, l’IHM et les actions des actionneurs dans des systèmes courants",
+    "Réaliser une IHM simple d’un objet connecté",
+    "Écrire des programmes simples d’acquisition de données ou de commande d’un actionneur"
+  ]
+}

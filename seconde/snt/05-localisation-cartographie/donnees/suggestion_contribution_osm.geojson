@@ -1,0 +1,20 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "suggestion": "Ajouter un passage piéton",
+        "source": "Observation fictive pour activité SNT",
+        "verification": "À vérifier sur le terrain avant toute contribution réelle"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          4.8472,
+          45.7536
+        ]
+      }
+    }
+  ]
+}
