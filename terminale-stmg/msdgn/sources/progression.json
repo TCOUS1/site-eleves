@@ -1,0 +1,75 @@
+{
+  "version": "0.2",
+  "niveau": "Terminale STMG",
+  "enseignement": "MSDGN enseignement commun",
+  "demarche": "OAC avec réponse nuancée à la problématique",
+  "cours": [
+    {
+      "code": "1.1",
+      "fichier": "THEME_1/1_1_PRODUITS_SERVICES_BESOINS.md",
+      "duree": "4 à 5 h"
+    },
+    {
+      "code": "1.2",
+      "fichier": "THEME_1/1_2_RESSOURCES_PRODUIRE.md",
+      "duree": "4 à 5 h"
+    },
+    {
+      "code": "1.3",
+      "fichier": "THEME_1/1_3_ORGANISATION_PRODUCTION.md",
+      "duree": "5 h"
+    },
+    {
+      "code": "1.4",
+      "fichier": "THEME_1/1_4_TRANSFORMATIONS_NUMERIQUES_PRODUCTION.md",
+      "duree": "4 h"
+    },
+    {
+      "code": "1.5",
+      "fichier": "THEME_1/1_5_FONCTIONNEMENT_COHERENT.md",
+      "duree": "4 h"
+    },
+    {
+      "code": "2.1",
+      "fichier": "THEME_2/2_1_FEDERER_ACTEURS.md",
+      "duree": "5 h"
+    },
+    {
+      "code": "2.2",
+      "fichier": "THEME_2/2_2_RELATION_CLIENT_USAGER_NUMERIQUE.md",
+      "duree": "4 à 5 h"
+    },
+    {
+      "code": "2.3",
+      "fichier": "THEME_2/2_3_COMMUNICATION_ACTEURS.md",
+      "duree": "4 h"
+    },
+    {
+      "code": "3.1",
+      "fichier": "THEME_3/3_1_QUESTIONS_SOCIETE.md",
+      "duree": "4 à 5 h"
+    },
+    {
+      "code": "3.2",
+      "fichier": "THEME_3/3_2_MODES_DE_VIE.md",
+      "duree": "4 h"
+    },
+    {
+      "code": "3.3",
+      "fichier": "THEME_3/3_3_RESPONSABILITES_NUMERIQUES.md",
+      "duree": "4 à 5 h"
+    },
+    {
+      "code": "3.4",
+      "fichier": "THEME_3/3_4_ECOSYSTEME.md",
+      "duree": "4 h"
+    }
+  ],
+  "accroches": {
+    "2.1": {
+      "titre": "Travail d’équipe et Groupe — publicité De Lijn",
+      "url": "https://youtu.be/T3FJivSwveM",
+      "statut": "validée"
+    }
+  }
+}

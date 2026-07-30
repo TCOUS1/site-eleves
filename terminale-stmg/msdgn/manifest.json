@@ -1,0 +1,127 @@
+{
+  "titre": "MSDGN enseignement commun — Terminale STMG",
+  "version": "1.0 HTML",
+  "date": "2026-07-30",
+  "cours": [
+    {
+      "code": "1.1",
+      "problematique": "Quels produits ou quels services pour quels besoins ?",
+      "theme": "Les organisations et l’activité de production de biens et de services",
+      "organisation": "Atelier Rivage",
+      "duree": "4 à 5 heures",
+      "html": "cours/1-1-quels-produits-ou-quels-services-pour-quels-besoins.html",
+      "source": "sources/THEME_1/1_1_PRODUITS_SERVICES_BESOINS.md"
+    },
+    {
+      "code": "1.2",
+      "problematique": "Quelles ressources pour produire ?",
+      "theme": "Les organisations et l’activité de production de biens et de services",
+      "organisation": "VéloNova",
+      "duree": "4 à 5 heures",
+      "html": "cours/1-2-quelles-ressources-pour-produire.html",
+      "source": "sources/THEME_1/1_2_RESSOURCES_PRODUIRE.md"
+    },
+    {
+      "code": "1.3",
+      "problematique": "Quels choix d’organisation de la production pour concilier flexibilité, qualité et maîtrise des coûts ?",
+      "theme": "Les organisations et l’activité de production de biens et de services",
+      "organisation": "Les Bocaux d’Anjou",
+      "duree": "5 heures",
+      "html": "cours/1-3-quels-choix-d-organisation-de-la-production-pour-concilier.html",
+      "source": "sources/THEME_1/1_3_ORGANISATION_PRODUCTION.md"
+    },
+    {
+      "code": "1.4",
+      "problematique": "Les transformations numériques, une chance pour la production ?",
+      "theme": "Les organisations et l’activité de production de biens et de services",
+      "organisation": "Medilog Services",
+      "duree": "4 heures",
+      "html": "cours/1-4-les-transformations-numeriques-une-chance-pour-la-producti.html",
+      "source": "sources/THEME_1/1_4_TRANSFORMATIONS_NUMERIQUES_PRODUCTION.md"
+    },
+    {
+      "code": "1.5",
+      "problematique": "Comment assurer un fonctionnement cohérent des organisations ?",
+      "theme": "Les organisations et l’activité de production de biens et de services",
+      "organisation": "Réseau Culture & Vous",
+      "duree": "4 heures",
+      "html": "cours/1-5-comment-assurer-un-fonctionnement-coherent-des-organisatio.html",
+      "source": "sources/THEME_1/1_5_FONCTIONNEMENT_COHERENT.md"
+    },
+    {
+      "code": "2.1",
+      "problematique": "Comment fédérer les acteurs de l’organisation ?",
+      "theme": "Les organisations et les acteurs",
+      "organisation": "Agesia Conseil",
+      "duree": "5 heures",
+      "html": "cours/2-1-comment-federer-les-acteurs-de-l-organisation.html",
+      "source": "sources/THEME_2/2_1_FEDERER_ACTEURS.md"
+    },
+    {
+      "code": "2.2",
+      "problematique": "Les transformations numériques, vecteur d’amélioration de la relation avec les clients et usagers ?",
+      "theme": "Les organisations et les acteurs",
+      "organisation": "Mobilité Métropole",
+      "duree": "4 à 5 heures",
+      "html": "cours/2-2-les-transformations-numeriques-vecteur-d-amelioration-de-l.html",
+      "source": "sources/THEME_2/2_2_RELATION_CLIENT_USAGER_NUMERIQUE.md"
+    },
+    {
+      "code": "2.3",
+      "problematique": "Communique-t-on de la même manière avec tous les acteurs ?",
+      "theme": "Les organisations et les acteurs",
+      "organisation": "Horizon Santé",
+      "duree": "4 heures",
+      "html": "cours/2-3-communique-t-on-de-la-meme-maniere-avec-tous-les-acteurs.html",
+      "source": "sources/THEME_2/2_3_COMMUNICATION_ACTEURS.md"
+    },
+    {
+      "code": "3.1",
+      "problematique": "Les organisations peuvent-elles s’affranchir des questions de société ?",
+      "theme": "Les organisations et la société",
+      "organisation": "Fil & Sens",
+      "duree": "4 à 5 heures",
+      "html": "cours/3-1-les-organisations-peuvent-elles-s-affranchir-des-questions.html",
+      "source": "sources/THEME_3/3_1_QUESTIONS_SOCIETE.md"
+    },
+    {
+      "code": "3.2",
+      "problematique": "Les changements de modes de vie s’imposent-ils aux organisations ?",
+      "theme": "Les organisations et la société",
+      "organisation": "BiblioNova",
+      "duree": "4 heures",
+      "html": "cours/3-2-les-changements-de-modes-de-vie-s-imposent-ils-aux-organis.html",
+      "source": "sources/THEME_3/3_2_MODES_DE_VIE.md"
+    },
+    {
+      "code": "3.3",
+      "problematique": "Les transformations numériques, de nouvelles responsabilités pour les organisations ?",
+      "theme": "Les organisations et la société",
+      "organisation": "AideLogis",
+      "duree": "4 à 5 heures",
+      "html": "cours/3-3-les-transformations-numeriques-de-nouvelles-responsabilite.html",
+      "source": "sources/THEME_3/3_3_RESPONSABILITES_NUMERIQUES.md"
+    },
+    {
+      "code": "3.4",
+      "problematique": "Quelles relations entre les organisations et leur écosystème ?",
+      "theme": "Les organisations et la société",
+      "organisation": "Hydralpes",
+      "duree": "4 heures",
+      "html": "cours/3-4-quelles-relations-entre-les-organisations-et-leur-ecosyste.html",
+      "source": "sources/THEME_3/3_4_ECOSYSTEME.md"
+    }
+  ],
+  "fonctionnalites": [
+    "progression locale",
+    "réponses enregistrées localement",
+    "mode sombre",
+    "mode dys",
+    "taille de police",
+    "mode enseignant",
+    "impression",
+    "aides par verbe d’action",
+    "calculateurs pour 1.1, 1.2 et 1.3",
+    "synthèse problématisée"
+  ]
+}

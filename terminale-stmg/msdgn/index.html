@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Parcours HTML complet de MSDGN enseignement commun pour la terminale STMG">
+  <title>MSDGN — Enseignement commun — Terminale STMG</title>
+  <link rel="stylesheet" href="assets/msdgn.css">
+  <script src="assets/msdgn.js" defer></script>
+</head>
+<body>
+<a class="skip-link" href="#main-content">Aller au contenu</a>
+
+<header class="site-header">
+  <div class="site-header-inner">
+    <a class="brand" href="index.html">
+      <span class="brand-mark">M</span>
+      <span>MSDGN · Terminale STMG</span>
+    </a>
+    <nav class="header-nav" aria-label="Navigation principale">
+      <a href="index.html">Parcours</a>
+      <a href="methodes.html">Méthodes de l’épreuve</a>
+      <a href="enseignant/index.html">Espace enseignant</a>
+    </nav>
+    <div class="header-tools" aria-label="Réglages d’affichage">
+      <button type="button" class="tool-button" data-tool="dark" aria-pressed="false">◐ <span class="tool-label">Thème</span></button>
+      <button type="button" class="tool-button" data-tool="dys" aria-pressed="false">Dys</button>
+      <button type="button" class="tool-button" data-tool="font-minus">A−</button>
+      <button type="button" class="tool-button" data-tool="font-plus">A+</button>
+      <button type="button" class="tool-button" data-tool="teacher" aria-pressed="false">👩‍🏫 <span class="tool-label">Enseignant</span></button>
+    </div>
+  </div>
+</header>
+
+<main id="main-content" class="page-shell">
+  <header class="portal-hero">
+    <p class="eyebrow">Management, sciences de gestion et numérique</p>
+    <h1>Enseignement commun<br>Terminale STMG</h1>
+    <p>Douze problématiques étudiées à partir de dossiers d’organisation, selon une progression Observation → Analyse → Conceptualisation → réponse nuancée → transfert vers l’épreuve.</p>
+    <div class="portal-kpis">
+      <div><strong>12</strong>cours problématisés</div>
+      <div><strong>3</strong>thèmes du programme</div>
+      <div><strong>50 à 55 h</strong>durée indicative</div>
+      <div><strong id="global-progress-text">0 %</strong>progression globale</div>
+    </div>
+    <div class="progress-track" style="margin-top:14px"><span id="global-progress-fill" class="progress-fill"></span></div>
+  </header>
+
+  <section class="learning-section">
+    <div class="problem-grid">
+      <div class="problem-card">
+        <p class="section-kicker">Principe didactique</p>
+        <h2>Une problématique n’appelle pas une réponse toute faite</h2>
+        <p>Chaque cours fait émerger des tensions, conduit l’élève à exploiter des annexes, stabilise les notions puis construit une réponse tempérée et adaptée à l’organisation.</p>
+      </div>
+      <div class="tension-card">
+        <p class="section-kicker">Préparation à l’épreuve</p>
+        <h2>Des consignes formulées avec un verbe d’action</h2>
+        <p>Identifier, caractériser, analyser, justifier, apprécier, calculer, interpréter et proposer. Les aides méthodologiques sont intégrées à chaque activité.</p>
+      </div>
+    </div>
+  </section>
+
+  <div class="portal-controls">
+    <label>Rechercher un cours
+      <input id="course-search" type="search" placeholder="Notion, organisation ou problématique">
+    </label>
+    <label>Filtrer par thème
+      <select id="theme-filter">
+        <option value="">Tous les thèmes</option>
+        <option value="1">Thème 1 · Production</option>
+        <option value="2">Thème 2 · Acteurs</option>
+        <option value="3">Thème 3 · Société</option>
+      </select>
+    </label>
+    <a class="tool-button" href="methodes.html">Consulter les méthodes de l’épreuve</a>
+    <a class="tool-button" href="enseignant/index.html">Ouvrir l’espace enseignant</a>
+  </div>
+
+  
+    <section class="theme-block">
+      <div class="theme-heading">
+        <span>🏭</span>
+        <div>
+          <p class="section-kicker">Thème 1</p>
+          <h2>Les organisations et l’activité de production de biens et de services</h2>
+        </div>
+      </div>
+      <div class="course-card-grid">
+        <article class="portal-course-card" data-course-card="1.1" data-theme="1">
+          <p class="section-kicker">Cours 1.1 · 4 à 5 heures</p>
+          <h3>Quels produits ou quels services pour quels besoins ?</h3>
+          <p><strong>Atelier Rivage</strong><br>
+          Dossier fictif, raisonnement OAC, réponse problématisée et entraînement bac.</p>
+          <div class="course-progress-mini"><span></span></div>
+          <div class="card-footer">
+            <span data-card-progress>0 %</span>
+            <a href="cours/1-1-quels-produits-ou-quels-services-pour-quels-besoins.html">Ouvrir le cours →</a>
+          </div>
+        </article>
+        
+        <article class="portal-course-card" data-course-card="1.2" data-theme="1">
+          <p class="section-kicker">Cours 1.2 · 4 à 5 heures</p>
+          <h3>Quelles ressources pour produire ?</h3>
+          <p><strong>VéloNova</strong><br>
+          Dossier fictif, raisonnement OAC, réponse problématisée et entraînement bac.</p>
+          <div class="course-progress-mini"><span></span></div>
+          <div class="card-footer">
+            <span data-card-progress>0 %</span>
+            <a href="cours/1-2-quelles-ressources-pour-produire.html">Ouvrir le cours →</a>
+          </div>
+        </article>
+        
+        <article class="portal-course-card" data-course-card="1.3" data-theme="1">
+          <p class="section-kicker">Cours 1.3 · 5 heures</p>
+          <h3>Quels choix d’organisation de la production pour concilier flexibilité, qualité et maîtrise des coûts ?</h3>
+          <p><strong>Les Bocaux d’Anjou</strong><br>
+          Dossier fictif, raisonnement OAC, réponse problématisée et entraînement bac.</p>
+          <div class="course-progress-mini"><span></span></div>
+          <div class="card-footer">
+            <span data-card-progress>0 %</span>
+            <a href="cours/1-3-quels-choix-d-organisation-de-la-production-pour-concilier.html">Ouvrir le cours →</a>
+          </div>
+        </article>
+        
+        <article class="portal-course-card" data-course-card="1.4" data-theme="1">
+          <p class="section-kicker">Cours 1.4 · 4 heures</p>
+          <h3>Les transformations numériques, une chance pour la production ?</h3>
+          <p><strong>Medilog Services</strong><br>
+          Dossier fictif, raisonnement OAC, réponse problématisée et entraînement bac.</p>
+          <div class="course-progress-mini"><span></span></div>
+          <div class="card-footer">
+            <span data-card-progress>0 %</span>
+            <a href="cours/1-4-les-transformations-numeriques-une-chance-pour-la-producti.html">Ouvrir le cours →</a>
+          </div>
+        </article>
+        
+        <article class="portal-course-card" data-course-card="1.5" data-theme="1">
+          <p class="section-kicker">Cours 1.5 · 4 heures</p>
+          <h3>Comment assurer un fonctionnement cohérent des organisations ?</h3>
+          <p><strong>Réseau Culture &amp; Vous</strong><br>
+          Dossier fictif, raisonnement OAC, réponse problématisée et entraînement bac.</p>
+          <div class="course-progress-mini"><span></span></div>
+          <div class="card-footer">
+            <span data-card-progress>0 %</span>
+            <a href="cours/1-5-comment-assurer-un-fonctionnement-coherent-des-organisatio.html">Ouvrir le cours →</a>
+          </div>
+        </article>
+        </div>
+    </section>
+    
+    <section class="theme-block">
+      <div class="theme-heading">
+        <span>👥</span>
+        <div>
+          <p class="section-kicker">Thème 2</p>
+          <h2>Les organisations et les acteurs</h2>
+        </div>
+      </div>
+      <div class="course-card-grid">
+        <article class="portal-course-card" data-course-card="2.1" data-theme="2">
+          <p class="section-kicker">Cours 2.1 · 5 heures</p>
+          <h3>Comment fédérer les acteurs de l’organisation ?</h3>
+          <p><strong>Agesia Conseil</strong><br>
+          Dossier fictif, raisonnement OAC, réponse problématisée et entraînement bac.</p>
+          <div class="course-progress-mini"><span></span></div>
+          <div class="card-footer">
+            <span data-card-progress>0 %</span>
+            <a href="cours/2-1-comment-federer-les-acteurs-de-l-organisation.html">Ouvrir le cours →</a>
+          </div>
+        </article>
+        
+        <article class="portal-course-card" data-course-card="2.2" data-theme="2">
+          <p class="section-kicker">Cours 2.2 · 4 à 5 heures</p>
+          <h3>Les transformations numériques, vecteur d’amélioration de la relation avec les clients et usagers ?</h3>
+          <p><strong>Mobilité Métropole</strong><br>
+          Dossier fictif, raisonnement OAC, réponse problématisée et entraînement bac.</p>
+          <div class="course-progress-mini"><span></span></div>
+          <div class="card-footer">
+            <span data-card-progress>0 %</span>
+            <a href="cours/2-2-les-transformations-numeriques-vecteur-d-amelioration-de-l.html">Ouvrir le cours →</a>
+          </div>
+        </article>
+        
+        <article class="portal-course-card" data-course-card="2.3" data-theme="2">
+          <p class="section-kicker">Cours 2.3 · 4 heures</p>
+          <h3>Communique-t-on de la même manière avec tous les acteurs ?</h3>
+          <p><strong>Horizon Santé</strong><br>
+          Dossier fictif, raisonnement OAC, réponse problématisée et entraînement bac.</p>
+          <div class="course-progress-mini"><span></span></div>
+          <div class="card-footer">
+            <span data-card-progress>0 %</span>
+            <a href="cours/2-3-communique-t-on-de-la-meme-maniere-avec-tous-les-acteurs.html">Ouvrir le cours →</a>
+          </div>
+        </article>
+        </div>
+    </section>
+    
+    <section class="theme-block">
+      <div class="theme-heading">
+        <span>🌍</span>
+        <div>
+          <p class="section-kicker">Thème 3</p>
+          <h2>Les organisations et la société</h2>
+        </div>
+      </div>
+      <div class="course-card-grid">
+        <article class="portal-course-card" data-course-card="3.1" data-theme="3">
+          <p class="section-kicker">Cours 3.1 · 4 à 5 heures</p>
+          <h3>Les organisations peuvent-elles s’affranchir des questions de société ?</h3>
+          <p><strong>Fil &amp; Sens</strong><br>
+          Dossier fictif, raisonnement OAC, réponse problématisée et entraînement bac.</p>
+          <div class="course-progress-mini"><span></span></div>
+          <div class="card-footer">
+            <span data-card-progress>0 %</span>
+            <a href="cours/3-1-les-organisations-peuvent-elles-s-affranchir-des-questions.html">Ouvrir le cours →</a>
+          </div>
+        </article>
+        
+        <article class="portal-course-card" data-course-card="3.2" data-theme="3">
+          <p class="section-kicker">Cours 3.2 · 4 heures</p>
+          <h3>Les changements de modes de vie s’imposent-ils aux organisations ?</h3>
+          <p><strong>BiblioNova</strong><br>
+          Dossier fictif, raisonnement OAC, réponse problématisée et entraînement bac.</p>
+          <div class="course-progress-mini"><span></span></div>
+          <div class="card-footer">
+            <span data-card-progress>0 %</span>
+            <a href="cours/3-2-les-changements-de-modes-de-vie-s-imposent-ils-aux-organis.html">Ouvrir le cours →</a>
+          </div>
+        </article>
+        
+        <article class="portal-course-card" data-course-card="3.3" data-theme="3">
+          <p class="section-kicker">Cours 3.3 · 4 à 5 heures</p>
+          <h3>Les transformations numériques, de nouvelles responsabilités pour les organisations ?</h3>
+          <p><strong>AideLogis</strong><br>
+          Dossier fictif, raisonnement OAC, réponse problématisée et entraînement bac.</p>
+          <div class="course-progress-mini"><span></span></div>
+          <div class="card-footer">
+            <span data-card-progress>0 %</span>
+            <a href="cours/3-3-les-transformations-numeriques-de-nouvelles-responsabilite.html">Ouvrir le cours →</a>
+          </div>
+        </article>
+        
+        <article class="portal-course-card" data-course-card="3.4" data-theme="3">
+          <p class="section-kicker">Cours 3.4 · 4 heures</p>
+          <h3>Quelles relations entre les organisations et leur écosystème ?</h3>
+          <p><strong>Hydralpes</strong><br>
+          Dossier fictif, raisonnement OAC, réponse problématisée et entraînement bac.</p>
+          <div class="course-progress-mini"><span></span></div>
+          <div class="card-footer">
+            <span data-card-progress>0 %</span>
+            <a href="cours/3-4-quelles-relations-entre-les-organisations-et-leur-ecosyste.html">Ouvrir le cours →</a>
+          </div>
+        </article>
+        </div>
+    </section>
+    
+</main>
+
+<footer class="site-footer">
+  <p><strong>Management, sciences de gestion et numérique — enseignement commun</strong></p>
+  <p>Situations et données pédagogiques fictives. Les réponses sont enregistrées uniquement dans le navigateur utilisé.</p>
+  <p><a href="sources/">Consulter les sources de conception</a></p>
+</footer>
+
+</body>
+</html>
