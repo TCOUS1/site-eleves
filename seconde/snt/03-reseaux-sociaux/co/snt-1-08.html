@@ -1,0 +1,965 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html>
+<html lang="fr" xml:lang="fr" dir="ltr" xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<title>Graphes et expérience de Milgram [Comprendre les réseaux sociaux]</title>
+		<meta charset="UTF-8" />
+		<meta name="generator" content="SCENARI 6.4.5 / OpaleExtEmeraude 25.1.1" />
+		<meta name="revision" content="2026-08-26 08:38" />
+		<link rel="start" href="2de-gle-snt-resaux_sociaux.html" title="Comprendre les réseaux sociaux" />
+		<meta name="author" content="Thibaud Cousin
+" />
+		<meta name="keywords" content="" />
+		<meta name="date" content="05/06/2026" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link rel="stylesheet" type="text/css" href="../lib-md/w_scCodeMgr/scCodeMgr.css" />
+		<link rel="stylesheet" type="text/css" href="../lib-md/w_jsmind/jsmind.css" />
+		<link rel="stylesheet" type="text/css" href="../lib-md/w_tePlayer/tePlayer.css" />
+		<script>/*<![CDATA[*/
+/*0*/ var scServices = {id:"mt9udxce"};
+/*1*/ window.scLoadParams = {destUri:"/co/snt-1-08.html", pathToRoot:"../"};
+/*]]>*/</script>
+		<script src="../lib-sc/scCoLib.js" ></script>
+		<script src="../lib-sc/scSiLib.js" ></script>
+		<script src="../lib-sc/scTiLib.js" ></script>
+		<script src="../lib-sc/scPaLib.js" ></script>
+		<script src="../lib-md/s_assmnt.js" ></script>
+		<script src="../lib-sc/scMapMgr.js" ></script>
+		<script src="../lib-sc/scTooltipMgr.js" ></script>
+		<script src="../lib-sc/scDynUiMgr.js" ></script>
+		<script src="../lib-sc/scDragMgr.js" ></script>
+		<script src="../lib-sc/scAssmntMgr.js" ></script>
+		<script src="../lib-md/s_scSearch/jsSearch.js" ></script>
+		<script src="../lib-md/w_teMgr/teLoader.js" ></script>
+		<script src="../lib-md/w_tplMgr/tplMgr.js" ></script>
+		<script src="../lib-md/w_mathjax/mathjaxMgr.js" ></script>
+		<script src="../lib-md/w_tePlayer/tePlayer.js" ></script>
+		<script src="../lib-md/w_searchMgr/searchMgr.js" ></script>
+		<script src="../lib-md/w_scImageMgr/scImageMgr.js" ></script>
+		<script src="../lib-md/w_scCodeMgr/scCodeMgr.js" ></script>
+		<script src="../lib-md/w_outMgr/outMgr.js" ></script>
+		<script src="../lib-md/w_jsmind/jsmind.js" ></script>
+		<script>/*<![CDATA[*/
+/*0*/ try{if(window.opener && window.opener.scServices && window.opener.scServices.id == scServices.id) scServices = window.opener.scServices; else if(window.parent && window.parent.scServices && window.parent.scServices.id == scServices.id) scServices = window.parent.scServices;}catch(e){}
+scImageMgr.registerZoom("des:a.imgZoom",{toolbar:1,mag:1,titlePath:"par:/nsi:/des:span.capTi"});
+scCodeMgr.registerCode("des:div.code");
+
+scImageMgr.registerAdaptedImage("ide:content/des:figure.resInFlow/des:img");
+
+scImageMgr.registerGallery("des:ul.galFra");
+
+scImageMgr.registerSequence("des:ul.seqFra");
+
+scImageMgr.registerZoom("des:a.svgZoom",{type:"svg",svgMax:1,toolbar:1,titlePath:"par:/nsi:/des:span.capTi"});
+
+tePlayerMgr.init();
+/*]]>*/</script>
+		<link rel="shortcut icon" type="image/png" href="../skin/img/favicon.png" />
+		<meta name="robots" content="index,follow" />
+		<style ></style>
+		<link type="text/css" rel="stylesheet" href="../skin/css/main.css" media="all" />
+		<link type="text/css" rel="stylesheet" href="../skin/css/skin.css" media="all" />
+		<link type="text/css" rel="stylesheet" href="../skin/css/print.css" media="print" />
+		<script>/*<![CDATA[*/
+outMgr.declareOutline("outline.txt");
+	/*]]>*/</script>
+		<script>/*<![CDATA[*/searchMgr.declareIndex("index.txt");/*]]>*/</script>
+
+</head>
+	<body class="default module expUc">
+		<div id="root"><header id="header"><h1><span>Comprendre les réseaux sociaux</span></h1><nav><ul id="accessibility"><li class="waiContent"><a href="#content"><span>contenu</span></a></li><li class="waiMenu"><a href="#menu"><span>menu</span></a></li><li class="waiNav"><a href="#navigation"><span>navigation</span></a></li><li class="waiTools"><a href="#tools"><span>outils</span></a></li></ul></nav><div id="tools" tabindex="-1"><hr class="hidden" /><nav class="headingSelector"><ul class="mnu tools"><li class="anc_no home" data-position="uncle"><div class="lbl"><a href="2de-gle-snt-resaux_sociaux.html" target="_self" class="item" type="index" title="Page d&apos;accueil du module"><span>Accueil</span></a></div></li><li class="anc_yes module" data-position="ancestor"><div class="lbl"><span class="item"><span>Module</span></span></div></li><li class="anc_no tools" data-position="uncle"><div class="lbl"><a href="plan.html" target="_self" class="item" title="Outils transverses du module"><span>Outils</span></a></div></li></ul></nav><menu ></menu></div><menu ></menu></header><main id="main" role="main"><div id="document"><div id="content" tabindex="-1"><div class="scroller"><hr class="hidden" /><section class="hBk article expUc"><h2 class="hBk_ti "><span>Graphes et expérience de Milgram</span></h2><div class="hBk_co "><div class="iBk info"><h3 class="iBk_ti "><span>La théorie du petit monde</span></h3><div class="iBk_co "><div class="rBk res"><figure role="group" class="resInFlow remoteVideo"><div class="resInFlow_co "><div class="tePlayer noIndex" data-video-label="Lecteur vidéo" data-audio-label="Lecteur audio"><div class="tepMainArea"><video preload="metadata"><source type="video/x-youtube" src="https://youtu.be/gOiIQ0qGiCc" ></source>
+</video><div class="tepSubtitlesArea" hidden="" ></div><div class="tepController" data-te-container=".tePlayer" data-te-media="audio, video, mediaelementwrapper" data-te-prefix=".tep" aria-label="Éléments de navigation"><button aria-pressed="false" class="tepPlayPause" data-te-fade-duration="500" type="button" title="Lecture" data-pressed-title="Pause"><span class="tepVisuallyHidden">Lecture / Pause</span></button><button aria-pressed="false" class="tepMute" type="button" title="Désactiver le son" data-pressed-title="Activer le son"><span class="tepVisuallyHidden">Activer / Désactiver le son</span></button><input aria-valuemax="100" aria-valuemin="0" aria-valuenow="100" aria-valuetext="100%" class="tepVolume" max="100" min="0" role="slider" step="5" type="range" value="100" title="Barre de volume" /><span class="tepVisuallyHidden">Position temporelle</span><span class="tepCurrentTime" ></span><input aria-valuemin="0" aria-valuenow="0" aria-valuetext="0:00" class="tepSeek" min="0" role="slider" step="0.5" type="range" value="0" title="Barre de navigation" /><span class="tepVisuallyHidden">Durée</span><span class="tepDuration" ></span><button aria-pressed="false" class="tepFullscreen" type="button" title="Entrer en mode plein écran" data-pressed-title="Quitter le mode plein écran"><span class="tepVisuallyHidden">Plein écran</span></button></div><div class="tepErrorArea" hidden=""><p>Impossible d'accéder à la ressource audio ou vidéo à l'adresse : <a class="tepErrorSrc" target="_blank"></a></p><p>La ressource n'est plus disponible ou vous n'êtes pas autorisé à y accéder. Veuillez vérifier votre accès puis <a class="tepErrorReload" href="#">recharger la vidéo</a>.</p></div></div><div class="tepTranscriptArea" hidden=""><h3 class="tepTranscriptTitle">Transcription textuelle</h3></div></div></div><figcaption class="resInFlow_ti "><div><div class="title ">La théorie du petit monde</div><span class="hidden"> | </span><a href="#footnotesN91" class="tooltip_a info" id="i0" data-sctooltip="{&quot;ttId&quot;:&quot;footnotesN91&quot;,&quot;trigger&quot;:&quot;onclick&quot;,&quot;class&quot;:&quot;tooltip&quot;,&quot;classRoot&quot;:&quot;&quot;,&quot;options&quot;:{&quot;STICKY&quot;:true,&quot;FOCUS&quot;:true,&quot;FIXTYPE&quot;:&quot;node&quot;,&quot;FIX&quot;:[0,0],&quot;HPOS&quot;:&quot;endOfElement&quot;,&quot;VPOS&quot;:&quot;topAlign&quot;,&quot;MAXWIDTH&quot;:300,&quot;CLSBTN&quot;:true,&quot;CLSBTNCAP&quot;:&quot;✖&quot;,&quot;CLSBTNTI&quot;:&quot;Fermer&quot;}}" title="Informations complémentaires..."><span class="noIndex">Informations</span></a><sup class="tooltip_ref"><a href="#footnotesN91"><span>[</span>1<span>]</span></a></sup></div></figcaption></figure></div></div></div><div class="iBk quiz"><div class="iBk_co "><script>/*<![CDATA[*/
+var reBr3fDCprfiAsB6KjY67d = {
+
+	fId : "reBr3fDCprfiAsB6KjY67d",
+	fCurSeq : null,
+	initSeq : function(pCodeSeq){
+	try {
+		if(pCodeSeq==null) return;
+		if(this.fCurSeq!=null) this.closeSeq();
+		this.fCurSeq = pCodeSeq;
+		switch(this.fCurSeq) {
+
+		case "play" : {
+		var vForm = document.forms.reBr3fDCprfiAsB6KjY67d_form;
+		this._Sol = {field:{s:[{isMatch:function(pResp){if(typeof pResp == 'undefined') return false; pResp=scAssmntMgr.editTranslate(pResp.toUpperCase().trim()); return 'LA NOTION DE PETIT MONDE DÉSIGNE L\'IDÉE QU\'AU SEIN D\'UN GRAND RÉSEAU SOCIAL (OU RÉSEAU DE CONNEXIONS QUELCONQUE), CHAQUE ÉLÉMENT PEUT ÊTRE RELIÉ À N\'IMPORTE QUEL AUTRE ÉLÉMENT PAR UN NOMBRE RESTREINT DE CONNEXIONS OU D\'INTERMÉDIAIRES. CE CONCEPT EST CENTRAL DANS LA THÉORIE DES RÉSEAUX ET REPOSE SUR DES PRINCIPES MONTRÉS PAR L\'EXPÉRIENCE DE STANLEY MILGRAM, OÙ CHAQUE INDIVIDU POUVAIT ATTEINDRE UN AUTRE INCONNU À TRAVERS UNE CHAÎNE DE SEULEMENT QUELQUES RELATIONS, SOUVENT SIX, D\'OÙ L\'EXPRESSION \"SIX DEGRÉS DE SÉPARATION.\"'==pResp || false;}, score:1},null],min:0,max:1},_:null};
+		this.getSolIdx = function(pFieldIndex){
+			var vF = this._Sol[pFieldIndex];
+			var vVal = vForm[pFieldIndex].value;
+			for (var i = 0; i < vF.s.length-1; i++) if(vF.s[i].isMatch(vVal)) return i;
+			return -1;
+		};
+		this.getFieldScore = function(pFieldIndex) {
+			var vI = this.getSolIdx(pFieldIndex);
+			if(vI >= 0) return this._Sol[pFieldIndex].s[vI].score;
+			return 0;
+		};
+		this.refreshResultInput = function(pInput){
+			if(this._resultDisplay == "none") pInput.parentNode.className="";
+			else {
+				var vSol = this._Sol[pInput.name];
+				var vRes = Math.floor((this.getFieldScore(pInput.name) - vSol.min) / (vSol.max - vSol.min) * 1);
+				pInput.parentNode.className= "assmntResult_" + vRes;
+			}
+		};
+var vLoadRespSession = "";
+
+		for (var i=0; i < vForm.length; i++) {
+			var vFi = vForm.elements[i];
+			if (vFi.name) {
+				this.setInteraction(vFi, "enabled");
+				vFi.value = vLoadRespSession == null ? "" : scServices.assmntMgr.getResponse(this.fId, vLoadRespSession, vFi.name) || "";
+			}
+		}
+	this.refreshResult("");
+
+var vLoadScoreSession = "";
+		this.fMinPts = scServices.assmntMgr.getMinPts(this.fId, vLoadScoreSession);
+		this.fScorePts = scServices.assmntMgr.getScorePts(this.fId, vLoadScoreSession);
+		this.fMaxPts = scServices.assmntMgr.getMaxPts(this.fId, vLoadScoreSession);
+
+		this.setSolution('collapsed', 'collapsed');
+scAssmntMgr.setMode(sc$("reBr3fDCprfiAsB6KjY67d_N_question"), "visible");
+scAssmntMgr.setMode(sc$("reBr3fDCprfiAsB6KjY67d_N_response"), "visible");
+scAssmntMgr.setMode(sc$("reBr3fDCprfiAsB6KjY67d_N_globalExp"), "collapsed");
+scAssmntMgr.setMode(sc$("reBr3fDCprfiAsB6KjY67d_N_waiScore"), "collapsed");
+scAssmntMgr.setMode(sc$("reBr3fDCprfiAsB6KjY67d_N_reset"), "visible");
+scAssmntMgr.setMode(sc$("reBr3fDCprfiAsB6KjY67d_N_score"), "invisible");
+scAssmntMgr.setToggleStatus(sc$("reBr3fDCprfiAsB6KjY67d_S_Nec"), false);
+var vRespSession = "";
+		if(scServices.assmntMgr.getCompletionStatus(this.fId, vRespSession)=="notAttempt") scServices.assmntMgr.setCompletionStatus(this.fId, vRespSession, "attempt");
+		this.setResp = function(pInput) {
+			scServices.assmntMgr.setResponse(this.fId, vRespSession, pInput.name, pInput.value);
+			this.computeScore();
+			scServices.assmntMgr.commit();
+			this.refreshResultInput(pInput);
+		}				
+
+		this.computeScore = function() {
+
+			this.fMinPts = 0;
+			this.fMaxPts = 0;
+			for(var vF in this._Sol) if(vF!="_") {this.fMinPts += this._Sol[vF].min; this.fMaxPts += this._Sol[vF].max;}
+			this.fScorePts = this.getFieldScore("field")+0;
+var vScoreSession = "";
+			if(this.fScorePts != null) scServices.assmntMgr.setPts(this.fId, vScoreSession, this.fMinPts, this.fScorePts, this.fMaxPts);
+
+			this.refreshScoresFeedbacks();
+		}
+
+if(vRespSession != vLoadRespSession) {for (var i=0; i < vForm.length; i++) {var vFi = vForm.elements[i]; if (vFi.name) scServices.assmntMgr.setResponse(this.fId, vRespSession, vFi.name, vFi.value);}}
+this.computeScore();
+
+		scServices.assmntMgr.commit();
+		break;
+	}
+
+		case "read" : {
+		var vForm = document.forms.reBr3fDCprfiAsB6KjY67d_form;
+		this._Sol = {field:{s:[{isMatch:function(pResp){if(typeof pResp == 'undefined') return false; pResp=scAssmntMgr.editTranslate(pResp.toUpperCase().trim()); return 'LA NOTION DE PETIT MONDE DÉSIGNE L\'IDÉE QU\'AU SEIN D\'UN GRAND RÉSEAU SOCIAL (OU RÉSEAU DE CONNEXIONS QUELCONQUE), CHAQUE ÉLÉMENT PEUT ÊTRE RELIÉ À N\'IMPORTE QUEL AUTRE ÉLÉMENT PAR UN NOMBRE RESTREINT DE CONNEXIONS OU D\'INTERMÉDIAIRES. CE CONCEPT EST CENTRAL DANS LA THÉORIE DES RÉSEAUX ET REPOSE SUR DES PRINCIPES MONTRÉS PAR L\'EXPÉRIENCE DE STANLEY MILGRAM, OÙ CHAQUE INDIVIDU POUVAIT ATTEINDRE UN AUTRE INCONNU À TRAVERS UNE CHAÎNE DE SEULEMENT QUELQUES RELATIONS, SOUVENT SIX, D\'OÙ L\'EXPRESSION \"SIX DEGRÉS DE SÉPARATION.\"'==pResp || false;}, score:1},null],min:0,max:1},_:null};
+		this.getSolIdx = function(pFieldIndex){
+			var vF = this._Sol[pFieldIndex];
+			var vVal = vForm[pFieldIndex].value;
+			for (var i = 0; i < vF.s.length-1; i++) if(vF.s[i].isMatch(vVal)) return i;
+			return -1;
+		};
+		this.getFieldScore = function(pFieldIndex) {
+			var vI = this.getSolIdx(pFieldIndex);
+			if(vI >= 0) return this._Sol[pFieldIndex].s[vI].score;
+			return 0;
+		};
+		this.refreshResultInput = function(pInput){
+			if(this._resultDisplay == "none") pInput.parentNode.className="";
+			else {
+				var vSol = this._Sol[pInput.name];
+				var vRes = Math.floor((this.getFieldScore(pInput.name) - vSol.min) / (vSol.max - vSol.min) * 1);
+				pInput.parentNode.className= "assmntResult_" + vRes;
+			}
+		};
+var vLoadRespSession = "";
+
+		for (var i=0; i < vForm.length; i++) {
+			var vFi = vForm.elements[i];
+			if (vFi.name) {
+				this.setInteraction(vFi, "disabled");
+				vFi.value = vLoadRespSession == null ? "" : scServices.assmntMgr.getResponse(this.fId, vLoadRespSession, vFi.name) || "";
+			}
+		}
+	this.refreshResult("");
+
+var vLoadScoreSession = "";
+		this.fMinPts = scServices.assmntMgr.getMinPts(this.fId, vLoadScoreSession);
+		this.fScorePts = scServices.assmntMgr.getScorePts(this.fId, vLoadScoreSession);
+		this.fMaxPts = scServices.assmntMgr.getMaxPts(this.fId, vLoadScoreSession);
+
+		this.setSolution('collapsed', 'collapsed');
+scAssmntMgr.setMode(sc$("reBr3fDCprfiAsB6KjY67d_N_question"), "visible");
+scAssmntMgr.setMode(sc$("reBr3fDCprfiAsB6KjY67d_N_response"), "visible");
+scAssmntMgr.setMode(sc$("reBr3fDCprfiAsB6KjY67d_N_globalExp"), "collapsed");
+scAssmntMgr.setMode(sc$("reBr3fDCprfiAsB6KjY67d_N_waiScore"), "collapsed");
+scAssmntMgr.setMode(sc$("reBr3fDCprfiAsB6KjY67d_N_reset"), "invisible");
+scAssmntMgr.setMode(sc$("reBr3fDCprfiAsB6KjY67d_N_score"), "invisible");
+scAssmntMgr.setToggleStatus(sc$("reBr3fDCprfiAsB6KjY67d_S_Nec"), false);
+this.setResp = function(pInput) {
+			this.computeScore();
+			scServices.assmntMgr.commit();
+			this.refreshResultInput(pInput);
+		}	
+
+		this.computeScore = function() {
+
+			this.fMinPts = 0;
+			this.fMaxPts = 0;
+			for(var vF in this._Sol) if(vF!="_") {this.fMinPts += this._Sol[vF].min; this.fMaxPts += this._Sol[vF].max;}
+			this.fScorePts = this.getFieldScore("field")+0;
+
+			this.refreshScoresFeedbacks();
+		}
+
+this.computeScore();
+
+		scServices.assmntMgr.commit();
+		break;
+	}
+
+		}
+	}catch(e){console.error("assmnt.initSeq : "+e)}
+	},
+	onActionN11a : function(pButton){
+		if(scAssmntMgr.isDisabled(pButton)) return;
+var vSess="";
+scServices.assmntMgr.resetResponses(this.fId, vSess);
+scServices.assmntMgr.setPts(this.fId, vSess, null, null, null); 
+this.initSeq("play");
+sc$("reBr3fDCprfiAsB6KjY67d_N_response").focus();
+
+		scServices.assmntMgr.commit();
+	},
+	onActionNec : function(pButton){
+		if(scAssmntMgr.isDisabled(pButton)) return;
+		var vIsOn = scAssmntMgr.isToggleOn(pButton);
+		if(vIsOn) {
+scAssmntMgr.setMode(sc$("reBr3fDCprfiAsB6KjY67d_N_score"), "invisible");
+scAssmntMgr.setMode(sc$("reBr3fDCprfiAsB6KjY67d_N_waiScore"), "collapsed");
+this.setSolution('collapsed', 'collapsed'); this.refreshResult("none");scAssmntMgr.setMode(sc$("reBr3fDCprfiAsB6KjY67d_N_globalExp"), "collapsed");
+var vForm=document.forms.reBr3fDCprfiAsB6KjY67d_form; for (var i=0; i < vForm.length; i++) {var vFi = vForm.elements[i]; if (vFi.name) this.setInteraction(vFi, "enabled");}sc$("reBr3fDCprfiAsB6KjY67d_N_response").focus();
+
+		} else {
+scAssmntMgr.setMode(sc$("reBr3fDCprfiAsB6KjY67d_N_score"), "visible");
+scAssmntMgr.setMode(sc$("reBr3fDCprfiAsB6KjY67d_N_waiScore"), "outOfView");
+this.setSolution('collapsed', 'visible'); this.refreshResult("addClass");scAssmntMgr.setMode(sc$("reBr3fDCprfiAsB6KjY67d_N_globalExp"), "visible");
+var vForm=document.forms.reBr3fDCprfiAsB6KjY67d_form; for (var i=0; i < vForm.length; i++) {var vFi = vForm.elements[i]; if (vFi.name) this.setInteraction(vFi, "disabled");}sc$("reBr3fDCprfiAsB6KjY67d_N_response").focus();
+
+		}
+		scAssmntMgr.setToggleStatus(pButton, ! vIsOn);
+		scServices.assmntMgr.commit();
+	},
+
+	closeSeq: function(){
+		var vForm = document.forms.reBr3fDCprfiAsB6KjY67d_form;
+		switch(this.fCurSeq) {
+
+	case "play" : {
+
+		break;
+	}
+
+	case "read" : {
+
+		break;
+	}
+
+		}
+		this.fCurSeq = null;
+	},
+	getOnLoadSeq:function() {
+
+	if(!scServices.assmntMgr.review && true) return "play";
+	return "read";
+	},
+
+	refreshScoresFeedbacks : function(){
+		
+
+		var vScoreNode = sc$("reBr3fDCprfiAsB6KjY67d_SNa0");
+
+		var vScore = (Math.floor((this.fScorePts-this.fMinPts) / (this.fMaxPts-this.fMinPts) * 100) * 1)+ 0;
+if(vScore > 99 && true) {
+			vScoreNode.innerHTML = "<span>"  + "Bonne réponse<\/span>";
+			vScoreNode.className = "";
+		} else if(vScore > 49 && vScore <= 99 && true) {
+			vScoreNode.innerHTML = "<span>" + vScore + "% de bonnes réponses<\/span>";
+			vScoreNode.className = "";
+		} else if(vScore > 0 && vScore <= 49 && true) {
+			vScoreNode.innerHTML = "<span>" + vScore + "% de bonnes réponses<\/span>";
+			vScoreNode.className = "";
+		} else if(vScore <= 0 && true) {
+			vScoreNode.innerHTML = "<span>"  + "Mauvaise réponse<\/span>";
+			vScoreNode.className = "";
+		} else  {
+			vScoreNode.innerHTML = "";
+			vScoreNode.className = "";
+		}
+
+		var vScoreNode = sc$("reBr3fDCprfiAsB6KjY67d_SN13e");
+
+		var vScore = (Math.floor((this.fScorePts-this.fMinPts) / (this.fMaxPts-this.fMinPts) * 100) * 1)+ 0;
+if(vScore > 99 && true) {
+			vScoreNode.innerHTML = "<span>"  + "Bonne réponse<\/span>";
+			vScoreNode.className = "answBest";
+		} else if(vScore > 49 && vScore <= 99 && true) {
+			vScoreNode.innerHTML = "<span>" + vScore + "% de bonnes réponses<\/span>";
+			vScoreNode.className = "answGood";
+		} else if(vScore > 0 && vScore <= 49 && true) {
+			vScoreNode.innerHTML = "<span>" + vScore + "% de bonnes réponses<\/span>";
+			vScoreNode.className = "answBad";
+		} else if(vScore <= 0 && true) {
+			vScoreNode.innerHTML = "<span>"  + "Mauvaise réponse<\/span>";
+			vScoreNode.className = "answWorst";
+		} else  {
+			vScoreNode.innerHTML = "";
+			vScoreNode.className = "";
+		}
+
+	},
+	setSolution : function(pIfRight, pIfNotBest){
+		for(var vF in this._Sol) if(vF != "_") scAssmntMgr.setMode(sc$("reBr3fDCprfiAsB6KjY67d_X_"+vF), this.getSolIdx(vF)==0 ? pIfRight || "collapsed" : pIfNotBest || "collapsed");
+	},
+	setInteraction : function(pElt, pMode){
+		if(!pElt) return;
+		switch(pMode) {
+		case "collapsed" :
+			pElt.style.display = "none";
+			if("scSiLib" in window) scSiLib.fireResizedNode(pElt);
+			break;
+		case "invisible" :
+			pElt.style.display = "";
+			pElt.style.visibility = "hidden";
+			if("scSiLib" in window) scSiLib.fireResizedNode(pElt);
+			break;
+		case "enabled" : 
+		case "disabled" : 
+			pElt.disabled = (pMode=="disabled");
+		default :
+			pElt.style.display = "";
+			pElt.style.visibility = "visible";
+			if("scSiLib" in window) scSiLib.fireResizedNode(pElt);
+		}
+	},
+	refreshResult : function(pMode){
+		this._resultDisplay = pMode || "none";
+		var vForm = document.forms.reBr3fDCprfiAsB6KjY67d_form;
+		for (var i=0; i < vForm.length; i++) { var vFi = vForm.elements[i]; if (vFi.name) this.refreshResultInput(vFi);}
+
+	},
+	onLoad: function(){
+
+		this.initSeq(this.getOnLoadSeq());
+		scAssmntMgr.setMode(sc$("reBr3fDCprfiAsB6KjY67d_A"));
+
+	},
+	onPageHide: function(){
+		this.closeSeq();
+	},
+	loadSortKey: "A",
+	pageHideSortKey: "A"
+};
+
+scOnLoads[scOnLoads.length] = scOnPageHides[scOnPageHides.length] = reBr3fDCprfiAsB6KjY67d;
+/*]]>*/</script><div id="reBr3fDCprfiAsB6KjY67d_A" style="display:none;"><div class="quizBody" role="group" aria-labelledby="reBr3fDCprfiAsB6KjY67d_N_question"><div class="question" id="reBr3fDCprfiAsB6KjY67d_N_question"><button class="tooltip_a help" id="i1" data-sctooltip="{&quot;ttId&quot;:&quot;footnotesNaa&quot;,&quot;trigger&quot;:&quot;onclick&quot;,&quot;class&quot;:&quot;tooltip&quot;,&quot;classRoot&quot;:&quot;help&quot;,&quot;options&quot;:{&quot;STICKY&quot;:true,&quot;FOCUS&quot;:true,&quot;FIXTYPE&quot;:&quot;node&quot;,&quot;FIX&quot;:[0,0],&quot;HPOS&quot;:&quot;startOfElement&quot;,&quot;VPOS&quot;:&quot;topAlign&quot;,&quot;CLSBTN&quot;:true,&quot;CLSBTNCAP&quot;:&quot;✖&quot;,&quot;CLSBTNTI&quot;:&quot;Fermer&quot;}}" title="Comment répondre à cette question ?"><span>?</span></button><sup class="tooltip_ref"><a href="#footnotesNaa"><span>[</span>2<span>]</span></a></sup><div class="rBk "><p>Expliquez la notion de petit monde.</p></div></div><div class="response" id="reBr3fDCprfiAsB6KjY67d_N_response" tabindex="-1"><p class="noIndex " id="reBr3fDCprfiAsB6KjY67d_N_waiScore"><span id="reBr3fDCprfiAsB6KjY67d_SNa0"><span ></span></span></p><form action="javascript:void(0);" name="reBr3fDCprfiAsB6KjY67d_form" id="reBr3fDCprfiAsB6KjY67d_form" autocomplete="off"><div class="exoAsw"><span><input type="text" name="field" size="20" onblur="reBr3fDCprfiAsB6KjY67d.setResp(this);" class="exoInput " /></span><span id="reBr3fDCprfiAsB6KjY67d_X_field" class="exoSol "><span>La notion de petit monde désigne l’idée qu’au sein d’un grand réseau social (ou réseau de connexions quelconque), chaque élément peut être relié à n’importe quel autre élément par un nombre restreint de connexions ou d’intermédiaires. Ce concept est central dans la théorie des réseaux et repose sur des principes montrés par l'expérience de Stanley Milgram, où chaque individu pouvait atteindre un autre inconnu à travers une chaîne de seulement quelques relations, souvent six, d'où l'expression "six degrés de séparation."
+</span></span></div></form></div><div class="toolbar noIndex"><a role="button" title="Afficher le score et la correction" href="#" onkeydown="scDynUiMgr.handleBtnKeyDwn(event);" onkeyup="scDynUiMgr.handleBtnKeyUp(event);" onclick="reBr3fDCprfiAsB6KjY67d.onActionNec(this); return false;" class="btnQuiz correction " id="reBr3fDCprfiAsB6KjY67d_S_Nec" aria-controls="reBr3fDCprfiAsB6KjY67d_N_score reBr3fDCprfiAsB6KjY67d_N_waiScore reBr3fDCprfiAsB6KjY67d_N_globalExp"><span>Correction</span></a><a role="button" title="Effacer les réponses" href="#" onkeydown="scDynUiMgr.handleBtnKeyDwn(event);" onkeyup="scDynUiMgr.handleBtnKeyUp(event);" onclick="reBr3fDCprfiAsB6KjY67d.onActionN11a(this); return false;" class="btnQuiz reset " id="reBr3fDCprfiAsB6KjY67d_N_reset"><span>Recommencer</span></a><span class="scoreBox"><span class="score " id="reBr3fDCprfiAsB6KjY67d_N_score" aria-hidden="true"><span id="reBr3fDCprfiAsB6KjY67d_SN13e"><span ></span></span></span></span></div></div></div></div></div><div class="complement pBk"><h3 class="pBk_ti"><span><i class="type"><span class="label">Complément</span></i><span class="hidden"> : </span><span class="title">Et toi, tu es à combien de degrés de moi ?</span></span></h3><div class="pBk_co"><div class="rBk "><p>Cette vidéo illustre la théorie des six degrés de séparation, qui soutient que chaque personne dans le monde est connectée à toute autre personne par une chaîne de six contacts en moyenne. L'idée est illustrée par le scénario où, en ajoutant quelqu'un sur Facebook, on découvre des amis en commun. Cette théorie est née de l'expérience de Milgram en 1967, qui montra que, par une série de connexions, une lettre pouvait atteindre un destinataire inconnu en six étapes. Duncan Watts a répliqué cette expérience via emails, confirmant cette moyenne de six connexions.</p><p>Dans les réseaux sociaux actuels, comme Facebook, la moyenne est même plus basse, avec environ quatre intermédiaires entre deux utilisateurs. Ce phénomène de "petit monde" se retrouve également dans les réseaux de recherche scientifique et peut se modéliser mathématiquement par des graphes aléatoires qui vérifient cette propriété. Cependant, dans la vie quotidienne, il est complexe de connaître précisément les chaînes de connexions individuelles, rendant fascinante l’idée que nous sommes tous étroitement connectés, même à des personnes lointaines.</p></div></div></div><div class="def pBk"><h3 class="pBk_ti"><span><i class="type"><span class="label">Définition</span></i><span class="hidden"> : </span><span class="title">Graphe des relations</span></span></h3><div class="pBk_co"><div class="rBk "><p>Pour représenter simplement les relations entre les utilisateurs des réseaux sociaux, on peut utiliser des graphes. Les graphes n'utilisent que deux éléments différents : les sommets, qui correspondent aux différents utilisateurs, et les arêtes, correspondant à leur mise en relation sur le réseau social.</p></div></div></div><div class="method pBk"><h3 class="pBk_ti"><span><i class="type"><span class="label">Méthode</span></i><span class="hidden"> : </span><span class="title">Décrire et réaliser un graphe</span></span></h3><div class="pBk_co"><div class="rBk "><p>La distance entre deux sommets correspond au nombre minimal d'arêtes entre eux. Il s'agit, pour faire écho à la notion développée par Milgram, du degré de séparation. Dans l'exemple ci‑contre, Liliia et Sihâme ont une distance de 2 arêtes entre eux, soit un degré de séparation de 2.</p><p>À partir de là, on peut définir les notions d'<strong class="txt_emp_is ">écartement</strong>, de <strong class="txt_emp_is ">centre</strong>, de <strong class="txt_emp_is ">rayon</strong> et de <strong class="txt_emp_is ">diamètre</strong> :</p><ul class="txt_il "><li class="txt_ili "><p>l'<strong class="txt_emp_is ">écartement</strong> d'un sommet est la distance qui le sépare du sommet le plus éloigné de lui : dans cet exemple, Maëva a un degré de séparation maximal avec Tom et Agathe correspondant à une distance de 3 arêtes, il s'agit donc de son écartement dans le graphe présenté ;</p></li><li class="txt_ili "><p>le <strong class="txt_emp_is ">centre</strong> d'un graphe désigne un sommet qui possède le plus faible écartement : dans l'exemple présenté, Alice et Drino sont les seuls à posséder un écartement de 2, ils sont donc les centres du graphe ;</p></li><li class="txt_ili "><p>le <strong class="txt_emp_is ">rayon</strong> d'un graphe désigne l'écartement d'un centre, à savoir 2 dans l'exemple correspondant donc à l'écartement de Alice ou celui de Drino ;</p></li><li class="txt_ili "><p>le <strong class="txt_emp_is ">diamètre</strong> quant à lui correspond à la distance maximale entre deux sommets du graphe : ici, il pourrait s'agir de la distance entre Sihâme et Tom, soit 3 arêtes.</p></li></ul></div><div class="rBk res"><figure role="group" class="resInFlow image" aria-label=""><div class="resInFlow_co "><a href="../res/Graphe.png" class="imgZoom" target="_blank" onclick="scImageMgr.loading(); return false;" title="Cliquez pour agrandir (nouveau dialogue), Control-cliquez pour ouvrir (nouvelle fenêtre)"><img src="../res/Graphe_1.png" width="630" height="327" alt="" /></a></div></figure></div></div></div><div class="iBk info"><h3 class="iBk_ti "><span>Élèves en relation au travers de TikTok</span></h3><div class="iBk_co "><div class="rBk "><div class="txt_tbpt "><table class="txt_tb "><colgroup><col class="txt_head_tbcl " style="width:65px;width:9.3ch;" /><col style="width:65px;width:9.3ch;" /><col style="width:65px;width:9.3ch;" /><col style="width:65px;width:9.3ch;" /><col style="width:65px;width:9.3ch;" /><col style="width:65px;width:9.3ch;" /></colgroup><tr class="txt_head_tbtr "><th scope="col" ></th><th scope="col"><p>Sarah</p></th><th scope="col"><p>Reanne</p></th><th scope="col"><p>Feryel</p></th><th scope="col"><p>Lisa</p></th><th scope="col"><p>Celia</p></th></tr><tr><th scope="row"><p>Sarah</p></th><td class="txt_word_tbtd "></td><td class="txt_word_tbtd "><p>x</p></td><td class="txt_word_tbtd "><p>x</p></td><td class="txt_word_tbtd "><p>x</p></td><td class="txt_word_tbtd "></td></tr><tr><th scope="row"><p>Reanne</p></th><td class="txt_word_tbtd "><p>x</p></td><td class="txt_word_tbtd "></td><td class="txt_word_tbtd "><p>x</p></td><td class="txt_word_tbtd "></td><td class="txt_word_tbtd "><p>x</p></td></tr><tr><th scope="row"><p>Feryel</p></th><td class="txt_word_tbtd "><p>x</p></td><td class="txt_word_tbtd "><p>x</p></td><td class="txt_word_tbtd "></td><td class="txt_word_tbtd "><p>x</p></td><td class="txt_word_tbtd "></td></tr><tr><th scope="row"><p>Lisa</p></th><td class="txt_word_tbtd "><p>x</p></td><td class="txt_word_tbtd "></td><td class="txt_word_tbtd "><p>x</p></td><td class="txt_word_tbtd "></td><td class="txt_word_tbtd "><p>x</p></td></tr><tr><th scope="row"><p>Celia</p></th><td class="txt_word_tbtd "></td><td class="txt_word_tbtd "><p>x</p></td><td class="txt_word_tbtd "></td><td class="txt_word_tbtd "><p>x</p></td><td class="txt_word_tbtd "></td></tr></table></div><p>Le symbole x signifie que les deux lycéens sont en relation sur TikTok</p></div></div></div><div class="iBk quiz"><div class="iBk_co "><script>/*<![CDATA[*/
+var CAyRxbPA4ggEZJol6siMhc = {
+
+	fId : "CAyRxbPA4ggEZJol6siMhc",
+	fCurSeq : null,
+	initSeq : function(pCodeSeq){
+	try {
+		if(pCodeSeq==null) return;
+		if(this.fCurSeq!=null) this.closeSeq();
+		this.fCurSeq = pCodeSeq;
+		switch(this.fCurSeq) {
+
+		case "play" : {
+		var vForm = document.forms.CAyRxbPA4ggEZJol6siMhc_form;
+		for (var i=0; i < vForm.CAyRxbPA4ggEZJol6siMhc_input.length; i++) {
+			vForm.CAyRxbPA4ggEZJol6siMhc_input[i].disabled = false;
+			vForm.CAyRxbPA4ggEZJol6siMhc_input[i].checked = false;
+		}
+
+var vLoadRespSession = "";
+var vResp = scServices.assmntMgr.getResponse(this.fId, vLoadRespSession, "choice");
+		if(vResp != null) sc$("CAyRxbPA4ggEZJol6siMhc_in"+vResp).checked = true;
+var vLoadScoreSession = "";
+		this.fMinPts = scServices.assmntMgr.getMinPts(this.fId, vLoadScoreSession);
+		this.fScorePts = scServices.assmntMgr.getScorePts(this.fId, vLoadScoreSession);
+		this.fMaxPts = scServices.assmntMgr.getMaxPts(this.fId, vLoadScoreSession);
+
+		this.setSolution(false);
+scAssmntMgr.setMode(sc$("CAyRxbPA4ggEZJol6siMhc_N_question"), "visible");
+scAssmntMgr.setMode(sc$("CAyRxbPA4ggEZJol6siMhc_N_response"), "visible");
+scAssmntMgr.setMode(sc$("CAyRxbPA4ggEZJol6siMhc_N_globalExp"), "collapsed");
+scAssmntMgr.setMode(sc$("CAyRxbPA4ggEZJol6siMhc_N_waiScore"), "collapsed");
+scAssmntMgr.setMode(sc$("CAyRxbPA4ggEZJol6siMhc_N_responseTi"), "invisible");
+scAssmntMgr.setMode(sc$("CAyRxbPA4ggEZJol6siMhc_N0_choiceSolTxt"), "collapsed");
+scAssmntMgr.setMode(sc$("CAyRxbPA4ggEZJol6siMhc_N1_choiceSolTxt"), "collapsed");
+scAssmntMgr.setMode(sc$("CAyRxbPA4ggEZJol6siMhc_N0_choiceExp"), "collapsed");
+scAssmntMgr.setMode(sc$("CAyRxbPA4ggEZJol6siMhc_N1_choiceExp"), "collapsed");
+scAssmntMgr.setMode(sc$("CAyRxbPA4ggEZJol6siMhc_N_reset"), "visible");
+scAssmntMgr.setMode(sc$("CAyRxbPA4ggEZJol6siMhc_N_score"), "invisible");
+scAssmntMgr.setToggleStatus(sc$("CAyRxbPA4ggEZJol6siMhc_S_Nd6"), false);
+var vRespSession = "";
+		if(scServices.assmntMgr.getCompletionStatus(this.fId, vRespSession)=="notAttempt") scServices.assmntMgr.setCompletionStatus(this.fId, vRespSession, "attempt");
+		this.setResp = function(pInput, pIdx) {
+			scServices.assmntMgr.setResponse(this.fId, vRespSession, "choice", pIdx);
+
+			this.computeScore();
+			scServices.assmntMgr.commit();
+		}				
+
+		this.computeScore = function() {
+
+		this.fMinPts = 0;
+		this.fMaxPts = 1;
+		this.fScorePts = document.forms.CAyRxbPA4ggEZJol6siMhc_form.CAyRxbPA4ggEZJol6siMhc_input[0].checked ?  this.fMaxPts : this.fMinPts;
+var vScoreSession = "";
+		if(this.fScorePts != null) scServices.assmntMgr.setPts(this.fId, vScoreSession, this.fMinPts, this.fScorePts, this.fMaxPts);
+
+			this.refreshScoresFeedbacks();
+		}
+
+if(vRespSession != vLoadRespSession) {
+for(var i = 0; i < vForm.CAyRxbPA4ggEZJol6siMhc_input.length; i++) if(vForm.CAyRxbPA4ggEZJol6siMhc_input[i].checked) break;
+		scServices.assmntMgr.setResponse(this.fId, vRespSession, "choice", (i < vForm.CAyRxbPA4ggEZJol6siMhc_input.length) ? vForm.CAyRxbPA4ggEZJol6siMhc_input[i].value : null);
+}
+this.computeScore();
+
+		scServices.assmntMgr.commit();
+		break;
+	}
+
+		case "read" : {
+		var vForm = document.forms.CAyRxbPA4ggEZJol6siMhc_form;
+		for (var i=0; i < vForm.CAyRxbPA4ggEZJol6siMhc_input.length; i++) {
+			vForm.CAyRxbPA4ggEZJol6siMhc_input[i].disabled = true;
+			vForm.CAyRxbPA4ggEZJol6siMhc_input[i].checked = false;
+		}
+
+var vLoadRespSession = "";
+var vResp = scServices.assmntMgr.getResponse(this.fId, vLoadRespSession, "choice");
+		if(vResp != null) sc$("CAyRxbPA4ggEZJol6siMhc_in"+vResp).checked = true;
+var vLoadScoreSession = "";
+		this.fMinPts = scServices.assmntMgr.getMinPts(this.fId, vLoadScoreSession);
+		this.fScorePts = scServices.assmntMgr.getScorePts(this.fId, vLoadScoreSession);
+		this.fMaxPts = scServices.assmntMgr.getMaxPts(this.fId, vLoadScoreSession);
+
+		this.setSolution(false);
+scAssmntMgr.setMode(sc$("CAyRxbPA4ggEZJol6siMhc_N_question"), "visible");
+scAssmntMgr.setMode(sc$("CAyRxbPA4ggEZJol6siMhc_N_response"), "visible");
+scAssmntMgr.setMode(sc$("CAyRxbPA4ggEZJol6siMhc_N_globalExp"), "collapsed");
+scAssmntMgr.setMode(sc$("CAyRxbPA4ggEZJol6siMhc_N_waiScore"), "collapsed");
+scAssmntMgr.setMode(sc$("CAyRxbPA4ggEZJol6siMhc_N_responseTi"), "invisible");
+scAssmntMgr.setMode(sc$("CAyRxbPA4ggEZJol6siMhc_N0_choiceSolTxt"), "collapsed");
+scAssmntMgr.setMode(sc$("CAyRxbPA4ggEZJol6siMhc_N1_choiceSolTxt"), "collapsed");
+scAssmntMgr.setMode(sc$("CAyRxbPA4ggEZJol6siMhc_N0_choiceExp"), "collapsed");
+scAssmntMgr.setMode(sc$("CAyRxbPA4ggEZJol6siMhc_N1_choiceExp"), "collapsed");
+scAssmntMgr.setMode(sc$("CAyRxbPA4ggEZJol6siMhc_N_reset"), "invisible");
+scAssmntMgr.setMode(sc$("CAyRxbPA4ggEZJol6siMhc_N_score"), "invisible");
+scAssmntMgr.setToggleStatus(sc$("CAyRxbPA4ggEZJol6siMhc_S_Nd6"), false);
+this.setResp = function(pInput, pIdx) {
+
+			this.computeScore();
+			scServices.assmntMgr.commit();
+		}	
+
+		this.computeScore = function() {
+
+		this.fMinPts = 0;
+		this.fMaxPts = 1;
+		this.fScorePts = document.forms.CAyRxbPA4ggEZJol6siMhc_form.CAyRxbPA4ggEZJol6siMhc_input[0].checked ?  this.fMaxPts : this.fMinPts;
+
+			this.refreshScoresFeedbacks();
+		}
+
+this.computeScore();
+
+		scServices.assmntMgr.commit();
+		break;
+	}
+
+		}
+	}catch(e){console.error("assmnt.initSeq : "+e)}
+	},
+	onActionN10c : function(pButton){
+		if(scAssmntMgr.isDisabled(pButton)) return;
+var vSess="";
+scServices.assmntMgr.resetResponses(this.fId, vSess);
+scServices.assmntMgr.setPts(this.fId, vSess, null, null, null); 
+this.initSeq("play");
+sc$("CAyRxbPA4ggEZJol6siMhc_N_response").focus();
+
+		scServices.assmntMgr.commit();
+	},
+	onActionNd6 : function(pButton){
+		if(scAssmntMgr.isDisabled(pButton)) return;
+		var vIsOn = scAssmntMgr.isToggleOn(pButton);
+		if(vIsOn) {
+scAssmntMgr.setMode(sc$("CAyRxbPA4ggEZJol6siMhc_N_score"), "invisible");
+scAssmntMgr.setMode(sc$("CAyRxbPA4ggEZJol6siMhc_N_waiScore"), "collapsed");
+this.setSolution(false); scAssmntMgr.setMode(sc$("CAyRxbPA4ggEZJol6siMhc_N_globalExp"), "collapsed");
+scAssmntMgr.setMode(sc$("CAyRxbPA4ggEZJol6siMhc_N0_choiceExp"), "collapsed"); scAssmntMgr.setMode(sc$("CAyRxbPA4ggEZJol6siMhc_N1_choiceExp"), "collapsed"); scAssmntMgr.setMode(sc$("CAyRxbPA4ggEZJol6siMhc_N_responseTi"), "invisible");
+scAssmntMgr.setMode(sc$("CAyRxbPA4ggEZJol6siMhc_N0_choiceSolTxt"), "collapsed"); scAssmntMgr.setMode(sc$("CAyRxbPA4ggEZJol6siMhc_N1_choiceSolTxt"), "collapsed"); var vForm=document.forms.CAyRxbPA4ggEZJol6siMhc_form; for (var i=0; i < vForm.CAyRxbPA4ggEZJol6siMhc_input.length; i++) vForm.CAyRxbPA4ggEZJol6siMhc_input[i].disabled = false; sc$("CAyRxbPA4ggEZJol6siMhc_N_response").focus();
+
+		} else {
+scAssmntMgr.setMode(sc$("CAyRxbPA4ggEZJol6siMhc_N_score"), "visible");
+scAssmntMgr.setMode(sc$("CAyRxbPA4ggEZJol6siMhc_N_waiScore"), "outOfView");
+this.setSolution(true); scAssmntMgr.setMode(sc$("CAyRxbPA4ggEZJol6siMhc_N_globalExp"), "visible");
+scAssmntMgr.setMode(sc$("CAyRxbPA4ggEZJol6siMhc_N0_choiceExp"), "visible"); scAssmntMgr.setMode(sc$("CAyRxbPA4ggEZJol6siMhc_N1_choiceExp"), "visible"); scAssmntMgr.setMode(sc$("CAyRxbPA4ggEZJol6siMhc_N_responseTi"), "visible");
+scAssmntMgr.setMode(sc$("CAyRxbPA4ggEZJol6siMhc_N0_choiceSolTxt"), "outOfView"); scAssmntMgr.setMode(sc$("CAyRxbPA4ggEZJol6siMhc_N1_choiceSolTxt"), "outOfView"); var vForm=document.forms.CAyRxbPA4ggEZJol6siMhc_form; for (var i=0; i < vForm.CAyRxbPA4ggEZJol6siMhc_input.length; i++) vForm.CAyRxbPA4ggEZJol6siMhc_input[i].disabled = true; sc$("CAyRxbPA4ggEZJol6siMhc_N_response").focus();
+
+		}
+		scAssmntMgr.setToggleStatus(pButton, ! vIsOn);
+		scServices.assmntMgr.commit();
+	},
+
+	closeSeq: function(){
+		var vForm = document.forms.CAyRxbPA4ggEZJol6siMhc_form;
+		switch(this.fCurSeq) {
+
+	case "play" : {
+
+		break;
+	}
+
+	case "read" : {
+
+		break;
+	}
+
+		}
+		this.fCurSeq = null;
+	},
+	getOnLoadSeq:function() {
+
+	if(!scServices.assmntMgr.review && true) return "play";
+	return "read";
+	},
+
+	refreshScoresFeedbacks : function(){
+		
+
+		var vScoreNode = sc$("CAyRxbPA4ggEZJol6siMhc_SN8a");
+
+		var vScore = (Math.floor((this.fScorePts-this.fMinPts) / (this.fMaxPts-this.fMinPts) * 100) * 1)+ 0;
+if(vScore > 99 && true) {
+			vScoreNode.innerHTML = "<span>"  + "Bonne réponse<\/span>";
+			vScoreNode.className = "";
+		} else if(vScore > 49 && vScore <= 99 && true) {
+			vScoreNode.innerHTML = "<span>" + vScore + "% de bonnes réponses<\/span>";
+			vScoreNode.className = "";
+		} else if(vScore > 0 && vScore <= 49 && true) {
+			vScoreNode.innerHTML = "<span>" + vScore + "% de bonnes réponses<\/span>";
+			vScoreNode.className = "";
+		} else if(vScore <= 0 && true) {
+			vScoreNode.innerHTML = "<span>"  + "Mauvaise réponse<\/span>";
+			vScoreNode.className = "";
+		} else  {
+			vScoreNode.innerHTML = "";
+			vScoreNode.className = "";
+		}
+
+		var vScoreNode = sc$("CAyRxbPA4ggEZJol6siMhc_SN130");
+
+		var vScore = (Math.floor((this.fScorePts-this.fMinPts) / (this.fMaxPts-this.fMinPts) * 100) * 1)+ 0;
+if(vScore > 99 && true) {
+			vScoreNode.innerHTML = "<span>"  + "Bonne réponse<\/span>";
+			vScoreNode.className = "answBest";
+		} else if(vScore > 49 && vScore <= 99 && true) {
+			vScoreNode.innerHTML = "<span>" + vScore + "% de bonnes réponses<\/span>";
+			vScoreNode.className = "answGood";
+		} else if(vScore > 0 && vScore <= 49 && true) {
+			vScoreNode.innerHTML = "<span>" + vScore + "% de bonnes réponses<\/span>";
+			vScoreNode.className = "answBad";
+		} else if(vScore <= 0 && true) {
+			vScoreNode.innerHTML = "<span>"  + "Mauvaise réponse<\/span>";
+			vScoreNode.className = "answWorst";
+		} else  {
+			vScoreNode.innerHTML = "";
+			vScoreNode.className = "";
+		}
+
+	},
+	solIsShown : false,
+	setSolution : function(pShow){
+		var vForm = document.forms.CAyRxbPA4ggEZJol6siMhc_form;
+		var vList = scPaLib.findNode("chi:" ,vForm);
+		var vItems = scPaLib.findNodes("chi:" ,vList);
+		if(!pShow && this.solIsShown) {
+			for(var i=0; i<vItems.length; i++){
+				var vItem = vItems[i];
+vItem.classList.remove("assmntSolRight", "assmntSolWrong", "isChecked");
+				var vSol = vForm.CAyRxbPA4ggEZJol6siMhc_sol[i];
+				scAssmntMgr.setMode(vSol.parentNode, "collapsed");
+				vSol.checked = false;
+				vForm.CAyRxbPA4ggEZJol6siMhc_input[i].removeAttribute("aria-hidden");
+
+					var vSolTxt = sc$("CAyRxbPA4ggEZJol6siMhc_soltxt"+i);
+					vSolTxt.innerHTML = "";
+
+			}
+		} else if(pShow && ! this.solIsShown) {
+
+			for(var i=0; i<vItems.length; i++){
+				var vItem = vItems[i];
+				var vIsChecked = vForm.CAyRxbPA4ggEZJol6siMhc_input[i].checked;
+				var vSolSelected = i+1 == 1;
+				vItem.classList.add(vSolSelected ? "assmntSolRight" : "assmntSolWrong");
+				if (vIsChecked) vItem.classList.add("isChecked");
+
+				var vSol = vForm.CAyRxbPA4ggEZJol6siMhc_sol[i];
+				scAssmntMgr.setMode(vSol.parentNode, "visible");
+				vSol.checked = vSolSelected;
+				vForm.CAyRxbPA4ggEZJol6siMhc_input[i].setAttribute("aria-hidden", "true");
+
+			var vSolTxt = sc$("CAyRxbPA4ggEZJol6siMhc_soltxt"+i);
+			if (vIsChecked && vSolSelected) {
+			vSolTxt.innerHTML = "Vous avez sélectionné ce choix. C\'est une bonne réponse.";
+			} else if (vIsChecked && !vSolSelected){
+			vSolTxt.innerHTML = "Vous avez sélectionné ce choix. C\'est une mauvaise réponse.";
+			} else if (!vIsChecked && vSolSelected){
+			vSolTxt.innerHTML = "Vous n\'avez pas sélectionné ce choix. C\'est une mauvaise réponse.";
+			} else if (!vIsChecked && !vSolSelected){
+			vSolTxt.innerHTML = "Vous n\'avez pas sélectionné ce choix. C\'est une bonne réponse.";
+			}
+
+			}
+
+		}
+		this.solIsShown = pShow;
+	},
+	onLoad: function(){
+		this.initSeq(this.getOnLoadSeq());
+		scAssmntMgr.setMode(sc$("CAyRxbPA4ggEZJol6siMhc_A"));
+	},
+	onPageHide: function(){
+		this.closeSeq();
+	},
+	loadSortKey: "A",
+	pageHideSortKey: "A"
+};
+
+scOnLoads[scOnLoads.length] = scOnPageHides[scOnPageHides.length] = CAyRxbPA4ggEZJol6siMhc;
+/*]]>*/</script><div id="CAyRxbPA4ggEZJol6siMhc_A" style="display:none;"><div class="quizBody" role="group" aria-labelledby="CAyRxbPA4ggEZJol6siMhc_N_question"><div class="question" id="CAyRxbPA4ggEZJol6siMhc_N_question"><button class="tooltip_a help" id="i2" data-sctooltip="{&quot;ttId&quot;:&quot;footnotesN19f&quot;,&quot;trigger&quot;:&quot;onclick&quot;,&quot;class&quot;:&quot;tooltip&quot;,&quot;classRoot&quot;:&quot;help&quot;,&quot;options&quot;:{&quot;STICKY&quot;:true,&quot;FOCUS&quot;:true,&quot;FIXTYPE&quot;:&quot;node&quot;,&quot;FIX&quot;:[0,0],&quot;HPOS&quot;:&quot;startOfElement&quot;,&quot;VPOS&quot;:&quot;topAlign&quot;,&quot;CLSBTN&quot;:true,&quot;CLSBTNCAP&quot;:&quot;✖&quot;,&quot;CLSBTNTI&quot;:&quot;Fermer&quot;}}" title="Comment répondre à cette question ?"><span>?</span></button><sup class="tooltip_ref"><a href="#footnotesN19f"><span>[</span>3<span>]</span></a></sup><div class="rBk "><p>Indiquez si ce graphe est correct.</p></div><div class="rBk res"><figure role="group" class="resInFlow image" aria-label=""><div class="resInFlow_co "><img src="../res/Graphe_2.png" width="498" height="169" alt="" /></div></figure></div></div><div id="CAyRxbPA4ggEZJol6siMhc_N_response" tabindex="-1" class="response"><p class="noIndex " id="CAyRxbPA4ggEZJol6siMhc_N_waiScore"><span id="CAyRxbPA4ggEZJol6siMhc_SN8a"><span ></span></span></p><div aria-hidden="true" class="response_ti noIndex" id="CAyRxbPA4ggEZJol6siMhc_N_responseTi"><span><span>Votre choix</span></span><span><span>Choix attendu</span></span><span><span>Réponse</span></span></div><form action="" name="CAyRxbPA4ggEZJol6siMhc_form" id="CAyRxbPA4ggEZJol6siMhc_form" autocomplete="off"><ol class="choiceList "><li class="choiceList_ch "><span class="choiceList_in "><input type="radio" name="CAyRxbPA4ggEZJol6siMhc_input" id="CAyRxbPA4ggEZJol6siMhc_in0" value="0" onclick="CAyRxbPA4ggEZJol6siMhc.setResp(this, 0);" /></span><span class="choiceList_sol " style="display:none;"><input type="radio" name="CAyRxbPA4ggEZJol6siMhc_sol" id="CAyRxbPA4ggEZJol6siMhc_sol0" value="" disabled="true" aria-hidden="true" /></span><label class="choiceList_la " for="CAyRxbPA4ggEZJol6siMhc_in0"><div class="label"><p>Oui</p></div><p class="choiceSolTxt " id="CAyRxbPA4ggEZJol6siMhc_N0_choiceSolTxt"><span id="CAyRxbPA4ggEZJol6siMhc_soltxt0"><span ></span></span></p></label></li><li class="choiceList_ch "><span class="choiceList_in "><input type="radio" name="CAyRxbPA4ggEZJol6siMhc_input" id="CAyRxbPA4ggEZJol6siMhc_in1" value="1" onclick="CAyRxbPA4ggEZJol6siMhc.setResp(this, 1);" /></span><span class="choiceList_sol " style="display:none;"><input type="radio" name="CAyRxbPA4ggEZJol6siMhc_sol" id="CAyRxbPA4ggEZJol6siMhc_sol1" value="" disabled="true" aria-hidden="true" /></span><label class="choiceList_la " for="CAyRxbPA4ggEZJol6siMhc_in1"><div class="label"><p>Non</p></div><p class="choiceSolTxt " id="CAyRxbPA4ggEZJol6siMhc_N1_choiceSolTxt"><span id="CAyRxbPA4ggEZJol6siMhc_soltxt1"><span ></span></span></p></label></li></ol></form></div><div class="toolbar noIndex"><a role="button" title="Afficher le score et la correction" href="#" onkeydown="scDynUiMgr.handleBtnKeyDwn(event);" onkeyup="scDynUiMgr.handleBtnKeyUp(event);" onclick="CAyRxbPA4ggEZJol6siMhc.onActionNd6(this); return false;" class="btnQuiz correction " id="CAyRxbPA4ggEZJol6siMhc_S_Nd6" aria-controls="CAyRxbPA4ggEZJol6siMhc_N_score CAyRxbPA4ggEZJol6siMhc_N_waiScore CAyRxbPA4ggEZJol6siMhc_N_globalExp CAyRxbPA4ggEZJol6siMhc_N_choiceExp CAyRxbPA4ggEZJol6siMhc_N_responseTi CAyRxbPA4ggEZJol6siMhc_N_choiceSolTxt"><span>Correction</span></a><a role="button" title="Effacer les réponses" href="#" onkeydown="scDynUiMgr.handleBtnKeyDwn(event);" onkeyup="scDynUiMgr.handleBtnKeyUp(event);" onclick="CAyRxbPA4ggEZJol6siMhc.onActionN10c(this); return false;" class="btnQuiz reset " id="CAyRxbPA4ggEZJol6siMhc_N_reset"><span>Recommencer</span></a><span class="scoreBox"><span class="score " id="CAyRxbPA4ggEZJol6siMhc_N_score" aria-hidden="true"><span id="CAyRxbPA4ggEZJol6siMhc_SN130"><span ></span></span></span></span></div></div></div></div></div><div class="iBk quiz"><div class="iBk_co "><script>/*<![CDATA[*/
+var V3iaB9k0QXkCyZPcDi0GGg = {
+
+	fId : "V3iaB9k0QXkCyZPcDi0GGg",
+	fCurSeq : null,
+	initSeq : function(pCodeSeq){
+	try {
+		if(pCodeSeq==null) return;
+		if(this.fCurSeq!=null) this.closeSeq();
+		this.fCurSeq = pCodeSeq;
+		switch(this.fCurSeq) {
+
+		case "play" : {
+		var vForm = document.forms.V3iaB9k0QXkCyZPcDi0GGg_form;
+		this._Sol = {field:{s:[{isMatch:function(pResp){if(typeof pResp == 'undefined') return false; pResp=scAssmntMgr.editTranslate(pResp.toUpperCase().trim()); return 'L\'ÉCARTEMENT D\'UN SOMMET EST LA DISTANCE QUI LE SÉPARE DU SOMMET LE PLUS ÉLOIGNÉ DE LUI : DANS CET EXEMPLE, SARAH A UN DEGRÉ DE SÉPARATION MAXIMAL AVEC CELIA CORRESPONDANT À UNE DISTANCE DE 2 ARÊTES, IL S\'AGIT DONC DE SON ÉCARTEMENT DANS LE GRAPHE PRÉSENTÉ ; LE CENTRE D\'UN GRAPHE DÉSIGNE UN SOMMET QUI POSSÈDE LE PLUS FAIBLE ÉCARTEMENT : DANS L\'EXEMPLE PRÉSENTÉ, FERYEL EST LA SEULE À POSSÉDER UN ÉCARTEMENT DE , ELLE EST DONC LE CENTRES DU GRAPHE ; LE RAYON D\'UN GRAPHE DÉSIGNE L\'ÉCARTEMENT D\'UN CENTRE, À SAVOIR 1 DANS L\'EXEMPLE CORRESPONDANT DONC À L\'ÉCARTEMENT DE FERYEL LE DIAMÈTRE QUANT À LUI CORRESPOND À LA DISTANCE MAXIMALE ENTRE DEUX SOMMETS DU GRAPHE : ICI, IL POURRAIT S\'AGIR DE LA DISTANCE ENTRE SARAH ET CELIA OU ENTRE REANNE ET LISA, SOIT 2 ARÊTES.'==pResp || false;}, score:1},null],min:0,max:1},_:null};
+		this.getSolIdx = function(pFieldIndex){
+			var vF = this._Sol[pFieldIndex];
+			var vVal = vForm[pFieldIndex].value;
+			for (var i = 0; i < vF.s.length-1; i++) if(vF.s[i].isMatch(vVal)) return i;
+			return -1;
+		};
+		this.getFieldScore = function(pFieldIndex) {
+			var vI = this.getSolIdx(pFieldIndex);
+			if(vI >= 0) return this._Sol[pFieldIndex].s[vI].score;
+			return 0;
+		};
+		this.refreshResultInput = function(pInput){
+			if(this._resultDisplay == "none") pInput.parentNode.className="";
+			else {
+				var vSol = this._Sol[pInput.name];
+				var vRes = Math.floor((this.getFieldScore(pInput.name) - vSol.min) / (vSol.max - vSol.min) * 1);
+				pInput.parentNode.className= "assmntResult_" + vRes;
+			}
+		};
+var vLoadRespSession = "";
+
+		for (var i=0; i < vForm.length; i++) {
+			var vFi = vForm.elements[i];
+			if (vFi.name) {
+				this.setInteraction(vFi, "enabled");
+				vFi.value = vLoadRespSession == null ? "" : scServices.assmntMgr.getResponse(this.fId, vLoadRespSession, vFi.name) || "";
+			}
+		}
+	this.refreshResult("");
+
+var vLoadScoreSession = "";
+		this.fMinPts = scServices.assmntMgr.getMinPts(this.fId, vLoadScoreSession);
+		this.fScorePts = scServices.assmntMgr.getScorePts(this.fId, vLoadScoreSession);
+		this.fMaxPts = scServices.assmntMgr.getMaxPts(this.fId, vLoadScoreSession);
+
+		this.setSolution('collapsed', 'collapsed');
+scAssmntMgr.setMode(sc$("V3iaB9k0QXkCyZPcDi0GGg_N_question"), "visible");
+scAssmntMgr.setMode(sc$("V3iaB9k0QXkCyZPcDi0GGg_N_response"), "visible");
+scAssmntMgr.setMode(sc$("V3iaB9k0QXkCyZPcDi0GGg_N_globalExp"), "collapsed");
+scAssmntMgr.setMode(sc$("V3iaB9k0QXkCyZPcDi0GGg_N_waiScore"), "collapsed");
+scAssmntMgr.setMode(sc$("V3iaB9k0QXkCyZPcDi0GGg_N_reset"), "visible");
+scAssmntMgr.setMode(sc$("V3iaB9k0QXkCyZPcDi0GGg_N_score"), "invisible");
+scAssmntMgr.setToggleStatus(sc$("V3iaB9k0QXkCyZPcDi0GGg_S_Nec"), false);
+var vRespSession = "";
+		if(scServices.assmntMgr.getCompletionStatus(this.fId, vRespSession)=="notAttempt") scServices.assmntMgr.setCompletionStatus(this.fId, vRespSession, "attempt");
+		this.setResp = function(pInput) {
+			scServices.assmntMgr.setResponse(this.fId, vRespSession, pInput.name, pInput.value);
+			this.computeScore();
+			scServices.assmntMgr.commit();
+			this.refreshResultInput(pInput);
+		}				
+
+		this.computeScore = function() {
+
+			this.fMinPts = 0;
+			this.fMaxPts = 0;
+			for(var vF in this._Sol) if(vF!="_") {this.fMinPts += this._Sol[vF].min; this.fMaxPts += this._Sol[vF].max;}
+			this.fScorePts = this.getFieldScore("field")+0;
+var vScoreSession = "";
+			if(this.fScorePts != null) scServices.assmntMgr.setPts(this.fId, vScoreSession, this.fMinPts, this.fScorePts, this.fMaxPts);
+
+			this.refreshScoresFeedbacks();
+		}
+
+if(vRespSession != vLoadRespSession) {for (var i=0; i < vForm.length; i++) {var vFi = vForm.elements[i]; if (vFi.name) scServices.assmntMgr.setResponse(this.fId, vRespSession, vFi.name, vFi.value);}}
+this.computeScore();
+
+		scServices.assmntMgr.commit();
+		break;
+	}
+
+		case "read" : {
+		var vForm = document.forms.V3iaB9k0QXkCyZPcDi0GGg_form;
+		this._Sol = {field:{s:[{isMatch:function(pResp){if(typeof pResp == 'undefined') return false; pResp=scAssmntMgr.editTranslate(pResp.toUpperCase().trim()); return 'L\'ÉCARTEMENT D\'UN SOMMET EST LA DISTANCE QUI LE SÉPARE DU SOMMET LE PLUS ÉLOIGNÉ DE LUI : DANS CET EXEMPLE, SARAH A UN DEGRÉ DE SÉPARATION MAXIMAL AVEC CELIA CORRESPONDANT À UNE DISTANCE DE 2 ARÊTES, IL S\'AGIT DONC DE SON ÉCARTEMENT DANS LE GRAPHE PRÉSENTÉ ; LE CENTRE D\'UN GRAPHE DÉSIGNE UN SOMMET QUI POSSÈDE LE PLUS FAIBLE ÉCARTEMENT : DANS L\'EXEMPLE PRÉSENTÉ, FERYEL EST LA SEULE À POSSÉDER UN ÉCARTEMENT DE , ELLE EST DONC LE CENTRES DU GRAPHE ; LE RAYON D\'UN GRAPHE DÉSIGNE L\'ÉCARTEMENT D\'UN CENTRE, À SAVOIR 1 DANS L\'EXEMPLE CORRESPONDANT DONC À L\'ÉCARTEMENT DE FERYEL LE DIAMÈTRE QUANT À LUI CORRESPOND À LA DISTANCE MAXIMALE ENTRE DEUX SOMMETS DU GRAPHE : ICI, IL POURRAIT S\'AGIR DE LA DISTANCE ENTRE SARAH ET CELIA OU ENTRE REANNE ET LISA, SOIT 2 ARÊTES.'==pResp || false;}, score:1},null],min:0,max:1},_:null};
+		this.getSolIdx = function(pFieldIndex){
+			var vF = this._Sol[pFieldIndex];
+			var vVal = vForm[pFieldIndex].value;
+			for (var i = 0; i < vF.s.length-1; i++) if(vF.s[i].isMatch(vVal)) return i;
+			return -1;
+		};
+		this.getFieldScore = function(pFieldIndex) {
+			var vI = this.getSolIdx(pFieldIndex);
+			if(vI >= 0) return this._Sol[pFieldIndex].s[vI].score;
+			return 0;
+		};
+		this.refreshResultInput = function(pInput){
+			if(this._resultDisplay == "none") pInput.parentNode.className="";
+			else {
+				var vSol = this._Sol[pInput.name];
+				var vRes = Math.floor((this.getFieldScore(pInput.name) - vSol.min) / (vSol.max - vSol.min) * 1);
+				pInput.parentNode.className= "assmntResult_" + vRes;
+			}
+		};
+var vLoadRespSession = "";
+
+		for (var i=0; i < vForm.length; i++) {
+			var vFi = vForm.elements[i];
+			if (vFi.name) {
+				this.setInteraction(vFi, "disabled");
+				vFi.value = vLoadRespSession == null ? "" : scServices.assmntMgr.getResponse(this.fId, vLoadRespSession, vFi.name) || "";
+			}
+		}
+	this.refreshResult("");
+
+var vLoadScoreSession = "";
+		this.fMinPts = scServices.assmntMgr.getMinPts(this.fId, vLoadScoreSession);
+		this.fScorePts = scServices.assmntMgr.getScorePts(this.fId, vLoadScoreSession);
+		this.fMaxPts = scServices.assmntMgr.getMaxPts(this.fId, vLoadScoreSession);
+
+		this.setSolution('collapsed', 'collapsed');
+scAssmntMgr.setMode(sc$("V3iaB9k0QXkCyZPcDi0GGg_N_question"), "visible");
+scAssmntMgr.setMode(sc$("V3iaB9k0QXkCyZPcDi0GGg_N_response"), "visible");
+scAssmntMgr.setMode(sc$("V3iaB9k0QXkCyZPcDi0GGg_N_globalExp"), "collapsed");
+scAssmntMgr.setMode(sc$("V3iaB9k0QXkCyZPcDi0GGg_N_waiScore"), "collapsed");
+scAssmntMgr.setMode(sc$("V3iaB9k0QXkCyZPcDi0GGg_N_reset"), "invisible");
+scAssmntMgr.setMode(sc$("V3iaB9k0QXkCyZPcDi0GGg_N_score"), "invisible");
+scAssmntMgr.setToggleStatus(sc$("V3iaB9k0QXkCyZPcDi0GGg_S_Nec"), false);
+this.setResp = function(pInput) {
+			this.computeScore();
+			scServices.assmntMgr.commit();
+			this.refreshResultInput(pInput);
+		}	
+
+		this.computeScore = function() {
+
+			this.fMinPts = 0;
+			this.fMaxPts = 0;
+			for(var vF in this._Sol) if(vF!="_") {this.fMinPts += this._Sol[vF].min; this.fMaxPts += this._Sol[vF].max;}
+			this.fScorePts = this.getFieldScore("field")+0;
+
+			this.refreshScoresFeedbacks();
+		}
+
+this.computeScore();
+
+		scServices.assmntMgr.commit();
+		break;
+	}
+
+		}
+	}catch(e){console.error("assmnt.initSeq : "+e)}
+	},
+	onActionN11a : function(pButton){
+		if(scAssmntMgr.isDisabled(pButton)) return;
+var vSess="";
+scServices.assmntMgr.resetResponses(this.fId, vSess);
+scServices.assmntMgr.setPts(this.fId, vSess, null, null, null); 
+this.initSeq("play");
+sc$("V3iaB9k0QXkCyZPcDi0GGg_N_response").focus();
+
+		scServices.assmntMgr.commit();
+	},
+	onActionNec : function(pButton){
+		if(scAssmntMgr.isDisabled(pButton)) return;
+		var vIsOn = scAssmntMgr.isToggleOn(pButton);
+		if(vIsOn) {
+scAssmntMgr.setMode(sc$("V3iaB9k0QXkCyZPcDi0GGg_N_score"), "invisible");
+scAssmntMgr.setMode(sc$("V3iaB9k0QXkCyZPcDi0GGg_N_waiScore"), "collapsed");
+this.setSolution('collapsed', 'collapsed'); this.refreshResult("none");scAssmntMgr.setMode(sc$("V3iaB9k0QXkCyZPcDi0GGg_N_globalExp"), "collapsed");
+var vForm=document.forms.V3iaB9k0QXkCyZPcDi0GGg_form; for (var i=0; i < vForm.length; i++) {var vFi = vForm.elements[i]; if (vFi.name) this.setInteraction(vFi, "enabled");}sc$("V3iaB9k0QXkCyZPcDi0GGg_N_response").focus();
+
+		} else {
+scAssmntMgr.setMode(sc$("V3iaB9k0QXkCyZPcDi0GGg_N_score"), "visible");
+scAssmntMgr.setMode(sc$("V3iaB9k0QXkCyZPcDi0GGg_N_waiScore"), "outOfView");
+this.setSolution('collapsed', 'visible'); this.refreshResult("addClass");scAssmntMgr.setMode(sc$("V3iaB9k0QXkCyZPcDi0GGg_N_globalExp"), "visible");
+var vForm=document.forms.V3iaB9k0QXkCyZPcDi0GGg_form; for (var i=0; i < vForm.length; i++) {var vFi = vForm.elements[i]; if (vFi.name) this.setInteraction(vFi, "disabled");}sc$("V3iaB9k0QXkCyZPcDi0GGg_N_response").focus();
+
+		}
+		scAssmntMgr.setToggleStatus(pButton, ! vIsOn);
+		scServices.assmntMgr.commit();
+	},
+
+	closeSeq: function(){
+		var vForm = document.forms.V3iaB9k0QXkCyZPcDi0GGg_form;
+		switch(this.fCurSeq) {
+
+	case "play" : {
+
+		break;
+	}
+
+	case "read" : {
+
+		break;
+	}
+
+		}
+		this.fCurSeq = null;
+	},
+	getOnLoadSeq:function() {
+
+	if(!scServices.assmntMgr.review && true) return "play";
+	return "read";
+	},
+
+	refreshScoresFeedbacks : function(){
+		
+
+		var vScoreNode = sc$("V3iaB9k0QXkCyZPcDi0GGg_SNa0");
+
+		var vScore = (Math.floor((this.fScorePts-this.fMinPts) / (this.fMaxPts-this.fMinPts) * 100) * 1)+ 0;
+if(vScore > 99 && true) {
+			vScoreNode.innerHTML = "<span>"  + "Bonne réponse<\/span>";
+			vScoreNode.className = "";
+		} else if(vScore > 49 && vScore <= 99 && true) {
+			vScoreNode.innerHTML = "<span>" + vScore + "% de bonnes réponses<\/span>";
+			vScoreNode.className = "";
+		} else if(vScore > 0 && vScore <= 49 && true) {
+			vScoreNode.innerHTML = "<span>" + vScore + "% de bonnes réponses<\/span>";
+			vScoreNode.className = "";
+		} else if(vScore <= 0 && true) {
+			vScoreNode.innerHTML = "<span>"  + "Mauvaise réponse<\/span>";
+			vScoreNode.className = "";
+		} else  {
+			vScoreNode.innerHTML = "";
+			vScoreNode.className = "";
+		}
+
+		var vScoreNode = sc$("V3iaB9k0QXkCyZPcDi0GGg_SN13e");
+
+		var vScore = (Math.floor((this.fScorePts-this.fMinPts) / (this.fMaxPts-this.fMinPts) * 100) * 1)+ 0;
+if(vScore > 99 && true) {
+			vScoreNode.innerHTML = "<span>"  + "Bonne réponse<\/span>";
+			vScoreNode.className = "answBest";
+		} else if(vScore > 49 && vScore <= 99 && true) {
+			vScoreNode.innerHTML = "<span>" + vScore + "% de bonnes réponses<\/span>";
+			vScoreNode.className = "answGood";
+		} else if(vScore > 0 && vScore <= 49 && true) {
+			vScoreNode.innerHTML = "<span>" + vScore + "% de bonnes réponses<\/span>";
+			vScoreNode.className = "answBad";
+		} else if(vScore <= 0 && true) {
+			vScoreNode.innerHTML = "<span>"  + "Mauvaise réponse<\/span>";
+			vScoreNode.className = "answWorst";
+		} else  {
+			vScoreNode.innerHTML = "";
+			vScoreNode.className = "";
+		}
+
+	},
+	setSolution : function(pIfRight, pIfNotBest){
+		for(var vF in this._Sol) if(vF != "_") scAssmntMgr.setMode(sc$("V3iaB9k0QXkCyZPcDi0GGg_X_"+vF), this.getSolIdx(vF)==0 ? pIfRight || "collapsed" : pIfNotBest || "collapsed");
+	},
+	setInteraction : function(pElt, pMode){
+		if(!pElt) return;
+		switch(pMode) {
+		case "collapsed" :
+			pElt.style.display = "none";
+			if("scSiLib" in window) scSiLib.fireResizedNode(pElt);
+			break;
+		case "invisible" :
+			pElt.style.display = "";
+			pElt.style.visibility = "hidden";
+			if("scSiLib" in window) scSiLib.fireResizedNode(pElt);
+			break;
+		case "enabled" : 
+		case "disabled" : 
+			pElt.disabled = (pMode=="disabled");
+		default :
+			pElt.style.display = "";
+			pElt.style.visibility = "visible";
+			if("scSiLib" in window) scSiLib.fireResizedNode(pElt);
+		}
+	},
+	refreshResult : function(pMode){
+		this._resultDisplay = pMode || "none";
+		var vForm = document.forms.V3iaB9k0QXkCyZPcDi0GGg_form;
+		for (var i=0; i < vForm.length; i++) { var vFi = vForm.elements[i]; if (vFi.name) this.refreshResultInput(vFi);}
+
+	},
+	onLoad: function(){
+
+		this.initSeq(this.getOnLoadSeq());
+		scAssmntMgr.setMode(sc$("V3iaB9k0QXkCyZPcDi0GGg_A"));
+
+	},
+	onPageHide: function(){
+		this.closeSeq();
+	},
+	loadSortKey: "A",
+	pageHideSortKey: "A"
+};
+
+scOnLoads[scOnLoads.length] = scOnPageHides[scOnPageHides.length] = V3iaB9k0QXkCyZPcDi0GGg;
+/*]]>*/</script><div id="V3iaB9k0QXkCyZPcDi0GGg_A" style="display:none;"><div class="quizBody" role="group" aria-labelledby="V3iaB9k0QXkCyZPcDi0GGg_N_question"><div class="question" id="V3iaB9k0QXkCyZPcDi0GGg_N_question"><button class="tooltip_a help" id="i3" data-sctooltip="{&quot;ttId&quot;:&quot;footnotesN1f1&quot;,&quot;trigger&quot;:&quot;onclick&quot;,&quot;class&quot;:&quot;tooltip&quot;,&quot;classRoot&quot;:&quot;help&quot;,&quot;options&quot;:{&quot;STICKY&quot;:true,&quot;FOCUS&quot;:true,&quot;FIXTYPE&quot;:&quot;node&quot;,&quot;FIX&quot;:[0,0],&quot;HPOS&quot;:&quot;startOfElement&quot;,&quot;VPOS&quot;:&quot;topAlign&quot;,&quot;CLSBTN&quot;:true,&quot;CLSBTNCAP&quot;:&quot;✖&quot;,&quot;CLSBTNTI&quot;:&quot;Fermer&quot;}}" title="Comment répondre à cette question ?"><span>?</span></button><sup class="tooltip_ref"><a href="#footnotesN1f1"><span>[</span>4<span>]</span></a></sup><div class="rBk "><p>TikTok suggère à Feryel et à Celia d'établir une connexion ensemble au travers du réseau social, ce qu'elles acceptent. Décrivez toutes les caractéristiques de ce graphe (écartement, centre, rayon et diamètre).</p></div><div class="rBk res"><figure role="group" class="resInFlow image" aria-label=""><div class="resInFlow_co "><img src="../res/Graphe_3.png" width="479" height="157" alt="" /></div></figure></div></div><div class="response" id="V3iaB9k0QXkCyZPcDi0GGg_N_response" tabindex="-1"><p class="noIndex " id="V3iaB9k0QXkCyZPcDi0GGg_N_waiScore"><span id="V3iaB9k0QXkCyZPcDi0GGg_SNa0"><span ></span></span></p><form action="javascript:void(0);" name="V3iaB9k0QXkCyZPcDi0GGg_form" id="V3iaB9k0QXkCyZPcDi0GGg_form" autocomplete="off"><div class="exoAsw"><span><input type="text" name="field" size="765" onblur="V3iaB9k0QXkCyZPcDi0GGg.setResp(this);" class="exoInput proportional " /></span><span id="V3iaB9k0QXkCyZPcDi0GGg_X_field" class="exoSol "><span>l'écartement d'un sommet est la distance qui le sépare du sommet le plus éloigné de lui : dans cet exemple, Sarah a un degré de séparation maximal avec Celia correspondant à une distance de 2 arêtes, il s'agit donc de son écartement dans le graphe présenté ;
+le centre d'un graphe désigne un sommet qui possède le plus faible écartement : dans l'exemple présenté, Feryel est la seule à posséder un écartement de , elle est donc le centres du graphe ;
+le rayon d'un graphe désigne l'écartement d'un centre, à savoir 1 dans l'exemple correspondant donc à l'écartement de Feryel
+le diamètre quant à lui correspond à la distance maximale entre deux sommets du graphe : ici, il pourrait s'agir de la distance entre Sarah et Celia ou entre Reanne et Lisa, soit 2 arêtes.
+</span></span></div></form></div><div class="toolbar noIndex"><a role="button" title="Afficher le score et la correction" href="#" onkeydown="scDynUiMgr.handleBtnKeyDwn(event);" onkeyup="scDynUiMgr.handleBtnKeyUp(event);" onclick="V3iaB9k0QXkCyZPcDi0GGg.onActionNec(this); return false;" class="btnQuiz correction " id="V3iaB9k0QXkCyZPcDi0GGg_S_Nec" aria-controls="V3iaB9k0QXkCyZPcDi0GGg_N_score V3iaB9k0QXkCyZPcDi0GGg_N_waiScore V3iaB9k0QXkCyZPcDi0GGg_N_globalExp"><span>Correction</span></a><a role="button" title="Effacer les réponses" href="#" onkeydown="scDynUiMgr.handleBtnKeyDwn(event);" onkeyup="scDynUiMgr.handleBtnKeyUp(event);" onclick="V3iaB9k0QXkCyZPcDi0GGg.onActionN11a(this); return false;" class="btnQuiz reset " id="V3iaB9k0QXkCyZPcDi0GGg_N_reset"><span>Recommencer</span></a><span class="scoreBox"><span class="score " id="V3iaB9k0QXkCyZPcDi0GGg_N_score" aria-hidden="true"><span id="V3iaB9k0QXkCyZPcDi0GGg_SN13e"><span ></span></span></span></span></div></div></div></div></div><div class="basic pBk"><h3 class="pBk_ti"><span><i class="type"><span class="label">Fondamental</span></i><span class="hidden"> : </span><span class="title">Réseaux sociaux - nouveaux types de liens sur le web</span></span></h3><div class="pBk_co"><div class="rBk "><p>Le développement des réseaux sociaux introduit un nouveau type de liens sur le Web, qui ne relève pas de l’hypertexte : il s’agit de l’abonnement à des relations/des amis et de la possibilité de recommander de l’information en fonction du réseau ainsi constitué.</p></div></div></div><div class="complement pBk"><h3 class="pBk_ti"><span><i class="type"><span class="label">Complément</span></i><span class="hidden"> : </span><span class="title">Prenons un peu de recul</span></span></h3><div class="pBk_co"><div class="rBk "><p>L’objectif annoncé des applications de réseautage social est de mettre les individus en relation les uns avec les autres. Quelle est la réalité ?</p><p>L’expérience de Milgram (1967) semble indiquer la constitution de « petits mondes » où chacun est au plus à six liens de distance d’un autre. Peut-on éviter les phénomènes de communautés liés à des recommandations se renforçant les unes les autres pouvant aller jusqu’à un appauvrissement de la pensée critique ?</p><p>Ces questions font référence au concept de bonding (renforcement de liens existants au sein d’un même groupe) versus bridging (construction de nouveaux liens non redondants).</p></div><div class="rBk "><div class="txt_tbpt "><table class="txt_tb "><colgroup><col style="width:324px;width:42.5ch;" /><col style="width:324px;width:42.5ch;" /></colgroup><tr class="txt_head_tbtr "><th scope="col"><p>BONDING</p></th><th scope="col"><p>BRIDGING</p></th></tr><tr><td><p><strong class="txt_emp_is ">Définition</strong> : Les connexions de <strong class="txt_emp_is ">bonding</strong> se manifestent lorsque les utilisateurs interagissent principalement avec des amis proches, de la famille ou des groupes ayant des intérêts ou des caractéristiques similaires.</p></td><td><p><strong class="txt_emp_is ">Définition</strong> : Les connexions de <strong class="txt_emp_is ">bridging</strong> se forment lorsque les utilisateurs établissent des relations avec des personnes d’horizons divers ou de groupes différents.</p></td></tr><tr><td><p><strong class="txt_emp_is ">Exemples</strong> : Sur des plateformes comme Facebook ou WhatsApp, les utilisateurs partagent souvent des expériences personnelles, des photos ou des événements significatifs avec un cercle restreint. Cela renforce les liens émotionnels et crée un sentiment d'appartenance au sein de communautés homogènes.</p></td><td><p><strong class="txt_emp_is ">Exemples</strong> : Sur Twitter ou LinkedIn, les utilisateurs peuvent interagir avec des inconnus, suivre des experts d'autres domaines ou participer à des discussions globales. Ces interactions permettent d'accéder à une variété d'opinions et de ressources.</p></td></tr><tr><td><p><strong class="txt_emp_is ">Impact</strong> : Bien que ces relations fournissent un soutien social et affectif, elles peuvent aussi conduire à l’<strong class="txt_emp_is ">isolement</strong> par rapport à des perspectives extérieures, limitant l'exposition à des idées nouvelles ou à des informations variées.</p></td><td><p><strong class="txt_emp_is ">Impact</strong> : Ces liens permettent de <strong class="txt_emp_is ">développer des réseaux élargis</strong> et d'accéder à de nouvelles opportunités, que ce soit sur le plan professionnel ou personnel. Ils favorisent l'<strong class="txt_emp_is ">innovation</strong> et l'<strong class="txt_emp_is ">échange d'idées</strong>, créant ainsi un environnement propice à la créativité et à l'enrichissement mutuel.</p></td></tr></table></div></div></div></div></div></section><aside class="noIndex footnotes"><h2>
+									Notes
+								</h2><ol class="footnotes_li" data-titled-basket="true"><li class="footnotes_it" id="footnotesN91"><div class="footnotes_itti">Informations</div><div class="footnotes_itco"><div class="mField "><small class="legalInfo">
+									<span>Presque Sûrement ; 2020</span>
+								</small></div></div></li><li class="footnotes_it" id="footnotesNaa"><div class="footnotes_itti">Comment répondre à cette question ?</div><div class="footnotes_itco"><p>Entrez le texte de la réponse dans le champ de texte suivant.</p></div></li><li class="footnotes_it" id="footnotesN19f"><div class="footnotes_itti">Comment répondre à cette question ?</div><div class="footnotes_itco"><p>Sélectionnez la réponse qui vous semble correspondre à la question posée.</p></div></li><li class="footnotes_it" id="footnotesN1f1"><div class="footnotes_itti">Comment répondre à cette question ?</div><div class="footnotes_itco"><p>Entrez le texte de la réponse dans le champ de texte suivant.</p></div></li></ol></aside></div></div><div id="navigation" tabindex="-1"><hr class="hidden" /><nav class="pageTurner"><ul><li class="pagePrev"><a rel="prev" target="_self" href="snt-1-07.html" class="btnNav prev" title="Précédent (Les serveurs)"><span>Précédent</span></a></li><li class="pageNext"><a rel="next" target="_self" href="2de-gle-snt-resaux_sociaux_9.html" class="btnNav next" title="Suivant (Exercice : TP - Réseaux sociaux)"><span>Suivant</span></a></li></ul></nav><menu ></menu></div></div><div id="toolbox"><nav aria-label="menu principal" class="pageSelector" id="menu" tabindex="-1"><hr class="hidden" /><ul class="mnu static" data-totalPages="30"><li class="sel_no anc_no type_b  type_b_c dpt_0 courseUa"><div class="lbl type_b" id="2de-gle-snt-resaux_sociaux_1.html"><a href="2de-gle-snt-resaux_sociaux_1.html" target="_self" class="item"><span>Qu'est-ce qu'un réseau social ?</span></a></div></li><li class="sel_no anc_no type_b  type_b_c dpt_0 courseUa"><div class="lbl type_b" id="2de-gle-snt-resaux_sociaux_4.html"><a href="2de-gle-snt-resaux_sociaux_4.html" target="_self" class="item"><span>Les interactions au travers des réseaux sociaux</span></a></div></li><li class="sel_no anc_yes type_b  dpt_0 courseUa"><div class="lbl type_b" id="2de-gle-snt-resaux_sociaux_5.html"><a href="2de-gle-snt-resaux_sociaux_5.html" target="_self" class="item" type="up"><span>Fonctionnement des réseaux sociaux</span></a></div><ul class="sub mnu_open"><li class="sel_no anc_no type_l  dpt_1 intro"><div class="lbl type_l" id="2de-gle-snt-resaux_sociaux_8.html"><a href="2de-gle-snt-resaux_sociaux_8.html" target="_self" class="item"><span>Introduction</span></a></div></li><li class="sel_no anc_no type_l  dpt_1 expUc"><div class="lbl type_l" id="snt-1-06.html"><a href="snt-1-06.html" target="_self" class="item"><span>Algorithmes et programmes</span></a></div></li><li class="sel_no anc_no type_l  dpt_1 expUc"><div class="lbl type_l" id="snt-1-07.html"><a href="snt-1-07.html" target="_self" class="item"><span>Les serveurs</span></a></div></li><li class="sel_yes anc_no type_l  dpt_1 expUc"><div class="lbl type_l" id="snt-1-08.html"><span class="item"><span>Graphes et expérience de Milgram</span></span></div></li><li class="sel_no anc_no type_l  dpt_1 practUc"><div class="lbl type_l" id="2de-gle-snt-resaux_sociaux_9.html"><a href="2de-gle-snt-resaux_sociaux_9.html" target="_self" class="item"><span>Exercice : TP - Réseaux sociaux</span></a></div></li></ul></li><li class="sel_no anc_no type_b  type_b_c dpt_0 courseUa"><div class="lbl type_b" id="2de-gle-snt-resaux_sociaux_6.html"><a href="2de-gle-snt-resaux_sociaux_6.html" target="_self" class="item"><span>Modèle économique des réseaux sociaux</span></a></div></li><li class="sel_no anc_no type_b  type_b_c dpt_0 courseUa"><div class="lbl type_b" id="2de-gle-snt-resaux_sociaux_7.html"><a href="2de-gle-snt-resaux_sociaux_7.html" target="_self" class="item"><span>Identité numérique, e-réputation, identification</span></a></div></li></ul></nav></div></main><footer id="footer" tabindex="-1"><hr class="hidden" /><menu ></menu><a id="linkSp" target="_blank" href="https://doc.scenari.software/Opale" title="Réalisé avec SCENARI (nouvelle fenêtre)"><span><img alt="Réalisé avec Scenari (nouvelle fenêtre)" src="../skin/img/tpl/scBtn.png" /></span></a></footer></div>
+		<script src="../skin/js/skin.js" ></script>
+		<script>/*<![CDATA[*/
+/* 0 */ tplMgr.init({accessBar:"dys",themeMode:"button",addMenuBtn:true});
+/* 5 */ outMgr.init();
+/* 5 */ scCodeMgr.init();
+/* 5 */ scImageMgr.init();
+/*]]>*/</script>
+		<script>/*<![CDATA[*/searchMgr.init({searchType:"treeResults"});scTooltipMgr.registerTooltips();/*]]>*/</script></body></html>
