@@ -1,0 +1,6 @@
+﻿Référence;Stock disponible;Réception prévue;Quantité réservée;Observation
+P-14;1;;0;une seule pièce disponible
+P-02;3;;1;
+P-08;1;Mer 10h : +2;0;I03 et I07 demandent la même référence
+P-21;2;Jeu 8h : +2;1;trois interventions froid en demandent
+P-03;4;;0;

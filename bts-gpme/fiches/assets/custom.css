@@ -1,0 +1,8 @@
+/* Surcharge locale volontairement vide. Ajoutez ici vos règles pour personnaliser l'habillage sans modifier les couches fonctionnelles. */
+
+
+/* v3.0.2 Odoo */
+.odoo-callout,.odoo-extension{border:1px solid #9aaeb9;border-left:4px solid #657d89;border-radius:.55rem;padding:1rem;margin:1rem 0;background:#f8fbfc}
+.odoo-callout h2,.odoo-extension h4{margin-top:0}
+.resource-card__odoo{font-size:.9rem;font-weight:650;margin:.45rem 0}
+.theme-dark .odoo-callout,.theme-dark .odoo-extension{background:#1b252b;border-color:#647780}

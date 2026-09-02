@@ -1,0 +1,41 @@
+﻿Code;Indicateur;Unité;Réalisé août;Cible / seuil;Réalisé période précédente;Date source
+C01;CA mensuel;€;412000;430000;405000;2026-08-31
+C02;Marge brute;%;31.2;34.0;33.6;2026-08-31
+C03;Nouveaux clients;nb;18;25;22;2026-08-31
+C04;Taux transformation devis;%;21.0;28.0;27.5;2026-08-31
+C05;Panier moyen;€;1640;1580;1550;2026-08-31
+C06;Retards livraison;%;7.8;<4;4.5;2026-08-31
+C07;Réclamations;nb;19;<12;11;2026-08-31
+C08;Taux fidélisation;%;82;85;84;2026-07-31
+F01;Trésorerie disponible;€;24000;>30000;37000;2026-08-31
+F02;BFR;€;146000;<125000;121000;2026-08-31
+F03;Délai clients;jours;54;<45;46;2026-08-31
+F04;Délai fournisseurs;jours;41;40-50;43;2026-08-31
+F05;Impayés >60j;€;28600;<15000;13200;2026-08-31
+F06;Endettement financier;€;178000;<190000;184000;2026-08-31
+F07;Capacité autofinancement;€;92000;>90000;88000;2026-06-30
+F08;Rotation stock;jours;47;<40;41;2026-08-31
+P01;Productivité atelier;unités/h;4.8;5.0;4.9;2026-08-31
+P02;Taux rebut;%;2.7;<2.0;1.9;2026-08-31
+P03;Pannes >2h;nb;4;<3;2;2026-08-31
+P04;Respect planning;%;89;>93;92;2026-08-31
+P05;Capacité utilisée;%;94;80-92;88;2026-08-31
+P06;Coût sous-traitance;€;31200;<25000;22600;2026-08-31
+P07;Heures supplémentaires;h;186;<120;98;2026-08-31
+P08;Délai moyen fabrication;jours;8.2;<7.5;7.1;2026-08-31
+RH01;Effectif;nb;27;26-28;26;2026-08-31
+RH02;Absentéisme;%;8.4;<4.5;4.1;2026-08-31
+RH03;Turnover 12 mois;%;14;<12;11;2026-08-31
+RH04;Heures formation;h;114;>120;98;2026-08-31
+RH05;Postes vacants;nb;2;<2;1;2026-08-31
+RH06;Accidents avec arrêt;nb;1;0;0;2026-08-31
+Q01;Conformité commandes;%;96.8;>98;98.2;2026-08-31
+Q02;Délai réclamation;h;29;<24;23;2026-08-31
+Q03;Actions correctives en retard;nb;7;<3;2;2026-08-31
+Q04;Satisfaction client;/10;7.9;>8.3;8.2;2026-06-30
+D01;Trafic web;visites;5680;>5000;4900;2026-08-31
+D02;Conversion web;%;1.48;>2.1;2.2;2026-08-31
+D03;Leads web;nb;160;>180;176;2026-08-31
+D04;Abonnés LinkedIn;nb;4820;>4500;4200;2026-08-31
+D05;Engagement social;%;3.6;>3.2;3.1;2026-08-31
+D06;Coût par lead campagne;€;43;<30;28;2026-08-31

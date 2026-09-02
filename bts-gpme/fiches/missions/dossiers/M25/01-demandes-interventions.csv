@@ -1,0 +1,16 @@
+﻿ID;Client;Zone;Durée h;Priorité;Échéance / créneau client;Compétence;Pièce requise
+I01;Clinique Atlas;A;2;Urgente;Lun 8h-12h;Électricité;P-14
+I02;Boulangerie Renoir;B;1.5;Normale;Mar avant 16h;Polyvalent;P-02
+I03;Garage Delta;C;3;Haute;Lun ou Mar;Mécanique;P-08
+I04;Cabinet Nova;A;1;Normale;Mer 14h-17h;Polyvalent;Aucune
+I05;Hôtel Rivage;C;2.5;Urgente;Lun avant 15h;Froid;P-21
+I06;Pharmacie Centre;B;1;Normale;Jeu 9h-12h;Électricité;P-03
+I07;Atelier Pons;A;4;Haute;Mer;Mécanique;P-08
+I08;École Horizon;B;2;Normale;Ven;Polyvalent;P-02
+I09;Résidence Lys;C;2;Normale;Jeu après 13h;Froid;P-21
+I10;Imprimerie Sud;A;1.5;Haute;Mar matin;Électricité;P-14
+I11;Café Marché;B;2;Normale;Mar ou Mer;Froid;P-21
+I12;Laboratoire Vesta;A;3;Haute;Jeu;Électricité;P-03
+I13;Mairie Est;C;1;Normale;Ven matin;Polyvalent;Aucune
+I14;Optique Bleu;B;1;Normale;Mer matin;Électricité;P-03
+I15;Restaurant Prado;C;3;Haute;Ven avant 15h;Froid;P-21

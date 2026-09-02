@@ -1,0 +1,727 @@
+{
+  "R-B1-001": [
+    "trouver de nouveaux clients à prospecter",
+    "organiser une campagne de prospection",
+    "quels prospects contacter en priorité"
+  ],
+  "R-B1-002": [
+    "nettoyer une liste de prospects avant prospection",
+    "vérifier un fichier prospects doublons informations manquantes",
+    "qualifier des prospects avant de les contacter"
+  ],
+  "R-B1-003": [
+    "un appel d offres vient de sortir faut il répondre",
+    "analyser un appel d offres avant décision",
+    "vérifier si un marché correspond à la pme"
+  ],
+  "R-B1-004": [
+    "préparer le dossier pour répondre à un marché public",
+    "quelles pièces mettre dans une réponse appel d offres",
+    "contrôler dossier candidature marché public avant envoi"
+  ],
+  "R-B1-005": [
+    "faire un devis à partir de la demande du client",
+    "client demande plusieurs options dans une proposition",
+    "préparer une proposition commerciale personnalisée"
+  ],
+  "R-B1-006": [
+    "vérifier commande client avant de la valider",
+    "contrôler contrat client prix quantité délai",
+    "commande client contient elle toutes les informations"
+  ],
+  "R-B1-007": [
+    "suivre une commande client jusqu à la livraison",
+    "prouver que la livraison a bien été faite",
+    "vente en retard suivre expédition livraison"
+  ],
+  "R-B1-008": [
+    "faire la facture après une intervention",
+    "vérifier qu une facture client est conforme",
+    "établir facture client ht tva ttc mentions"
+  ],
+  "R-B1-009": [
+    "préparer entreprise à la facture électronique",
+    "que change la facturation électronique pour la pme",
+    "plateforme agréée réception émission factures électroniques"
+  ],
+  "R-B1-010": [
+    "client n a pas payé à l échéance",
+    "relancer un client pour facture impayée",
+    "suivre règlements clients et retards de paiement"
+  ],
+  "R-B1-011": [
+    "savoir si un client risque de ne pas payer",
+    "évaluer solvabilité risque client avant vente",
+    "fixer conditions de paiement selon risque client"
+  ],
+  "R-B1-012": [
+    "nettoyer fichier clients doublons adresses fausses",
+    "mettre à jour base clients propre",
+    "fiabiliser données clients dans le système information"
+  ],
+  "R-B1-030": [
+    "livraison incomplète ou non conforme au client",
+    "client signale une erreur de livraison",
+    "retard ou quantité manquante avant réclamation"
+  ],
+  "R-B1-031": [
+    "corriger une facture déjà envoyée",
+    "faire un avoir après erreur de facturation",
+    "annuler corriger facture sans perdre la trace"
+  ],
+  "R-B1-013": [
+    "répondre à un client au téléphone ou à l accueil",
+    "orienter un client vers la bonne personne",
+    "accueillir informer client professionnellement"
+  ],
+  "R-B1-014": [
+    "client conteste facture ou prestation",
+    "traiter une réclamation client jusqu à résolution",
+    "suivre plainte client et réponse apportée"
+  ],
+  "R-B1-029": [
+    "préparer une communication pour renforcer relation client",
+    "informer clients d une nouveauté de service",
+    "action de communication relation clients"
+  ],
+  "R-B1-015": [
+    "définir exactement ce qu il faut acheter",
+    "préparer besoin achat avant demander des offres",
+    "cahier besoin achat investissement critères"
+  ],
+  "R-B1-016": [
+    "chercher de nouveaux fournisseurs possibles",
+    "faire une présélection fournisseurs",
+    "où trouver fournisseurs et vérifier premiers critères"
+  ],
+  "R-B1-017": [
+    "comparer plusieurs fournisseurs avant choisir",
+    "comparer offres prix délai qualité conditions",
+    "faire recommandation fournisseur au dirigeant"
+  ],
+  "R-B1-032": [
+    "nettoyer et mettre à jour fichier fournisseurs",
+    "fiabiliser données fournisseurs après comparaison",
+    "supprimer doublons et informations fournisseurs obsolètes"
+  ],
+  "R-B1-018": [
+    "préparer négociation avec un fournisseur",
+    "négocier prix délai paiement fournisseur",
+    "fixer objectifs et marges avant négociation achat"
+  ],
+  "R-B1-019": [
+    "passer une commande à un fournisseur",
+    "suivre commande fournisseur jusqu à réception",
+    "préparer bon de commande fournisseur"
+  ],
+  "R-B1-020": [
+    "facture fournisseur correspond elle commande et livraison",
+    "contrôler facture fournisseur avant paiement",
+    "rapprocher commande réception facture fournisseur"
+  ],
+  "R-B1-021": [
+    "stock presque vide faut recommander",
+    "calculer quand déclencher réapprovisionnement",
+    "suivre niveau stock et rupture possible"
+  ],
+  "R-B1-022": [
+    "acheter une immobilisation et suivre le dossier",
+    "préparer acquisition machine véhicule matériel durable",
+    "documents administratifs pour investissement immobilisation"
+  ],
+  "R-B1-023": [
+    "évaluer si un fournisseur est performant",
+    "mesurer qualité délai prix fournisseur",
+    "faire bilan fournisseur et proposer actions"
+  ],
+  "R-B1-024": [
+    "vérifier écriture comptable facture règlement",
+    "contrôler enregistrement achat vente dans comptabilité",
+    "anomalie imputation compte tva écriture commerciale"
+  ],
+  "R-B1-025": [
+    "faire pointage entre relevé bancaire et comptabilité",
+    "banque et compte 512 ne correspondent pas",
+    "réaliser rapprochement bancaire"
+  ],
+  "R-B1-026": [
+    "combien chaque client ou fournisseur doit encore",
+    "faire balance âgée créances dettes",
+    "classer soldes clients par ancienneté"
+  ],
+  "R-B1-027": [
+    "préparer déclaration de tva",
+    "calculer tva collectée déductible à déclarer",
+    "contrôler données tva dans pgi avant déclaration"
+  ],
+  "R-B1-028": [
+    "vente achat à étranger quels risques",
+    "repérer risque change douane transport international",
+    "suivre échange international client fournisseur"
+  ],
+  "R-B2-001": [
+    "évaluer tous les risques de la pme et les classer",
+    "quels risques traiter en priorité",
+    "hiérarchiser risques avec preuves et risque résiduel"
+  ],
+  "R-B2-002": [
+    "calculer criticité probabilité gravité",
+    "construire matrice des risques",
+    "noter fréquence gravité pour classer dangers"
+  ],
+  "R-B2-003": [
+    "mettre à jour le duerp",
+    "ajouter nouveau risque professionnel dans duerp",
+    "document unique après accident changement poste"
+  ],
+  "R-B2-011": [
+    "identifier correctement un risque cause événement conséquence",
+    "formuler les risques à partir des faits",
+    "repérer dangers menaces et conséquences dans entreprise"
+  ],
+  "R-B2-012": [
+    "quelle règle ou obligation s applique à ce risque",
+    "chercher obligation légale liée à un risque",
+    "vérifier texte officiel avant conclure obligatoire"
+  ],
+  "R-B2-013": [
+    "choisir actions pour réduire un risque",
+    "faire plan de traitement des risques",
+    "prévention protection transfert risque actions responsables délais"
+  ],
+  "R-B2-029": [
+    "vérifier qu une action corrective a vraiment marché",
+    "mesurer efficacité action après problème",
+    "preuve que la mesure réduit réellement le risque"
+  ],
+  "R-B2-004": [
+    "organiser une veille pour suivre changements utiles",
+    "mettre en place veille réglementaire ou métier",
+    "quelles sources surveiller et à quelle fréquence"
+  ],
+  "R-B2-005": [
+    "savoir si une source est fiable",
+    "vérifier date auteur preuve d une information",
+    "qualifier information trouvée sur internet ou document"
+  ],
+  "R-B2-006": [
+    "résumer une veille pour alerter le dirigeant",
+    "transformer plusieurs sources en synthèse utile",
+    "faire note de veille avec impacts et actions"
+  ],
+  "R-B2-028": [
+    "nouvelle règle oblige à modifier une procédure",
+    "transformer résultat de veille en changement concret",
+    "mettre à jour pratique après information réglementaire"
+  ],
+  "R-B2-007": [
+    "définir objectifs périmètre acteurs d un projet",
+    "cadrer projet avant démarrage",
+    "projet flou préciser résultat responsabilités contraintes"
+  ],
+  "R-B2-008": [
+    "faire cahier des charges et planning projet",
+    "découper projet en tâches responsables délais",
+    "planifier projet avec dépendances livrables"
+  ],
+  "R-B2-009": [
+    "préparer réunion de projet efficace",
+    "réunion projet avec ordre du jour décisions actions",
+    "animer point projet et répartir actions"
+  ],
+  "R-B2-010": [
+    "projet en retard suivre avancement",
+    "comparer prévu réalisé projet",
+    "traiter écart délai coût qualité dans projet"
+  ],
+  "R-B2-014": [
+    "prévoir encaissements décaissements mois par mois",
+    "construire budget de trésorerie",
+    "voir si trésorerie sera négative dans quelques mois"
+  ],
+  "R-B2-015": [
+    "entreprise va manquer de trésorerie quelles solutions",
+    "diagnostiquer tension de trésorerie",
+    "préparer solutions découvert financement relance report paiement"
+  ],
+  "R-B2-016": [
+    "vérifier si assurance couvre un risque",
+    "comparer garanties exclusions franchises assurance",
+    "couverture assurance adaptée au dommage possible"
+  ],
+  "R-B2-017": [
+    "protéger nom marque logiciel création de la pme",
+    "quelle protection propriété intellectuelle choisir",
+    "marque brevet droit auteur nom commercial protection"
+  ],
+  "R-B2-018": [
+    "utiliser données personnelles clients salariés légalement",
+    "vérifier conformité rgpd d un fichier ou traitement",
+    "finalité base juridique durée destinataires données personnelles"
+  ],
+  "R-B2-019": [
+    "données personnelles envoyées à mauvaise personne",
+    "fuite de données que faire",
+    "réagir à violation rgpd et évaluer notification"
+  ],
+  "R-B2-020": [
+    "réduire déchets énergie pollution de la pme",
+    "identifier risques environnementaux entreprise",
+    "actions environnement indicateurs déchets consommation"
+  ],
+  "R-B2-021": [
+    "évaluer piratage virus phishing et autres risques informatiques",
+    "faire analyse risques cyber de la pme",
+    "mesures contre menace informatique et perte données"
+  ],
+  "R-B2-022": [
+    "organiser sauvegardes et vérifier restauration",
+    "sauvegarde fonctionne vraiment en cas de panne",
+    "tester qu on peut restaurer fichiers sauvegardés"
+  ],
+  "R-B2-023": [
+    "qui peut voir modifier supprimer les données",
+    "limiter accès dossier confidentiel selon rôle",
+    "contrôler droits utilisateurs habilitations"
+  ],
+  "R-B2-030": [
+    "déclarer un sinistre à l assurance",
+    "préparer dossier dommages preuves assureur",
+    "suivre indemnisation sinistre entreprise"
+  ],
+  "R-B2-024": [
+    "même problème qualité revient chercher vraie cause",
+    "diagnostiquer dysfonctionnement et causes",
+    "ne pas traiter seulement symptôme qualité"
+  ],
+  "R-B2-025": [
+    "écrire un mode opératoire ou une procédure",
+    "formaliser étapes responsabilités contrôles",
+    "mettre à jour et diffuser procédure de travail"
+  ],
+  "R-B2-026": [
+    "savoir faire dépend d une seule personne",
+    "procédure pas écrite connaissances risquent de se perdre",
+    "organiser partage capitalisation connaissances"
+  ],
+  "R-B2-027": [
+    "préparer certification audit normes dossier",
+    "faire veille sur exigences de certification",
+    "réunir preuves pour renouvellement certification"
+  ],
+  "R-B2-031": [
+    "suivre dates preuves actions d une certification",
+    "organiser calendrier administratif certification",
+    "tenir dossier certification à jour"
+  ],
+  "R-B3-001": [
+    "quelle règle sociale appliquer avant agir",
+    "vérifier droit du travail convention collective",
+    "chercher source fiable pour question rh"
+  ],
+  "R-B3-002": [
+    "quelles formalités avant arrivée d un salarié",
+    "préparer embauche dpae documents obligatoires",
+    "nouveau salarié commence bientôt que faire administrativement"
+  ],
+  "R-B3-003": [
+    "vérifier contrat de travail avant signature",
+    "contrat cdi cdd temps partiel mentions à contrôler",
+    "projet de contrat correspond il à embauche décidée"
+  ],
+  "R-B3-004": [
+    "salarié quitte entreprise quels documents préparer",
+    "fin de contrat certificat travail solde attestations",
+    "organiser départ salarié démission licenciement fin cdd"
+  ],
+  "R-B3-005": [
+    "organiser dossier administratif d un salarié",
+    "quels documents garder dossier personnel",
+    "dossier rh confidentialité accès conservation"
+  ],
+  "R-B3-006": [
+    "calculer temps travail heures supplémentaires anomalies",
+    "suivre horaires salarié absences heures",
+    "temps de travail réel dépassement planning"
+  ],
+  "R-B3-007": [
+    "salarié absent maladie congé que faire",
+    "gérer demande congés et arrêt maladie",
+    "vérifier droits absence justificatif dates"
+  ],
+  "R-B3-008": [
+    "préparer éléments variables pour la paie",
+    "collecter heures absences primes avantages",
+    "fiabiliser variables de paie avant bulletin"
+  ],
+  "R-B3-009": [
+    "vérifier bulletin de paie avant validation",
+    "contrôler brut cotisations net données salarié",
+    "repérer erreur sur fiche de paie"
+  ],
+  "R-B3-010": [
+    "préparer et contrôler la dsn mensuelle",
+    "envoyer déclaration sociale nominative",
+    "vérifier données dsn avant transmission"
+  ],
+  "R-B3-011": [
+    "organiser élections cse",
+    "préparer calendrier listes protocole élections personnel",
+    "quelles étapes pour mettre en place cse"
+  ],
+  "R-B3-012": [
+    "communiquer information rh sans divulguer données confidentielles",
+    "envoyer information sociale aux salariés",
+    "choisir destinataires et canal communication rh"
+  ],
+  "R-B3-027": [
+    "préparer réunion cse ou dialogue social",
+    "ordre du jour documents réunion représentants personnel",
+    "suivre questions décisions représentation personnel"
+  ],
+  "R-B3-013": [
+    "définir besoin de recrutement et fiche de poste",
+    "quel profil faut il recruter",
+    "formaliser missions compétences poste à pourvoir"
+  ],
+  "R-B3-014": [
+    "rédiger offre emploi sans discrimination",
+    "publier annonce recrutement claire",
+    "offre emploi mentions critères objectifs"
+  ],
+  "R-B3-015": [
+    "trier candidatures avec critères objectifs",
+    "faire grille présélection cv",
+    "comparer candidats avant entretien"
+  ],
+  "R-B3-016": [
+    "préparer questions entretien recrutement",
+    "faire entretien candidats comparable",
+    "grille entretien recrutement critères notation"
+  ],
+  "R-B3-017": [
+    "préparer arrivée et intégration nouveau salarié",
+    "organiser première semaine nouveau collaborateur",
+    "parcours accueil poste outils formation suivi"
+  ],
+  "R-B3-018": [
+    "identifier besoins formation compétences salariés",
+    "recenser compétences manquantes équipe",
+    "préparer plan développement compétences besoins"
+  ],
+  "R-B3-019": [
+    "comparer plusieurs formations et financements",
+    "choisir organisme formation coût programme dates",
+    "préparer financement opco formation"
+  ],
+  "R-B3-020": [
+    "planifier formation et vérifier résultat",
+    "suivre inscription présence évaluation formation",
+    "action formation jusqu au bilan"
+  ],
+  "R-B3-021": [
+    "préparer entretien annuel évaluation salarié",
+    "définir critères objectifs pour entretien annuel",
+    "faire grille évaluation performance collaborateur"
+  ],
+  "R-B3-022": [
+    "préparer entretien de parcours professionnel",
+    "epp salarié règles fréquence contenu",
+    "bilan parcours compétences évolution professionnelle"
+  ],
+  "R-B3-023": [
+    "calculer absentéisme turnover effectif indicateurs sociaux",
+    "construire tableau de bord rh",
+    "suivre indicateurs salariés pour dirigeant"
+  ],
+  "R-B3-024": [
+    "expliquer évolution absentéisme turnover salaires",
+    "analyser indicateurs sociaux et causes",
+    "proposer actions à partir tableau de bord rh"
+  ],
+  "R-B3-028": [
+    "combien coûte recrutement ou formation",
+    "comparer coût prévisionnel de deux solutions rh",
+    "budget recrutement formation charges temps"
+  ],
+  "R-B3-025": [
+    "deux collègues en conflit comment préparer entretien",
+    "repérer tension relationnelle au travail",
+    "préparer régulation sans prendre décision à la place manager"
+  ],
+  "R-B3-026": [
+    "partager documents équipe sans écraser versions",
+    "organiser travail collaboratif règles dossiers validation",
+    "qui modifie quoi et comment suivre versions"
+  ],
+  "R-B4-001": [
+    "comprendre comment circule information dans la pme",
+    "identifier acteurs outils données du système information",
+    "cartographier système information entreprise"
+  ],
+  "R-B4-002": [
+    "dessiner étapes d un processus et circulation information",
+    "qui envoie quoi à qui dans processus",
+    "cartographier flux information documents acteurs"
+  ],
+  "R-B4-003": [
+    "quelles informations faut il collecter pour répondre à question",
+    "définir besoin information avant chercher données",
+    "vérifier données collectées utiles complètes fiables"
+  ],
+  "R-B4-004": [
+    "organiser fichier de données colonnes formats contrôles",
+    "éviter erreurs de saisie doublons valeurs incohérentes",
+    "structurer données avant analyse"
+  ],
+  "R-B4-005": [
+    "classer archiver documents pour les retrouver",
+    "faire plan de classement dossiers fichiers",
+    "règles nommage archivage durée accès documents"
+  ],
+  "R-B4-006": [
+    "logiciel ou système information ne fonctionne pas",
+    "préparer ticket clair pour esn prestataire informatique",
+    "diagnostiquer anomalie si avant demander intervention"
+  ],
+  "R-B4-007": [
+    "processus administratif trop lent ou compliqué",
+    "analyser étapes doublons blocages d un processus support",
+    "améliorer organisation d une procédure transversale"
+  ],
+  "R-B4-008": [
+    "organiser tâches administratives de la semaine",
+    "suivre qui fait quoi et avancement",
+    "répartir travail administratif délais responsables"
+  ],
+  "R-B4-009": [
+    "faire planning interventions avec contraintes",
+    "planifier activités salariés clients déplacements",
+    "affecter ressources créneaux priorités"
+  ],
+  "R-B4-010": [
+    "trop de tâches urgentes comment prioriser",
+    "gérer charge de travail et agenda partagé",
+    "arbitrer priorités délais capacité équipe"
+  ],
+  "R-B4-011": [
+    "organiser déplacement professionnel train hôtel rendez vous",
+    "préparer voyage salarié budget documents",
+    "suivre réservations frais contraintes déplacement"
+  ],
+  "R-B4-012": [
+    "organiser salon réunion événement entreprise",
+    "préparer événement avec planning budget participants",
+    "coordonner logistique événement interne externe"
+  ],
+  "R-B4-013": [
+    "choisir prestataires pour événement ou activité",
+    "comparer devis prestataires puis coordonner",
+    "suivre prestataire externe délais livrables"
+  ],
+  "R-B4-038": [
+    "problème administratif revient sans cesse",
+    "chercher cause racine avant corriger",
+    "résoudre dysfonctionnement sans traiter seulement symptôme"
+  ],
+  "R-B4-014": [
+    "surveiller concurrents clients marché régulièrement",
+    "mettre en place veille commerciale",
+    "quelles sources marché suivre pour décision"
+  ],
+  "R-B4-015": [
+    "analyser marché clients concurrents tendances",
+    "une baisse de ventes est elle une vraie tendance",
+    "distinguer signal isolé et évolution marché"
+  ],
+  "R-B4-016": [
+    "mesurer satisfaction clients avec questionnaire",
+    "faire enquête après achat ou prestation",
+    "analyser réponses satisfaction et priorités amélioration"
+  ],
+  "R-B4-017": [
+    "que proposer après analyse du marché",
+    "transformer tendances en idée développement commercial",
+    "préparer proposition nouvelle offre cible action"
+  ],
+  "R-B4-018": [
+    "faire revenir clients existants fidélisation",
+    "concevoir action fidélité puis mesurer résultat",
+    "améliorer fidélisation clientèle"
+  ],
+  "R-B4-019": [
+    "définir besoin avant créer campagne communication",
+    "faire cahier des charges communication cible objectif budget",
+    "préparer brief pour support communication"
+  ],
+  "R-B4-020": [
+    "créer brochure affiche présentation institutionnelle",
+    "concevoir support qui présente entreprise",
+    "support communication institutionnelle message identité"
+  ],
+  "R-B4-021": [
+    "préparer campagne promotion commerciale cohérente",
+    "choisir message canal cible pour vendre",
+    "concevoir action communication commerciale"
+  ],
+  "R-B4-022": [
+    "surveiller avis google réseaux sociaux réputation",
+    "voir ce qui se dit sur entreprise en ligne",
+    "suivre identité numérique e reputation"
+  ],
+  "R-B4-023": [
+    "vérifier support respecte logo couleurs image marque",
+    "contrôler cohérence brochure avec charte",
+    "support communication correspond il identité entreprise"
+  ],
+  "R-B4-024": [
+    "savoir si campagne communication a fonctionné",
+    "mesurer résultat d une action communication",
+    "choisir indicateurs portée clic réponse conversion"
+  ],
+  "R-B4-039": [
+    "transformer stratégie communication en calendrier actions",
+    "faire plan communication opérationnel",
+    "qui fait quoi quand budget canal communication"
+  ],
+  "R-B4-025": [
+    "calculer coût complet d un produit ou service",
+    "répartir charges pour connaître coût de revient",
+    "méthode coût complet avec clés répartition"
+  ],
+  "R-B4-026": [
+    "calculer marge sur coût variable ou coût partiel",
+    "séparer charges fixes variables puis marge",
+    "mesurer contribution produit au résultat"
+  ],
+  "R-B4-027": [
+    "combien faut il vendre pour ne pas perdre argent",
+    "calculer seuil de rentabilité point mort",
+    "activité minimale pour couvrir charges"
+  ],
+  "R-B4-028": [
+    "prévoir recettes dépenses ventes charges année prochaine",
+    "construire budget prévisionnel",
+    "traduire hypothèses activité en chiffres futurs"
+  ],
+  "R-B4-029": [
+    "budget réel différent du prévisionnel pourquoi",
+    "analyser écarts prévu réalisé",
+    "expliquer variation prix volume charge budget"
+  ],
+  "R-B4-040": [
+    "simuler effet d une décision sur résultat et trésorerie",
+    "si prix volume coût financement change quel impact",
+    "comparer scénarios financiers avant décision"
+  ],
+  "R-B4-030": [
+    "transformer bilan comptable en bilan fonctionnel",
+    "classer emplois ressources stables cycle exploitation",
+    "préparer données pour analyser équilibre financier"
+  ],
+  "R-B4-031": [
+    "calculer frng bfr trésorerie nette",
+    "entreprise a t elle équilibre financier court terme",
+    "analyser fonds de roulement besoin fonds roulement"
+  ],
+  "R-B4-032": [
+    "calculer ratios financiers et les interpréter",
+    "mesurer autonomie endettement liquidité rentabilité",
+    "choisir ratio pertinent pour diagnostic financier"
+  ],
+  "R-B4-033": [
+    "emprunt crédit bail autofinancement lequel choisir",
+    "comparer modes financement investissement",
+    "coût contraintes impact des solutions financement"
+  ],
+  "R-B4-034": [
+    "faire plan financement investissement",
+    "vérifier ressources couvrent besoins du projet",
+    "mesurer impact financement sur équilibres"
+  ],
+  "R-B4-035": [
+    "choisir bons indicateurs et seuils alerte",
+    "quels chiffres mettre dans tableau de bord",
+    "définir indicateurs utiles au pilotage"
+  ],
+  "R-B4-036": [
+    "construire tableau de bord clair pour dirigeant",
+    "présenter quelques indicateurs commerciaux financiers",
+    "faire tableau de bord lisible avec objectifs écarts"
+  ],
+  "R-B4-037": [
+    "tableau de bord se dégrade que signaler",
+    "analyser indicateurs et préparer alerte dirigeant",
+    "expliquer écart important et proposer point attention"
+  ],
+  "R-TR-001": [
+    "avant répondre comprendre interlocuteur objectif contexte",
+    "analyser situation de communication",
+    "choisir ton contenu canal selon destinataire"
+  ],
+  "R-TR-002": [
+    "rédiger mail professionnel clair avec action attendue",
+    "écrire courriel client fournisseur collègue",
+    "mail traçable objet message pièces jointes délai"
+  ],
+  "R-TR-003": [
+    "faire note au dirigeant pour décider",
+    "présenter problème options recommandation dans note",
+    "rédiger synthèse décisionnelle courte"
+  ],
+  "R-TR-004": [
+    "faire compte rendu réunion avec décisions actions",
+    "résumer entretien et assurer suivi",
+    "compte rendu qui dit qui fait quoi quand"
+  ],
+  "R-TR-005": [
+    "créer formulaire qui collecte données exploitables",
+    "concevoir fiche ou questionnaire structuré",
+    "choisir champs obligatoires formats contrôles"
+  ],
+  "R-TR-006": [
+    "choisir mail téléphone messagerie ou autre canal",
+    "quel canal numérique selon urgence confidentialité trace",
+    "maîtriser trace laissée par communication numérique"
+  ],
+  "R-TR-007": [
+    "préparer entretien professionnel court avec objectif",
+    "conduire échange structuré questions écoute conclusion",
+    "entretien client salarié fournisseur points à aborder"
+  ],
+  "R-TR-008": [
+    "préparer réunion efficace qui aboutit actions",
+    "animer réunion ordre du jour décisions responsabilités",
+    "éviter réunion sans décision ni suivi"
+  ],
+  "R-TR-009": [
+    "tension conflit comment intervenir sans décider à la place",
+    "préparer intervention de régulation",
+    "repérer faits besoins acteurs avant médiation"
+  ],
+  "R-TR-010": [
+    "préparer négociation ou dialogue avec cadre fixé",
+    "objectifs marges arguments concessions avant échange",
+    "négocier sans dépasser mandat du dirigeant"
+  ],
+  "R-TR-011": [
+    "nettoyer tableau avant calcul filtrage",
+    "construire données fiables lignes colonnes formats",
+    "éviter doublons cellules fusionnées valeurs incohérentes"
+  ],
+  "R-TR-012": [
+    "extraire données pgi puis les nettoyer",
+    "contrôler export avant analyse",
+    "vérifier période doublons formats données pgi"
+  ],
+  "R-TR-013": [
+    "quel outil tableur utiliser filtre recherche validation tcd",
+    "croiser résumer données avec tableau croisé",
+    "choisir fonction excel selon besoin analyse"
+  ],
+  "R-TR-014": [
+    "présenter chiffres sans noyer le lecteur",
+    "faire synthèse chiffrée claire pour décideur",
+    "mettre en avant message indicateur écart conclusion"
+  ]
+}

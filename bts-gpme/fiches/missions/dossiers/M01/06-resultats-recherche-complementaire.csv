@@ -1,0 +1,25 @@
+Organisation;Ville;Secteur;Effectif;Courriel;Source;Date_source;Notes
+Atelier Cobalt;Lyon;Architecture;21;contact@ateliercobalt.example;Recherche web fictive;2026-08-30;4 postes d'impression indiqués
+Bureau Arcadis Alpes;Grenoble;Bureau d’études;37;bonjour@arcadis-alpes.example;Recherche web fictive;2026-08-30;2 sites
+Ligne & Volume;Annecy;Architecture;18;contact@lignevolume.example;Recherche web fictive;2026-08-30;
+Etude Rhône Structure;Valence;Bureau d’études;46;contact@rhone-structure.example;Recherche web fictive;2026-08-30;
+Atelier Canopée;Chambéry;Architecture;12;agence@canopee.example;Recherche web fictive;2026-08-30;
+Bureau Teknia;Saint-Étienne;Bureau d’études;31;contact@teknia.example;Recherche web fictive;2026-08-30;plusieurs imprimantes grand format
+Studio Axone;Bourg-en-Bresse;Architecture;26;hello@axone.example;Recherche web fictive;2026-08-30;
+IngéPlan Savoie;Chambéry;Bureau d’études;19;contact@ingeplan.example;Recherche web fictive;2026-08-30;
+Atelier Delta;Lyon;Architecture;54;contact@atelierdelta.example;Recherche web fictive;2026-08-30;Effectif au-dessus de la cible
+Conseil Fluides 38;Grenoble;Bureau d’études;16;contact@cf38.example;Recherche web fictive;2026-08-30;
+Studio Orbe;Clermont-Ferrand;Architecture;24;contact@studio-orbe.example;Recherche web fictive;2026-08-30;
+Bureau Sigma Bâtiment;Lyon;Bureau d’études;49;contact@sigma-bat.example;Recherche web fictive;2026-08-30;
+Atelier Cobalt;Lyon;Architecture;21;info@ateliercobalt.example;Recherche web fictive;2026-08-30;Doublon probable
+A2C Architecture;Roanne;Architecture;11;contact@a2c-archi.example;Recherche web fictive;2026-08-30;
+Structure & Bois;Annecy;Bureau d’études;29;contact@structurebois.example;Recherche web fictive;2026-08-30;
+Atelier Perspective;Valence;Architecture;34;;Recherche web fictive;2026-08-30;Coordonnée à compléter
+Bureau Énergie Plus;Grenoble;Bureau d’études;43;contact@energieplus.example;Recherche web fictive;2026-08-30;
+Studio Latitude;Lyon;Architecture;17;contact@latitude.example;Recherche web fictive;2026-08-30;
+IngéMont;Chambéry;Bureau d’études;22;contact@ingemont.example;Recherche web fictive;2026-08-30;
+Atelier Trame;Saint-Étienne;Architecture;39;contact@ateliertrame.example;Recherche web fictive;2026-08-30;
+Bureau Infra 01;Bourg-en-Bresse;Bureau d’études;27;contact@infra01.example;Recherche web fictive;2026-08-30;
+Studio Minéral;Annecy;Architecture;8;contact@mineral.example;Recherche web fictive;2026-08-30;Sous seuil cible
+Bureau Confluence;Lyon;Bureau d’études;44;contact@confluence-be.example;Recherche web fictive;2026-08-30;
+Atelier Noroît;Clermont-Ferrand;Architecture;15;contact@noroit.example;Recherche web fictive;2026-08-30;

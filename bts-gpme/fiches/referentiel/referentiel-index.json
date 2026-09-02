@@ -1,0 +1,5390 @@
+{
+  "A1_1": {
+    "ref": "A1_1",
+    "type": "activite",
+    "label": "Recherche de clientèle et contact",
+    "anchor": "a1-1",
+    "resources": [
+      "R-B1-001",
+      "R-B1-002",
+      "R-B1-003",
+      "R-B1-004"
+    ],
+    "missions": [
+      "M01"
+    ],
+    "activities": [],
+    "tasks": [
+      "T1_1_1",
+      "T1_1_2",
+      "T1_1_3"
+    ],
+    "knowledge": [
+      "S1_1_1",
+      "S1_1_2",
+      "S1_1_3",
+      "S1_7",
+      "S5_1",
+      "S5_2",
+      "S5_3"
+    ],
+    "parent_activity": null,
+    "parent_bc": "BC1",
+    "competencies": [
+      "Rechercher des clients par prospection ou pour répondre à un appel d’offres"
+    ],
+    "performance_criteria": [
+      {
+        "group": "En termes opérationnels/méthodologiques",
+        "items": [
+          "Une analyse pertinente de la situation de gestion prenant en compte les priorités, les clients, les contingences et les caractéristiques de l’entreprise",
+          "L'identification pertinente de la cible de clientèle, le choix d’une méthode de prospection et des documents nécessaires à la prospection",
+          "Une prospection efficace, ciblée et les outils de suivi adaptés",
+          "Une réponse pertinente aux appels d’offre dans le champ de compétences de la PME et des outils de suivi adaptés",
+          "Une utilisation adaptée des fonctionnalités de gestion de la relation clientèle du PGI et du tableur."
+        ]
+      },
+      {
+        "group": "En termes de communication",
+        "items": [
+          "Une analyse pertinente du contexte, de l’objectif, des enjeux, du registre de langue, de la stratégie de communication liée à la prospection",
+          "Une image valorisante et fidèle de l’entreprise dans la relation avec les prospects",
+          "Une communication écrite et orale adaptée à l’objectif et à la cible de prospection ou pour préparer la réponse à l’appel d’offres",
+          "Des documents écrits de qualité professionnelle dans le respect des règles (éthiques, orthographiques, syntaxiques, argumentation) et des valeurs de l’entreprise",
+          "Le développement des relations professionnelles internes facilitant la circulation de l’information et la coordination des acteurs internes",
+          "Une utilisation adaptée des outils de messagerie, des logiciels de traitement de texte et de présentation",
+          "La sélection et l’utilisation adaptée des outils ou services informatiques et numériques de communication adaptés au contexte"
+        ]
+      }
+    ]
+  },
+  "A1_2": {
+    "ref": "A1_2",
+    "type": "activite",
+    "label": "Administration des ventes de la PME",
+    "anchor": "a1-2",
+    "resources": [
+      "R-B1-005",
+      "R-B1-006",
+      "R-B1-007",
+      "R-B1-008",
+      "R-B1-009",
+      "R-B1-010",
+      "R-B1-011",
+      "R-B1-012",
+      "R-B1-030",
+      "R-B1-031"
+    ],
+    "missions": [
+      "M02",
+      "M03",
+      "M04"
+    ],
+    "activities": [],
+    "tasks": [
+      "T1_2_1",
+      "T1_2_2",
+      "T1_2_3",
+      "T1_2_4",
+      "T1_2_5",
+      "T1_2_6",
+      "T1_2_7"
+    ],
+    "knowledge": [
+      "S1_2_1",
+      "S1_2_2",
+      "S1_2_3",
+      "S1_2_4",
+      "S1_2_5",
+      "S1_7",
+      "S5_1",
+      "S5_2",
+      "S5_3",
+      "S5_5"
+    ],
+    "parent_activity": null,
+    "parent_bc": "BC1",
+    "competencies": [
+      "Traiter la demande du client, de la demande de devis jusqu’à la relance des éventuels impayés"
+    ],
+    "performance_criteria": [
+      {
+        "group": "En termes opérationnels/méthodologiques",
+        "items": [
+          "Une analyse pertinente de la relation avec les clients prenant en compte les priorités, les contingences et les caractéristiques de l’entreprise, les contraintes de confidentialité et les éventuels risques",
+          "Une actualisation et un traitement efficace des informations relatives aux clients",
+          "Des factures, documents commerciaux adaptés et conformes à la législation et aux usages de l'entreprise et de la profession et aux caractéristiques du client",
+          "Des opérations de suivi, de contrôle, de correction ou encore relance adaptées à la situation commerciale et effectuées avec rigueur, réactivité et pertinence",
+          "Une utilisation adaptée des fonctionnalités de gestion de la relation clientèle du PGI et du tableur."
+        ]
+      },
+      {
+        "group": "En termes de communication",
+        "items": [
+          "Une analyse pertinente du contexte, de l’objectif, des enjeux, de la stratégie, du registre de langue de la situation de communication",
+          "Une réponse adaptée aux clients : objectifs à atteindre, justification des choix des procédés d’argumentation, de la structuration, des outils utilisés, mode de diffusion des messages",
+          "Des relances efficaces",
+          "Une image valorisante et fidèle de l’entreprise dans la relation avec la clientèle",
+          "Des documents écrits de qualité professionnelle dans le respect des règles (orthographiques, syntaxiques,éthiques, argumentation) et des valeurs de l’entreprise",
+          "La conduite professionnelle d’un entretien téléphonique ou en face à face avec les clients",
+          "La communication pertinente d’informations fiables et actualisées sur les clients, les ventes",
+          "Une utilisation adaptée des outils de messagerie, du traitement de texte et du logiciel de présentation assistée par ordinateur",
+          "La sélection et l’utilisation adaptée des outils ou services informatiques et numériques de communication adaptés au contexte"
+        ]
+      }
+    ]
+  },
+  "A1_3": {
+    "ref": "A1_3",
+    "type": "activite",
+    "label": "Maintien et développement de la relation avec les clients de la PME",
+    "anchor": "a1-3",
+    "resources": [
+      "R-B1-013",
+      "R-B1-014",
+      "R-B1-029"
+    ],
+    "missions": [
+      "M04"
+    ],
+    "activities": [],
+    "tasks": [
+      "T1_3_1",
+      "T1_3_2",
+      "T1_3_3"
+    ],
+    "knowledge": [
+      "S1_3_1",
+      "S1_3_2",
+      "S1_7",
+      "S5_1",
+      "S5_2",
+      "S5_4",
+      "S5_5",
+      "S5_7"
+    ],
+    "parent_activity": null,
+    "parent_bc": "BC1",
+    "competencies": [
+      "Informer, conseiller, orienter et traiter les réclamations"
+    ],
+    "performance_criteria": [
+      {
+        "group": "En termes opérationnels/méthodologiques",
+        "items": [
+          "Une analyse pertinente de la situation commerciale et de ses différents paramètres",
+          "La conception d’une procédure pertinente pour l’accueil des clients",
+          "Un accueil, des informations et des conseils pertinents et efficaces auprès de la clientèle",
+          "Un traitement efficace des réclamations formulées par les clients",
+          "Un calcul pertinent des coûts de la non-qualité liés aux réclamations",
+          "Une utilisation adaptée des fonctionnalités de gestion de la relation clientèle du PGI et du tableur."
+        ]
+      },
+      {
+        "group": "En termes de communication",
+        "items": [
+          "Une analyse pertinente du contexte de la communication, de l’objectif, des enjeux et de la stratégie de communication, du registre de langues, de l’historique avec le client",
+          "Des prises en notes efficaces et fidèles (reformulation, restitution) diffusées au destinataire",
+          "Une réponse adaptée à la demande du client en fonction des objectifs à atteindre",
+          "La conduite professionnelle d’un entretien téléphonique ou en face à face avec les clients adaptée à la situation commerciale",
+          "Des documents écrits de qualité professionnelle dans le respect des règles (orthographiques, syntaxiques, éthiques,argumentation) et des valeurs de l’entreprise",
+          "La mise en œuvre de techniques de gestion des conflits",
+          "Une image valorisante et fidèle de l’entreprise dans la relation avec la clientèle",
+          "La communication d’informations fiables et actualisées sur les réclamations",
+          "Une utilisation adaptée des outils de messagerie, du traitement de texte",
+          "La sélection et l’utilisation adaptée des outils ou services informatiques et numériques de communication adaptés au contexte"
+        ]
+      }
+    ]
+  },
+  "A1_4": {
+    "ref": "A1_4",
+    "type": "activite",
+    "label": "Recherche et choix des fournisseurs de la PME",
+    "anchor": "a1-4",
+    "resources": [
+      "R-B1-015",
+      "R-B1-016",
+      "R-B1-017",
+      "R-B1-032"
+    ],
+    "missions": [
+      "M05"
+    ],
+    "activities": [],
+    "tasks": [
+      "T1_4_1",
+      "T1_4_2",
+      "T1_4_3",
+      "T1_4_4",
+      "T1_4_5"
+    ],
+    "knowledge": [
+      "S1_4_1",
+      "S1_4_2",
+      "S1_7",
+      "S5_1",
+      "S5_2",
+      "S5_5"
+    ],
+    "parent_activity": null,
+    "parent_bc": "BC1",
+    "competencies": [
+      "Rechercher et sélectionner les fournisseurs"
+    ],
+    "performance_criteria": [
+      {
+        "group": "En termes opérationnels/méthodologiques",
+        "items": [
+          "Une analyse pertinente de la situation d’achat ou d’investissement prenant en compte les priorités, les contingences et les caractéristiques de l’entreprise",
+          "Un cahier des charges reflétant les besoins de la PME",
+          "Des propositions argumentées et adaptées de choix en termes de qualifications de fournisseurs",
+          "Une actualisation du système d'information avec des données relatives aux fournisseurs",
+          "Une utilisation adaptée des fonctionnalités du PGI et du tableur"
+        ]
+      },
+      {
+        "group": "En termes de communication",
+        "items": [
+          "Une analyse pertinente du contexte de communication, de l’objectif, des enjeux, de la stratégie, du registre de langue pour formuler l’appel d’offres ou pour obtenir des informations supplémentaires auprès du fournisseur",
+          "Une image valorisante et fidèle de l’entreprise dans la relation avec les fournisseurs",
+          "La formulation d’une demande pertinente écrite ou orale auprès du fournisseur : structuration, outils utilisés et modes de diffusion",
+          "Des documents écrits de qualité professionnelle dans le respect des règles (orthographiques, syntaxiques, éthiques, argumentation) et des valeurs de l’entreprise",
+          "Le développement des relations professionnelles internes facilitant la circulation de l’information",
+          "La communication d’informations fiables et actualisées sur les fournisseurs",
+          "Une utilisation adaptée des outils de messagerie, du traitement de texte et de présentation",
+          "La sélection et l’utilisation adaptée des outils ou services informatiques et numériques de communication adaptés au contexte"
+        ]
+      }
+    ]
+  },
+  "A1_5": {
+    "ref": "A1_5",
+    "type": "activite",
+    "label": "Suivi et contrôle des opérations d’achats et d’investissement de la PME",
+    "anchor": "a1-5",
+    "resources": [
+      "R-B1-018",
+      "R-B1-019",
+      "R-B1-020",
+      "R-B1-021",
+      "R-B1-022",
+      "R-B1-023"
+    ],
+    "missions": [
+      "M06"
+    ],
+    "activities": [],
+    "tasks": [
+      "T1_5_1",
+      "T1_5_2",
+      "T1_5_3",
+      "T1_5_4",
+      "T1_5_5",
+      "T1_5_6"
+    ],
+    "knowledge": [
+      "S1_5_1",
+      "S1_2_2",
+      "S1_5_2",
+      "S1_7",
+      "S5_1",
+      "S5_2",
+      "S5_5"
+    ],
+    "parent_activity": null,
+    "parent_bc": "BC1",
+    "competencies": [
+      "Passer les commandes d’achat et d’immobilisation et les contrôler, valider le règlement, évaluer les fournisseurs"
+    ],
+    "performance_criteria": [
+      {
+        "group": "En termes opérationnels/méthodologiques",
+        "items": [
+          "Une analyse pertinente de la situation d’achat prenant en compte les priorités, les contingences et les caractéristiques de l’entreprise",
+          "Une analyse, une évaluation quantitative et qualitative des besoins de la PME en produits et services",
+          "Un dossier préparatoire à la négociation pertinent prenant en compte les caractéristiques de la PME et les souhaits du dirigeant",
+          "Des commandes passées auprès des fournisseurs conformes aux besoins et prenant en compte les contraintes de la PME",
+          "Des documents commerciaux conformes à la législation, aux usages de l'entreprise et de la profession et aux caractéristiques du fournisseur",
+          "Des documents comptables liés aux acquisitions conformes à la législation (plans d’amortissement suivant le mode d’amortissement choisi par l’entité)",
+          "Des traitements et opérations de suivi et contrôle des stocks, des achats et des règlements",
+          "Des critères de performance et des outils d’évaluation des fournisseurs",
+          "Des propositions d'actions à mener auprès des fournisseurs",
+          "Une utilisation adaptée des fonctionnalités du PGI et du tableur"
+        ]
+      },
+      {
+        "group": "En termes de communication",
+        "items": [
+          "Une analyse pertinente du contexte de communication, de l’objectif, des enjeux, de la stratégie, du registre de langue et du mode de diffusion",
+          "Une image valorisante et fidèle de l’entreprise dans la relation avec les fournisseurs",
+          "Une communication écrite ou orale pertinente avec les fournisseurs, l’expert-comptable, les banques et avec les responsables et les salariés de l’entreprise",
+          "Des documents écrits de qualité professionnelle dans le respect des règles (orthographiques, syntaxiques, éthiques, argumentation) et des valeurs de l’entreprise",
+          "La communication d’informations fiables et actualisées sur les achats",
+          "Une utilisation adaptée des outils de messagerie, du traitement de texte",
+          "La sélection et l’utilisation adaptée des outils ou services informatiques et numériques de communication adaptés au contexte"
+        ]
+      }
+    ]
+  },
+  "A1_6": {
+    "ref": "A1_6",
+    "type": "activite",
+    "label": "Suivi comptable des opérations avec les clients et les fournisseurs de la PME",
+    "anchor": "a1-6",
+    "resources": [
+      "R-B1-024",
+      "R-B1-025",
+      "R-B1-026",
+      "R-B1-027",
+      "R-B1-028"
+    ],
+    "missions": [
+      "M03",
+      "M07"
+    ],
+    "activities": [],
+    "tasks": [
+      "T1_6_1",
+      "T1_6_2",
+      "T1_6_3",
+      "T1_6_4",
+      "T1_6_5"
+    ],
+    "knowledge": [
+      "S1_6_1",
+      "S1_6_2",
+      "S1_6_3",
+      "S1_7_1",
+      "S5_1",
+      "S5_2",
+      "S5_5"
+    ],
+    "parent_activity": null,
+    "parent_bc": "BC1",
+    "competencies": [
+      "Assurer le suivi comptable des opérations commerciales"
+    ],
+    "performance_criteria": [
+      {
+        "group": "En termes opérationnels/méthodologiques",
+        "items": [
+          "Des documents comptables issus du PGI conformes à la réglementation",
+          "La mise en place de procédures de contrôle assurant la conformité aux principes comptables et aux choix de l’entité",
+          "Une analyse des créances clients et des dettes fournisseurs impayées",
+          "Un état de rapprochement bancaire exact",
+          "L’établissement, le contrôle et le dépôt de la déclaration de TVA conforme à la réglementation",
+          "Un recensement et un traitement des éventuelles difficultés rencontrées",
+          "Une utilisation adaptée des fonctionnalités du PGI et du tableur"
+        ]
+      },
+      {
+        "group": "En termes de communication",
+        "items": [
+          "Une image valorisante et fidèle de l’entreprise dans la relation avec les banques",
+          "Une communication écrite ou orale pertinente avec les responsables, les banques et l’expert-comptable",
+          "Des documents écrits de qualité professionnelle dans le respect des règles (orthographiques, syntaxiques, éthiques, argumentation) et des valeurs de l’entreprise",
+          "La communication d’informations fiables et actualisées sur les clients, les fournisseurs, les ventes et les achats, les règlements",
+          "Une utilisation adaptée des outils de messagerie, du traitement de texte et du logiciel de PREAO",
+          "La sélection et l’utilisation adaptée des outils ou services informatiques et numériques de communication adaptés au contexte"
+        ]
+      }
+    ]
+  },
+  "A2_1": {
+    "ref": "A2_1",
+    "type": "activite",
+    "label": "Conduite d’une veille",
+    "anchor": "a2-1",
+    "resources": [
+      "R-B2-004",
+      "R-B2-005",
+      "R-B2-006",
+      "R-B2-028"
+    ],
+    "missions": [
+      "M08"
+    ],
+    "activities": [],
+    "tasks": [
+      "T2_1_1",
+      "T2_1_2",
+      "T2_1_3",
+      "T2_1_4",
+      "T2_1_5",
+      "T2_1_6"
+    ],
+    "knowledge": [
+      "S2_1_1",
+      "S2_1_2",
+      "S5_1",
+      "S5_2",
+      "S5_4",
+      "S5_5"
+    ],
+    "parent_activity": null,
+    "parent_bc": "BC2",
+    "competencies": [
+      "Conduire une veille"
+    ],
+    "performance_criteria": [
+      {
+        "group": "En termes opérationnels/méthodologiques",
+        "items": [
+          "Une analyse pertinente de la situation et du thème de veille, de ses enjeux",
+          "La construction d’une stratégie et la conduite de veille en fonction des besoins de la PME (économique, commerciale, réglementaire, ….)",
+          "L’évaluation de la fiabilité et de la pertinence de diverses sources d’informations et des informations recueillies",
+          "Une synthèse des informations recueillies par la veille et la mise en évidence des obligations à respecter",
+          "Un archivage pertinent des informations",
+          "L’utilisation de logiciels spécialisés pour mettre en place une veille."
+        ]
+      },
+      {
+        "group": "En termes de communication",
+        "items": [
+          "Une analyse pertinente de la situation de communication",
+          "Une communication écrite ou orale pertinente et adaptée à la situation",
+          "Une diffusion de l’information pertinente auprès des services et/ou personnes ciblées par la veille et en fonction du risque repéré",
+          "Des documents écrits de qualité professionnelle dans le respect des règles (orthographiques, syntaxiques, éthiques, argumentation) et des valeurs de l’entreprise",
+          "L’utilisation adaptée du traitement et du logiciel de messagerie",
+          "La sélection et l’utilisation adaptée des outils ou services informatiques et numériques de communication adaptés au contexte"
+        ]
+      }
+    ]
+  },
+  "A2_2": {
+    "ref": "A2_2",
+    "type": "activite",
+    "label": "Participation à la mise en place d’un travail en mode projet au sein de la PME",
+    "anchor": "a2-2",
+    "resources": [
+      "R-B2-007",
+      "R-B2-008",
+      "R-B2-009",
+      "R-B2-010"
+    ],
+    "missions": [
+      "M09"
+    ],
+    "activities": [],
+    "tasks": [
+      "T2_2_1",
+      "T2_2_2",
+      "T2_2_3",
+      "T2_2_4",
+      "T2_2_5"
+    ],
+    "knowledge": [
+      "S2_2",
+      "S2_7",
+      "S5_1",
+      "S5_2",
+      "S5_3",
+      "S5_5",
+      "S5_6"
+    ],
+    "parent_activity": null,
+    "parent_bc": "BC2",
+    "competencies": [
+      "Accompagner la mise en place d’un travail en mode projet"
+    ],
+    "performance_criteria": [
+      {
+        "group": "En termes opérationnels/méthodologiques",
+        "items": [
+          "Une analyse pertinente de la situation en prenant en compte les priorités, les contingences et les caractéristiques de la PME et du projet",
+          "Une démarche de conduite du projet adaptée aux contraintes et au respect des délais impartis",
+          "Une organisation et un suivi du travail collaboratif au sein d’un dispositif numérique de partage, pertinents au regard de l’objectif du projet",
+          "L’organisation de réunions",
+          "Des opérations de suivi, de contrôle (y compris pour les coûts liés au projet), de correction effectuées avec rigueur, réactivité et pertinence selon le projet ou le dossier pris en charge",
+          "La constitution de dossiers et/ou la mise en place de procédures d’amélioration"
+        ]
+      },
+      {
+        "group": "En termes de communication",
+        "items": [
+          "Une analyse pertinente des situations de communication inhérentes au projet",
+          "Des relations régulières avec le responsable du projet et les acteurs internes et partenaires extérieurs au projet",
+          "Une communication écrite et orale pertinente et adaptée aux acteurs internes et externes liés au projet",
+          "La conduite professionnelle d’entretiens et de réunions",
+          "L’animation d’un travail collaboratif au sein d’un dispositif numérique de partage au regard du projet",
+          "Des documents écrits de qualité professionnelle dans le respect des règles (orthographiques, syntaxiques, éthiques, argumentation) et des valeurs de l’entreprise",
+          "Une utilisation adaptée des outils de communication, du traitement de textes, d’outils de présentation assistée par ordinateur et de planification de projet",
+          "La sélection et l’utilisation adaptée des outils ou services informatiques et numériques de communication adaptés au contexte"
+        ]
+      }
+    ]
+  },
+  "A2_3": {
+    "ref": "A2_3",
+    "type": "activite",
+    "label": "Mise en œuvre d’une démarche de gestion des risques de la PME",
+    "anchor": "a2-3",
+    "resources": [
+      "R-B2-001",
+      "R-B2-002",
+      "R-B2-003",
+      "R-B2-011",
+      "R-B2-012",
+      "R-B2-013",
+      "R-B2-029"
+    ],
+    "missions": [
+      "M10",
+      "M12",
+      "M16"
+    ],
+    "activities": [],
+    "tasks": [
+      "T2_3_1",
+      "T2_3_2",
+      "T2_3_3",
+      "T2_3_4",
+      "T2_3_5",
+      "T2_3_6"
+    ],
+    "knowledge": [
+      "S2_3",
+      "S2_7",
+      "S5_1",
+      "S5_2",
+      "S5_5",
+      "S5_6"
+    ],
+    "parent_activity": null,
+    "parent_bc": "BC2",
+    "competencies": [
+      "Identifier, évaluer les risques de l’entreprise et proposer des actions correctrices"
+    ],
+    "performance_criteria": [
+      {
+        "group": "En termes opérationnels/méthodologiques",
+        "items": [
+          "Une analyse pertinente de la situation en prenant en compte les priorités, les contingences et les caractéristiques de la PME",
+          "L’identification, le recensement et l’évaluation des risques de l’entreprise",
+          "L’évaluation de la fiabilité et de la pertinence des sources d’information",
+          "La proposition et la mise en place d’un archivage des documents conformes aux obligations légales",
+          "La proposition et la mise en place de procédures d’amélioration du travail et des propositions d’actions correctives conformes aux obligations légales",
+          "Une utilisation adaptée du PGI (avec une extraction de données) et du tableur"
+        ]
+      },
+      {
+        "group": "En termes de communication",
+        "items": [
+          "Une analyse pertinente de la situation de communication",
+          "Une communication écrite ou orale pertinente et adaptée aux acteurs internes et externes",
+          "La conduite professionnelle d’entretiens et de réunions",
+          "Des documents écrits de qualité professionnelle dans le respect des règles (orthographiques, syntaxiques, éthiques) et des valeurs de l’entreprise",
+          "L’utilisation adaptée du traitement de texte, de PréAO",
+          "La sélection et l’utilisation adaptée des outils ou services informatiques et numériques de communication adaptés au contexte"
+        ]
+      }
+    ]
+  },
+  "A2_4": {
+    "ref": "A2_4",
+    "type": "activite",
+    "label": "Participation à la gestion des risques financiers de la PME",
+    "anchor": "a2-4",
+    "resources": [
+      "R-B2-014",
+      "R-B2-015"
+    ],
+    "missions": [
+      "M11"
+    ],
+    "activities": [],
+    "tasks": [
+      "T2_4_1",
+      "T2_4_2",
+      "T2_4_3",
+      "T2_4_4",
+      "T2_4_5",
+      "T2_4_6"
+    ],
+    "knowledge": [
+      "S2_4",
+      "S2_7_1",
+      "S5_1",
+      "S5_2"
+    ],
+    "parent_activity": null,
+    "parent_bc": "BC2",
+    "competencies": [
+      "Évaluer et suivre les risques financiers de la PME en termes de trésorerie"
+    ],
+    "performance_criteria": [
+      {
+        "group": "En termes opérationnels/méthodologiques",
+        "items": [
+          "Une analyse pertinente de la situation en prenant en compte les priorités, les contingences et les caractéristiques de la PME.",
+          "Un tableau de suivi des flux de trésorerie (budget de trésorerie) exact et son analyse pertinente.",
+          "L’identification des risques financiers inhérents.",
+          "La proposition du choix d'un mode de règlement.",
+          "Des opérations de suivi, de contrôle, de correction effectuées avec rigueur, réactivité et pertinence selon le projet ou le dossier pris en charge.",
+          "Une utilisation adaptée du PGI (avec une extraction de données) et du tableur"
+        ]
+      },
+      {
+        "group": "En termes de communication",
+        "items": [
+          "Une analyse pertinente de la situation de communication.",
+          "Une communication d’informations fiables et actualisées.",
+          "Une communication écrite ou orale pertinente et adaptée aux acteurs internes et externes.",
+          "Des documents écrits de qualité professionnelle dans le respect des règles (orthographiques, syntaxiques, éthiques, argumentation) et des valeurs de l’entreprise.",
+          "L’utilisation pertinente de traitement de texte ou de logiciel de messagerie et de PréAO.",
+          "La sélection et l’utilisation adaptée des outils ou services informatiques et numériques de communication adaptés au contexte."
+        ]
+      }
+    ]
+  },
+  "A2_5": {
+    "ref": "A2_5",
+    "type": "activite",
+    "label": "Participation à la gestion des risques non financiers de la PME",
+    "anchor": "a2-5",
+    "resources": [
+      "R-B2-003",
+      "R-B2-016",
+      "R-B2-017",
+      "R-B2-018",
+      "R-B2-019",
+      "R-B2-020",
+      "R-B2-021",
+      "R-B2-022",
+      "R-B2-023",
+      "R-B2-030"
+    ],
+    "missions": [
+      "M12",
+      "M13",
+      "M14",
+      "M15"
+    ],
+    "activities": [],
+    "tasks": [
+      "T2_5_1",
+      "T2_5_2",
+      "T2_5_3",
+      "T2_5_4"
+    ],
+    "knowledge": [
+      "S2_5_1",
+      "S2_5_1_1",
+      "S2_5_1_2",
+      "S2_5_2",
+      "S2_5_3",
+      "S2_5_3_1",
+      "S2_5_3_2",
+      "S2_5_3_3",
+      "S2_5_4",
+      "S2_5_5",
+      "S2_7",
+      "S5_1",
+      "S5_2",
+      "S5_4",
+      "S5_5",
+      "S5_6"
+    ],
+    "parent_activity": null,
+    "parent_bc": "BC2",
+    "competencies": [
+      "Gérer des risques identifiés dans la PME"
+    ],
+    "performance_criteria": [
+      {
+        "group": "En termes opérationnels/méthodologiques",
+        "items": [
+          "Une analyse pertinente de la situation de gestion du risque en prenant en compte les priorités, les contingences et les caractéristiques de la PME",
+          "L’identification, le recensement et l’évaluation des risques de l’entreprise associés à son activité",
+          "Une veille réglementaire",
+          "La mise en place d’une méthodologie de gestion du risque rigoureuse et adaptée aux risques identifiés",
+          "Des recommandations pertinentes sur les équipements et installations nécessaires à la mise en œuvre de conditions de travail optimales",
+          "La proposition de modalités de prévention des effets de l’exposition aux facteurs de risques professionnels, l’accompagnement de bonnes pratiques",
+          "Un fonctionnement sécurisé du système informatique en accord avec le prestataire informatique",
+          "Des opérations de saisie des données, de suivi, de contrôle, de correction effectuées avec rigueur, réactivité et pertinence selon le projet ou le dossier pris en charge",
+          "Des propositions d’actions correctives et la mise en place de procédures d’amélioration",
+          "La constitution de dossiers et/ou la production des documents, un archivage des informations conformes aux obligations légales",
+          "Une utilisation adaptée du PGI (avec une extraction de données) et du tableur."
+        ]
+      },
+      {
+        "group": "En termes de communication",
+        "items": [
+          "Une analyse pertinente de la situation de communication.",
+          "Une communication écrite ou orale pertinente et adaptée aux acteurs internes et externes.",
+          "La conduite professionnelle d’un entretien et d’une réunion.",
+          "Des documents écrits de qualité professionnelle dans le respect des règles (orthographiques, syntaxiques, éthiques, argumentation) et des valeurs de l’entreprise.",
+          "L’utilisation pertinente de traitement de texte ou de logiciel de messagerie et de PréAO.",
+          "La sélection et l’utilisation adaptée des outils ou services informatiques et numériques de communication adaptés au contexte."
+        ]
+      }
+    ]
+  },
+  "A2_6": {
+    "ref": "A2_6",
+    "type": "activite",
+    "label": "Mise en place d’une démarche qualité au sein de la PME",
+    "anchor": "a2-6",
+    "resources": [
+      "R-B2-024",
+      "R-B2-025",
+      "R-B2-026",
+      "R-B2-027",
+      "R-B2-031"
+    ],
+    "missions": [
+      "M16"
+    ],
+    "activities": [],
+    "tasks": [
+      "T2_6_1",
+      "T2_6_2",
+      "T2_6_3",
+      "T2_6_4",
+      "T2_6_5"
+    ],
+    "knowledge": [
+      "S2_6_1",
+      "S2_6_2",
+      "S2_6_3",
+      "S2_7",
+      "S5_1",
+      "S5_2",
+      "S5_3",
+      "S5_4",
+      "S5_5",
+      "S5_6"
+    ],
+    "parent_activity": null,
+    "parent_bc": "BC2",
+    "competencies": [
+      "Mettre en place une démarche qualité au sein de la PME"
+    ],
+    "performance_criteria": [
+      {
+        "group": "En termes opérationnels/méthodologiques",
+        "items": [
+          "Une analyse pertinente de la situation en prenant en compte les priorités, les contingences et les caractéristiques de l’entreprise",
+          "La mise en place d’une méthode de veille pertinente au regard des besoins de certification de la PME",
+          "La mise en place de dispositifs de détection, de diffusion et de suivi de la procédure, de «remédiation» des dysfonctionnements repérés",
+          "La mise en place d’outils et de procédures de partage des informations et des connaissances",
+          "Des opérations de suivi, de contrôle, de corrections effectuées avec rigueur, réactivité et pertinence La constitution de dossiers",
+          "Une utilisation pertinente du PGI (avec une extraction de données) et du tableur"
+        ]
+      },
+      {
+        "group": "En termes de communication",
+        "items": [
+          "Une analyse pertinente de la situation de communication.",
+          "Une communication écrite ou orale pertinente.",
+          "La conduite professionnelle d’un entretien et d’une réunion.",
+          "Des documents écrits de qualité professionnelle dans le respect des règles (orthographiques, syntaxiques, éthiques, argumentation) et des valeurs de l’entreprise.",
+          "Une communication d’informations fiables et actualisées.",
+          "L’utilisation pertinente de traitement de texte ou de logiciel de messagerie et de PréAO.",
+          "La sélection et l’utilisation adaptée des outils ou services informatiques et numériques de communication adaptés au contexte."
+        ]
+      }
+    ]
+  },
+  "A3_1": {
+    "ref": "A3_1",
+    "type": "activite",
+    "label": "Gestion administrative du personnel de la PME",
+    "anchor": "a3-1",
+    "resources": [
+      "R-B3-001",
+      "R-B3-002",
+      "R-B3-003",
+      "R-B3-004",
+      "R-B3-005",
+      "R-B3-006",
+      "R-B3-007",
+      "R-B3-008",
+      "R-B3-009",
+      "R-B3-010",
+      "R-B3-011",
+      "R-B3-012",
+      "R-B3-027"
+    ],
+    "missions": [
+      "M17",
+      "M18",
+      "M19"
+    ],
+    "activities": [],
+    "tasks": [
+      "T3_1_1",
+      "T3_1_2",
+      "T3_1_3",
+      "T3_1_4",
+      "T3_1_5",
+      "T3_1_6",
+      "T3_1_7"
+    ],
+    "knowledge": [
+      "S3_1_1",
+      "S3_1_2",
+      "S3_1_3",
+      "S3_1_4",
+      "S3_1_5",
+      "S3_1_6",
+      "S3_4",
+      "S5_1",
+      "S5_2",
+      "S5_3",
+      "S5_4",
+      "S5_5",
+      "S5_6"
+    ],
+    "parent_activity": null,
+    "parent_bc": "BC3",
+    "competencies": [
+      "Assurer le suivi administratif du personnel Préparer les éléments de la paie et communiquer sur ces éléments Organiser les élections des représentants du personnel"
+    ],
+    "performance_criteria": []
+  },
+  "A3_2": {
+    "ref": "A3_2",
+    "type": "activite",
+    "label": "Participation à la gestion des ressources humaines de la PME",
+    "anchor": "a3-2",
+    "resources": [
+      "R-B3-013",
+      "R-B3-014",
+      "R-B3-015",
+      "R-B3-016",
+      "R-B3-017",
+      "R-B3-018",
+      "R-B3-019",
+      "R-B3-020",
+      "R-B3-021",
+      "R-B3-022",
+      "R-B3-023",
+      "R-B3-024",
+      "R-B3-028"
+    ],
+    "missions": [
+      "M20",
+      "M21",
+      "M22"
+    ],
+    "activities": [],
+    "tasks": [
+      "T3_2_1",
+      "T3_2_2",
+      "T3_2_3",
+      "T3_2_4",
+      "T3_2_5",
+      "T3_2_6"
+    ],
+    "knowledge": [
+      "S3_2_1",
+      "S3_2_2",
+      "S3_2_3",
+      "S3_2_4",
+      "S3_2_5",
+      "S3_4",
+      "S5_1",
+      "S5_2",
+      "S5_3",
+      "S5_4",
+      "S5_5",
+      "S5_6"
+    ],
+    "parent_activity": null,
+    "parent_bc": "BC3",
+    "competencies": [
+      "Participer à la gestion des ressources humaines"
+    ],
+    "performance_criteria": []
+  },
+  "A3_3": {
+    "ref": "A3_3",
+    "type": "activite",
+    "label": "Contribution à la cohésion interne de la PME",
+    "anchor": "a3-3",
+    "resources": [
+      "R-B3-025",
+      "R-B3-026"
+    ],
+    "missions": [
+      "M23"
+    ],
+    "activities": [],
+    "tasks": [
+      "T3_3_1",
+      "T3_3_2"
+    ],
+    "knowledge": [
+      "S3_3",
+      "S5_1",
+      "S5_2",
+      "S5_3",
+      "S5_4",
+      "S5_5",
+      "S5_6",
+      "S5_7",
+      "S5_8"
+    ],
+    "parent_activity": null,
+    "parent_bc": "BC3",
+    "competencies": [
+      "Contribuer à la cohésion interne du personnel de l’entreprise"
+    ],
+    "performance_criteria": []
+  },
+  "A4_1": {
+    "ref": "A4_1",
+    "type": "activite",
+    "label": "Contribution à la qualité du système d’information de la PME",
+    "anchor": "a4-1",
+    "resources": [
+      "R-B4-001",
+      "R-B4-002",
+      "R-B4-003",
+      "R-B4-004",
+      "R-B4-005",
+      "R-B4-006"
+    ],
+    "missions": [
+      "M24"
+    ],
+    "activities": [],
+    "tasks": [
+      "T4_1_1",
+      "T4_1_2",
+      "T4_1_3",
+      "T4_1_4",
+      "T4_1_5",
+      "T4_1_6"
+    ],
+    "knowledge": [
+      "S4_1_1",
+      "S4_1_2",
+      "S4_1_3",
+      "S4_1_4",
+      "S5_1",
+      "S5_2"
+    ],
+    "parent_activity": null,
+    "parent_bc": "BC4",
+    "competencies": [
+      "Représenter, analyser et améliorer le système d’information de la PME"
+    ],
+    "performance_criteria": []
+  },
+  "A4_2": {
+    "ref": "A4_2",
+    "type": "activite",
+    "label": "Organisation des activités de la PME",
+    "anchor": "a4-2",
+    "resources": [
+      "R-B4-007",
+      "R-B4-008",
+      "R-B4-009",
+      "R-B4-010",
+      "R-B4-011",
+      "R-B4-012",
+      "R-B4-013",
+      "R-B4-038"
+    ],
+    "missions": [
+      "M25"
+    ],
+    "activities": [],
+    "tasks": [
+      "T4_2_1",
+      "T4_2_2",
+      "T4_2_3",
+      "T4_2_4",
+      "T4_2_5",
+      "T4_2_6"
+    ],
+    "knowledge": [
+      "S4_2_1",
+      "S4_2_2",
+      "S4_2_3",
+      "S4_8",
+      "S5_1",
+      "S5_2",
+      "S5_4",
+      "S5_5",
+      "S5_6"
+    ],
+    "parent_activity": null,
+    "parent_bc": "BC4",
+    "competencies": [
+      "Améliorer des processus support et organiser et suivre les activités de la PME"
+    ],
+    "performance_criteria": []
+  },
+  "A4_3": {
+    "ref": "A4_3",
+    "type": "activite",
+    "label": "Participation au développement commercial national ou international de la PME",
+    "anchor": "a4-3",
+    "resources": [
+      "R-B4-014",
+      "R-B4-015",
+      "R-B4-016",
+      "R-B4-017",
+      "R-B4-018"
+    ],
+    "missions": [
+      "M26"
+    ],
+    "activities": [],
+    "tasks": [
+      "T4_3_1",
+      "T4_3_2",
+      "T4_3_3"
+    ],
+    "knowledge": [
+      "S4_3_1",
+      "S4_3_2",
+      "S4_3_3",
+      "S4_8_1",
+      "S5_1",
+      "S5_2"
+    ],
+    "parent_activity": null,
+    "parent_bc": "BC4",
+    "competencies": [
+      "Participer au développement commercial de la PME et à la fidélisation de la clientèle"
+    ],
+    "performance_criteria": []
+  },
+  "A4_4": {
+    "ref": "A4_4",
+    "type": "activite",
+    "label": "Contribution à la mise en œuvre de la communication de la PME",
+    "anchor": "a4-4",
+    "resources": [
+      "R-B4-019",
+      "R-B4-020",
+      "R-B4-021",
+      "R-B4-022",
+      "R-B4-023",
+      "R-B4-024",
+      "R-B4-039"
+    ],
+    "missions": [
+      "M27"
+    ],
+    "activities": [],
+    "tasks": [
+      "T4_4_1",
+      "T4_4_2",
+      "T4_4_3",
+      "T4_4_4"
+    ],
+    "knowledge": [
+      "S4_4_1",
+      "S4_4_2",
+      "S4_4_3",
+      "S4_4_4",
+      "S4_8_1",
+      "S5_1",
+      "S5_2",
+      "S5_4"
+    ],
+    "parent_activity": null,
+    "parent_bc": "BC4",
+    "competencies": [
+      "Accompagner le déploiement du plan de communication de la PME"
+    ],
+    "performance_criteria": []
+  },
+  "A4_5": {
+    "ref": "A4_5",
+    "type": "activite",
+    "label": "Participation à l’analyse de l’activité de la PME",
+    "anchor": "a4-5",
+    "resources": [
+      "R-B4-025",
+      "R-B4-026",
+      "R-B4-027",
+      "R-B4-028",
+      "R-B4-029",
+      "R-B4-040"
+    ],
+    "missions": [
+      "M28",
+      "M29"
+    ],
+    "activities": [],
+    "tasks": [
+      "T4_5_1",
+      "T4_5_2",
+      "T4_5_3"
+    ],
+    "knowledge": [
+      "S4_5_1",
+      "S4_5_2",
+      "S4_5_3",
+      "S4_5_4",
+      "S4_8_1",
+      "S5_2"
+    ],
+    "parent_activity": null,
+    "parent_bc": "BC4",
+    "competencies": [
+      "Analyser l’activité de la PME"
+    ],
+    "performance_criteria": []
+  },
+  "A4_6": {
+    "ref": "A4_6",
+    "type": "activite",
+    "label": "Participation au diagnostic financier de la PME",
+    "anchor": "a4-6",
+    "resources": [
+      "R-B4-030",
+      "R-B4-031",
+      "R-B4-032",
+      "R-B4-033",
+      "R-B4-034",
+      "R-B4-040"
+    ],
+    "missions": [
+      "M28",
+      "M29"
+    ],
+    "activities": [],
+    "tasks": [
+      "T4_6_1",
+      "T4_6_2"
+    ],
+    "knowledge": [
+      "S4_6_1",
+      "S4_6_2",
+      "S4_6_3",
+      "S4_8_1",
+      "S5_2"
+    ],
+    "parent_activity": null,
+    "parent_bc": "BC4",
+    "competencies": [
+      "Produire et analyser des informations de nature financière"
+    ],
+    "performance_criteria": []
+  },
+  "A4_7": {
+    "ref": "A4_7",
+    "type": "activite",
+    "label": "Participation à l’élaboration de tableaux de bord de la PME",
+    "anchor": "a4-7",
+    "resources": [
+      "R-B4-035",
+      "R-B4-036",
+      "R-B4-037"
+    ],
+    "missions": [
+      "M30"
+    ],
+    "activities": [],
+    "tasks": [
+      "T4_7_1",
+      "T4_7_2"
+    ],
+    "knowledge": [
+      "S4_7_1",
+      "S4_8",
+      "S5_2"
+    ],
+    "parent_activity": null,
+    "parent_bc": "BC4",
+    "competencies": [
+      "Identifier les facteurs explicatifs de la performance commerciale et financière Concevoir et analyser un tableau de bord"
+    ],
+    "performance_criteria": []
+  },
+  "BC1": {
+    "ref": "BC1",
+    "type": "bloc",
+    "label": "Gérer la relation avec les clients et les fournisseurs de la PME",
+    "anchor": "bc1",
+    "resources": [
+      "R-B1-001",
+      "R-B1-002",
+      "R-B1-003",
+      "R-B1-004",
+      "R-B1-005",
+      "R-B1-006",
+      "R-B1-007",
+      "R-B1-008",
+      "R-B1-009",
+      "R-B1-010",
+      "R-B1-011",
+      "R-B1-012",
+      "R-B1-013",
+      "R-B1-014",
+      "R-B1-015",
+      "R-B1-016",
+      "R-B1-017",
+      "R-B1-018",
+      "R-B1-019",
+      "R-B1-020",
+      "R-B1-021",
+      "R-B1-022",
+      "R-B1-023",
+      "R-B1-024",
+      "R-B1-025",
+      "R-B1-026",
+      "R-B1-027",
+      "R-B1-028",
+      "R-B1-029",
+      "R-B1-030",
+      "R-B1-031",
+      "R-B1-032"
+    ],
+    "missions": [
+      "M01",
+      "M02",
+      "M03",
+      "M04",
+      "M05",
+      "M06",
+      "M07"
+    ],
+    "activities": [],
+    "tasks": [],
+    "knowledge": [],
+    "parent_activity": null,
+    "parent_bc": null
+  },
+  "BC2": {
+    "ref": "BC2",
+    "type": "bloc",
+    "label": "Participer à la gestion des risques de la PME",
+    "anchor": "bc2",
+    "resources": [
+      "R-B2-001",
+      "R-B2-002",
+      "R-B2-003",
+      "R-B2-004",
+      "R-B2-005",
+      "R-B2-006",
+      "R-B2-007",
+      "R-B2-008",
+      "R-B2-009",
+      "R-B2-010",
+      "R-B2-011",
+      "R-B2-012",
+      "R-B2-013",
+      "R-B2-014",
+      "R-B2-015",
+      "R-B2-016",
+      "R-B2-017",
+      "R-B2-018",
+      "R-B2-019",
+      "R-B2-020",
+      "R-B2-021",
+      "R-B2-022",
+      "R-B2-023",
+      "R-B2-024",
+      "R-B2-025",
+      "R-B2-026",
+      "R-B2-027",
+      "R-B2-028",
+      "R-B2-029",
+      "R-B2-030",
+      "R-B2-031"
+    ],
+    "missions": [
+      "M08",
+      "M09",
+      "M10",
+      "M11",
+      "M12",
+      "M13",
+      "M14",
+      "M15",
+      "M16"
+    ],
+    "activities": [],
+    "tasks": [],
+    "knowledge": [],
+    "parent_activity": null,
+    "parent_bc": null
+  },
+  "BC3": {
+    "ref": "BC3",
+    "type": "bloc",
+    "label": "Gérer le personnel et contribuer à la gestion des ressources humaines de la PME",
+    "anchor": "bc3",
+    "resources": [
+      "R-B3-001",
+      "R-B3-002",
+      "R-B3-003",
+      "R-B3-004",
+      "R-B3-005",
+      "R-B3-006",
+      "R-B3-007",
+      "R-B3-008",
+      "R-B3-009",
+      "R-B3-010",
+      "R-B3-011",
+      "R-B3-012",
+      "R-B3-013",
+      "R-B3-014",
+      "R-B3-015",
+      "R-B3-016",
+      "R-B3-017",
+      "R-B3-018",
+      "R-B3-019",
+      "R-B3-020",
+      "R-B3-021",
+      "R-B3-022",
+      "R-B3-023",
+      "R-B3-024",
+      "R-B3-025",
+      "R-B3-026",
+      "R-B3-027",
+      "R-B3-028"
+    ],
+    "missions": [
+      "M17",
+      "M18",
+      "M19",
+      "M20",
+      "M21",
+      "M22",
+      "M23"
+    ],
+    "activities": [],
+    "tasks": [],
+    "knowledge": [],
+    "parent_activity": null,
+    "parent_bc": null
+  },
+  "BC4": {
+    "ref": "BC4",
+    "type": "bloc",
+    "label": "Soutenir le fonctionnement et le développement de la PME",
+    "anchor": "bc4",
+    "resources": [
+      "R-B4-001",
+      "R-B4-002",
+      "R-B4-003",
+      "R-B4-004",
+      "R-B4-005",
+      "R-B4-006",
+      "R-B4-007",
+      "R-B4-008",
+      "R-B4-009",
+      "R-B4-010",
+      "R-B4-011",
+      "R-B4-012",
+      "R-B4-013",
+      "R-B4-014",
+      "R-B4-015",
+      "R-B4-016",
+      "R-B4-017",
+      "R-B4-018",
+      "R-B4-019",
+      "R-B4-020",
+      "R-B4-021",
+      "R-B4-022",
+      "R-B4-023",
+      "R-B4-024",
+      "R-B4-025",
+      "R-B4-026",
+      "R-B4-027",
+      "R-B4-028",
+      "R-B4-029",
+      "R-B4-030",
+      "R-B4-031",
+      "R-B4-032",
+      "R-B4-033",
+      "R-B4-034",
+      "R-B4-035",
+      "R-B4-036",
+      "R-B4-037",
+      "R-B4-038",
+      "R-B4-039",
+      "R-B4-040"
+    ],
+    "missions": [
+      "M24",
+      "M25",
+      "M26",
+      "M27",
+      "M28",
+      "M29",
+      "M30"
+    ],
+    "activities": [],
+    "tasks": [],
+    "knowledge": [],
+    "parent_activity": null,
+    "parent_bc": null
+  },
+  "S1_1_1": {
+    "ref": "S1_1_1",
+    "type": "connaissance",
+    "label": "L’identification de la clientèle",
+    "anchor": "s1-1-1",
+    "resources": [
+      "R-B1-001",
+      "R-B1-002"
+    ],
+    "missions": [
+      "M01"
+    ],
+    "activities": [
+      "A1_1"
+    ],
+    "tasks": [],
+    "knowledge": [],
+    "parent_activity": null,
+    "parent_bc": null
+  },
+  "S1_1_2": {
+    "ref": "S1_1_2",
+    "type": "connaissance",
+    "label": "La prospection et la qualification des prospects",
+    "anchor": "s1-1-2",
+    "resources": [
+      "R-B1-001",
+      "R-B1-002"
+    ],
+    "missions": [
+      "M01"
+    ],
+    "activities": [
+      "A1_1"
+    ],
+    "tasks": [],
+    "knowledge": [],
+    "parent_activity": null,
+    "parent_bc": null
+  },
+  "S1_1_3": {
+    "ref": "S1_1_3",
+    "type": "connaissance",
+    "label": "Les appels d’offres",
+    "anchor": "s1-1-3",
+    "resources": [
+      "R-B1-003",
+      "R-B1-004"
+    ],
+    "missions": [],
+    "activities": [
+      "A1_1"
+    ],
+    "tasks": [],
+    "knowledge": [],
+    "parent_activity": null,
+    "parent_bc": null
+  },
+  "S1_2_1": {
+    "ref": "S1_2_1",
+    "type": "connaissance",
+    "label": "Le système d’information client",
+    "anchor": "s1-2-1",
+    "resources": [
+      "R-B1-009",
+      "R-B1-012"
+    ],
+    "missions": [],
+    "activities": [
+      "A1_2"
+    ],
+    "tasks": [],
+    "knowledge": [],
+    "parent_activity": null,
+    "parent_bc": null
+  },
+  "S1_2_2": {
+    "ref": "S1_2_2",
+    "type": "connaissance",
+    "label": "Les documents commerciaux, les contrats, l’établissement des factures",
+    "anchor": "s1-2-2",
+    "resources": [
+      "R-B1-005",
+      "R-B1-006",
+      "R-B1-008",
+      "R-B1-009",
+      "R-B1-018",
+      "R-B1-019",
+      "R-B1-020",
+      "R-B1-022",
+      "R-B1-031"
+    ],
+    "missions": [
+      "M02",
+      "M06"
+    ],
+    "activities": [
+      "A1_2",
+      "A1_5"
+    ],
+    "tasks": [],
+    "knowledge": [],
+    "parent_activity": null,
+    "parent_bc": null
+  },
+  "S1_2_3": {
+    "ref": "S1_2_3",
+    "type": "connaissance",
+    "label": "Le suivi des commandes clients – la traçabilité du produit",
+    "anchor": "s1-2-3",
+    "resources": [
+      "R-B1-007",
+      "R-B1-030"
+    ],
+    "missions": [
+      "M02",
+      "M04"
+    ],
+    "activities": [
+      "A1_2"
+    ],
+    "tasks": [],
+    "knowledge": [],
+    "parent_activity": null,
+    "parent_bc": null
+  },
+  "S1_2_4": {
+    "ref": "S1_2_4",
+    "type": "connaissance",
+    "label": "Les risques d’insolvabilité",
+    "anchor": "s1-2-4",
+    "resources": [
+      "R-B1-010",
+      "R-B1-011"
+    ],
+    "missions": [
+      "M03"
+    ],
+    "activities": [
+      "A1_2"
+    ],
+    "tasks": [],
+    "knowledge": [],
+    "parent_activity": null,
+    "parent_bc": null
+  },
+  "S1_2_5": {
+    "ref": "S1_2_5",
+    "type": "connaissance",
+    "label": "Les principes de base du modèle comptable, les comptes, comptes de tiers et balance",
+    "anchor": "s1-2-5",
+    "resources": [
+      "R-B1-008",
+      "R-B1-010",
+      "R-B1-011",
+      "R-B1-024",
+      "R-B1-026",
+      "R-B1-031"
+    ],
+    "missions": [
+      "M02",
+      "M03",
+      "M07"
+    ],
+    "activities": [
+      "A1_2"
+    ],
+    "tasks": [],
+    "knowledge": [],
+    "parent_activity": null,
+    "parent_bc": null
+  },
+  "S1_3_1": {
+    "ref": "S1_3_1",
+    "type": "connaissance",
+    "label": "L’accueil",
+    "anchor": "s1-3-1",
+    "resources": [
+      "R-B1-013"
+    ],
+    "missions": [],
+    "activities": [
+      "A1_3"
+    ],
+    "tasks": [],
+    "knowledge": [],
+    "parent_activity": null,
+    "parent_bc": null
+  },
+  "S1_3_2": {
+    "ref": "S1_3_2",
+    "type": "connaissance",
+    "label": "Les réclamations",
+    "anchor": "s1-3-2",
+    "resources": [
+      "R-B1-014"
+    ],
+    "missions": [
+      "M04"
+    ],
+    "activities": [
+      "A1_3"
+    ],
+    "tasks": [],
+    "knowledge": [],
+    "parent_activity": null,
+    "parent_bc": null
+  },
+  "S1_4_1": {
+    "ref": "S1_4_1",
+    "type": "connaissance",
+    "label": "Typologie des achats et investissements",
+    "anchor": "s1-4-1",
+    "resources": [
+      "R-B1-015",
+      "R-B1-017"
+    ],
+    "missions": [
+      "M05"
+    ],
+    "activities": [
+      "A1_4"
+    ],
+    "tasks": [],
+    "knowledge": [],
+    "parent_activity": null,
+    "parent_bc": null
+  },
+  "S1_4_2": {
+    "ref": "S1_4_2",
+    "type": "connaissance",
+    "label": "Référencement des fournisseurs / Système d’information fournisseur",
+    "anchor": "s1-4-2",
+    "resources": [
+      "R-B1-016",
+      "R-B1-017",
+      "R-B1-023"
+    ],
+    "missions": [
+      "M05"
+    ],
+    "activities": [
+      "A1_4"
+    ],
+    "tasks": [],
+    "knowledge": [],
+    "parent_activity": null,
+    "parent_bc": null
+  },
+  "S1_5_1": {
+    "ref": "S1_5_1",
+    "type": "connaissance",
+    "label": "Processus d’achat et d’investissement, les commandes fournisseurs",
+    "anchor": "s1-5-1",
+    "resources": [
+      "R-B1-018",
+      "R-B1-019",
+      "R-B1-020",
+      "R-B1-022",
+      "R-B1-023"
+    ],
+    "missions": [
+      "M06"
+    ],
+    "activities": [
+      "A1_5"
+    ],
+    "tasks": [],
+    "knowledge": [],
+    "parent_activity": null,
+    "parent_bc": null
+  },
+  "S1_5_2": {
+    "ref": "S1_5_2",
+    "type": "connaissance",
+    "label": "Principes généraux de la gestion des stocks",
+    "anchor": "s1-5-2",
+    "resources": [
+      "R-B1-021"
+    ],
+    "missions": [
+      "M06"
+    ],
+    "activities": [
+      "A1_5"
+    ],
+    "tasks": [],
+    "knowledge": [],
+    "parent_activity": null,
+    "parent_bc": null
+  },
+  "S1_6_1": {
+    "ref": "S1_6_1",
+    "type": "connaissance",
+    "label": "Principes comptables",
+    "anchor": "s1-6-1",
+    "resources": [
+      "R-B1-024",
+      "R-B1-025",
+      "R-B1-027"
+    ],
+    "missions": [
+      "M07"
+    ],
+    "activities": [
+      "A1_6"
+    ],
+    "tasks": [],
+    "knowledge": [],
+    "parent_activity": null,
+    "parent_bc": null
+  },
+  "S1_6_2": {
+    "ref": "S1_6_2",
+    "type": "connaissance",
+    "label": "Principes et règles de calcul de la TVA",
+    "anchor": "s1-6-2",
+    "resources": [
+      "R-B1-027"
+    ],
+    "missions": [],
+    "activities": [
+      "A1_6"
+    ],
+    "tasks": [],
+    "knowledge": [],
+    "parent_activity": null,
+    "parent_bc": null
+  },
+  "S1_6_3": {
+    "ref": "S1_6_3",
+    "type": "connaissance",
+    "label": "Suivi des encaissements et décaissements",
+    "anchor": "s1-6-3",
+    "resources": [
+      "R-B1-010",
+      "R-B1-025",
+      "R-B1-026",
+      "R-B1-028"
+    ],
+    "missions": [
+      "M03",
+      "M07"
+    ],
+    "activities": [
+      "A1_6"
+    ],
+    "tasks": [],
+    "knowledge": [],
+    "parent_activity": null,
+    "parent_bc": null
+  },
+  "S1_7": {
+    "ref": "S1_7",
+    "type": "connaissance",
+    "label": "Fonctionnalités du PGI et d’outils bureautiques et numériques",
+    "anchor": "s1-7",
+    "resources": [
+      "R-B1-001",
+      "R-B1-002",
+      "R-B1-003",
+      "R-B1-004",
+      "R-B1-005",
+      "R-B1-006",
+      "R-B1-007",
+      "R-B1-008",
+      "R-B1-009",
+      "R-B1-011",
+      "R-B1-012",
+      "R-B1-013",
+      "R-B1-014",
+      "R-B1-015",
+      "R-B1-016",
+      "R-B1-017",
+      "R-B1-019",
+      "R-B1-020",
+      "R-B1-021",
+      "R-B1-022",
+      "R-B1-023",
+      "R-B1-031",
+      "R-B1-032",
+      "R-TR-011",
+      "R-TR-012",
+      "R-TR-013"
+    ],
+    "missions": [
+      "M01",
+      "M02",
+      "M04",
+      "M05",
+      "M06",
+      "M14",
+      "M22"
+    ],
+    "activities": [
+      "A1_1",
+      "A1_2",
+      "A1_3",
+      "A1_4",
+      "A1_5"
+    ],
+    "tasks": [],
+    "knowledge": [],
+    "parent_activity": null,
+    "parent_bc": null
+  },
+  "S1_7_1": {
+    "ref": "S1_7_1",
+    "type": "connaissance",
+    "label": "Fonctionnalités du PGI et d’outils bureautiques et numériques dans le cadre du suivi comptable",
+    "anchor": "s1-7-1",
+    "resources": [
+      "R-B1-024",
+      "R-B1-025",
+      "R-B1-026",
+      "R-B1-027",
+      "R-B1-028"
+    ],
+    "missions": [
+      "M03",
+      "M07"
+    ],
+    "activities": [
+      "A1_6"
+    ],
+    "tasks": [],
+    "knowledge": [],
+    "parent_activity": null,
+    "parent_bc": null
+  },
+  "S2_1_1": {
+    "ref": "S2_1_1",
+    "type": "connaissance",
+    "label": "Méthodologie de la veille",
+    "anchor": "s2-1-1",
+    "resources": [
+      "R-B2-004",
+      "R-B2-005",
+      "R-B2-006",
+      "R-B2-028"
+    ],
+    "missions": [
+      "M08"
+    ],
+    "activities": [
+      "A2_1"
+    ],
+    "tasks": [],
+    "knowledge": [],
+    "parent_activity": null,
+    "parent_bc": null
+  },
+  "S2_1_2": {
+    "ref": "S2_1_2",
+    "type": "connaissance",
+    "label": "Droit de la propriété intellectuelle",
+    "anchor": "s2-1-2",
+    "resources": [
+      "R-B2-004",
+      "R-B2-005",
+      "R-B2-006"
+    ],
+    "missions": [
+      "M08"
+    ],
+    "activities": [
+      "A2_1"
+    ],
+    "tasks": [],
+    "knowledge": [],
+    "parent_activity": null,
+    "parent_bc": null
+  },
+  "S2_2": {
+    "ref": "S2_2",
+    "type": "connaissance",
+    "label": "Méthodologie de la conduite de projet",
+    "anchor": "s2-2",
+    "resources": [
+      "R-B2-007",
+      "R-B2-008",
+      "R-B2-009",
+      "R-B2-010"
+    ],
+    "missions": [
+      "M09"
+    ],
+    "activities": [
+      "A2_2"
+    ],
+    "tasks": [],
+    "knowledge": [],
+    "parent_activity": null,
+    "parent_bc": null
+  },
+  "S2_3": {
+    "ref": "S2_3",
+    "type": "connaissance",
+    "label": "La gestion des risques",
+    "anchor": "s2-3",
+    "resources": [
+      "R-B2-001",
+      "R-B2-002",
+      "R-B2-003",
+      "R-B2-011",
+      "R-B2-012",
+      "R-B2-013",
+      "R-B2-029"
+    ],
+    "missions": [
+      "M10",
+      "M12",
+      "M16"
+    ],
+    "activities": [
+      "A2_3"
+    ],
+    "tasks": [],
+    "knowledge": [],
+    "parent_activity": null,
+    "parent_bc": null
+  },
+  "S2_4": {
+    "ref": "S2_4",
+    "type": "connaissance",
+    "label": "Analyse des risques de trésorerie",
+    "anchor": "s2-4",
+    "resources": [
+      "R-B2-014",
+      "R-B2-015"
+    ],
+    "missions": [
+      "M11"
+    ],
+    "activities": [
+      "A2_4"
+    ],
+    "tasks": [],
+    "knowledge": [],
+    "parent_activity": null,
+    "parent_bc": null
+  },
+  "S2_5_1": {
+    "ref": "S2_5_1",
+    "type": "connaissance",
+    "label": "La protection des salariés en matière d’hygiène et sécurité, de poste de travail et l’amélioration des conditions de travail",
+    "anchor": "s2-5-1",
+    "resources": [
+      "R-B2-003"
+    ],
+    "missions": [
+      "M12"
+    ],
+    "activities": [
+      "A2_5"
+    ],
+    "tasks": [],
+    "knowledge": [],
+    "parent_activity": null,
+    "parent_bc": null
+  },
+  "S2_5_1_1": {
+    "ref": "S2_5_1_1",
+    "type": "connaissance",
+    "label": "La protection des salariés en matière d’hygiène et sécurité",
+    "anchor": "s2-5-1-1",
+    "resources": [
+      "R-B2-003"
+    ],
+    "missions": [
+      "M12"
+    ],
+    "activities": [
+      "A2_5"
+    ],
+    "tasks": [],
+    "knowledge": [],
+    "parent_activity": null,
+    "parent_bc": null
+  },
+  "S2_5_1_2": {
+    "ref": "S2_5_1_2",
+    "type": "connaissance",
+    "label": "La protection des salariés par l’amélioration des conditions de travail",
+    "anchor": "s2-5-1-2",
+    "resources": [
+      "R-B2-003"
+    ],
+    "missions": [
+      "M12"
+    ],
+    "activities": [
+      "A2_5"
+    ],
+    "tasks": [],
+    "knowledge": [],
+    "parent_activity": null,
+    "parent_bc": null
+  },
+  "S2_5_2": {
+    "ref": "S2_5_2",
+    "type": "connaissance",
+    "label": "La prévention des risques professionnels",
+    "anchor": "s2-5-2",
+    "resources": [
+      "R-B2-003"
+    ],
+    "missions": [
+      "M12"
+    ],
+    "activities": [
+      "A2_5"
+    ],
+    "tasks": [],
+    "knowledge": [],
+    "parent_activity": null,
+    "parent_bc": null
+  },
+  "S2_5_3": {
+    "ref": "S2_5_3",
+    "type": "connaissance",
+    "label": "La protection des personnes, des biens et des données",
+    "anchor": "s2-5-3",
+    "resources": [
+      "R-B2-016",
+      "R-B2-030",
+      "R-B2-017",
+      "R-B2-018",
+      "R-B2-019"
+    ],
+    "missions": [
+      "M13",
+      "M15"
+    ],
+    "activities": [
+      "A2_5"
+    ],
+    "tasks": [],
+    "knowledge": [],
+    "parent_activity": null,
+    "parent_bc": null
+  },
+  "S2_5_3_1": {
+    "ref": "S2_5_3_1",
+    "type": "connaissance",
+    "label": "La protection des personnes, des biens",
+    "anchor": "s2-5-3-1",
+    "resources": [
+      "R-B2-016",
+      "R-B2-030"
+    ],
+    "missions": [
+      "M13"
+    ],
+    "activities": [
+      "A2_5"
+    ],
+    "tasks": [],
+    "knowledge": [],
+    "parent_activity": null,
+    "parent_bc": null
+  },
+  "S2_5_3_2": {
+    "ref": "S2_5_3_2",
+    "type": "connaissance",
+    "label": "Protection des droits de propriété intellectuelle : règles juridiques et procédures de dépôt",
+    "anchor": "s2-5-3-2",
+    "resources": [
+      "R-B2-017"
+    ],
+    "missions": [
+      "M13",
+      "M15"
+    ],
+    "activities": [
+      "A2_5"
+    ],
+    "tasks": [],
+    "knowledge": [],
+    "parent_activity": null,
+    "parent_bc": null
+  },
+  "S2_5_3_3": {
+    "ref": "S2_5_3_3",
+    "type": "connaissance",
+    "label": "La protection des données",
+    "anchor": "s2-5-3-3",
+    "resources": [
+      "R-B2-018",
+      "R-B2-019"
+    ],
+    "missions": [
+      "M15"
+    ],
+    "activities": [
+      "A2_5"
+    ],
+    "tasks": [],
+    "knowledge": [],
+    "parent_activity": null,
+    "parent_bc": null
+  },
+  "S2_5_4": {
+    "ref": "S2_5_4",
+    "type": "connaissance",
+    "label": "La gestion des risques environnementaux",
+    "anchor": "s2-5-4",
+    "resources": [
+      "R-B2-020"
+    ],
+    "missions": [
+      "M14"
+    ],
+    "activities": [
+      "A2_5"
+    ],
+    "tasks": [],
+    "knowledge": [],
+    "parent_activity": null,
+    "parent_bc": null
+  },
+  "S2_5_5": {
+    "ref": "S2_5_5",
+    "type": "connaissance",
+    "label": "La gestion des risques informatiques",
+    "anchor": "s2-5-5",
+    "resources": [
+      "R-B2-019",
+      "R-B2-021",
+      "R-B2-022",
+      "R-B2-023"
+    ],
+    "missions": [
+      "M15"
+    ],
+    "activities": [
+      "A2_5"
+    ],
+    "tasks": [],
+    "knowledge": [],
+    "parent_activity": null,
+    "parent_bc": null
+  },
+  "S2_5_5_1": {
+    "ref": "S2_5_5_1",
+    "type": "connaissance",
+    "label": "La notion de système d’information",
+    "anchor": "s2-5-5-1",
+    "resources": [
+      "R-B2-019",
+      "R-B2-021",
+      "R-B2-022",
+      "R-B2-023"
+    ],
+    "missions": [
+      "M15"
+    ],
+    "activities": [],
+    "tasks": [],
+    "knowledge": [],
+    "parent_activity": null,
+    "parent_bc": null
+  },
+  "S2_5_5_2": {
+    "ref": "S2_5_5_2",
+    "type": "connaissance",
+    "label": "Notion de système informatique",
+    "anchor": "s2-5-5-2",
+    "resources": [
+      "R-B2-019",
+      "R-B2-021",
+      "R-B2-022",
+      "R-B2-023"
+    ],
+    "missions": [
+      "M15"
+    ],
+    "activities": [],
+    "tasks": [],
+    "knowledge": [],
+    "parent_activity": null,
+    "parent_bc": null
+  },
+  "S2_5_5_3": {
+    "ref": "S2_5_5_3",
+    "type": "connaissance",
+    "label": "Les enjeux de la sécurité informatique et l’importance d’une évaluation",
+    "anchor": "s2-5-5-3",
+    "resources": [
+      "R-B2-019",
+      "R-B2-021",
+      "R-B2-022",
+      "R-B2-023"
+    ],
+    "missions": [
+      "M15"
+    ],
+    "activities": [],
+    "tasks": [],
+    "knowledge": [],
+    "parent_activity": null,
+    "parent_bc": null
+  },
+  "S2_5_5_4": {
+    "ref": "S2_5_5_4",
+    "type": "connaissance",
+    "label": "La prise en charge des risques informatiques",
+    "anchor": "s2-5-5-4",
+    "resources": [
+      "R-B2-019",
+      "R-B2-021",
+      "R-B2-022",
+      "R-B2-023"
+    ],
+    "missions": [
+      "M15"
+    ],
+    "activities": [],
+    "tasks": [],
+    "knowledge": [],
+    "parent_activity": null,
+    "parent_bc": null
+  },
+  "S2_5_5_5": {
+    "ref": "S2_5_5_5",
+    "type": "connaissance",
+    "label": "Les axes majeurs de la sécurité informatique",
+    "anchor": "s2-5-5-5",
+    "resources": [
+      "R-B2-019",
+      "R-B2-021",
+      "R-B2-022",
+      "R-B2-023"
+    ],
+    "missions": [
+      "M15"
+    ],
+    "activities": [],
+    "tasks": [],
+    "knowledge": [],
+    "parent_activity": null,
+    "parent_bc": null
+  },
+  "S2_6_1": {
+    "ref": "S2_6_1",
+    "type": "connaissance",
+    "label": "La démarche qualité",
+    "anchor": "s2-6-1",
+    "resources": [
+      "R-B2-024",
+      "R-B2-025"
+    ],
+    "missions": [
+      "M16"
+    ],
+    "activities": [
+      "A2_6"
+    ],
+    "tasks": [],
+    "knowledge": [],
+    "parent_activity": null,
+    "parent_bc": null
+  },
+  "S2_6_2": {
+    "ref": "S2_6_2",
+    "type": "connaissance",
+    "label": "La gestion des connaissances",
+    "anchor": "s2-6-2",
+    "resources": [
+      "R-B2-026"
+    ],
+    "missions": [],
+    "activities": [
+      "A2_6"
+    ],
+    "tasks": [],
+    "knowledge": [],
+    "parent_activity": null,
+    "parent_bc": null
+  },
+  "S2_6_3": {
+    "ref": "S2_6_3",
+    "type": "connaissance",
+    "label": "Les normes et la certification",
+    "anchor": "s2-6-3",
+    "resources": [
+      "R-B2-027",
+      "R-B2-031"
+    ],
+    "missions": [],
+    "activities": [
+      "A2_6"
+    ],
+    "tasks": [],
+    "knowledge": [],
+    "parent_activity": null,
+    "parent_bc": null
+  },
+  "S2_7": {
+    "ref": "S2_7",
+    "type": "connaissance",
+    "label": "Fonctionnalités du PGI et d’outils bureautiques et numériques",
+    "anchor": "s2-7",
+    "resources": [
+      "R-B2-001",
+      "R-B2-002",
+      "R-B2-008",
+      "R-B2-010",
+      "R-B2-011",
+      "R-B2-013",
+      "R-B2-024",
+      "R-B2-025",
+      "R-B2-026",
+      "R-B2-027",
+      "R-B2-029",
+      "R-B2-031",
+      "R-TR-011",
+      "R-TR-012",
+      "R-TR-013"
+    ],
+    "missions": [
+      "M09",
+      "M10",
+      "M12",
+      "M14",
+      "M16",
+      "M22"
+    ],
+    "activities": [
+      "A2_2",
+      "A2_3",
+      "A2_5",
+      "A2_6"
+    ],
+    "tasks": [],
+    "knowledge": [],
+    "parent_activity": null,
+    "parent_bc": null
+  },
+  "S2_7_1": {
+    "ref": "S2_7_1",
+    "type": "connaissance",
+    "label": "Fonctionnalités du PGI et d’outils bureautiques et numériques dans le cadre de la gestion des risques financiers",
+    "anchor": "s2-7-1",
+    "resources": [
+      "R-B2-014",
+      "R-B2-015"
+    ],
+    "missions": [
+      "M11"
+    ],
+    "activities": [
+      "A2_4"
+    ],
+    "tasks": [],
+    "knowledge": [],
+    "parent_activity": null,
+    "parent_bc": null
+  },
+  "S3_1_1": {
+    "ref": "S3_1_1",
+    "type": "connaissance",
+    "label": "Les sources du droit social",
+    "anchor": "s3-1-1",
+    "resources": [
+      "R-B3-001",
+      "R-B3-003",
+      "R-B3-009",
+      "R-B3-011"
+    ],
+    "missions": [
+      "M17",
+      "M18",
+      "M19"
+    ],
+    "activities": [
+      "A3_1"
+    ],
+    "tasks": [],
+    "knowledge": [],
+    "parent_activity": null,
+    "parent_bc": null
+  },
+  "S3_1_2": {
+    "ref": "S3_1_2",
+    "type": "connaissance",
+    "label": "Les formalités d’embauche et de départ, le contrat de travail",
+    "anchor": "s3-1-2",
+    "resources": [
+      "R-B3-002",
+      "R-B3-003",
+      "R-B3-004"
+    ],
+    "missions": [
+      "M17"
+    ],
+    "activities": [
+      "A3_1"
+    ],
+    "tasks": [],
+    "knowledge": [],
+    "parent_activity": null,
+    "parent_bc": null
+  },
+  "S3_1_3": {
+    "ref": "S3_1_3",
+    "type": "connaissance",
+    "label": "Les dossiers du personnel",
+    "anchor": "s3-1-3",
+    "resources": [
+      "R-B3-002",
+      "R-B3-004",
+      "R-B3-005",
+      "R-B3-012"
+    ],
+    "missions": [
+      "M17",
+      "M18"
+    ],
+    "activities": [
+      "A3_1"
+    ],
+    "tasks": [],
+    "knowledge": [],
+    "parent_activity": null,
+    "parent_bc": null
+  },
+  "S3_1_4": {
+    "ref": "S3_1_4",
+    "type": "connaissance",
+    "label": "Les absences et congés du personnel",
+    "anchor": "s3-1-4",
+    "resources": [
+      "R-B3-006",
+      "R-B3-007",
+      "R-B3-008"
+    ],
+    "missions": [
+      "M18"
+    ],
+    "activities": [
+      "A3_1"
+    ],
+    "tasks": [],
+    "knowledge": [],
+    "parent_activity": null,
+    "parent_bc": null
+  },
+  "S3_1_5": {
+    "ref": "S3_1_5",
+    "type": "connaissance",
+    "label": "La paie",
+    "anchor": "s3-1-5",
+    "resources": [
+      "R-B3-004",
+      "R-B3-006",
+      "R-B3-007",
+      "R-B3-008",
+      "R-B3-009",
+      "R-B3-010"
+    ],
+    "missions": [
+      "M18"
+    ],
+    "activities": [
+      "A3_1"
+    ],
+    "tasks": [],
+    "knowledge": [],
+    "parent_activity": null,
+    "parent_bc": null
+  },
+  "S3_1_6": {
+    "ref": "S3_1_6",
+    "type": "connaissance",
+    "label": "La représentation des salariés",
+    "anchor": "s3-1-6",
+    "resources": [
+      "R-B3-011",
+      "R-B3-027"
+    ],
+    "missions": [
+      "M19"
+    ],
+    "activities": [
+      "A3_1"
+    ],
+    "tasks": [],
+    "knowledge": [],
+    "parent_activity": null,
+    "parent_bc": null
+  },
+  "S3_2_1": {
+    "ref": "S3_2_1",
+    "type": "connaissance",
+    "label": "Le recrutement",
+    "anchor": "s3-2-1",
+    "resources": [
+      "R-B3-013",
+      "R-B3-014",
+      "R-B3-015",
+      "R-B3-016",
+      "R-B3-028"
+    ],
+    "missions": [
+      "M20",
+      "M21"
+    ],
+    "activities": [
+      "A3_2"
+    ],
+    "tasks": [],
+    "knowledge": [],
+    "parent_activity": null,
+    "parent_bc": null
+  },
+  "S3_2_2": {
+    "ref": "S3_2_2",
+    "type": "connaissance",
+    "label": "L’intégration des nouveaux membres",
+    "anchor": "s3-2-2",
+    "resources": [
+      "R-B3-017"
+    ],
+    "missions": [],
+    "activities": [
+      "A3_2"
+    ],
+    "tasks": [],
+    "knowledge": [],
+    "parent_activity": null,
+    "parent_bc": null
+  },
+  "S3_2_3": {
+    "ref": "S3_2_3",
+    "type": "connaissance",
+    "label": "La formation",
+    "anchor": "s3-2-3",
+    "resources": [
+      "R-B3-018",
+      "R-B3-019",
+      "R-B3-020",
+      "R-B3-022",
+      "R-B3-028"
+    ],
+    "missions": [
+      "M21"
+    ],
+    "activities": [
+      "A3_2"
+    ],
+    "tasks": [],
+    "knowledge": [],
+    "parent_activity": null,
+    "parent_bc": null
+  },
+  "S3_2_4": {
+    "ref": "S3_2_4",
+    "type": "connaissance",
+    "label": "L’évaluation",
+    "anchor": "s3-2-4",
+    "resources": [
+      "R-B3-021"
+    ],
+    "missions": [],
+    "activities": [
+      "A3_2"
+    ],
+    "tasks": [],
+    "knowledge": [],
+    "parent_activity": null,
+    "parent_bc": null
+  },
+  "S3_2_5": {
+    "ref": "S3_2_5",
+    "type": "connaissance",
+    "label": "Le tableau de bord social",
+    "anchor": "s3-2-5",
+    "resources": [
+      "R-B3-018",
+      "R-B3-023",
+      "R-B3-024",
+      "R-B3-028"
+    ],
+    "missions": [
+      "M21",
+      "M22"
+    ],
+    "activities": [
+      "A3_2"
+    ],
+    "tasks": [],
+    "knowledge": [],
+    "parent_activity": null,
+    "parent_bc": null
+  },
+  "S3_3": {
+    "ref": "S3_3",
+    "type": "connaissance",
+    "label": "Le travail collaboratif",
+    "anchor": "s3-3",
+    "resources": [
+      "R-B3-025",
+      "R-B3-026"
+    ],
+    "missions": [
+      "M23"
+    ],
+    "activities": [
+      "A3_3"
+    ],
+    "tasks": [],
+    "knowledge": [],
+    "parent_activity": null,
+    "parent_bc": null
+  },
+  "S3_4": {
+    "ref": "S3_4",
+    "type": "connaissance",
+    "label": "Fonctionnalités du PGI et d’outils bureautiques et numériques dans le cadre de la gestion du personnel et des ressources humaines",
+    "anchor": "s3-4",
+    "resources": [
+      "R-B3-002",
+      "R-B3-004",
+      "R-B3-005",
+      "R-B3-006",
+      "R-B3-007",
+      "R-B3-008",
+      "R-B3-009",
+      "R-B3-010",
+      "R-B3-013",
+      "R-B3-015",
+      "R-B3-017",
+      "R-B3-018",
+      "R-B3-019",
+      "R-B3-020",
+      "R-B3-021",
+      "R-B3-022",
+      "R-B3-023",
+      "R-B3-028",
+      "R-TR-011",
+      "R-TR-012",
+      "R-TR-013"
+    ],
+    "missions": [
+      "M14",
+      "M17",
+      "M18",
+      "M20",
+      "M21",
+      "M22"
+    ],
+    "activities": [
+      "A3_1",
+      "A3_2"
+    ],
+    "tasks": [],
+    "knowledge": [],
+    "parent_activity": null,
+    "parent_bc": null
+  },
+  "S4_1_1": {
+    "ref": "S4_1_1",
+    "type": "connaissance",
+    "label": "Le système d’information et sa représentation",
+    "anchor": "s4-1-1",
+    "resources": [
+      "R-B4-001",
+      "R-B4-002",
+      "R-B4-003",
+      "R-B4-006"
+    ],
+    "missions": [
+      "M24"
+    ],
+    "activities": [
+      "A4_1"
+    ],
+    "tasks": [],
+    "knowledge": [],
+    "parent_activity": null,
+    "parent_bc": null
+  },
+  "S4_1_2": {
+    "ref": "S4_1_2",
+    "type": "connaissance",
+    "label": "Les bases de données",
+    "anchor": "s4-1-2",
+    "resources": [
+      "R-B4-003",
+      "R-B4-004"
+    ],
+    "missions": [],
+    "activities": [
+      "A4_1"
+    ],
+    "tasks": [],
+    "knowledge": [],
+    "parent_activity": null,
+    "parent_bc": null
+  },
+  "S4_1_3": {
+    "ref": "S4_1_3",
+    "type": "connaissance",
+    "label": "La gestion de l’archivage des documents",
+    "anchor": "s4-1-3",
+    "resources": [
+      "R-B4-005"
+    ],
+    "missions": [
+      "M24"
+    ],
+    "activities": [
+      "A4_1"
+    ],
+    "tasks": [],
+    "knowledge": [],
+    "parent_activity": null,
+    "parent_bc": null
+  },
+  "S4_1_4": {
+    "ref": "S4_1_4",
+    "type": "connaissance",
+    "label": "Les ressources, leur localisation et leurs rôles au sein du SI, leurs droits d’accès et les services de sécurité",
+    "anchor": "s4-1-4",
+    "resources": [
+      "R-B4-001",
+      "R-B4-004",
+      "R-B4-006"
+    ],
+    "missions": [
+      "M24"
+    ],
+    "activities": [
+      "A4_1"
+    ],
+    "tasks": [],
+    "knowledge": [],
+    "parent_activity": null,
+    "parent_bc": null
+  },
+  "S4_2_1": {
+    "ref": "S4_2_1",
+    "type": "connaissance",
+    "label": "La méthodologie de résolution de problème",
+    "anchor": "s4-2-1",
+    "resources": [
+      "R-B4-007",
+      "R-B4-038"
+    ],
+    "missions": [],
+    "activities": [
+      "A4_2"
+    ],
+    "tasks": [],
+    "knowledge": [],
+    "parent_activity": null,
+    "parent_bc": null
+  },
+  "S4_2_2": {
+    "ref": "S4_2_2",
+    "type": "connaissance",
+    "label": "L’organisation des activités",
+    "anchor": "s4-2-2",
+    "resources": [
+      "R-B4-007",
+      "R-B4-008",
+      "R-B4-009",
+      "R-B4-011",
+      "R-B4-012",
+      "R-B4-013",
+      "R-B4-038"
+    ],
+    "missions": [
+      "M25"
+    ],
+    "activities": [
+      "A4_2"
+    ],
+    "tasks": [],
+    "knowledge": [],
+    "parent_activity": null,
+    "parent_bc": null
+  },
+  "S4_2_3": {
+    "ref": "S4_2_3",
+    "type": "connaissance",
+    "label": "La gestion du temps",
+    "anchor": "s4-2-3",
+    "resources": [
+      "R-B4-008",
+      "R-B4-009",
+      "R-B4-010",
+      "R-B4-011",
+      "R-B4-012"
+    ],
+    "missions": [
+      "M25"
+    ],
+    "activities": [
+      "A4_2"
+    ],
+    "tasks": [],
+    "knowledge": [],
+    "parent_activity": null,
+    "parent_bc": null
+  },
+  "S4_3_1": {
+    "ref": "S4_3_1",
+    "type": "connaissance",
+    "label": "Le marché de l’entreprise",
+    "anchor": "s4-3-1",
+    "resources": [
+      "R-B4-014",
+      "R-B4-015",
+      "R-B4-016"
+    ],
+    "missions": [
+      "M26"
+    ],
+    "activities": [
+      "A4_3"
+    ],
+    "tasks": [],
+    "knowledge": [],
+    "parent_activity": null,
+    "parent_bc": null
+  },
+  "S4_3_2": {
+    "ref": "S4_3_2",
+    "type": "connaissance",
+    "label": "La stratégie commerciale et sa mise en œuvre",
+    "anchor": "s4-3-2",
+    "resources": [
+      "R-B4-015",
+      "R-B4-017"
+    ],
+    "missions": [
+      "M26"
+    ],
+    "activities": [
+      "A4_3"
+    ],
+    "tasks": [],
+    "knowledge": [],
+    "parent_activity": null,
+    "parent_bc": null
+  },
+  "S4_3_3": {
+    "ref": "S4_3_3",
+    "type": "connaissance",
+    "label": "Les techniques de fidélisation",
+    "anchor": "s4-3-3",
+    "resources": [
+      "R-B4-016",
+      "R-B4-018"
+    ],
+    "missions": [
+      "M26"
+    ],
+    "activities": [
+      "A4_3"
+    ],
+    "tasks": [],
+    "knowledge": [],
+    "parent_activity": null,
+    "parent_bc": null
+  },
+  "S4_4_1": {
+    "ref": "S4_4_1",
+    "type": "connaissance",
+    "label": "Communication globale et identité de l’entreprise",
+    "anchor": "s4-4-1",
+    "resources": [
+      "R-B4-019",
+      "R-B4-020",
+      "R-B4-021",
+      "R-B4-022",
+      "R-B4-023",
+      "R-B4-024",
+      "R-B4-039"
+    ],
+    "missions": [
+      "M27"
+    ],
+    "activities": [
+      "A4_4"
+    ],
+    "tasks": [],
+    "knowledge": [],
+    "parent_activity": null,
+    "parent_bc": null
+  },
+  "S4_4_2": {
+    "ref": "S4_4_2",
+    "type": "connaissance",
+    "label": "La communication institutionnelle",
+    "anchor": "s4-4-2",
+    "resources": [
+      "R-B4-020",
+      "R-B4-039"
+    ],
+    "missions": [
+      "M27"
+    ],
+    "activities": [
+      "A4_4"
+    ],
+    "tasks": [],
+    "knowledge": [],
+    "parent_activity": null,
+    "parent_bc": null
+  },
+  "S4_4_3": {
+    "ref": "S4_4_3",
+    "type": "connaissance",
+    "label": "La communication commerciale",
+    "anchor": "s4-4-3",
+    "resources": [
+      "R-B4-021",
+      "R-B4-039"
+    ],
+    "missions": [
+      "M27"
+    ],
+    "activities": [
+      "A4_4"
+    ],
+    "tasks": [],
+    "knowledge": [],
+    "parent_activity": null,
+    "parent_bc": null
+  },
+  "S4_4_4": {
+    "ref": "S4_4_4",
+    "type": "connaissance",
+    "label": "La communication digitale",
+    "anchor": "s4-4-4",
+    "resources": [
+      "R-B4-022",
+      "R-B4-023",
+      "R-B4-039"
+    ],
+    "missions": [
+      "M27"
+    ],
+    "activities": [
+      "A4_4"
+    ],
+    "tasks": [],
+    "knowledge": [],
+    "parent_activity": null,
+    "parent_bc": null
+  },
+  "S4_5_1": {
+    "ref": "S4_5_1",
+    "type": "connaissance",
+    "label": "La performance",
+    "anchor": "s4-5-1",
+    "resources": [
+      "R-B4-025",
+      "R-B4-026",
+      "R-B4-029",
+      "R-B4-040"
+    ],
+    "missions": [
+      "M28",
+      "M29"
+    ],
+    "activities": [
+      "A4_5"
+    ],
+    "tasks": [],
+    "knowledge": [],
+    "parent_activity": null,
+    "parent_bc": null
+  },
+  "S4_5_2": {
+    "ref": "S4_5_2",
+    "type": "connaissance",
+    "label": "Calcul et analyse des coûts et des résultats",
+    "anchor": "s4-5-2",
+    "resources": [
+      "R-B4-025",
+      "R-B4-026",
+      "R-B4-040"
+    ],
+    "missions": [
+      "M28",
+      "M29"
+    ],
+    "activities": [
+      "A4_5"
+    ],
+    "tasks": [],
+    "knowledge": [],
+    "parent_activity": null,
+    "parent_bc": null
+  },
+  "S4_5_3": {
+    "ref": "S4_5_3",
+    "type": "connaissance",
+    "label": "Le seuil de rentabilité",
+    "anchor": "s4-5-3",
+    "resources": [
+      "R-B4-027",
+      "R-B4-040"
+    ],
+    "missions": [
+      "M28",
+      "M29"
+    ],
+    "activities": [
+      "A4_5"
+    ],
+    "tasks": [],
+    "knowledge": [],
+    "parent_activity": null,
+    "parent_bc": null
+  },
+  "S4_5_4": {
+    "ref": "S4_5_4",
+    "type": "connaissance",
+    "label": "La démarche budgétaire",
+    "anchor": "s4-5-4",
+    "resources": [
+      "R-B4-028",
+      "R-B4-029",
+      "R-B4-040"
+    ],
+    "missions": [
+      "M28",
+      "M29"
+    ],
+    "activities": [
+      "A4_5"
+    ],
+    "tasks": [],
+    "knowledge": [],
+    "parent_activity": null,
+    "parent_bc": null
+  },
+  "S4_6_1": {
+    "ref": "S4_6_1",
+    "type": "connaissance",
+    "label": "L’analyse financière de l’entreprise",
+    "anchor": "s4-6-1",
+    "resources": [
+      "R-B4-030",
+      "R-B4-031",
+      "R-B4-032",
+      "R-B4-040"
+    ],
+    "missions": [
+      "M28",
+      "M29"
+    ],
+    "activities": [
+      "A4_6"
+    ],
+    "tasks": [],
+    "knowledge": [],
+    "parent_activity": null,
+    "parent_bc": null
+  },
+  "S4_6_2": {
+    "ref": "S4_6_2",
+    "type": "connaissance",
+    "label": "Le plan de financement",
+    "anchor": "s4-6-2",
+    "resources": [
+      "R-B4-033",
+      "R-B4-034",
+      "R-B4-040"
+    ],
+    "missions": [
+      "M28",
+      "M29"
+    ],
+    "activities": [
+      "A4_6"
+    ],
+    "tasks": [],
+    "knowledge": [],
+    "parent_activity": null,
+    "parent_bc": null
+  },
+  "S4_6_3": {
+    "ref": "S4_6_3",
+    "type": "connaissance",
+    "label": "Les modes de financement des investissements",
+    "anchor": "s4-6-3",
+    "resources": [
+      "R-B4-033",
+      "R-B4-034"
+    ],
+    "missions": [
+      "M29"
+    ],
+    "activities": [
+      "A4_6"
+    ],
+    "tasks": [],
+    "knowledge": [],
+    "parent_activity": null,
+    "parent_bc": null
+  },
+  "S4_7_1": {
+    "ref": "S4_7_1",
+    "type": "connaissance",
+    "label": "Le tableau de bord",
+    "anchor": "s4-7-1",
+    "resources": [
+      "R-B4-035",
+      "R-B4-036",
+      "R-B4-037"
+    ],
+    "missions": [
+      "M30"
+    ],
+    "activities": [
+      "A4_7"
+    ],
+    "tasks": [],
+    "knowledge": [],
+    "parent_activity": null,
+    "parent_bc": null
+  },
+  "S4_8": {
+    "ref": "S4_8",
+    "type": "connaissance",
+    "label": "Fonctionnalités d’outils bureautiques et numériques",
+    "anchor": "s4-8",
+    "resources": [
+      "R-B4-008",
+      "R-B4-009",
+      "R-B4-010",
+      "R-B4-035",
+      "R-B4-036",
+      "R-TR-011",
+      "R-TR-012",
+      "R-TR-013"
+    ],
+    "missions": [
+      "M14",
+      "M22",
+      "M25",
+      "M30"
+    ],
+    "activities": [
+      "A4_2",
+      "A4_7"
+    ],
+    "tasks": [],
+    "knowledge": [],
+    "parent_activity": null,
+    "parent_bc": null
+  },
+  "S4_8_1": {
+    "ref": "S4_8_1",
+    "type": "connaissance",
+    "label": "Fonctionnalités du PGI et d’outils bureautiques et numériques",
+    "anchor": "s4-8-1",
+    "resources": [
+      "R-B4-014",
+      "R-B4-015",
+      "R-B4-016",
+      "R-B4-018",
+      "R-B4-021",
+      "R-B4-024",
+      "R-B4-025",
+      "R-B4-026",
+      "R-B4-027",
+      "R-B4-028",
+      "R-B4-029",
+      "R-B4-030",
+      "R-B4-031",
+      "R-B4-032",
+      "R-B4-033",
+      "R-B4-034",
+      "R-B4-039",
+      "R-B4-040"
+    ],
+    "missions": [
+      "M26",
+      "M27",
+      "M28",
+      "M29"
+    ],
+    "activities": [
+      "A4_3",
+      "A4_4",
+      "A4_5",
+      "A4_6"
+    ],
+    "tasks": [],
+    "knowledge": [],
+    "parent_activity": null,
+    "parent_bc": null
+  },
+  "S5_1": {
+    "ref": "S5_1",
+    "type": "connaissance",
+    "label": "Enjeux et concepts de base de communication",
+    "anchor": "s5-1",
+    "resources": [
+      "R-B1-029",
+      "R-B3-012",
+      "R-TR-001"
+    ],
+    "missions": [
+      "M04",
+      "M18"
+    ],
+    "activities": [
+      "A1_1",
+      "A1_2",
+      "A1_3",
+      "A1_4",
+      "A1_5",
+      "A1_6",
+      "A2_1",
+      "A2_2",
+      "A2_3",
+      "A2_4",
+      "A2_5",
+      "A2_6",
+      "A3_1",
+      "A3_2",
+      "A3_3",
+      "A4_1",
+      "A4_2",
+      "A4_3",
+      "A4_4"
+    ],
+    "tasks": [],
+    "knowledge": [],
+    "parent_activity": null,
+    "parent_bc": null
+  },
+  "S5_2": {
+    "ref": "S5_2",
+    "type": "connaissance",
+    "label": "Communication écrite opérationnelle",
+    "anchor": "s5-2",
+    "resources": [
+      "R-B1-001",
+      "R-B1-003",
+      "R-B1-004",
+      "R-B1-005",
+      "R-B1-010",
+      "R-B1-029",
+      "R-B1-030",
+      "R-B2-006",
+      "R-B2-015",
+      "R-B2-028",
+      "R-B2-030",
+      "R-B3-001",
+      "R-B3-003",
+      "R-B3-011",
+      "R-B3-012",
+      "R-B3-013",
+      "R-B3-014",
+      "R-B3-017",
+      "R-B3-024",
+      "R-B4-001",
+      "R-B4-002",
+      "R-B4-005",
+      "R-B4-006",
+      "R-B4-007",
+      "R-B4-011",
+      "R-B4-013",
+      "R-B4-014",
+      "R-B4-017",
+      "R-B4-019",
+      "R-B4-020",
+      "R-B4-034",
+      "R-B4-035",
+      "R-B4-036",
+      "R-B4-037",
+      "R-TR-002",
+      "R-TR-003",
+      "R-TR-004",
+      "R-TR-014"
+    ],
+    "missions": [
+      "M01",
+      "M03",
+      "M04",
+      "M05",
+      "M08",
+      "M11",
+      "M13",
+      "M14",
+      "M17",
+      "M18",
+      "M19",
+      "M20",
+      "M22",
+      "M23",
+      "M24",
+      "M26",
+      "M27",
+      "M29",
+      "M30"
+    ],
+    "activities": [
+      "A1_1",
+      "A1_2",
+      "A1_3",
+      "A1_4",
+      "A1_5",
+      "A1_6",
+      "A2_1",
+      "A2_2",
+      "A2_3",
+      "A2_4",
+      "A2_5",
+      "A2_6",
+      "A3_1",
+      "A3_2",
+      "A3_3",
+      "A4_1",
+      "A4_2",
+      "A4_3",
+      "A4_4",
+      "A4_5",
+      "A4_6",
+      "A4_7"
+    ],
+    "tasks": [],
+    "knowledge": [],
+    "parent_activity": null,
+    "parent_bc": null
+  },
+  "S5_3": {
+    "ref": "S5_3",
+    "type": "connaissance",
+    "label": "La modélisation des documents et l’interface homme-machine",
+    "anchor": "s5-3",
+    "resources": [
+      "R-B1-004",
+      "R-B2-025",
+      "R-B3-026",
+      "R-TR-005"
+    ],
+    "missions": [
+      "M16",
+      "M23"
+    ],
+    "activities": [
+      "A1_1",
+      "A1_2",
+      "A2_2",
+      "A2_6",
+      "A3_1",
+      "A3_2",
+      "A3_3"
+    ],
+    "tasks": [],
+    "knowledge": [],
+    "parent_activity": null,
+    "parent_bc": null
+  },
+  "S5_4": {
+    "ref": "S5_4",
+    "type": "connaissance",
+    "label": "La communication numérique écrite",
+    "anchor": "s5-4",
+    "resources": [
+      "R-B1-029",
+      "R-B2-006",
+      "R-B2-028",
+      "R-B3-005",
+      "R-B3-012",
+      "R-B3-014",
+      "R-B3-026",
+      "R-B4-022",
+      "R-B4-023",
+      "R-TR-002",
+      "R-TR-006"
+    ],
+    "missions": [
+      "M01",
+      "M03",
+      "M04",
+      "M08",
+      "M17",
+      "M18",
+      "M20",
+      "M23",
+      "M27"
+    ],
+    "activities": [
+      "A1_3",
+      "A2_1",
+      "A2_5",
+      "A2_6",
+      "A3_1",
+      "A3_2",
+      "A3_3",
+      "A4_2",
+      "A4_4"
+    ],
+    "tasks": [],
+    "knowledge": [],
+    "parent_activity": null,
+    "parent_bc": null
+  },
+  "S5_5": {
+    "ref": "S5_5",
+    "type": "connaissance",
+    "label": "La communication orale interpersonnelle",
+    "anchor": "s5-5",
+    "resources": [
+      "R-B1-010",
+      "R-B1-013",
+      "R-B1-018",
+      "R-B1-029",
+      "R-B1-030",
+      "R-B2-009",
+      "R-B3-012",
+      "R-B3-016",
+      "R-B3-017",
+      "R-B3-021",
+      "R-B3-022",
+      "R-B3-025",
+      "R-TR-007"
+    ],
+    "missions": [
+      "M03",
+      "M04",
+      "M09",
+      "M18",
+      "M20",
+      "M23"
+    ],
+    "activities": [
+      "A1_2",
+      "A1_3",
+      "A1_4",
+      "A1_5",
+      "A1_6",
+      "A2_1",
+      "A2_2",
+      "A2_3",
+      "A2_5",
+      "A2_6",
+      "A3_1",
+      "A3_2",
+      "A3_3",
+      "A4_2"
+    ],
+    "tasks": [],
+    "knowledge": [],
+    "parent_activity": null,
+    "parent_bc": null
+  },
+  "S5_6": {
+    "ref": "S5_6",
+    "type": "connaissance",
+    "label": "La communication dans les groupes",
+    "anchor": "s5-6",
+    "resources": [
+      "R-B2-009",
+      "R-B2-031",
+      "R-B3-011",
+      "R-B3-026",
+      "R-B3-027",
+      "R-B4-012",
+      "R-TR-004",
+      "R-TR-008"
+    ],
+    "missions": [
+      "M09",
+      "M19",
+      "M23"
+    ],
+    "activities": [
+      "A2_2",
+      "A2_3",
+      "A2_5",
+      "A2_6",
+      "A3_1",
+      "A3_2",
+      "A3_3",
+      "A4_2"
+    ],
+    "tasks": [],
+    "knowledge": [],
+    "parent_activity": null,
+    "parent_bc": null
+  },
+  "S5_7": {
+    "ref": "S5_7",
+    "type": "connaissance",
+    "label": "La gestion des conflits",
+    "anchor": "s5-7",
+    "resources": [
+      "R-B1-014",
+      "R-B3-025",
+      "R-TR-009"
+    ],
+    "missions": [
+      "M04",
+      "M23"
+    ],
+    "activities": [
+      "A1_3",
+      "A3_3"
+    ],
+    "tasks": [],
+    "knowledge": [],
+    "parent_activity": null,
+    "parent_bc": null
+  },
+  "S5_8": {
+    "ref": "S5_8",
+    "type": "connaissance",
+    "label": "Les instruments de dialogue",
+    "anchor": "s5-8",
+    "resources": [
+      "R-B3-025",
+      "R-B3-027",
+      "R-TR-010"
+    ],
+    "missions": [
+      "M19",
+      "M23"
+    ],
+    "activities": [
+      "A3_3"
+    ],
+    "tasks": [],
+    "knowledge": [],
+    "parent_activity": null,
+    "parent_bc": null
+  },
+  "T1_1_1": {
+    "ref": "T1_1_1",
+    "type": "tache",
+    "label": "Organisation de la prospection et prospection clientèle",
+    "anchor": "t1-1-1",
+    "resources": [
+      "R-B1-001",
+      "R-B1-002"
+    ],
+    "missions": [
+      "M01"
+    ],
+    "activities": [],
+    "tasks": [],
+    "knowledge": [],
+    "parent_activity": "A1_1",
+    "parent_bc": "BC1"
+  },
+  "T1_1_2": {
+    "ref": "T1_1_2",
+    "type": "tache",
+    "label": "Détection, analyse et suivi des appels d’offres",
+    "anchor": "t1-1-2",
+    "resources": [
+      "R-B1-003",
+      "R-B1-004"
+    ],
+    "missions": [],
+    "activities": [],
+    "tasks": [],
+    "knowledge": [],
+    "parent_activity": "A1_1",
+    "parent_bc": "BC1"
+  },
+  "T1_1_3": {
+    "ref": "T1_1_3",
+    "type": "tache",
+    "label": "Communication avec des acteurs internes, avec les prospects, les clients et les pouvoirs adjudicateurs",
+    "anchor": "t1-1-3",
+    "resources": [
+      "R-B1-001",
+      "R-B1-003",
+      "R-B1-004"
+    ],
+    "missions": [
+      "M01"
+    ],
+    "activities": [],
+    "tasks": [],
+    "knowledge": [],
+    "parent_activity": "A1_1",
+    "parent_bc": "BC1"
+  },
+  "T1_2_1": {
+    "ref": "T1_2_1",
+    "type": "tache",
+    "label": "Préparation de propositions commerciales",
+    "anchor": "t1-2-1",
+    "resources": [
+      "R-B1-005"
+    ],
+    "missions": [],
+    "activities": [],
+    "tasks": [],
+    "knowledge": [],
+    "parent_activity": "A1_2",
+    "parent_bc": "BC1"
+  },
+  "T1_2_2": {
+    "ref": "T1_2_2",
+    "type": "tache",
+    "label": "Préparation des contrats commerciaux (commandes, contrats de maintenance, garanties complémentaires, contrats de sous-traitance, etc.)",
+    "anchor": "t1-2-2",
+    "resources": [
+      "R-B1-006"
+    ],
+    "missions": [
+      "M02"
+    ],
+    "activities": [],
+    "tasks": [],
+    "knowledge": [],
+    "parent_activity": "A1_2",
+    "parent_bc": "BC1"
+  },
+  "T1_2_3": {
+    "ref": "T1_2_3",
+    "type": "tache",
+    "label": "Suivi des ventes et des livraisons",
+    "anchor": "t1-2-3",
+    "resources": [
+      "R-B1-007",
+      "R-B1-030"
+    ],
+    "missions": [
+      "M02",
+      "M04"
+    ],
+    "activities": [],
+    "tasks": [],
+    "knowledge": [],
+    "parent_activity": "A1_2",
+    "parent_bc": "BC1"
+  },
+  "T1_2_4": {
+    "ref": "T1_2_4",
+    "type": "tache",
+    "label": "Facturation, suivi des règlements et des relances « clients »",
+    "anchor": "t1-2-4",
+    "resources": [
+      "R-B1-008",
+      "R-B1-009",
+      "R-B1-010",
+      "R-B1-031"
+    ],
+    "missions": [
+      "M02",
+      "M03"
+    ],
+    "activities": [],
+    "tasks": [],
+    "knowledge": [],
+    "parent_activity": "A1_2",
+    "parent_bc": "BC1"
+  },
+  "T1_2_5": {
+    "ref": "T1_2_5",
+    "type": "tache",
+    "label": "Évaluation du risque client",
+    "anchor": "t1-2-5",
+    "resources": [
+      "R-B1-010",
+      "R-B1-011"
+    ],
+    "missions": [
+      "M03"
+    ],
+    "activities": [],
+    "tasks": [],
+    "knowledge": [],
+    "parent_activity": "A1_2",
+    "parent_bc": "BC1"
+  },
+  "T1_2_6": {
+    "ref": "T1_2_6",
+    "type": "tache",
+    "label": "Mise à jour du système d’information « clients »",
+    "anchor": "t1-2-6",
+    "resources": [
+      "R-B1-009",
+      "R-B1-012"
+    ],
+    "missions": [],
+    "activities": [],
+    "tasks": [],
+    "knowledge": [],
+    "parent_activity": "A1_2",
+    "parent_bc": "BC1"
+  },
+  "T1_2_7": {
+    "ref": "T1_2_7",
+    "type": "tache",
+    "label": "Communication avec des acteurs internes, les fournisseurs et les clients",
+    "anchor": "t1-2-7",
+    "resources": [
+      "R-B1-005",
+      "R-B1-006",
+      "R-B1-007",
+      "R-B1-008",
+      "R-B1-010",
+      "R-B1-030"
+    ],
+    "missions": [
+      "M02",
+      "M03",
+      "M04"
+    ],
+    "activities": [],
+    "tasks": [],
+    "knowledge": [],
+    "parent_activity": "A1_2",
+    "parent_bc": "BC1"
+  },
+  "T1_3_1": {
+    "ref": "T1_3_1",
+    "type": "tache",
+    "label": "Accueil, information et conseils",
+    "anchor": "t1-3-1",
+    "resources": [
+      "R-B1-013"
+    ],
+    "missions": [],
+    "activities": [],
+    "tasks": [],
+    "knowledge": [],
+    "parent_activity": "A1_3",
+    "parent_bc": "BC1"
+  },
+  "T1_3_2": {
+    "ref": "T1_3_2",
+    "type": "tache",
+    "label": "Traitement et suivi des réclamations",
+    "anchor": "t1-3-2",
+    "resources": [
+      "R-B1-014"
+    ],
+    "missions": [
+      "M04"
+    ],
+    "activities": [],
+    "tasks": [],
+    "knowledge": [],
+    "parent_activity": "A1_3",
+    "parent_bc": "BC1"
+  },
+  "T1_3_3": {
+    "ref": "T1_3_3",
+    "type": "tache",
+    "label": "Communication pour développer la relation client",
+    "anchor": "t1-3-3",
+    "resources": [
+      "R-B1-013",
+      "R-B1-014",
+      "R-B1-029"
+    ],
+    "missions": [
+      "M04"
+    ],
+    "activities": [],
+    "tasks": [],
+    "knowledge": [],
+    "parent_activity": "A1_3",
+    "parent_bc": "BC1"
+  },
+  "T1_4_1": {
+    "ref": "T1_4_1",
+    "type": "tache",
+    "label": "Étude des projets d’achats et des investissements",
+    "anchor": "t1-4-1",
+    "resources": [
+      "R-B1-015"
+    ],
+    "missions": [
+      "M05"
+    ],
+    "activities": [],
+    "tasks": [],
+    "knowledge": [],
+    "parent_activity": "A1_4",
+    "parent_bc": "BC1"
+  },
+  "T1_4_2": {
+    "ref": "T1_4_2",
+    "type": "tache",
+    "label": "Recherche des fournisseurs",
+    "anchor": "t1-4-2",
+    "resources": [
+      "R-B1-016"
+    ],
+    "missions": [
+      "M05"
+    ],
+    "activities": [],
+    "tasks": [],
+    "knowledge": [],
+    "parent_activity": "A1_4",
+    "parent_bc": "BC1"
+  },
+  "T1_4_3": {
+    "ref": "T1_4_3",
+    "type": "tache",
+    "label": "Comparaison des offres, sélection et qualification des fournisseurs",
+    "anchor": "t1-4-3",
+    "resources": [
+      "R-B1-017"
+    ],
+    "missions": [
+      "M05"
+    ],
+    "activities": [],
+    "tasks": [],
+    "knowledge": [],
+    "parent_activity": "A1_4",
+    "parent_bc": "BC1"
+  },
+  "T1_4_4": {
+    "ref": "T1_4_4",
+    "type": "tache",
+    "label": "Mise à jour du système d’information fournisseurs",
+    "anchor": "t1-4-4",
+    "resources": [
+      "R-B1-016",
+      "R-B1-032"
+    ],
+    "missions": [
+      "M05"
+    ],
+    "activities": [],
+    "tasks": [],
+    "knowledge": [],
+    "parent_activity": "A1_4",
+    "parent_bc": "BC1"
+  },
+  "T1_4_5": {
+    "ref": "T1_4_5",
+    "type": "tache",
+    "label": "Communication avec des acteurs internes et avec les fournisseurs",
+    "anchor": "t1-4-5",
+    "resources": [
+      "R-B1-015",
+      "R-B1-016",
+      "R-B1-017"
+    ],
+    "missions": [
+      "M05"
+    ],
+    "activities": [],
+    "tasks": [],
+    "knowledge": [],
+    "parent_activity": "A1_4",
+    "parent_bc": "BC1"
+  },
+  "T1_5_1": {
+    "ref": "T1_5_1",
+    "type": "tache",
+    "label": "Préparation de la négociation des contrats",
+    "anchor": "t1-5-1",
+    "resources": [
+      "R-B1-018"
+    ],
+    "missions": [],
+    "activities": [],
+    "tasks": [],
+    "knowledge": [],
+    "parent_activity": "A1_5",
+    "parent_bc": "BC1"
+  },
+  "T1_5_2": {
+    "ref": "T1_5_2",
+    "type": "tache",
+    "label": "Passation et suivi des commandes",
+    "anchor": "t1-5-2",
+    "resources": [
+      "R-B1-019",
+      "R-B1-021"
+    ],
+    "missions": [
+      "M06"
+    ],
+    "activities": [],
+    "tasks": [],
+    "knowledge": [],
+    "parent_activity": "A1_5",
+    "parent_bc": "BC1"
+  },
+  "T1_5_3": {
+    "ref": "T1_5_3",
+    "type": "tache",
+    "label": "Acquisition et suivi des immobilisations",
+    "anchor": "t1-5-3",
+    "resources": [
+      "R-B1-022"
+    ],
+    "missions": [],
+    "activities": [],
+    "tasks": [],
+    "knowledge": [],
+    "parent_activity": "A1_5",
+    "parent_bc": "BC1"
+  },
+  "T1_5_4": {
+    "ref": "T1_5_4",
+    "type": "tache",
+    "label": "Contrôle des achats et des règlements",
+    "anchor": "t1-5-4",
+    "resources": [
+      "R-B1-020",
+      "R-B1-021",
+      "R-B1-022"
+    ],
+    "missions": [
+      "M06"
+    ],
+    "activities": [],
+    "tasks": [],
+    "knowledge": [],
+    "parent_activity": "A1_5",
+    "parent_bc": "BC1"
+  },
+  "T1_5_5": {
+    "ref": "T1_5_5",
+    "type": "tache",
+    "label": "Évaluation des fournisseurs",
+    "anchor": "t1-5-5",
+    "resources": [
+      "R-B1-023"
+    ],
+    "missions": [],
+    "activities": [],
+    "tasks": [],
+    "knowledge": [],
+    "parent_activity": "A1_5",
+    "parent_bc": "BC1"
+  },
+  "T1_5_6": {
+    "ref": "T1_5_6",
+    "type": "tache",
+    "label": "Communication écrite et orale avec des acteurs internes, les fournisseurs et les partenaires",
+    "anchor": "t1-5-6",
+    "resources": [
+      "R-B1-018",
+      "R-B1-019",
+      "R-B1-020",
+      "R-B1-023"
+    ],
+    "missions": [
+      "M06"
+    ],
+    "activities": [],
+    "tasks": [],
+    "knowledge": [],
+    "parent_activity": "A1_5",
+    "parent_bc": "BC1"
+  },
+  "T1_6_1": {
+    "ref": "T1_6_1",
+    "type": "tache",
+    "label": "Contrôle de l’enregistrement comptable des opérations d’achats, d’investissement, de ventes et de règlements",
+    "anchor": "t1-6-1",
+    "resources": [
+      "R-B1-024"
+    ],
+    "missions": [
+      "M07"
+    ],
+    "activities": [],
+    "tasks": [],
+    "knowledge": [],
+    "parent_activity": "A1_6",
+    "parent_bc": "BC1"
+  },
+  "T1_6_2": {
+    "ref": "T1_6_2",
+    "type": "tache",
+    "label": "Suivi des relations avec les banques",
+    "anchor": "t1-6-2",
+    "resources": [
+      "R-B1-025"
+    ],
+    "missions": [
+      "M07"
+    ],
+    "activities": [],
+    "tasks": [],
+    "knowledge": [],
+    "parent_activity": "A1_6",
+    "parent_bc": "BC1"
+  },
+  "T1_6_3": {
+    "ref": "T1_6_3",
+    "type": "tache",
+    "label": "Suivi des comptes de trésorerie, des comptes de tiers, des encaissements et des décaissements",
+    "anchor": "t1-6-3",
+    "resources": [
+      "R-B1-025",
+      "R-B1-026"
+    ],
+    "missions": [
+      "M03",
+      "M07"
+    ],
+    "activities": [],
+    "tasks": [],
+    "knowledge": [],
+    "parent_activity": "A1_6",
+    "parent_bc": "BC1"
+  },
+  "T1_6_4": {
+    "ref": "T1_6_4",
+    "type": "tache",
+    "label": "Préparation et contrôle de la déclaration de TVA",
+    "anchor": "t1-6-4",
+    "resources": [
+      "R-B1-027"
+    ],
+    "missions": [],
+    "activities": [],
+    "tasks": [],
+    "knowledge": [],
+    "parent_activity": "A1_6",
+    "parent_bc": "BC1"
+  },
+  "T1_6_5": {
+    "ref": "T1_6_5",
+    "type": "tache",
+    "label": "Évaluation et suivi des risques liés aux échanges internationaux",
+    "anchor": "t1-6-5",
+    "resources": [
+      "R-B1-028"
+    ],
+    "missions": [],
+    "activities": [],
+    "tasks": [],
+    "knowledge": [],
+    "parent_activity": "A1_6",
+    "parent_bc": "BC1"
+  },
+  "T2_1_1": {
+    "ref": "T2_1_1",
+    "type": "tache",
+    "label": "Mise en place d’une veille",
+    "anchor": "t2-1-1",
+    "resources": [
+      "R-B2-004"
+    ],
+    "missions": [],
+    "activities": [],
+    "tasks": [],
+    "knowledge": [],
+    "parent_activity": "A2_1",
+    "parent_bc": "BC2"
+  },
+  "T2_1_2": {
+    "ref": "T2_1_2",
+    "type": "tache",
+    "label": "Qualification de l’information",
+    "anchor": "t2-1-2",
+    "resources": [
+      "R-B2-004",
+      "R-B2-005"
+    ],
+    "missions": [
+      "M08"
+    ],
+    "activities": [],
+    "tasks": [],
+    "knowledge": [],
+    "parent_activity": "A2_1",
+    "parent_bc": "BC2"
+  },
+  "T2_1_3": {
+    "ref": "T2_1_3",
+    "type": "tache",
+    "label": "Mise en évidence de risques éventuels",
+    "anchor": "t2-1-3",
+    "resources": [
+      "R-B2-006"
+    ],
+    "missions": [
+      "M08"
+    ],
+    "activities": [],
+    "tasks": [],
+    "knowledge": [],
+    "parent_activity": "A2_1",
+    "parent_bc": "BC2"
+  },
+  "T2_1_4": {
+    "ref": "T2_1_4",
+    "type": "tache",
+    "label": "Alerte des responsables de la PME",
+    "anchor": "t2-1-4",
+    "resources": [
+      "R-B2-006"
+    ],
+    "missions": [
+      "M08"
+    ],
+    "activities": [],
+    "tasks": [],
+    "knowledge": [],
+    "parent_activity": "A2_1",
+    "parent_bc": "BC2"
+  },
+  "T2_1_5": {
+    "ref": "T2_1_5",
+    "type": "tache",
+    "label": "Synthèse et diffusion de l’information",
+    "anchor": "t2-1-5",
+    "resources": [
+      "R-B2-006"
+    ],
+    "missions": [
+      "M08"
+    ],
+    "activities": [],
+    "tasks": [],
+    "knowledge": [],
+    "parent_activity": "A2_1",
+    "parent_bc": "BC2"
+  },
+  "T2_1_6": {
+    "ref": "T2_1_6",
+    "type": "tache",
+    "label": "Mise à jour des pratiques et des procédures",
+    "anchor": "t2-1-6",
+    "resources": [
+      "R-B2-006",
+      "R-B2-028"
+    ],
+    "missions": [
+      "M08"
+    ],
+    "activities": [],
+    "tasks": [],
+    "knowledge": [],
+    "parent_activity": "A2_1",
+    "parent_bc": "BC2"
+  },
+  "T2_2_1": {
+    "ref": "T2_2_1",
+    "type": "tache",
+    "label": "Identification du besoin en termes d’organisation",
+    "anchor": "t2-2-1",
+    "resources": [
+      "R-B2-007"
+    ],
+    "missions": [
+      "M09"
+    ],
+    "activities": [],
+    "tasks": [],
+    "knowledge": [],
+    "parent_activity": "A2_2",
+    "parent_bc": "BC2"
+  },
+  "T2_2_2": {
+    "ref": "T2_2_2",
+    "type": "tache",
+    "label": "Conduite d’une analyse fonctionnelle interne et externe",
+    "anchor": "t2-2-2",
+    "resources": [
+      "R-B2-007"
+    ],
+    "missions": [
+      "M09"
+    ],
+    "activities": [],
+    "tasks": [],
+    "knowledge": [],
+    "parent_activity": "A2_2",
+    "parent_bc": "BC2"
+  },
+  "T2_2_3": {
+    "ref": "T2_2_3",
+    "type": "tache",
+    "label": "Élaboration du cahier des charges et planification des tâches à réaliser",
+    "anchor": "t2-2-3",
+    "resources": [
+      "R-B2-008"
+    ],
+    "missions": [
+      "M09"
+    ],
+    "activities": [],
+    "tasks": [],
+    "knowledge": [],
+    "parent_activity": "A2_2",
+    "parent_bc": "BC2"
+  },
+  "T2_2_4": {
+    "ref": "T2_2_4",
+    "type": "tache",
+    "label": "Organisation et conduite de réunions avec les acteurs du projet",
+    "anchor": "t2-2-4",
+    "resources": [
+      "R-B2-009"
+    ],
+    "missions": [
+      "M09"
+    ],
+    "activities": [],
+    "tasks": [],
+    "knowledge": [],
+    "parent_activity": "A2_2",
+    "parent_bc": "BC2"
+  },
+  "T2_2_5": {
+    "ref": "T2_2_5",
+    "type": "tache",
+    "label": "Suivi du projet",
+    "anchor": "t2-2-5",
+    "resources": [
+      "R-B2-010"
+    ],
+    "missions": [
+      "M09"
+    ],
+    "activities": [],
+    "tasks": [],
+    "knowledge": [],
+    "parent_activity": "A2_2",
+    "parent_bc": "BC2"
+  },
+  "T2_3_1": {
+    "ref": "T2_3_1",
+    "type": "tache",
+    "label": "Identification des risques",
+    "anchor": "t2-3-1",
+    "resources": [
+      "R-B2-001",
+      "R-B2-011"
+    ],
+    "missions": [
+      "M10",
+      "M12"
+    ],
+    "activities": [],
+    "tasks": [],
+    "knowledge": [],
+    "parent_activity": "A2_3",
+    "parent_bc": "BC2"
+  },
+  "T2_3_2": {
+    "ref": "T2_3_2",
+    "type": "tache",
+    "label": "Conduite d’une veille relative à la réglementation et à la certification",
+    "anchor": "t2-3-2",
+    "resources": [
+      "R-B2-003",
+      "R-B2-012"
+    ],
+    "missions": [
+      "M12"
+    ],
+    "activities": [],
+    "tasks": [],
+    "knowledge": [],
+    "parent_activity": "A2_3",
+    "parent_bc": "BC2"
+  },
+  "T2_3_3": {
+    "ref": "T2_3_3",
+    "type": "tache",
+    "label": "Identification des obligations légales",
+    "anchor": "t2-3-3",
+    "resources": [
+      "R-B2-003",
+      "R-B2-012"
+    ],
+    "missions": [
+      "M12"
+    ],
+    "activities": [],
+    "tasks": [],
+    "knowledge": [],
+    "parent_activity": "A2_3",
+    "parent_bc": "BC2"
+  },
+  "T2_3_4": {
+    "ref": "T2_3_4",
+    "type": "tache",
+    "label": "Analyse, évaluation des risques et alerte éventuelle des dirigeants de la PME",
+    "anchor": "t2-3-4",
+    "resources": [
+      "R-B2-001",
+      "R-B2-002",
+      "R-B2-003"
+    ],
+    "missions": [
+      "M10",
+      "M12"
+    ],
+    "activities": [],
+    "tasks": [],
+    "knowledge": [],
+    "parent_activity": "A2_3",
+    "parent_bc": "BC2"
+  },
+  "T2_3_5": {
+    "ref": "T2_3_5",
+    "type": "tache",
+    "label": "Proposition d’actions correctrices",
+    "anchor": "t2-3-5",
+    "resources": [
+      "R-B2-001",
+      "R-B2-003",
+      "R-B2-013"
+    ],
+    "missions": [
+      "M10",
+      "M12"
+    ],
+    "activities": [],
+    "tasks": [],
+    "knowledge": [],
+    "parent_activity": "A2_3",
+    "parent_bc": "BC2"
+  },
+  "T2_3_6": {
+    "ref": "T2_3_6",
+    "type": "tache",
+    "label": "Mise en œuvre, diffusion et suivi des actions validées",
+    "anchor": "t2-3-6",
+    "resources": [
+      "R-B2-013",
+      "R-B2-029"
+    ],
+    "missions": [
+      "M10",
+      "M12",
+      "M16"
+    ],
+    "activities": [],
+    "tasks": [],
+    "knowledge": [],
+    "parent_activity": "A2_3",
+    "parent_bc": "BC2"
+  },
+  "T2_4_1": {
+    "ref": "T2_4_1",
+    "type": "tache",
+    "label": "Identification des échéances à court et moyen terme",
+    "anchor": "t2-4-1",
+    "resources": [
+      "R-B2-014"
+    ],
+    "missions": [
+      "M11"
+    ],
+    "activities": [],
+    "tasks": [],
+    "knowledge": [],
+    "parent_activity": "A2_4",
+    "parent_bc": "BC2"
+  },
+  "T2_4_2": {
+    "ref": "T2_4_2",
+    "type": "tache",
+    "label": "Suivi des flux de trésorerie",
+    "anchor": "t2-4-2",
+    "resources": [
+      "R-B2-014"
+    ],
+    "missions": [
+      "M11"
+    ],
+    "activities": [],
+    "tasks": [],
+    "knowledge": [],
+    "parent_activity": "A2_4",
+    "parent_bc": "BC2"
+  },
+  "T2_4_3": {
+    "ref": "T2_4_3",
+    "type": "tache",
+    "label": "Évaluation des risques financiers à court et moyen terme",
+    "anchor": "t2-4-3",
+    "resources": [
+      "R-B2-015"
+    ],
+    "missions": [
+      "M11"
+    ],
+    "activities": [],
+    "tasks": [],
+    "knowledge": [],
+    "parent_activity": "A2_4",
+    "parent_bc": "BC2"
+  },
+  "T2_4_4": {
+    "ref": "T2_4_4",
+    "type": "tache",
+    "label": "Alerte des responsables de la PME",
+    "anchor": "t2-4-4",
+    "resources": [
+      "R-B2-015"
+    ],
+    "missions": [
+      "M11"
+    ],
+    "activities": [],
+    "tasks": [],
+    "knowledge": [],
+    "parent_activity": "A2_4",
+    "parent_bc": "BC2"
+  },
+  "T2_4_5": {
+    "ref": "T2_4_5",
+    "type": "tache",
+    "label": "Proposition de solutions",
+    "anchor": "t2-4-5",
+    "resources": [
+      "R-B2-015"
+    ],
+    "missions": [
+      "M11"
+    ],
+    "activities": [],
+    "tasks": [],
+    "knowledge": [],
+    "parent_activity": "A2_4",
+    "parent_bc": "BC2"
+  },
+  "T2_4_6": {
+    "ref": "T2_4_6",
+    "type": "tache",
+    "label": "Mise en œuvre et suivi des actions validées",
+    "anchor": "t2-4-6",
+    "resources": [
+      "R-B2-015"
+    ],
+    "missions": [
+      "M11"
+    ],
+    "activities": [],
+    "tasks": [],
+    "knowledge": [],
+    "parent_activity": "A2_4",
+    "parent_bc": "BC2"
+  },
+  "T2_5_1": {
+    "ref": "T2_5_1",
+    "type": "tache",
+    "label": "Gestion des risques liés à la santé, à l’hygiène et à la sécurité au travail",
+    "anchor": "t2-5-1",
+    "resources": [
+      "R-B2-003"
+    ],
+    "missions": [
+      "M12"
+    ],
+    "activities": [],
+    "tasks": [],
+    "knowledge": [],
+    "parent_activity": "A2_5",
+    "parent_bc": "BC2"
+  },
+  "T2_5_2": {
+    "ref": "T2_5_2",
+    "type": "tache",
+    "label": "Gestion des risques liés à la protection des personnes, des biens et des droits",
+    "anchor": "t2-5-2",
+    "resources": [
+      "R-B2-016",
+      "R-B2-017",
+      "R-B2-030"
+    ],
+    "missions": [
+      "M13"
+    ],
+    "activities": [],
+    "tasks": [],
+    "knowledge": [],
+    "parent_activity": "A2_5",
+    "parent_bc": "BC2"
+  },
+  "T2_5_3": {
+    "ref": "T2_5_3",
+    "type": "tache",
+    "label": "Gestion des risques environnementaux",
+    "anchor": "t2-5-3",
+    "resources": [
+      "R-B2-020"
+    ],
+    "missions": [
+      "M14"
+    ],
+    "activities": [],
+    "tasks": [],
+    "knowledge": [],
+    "parent_activity": "A2_5",
+    "parent_bc": "BC2"
+  },
+  "T2_5_4": {
+    "ref": "T2_5_4",
+    "type": "tache",
+    "label": "Gestion des risques informatiques et des risques liés aux données",
+    "anchor": "t2-5-4",
+    "resources": [
+      "R-B2-018",
+      "R-B2-019",
+      "R-B2-021",
+      "R-B2-022",
+      "R-B2-023"
+    ],
+    "missions": [
+      "M15"
+    ],
+    "activities": [],
+    "tasks": [],
+    "knowledge": [],
+    "parent_activity": "A2_5",
+    "parent_bc": "BC2"
+  },
+  "T2_6_1": {
+    "ref": "T2_6_1",
+    "type": "tache",
+    "label": "Analyse de l’existant",
+    "anchor": "t2-6-1",
+    "resources": [
+      "R-B2-024"
+    ],
+    "missions": [
+      "M16"
+    ],
+    "activities": [],
+    "tasks": [],
+    "knowledge": [],
+    "parent_activity": "A2_6",
+    "parent_bc": "BC2"
+  },
+  "T2_6_2": {
+    "ref": "T2_6_2",
+    "type": "tache",
+    "label": "Formalisation, diffusion, contrôle et amélioration des procédures",
+    "anchor": "t2-6-2",
+    "resources": [
+      "R-B2-024",
+      "R-B2-025"
+    ],
+    "missions": [
+      "M16"
+    ],
+    "activities": [],
+    "tasks": [],
+    "knowledge": [],
+    "parent_activity": "A2_6",
+    "parent_bc": "BC2"
+  },
+  "T2_6_3": {
+    "ref": "T2_6_3",
+    "type": "tache",
+    "label": "Participation à la mise en place de procédures de gestion des connaissances",
+    "anchor": "t2-6-3",
+    "resources": [
+      "R-B2-026"
+    ],
+    "missions": [],
+    "activities": [],
+    "tasks": [],
+    "knowledge": [],
+    "parent_activity": "A2_6",
+    "parent_bc": "BC2"
+  },
+  "T2_6_4": {
+    "ref": "T2_6_4",
+    "type": "tache",
+    "label": "Veille sur la certification",
+    "anchor": "t2-6-4",
+    "resources": [
+      "R-B2-027"
+    ],
+    "missions": [],
+    "activities": [],
+    "tasks": [],
+    "knowledge": [],
+    "parent_activity": "A2_6",
+    "parent_bc": "BC2"
+  },
+  "T2_6_5": {
+    "ref": "T2_6_5",
+    "type": "tache",
+    "label": "Mise en œuvre et suivi de la démarche de certification",
+    "anchor": "t2-6-5",
+    "resources": [
+      "R-B2-027",
+      "R-B2-031"
+    ],
+    "missions": [],
+    "activities": [],
+    "tasks": [],
+    "knowledge": [],
+    "parent_activity": "A2_6",
+    "parent_bc": "BC2"
+  },
+  "T3_1_1": {
+    "ref": "T3_1_1",
+    "type": "tache",
+    "label": "Suivi des formalités et procédures d’embauche et de départ",
+    "anchor": "t3-1-1",
+    "resources": [
+      "R-B3-002",
+      "R-B3-003",
+      "R-B3-004"
+    ],
+    "missions": [
+      "M17"
+    ],
+    "activities": [],
+    "tasks": [],
+    "knowledge": [],
+    "parent_activity": "A3_1",
+    "parent_bc": "BC3"
+  },
+  "T3_1_2": {
+    "ref": "T3_1_2",
+    "type": "tache",
+    "label": "Organisation et suivi des dossiers du personnel",
+    "anchor": "t3-1-2",
+    "resources": [
+      "R-B3-002",
+      "R-B3-004",
+      "R-B3-005"
+    ],
+    "missions": [
+      "M17"
+    ],
+    "activities": [],
+    "tasks": [],
+    "knowledge": [],
+    "parent_activity": "A3_1",
+    "parent_bc": "BC3"
+  },
+  "T3_1_3": {
+    "ref": "T3_1_3",
+    "type": "tache",
+    "label": "Gestion du temps de travail, des absences et des congés",
+    "anchor": "t3-1-3",
+    "resources": [
+      "R-B3-006",
+      "R-B3-007",
+      "R-B3-008"
+    ],
+    "missions": [
+      "M18"
+    ],
+    "activities": [],
+    "tasks": [],
+    "knowledge": [],
+    "parent_activity": "A3_1",
+    "parent_bc": "BC3"
+  },
+  "T3_1_4": {
+    "ref": "T3_1_4",
+    "type": "tache",
+    "label": "Préparation et contrôle des éléments de la paie",
+    "anchor": "t3-1-4",
+    "resources": [
+      "R-B3-006",
+      "R-B3-007",
+      "R-B3-008",
+      "R-B3-009",
+      "R-B3-010"
+    ],
+    "missions": [
+      "M18"
+    ],
+    "activities": [],
+    "tasks": [],
+    "knowledge": [],
+    "parent_activity": "A3_1",
+    "parent_bc": "BC3"
+  },
+  "T3_1_5": {
+    "ref": "T3_1_5",
+    "type": "tache",
+    "label": "Réalisation des déclarations sociales",
+    "anchor": "t3-1-5",
+    "resources": [
+      "R-B3-004",
+      "R-B3-010"
+    ],
+    "missions": [],
+    "activities": [],
+    "tasks": [],
+    "knowledge": [],
+    "parent_activity": "A3_1",
+    "parent_bc": "BC3"
+  },
+  "T3_1_6": {
+    "ref": "T3_1_6",
+    "type": "tache",
+    "label": "Mise en place des modalités de représentation du personnel et de négociation au sein de l’entreprise",
+    "anchor": "t3-1-6",
+    "resources": [
+      "R-B3-011",
+      "R-B3-027"
+    ],
+    "missions": [
+      "M19"
+    ],
+    "activities": [],
+    "tasks": [],
+    "knowledge": [],
+    "parent_activity": "A3_1",
+    "parent_bc": "BC3"
+  },
+  "T3_1_7": {
+    "ref": "T3_1_7",
+    "type": "tache",
+    "label": "Communication avec la direction, les salariés, les instances représentatives du personnel de la PME, les spécialistes de gestion du personnel et l’administration",
+    "anchor": "t3-1-7",
+    "resources": [
+      "R-B3-001",
+      "R-B3-002",
+      "R-B3-004",
+      "R-B3-005",
+      "R-B3-007",
+      "R-B3-008",
+      "R-B3-009",
+      "R-B3-010",
+      "R-B3-011",
+      "R-B3-012",
+      "R-B3-027"
+    ],
+    "missions": [
+      "M17",
+      "M18",
+      "M19"
+    ],
+    "activities": [],
+    "tasks": [],
+    "knowledge": [],
+    "parent_activity": "A3_1",
+    "parent_bc": "BC3"
+  },
+  "T3_2_1": {
+    "ref": "T3_2_1",
+    "type": "tache",
+    "label": "Aide au recrutement",
+    "anchor": "t3-2-1",
+    "resources": [
+      "R-B3-013",
+      "R-B3-014",
+      "R-B3-015",
+      "R-B3-016",
+      "R-B3-028"
+    ],
+    "missions": [
+      "M20",
+      "M21"
+    ],
+    "activities": [],
+    "tasks": [],
+    "knowledge": [],
+    "parent_activity": "A3_2",
+    "parent_bc": "BC3"
+  },
+  "T3_2_2": {
+    "ref": "T3_2_2",
+    "type": "tache",
+    "label": "Intégration des nouveaux membres",
+    "anchor": "t3-2-2",
+    "resources": [
+      "R-B3-017"
+    ],
+    "missions": [],
+    "activities": [],
+    "tasks": [],
+    "knowledge": [],
+    "parent_activity": "A3_2",
+    "parent_bc": "BC3"
+  },
+  "T3_2_3": {
+    "ref": "T3_2_3",
+    "type": "tache",
+    "label": "Préparation et suivi des actions de formation",
+    "anchor": "t3-2-3",
+    "resources": [
+      "R-B3-018",
+      "R-B3-019",
+      "R-B3-020",
+      "R-B3-022",
+      "R-B3-028"
+    ],
+    "missions": [
+      "M21"
+    ],
+    "activities": [],
+    "tasks": [],
+    "knowledge": [],
+    "parent_activity": "A3_2",
+    "parent_bc": "BC3"
+  },
+  "T3_2_4": {
+    "ref": "T3_2_4",
+    "type": "tache",
+    "label": "Préparation et mise en place de l’évaluation des personnels",
+    "anchor": "t3-2-4",
+    "resources": [
+      "R-B3-021"
+    ],
+    "missions": [],
+    "activities": [],
+    "tasks": [],
+    "knowledge": [],
+    "parent_activity": "A3_2",
+    "parent_bc": "BC3"
+  },
+  "T3_2_5": {
+    "ref": "T3_2_5",
+    "type": "tache",
+    "label": "Préparation et suivi de tableaux de bord sociaux",
+    "anchor": "t3-2-5",
+    "resources": [
+      "R-B3-018",
+      "R-B3-023",
+      "R-B3-024",
+      "R-B3-028"
+    ],
+    "missions": [
+      "M21",
+      "M22"
+    ],
+    "activities": [],
+    "tasks": [],
+    "knowledge": [],
+    "parent_activity": "A3_2",
+    "parent_bc": "BC3"
+  },
+  "T3_2_6": {
+    "ref": "T3_2_6",
+    "type": "tache",
+    "label": "Communication avec la direction et les salariés de la PME, les organismes de formation, les organismes paritaires collecteurs, les prestataires externes du recrutement",
+    "anchor": "t3-2-6",
+    "resources": [
+      "R-B3-014",
+      "R-B3-016",
+      "R-B3-017",
+      "R-B3-018",
+      "R-B3-019",
+      "R-B3-020",
+      "R-B3-021",
+      "R-B3-022",
+      "R-B3-023",
+      "R-B3-024"
+    ],
+    "missions": [
+      "M20",
+      "M21",
+      "M22"
+    ],
+    "activities": [],
+    "tasks": [],
+    "knowledge": [],
+    "parent_activity": "A3_2",
+    "parent_bc": "BC3"
+  },
+  "T3_3_1": {
+    "ref": "T3_3_1",
+    "type": "tache",
+    "label": "Contribution à la qualité des relations interpersonnelles",
+    "anchor": "t3-3-1",
+    "resources": [
+      "R-B3-025"
+    ],
+    "missions": [
+      "M23"
+    ],
+    "activities": [],
+    "tasks": [],
+    "knowledge": [],
+    "parent_activity": "A3_3",
+    "parent_bc": "BC3"
+  },
+  "T3_3_2": {
+    "ref": "T3_3_2",
+    "type": "tache",
+    "label": "Contribution à la mise en place d’un travail collaboratif",
+    "anchor": "t3-3-2",
+    "resources": [
+      "R-B3-026"
+    ],
+    "missions": [
+      "M23"
+    ],
+    "activities": [],
+    "tasks": [],
+    "knowledge": [],
+    "parent_activity": "A3_3",
+    "parent_bc": "BC3"
+  },
+  "T4_1_1": {
+    "ref": "T4_1_1",
+    "type": "tache",
+    "label": "Caractérisation du système d’information",
+    "anchor": "t4-1-1",
+    "resources": [
+      "R-B4-001",
+      "R-B4-002"
+    ],
+    "missions": [
+      "M24"
+    ],
+    "activities": [],
+    "tasks": [],
+    "knowledge": [],
+    "parent_activity": "A4_1",
+    "parent_bc": "BC4"
+  },
+  "T4_1_2": {
+    "ref": "T4_1_2",
+    "type": "tache",
+    "label": "Évaluation des besoins d’information",
+    "anchor": "t4-1-2",
+    "resources": [
+      "R-B4-003"
+    ],
+    "missions": [],
+    "activities": [],
+    "tasks": [],
+    "knowledge": [],
+    "parent_activity": "A4_1",
+    "parent_bc": "BC4"
+  },
+  "T4_1_3": {
+    "ref": "T4_1_3",
+    "type": "tache",
+    "label": "Collecte et contrôle des informations",
+    "anchor": "t4-1-3",
+    "resources": [
+      "R-B4-003",
+      "R-B4-004"
+    ],
+    "missions": [],
+    "activities": [],
+    "tasks": [],
+    "knowledge": [],
+    "parent_activity": "A4_1",
+    "parent_bc": "BC4"
+  },
+  "T4_1_4": {
+    "ref": "T4_1_4",
+    "type": "tache",
+    "label": "Structuration des informations et des flux d’information",
+    "anchor": "t4-1-4",
+    "resources": [
+      "R-B4-002",
+      "R-B4-004"
+    ],
+    "missions": [
+      "M24"
+    ],
+    "activities": [],
+    "tasks": [],
+    "knowledge": [],
+    "parent_activity": "A4_1",
+    "parent_bc": "BC4"
+  },
+  "T4_1_5": {
+    "ref": "T4_1_5",
+    "type": "tache",
+    "label": "Classement et archivage des documents",
+    "anchor": "t4-1-5",
+    "resources": [
+      "R-B4-005"
+    ],
+    "missions": [
+      "M24"
+    ],
+    "activities": [],
+    "tasks": [],
+    "knowledge": [],
+    "parent_activity": "A4_1",
+    "parent_bc": "BC4"
+  },
+  "T4_1_6": {
+    "ref": "T4_1_6",
+    "type": "tache",
+    "label": "Participation à l’évolution du système d’information",
+    "anchor": "t4-1-6",
+    "resources": [
+      "R-B4-006"
+    ],
+    "missions": [
+      "M24"
+    ],
+    "activities": [],
+    "tasks": [],
+    "knowledge": [],
+    "parent_activity": "A4_1",
+    "parent_bc": "BC4"
+  },
+  "T4_2_1": {
+    "ref": "T4_2_1",
+    "type": "tache",
+    "label": "Contribution à l’évolution des processus « supports »",
+    "anchor": "t4-2-1",
+    "resources": [
+      "R-B4-007",
+      "R-B4-038"
+    ],
+    "missions": [],
+    "activities": [],
+    "tasks": [],
+    "knowledge": [],
+    "parent_activity": "A4_2",
+    "parent_bc": "BC4"
+  },
+  "T4_2_2": {
+    "ref": "T4_2_2",
+    "type": "tache",
+    "label": "Amélioration et suivi de l’organisation du travail administratif",
+    "anchor": "t4-2-2",
+    "resources": [
+      "R-B4-008",
+      "R-B4-010",
+      "R-B4-038"
+    ],
+    "missions": [
+      "M25"
+    ],
+    "activities": [],
+    "tasks": [],
+    "knowledge": [],
+    "parent_activity": "A4_2",
+    "parent_bc": "BC4"
+  },
+  "T4_2_3": {
+    "ref": "T4_2_3",
+    "type": "tache",
+    "label": "Planification des activités et des prestations (chantiers, interventions, etc.)",
+    "anchor": "t4-2-3",
+    "resources": [
+      "R-B4-009",
+      "R-B4-010"
+    ],
+    "missions": [
+      "M25"
+    ],
+    "activities": [],
+    "tasks": [],
+    "knowledge": [],
+    "parent_activity": "A4_2",
+    "parent_bc": "BC4"
+  },
+  "T4_2_4": {
+    "ref": "T4_2_4",
+    "type": "tache",
+    "label": "Organisation des déplacements",
+    "anchor": "t4-2-4",
+    "resources": [
+      "R-B4-011",
+      "R-B4-013"
+    ],
+    "missions": [],
+    "activities": [],
+    "tasks": [],
+    "knowledge": [],
+    "parent_activity": "A4_2",
+    "parent_bc": "BC4"
+  },
+  "T4_2_5": {
+    "ref": "T4_2_5",
+    "type": "tache",
+    "label": "Organisation d’événements internes, participation à des événements externes",
+    "anchor": "t4-2-5",
+    "resources": [
+      "R-B4-012",
+      "R-B4-013"
+    ],
+    "missions": [],
+    "activities": [],
+    "tasks": [],
+    "knowledge": [],
+    "parent_activity": "A4_2",
+    "parent_bc": "BC4"
+  },
+  "T4_2_6": {
+    "ref": "T4_2_6",
+    "type": "tache",
+    "label": "Communication avec des acteurs internes et des prestataires pour organiser les activités de la PME",
+    "anchor": "t4-2-6",
+    "resources": [
+      "R-B4-011",
+      "R-B4-012",
+      "R-B4-013"
+    ],
+    "missions": [],
+    "activities": [],
+    "tasks": [],
+    "knowledge": [],
+    "parent_activity": "A4_2",
+    "parent_bc": "BC4"
+  },
+  "T4_3_1": {
+    "ref": "T4_3_1",
+    "type": "tache",
+    "label": "Veille commerciale et suivi de l’évolution du marché de l’entreprise",
+    "anchor": "t4-3-1",
+    "resources": [
+      "R-B4-014"
+    ],
+    "missions": [
+      "M26"
+    ],
+    "activities": [],
+    "tasks": [],
+    "knowledge": [],
+    "parent_activity": "A4_3",
+    "parent_bc": "BC4"
+  },
+  "T4_3_2": {
+    "ref": "T4_3_2",
+    "type": "tache",
+    "label": "Analyse des tendances du marché",
+    "anchor": "t4-3-2",
+    "resources": [
+      "R-B4-015",
+      "R-B4-016",
+      "R-B4-017"
+    ],
+    "missions": [
+      "M26"
+    ],
+    "activities": [],
+    "tasks": [],
+    "knowledge": [],
+    "parent_activity": "A4_3",
+    "parent_bc": "BC4"
+  },
+  "T4_3_3": {
+    "ref": "T4_3_3",
+    "type": "tache",
+    "label": "Fidélisation de la clientèle",
+    "anchor": "t4-3-3",
+    "resources": [
+      "R-B4-016",
+      "R-B4-018"
+    ],
+    "missions": [
+      "M26"
+    ],
+    "activities": [],
+    "tasks": [],
+    "knowledge": [],
+    "parent_activity": "A4_3",
+    "parent_bc": "BC4"
+  },
+  "T4_4_1": {
+    "ref": "T4_4_1",
+    "type": "tache",
+    "label": "Contribution à la communication institutionnelle",
+    "anchor": "t4-4-1",
+    "resources": [
+      "R-B4-019",
+      "R-B4-020",
+      "R-B4-024",
+      "R-B4-039"
+    ],
+    "missions": [
+      "M27"
+    ],
+    "activities": [],
+    "tasks": [],
+    "knowledge": [],
+    "parent_activity": "A4_4",
+    "parent_bc": "BC4"
+  },
+  "T4_4_2": {
+    "ref": "T4_4_2",
+    "type": "tache",
+    "label": "Contribution à la communication commerciale",
+    "anchor": "t4-4-2",
+    "resources": [
+      "R-B4-019",
+      "R-B4-021",
+      "R-B4-024",
+      "R-B4-039"
+    ],
+    "missions": [
+      "M27"
+    ],
+    "activities": [],
+    "tasks": [],
+    "knowledge": [],
+    "parent_activity": "A4_4",
+    "parent_bc": "BC4"
+  },
+  "T4_4_3": {
+    "ref": "T4_4_3",
+    "type": "tache",
+    "label": "Suivi de l’identité numérique",
+    "anchor": "t4-4-3",
+    "resources": [
+      "R-B4-022"
+    ],
+    "missions": [],
+    "activities": [],
+    "tasks": [],
+    "knowledge": [],
+    "parent_activity": "A4_4",
+    "parent_bc": "BC4"
+  },
+  "T4_4_4": {
+    "ref": "T4_4_4",
+    "type": "tache",
+    "label": "Contrôle du respect de l’image dans les actions de communication",
+    "anchor": "t4-4-4",
+    "resources": [
+      "R-B4-020",
+      "R-B4-021",
+      "R-B4-023",
+      "R-B4-024",
+      "R-B4-039"
+    ],
+    "missions": [
+      "M27"
+    ],
+    "activities": [],
+    "tasks": [],
+    "knowledge": [],
+    "parent_activity": "A4_4",
+    "parent_bc": "BC4"
+  },
+  "T4_5_1": {
+    "ref": "T4_5_1",
+    "type": "tache",
+    "label": "Calcul et analyse des coûts et des résultats",
+    "anchor": "t4-5-1",
+    "resources": [
+      "R-B4-025",
+      "R-B4-026",
+      "R-B4-027"
+    ],
+    "missions": [
+      "M28"
+    ],
+    "activities": [],
+    "tasks": [],
+    "knowledge": [],
+    "parent_activity": "A4_5",
+    "parent_bc": "BC4"
+  },
+  "T4_5_2": {
+    "ref": "T4_5_2",
+    "type": "tache",
+    "label": "Réalisation des budgets prévisionnels",
+    "anchor": "t4-5-2",
+    "resources": [
+      "R-B4-028",
+      "R-B4-029"
+    ],
+    "missions": [
+      "M28"
+    ],
+    "activities": [],
+    "tasks": [],
+    "knowledge": [],
+    "parent_activity": "A4_5",
+    "parent_bc": "BC4"
+  },
+  "T4_5_3": {
+    "ref": "T4_5_3",
+    "type": "tache",
+    "label": "Mesure de l’impact de décisions de gestion sur les coûts et les résultats",
+    "anchor": "t4-5-3",
+    "resources": [
+      "R-B4-027",
+      "R-B4-029",
+      "R-B4-040"
+    ],
+    "missions": [
+      "M28",
+      "M29"
+    ],
+    "activities": [],
+    "tasks": [],
+    "knowledge": [],
+    "parent_activity": "A4_5",
+    "parent_bc": "BC4"
+  },
+  "T4_6_1": {
+    "ref": "T4_6_1",
+    "type": "tache",
+    "label": "Analyse financière",
+    "anchor": "t4-6-1",
+    "resources": [
+      "R-B4-030",
+      "R-B4-031",
+      "R-B4-032"
+    ],
+    "missions": [
+      "M29"
+    ],
+    "activities": [],
+    "tasks": [],
+    "knowledge": [],
+    "parent_activity": "A4_6",
+    "parent_bc": "BC4"
+  },
+  "T4_6_2": {
+    "ref": "T4_6_2",
+    "type": "tache",
+    "label": "Mesure de l’impact de décisions de gestion sur les équilibres financiers",
+    "anchor": "t4-6-2",
+    "resources": [
+      "R-B4-033",
+      "R-B4-034",
+      "R-B4-040"
+    ],
+    "missions": [
+      "M28",
+      "M29"
+    ],
+    "activities": [],
+    "tasks": [],
+    "knowledge": [],
+    "parent_activity": "A4_6",
+    "parent_bc": "BC4"
+  },
+  "T4_7_1": {
+    "ref": "T4_7_1",
+    "type": "tache",
+    "label": "Conception et suivi des indicateurs pertinents de gestion et d’alerte",
+    "anchor": "t4-7-1",
+    "resources": [
+      "R-B4-035",
+      "R-B4-037"
+    ],
+    "missions": [
+      "M30"
+    ],
+    "activities": [],
+    "tasks": [],
+    "knowledge": [],
+    "parent_activity": "A4_7",
+    "parent_bc": "BC4"
+  },
+  "T4_7_2": {
+    "ref": "T4_7_2",
+    "type": "tache",
+    "label": "Établissement d’un tableau de bord dans ses dimensions commerciales et financières",
+    "anchor": "t4-7-2",
+    "resources": [
+      "R-B4-036",
+      "R-B4-037"
+    ],
+    "missions": [
+      "M30"
+    ],
+    "activities": [],
+    "tasks": [],
+    "knowledge": [],
+    "parent_activity": "A4_7",
+    "parent_bc": "BC4"
+  }
+}

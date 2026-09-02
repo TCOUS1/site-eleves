@@ -1,0 +1,461 @@
+{
+  "devis": [
+    "proposition commerciale"
+  ],
+  "appel offres": [
+    "marché public"
+  ],
+  "marche public": [
+    "appel offres"
+  ],
+  "impaye": [
+    "règlement relance créance"
+  ],
+  "retard paiement": [
+    "impayé règlement relance"
+  ],
+  "solvabilite": [
+    "risque client paiement"
+  ],
+  "risque client": [
+    "solvabilité paiement"
+  ],
+  "facture fournisseur": [
+    "achat commande réception facture règlement"
+  ],
+  "livraison fournisseur": [
+    "commande réception achat fournisseur"
+  ],
+  "facture client": [
+    "facturation vente client"
+  ],
+  "doublon": [
+    "fiabiliser données fichier"
+  ],
+  "fichier client": [
+    "base clients système information clients"
+  ],
+  "stock": [
+    "réapprovisionnement rupture"
+  ],
+  "recommander stock": [
+    "réapprovisionnement commande stock"
+  ],
+  "banque compta": [
+    "rapprochement bancaire"
+  ],
+  "pointage banque": [
+    "rapprochement bancaire"
+  ],
+  "tva": [
+    "déclaration tva"
+  ],
+  "risque informatique": [
+    "cyber piratage phishing"
+  ],
+  "piratage": [
+    "risque informatique cyber"
+  ],
+  "donnees personnelles": [
+    "rgpd traitement données"
+  ],
+  "donnee personnelle": [
+    "rgpd traitement données"
+  ],
+  "donnees clients conforme": [
+    "rgpd données personnelles conformité traitement"
+  ],
+  "fichier clients legal": [
+    "rgpd données personnelles conformité traitement"
+  ],
+  "donnees sante": [
+    "rgpd donnée sensible santé"
+  ],
+  "donnee sante": [
+    "rgpd donnée sensible santé"
+  ],
+  "acceder donnees": [
+    "habilitation droits accès autorisation"
+  ],
+  "voir donnees": [
+    "habilitation droits accès"
+  ],
+  "dossier confidentiel": [
+    "habilitation droits accès confidentialité"
+  ],
+  "non autorise dossier": [
+    "habilitation droits accès autorisation confidentialité"
+  ],
+  "acces non autorise": [
+    "habilitation droits accès autorisation"
+  ],
+  "sauvegarde": [
+    "restauration sauvegarde"
+  ],
+  "procedure pas ecrite": [
+    "gestion connaissances mode opératoire"
+  ],
+  "savoir faire patron": [
+    "gestion connaissances capitalisation"
+  ],
+  "nouveau salarie": [
+    "embauche intégration contrat"
+  ],
+  "arrivee salarie": [
+    "embauche intégration accueil"
+  ],
+  "depart salarie": [
+    "fin contrat documents sortie"
+  ],
+  "salarie quitte": [
+    "fin contrat départ documents sortie"
+  ],
+  "absence salarie": [
+    "congé maladie absence"
+  ],
+  "arret maladie": [
+    "absence maladie"
+  ],
+  "paie": [
+    "variables bulletin salaire"
+  ],
+  "dsn": [
+    "déclaration sociale nominative"
+  ],
+  "absenteisme": [
+    "tableau bord social indicateurs absentéisme"
+  ],
+  "turnover": [
+    "tableau bord social indicateurs rotation"
+  ],
+  "satisfaction": [
+    "enquête satisfaction questionnaire"
+  ],
+  "fideliser": [
+    "fidélisation clients"
+  ],
+  "fidelisation": [
+    "clients revenir relation"
+  ],
+  "clients reviennent": [
+    "fidélisation clients"
+  ],
+  "clients actuels": [
+    "fidélisation clientèle"
+  ],
+  "rentabilite": [
+    "seuil rentabilité coûts marge"
+  ],
+  "couvrir couts": [
+    "seuil rentabilité"
+  ],
+  "budget reel": [
+    "écarts prévu réalisé budget"
+  ],
+  "budget previsionnel": [
+    "prévisions budget"
+  ],
+  "fonds roulement": [
+    "frng bfr trésorerie nette"
+  ],
+  "bfr": [
+    "frng trésorerie nette"
+  ],
+  "emprunt leasing": [
+    "modes financement investissement"
+  ],
+  "credit bail": [
+    "modes financement investissement"
+  ],
+  "tableau bord": [
+    "indicateurs pilotage tableau bord"
+  ],
+  "mode operatoire": [
+    "procédure gestion connaissances"
+  ],
+  "proteger nom": [
+    "propriété intellectuelle marque nom commercial"
+  ],
+  "contrefacon": [
+    "propriété intellectuelle marque"
+  ],
+  "action corrective marche": [
+    "efficacité action corrective"
+  ],
+  "mesure fonctionne": [
+    "efficacité mesure action corrective"
+  ],
+  "plusieurs domaines": [
+    "situation complexe combiner ressources"
+  ],
+  "consultation publique": [
+    "appel offres marché public"
+  ],
+  "meme societe": [
+    "doublon fichier clients"
+  ],
+  "manque livraison client": [
+    "anomalie livraison quantité manquante"
+  ],
+  "rectifier facture": [
+    "corriger facture avoir"
+  ],
+  "facture trop cher": [
+    "corriger facture avoir"
+  ],
+  "devis fournisseurs": [
+    "comparer offres fournisseurs"
+  ],
+  "correction utile": [
+    "efficacité action corrective"
+  ],
+  "correction marche": [
+    "efficacité action corrective"
+  ],
+  "nouveautes entreprise": [
+    "veille générale sources"
+  ],
+  "nouvelle exigence": [
+    "veille mise à jour pratique procédure"
+  ],
+  "projet inclus": [
+    "périmètre projet cadrage"
+  ],
+  "projet derive": [
+    "suivi projet écart planning"
+  ],
+  "tableau donnees sante": [
+    "rgpd données personnelles sensibles"
+  ],
+  "cybermenace": [
+    "risque informatique cyber"
+  ],
+  "cybermenaces": [
+    "risques informatiques cyber"
+  ],
+  "copies fichiers": [
+    "sauvegarde restauration"
+  ],
+  "recuperer fichiers": [
+    "restauration sauvegarde"
+  ],
+  "meme facon operation": [
+    "procédure mode opératoire"
+  ],
+  "operation toujours meme": [
+    "procédure mode opératoire"
+  ],
+  "texte personnel": [
+    "règle sociale droit travail"
+  ],
+  "question personnel texte": [
+    "règle sociale droit travail"
+  ],
+  "documents salarie": [
+    "dossier personnel"
+  ],
+  "ranger contrat diplome": [
+    "dossier personnel"
+  ],
+  "arret travail": [
+    "absence maladie arrêt"
+  ],
+  "taux rotation": [
+    "indicateurs sociaux turnover"
+  ],
+  "rotation personnel": [
+    "turnover indicateurs sociaux"
+  ],
+  "documents introuvables": [
+    "classement archivage rangement"
+  ],
+  "regle rangement": [
+    "classement archivage"
+  ],
+  "calendrier interventions": [
+    "planning activités interventions"
+  ],
+  "lieux disponibilites": [
+    "planifier activités"
+  ],
+  "acheteurs evaluent service": [
+    "enquête satisfaction client"
+  ],
+  "evaluer service client": [
+    "satisfaction enquête"
+  ],
+  "pret location financiere": [
+    "modes financement investissement"
+  ],
+  "fonds propres machine": [
+    "financement investissement"
+  ],
+  "tableau synthetique": [
+    "tableau de bord indicateurs"
+  ],
+  "depasse seuil alerte": [
+    "analyser tableau de bord alerte dirigeant"
+  ],
+  "collectivite consultation": [
+    "appel offres marché public candidature"
+  ],
+  "document facturation": [
+    "facture client établir facture"
+  ],
+  "facture dematerialisee": [
+    "facturation électronique"
+  ],
+  "echeance depassee": [
+    "impayé règlement relance"
+  ],
+  "virement absent": [
+    "impayé règlement client"
+  ],
+  "visiteur information": [
+    "accueil orienter informer client"
+  ],
+  "orienter visiteur": [
+    "accueil information orientation"
+  ],
+  "desaccord client": [
+    "réclamation client solution"
+  ],
+  "reparation client": [
+    "réclamation réponse solution"
+  ],
+  "identifier fournisseurs": [
+    "rechercher présélectionner fournisseurs"
+  ],
+  "calendrier projet": [
+    "planifier tâches projet cahier charges"
+  ],
+  "liste clients divulguee": [
+    "violation données personnelles"
+  ],
+  "donnees divulguees": [
+    "violation données personnelles"
+  ],
+  "copies secours": [
+    "sauvegarde restauration"
+  ],
+  "essai recuperation": [
+    "test restauration sauvegarde"
+  ],
+  "arborescence archivage": [
+    "classement archivage documents"
+  ],
+  "oral ecrit synchrone": [
+    "canal communication traçabilité"
+  ],
+  "oral ecrit": [
+    "canal communication"
+  ],
+  "tension role": [
+    "intervention tension régulation rôle"
+  ],
+  "tableau exploitable": [
+    "tableau données fiable structurer données"
+  ],
+  "prix conditions client": [
+    "devis proposition commerciale"
+  ],
+  "prix conditions prospect": [
+    "devis proposition commerciale"
+  ],
+  "commande client recue": [
+    "suivi vente livraison preuve"
+  ],
+  "ou se trouve commande": [
+    "suivi vente livraison"
+  ],
+  "informer clients evolution offre": [
+    "communication relation client"
+  ],
+  "ordonner risques": [
+    "hiérarchiser criticité risques"
+  ],
+  "risques urgent": [
+    "hiérarchiser risques priorité"
+  ],
+  "semaines amelioration": [
+    "efficacité action corrective"
+  ],
+  "action produit amelioration": [
+    "efficacité action corrective"
+  ],
+  "manque cash": [
+    "tension trésorerie solutions"
+  ],
+  "offres formation": [
+    "comparer formations financement"
+  ],
+  "calendrier prestations": [
+    "planifier activités interventions ressources"
+  ],
+  "retenir clients": [
+    "fidélisation clientèle"
+  ],
+  "chiffre affaires minimum": [
+    "seuil rentabilité"
+  ],
+  "ventes minimum equilibre": [
+    "seuil rentabilité"
+  ],
+  "risques lies aux donnees": [
+    "rgpd données personnelles sécurité informatique"
+  ],
+  "risque lie aux donnees": [
+    "rgpd données personnelles sécurité informatique"
+  ],
+  "pareto": [
+    "dysfonctionnement qualité rechercher causes défauts retours clients prioriser"
+  ],
+  "analyse pareto": [
+    "dysfonctionnement qualité rechercher causes défauts retours clients prioriser"
+  ],
+  "5m": [
+    "dysfonctionnement qualité rechercher causes hypothèses faits"
+  ],
+  "ishikawa": [
+    "dysfonctionnement qualité rechercher causes hypothèses faits"
+  ],
+  "5 pourquoi": [
+    "dysfonctionnement qualité rechercher causes hypothèses faits"
+  ],
+  "cause racine": [
+    "dysfonctionnement qualité rechercher causes"
+  ],
+  "continuite activite": [
+    "plan traitement risques fournisseur évaluer performance fournisseur dépendance substitution"
+  ],
+  "dependance fournisseur": [
+    "plan traitement risques fournisseur évaluer performance fournisseur alternative substitution"
+  ],
+  "rupture fournisseur": [
+    "plan traitement risques fournisseur évaluer performance fournisseur continuité alternative"
+  ],
+  "plan b": [
+    "plan traitement risques continuité fournisseur alternative substitution"
+  ],
+  "incidents sst": [
+    "duerp risques professionnels tableau données fiable analyse chiffrée indicateurs graphique"
+  ],
+  "accidents par unite": [
+    "duerp risques professionnels tableau données fiable analyse chiffrée indicateurs graphique"
+  ],
+  "indicateurs securite": [
+    "duerp risques professionnels analyse chiffrée indicateurs graphique"
+  ],
+  "graphique accidents": [
+    "duerp risques professionnels analyse chiffrée indicateurs graphique"
+  ],
+  "presqu accidents": [
+    "duerp risques professionnels incidents analyse chiffrée indicateurs"
+  ],
+  "incidents par unite": [
+    "duerp risques professionnels tableau données fiable analyse chiffrée indicateurs graphique"
+  ],
+  "analyser incidents par unite": [
+    "duerp risques professionnels tableau données fiable analyse chiffrée indicateurs graphique"
+  ]
+}

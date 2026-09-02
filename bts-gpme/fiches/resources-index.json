@@ -1,0 +1,3184 @@
+[
+  {
+    "id": "R-B1-001",
+    "title": "Cibler et organiser une prospection utile à la PME",
+    "url": "ressources/bc1/R-B1-001-cibler-organiser-prospection.html",
+    "type": "Méthode",
+    "type_key": "methode",
+    "format": "methode",
+    "bc": "BC1",
+    "activities": [
+      "A1_1"
+    ],
+    "tasks": [
+      "T1_1_1",
+      "T1_1_3"
+    ],
+    "knowledge": [
+      "S1_1_1",
+      "S1_1_2",
+      "S1_7",
+      "S5_2"
+    ],
+    "maintenance": "stable",
+    "verified": "2026-08-30"
+  },
+  {
+    "id": "R-B1-002",
+    "title": "Qualifier un fichier de prospects avant une action commerciale",
+    "url": "ressources/bc1/R-B1-002-qualifier-fichier-prospects.html",
+    "type": "Méthode + outil",
+    "type_key": "methode",
+    "format": "methode",
+    "bc": "BC1",
+    "activities": [
+      "A1_1"
+    ],
+    "tasks": [
+      "T1_1_1"
+    ],
+    "knowledge": [
+      "S1_1_1",
+      "S1_1_2",
+      "S1_7"
+    ],
+    "maintenance": "stable",
+    "verified": "2026-08-30"
+  },
+  {
+    "id": "R-B1-003",
+    "title": "Détecter et analyser un appel d’offres avant de décider de répondre",
+    "url": "ressources/bc1/R-B1-003-analyser-appel-offres.html",
+    "type": "Méthode",
+    "type_key": "methode",
+    "format": "methode",
+    "bc": "BC1",
+    "activities": [
+      "A1_1"
+    ],
+    "tasks": [
+      "T1_1_2",
+      "T1_1_3"
+    ],
+    "knowledge": [
+      "S1_1_3",
+      "S1_7",
+      "S5_2"
+    ],
+    "maintenance": "evolutive",
+    "verified": "2026-08-30"
+  },
+  {
+    "id": "R-B1-004",
+    "title": "Constituer et contrôler un dossier de réponse à un marché public",
+    "url": "ressources/bc1/R-B1-004-constituer-reponse-marche-public.html",
+    "type": "Méthode réglementaire",
+    "type_key": "regle",
+    "format": "regle",
+    "bc": "BC1",
+    "activities": [
+      "A1_1"
+    ],
+    "tasks": [
+      "T1_1_2",
+      "T1_1_3"
+    ],
+    "knowledge": [
+      "S1_1_3",
+      "S1_7",
+      "S5_2",
+      "S5_3"
+    ],
+    "maintenance": "evolutive",
+    "verified": "2026-09-01"
+  },
+  {
+    "id": "R-B1-005",
+    "title": "Transformer une demande client en proposition commerciale ou devis",
+    "url": "ressources/bc1/R-B1-005-preparer-proposition-commerciale.html",
+    "type": "Méthode",
+    "type_key": "methode",
+    "format": "methode",
+    "bc": "BC1",
+    "activities": [
+      "A1_2"
+    ],
+    "tasks": [
+      "T1_2_1",
+      "T1_2_7"
+    ],
+    "knowledge": [
+      "S1_2_2",
+      "S1_7",
+      "S5_2"
+    ],
+    "maintenance": "stable",
+    "verified": "2026-08-30"
+  },
+  {
+    "id": "R-B1-006",
+    "title": "Contrôler une commande ou un contrat client avant validation",
+    "url": "ressources/bc1/R-B1-006-controler-commande-contrat-client.html",
+    "type": "Méthode",
+    "type_key": "methode",
+    "format": "methode",
+    "bc": "BC1",
+    "activities": [
+      "A1_2"
+    ],
+    "tasks": [
+      "T1_2_2",
+      "T1_2_7"
+    ],
+    "knowledge": [
+      "S1_2_2",
+      "S1_7"
+    ],
+    "maintenance": "stable",
+    "verified": "2026-08-30"
+  },
+  {
+    "id": "R-B1-007",
+    "title": "Suivre une vente et une livraison jusqu’à la preuve d’exécution",
+    "url": "ressources/bc1/R-B1-007-suivre-vente-livraison.html",
+    "type": "Méthode + outil",
+    "type_key": "methode",
+    "format": "methode",
+    "bc": "BC1",
+    "activities": [
+      "A1_2"
+    ],
+    "tasks": [
+      "T1_2_3",
+      "T1_2_7"
+    ],
+    "knowledge": [
+      "S1_2_3",
+      "S1_7"
+    ],
+    "maintenance": "stable",
+    "verified": "2026-08-30"
+  },
+  {
+    "id": "R-B1-008",
+    "title": "Établir et contrôler une facture conforme",
+    "url": "ressources/bc1/R-B1-008-etablir-facture-conforme.html",
+    "type": "Méthode réglementaire",
+    "type_key": "regle",
+    "format": "regle",
+    "bc": "BC1",
+    "activities": [
+      "A1_2"
+    ],
+    "tasks": [
+      "T1_2_4",
+      "T1_2_7"
+    ],
+    "knowledge": [
+      "S1_2_2",
+      "S1_2_5",
+      "S1_7"
+    ],
+    "maintenance": "evolutive",
+    "verified": "2026-09-01"
+  },
+  {
+    "id": "R-B1-009",
+    "title": "Préparer la PME à la facturation électronique 2026–2027",
+    "url": "ressources/bc1/R-B1-009-preparer-facturation-electronique.html",
+    "type": "Méthode réglementaire",
+    "type_key": "regle",
+    "format": "regle",
+    "bc": "BC1",
+    "activities": [
+      "A1_2"
+    ],
+    "tasks": [
+      "T1_2_4",
+      "T1_2_6"
+    ],
+    "knowledge": [
+      "S1_2_1",
+      "S1_2_2",
+      "S1_7"
+    ],
+    "maintenance": "evolutive",
+    "verified": "2026-09-01"
+  },
+  {
+    "id": "R-B1-010",
+    "title": "Suivre les règlements clients et conduire une relance amiable",
+    "url": "ressources/bc1/R-B1-010-suivre-reglements-relancer-impayes.html",
+    "type": "Méthode réglementaire",
+    "type_key": "regle",
+    "format": "regle",
+    "bc": "BC1",
+    "activities": [
+      "A1_2"
+    ],
+    "tasks": [
+      "T1_2_4",
+      "T1_2_5",
+      "T1_2_7"
+    ],
+    "knowledge": [
+      "S1_2_4",
+      "S1_2_5",
+      "S1_6_3",
+      "S5_2",
+      "S5_5"
+    ],
+    "maintenance": "evolutive",
+    "verified": "2026-09-01"
+  },
+  {
+    "id": "R-B1-011",
+    "title": "Évaluer le risque client avant ou pendant la relation commerciale",
+    "url": "ressources/bc1/R-B1-011-evaluer-risque-client.html",
+    "type": "Méthode",
+    "type_key": "methode",
+    "format": "methode",
+    "bc": "BC1",
+    "activities": [
+      "A1_2"
+    ],
+    "tasks": [
+      "T1_2_5"
+    ],
+    "knowledge": [
+      "S1_2_4",
+      "S1_2_5",
+      "S1_7"
+    ],
+    "maintenance": "stable",
+    "verified": "2026-08-30"
+  },
+  {
+    "id": "R-B1-012",
+    "title": "Fiabiliser et mettre à jour le système d’information clients",
+    "url": "ressources/bc1/R-B1-012-fiabiliser-si-client.html",
+    "type": "Méthode + outil",
+    "type_key": "methode",
+    "format": "methode",
+    "bc": "BC1",
+    "activities": [
+      "A1_2"
+    ],
+    "tasks": [
+      "T1_2_6"
+    ],
+    "knowledge": [
+      "S1_2_1",
+      "S1_7"
+    ],
+    "maintenance": "stable",
+    "verified": "2026-08-30"
+  },
+  {
+    "id": "R-B1-013",
+    "title": "Accueillir, informer et orienter un client de façon professionnelle",
+    "url": "ressources/bc1/R-B1-013-accueillir-informer-conseiller-client.html",
+    "type": "Méthode",
+    "type_key": "methode",
+    "format": "methode",
+    "bc": "BC1",
+    "activities": [
+      "A1_3"
+    ],
+    "tasks": [
+      "T1_3_1",
+      "T1_3_3"
+    ],
+    "knowledge": [
+      "S1_3_1",
+      "S1_7",
+      "S5_5"
+    ],
+    "maintenance": "stable",
+    "verified": "2026-08-30"
+  },
+  {
+    "id": "R-B1-014",
+    "title": "Traiter et suivre une réclamation client jusqu’à sa clôture",
+    "url": "ressources/bc1/R-B1-014-traiter-suivre-reclamation-client.html",
+    "type": "Méthode",
+    "type_key": "methode",
+    "format": "methode",
+    "bc": "BC1",
+    "activities": [
+      "A1_3"
+    ],
+    "tasks": [
+      "T1_3_2",
+      "T1_3_3"
+    ],
+    "knowledge": [
+      "S1_3_2",
+      "S1_7",
+      "S5_7"
+    ],
+    "maintenance": "stable",
+    "verified": "2026-08-30"
+  },
+  {
+    "id": "R-B1-015",
+    "title": "Formaliser un besoin d’achat ou d’investissement avant de consulter",
+    "url": "ressources/bc1/R-B1-015-formaliser-besoin-achat.html",
+    "type": "Méthode",
+    "type_key": "methode",
+    "format": "methode",
+    "bc": "BC1",
+    "activities": [
+      "A1_4"
+    ],
+    "tasks": [
+      "T1_4_1",
+      "T1_4_5"
+    ],
+    "knowledge": [
+      "S1_4_1",
+      "S1_7"
+    ],
+    "maintenance": "stable",
+    "verified": "2026-08-30"
+  },
+  {
+    "id": "R-B1-016",
+    "title": "Rechercher et présélectionner des fournisseurs",
+    "url": "ressources/bc1/R-B1-016-rechercher-preselectionner-fournisseurs.html",
+    "type": "Méthode",
+    "type_key": "methode",
+    "format": "methode",
+    "bc": "BC1",
+    "activities": [
+      "A1_4"
+    ],
+    "tasks": [
+      "T1_4_2",
+      "T1_4_4",
+      "T1_4_5"
+    ],
+    "knowledge": [
+      "S1_4_2",
+      "S1_7"
+    ],
+    "maintenance": "stable",
+    "verified": "2026-08-30"
+  },
+  {
+    "id": "R-B1-017",
+    "title": "Comparer des offres fournisseurs et préparer une recommandation",
+    "url": "ressources/bc1/R-B1-017-comparer-offres-fournisseurs.html",
+    "type": "Méthode + outil",
+    "type_key": "methode",
+    "format": "methode",
+    "bc": "BC1",
+    "activities": [
+      "A1_4"
+    ],
+    "tasks": [
+      "T1_4_3",
+      "T1_4_5"
+    ],
+    "knowledge": [
+      "S1_4_1",
+      "S1_4_2",
+      "S1_7"
+    ],
+    "maintenance": "stable",
+    "verified": "2026-08-30"
+  },
+  {
+    "id": "R-B1-018",
+    "title": "Préparer une négociation fournisseur",
+    "url": "ressources/bc1/R-B1-018-preparer-negociation-fournisseur.html",
+    "type": "Méthode",
+    "type_key": "methode",
+    "format": "methode",
+    "bc": "BC1",
+    "activities": [
+      "A1_5"
+    ],
+    "tasks": [
+      "T1_5_1",
+      "T1_5_6"
+    ],
+    "knowledge": [
+      "S1_5_1",
+      "S1_2_2",
+      "S5_5"
+    ],
+    "maintenance": "stable",
+    "verified": "2026-08-30"
+  },
+  {
+    "id": "R-B1-019",
+    "title": "Passer et suivre une commande fournisseur",
+    "url": "ressources/bc1/R-B1-019-passer-suivre-commande-fournisseur.html",
+    "type": "Méthode + outil",
+    "type_key": "methode",
+    "format": "methode",
+    "bc": "BC1",
+    "activities": [
+      "A1_5"
+    ],
+    "tasks": [
+      "T1_5_2",
+      "T1_5_6"
+    ],
+    "knowledge": [
+      "S1_5_1",
+      "S1_2_2",
+      "S1_7"
+    ],
+    "maintenance": "stable",
+    "verified": "2026-08-30"
+  },
+  {
+    "id": "R-B1-020",
+    "title": "Contrôler un achat, une facture fournisseur et préparer le règlement",
+    "url": "ressources/bc1/R-B1-020-controler-achat-facture-reglement.html",
+    "type": "Méthode + outil",
+    "type_key": "methode",
+    "format": "methode",
+    "bc": "BC1",
+    "activities": [
+      "A1_5"
+    ],
+    "tasks": [
+      "T1_5_4",
+      "T1_5_6"
+    ],
+    "knowledge": [
+      "S1_5_1",
+      "S1_2_2",
+      "S1_7"
+    ],
+    "maintenance": "stable",
+    "verified": "2026-08-30"
+  },
+  {
+    "id": "R-B1-021",
+    "title": "Suivre les stocks et déclencher un réapprovisionnement",
+    "url": "ressources/bc1/R-B1-021-suivre-stocks-reapprovisionnement.html",
+    "type": "Méthode + outil",
+    "type_key": "methode",
+    "format": "methode",
+    "bc": "BC1",
+    "activities": [
+      "A1_5"
+    ],
+    "tasks": [
+      "T1_5_2",
+      "T1_5_4"
+    ],
+    "knowledge": [
+      "S1_5_2",
+      "S1_7"
+    ],
+    "maintenance": "stable",
+    "verified": "2026-08-30"
+  },
+  {
+    "id": "R-B1-022",
+    "title": "Préparer l’acquisition et le suivi administratif d’une immobilisation",
+    "url": "ressources/bc1/R-B1-022-preparer-acquisition-immobilisation.html",
+    "type": "Méthode",
+    "type_key": "methode",
+    "format": "methode",
+    "bc": "BC1",
+    "activities": [
+      "A1_5"
+    ],
+    "tasks": [
+      "T1_5_3",
+      "T1_5_4"
+    ],
+    "knowledge": [
+      "S1_5_1",
+      "S1_2_2",
+      "S1_7"
+    ],
+    "maintenance": "stable",
+    "verified": "2026-08-30"
+  },
+  {
+    "id": "R-B1-023",
+    "title": "Évaluer la performance d’un fournisseur et préparer des actions",
+    "url": "ressources/bc1/R-B1-023-evaluer-fournisseur.html",
+    "type": "Méthode + outil",
+    "type_key": "methode",
+    "format": "methode",
+    "bc": "BC1",
+    "activities": [
+      "A1_5"
+    ],
+    "tasks": [
+      "T1_5_5",
+      "T1_5_6"
+    ],
+    "knowledge": [
+      "S1_5_1",
+      "S1_4_2",
+      "S1_7"
+    ],
+    "maintenance": "stable",
+    "verified": "2026-08-30"
+  },
+  {
+    "id": "R-B1-024",
+    "title": "Contrôler l’enregistrement comptable d’une opération commerciale",
+    "url": "ressources/bc1/R-B1-024-controler-enregistrement-comptable.html",
+    "type": "Méthode + outil",
+    "type_key": "methode",
+    "format": "methode",
+    "bc": "BC1",
+    "activities": [
+      "A1_6"
+    ],
+    "tasks": [
+      "T1_6_1"
+    ],
+    "knowledge": [
+      "S1_6_1",
+      "S1_2_5",
+      "S1_7_1"
+    ],
+    "maintenance": "stable",
+    "verified": "2026-08-30"
+  },
+  {
+    "id": "R-B1-025",
+    "title": "Réaliser et contrôler un rapprochement bancaire",
+    "url": "ressources/bc1/R-B1-025-rapprochement-bancaire.html",
+    "type": "Méthode + outil",
+    "type_key": "methode",
+    "format": "methode",
+    "bc": "BC1",
+    "activities": [
+      "A1_6"
+    ],
+    "tasks": [
+      "T1_6_2",
+      "T1_6_3"
+    ],
+    "knowledge": [
+      "S1_6_1",
+      "S1_6_3",
+      "S1_7_1"
+    ],
+    "maintenance": "stable",
+    "verified": "2026-08-30"
+  },
+  {
+    "id": "R-B1-026",
+    "title": "Suivre les comptes clients et fournisseurs avec une balance âgée",
+    "url": "ressources/bc1/R-B1-026-suivre-comptes-tiers-encaissements.html",
+    "type": "Méthode + outil",
+    "type_key": "methode",
+    "format": "methode",
+    "bc": "BC1",
+    "activities": [
+      "A1_6"
+    ],
+    "tasks": [
+      "T1_6_3"
+    ],
+    "knowledge": [
+      "S1_6_3",
+      "S1_2_5",
+      "S1_7_1"
+    ],
+    "maintenance": "stable",
+    "verified": "2026-08-30"
+  },
+  {
+    "id": "R-B1-027",
+    "title": "Préparer et contrôler une déclaration de TVA à partir du PGI",
+    "url": "ressources/bc1/R-B1-027-preparer-controler-tva.html",
+    "type": "Méthode réglementaire",
+    "type_key": "regle",
+    "format": "regle",
+    "bc": "BC1",
+    "activities": [
+      "A1_6"
+    ],
+    "tasks": [
+      "T1_6_4"
+    ],
+    "knowledge": [
+      "S1_6_2",
+      "S1_6_1",
+      "S1_7_1"
+    ],
+    "maintenance": "evolutive",
+    "verified": "2026-09-01"
+  },
+  {
+    "id": "R-B1-028",
+    "title": "Repérer et suivre les risques liés à un échange international",
+    "url": "ressources/bc1/R-B1-028-evaluer-risques-echanges-internationaux.html",
+    "type": "Méthode",
+    "type_key": "methode",
+    "format": "methode",
+    "bc": "BC1",
+    "activities": [
+      "A1_6"
+    ],
+    "tasks": [
+      "T1_6_5"
+    ],
+    "knowledge": [
+      "S1_6_3",
+      "S1_7_1"
+    ],
+    "maintenance": "evolutive",
+    "verified": "2026-08-30"
+  },
+  {
+    "id": "R-B1-029",
+    "title": "Préparer une action de communication pour développer la relation client",
+    "url": "ressources/bc1/R-B1-029-developper-relation-client-communication.html",
+    "type": "Méthode",
+    "type_key": "methode",
+    "format": "methode",
+    "bc": "BC1",
+    "activities": [
+      "A1_3"
+    ],
+    "tasks": [
+      "T1_3_3"
+    ],
+    "knowledge": [
+      "S5_1",
+      "S5_2",
+      "S5_4",
+      "S5_5"
+    ],
+    "maintenance": "stable",
+    "verified": "2026-08-30"
+  },
+  {
+    "id": "R-B1-030",
+    "title": "Traiter une anomalie de livraison avant qu’elle ne devienne une réclamation",
+    "url": "ressources/bc1/R-B1-030-traiter-anomalie-livraison-client.html",
+    "type": "Méthode",
+    "type_key": "methode",
+    "format": "methode",
+    "bc": "BC1",
+    "activities": [
+      "A1_2"
+    ],
+    "tasks": [
+      "T1_2_3",
+      "T1_2_7"
+    ],
+    "knowledge": [
+      "S1_2_3",
+      "S5_2",
+      "S5_5"
+    ],
+    "maintenance": "stable",
+    "verified": "2026-08-30"
+  },
+  {
+    "id": "R-B1-031",
+    "title": "Corriger une facture et préparer un avoir sans perdre la traçabilité",
+    "url": "ressources/bc1/R-B1-031-corriger-facture-avoir.html",
+    "type": "Méthode de contrôle",
+    "type_key": "methode",
+    "format": "methode",
+    "bc": "BC1",
+    "activities": [
+      "A1_2"
+    ],
+    "tasks": [
+      "T1_2_4"
+    ],
+    "knowledge": [
+      "S1_2_2",
+      "S1_2_5",
+      "S1_7"
+    ],
+    "maintenance": "evolutive",
+    "verified": "2026-08-30"
+  },
+  {
+    "id": "R-B1-032",
+    "title": "Fiabiliser le système d’information fournisseurs après une recherche ou une évaluation",
+    "url": "ressources/bc1/R-B1-032-fiabiliser-systeme-information-fournisseur.html",
+    "type": "Méthode + outil",
+    "type_key": "methode",
+    "format": "methode",
+    "bc": "BC1",
+    "activities": [
+      "A1_4"
+    ],
+    "tasks": [
+      "T1_4_4"
+    ],
+    "knowledge": [
+      "S1_7"
+    ],
+    "maintenance": "stable",
+    "verified": "2026-08-30"
+  },
+  {
+    "id": "R-B2-001",
+    "title": "Évaluer et hiérarchiser les risques d’une PME",
+    "url": "ressources/bc2/R-B2-001-evaluer-hierarchiser-risques.html",
+    "type": "Méthode",
+    "type_key": "methode",
+    "format": "methode",
+    "bc": "BC2",
+    "activities": [
+      "A2_3"
+    ],
+    "tasks": [
+      "T2_3_1",
+      "T2_3_4",
+      "T2_3_5"
+    ],
+    "knowledge": [
+      "S2_3",
+      "S2_7"
+    ],
+    "maintenance": "stable",
+    "verified": "2026-08-30"
+  },
+  {
+    "id": "R-B2-002",
+    "title": "Construire une matrice de criticité",
+    "url": "ressources/bc2/R-B2-002-construire-matrice-criticite.html",
+    "type": "Outil",
+    "type_key": "outil",
+    "format": "outil",
+    "bc": "BC2",
+    "activities": [
+      "A2_3"
+    ],
+    "tasks": [
+      "T2_3_4"
+    ],
+    "knowledge": [
+      "S2_3",
+      "S2_7"
+    ],
+    "maintenance": "stable",
+    "verified": "2026-08-30"
+  },
+  {
+    "id": "R-B2-003",
+    "title": "Contribuer à la mise à jour du DUERP",
+    "url": "ressources/bc2/R-B2-003-contribuer-mise-a-jour-duerp.html",
+    "type": "Méthode réglementaire",
+    "type_key": "regle",
+    "format": "regle",
+    "bc": "BC2",
+    "activities": [
+      "A2_3",
+      "A2_5"
+    ],
+    "tasks": [
+      "T2_3_2",
+      "T2_3_3",
+      "T2_3_4",
+      "T2_3_5",
+      "T2_5_1"
+    ],
+    "knowledge": [
+      "S2_3",
+      "S2_5_1_1",
+      "S2_5_1_2",
+      "S2_5_2"
+    ],
+    "maintenance": "evolutive",
+    "verified": "2026-09-01"
+  },
+  {
+    "id": "R-B2-004",
+    "title": "Mettre en place une veille utile à la PME",
+    "url": "ressources/bc2/R-B2-004-mettre-en-place-veille-pme.html",
+    "type": "Méthode",
+    "type_key": "methode",
+    "format": "methode",
+    "bc": "BC2",
+    "activities": [
+      "A2_1"
+    ],
+    "tasks": [
+      "T2_1_1",
+      "T2_1_2"
+    ],
+    "knowledge": [
+      "S2_1_1",
+      "S2_1_2"
+    ],
+    "maintenance": "evolutive",
+    "verified": "2026-08-30"
+  },
+  {
+    "id": "R-B2-005",
+    "title": "Qualifier une source et une information",
+    "url": "ressources/bc2/R-B2-005-qualifier-source-information.html",
+    "type": "Méthode",
+    "type_key": "methode",
+    "format": "methode",
+    "bc": "BC2",
+    "activities": [
+      "A2_1"
+    ],
+    "tasks": [
+      "T2_1_2"
+    ],
+    "knowledge": [
+      "S2_1_1",
+      "S2_1_2"
+    ],
+    "maintenance": "stable",
+    "verified": "2026-08-30"
+  },
+  {
+    "id": "R-B2-006",
+    "title": "Transformer une veille en synthèse et en alerte actionnable",
+    "url": "ressources/bc2/R-B2-006-synthese-alerte-veille.html",
+    "type": "Méthode",
+    "type_key": "methode",
+    "format": "methode",
+    "bc": "BC2",
+    "activities": [
+      "A2_1"
+    ],
+    "tasks": [
+      "T2_1_3",
+      "T2_1_4",
+      "T2_1_5",
+      "T2_1_6"
+    ],
+    "knowledge": [
+      "S2_1_1",
+      "S2_1_2",
+      "S5_2",
+      "S5_4"
+    ],
+    "maintenance": "stable",
+    "verified": "2026-08-30"
+  },
+  {
+    "id": "R-B2-007",
+    "title": "Cadrer un projet avant de le lancer",
+    "url": "ressources/bc2/R-B2-007-cadrer-projet.html",
+    "type": "Méthode",
+    "type_key": "methode",
+    "format": "methode",
+    "bc": "BC2",
+    "activities": [
+      "A2_2"
+    ],
+    "tasks": [
+      "T2_2_1",
+      "T2_2_2"
+    ],
+    "knowledge": [
+      "S2_2"
+    ],
+    "maintenance": "stable",
+    "verified": "2026-08-30"
+  },
+  {
+    "id": "R-B2-008",
+    "title": "Construire un cahier des charges et planifier les tâches",
+    "url": "ressources/bc2/R-B2-008-cahier-charges-planifier.html",
+    "type": "Méthode + outil",
+    "type_key": "methode",
+    "format": "methode",
+    "bc": "BC2",
+    "activities": [
+      "A2_2"
+    ],
+    "tasks": [
+      "T2_2_3"
+    ],
+    "knowledge": [
+      "S2_2",
+      "S2_7"
+    ],
+    "maintenance": "stable",
+    "verified": "2026-08-30"
+  },
+  {
+    "id": "R-B2-009",
+    "title": "Préparer et conduire une réunion de projet",
+    "url": "ressources/bc2/R-B2-009-preparer-conduire-reunion-projet.html",
+    "type": "Méthode",
+    "type_key": "methode",
+    "format": "methode",
+    "bc": "BC2",
+    "activities": [
+      "A2_2"
+    ],
+    "tasks": [
+      "T2_2_4"
+    ],
+    "knowledge": [
+      "S2_2",
+      "S5_5",
+      "S5_6"
+    ],
+    "maintenance": "stable",
+    "verified": "2026-08-30"
+  },
+  {
+    "id": "R-B2-010",
+    "title": "Suivre un projet et traiter les écarts",
+    "url": "ressources/bc2/R-B2-010-suivre-projet-ecarts.html",
+    "type": "Méthode + outil",
+    "type_key": "methode",
+    "format": "methode",
+    "bc": "BC2",
+    "activities": [
+      "A2_2"
+    ],
+    "tasks": [
+      "T2_2_5"
+    ],
+    "knowledge": [
+      "S2_2",
+      "S2_7"
+    ],
+    "maintenance": "stable",
+    "verified": "2026-08-30"
+  },
+  {
+    "id": "R-B2-011",
+    "title": "Identifier et formuler les risques d’une PME",
+    "url": "ressources/bc2/R-B2-011-identifier-formuler-risques.html",
+    "type": "Méthode",
+    "type_key": "methode",
+    "format": "methode",
+    "bc": "BC2",
+    "activities": [
+      "A2_3"
+    ],
+    "tasks": [
+      "T2_3_1"
+    ],
+    "knowledge": [
+      "S2_3",
+      "S2_7"
+    ],
+    "maintenance": "stable",
+    "verified": "2026-08-30"
+  },
+  {
+    "id": "R-B2-012",
+    "title": "Identifier les obligations applicables à un risque",
+    "url": "ressources/bc2/R-B2-012-identifier-obligations-risque.html",
+    "type": "Méthode réglementaire",
+    "type_key": "regle",
+    "format": "regle",
+    "bc": "BC2",
+    "activities": [
+      "A2_3"
+    ],
+    "tasks": [
+      "T2_3_2",
+      "T2_3_3"
+    ],
+    "knowledge": [
+      "S2_3"
+    ],
+    "maintenance": "evolutive",
+    "verified": "2026-09-01"
+  },
+  {
+    "id": "R-B2-013",
+    "title": "Construire et suivre un plan de traitement des risques",
+    "url": "ressources/bc2/R-B2-013-plan-traitement-risques.html",
+    "type": "Méthode + outil",
+    "type_key": "methode",
+    "format": "methode",
+    "bc": "BC2",
+    "activities": [
+      "A2_3"
+    ],
+    "tasks": [
+      "T2_3_5",
+      "T2_3_6"
+    ],
+    "knowledge": [
+      "S2_3",
+      "S2_7"
+    ],
+    "maintenance": "stable",
+    "verified": "2026-08-30"
+  },
+  {
+    "id": "R-B2-014",
+    "title": "Construire et contrôler un budget de trésorerie",
+    "url": "ressources/bc2/R-B2-014-budget-tresorerie.html",
+    "type": "Méthode + outil",
+    "type_key": "methode",
+    "format": "methode",
+    "bc": "BC2",
+    "activities": [
+      "A2_4"
+    ],
+    "tasks": [
+      "T2_4_1",
+      "T2_4_2"
+    ],
+    "knowledge": [
+      "S2_4",
+      "S2_7_1"
+    ],
+    "maintenance": "stable",
+    "verified": "2026-08-30"
+  },
+  {
+    "id": "R-B2-015",
+    "title": "Diagnostiquer une tension de trésorerie et préparer des solutions",
+    "url": "ressources/bc2/R-B2-015-diagnostiquer-tension-tresorerie.html",
+    "type": "Méthode",
+    "type_key": "methode",
+    "format": "methode",
+    "bc": "BC2",
+    "activities": [
+      "A2_4"
+    ],
+    "tasks": [
+      "T2_4_3",
+      "T2_4_4",
+      "T2_4_5",
+      "T2_4_6"
+    ],
+    "knowledge": [
+      "S2_4",
+      "S2_7_1",
+      "S5_2"
+    ],
+    "maintenance": "evolutive",
+    "verified": "2026-08-30"
+  },
+  {
+    "id": "R-B2-016",
+    "title": "Analyser la couverture d’assurance d’un risque",
+    "url": "ressources/bc2/R-B2-016-analyser-couverture-assurance.html",
+    "type": "Méthode",
+    "type_key": "methode",
+    "format": "methode",
+    "bc": "BC2",
+    "activities": [
+      "A2_5"
+    ],
+    "tasks": [
+      "T2_5_2"
+    ],
+    "knowledge": [
+      "S2_5_3_1"
+    ],
+    "maintenance": "evolutive",
+    "verified": "2026-08-30"
+  },
+  {
+    "id": "R-B2-017",
+    "title": "Choisir une protection adaptée pour un actif de propriété intellectuelle",
+    "url": "ressources/bc2/R-B2-017-proteger-actif-propriete-intellectuelle.html",
+    "type": "Méthode réglementaire",
+    "type_key": "regle",
+    "format": "regle",
+    "bc": "BC2",
+    "activities": [
+      "A2_5"
+    ],
+    "tasks": [
+      "T2_5_2"
+    ],
+    "knowledge": [
+      "S2_5_3_2"
+    ],
+    "maintenance": "evolutive",
+    "verified": "2026-09-01"
+  },
+  {
+    "id": "R-B2-018",
+    "title": "Vérifier la conformité d’un traitement de données personnelles",
+    "url": "ressources/bc2/R-B2-018-verifier-conformite-traitement-rgpd.html",
+    "type": "Méthode réglementaire",
+    "type_key": "regle",
+    "format": "regle",
+    "bc": "BC2",
+    "activities": [
+      "A2_5"
+    ],
+    "tasks": [
+      "T2_5_4"
+    ],
+    "knowledge": [
+      "S2_5_3_3"
+    ],
+    "maintenance": "evolutive",
+    "verified": "2026-09-01"
+  },
+  {
+    "id": "R-B2-019",
+    "title": "Réagir à une violation de données personnelles",
+    "url": "ressources/bc2/R-B2-019-reagir-violation-donnees.html",
+    "type": "Procédure réglementaire",
+    "type_key": "regle",
+    "format": "regle",
+    "bc": "BC2",
+    "activities": [
+      "A2_5"
+    ],
+    "tasks": [
+      "T2_5_4"
+    ],
+    "knowledge": [
+      "S2_5_3_3",
+      "S2_5_5"
+    ],
+    "maintenance": "evolutive",
+    "verified": "2026-09-01"
+  },
+  {
+    "id": "R-B2-020",
+    "title": "Identifier et réduire les risques environnementaux d’une PME",
+    "url": "ressources/bc2/R-B2-020-reduire-risques-environnementaux.html",
+    "type": "Méthode réglementaire",
+    "type_key": "regle",
+    "format": "regle",
+    "bc": "BC2",
+    "activities": [
+      "A2_5"
+    ],
+    "tasks": [
+      "T2_5_3"
+    ],
+    "knowledge": [
+      "S2_5_4"
+    ],
+    "maintenance": "evolutive",
+    "verified": "2026-09-01"
+  },
+  {
+    "id": "R-B2-021",
+    "title": "Évaluer les risques informatiques d’une PME et préparer des mesures",
+    "url": "ressources/bc2/R-B2-021-evaluer-risques-informatiques.html",
+    "type": "Méthode",
+    "type_key": "methode",
+    "format": "methode",
+    "bc": "BC2",
+    "activities": [
+      "A2_5"
+    ],
+    "tasks": [
+      "T2_5_4"
+    ],
+    "knowledge": [
+      "S2_5_5"
+    ],
+    "maintenance": "evolutive",
+    "verified": "2026-08-30"
+  },
+  {
+    "id": "R-B2-022",
+    "title": "Organiser les sauvegardes et tester la restauration",
+    "url": "ressources/bc2/R-B2-022-organiser-sauvegardes-restauration.html",
+    "type": "Méthode + outil",
+    "type_key": "methode",
+    "format": "methode",
+    "bc": "BC2",
+    "activities": [
+      "A2_5"
+    ],
+    "tasks": [
+      "T2_5_4"
+    ],
+    "knowledge": [
+      "S2_5_5"
+    ],
+    "maintenance": "evolutive",
+    "verified": "2026-08-30"
+  },
+  {
+    "id": "R-B2-023",
+    "title": "Contrôler les habilitations et les droits d’accès",
+    "url": "ressources/bc2/R-B2-023-controler-habilitations-droits-acces.html",
+    "type": "Méthode + outil",
+    "type_key": "methode",
+    "format": "methode",
+    "bc": "BC2",
+    "activities": [
+      "A2_5"
+    ],
+    "tasks": [
+      "T2_5_4"
+    ],
+    "knowledge": [
+      "S2_5_5"
+    ],
+    "maintenance": "evolutive",
+    "verified": "2026-08-30"
+  },
+  {
+    "id": "R-B2-024",
+    "title": "Diagnostiquer un dysfonctionnement qualité et rechercher ses causes",
+    "url": "ressources/bc2/R-B2-024-diagnostiquer-dysfonctionnement-qualite.html",
+    "type": "Méthode",
+    "type_key": "methode",
+    "format": "methode",
+    "bc": "BC2",
+    "activities": [
+      "A2_6"
+    ],
+    "tasks": [
+      "T2_6_1",
+      "T2_6_2"
+    ],
+    "knowledge": [
+      "S2_6_1",
+      "S2_7"
+    ],
+    "maintenance": "stable",
+    "verified": "2026-08-30"
+  },
+  {
+    "id": "R-B2-025",
+    "title": "Formaliser, diffuser et améliorer une procédure",
+    "url": "ressources/bc2/R-B2-025-formaliser-ameliorer-procedure.html",
+    "type": "Méthode + outil",
+    "type_key": "methode",
+    "format": "methode",
+    "bc": "BC2",
+    "activities": [
+      "A2_6"
+    ],
+    "tasks": [
+      "T2_6_2"
+    ],
+    "knowledge": [
+      "S2_6_1",
+      "S2_7",
+      "S5_3"
+    ],
+    "maintenance": "stable",
+    "verified": "2026-08-30"
+  },
+  {
+    "id": "R-B2-026",
+    "title": "Organiser le partage et la conservation des connaissances utiles",
+    "url": "ressources/bc2/R-B2-026-organiser-gestion-connaissances.html",
+    "type": "Méthode",
+    "type_key": "methode",
+    "format": "methode",
+    "bc": "BC2",
+    "activities": [
+      "A2_6"
+    ],
+    "tasks": [
+      "T2_6_3"
+    ],
+    "knowledge": [
+      "S2_6_2",
+      "S2_7"
+    ],
+    "maintenance": "stable",
+    "verified": "2026-08-30"
+  },
+  {
+    "id": "R-B2-027",
+    "title": "Préparer une veille et un dossier de certification",
+    "url": "ressources/bc2/R-B2-027-preparer-veille-certification.html",
+    "type": "Méthode",
+    "type_key": "methode",
+    "format": "methode",
+    "bc": "BC2",
+    "activities": [
+      "A2_6"
+    ],
+    "tasks": [
+      "T2_6_4",
+      "T2_6_5"
+    ],
+    "knowledge": [
+      "S2_6_3",
+      "S2_7"
+    ],
+    "maintenance": "evolutive",
+    "verified": "2026-08-30"
+  },
+  {
+    "id": "R-B2-028",
+    "title": "Transformer une information de veille en mise à jour de pratique ou de procédure",
+    "url": "ressources/bc2/R-B2-028-mettre-a-jour-pratique-procedure-apres-veille.html",
+    "type": "Méthode",
+    "type_key": "methode",
+    "format": "methode",
+    "bc": "BC2",
+    "activities": [
+      "A2_1"
+    ],
+    "tasks": [
+      "T2_1_6"
+    ],
+    "knowledge": [
+      "S2_1_1",
+      "S5_2",
+      "S5_4"
+    ],
+    "maintenance": "evolutive",
+    "verified": "2026-08-30"
+  },
+  {
+    "id": "R-B2-029",
+    "title": "Suivre une action corrective et vérifier qu’elle réduit réellement le risque",
+    "url": "ressources/bc2/R-B2-029-suivre-efficacite-action-corrective-risque.html",
+    "type": "Méthode de suivi",
+    "type_key": "methode",
+    "format": "methode",
+    "bc": "BC2",
+    "activities": [
+      "A2_3"
+    ],
+    "tasks": [
+      "T2_3_6"
+    ],
+    "knowledge": [
+      "S2_3",
+      "S2_7"
+    ],
+    "maintenance": "stable",
+    "verified": "2026-08-30"
+  },
+  {
+    "id": "R-B2-030",
+    "title": "Préparer et suivre un dossier de sinistre auprès de l’assureur",
+    "url": "ressources/bc2/R-B2-030-declarer-suivre-sinistre-assurance.html",
+    "type": "Méthode",
+    "type_key": "methode",
+    "format": "methode",
+    "bc": "BC2",
+    "activities": [
+      "A2_5"
+    ],
+    "tasks": [
+      "T2_5_2"
+    ],
+    "knowledge": [
+      "S2_5_3_1",
+      "S5_2"
+    ],
+    "maintenance": "evolutive",
+    "verified": "2026-08-30"
+  },
+  {
+    "id": "R-B2-031",
+    "title": "Organiser le suivi administratif d’une démarche de certification",
+    "url": "ressources/bc2/R-B2-031-suivre-demarche-certification.html",
+    "type": "Méthode de suivi",
+    "type_key": "methode",
+    "format": "methode",
+    "bc": "BC2",
+    "activities": [
+      "A2_6"
+    ],
+    "tasks": [
+      "T2_6_5"
+    ],
+    "knowledge": [
+      "S2_6_3",
+      "S2_7",
+      "S5_6"
+    ],
+    "maintenance": "stable",
+    "verified": "2026-08-30"
+  },
+  {
+    "id": "R-B3-001",
+    "title": "Identifier la règle sociale applicable avant d’agir",
+    "url": "ressources/bc3/R-B3-001-identifier-regle-sociale-applicable.html",
+    "type": "Méthode réglementaire",
+    "type_key": "regle",
+    "format": "regle",
+    "bc": "BC3",
+    "activities": [
+      "A3_1"
+    ],
+    "tasks": [
+      "T3_1_7"
+    ],
+    "knowledge": [
+      "S3_1_1",
+      "S5_2"
+    ],
+    "maintenance": "evolutive",
+    "verified": "2026-09-01"
+  },
+  {
+    "id": "R-B3-002",
+    "title": "Préparer l’embauche d’un salarié sans oublier les formalités obligatoires",
+    "url": "ressources/bc3/R-B3-002-preparer-embauche-salarie.html",
+    "type": "Méthode réglementaire",
+    "type_key": "regle",
+    "format": "regle",
+    "bc": "BC3",
+    "activities": [
+      "A3_1"
+    ],
+    "tasks": [
+      "T3_1_1",
+      "T3_1_2",
+      "T3_1_7"
+    ],
+    "knowledge": [
+      "S3_1_2",
+      "S3_1_3",
+      "S3_4"
+    ],
+    "maintenance": "evolutive",
+    "verified": "2026-09-01"
+  },
+  {
+    "id": "R-B3-003",
+    "title": "Contrôler un contrat de travail avant signature",
+    "url": "ressources/bc3/R-B3-003-controler-contrat-travail.html",
+    "type": "Méthode réglementaire",
+    "type_key": "regle",
+    "format": "regle",
+    "bc": "BC3",
+    "activities": [
+      "A3_1"
+    ],
+    "tasks": [
+      "T3_1_1"
+    ],
+    "knowledge": [
+      "S3_1_1",
+      "S3_1_2",
+      "S5_2"
+    ],
+    "maintenance": "evolutive",
+    "verified": "2026-09-01"
+  },
+  {
+    "id": "R-B3-004",
+    "title": "Préparer le départ d’un salarié et contrôler les documents de fin de contrat",
+    "url": "ressources/bc3/R-B3-004-preparer-depart-salarie.html",
+    "type": "Méthode réglementaire",
+    "type_key": "regle",
+    "format": "regle",
+    "bc": "BC3",
+    "activities": [
+      "A3_1"
+    ],
+    "tasks": [
+      "T3_1_1",
+      "T3_1_2",
+      "T3_1_5",
+      "T3_1_7"
+    ],
+    "knowledge": [
+      "S3_1_2",
+      "S3_1_3",
+      "S3_1_5",
+      "S3_4"
+    ],
+    "maintenance": "evolutive",
+    "verified": "2026-09-01"
+  },
+  {
+    "id": "R-B3-005",
+    "title": "Organiser un dossier du personnel conforme et exploitable",
+    "url": "ressources/bc3/R-B3-005-organiser-dossier-personnel-rgpd.html",
+    "type": "Méthode réglementaire",
+    "type_key": "regle",
+    "format": "regle",
+    "bc": "BC3",
+    "activities": [
+      "A3_1"
+    ],
+    "tasks": [
+      "T3_1_2",
+      "T3_1_7"
+    ],
+    "knowledge": [
+      "S3_1_3",
+      "S3_4",
+      "S5_4"
+    ],
+    "maintenance": "evolutive",
+    "verified": "2026-09-01"
+  },
+  {
+    "id": "R-B3-006",
+    "title": "Suivre le temps de travail et repérer les anomalies",
+    "url": "ressources/bc3/R-B3-006-suivre-temps-travail.html",
+    "type": "Méthode + outil",
+    "type_key": "methode",
+    "format": "methode",
+    "bc": "BC3",
+    "activities": [
+      "A3_1"
+    ],
+    "tasks": [
+      "T3_1_3",
+      "T3_1_4"
+    ],
+    "knowledge": [
+      "S3_1_4",
+      "S3_1_5",
+      "S3_4"
+    ],
+    "maintenance": "evolutive",
+    "verified": "2026-08-30"
+  },
+  {
+    "id": "R-B3-007",
+    "title": "Gérer les congés et absences sans fausser les droits du salarié",
+    "url": "ressources/bc3/R-B3-007-gerer-conges-absences-maladie.html",
+    "type": "Méthode réglementaire",
+    "type_key": "regle",
+    "format": "regle",
+    "bc": "BC3",
+    "activities": [
+      "A3_1"
+    ],
+    "tasks": [
+      "T3_1_3",
+      "T3_1_4",
+      "T3_1_7"
+    ],
+    "knowledge": [
+      "S3_1_4",
+      "S3_1_5",
+      "S3_4"
+    ],
+    "maintenance": "evolutive",
+    "verified": "2026-09-01"
+  },
+  {
+    "id": "R-B3-008",
+    "title": "Collecter et fiabiliser les variables de paie",
+    "url": "ressources/bc3/R-B3-008-collecter-variables-paie.html",
+    "type": "Méthode + outil",
+    "type_key": "methode",
+    "format": "methode",
+    "bc": "BC3",
+    "activities": [
+      "A3_1"
+    ],
+    "tasks": [
+      "T3_1_3",
+      "T3_1_4",
+      "T3_1_7"
+    ],
+    "knowledge": [
+      "S3_1_4",
+      "S3_1_5",
+      "S3_4"
+    ],
+    "maintenance": "evolutive",
+    "verified": "2026-08-30"
+  },
+  {
+    "id": "R-B3-009",
+    "title": "Contrôler un bulletin de paie avant validation",
+    "url": "ressources/bc3/R-B3-009-controler-bulletin-paie.html",
+    "type": "Méthode réglementaire",
+    "type_key": "regle",
+    "format": "regle",
+    "bc": "BC3",
+    "activities": [
+      "A3_1"
+    ],
+    "tasks": [
+      "T3_1_4",
+      "T3_1_7"
+    ],
+    "knowledge": [
+      "S3_1_1",
+      "S3_1_5",
+      "S3_4"
+    ],
+    "maintenance": "evolutive",
+    "verified": "2026-09-01"
+  },
+  {
+    "id": "R-B3-010",
+    "title": "Préparer, transmettre et contrôler une DSN",
+    "url": "ressources/bc3/R-B3-010-preparer-controler-dsn.html",
+    "type": "Méthode réglementaire",
+    "type_key": "regle",
+    "format": "regle",
+    "bc": "BC3",
+    "activities": [
+      "A3_1"
+    ],
+    "tasks": [
+      "T3_1_4",
+      "T3_1_5",
+      "T3_1_7"
+    ],
+    "knowledge": [
+      "S3_1_5",
+      "S3_4"
+    ],
+    "maintenance": "evolutive",
+    "verified": "2026-09-01"
+  },
+  {
+    "id": "R-B3-011",
+    "title": "Organiser les élections du CSE sous la responsabilité de la direction",
+    "url": "ressources/bc3/R-B3-011-organiser-elections-cse.html",
+    "type": "Méthode réglementaire",
+    "type_key": "regle",
+    "format": "regle",
+    "bc": "BC3",
+    "activities": [
+      "A3_1"
+    ],
+    "tasks": [
+      "T3_1_6",
+      "T3_1_7"
+    ],
+    "knowledge": [
+      "S3_1_1",
+      "S3_1_6",
+      "S5_2",
+      "S5_6"
+    ],
+    "maintenance": "evolutive",
+    "verified": "2026-09-01"
+  },
+  {
+    "id": "R-B3-012",
+    "title": "Communiquer une information sociale en respectant la confidentialité",
+    "url": "ressources/bc3/R-B3-012-communiquer-information-sociale-confidentielle.html",
+    "type": "Méthode de communication",
+    "type_key": "methode",
+    "format": "methode",
+    "bc": "BC3",
+    "activities": [
+      "A3_1"
+    ],
+    "tasks": [
+      "T3_1_7"
+    ],
+    "knowledge": [
+      "S3_1_3",
+      "S5_1",
+      "S5_2",
+      "S5_4",
+      "S5_5"
+    ],
+    "maintenance": "stable",
+    "verified": "2026-08-30"
+  },
+  {
+    "id": "R-B3-013",
+    "title": "Formaliser un besoin de recrutement et construire une fiche de poste",
+    "url": "ressources/bc3/R-B3-013-formaliser-besoin-recrutement-fiche-poste.html",
+    "type": "Méthode + outil",
+    "type_key": "methode",
+    "format": "methode",
+    "bc": "BC3",
+    "activities": [
+      "A3_2"
+    ],
+    "tasks": [
+      "T3_2_1"
+    ],
+    "knowledge": [
+      "S3_2_1",
+      "S3_4",
+      "S5_2"
+    ],
+    "maintenance": "stable",
+    "verified": "2026-08-30"
+  },
+  {
+    "id": "R-B3-014",
+    "title": "Rédiger et publier une offre d’emploi non discriminatoire",
+    "url": "ressources/bc3/R-B3-014-rediger-offre-emploi-non-discriminatoire.html",
+    "type": "Méthode réglementaire",
+    "type_key": "regle",
+    "format": "regle",
+    "bc": "BC3",
+    "activities": [
+      "A3_2"
+    ],
+    "tasks": [
+      "T3_2_1",
+      "T3_2_6"
+    ],
+    "knowledge": [
+      "S3_2_1",
+      "S5_2",
+      "S5_4"
+    ],
+    "maintenance": "evolutive",
+    "verified": "2026-09-01"
+  },
+  {
+    "id": "R-B3-015",
+    "title": "Présélectionner des candidatures avec une grille objective",
+    "url": "ressources/bc3/R-B3-015-preselectionner-candidatures.html",
+    "type": "Méthode + outil",
+    "type_key": "methode",
+    "format": "methode",
+    "bc": "BC3",
+    "activities": [
+      "A3_2"
+    ],
+    "tasks": [
+      "T3_2_1"
+    ],
+    "knowledge": [
+      "S3_2_1",
+      "S3_4"
+    ],
+    "maintenance": "evolutive",
+    "verified": "2026-08-30"
+  },
+  {
+    "id": "R-B3-016",
+    "title": "Préparer un entretien de recrutement structuré et comparable",
+    "url": "ressources/bc3/R-B3-016-preparer-entretien-recrutement.html",
+    "type": "Méthode + outil",
+    "type_key": "methode",
+    "format": "methode",
+    "bc": "BC3",
+    "activities": [
+      "A3_2"
+    ],
+    "tasks": [
+      "T3_2_1",
+      "T3_2_6"
+    ],
+    "knowledge": [
+      "S3_2_1",
+      "S5_5"
+    ],
+    "maintenance": "evolutive",
+    "verified": "2026-08-30"
+  },
+  {
+    "id": "R-B3-017",
+    "title": "Organiser l’intégration d’un nouveau salarié",
+    "url": "ressources/bc3/R-B3-017-organiser-integration-nouveau-salarie.html",
+    "type": "Méthode + outil",
+    "type_key": "methode",
+    "format": "methode",
+    "bc": "BC3",
+    "activities": [
+      "A3_2"
+    ],
+    "tasks": [
+      "T3_2_2",
+      "T3_2_6"
+    ],
+    "knowledge": [
+      "S3_2_2",
+      "S3_4",
+      "S5_2",
+      "S5_5"
+    ],
+    "maintenance": "stable",
+    "verified": "2026-08-30"
+  },
+  {
+    "id": "R-B3-018",
+    "title": "Recenser les besoins en compétences et en formation",
+    "url": "ressources/bc3/R-B3-018-recenser-besoins-formation-competences.html",
+    "type": "Méthode",
+    "type_key": "methode",
+    "format": "methode",
+    "bc": "BC3",
+    "activities": [
+      "A3_2"
+    ],
+    "tasks": [
+      "T3_2_3",
+      "T3_2_5",
+      "T3_2_6"
+    ],
+    "knowledge": [
+      "S3_2_3",
+      "S3_2_5",
+      "S3_4"
+    ],
+    "maintenance": "evolutive",
+    "verified": "2026-08-30"
+  },
+  {
+    "id": "R-B3-019",
+    "title": "Comparer des formations et préparer leur financement",
+    "url": "ressources/bc3/R-B3-019-choisir-formation-budget-opco.html",
+    "type": "Méthode réglementaire + outil",
+    "type_key": "regle",
+    "format": "regle",
+    "bc": "BC3",
+    "activities": [
+      "A3_2"
+    ],
+    "tasks": [
+      "T3_2_3",
+      "T3_2_6"
+    ],
+    "knowledge": [
+      "S3_2_3",
+      "S3_4"
+    ],
+    "maintenance": "evolutive",
+    "verified": "2026-09-01"
+  },
+  {
+    "id": "R-B3-020",
+    "title": "Planifier et suivre une action de formation jusqu’à son évaluation",
+    "url": "ressources/bc3/R-B3-020-planifier-suivre-action-formation.html",
+    "type": "Méthode + outil",
+    "type_key": "methode",
+    "format": "methode",
+    "bc": "BC3",
+    "activities": [
+      "A3_2"
+    ],
+    "tasks": [
+      "T3_2_3",
+      "T3_2_6"
+    ],
+    "knowledge": [
+      "S3_2_3",
+      "S3_4"
+    ],
+    "maintenance": "evolutive",
+    "verified": "2026-08-30"
+  },
+  {
+    "id": "R-B3-021",
+    "title": "Préparer un entretien annuel d’évaluation avec des critères professionnels",
+    "url": "ressources/bc3/R-B3-021-preparer-entretien-evaluation.html",
+    "type": "Méthode + outil",
+    "type_key": "methode",
+    "format": "methode",
+    "bc": "BC3",
+    "activities": [
+      "A3_2"
+    ],
+    "tasks": [
+      "T3_2_4",
+      "T3_2_6"
+    ],
+    "knowledge": [
+      "S3_2_4",
+      "S3_4",
+      "S5_5"
+    ],
+    "maintenance": "evolutive",
+    "verified": "2026-08-30"
+  },
+  {
+    "id": "R-B3-022",
+    "title": "Préparer l’entretien de parcours professionnel (EPP) selon les règles 2026",
+    "url": "ressources/bc3/R-B3-022-preparer-entretien-parcours-professionnel-2026.html",
+    "type": "Méthode réglementaire",
+    "type_key": "regle",
+    "format": "regle",
+    "bc": "BC3",
+    "activities": [
+      "A3_2"
+    ],
+    "tasks": [
+      "T3_2_3",
+      "T3_2_6"
+    ],
+    "knowledge": [
+      "S3_2_3",
+      "S3_4",
+      "S5_5"
+    ],
+    "maintenance": "evolutive",
+    "verified": "2026-09-01"
+  },
+  {
+    "id": "R-B3-023",
+    "title": "Construire un tableau de bord social simple et utile au dirigeant",
+    "url": "ressources/bc3/R-B3-023-construire-tableau-bord-social.html",
+    "type": "Méthode + outil",
+    "type_key": "methode",
+    "format": "methode",
+    "bc": "BC3",
+    "activities": [
+      "A3_2"
+    ],
+    "tasks": [
+      "T3_2_5",
+      "T3_2_6"
+    ],
+    "knowledge": [
+      "S3_2_5",
+      "S3_4"
+    ],
+    "maintenance": "stable",
+    "verified": "2026-08-30"
+  },
+  {
+    "id": "R-B3-024",
+    "title": "Analyser des indicateurs sociaux et préparer des propositions",
+    "url": "ressources/bc3/R-B3-024-analyser-indicateurs-sociaux-proposer-actions.html",
+    "type": "Méthode",
+    "type_key": "methode",
+    "format": "methode",
+    "bc": "BC3",
+    "activities": [
+      "A3_2"
+    ],
+    "tasks": [
+      "T3_2_5",
+      "T3_2_6"
+    ],
+    "knowledge": [
+      "S3_2_5",
+      "S5_2"
+    ],
+    "maintenance": "stable",
+    "verified": "2026-08-30"
+  },
+  {
+    "id": "R-B3-025",
+    "title": "Repérer une tension relationnelle et préparer un entretien de régulation",
+    "url": "ressources/bc3/R-B3-025-reperer-tension-preparer-entretien.html",
+    "type": "Méthode de communication",
+    "type_key": "methode",
+    "format": "methode",
+    "bc": "BC3",
+    "activities": [
+      "A3_3"
+    ],
+    "tasks": [
+      "T3_3_1"
+    ],
+    "knowledge": [
+      "S3_3",
+      "S5_5",
+      "S5_7",
+      "S5_8"
+    ],
+    "maintenance": "stable",
+    "verified": "2026-08-30"
+  },
+  {
+    "id": "R-B3-026",
+    "title": "Organiser un travail collaboratif avec des règles simples et vérifiables",
+    "url": "ressources/bc3/R-B3-026-organiser-travail-collaboratif.html",
+    "type": "Méthode + outil",
+    "type_key": "methode",
+    "format": "methode",
+    "bc": "BC3",
+    "activities": [
+      "A3_3"
+    ],
+    "tasks": [
+      "T3_3_2"
+    ],
+    "knowledge": [
+      "S3_3",
+      "S5_3",
+      "S5_4",
+      "S5_6"
+    ],
+    "maintenance": "stable",
+    "verified": "2026-08-30"
+  },
+  {
+    "id": "R-B3-027",
+    "title": "Préparer une réunion de représentation du personnel ou de dialogue social",
+    "url": "ressources/bc3/R-B3-027-preparer-reunion-cse-dialogue-social.html",
+    "type": "Méthode",
+    "type_key": "methode",
+    "format": "methode",
+    "bc": "BC3",
+    "activities": [
+      "A3_1"
+    ],
+    "tasks": [
+      "T3_1_6",
+      "T3_1_7"
+    ],
+    "knowledge": [
+      "S3_1_6",
+      "S5_6",
+      "S5_8"
+    ],
+    "maintenance": "evolutive",
+    "verified": "2026-08-30"
+  },
+  {
+    "id": "R-B3-028",
+    "title": "Calculer et comparer le coût prévisionnel d’un recrutement ou d’une formation",
+    "url": "ressources/bc3/R-B3-028-calculer-cout-recrutement-formation.html",
+    "type": "Méthode + tableur",
+    "type_key": "methode",
+    "format": "methode",
+    "bc": "BC3",
+    "activities": [
+      "A3_2"
+    ],
+    "tasks": [
+      "T3_2_1",
+      "T3_2_3",
+      "T3_2_5"
+    ],
+    "knowledge": [
+      "S3_2_1",
+      "S3_2_3",
+      "S3_2_5",
+      "S3_4"
+    ],
+    "maintenance": "stable",
+    "verified": "2026-08-30"
+  },
+  {
+    "id": "R-B4-001",
+    "title": "Caractériser le système d’information d’une PME",
+    "url": "ressources/bc4/R-B4-001-caracteriser-systeme-information.html",
+    "type": "Méthode",
+    "type_key": "methode",
+    "format": "methode",
+    "bc": "BC4",
+    "activities": [
+      "A4_1"
+    ],
+    "tasks": [
+      "T4_1_1"
+    ],
+    "knowledge": [
+      "S4_1_1",
+      "S4_1_4",
+      "S5_2"
+    ],
+    "maintenance": "stable",
+    "verified": "2026-08-30"
+  },
+  {
+    "id": "R-B4-002",
+    "title": "Cartographier un flux d’information ou un processus",
+    "url": "ressources/bc4/R-B4-002-cartographier-flux-information-processus.html",
+    "type": "Méthode + outil",
+    "type_key": "methode",
+    "format": "methode",
+    "bc": "BC4",
+    "activities": [
+      "A4_1"
+    ],
+    "tasks": [
+      "T4_1_1",
+      "T4_1_4"
+    ],
+    "knowledge": [
+      "S4_1_1",
+      "S5_2"
+    ],
+    "maintenance": "stable",
+    "verified": "2026-08-30"
+  },
+  {
+    "id": "R-B4-003",
+    "title": "Définir un besoin d’information et contrôler les données collectées",
+    "url": "ressources/bc4/R-B4-003-definir-besoin-information-controler-donnees.html",
+    "type": "Méthode",
+    "type_key": "methode",
+    "format": "methode",
+    "bc": "BC4",
+    "activities": [
+      "A4_1"
+    ],
+    "tasks": [
+      "T4_1_2",
+      "T4_1_3"
+    ],
+    "knowledge": [
+      "S4_1_1",
+      "S4_1_2"
+    ],
+    "maintenance": "stable",
+    "verified": "2026-08-30"
+  },
+  {
+    "id": "R-B4-004",
+    "title": "Structurer des données et fiabiliser leur saisie",
+    "url": "ressources/bc4/R-B4-004-structurer-base-donnees-fiabiliser-saisie.html",
+    "type": "Méthode + outil",
+    "type_key": "methode",
+    "format": "methode",
+    "bc": "BC4",
+    "activities": [
+      "A4_1"
+    ],
+    "tasks": [
+      "T4_1_3",
+      "T4_1_4"
+    ],
+    "knowledge": [
+      "S4_1_2",
+      "S4_1_4"
+    ],
+    "maintenance": "stable",
+    "verified": "2026-08-30"
+  },
+  {
+    "id": "R-B4-005",
+    "title": "Construire un plan de classement et d’archivage des documents",
+    "url": "ressources/bc4/R-B4-005-classer-archiver-documents.html",
+    "type": "Méthode + règle",
+    "type_key": "regle",
+    "format": "regle",
+    "bc": "BC4",
+    "activities": [
+      "A4_1"
+    ],
+    "tasks": [
+      "T4_1_5"
+    ],
+    "knowledge": [
+      "S4_1_3",
+      "S5_2"
+    ],
+    "maintenance": "evolutive",
+    "verified": "2026-09-01"
+  },
+  {
+    "id": "R-B4-006",
+    "title": "Diagnostiquer une anomalie du SI et préparer une demande à l’ESN",
+    "url": "ressources/bc4/R-B4-006-diagnostiquer-anomalie-si-preparer-demande-esn.html",
+    "type": "Méthode",
+    "type_key": "methode",
+    "format": "methode",
+    "bc": "BC4",
+    "activities": [
+      "A4_1"
+    ],
+    "tasks": [
+      "T4_1_6"
+    ],
+    "knowledge": [
+      "S4_1_1",
+      "S4_1_4",
+      "S5_2"
+    ],
+    "maintenance": "stable",
+    "verified": "2026-08-30"
+  },
+  {
+    "id": "R-B4-007",
+    "title": "Analyser et améliorer un processus support",
+    "url": "ressources/bc4/R-B4-007-analyser-ameliorer-processus-support.html",
+    "type": "Méthode",
+    "type_key": "methode",
+    "format": "methode",
+    "bc": "BC4",
+    "activities": [
+      "A4_2"
+    ],
+    "tasks": [
+      "T4_2_1"
+    ],
+    "knowledge": [
+      "S4_2_1",
+      "S4_2_2",
+      "S5_2"
+    ],
+    "maintenance": "stable",
+    "verified": "2026-08-30"
+  },
+  {
+    "id": "R-B4-008",
+    "title": "Organiser et suivre le travail administratif",
+    "url": "ressources/bc4/R-B4-008-organiser-travail-administratif.html",
+    "type": "Méthode",
+    "type_key": "methode",
+    "format": "methode",
+    "bc": "BC4",
+    "activities": [
+      "A4_2"
+    ],
+    "tasks": [
+      "T4_2_2"
+    ],
+    "knowledge": [
+      "S4_2_2",
+      "S4_2_3",
+      "S4_8"
+    ],
+    "maintenance": "stable",
+    "verified": "2026-08-30"
+  },
+  {
+    "id": "R-B4-009",
+    "title": "Planifier des activités, interventions ou prestations",
+    "url": "ressources/bc4/R-B4-009-planifier-activites-interventions.html",
+    "type": "Méthode + outil",
+    "type_key": "methode",
+    "format": "methode",
+    "bc": "BC4",
+    "activities": [
+      "A4_2"
+    ],
+    "tasks": [
+      "T4_2_3"
+    ],
+    "knowledge": [
+      "S4_2_2",
+      "S4_2_3",
+      "S4_8"
+    ],
+    "maintenance": "stable",
+    "verified": "2026-08-30"
+  },
+  {
+    "id": "R-B4-010",
+    "title": "Gérer les priorités, la charge et un agenda partagé",
+    "url": "ressources/bc4/R-B4-010-gerer-charge-priorites-agenda.html",
+    "type": "Outil + méthode",
+    "type_key": "outil",
+    "format": "outil",
+    "bc": "BC4",
+    "activities": [
+      "A4_2"
+    ],
+    "tasks": [
+      "T4_2_2",
+      "T4_2_3"
+    ],
+    "knowledge": [
+      "S4_2_3",
+      "S4_8"
+    ],
+    "maintenance": "stable",
+    "verified": "2026-08-30"
+  },
+  {
+    "id": "R-B4-011",
+    "title": "Organiser un déplacement professionnel de bout en bout",
+    "url": "ressources/bc4/R-B4-011-organiser-deplacement-professionnel.html",
+    "type": "Méthode",
+    "type_key": "methode",
+    "format": "methode",
+    "bc": "BC4",
+    "activities": [
+      "A4_2"
+    ],
+    "tasks": [
+      "T4_2_4",
+      "T4_2_6"
+    ],
+    "knowledge": [
+      "S4_2_2",
+      "S4_2_3",
+      "S5_2"
+    ],
+    "maintenance": "stable",
+    "verified": "2026-08-30"
+  },
+  {
+    "id": "R-B4-012",
+    "title": "Organiser un événement interne ou une participation à un salon",
+    "url": "ressources/bc4/R-B4-012-organiser-evenement-professionnel.html",
+    "type": "Méthode + outil",
+    "type_key": "methode",
+    "format": "methode",
+    "bc": "BC4",
+    "activities": [
+      "A4_2"
+    ],
+    "tasks": [
+      "T4_2_5",
+      "T4_2_6"
+    ],
+    "knowledge": [
+      "S4_2_2",
+      "S4_2_3",
+      "S5_6"
+    ],
+    "maintenance": "stable",
+    "verified": "2026-08-30"
+  },
+  {
+    "id": "R-B4-013",
+    "title": "Sélectionner et coordonner des prestataires pour une activité",
+    "url": "ressources/bc4/R-B4-013-selectionner-coordonner-prestataires.html",
+    "type": "Méthode",
+    "type_key": "methode",
+    "format": "methode",
+    "bc": "BC4",
+    "activities": [
+      "A4_2"
+    ],
+    "tasks": [
+      "T4_2_4",
+      "T4_2_5",
+      "T4_2_6"
+    ],
+    "knowledge": [
+      "S4_2_2",
+      "S5_2"
+    ],
+    "maintenance": "stable",
+    "verified": "2026-08-30"
+  },
+  {
+    "id": "R-B4-014",
+    "title": "Mettre en place une veille commerciale orientée décision",
+    "url": "ressources/bc4/R-B4-014-mettre-en-place-veille-commerciale.html",
+    "type": "Méthode",
+    "type_key": "methode",
+    "format": "methode",
+    "bc": "BC4",
+    "activities": [
+      "A4_3"
+    ],
+    "tasks": [
+      "T4_3_1"
+    ],
+    "knowledge": [
+      "S4_3_1",
+      "S4_8_1",
+      "S5_2"
+    ],
+    "maintenance": "stable",
+    "verified": "2026-08-30"
+  },
+  {
+    "id": "R-B4-015",
+    "title": "Analyser un marché et distinguer une tendance d’un signal isolé",
+    "url": "ressources/bc4/R-B4-015-analyser-marche-tendances.html",
+    "type": "Méthode",
+    "type_key": "methode",
+    "format": "methode",
+    "bc": "BC4",
+    "activities": [
+      "A4_3"
+    ],
+    "tasks": [
+      "T4_3_2"
+    ],
+    "knowledge": [
+      "S4_3_1",
+      "S4_3_2",
+      "S4_8_1"
+    ],
+    "maintenance": "stable",
+    "verified": "2026-08-30"
+  },
+  {
+    "id": "R-B4-016",
+    "title": "Construire et exploiter une enquête de satisfaction client",
+    "url": "ressources/bc4/R-B4-016-construire-enquete-satisfaction.html",
+    "type": "Méthode + outil",
+    "type_key": "methode",
+    "format": "methode",
+    "bc": "BC4",
+    "activities": [
+      "A4_3"
+    ],
+    "tasks": [
+      "T4_3_2",
+      "T4_3_3"
+    ],
+    "knowledge": [
+      "S4_3_1",
+      "S4_3_3",
+      "S4_8_1"
+    ],
+    "maintenance": "stable",
+    "verified": "2026-08-30"
+  },
+  {
+    "id": "R-B4-017",
+    "title": "Transformer une analyse de marché en proposition de développement commercial",
+    "url": "ressources/bc4/R-B4-017-proposer-action-developpement-commercial.html",
+    "type": "Méthode",
+    "type_key": "methode",
+    "format": "methode",
+    "bc": "BC4",
+    "activities": [
+      "A4_3"
+    ],
+    "tasks": [
+      "T4_3_2"
+    ],
+    "knowledge": [
+      "S4_3_2",
+      "S5_2"
+    ],
+    "maintenance": "stable",
+    "verified": "2026-08-30"
+  },
+  {
+    "id": "R-B4-018",
+    "title": "Concevoir, suivre et évaluer une action de fidélisation",
+    "url": "ressources/bc4/R-B4-018-concevoir-evaluer-action-fidelisation.html",
+    "type": "Méthode",
+    "type_key": "methode",
+    "format": "methode",
+    "bc": "BC4",
+    "activities": [
+      "A4_3"
+    ],
+    "tasks": [
+      "T4_3_3"
+    ],
+    "knowledge": [
+      "S4_3_3",
+      "S4_8_1"
+    ],
+    "maintenance": "stable",
+    "verified": "2026-08-30"
+  },
+  {
+    "id": "R-B4-019",
+    "title": "Préparer le cahier des charges d’une action de communication",
+    "url": "ressources/bc4/R-B4-019-preparer-cahier-charges-communication.html",
+    "type": "Méthode",
+    "type_key": "methode",
+    "format": "methode",
+    "bc": "BC4",
+    "activities": [
+      "A4_4"
+    ],
+    "tasks": [
+      "T4_4_1",
+      "T4_4_2"
+    ],
+    "knowledge": [
+      "S4_4_1",
+      "S5_2"
+    ],
+    "maintenance": "stable",
+    "verified": "2026-08-30"
+  },
+  {
+    "id": "R-B4-020",
+    "title": "Concevoir un support de communication institutionnelle",
+    "url": "ressources/bc4/R-B4-020-concevoir-support-communication-institutionnelle.html",
+    "type": "Méthode + production",
+    "type_key": "methode",
+    "format": "methode",
+    "bc": "BC4",
+    "activities": [
+      "A4_4"
+    ],
+    "tasks": [
+      "T4_4_1",
+      "T4_4_4"
+    ],
+    "knowledge": [
+      "S4_4_1",
+      "S4_4_2",
+      "S5_2"
+    ],
+    "maintenance": "stable",
+    "verified": "2026-08-30"
+  },
+  {
+    "id": "R-B4-021",
+    "title": "Concevoir une action de communication commerciale cohérente",
+    "url": "ressources/bc4/R-B4-021-concevoir-action-communication-commerciale.html",
+    "type": "Méthode",
+    "type_key": "methode",
+    "format": "methode",
+    "bc": "BC4",
+    "activities": [
+      "A4_4"
+    ],
+    "tasks": [
+      "T4_4_2",
+      "T4_4_4"
+    ],
+    "knowledge": [
+      "S4_4_1",
+      "S4_4_3",
+      "S4_8_1"
+    ],
+    "maintenance": "stable",
+    "verified": "2026-08-30"
+  },
+  {
+    "id": "R-B4-022",
+    "title": "Suivre l’identité numérique et l’e-réputation de la PME",
+    "url": "ressources/bc4/R-B4-022-suivre-identite-numerique-e-reputation.html",
+    "type": "Méthode + veille",
+    "type_key": "methode",
+    "format": "methode",
+    "bc": "BC4",
+    "activities": [
+      "A4_4"
+    ],
+    "tasks": [
+      "T4_4_3"
+    ],
+    "knowledge": [
+      "S4_4_1",
+      "S4_4_4",
+      "S5_4"
+    ],
+    "maintenance": "evolutive",
+    "verified": "2026-08-30"
+  },
+  {
+    "id": "R-B4-023",
+    "title": "Contrôler la cohérence d’un support avec l’image et la charte de la PME",
+    "url": "ressources/bc4/R-B4-023-controler-coherence-image-charte.html",
+    "type": "Outil de contrôle",
+    "type_key": "outil",
+    "format": "outil",
+    "bc": "BC4",
+    "activities": [
+      "A4_4"
+    ],
+    "tasks": [
+      "T4_4_4"
+    ],
+    "knowledge": [
+      "S4_4_1",
+      "S4_4_4",
+      "S5_4"
+    ],
+    "maintenance": "stable",
+    "verified": "2026-08-30"
+  },
+  {
+    "id": "R-B4-024",
+    "title": "Mesurer l’efficacité d’une action de communication",
+    "url": "ressources/bc4/R-B4-024-mesurer-efficacite-action-communication.html",
+    "type": "Méthode + tableau",
+    "type_key": "methode",
+    "format": "methode",
+    "bc": "BC4",
+    "activities": [
+      "A4_4"
+    ],
+    "tasks": [
+      "T4_4_1",
+      "T4_4_2",
+      "T4_4_4"
+    ],
+    "knowledge": [
+      "S4_4_1",
+      "S4_8_1"
+    ],
+    "maintenance": "stable",
+    "verified": "2026-08-30"
+  },
+  {
+    "id": "R-B4-025",
+    "title": "Calculer et analyser un coût complet avec la méthode fournie",
+    "url": "ressources/bc4/R-B4-025-calculer-cout-complet.html",
+    "type": "Méthode de calcul",
+    "type_key": "methode",
+    "format": "methode",
+    "bc": "BC4",
+    "activities": [
+      "A4_5"
+    ],
+    "tasks": [
+      "T4_5_1"
+    ],
+    "knowledge": [
+      "S4_5_1",
+      "S4_5_2",
+      "S4_8_1"
+    ],
+    "maintenance": "stable",
+    "verified": "2026-08-30"
+  },
+  {
+    "id": "R-B4-026",
+    "title": "Calculer une marge sur coût variable ou un coût partiel",
+    "url": "ressources/bc4/R-B4-026-calculer-marge-cout-partiel.html",
+    "type": "Méthode de calcul",
+    "type_key": "methode",
+    "format": "methode",
+    "bc": "BC4",
+    "activities": [
+      "A4_5"
+    ],
+    "tasks": [
+      "T4_5_1"
+    ],
+    "knowledge": [
+      "S4_5_1",
+      "S4_5_2",
+      "S4_8_1"
+    ],
+    "maintenance": "stable",
+    "verified": "2026-08-30"
+  },
+  {
+    "id": "R-B4-027",
+    "title": "Calculer et interpréter un seuil de rentabilité",
+    "url": "ressources/bc4/R-B4-027-calculer-seuil-rentabilite.html",
+    "type": "Méthode de calcul",
+    "type_key": "methode",
+    "format": "methode",
+    "bc": "BC4",
+    "activities": [
+      "A4_5"
+    ],
+    "tasks": [
+      "T4_5_1",
+      "T4_5_3"
+    ],
+    "knowledge": [
+      "S4_5_3",
+      "S4_8_1"
+    ],
+    "maintenance": "stable",
+    "verified": "2026-08-30"
+  },
+  {
+    "id": "R-B4-028",
+    "title": "Construire un budget prévisionnel exploitable",
+    "url": "ressources/bc4/R-B4-028-construire-budget-previsionnel.html",
+    "type": "Méthode + tableur",
+    "type_key": "methode",
+    "format": "methode",
+    "bc": "BC4",
+    "activities": [
+      "A4_5"
+    ],
+    "tasks": [
+      "T4_5_2"
+    ],
+    "knowledge": [
+      "S4_5_4",
+      "S4_8_1"
+    ],
+    "maintenance": "stable",
+    "verified": "2026-08-30"
+  },
+  {
+    "id": "R-B4-029",
+    "title": "Analyser les écarts et simuler l’impact d’une décision de gestion",
+    "url": "ressources/bc4/R-B4-029-analyser-ecarts-simuler-decision.html",
+    "type": "Méthode d’analyse",
+    "type_key": "methode",
+    "format": "methode",
+    "bc": "BC4",
+    "activities": [
+      "A4_5"
+    ],
+    "tasks": [
+      "T4_5_2",
+      "T4_5_3"
+    ],
+    "knowledge": [
+      "S4_5_1",
+      "S4_5_4",
+      "S4_8_1"
+    ],
+    "maintenance": "stable",
+    "verified": "2026-08-30"
+  },
+  {
+    "id": "R-B4-030",
+    "title": "Construire un bilan fonctionnel à partir des données fournies",
+    "url": "ressources/bc4/R-B4-030-construire-bilan-fonctionnel.html",
+    "type": "Méthode de calcul",
+    "type_key": "methode",
+    "format": "methode",
+    "bc": "BC4",
+    "activities": [
+      "A4_6"
+    ],
+    "tasks": [
+      "T4_6_1"
+    ],
+    "knowledge": [
+      "S4_6_1",
+      "S4_8_1"
+    ],
+    "maintenance": "stable",
+    "verified": "2026-08-30"
+  },
+  {
+    "id": "R-B4-031",
+    "title": "Calculer et interpréter FRNG, BFR et trésorerie nette",
+    "url": "ressources/bc4/R-B4-031-analyser-equilibres-fr-bfr-tn.html",
+    "type": "Méthode d’analyse",
+    "type_key": "methode",
+    "format": "methode",
+    "bc": "BC4",
+    "activities": [
+      "A4_6"
+    ],
+    "tasks": [
+      "T4_6_1"
+    ],
+    "knowledge": [
+      "S4_6_1",
+      "S4_8_1"
+    ],
+    "maintenance": "stable",
+    "verified": "2026-08-30"
+  },
+  {
+    "id": "R-B4-032",
+    "title": "Calculer et interpréter des ratios financiers pertinents",
+    "url": "ressources/bc4/R-B4-032-calculer-interpreter-ratios-financiers.html",
+    "type": "Méthode d’analyse",
+    "type_key": "methode",
+    "format": "methode",
+    "bc": "BC4",
+    "activities": [
+      "A4_6"
+    ],
+    "tasks": [
+      "T4_6_1"
+    ],
+    "knowledge": [
+      "S4_6_1",
+      "S4_8_1"
+    ],
+    "maintenance": "stable",
+    "verified": "2026-08-30"
+  },
+  {
+    "id": "R-B4-033",
+    "title": "Comparer des modes de financement d’un investissement",
+    "url": "ressources/bc4/R-B4-033-comparer-modes-financement-investissement.html",
+    "type": "Méthode + comparaison",
+    "type_key": "methode",
+    "format": "methode",
+    "bc": "BC4",
+    "activities": [
+      "A4_6"
+    ],
+    "tasks": [
+      "T4_6_2"
+    ],
+    "knowledge": [
+      "S4_6_2",
+      "S4_6_3",
+      "S4_8_1"
+    ],
+    "maintenance": "evolutive",
+    "verified": "2026-08-30"
+  },
+  {
+    "id": "R-B4-034",
+    "title": "Construire un plan de financement et mesurer l’impact d’une décision",
+    "url": "ressources/bc4/R-B4-034-construire-plan-financement-mesurer-impact.html",
+    "type": "Méthode de calcul",
+    "type_key": "methode",
+    "format": "methode",
+    "bc": "BC4",
+    "activities": [
+      "A4_6"
+    ],
+    "tasks": [
+      "T4_6_2"
+    ],
+    "knowledge": [
+      "S4_6_2",
+      "S4_6_3",
+      "S4_8_1",
+      "S5_2"
+    ],
+    "maintenance": "stable",
+    "verified": "2026-08-30"
+  },
+  {
+    "id": "R-B4-035",
+    "title": "Choisir des indicateurs de gestion et des seuils d’alerte",
+    "url": "ressources/bc4/R-B4-035-choisir-indicateurs-seuils-alerte.html",
+    "type": "Méthode",
+    "type_key": "methode",
+    "format": "methode",
+    "bc": "BC4",
+    "activities": [
+      "A4_7"
+    ],
+    "tasks": [
+      "T4_7_1"
+    ],
+    "knowledge": [
+      "S4_7_1",
+      "S4_8",
+      "S5_2"
+    ],
+    "maintenance": "stable",
+    "verified": "2026-08-30"
+  },
+  {
+    "id": "R-B4-036",
+    "title": "Construire un tableau de bord commercial et financier lisible",
+    "url": "ressources/bc4/R-B4-036-construire-tableau-bord-commercial-financier.html",
+    "type": "Méthode + tableur",
+    "type_key": "methode",
+    "format": "methode",
+    "bc": "BC4",
+    "activities": [
+      "A4_7"
+    ],
+    "tasks": [
+      "T4_7_2"
+    ],
+    "knowledge": [
+      "S4_7_1",
+      "S4_8",
+      "S5_2"
+    ],
+    "maintenance": "stable",
+    "verified": "2026-08-30"
+  },
+  {
+    "id": "R-B4-037",
+    "title": "Analyser un tableau de bord et préparer une alerte au dirigeant",
+    "url": "ressources/bc4/R-B4-037-analyser-tableau-bord-alerter.html",
+    "type": "Méthode d’analyse",
+    "type_key": "methode",
+    "format": "methode",
+    "bc": "BC4",
+    "activities": [
+      "A4_7"
+    ],
+    "tasks": [
+      "T4_7_1",
+      "T4_7_2"
+    ],
+    "knowledge": [
+      "S4_7_1",
+      "S5_2"
+    ],
+    "maintenance": "stable",
+    "verified": "2026-08-30"
+  },
+  {
+    "id": "R-B4-038",
+    "title": "Résoudre un problème administratif sans traiter seulement le symptôme",
+    "url": "ressources/bc4/R-B4-038-resoudre-probleme-administratif.html",
+    "type": "Méthode",
+    "type_key": "methode",
+    "format": "methode",
+    "bc": "BC4",
+    "activities": [
+      "A4_2"
+    ],
+    "tasks": [
+      "T4_2_1",
+      "T4_2_2"
+    ],
+    "knowledge": [
+      "S4_2_1",
+      "S4_2_2"
+    ],
+    "maintenance": "stable",
+    "verified": "2026-08-30"
+  },
+  {
+    "id": "R-B4-039",
+    "title": "Décliner la stratégie de communication en plan d’actions opérationnel",
+    "url": "ressources/bc4/R-B4-039-construire-plan-communication-operationnel.html",
+    "type": "Méthode",
+    "type_key": "methode",
+    "format": "methode",
+    "bc": "BC4",
+    "activities": [
+      "A4_4"
+    ],
+    "tasks": [
+      "T4_4_1",
+      "T4_4_2",
+      "T4_4_4"
+    ],
+    "knowledge": [
+      "S4_4_1",
+      "S4_4_2",
+      "S4_4_3",
+      "S4_4_4",
+      "S4_8_1"
+    ],
+    "maintenance": "stable",
+    "verified": "2026-08-30"
+  },
+  {
+    "id": "R-B4-040",
+    "title": "Simuler l’impact d’une décision de gestion sur les coûts, le résultat et les équilibres financiers",
+    "url": "ressources/bc4/R-B4-040-simuler-decision-gestion-couts-finance.html",
+    "type": "Méthode + tableur",
+    "type_key": "methode",
+    "format": "methode",
+    "bc": "BC4",
+    "activities": [
+      "A4_5",
+      "A4_6"
+    ],
+    "tasks": [
+      "T4_5_3",
+      "T4_6_2"
+    ],
+    "knowledge": [
+      "S4_5_1",
+      "S4_5_2",
+      "S4_5_3",
+      "S4_5_4",
+      "S4_6_1",
+      "S4_6_2",
+      "S4_8_1"
+    ],
+    "maintenance": "stable",
+    "verified": "2026-08-30"
+  },
+  {
+    "id": "R-TR-001",
+    "title": "Analyser une situation de communication avant de répondre",
+    "url": "ressources/transversal/R-TR-001-analyser-situation-communication.html",
+    "type": "Repère + méthode",
+    "type_key": "repere",
+    "format": "repere",
+    "bc": "",
+    "activities": [],
+    "tasks": [],
+    "knowledge": [
+      "S5_1"
+    ],
+    "maintenance": "stable",
+    "verified": "2026-08-30"
+  },
+  {
+    "id": "R-TR-002",
+    "title": "Rédiger un courriel professionnel qui permet d’agir",
+    "url": "ressources/transversal/R-TR-002-rediger-courriel-professionnel.html",
+    "type": "Méthode",
+    "type_key": "methode",
+    "format": "methode",
+    "bc": "",
+    "activities": [],
+    "tasks": [],
+    "knowledge": [
+      "S5_2",
+      "S5_4"
+    ],
+    "maintenance": "stable",
+    "verified": "2026-08-30"
+  },
+  {
+    "id": "R-TR-003",
+    "title": "Rédiger une note professionnelle pour aider le dirigeant à décider",
+    "url": "ressources/transversal/R-TR-003-rediger-note-direction.html",
+    "type": "Méthode",
+    "type_key": "methode",
+    "format": "methode",
+    "bc": "",
+    "activities": [],
+    "tasks": [],
+    "knowledge": [
+      "S5_2"
+    ],
+    "maintenance": "stable",
+    "verified": "2026-08-30"
+  },
+  {
+    "id": "R-TR-004",
+    "title": "Produire un compte rendu de réunion ou d’entretien qui permet le suivi",
+    "url": "ressources/transversal/R-TR-004-produire-compte-rendu-actionnable.html",
+    "type": "Méthode",
+    "type_key": "methode",
+    "format": "methode",
+    "bc": "",
+    "activities": [],
+    "tasks": [],
+    "knowledge": [
+      "S5_2",
+      "S5_6"
+    ],
+    "maintenance": "stable",
+    "verified": "2026-08-30"
+  },
+  {
+    "id": "R-TR-005",
+    "title": "Concevoir un formulaire ou document structuré qui produit des données exploitables",
+    "url": "ressources/transversal/R-TR-005-concevoir-formulaire-document-structure.html",
+    "type": "Méthode + outil",
+    "type_key": "methode",
+    "format": "methode",
+    "bc": "",
+    "activities": [],
+    "tasks": [],
+    "knowledge": [
+      "S5_3"
+    ],
+    "maintenance": "stable",
+    "verified": "2026-08-30"
+  },
+  {
+    "id": "R-TR-006",
+    "title": "Choisir le bon canal de communication numérique et maîtriser la trace laissée",
+    "url": "ressources/transversal/R-TR-006-choisir-canal-communication-numerique.html",
+    "type": "Repère + méthode",
+    "type_key": "repere",
+    "format": "repere",
+    "bc": "",
+    "activities": [],
+    "tasks": [],
+    "knowledge": [
+      "S5_4"
+    ],
+    "maintenance": "stable",
+    "verified": "2026-08-30"
+  },
+  {
+    "id": "R-TR-007",
+    "title": "Préparer et conduire un entretien professionnel court",
+    "url": "ressources/transversal/R-TR-007-preparer-conduire-entretien-professionnel.html",
+    "type": "Méthode",
+    "type_key": "methode",
+    "format": "methode",
+    "bc": "",
+    "activities": [],
+    "tasks": [],
+    "knowledge": [
+      "S5_5"
+    ],
+    "maintenance": "stable",
+    "verified": "2026-08-30"
+  },
+  {
+    "id": "R-TR-008",
+    "title": "Préparer et animer une réunion qui aboutit à des décisions et des actions",
+    "url": "ressources/transversal/R-TR-008-preparer-animer-reunion.html",
+    "type": "Méthode",
+    "type_key": "methode",
+    "format": "methode",
+    "bc": "",
+    "activities": [],
+    "tasks": [],
+    "knowledge": [
+      "S5_6"
+    ],
+    "maintenance": "stable",
+    "verified": "2026-08-30"
+  },
+  {
+    "id": "R-TR-009",
+    "title": "Repérer une tension et préparer une intervention sans se substituer au décideur",
+    "url": "ressources/transversal/R-TR-009-gerer-tension-conflit.html",
+    "type": "Méthode de préparation",
+    "type_key": "methode",
+    "format": "methode",
+    "bc": "",
+    "activities": [],
+    "tasks": [],
+    "knowledge": [
+      "S5_7"
+    ],
+    "maintenance": "stable",
+    "verified": "2026-08-30"
+  },
+  {
+    "id": "R-TR-010",
+    "title": "Préparer un dialogue ou une négociation dans le cadre fixé par la direction",
+    "url": "ressources/transversal/R-TR-010-preparer-dialogue-negociation.html",
+    "type": "Méthode de préparation",
+    "type_key": "methode",
+    "format": "methode",
+    "bc": "",
+    "activities": [],
+    "tasks": [],
+    "knowledge": [
+      "S5_8"
+    ],
+    "maintenance": "stable",
+    "verified": "2026-08-30"
+  },
+  {
+    "id": "R-TR-011",
+    "title": "Construire un tableau de données fiable avant de calculer ou filtrer",
+    "url": "ressources/transversal/R-TR-011-construire-tableau-donnees-fiable.html",
+    "type": "Outil + méthode",
+    "type_key": "outil",
+    "format": "outil",
+    "bc": "",
+    "activities": [],
+    "tasks": [],
+    "knowledge": [
+      "S1_7",
+      "S2_7",
+      "S3_4",
+      "S4_8"
+    ],
+    "maintenance": "stable",
+    "verified": "2026-08-30"
+  },
+  {
+    "id": "R-TR-012",
+    "title": "Extraire, nettoyer et contrôler des données du PGI avant analyse",
+    "url": "ressources/transversal/R-TR-012-extraire-nettoyer-controler-donnees-pgi.html",
+    "type": "Méthode numérique",
+    "type_key": "methode",
+    "format": "methode",
+    "bc": "",
+    "activities": [],
+    "tasks": [],
+    "knowledge": [
+      "S1_7",
+      "S2_7",
+      "S3_4",
+      "S4_8"
+    ],
+    "maintenance": "stable",
+    "verified": "2026-08-30",
+    "examples": [
+      "Odoo"
+    ],
+    "keywords": [
+      "Odoo",
+      "PGI",
+      "ERP",
+      "export",
+      "import",
+      "CRM",
+      "ventes",
+      "achats",
+      "inventaire",
+      "facturation"
+    ]
+  },
+  {
+    "id": "R-TR-013",
+    "title": "Choisir entre filtre, recherche, validation et tableau croisé dynamique dans le tableur",
+    "url": "ressources/transversal/R-TR-013-utiliser-filtres-recherche-validation-tcd.html",
+    "type": "Outil tableur",
+    "type_key": "outil",
+    "format": "outil",
+    "bc": "",
+    "activities": [],
+    "tasks": [],
+    "knowledge": [
+      "S1_7",
+      "S2_7",
+      "S3_4",
+      "S4_8"
+    ],
+    "maintenance": "stable",
+    "verified": "2026-08-30"
+  },
+  {
+    "id": "R-TR-014",
+    "title": "Présenter une analyse chiffrée sans noyer le destinataire sous les données",
+    "url": "ressources/transversal/R-TR-014-presenter-analyse-chiffree.html",
+    "type": "Méthode de communication",
+    "type_key": "methode",
+    "format": "methode",
+    "bc": "",
+    "activities": [],
+    "tasks": [],
+    "knowledge": [
+      "S5_2"
+    ],
+    "maintenance": "stable",
+    "verified": "2026-08-30"
+  }
+]

@@ -1,0 +1,94 @@
+/* v3.0.3 — actions élève : mode d’emploi + impression/PDF */
+.page-actions-toolbar {
+  display:flex; flex-wrap:wrap; gap:.55rem; align-items:center;
+  margin:1rem 0; padding:.65rem .75rem; border:1px solid #cbd5e1;
+  border-radius:.7rem; background:#f8fafc;
+}
+.page-action-button {
+  appearance:none; border:1px solid #475569; border-radius:.55rem;
+  background:#fff; color:#0f172a; padding:.5rem .75rem; font:inherit;
+  font-weight:700; cursor:pointer;
+}
+.page-action-button:hover, .page-action-button:focus-visible { background:#eef2f7; }
+.page-action-hint { margin:0; color:#475569; font-size:.92rem; flex:1 1 18rem; }
+.knowledge-print-button {
+  margin-top:.7rem; padding:.36rem .58rem; font-size:.86rem; font-weight:650;
+}
+.usage-help-dialog {
+  width:min(44rem, calc(100vw - 2rem)); max-height:min(78vh, 46rem);
+  overflow:auto; border:1px solid #64748b; border-radius:.85rem;
+  padding:0; background:#fff; color:#0f172a;
+}
+.usage-help-dialog::backdrop { background:rgba(15,23,42,.48); }
+.usage-help-dialog:not([open]) { display:none; }
+.usage-help-dialog__header {
+  display:flex; justify-content:space-between; gap:1rem; align-items:flex-start;
+  padding:1rem 1.1rem .75rem; border-bottom:1px solid #e2e8f0;
+}
+.usage-help-dialog__header h2 { margin:0; font-size:1.2rem; }
+.usage-help-dialog__close-x {
+  appearance:none; border:0; background:transparent; color:#334155;
+  font:inherit; font-size:1.35rem; line-height:1; cursor:pointer; padding:.2rem .35rem;
+}
+.usage-help-dialog__body { padding:1rem 1.1rem; }
+.usage-help-dialog__body p:first-child { margin-top:0; }
+.usage-help-dialog__body ol, .usage-help-dialog__body ul { padding-left:1.35rem; }
+.usage-help-dialog__body li + li { margin-top:.4rem; }
+.usage-help-dialog__footer {
+  display:flex; justify-content:flex-end; padding:.8rem 1.1rem 1rem;
+  border-top:1px solid #e2e8f0;
+}
+.usage-help-dialog__close { min-width:7rem; }
+.usage-help-fallback[hidden] { display:none !important; }
+@media (max-width: 640px) {
+  .page-actions-toolbar { align-items:stretch; }
+  .page-action-button { width:100%; }
+}
+@media print {
+  @page { size:A4; margin:14mm 14mm 16mm; }
+  html, body { background:#fff !important; color:#000 !important; }
+  body { font-size:10.5pt !important; line-height:1.42 !important; }
+  * { box-shadow:none !important; text-shadow:none !important; }
+  #dys-toolbar, .dys-skip-link, .demo-nav, .page-actions-toolbar,
+  .page-action-button, .knowledge-print-button, .resource-view-toolbar,
+  .pilot-progress, .pilot-route, .reasoning-check-link,
+  .usage-help-dialog, .usage-help-fallback,
+  button, input, select, textarea, [role="search"] { display:none !important; }
+  main, .resource-page, .resource-center, .knowledge-page {
+    width:auto !important; max-width:none !important; margin:0 !important; padding:0 !important;
+  }
+  .resource, .student-method, .knowledge-card { break-inside:avoid-page; }
+  .pilot-stage { break-inside:auto; }
+  h1, h2, h3, h4 { break-after:avoid-page; }
+  table { break-inside:auto; }
+  tr, img, figure { break-inside:avoid-page; }
+  a { color:#000 !important; text-decoration:none !important; }
+  .resource__header, .pilot-resource__hero, .resource-center__header {
+    margin-top:0 !important; padding-top:0 !important;
+  }
+  /* Une connaissance à la fois. */
+  body.print-pdf-knowledge-active .knowledge-hero,
+  body.print-pdf-knowledge-active .knowledge-tools,
+  body.print-pdf-knowledge-active .knowledge-how,
+  body.print-pdf-knowledge-active .knowledge-empty,
+  body.print-pdf-knowledge-active .knowledge-footer,
+  body.print-pdf-knowledge-active .knowledge-letter-group > h2,
+  body.print-pdf-knowledge-active .knowledge-letter-group > header { display:none !important; }
+  body.print-pdf-knowledge-active .knowledge-letter-group,
+  body.print-pdf-knowledge-active .knowledge-grid,
+  body.print-pdf-knowledge-active [class*="knowledge-list"] {
+    display:block !important; margin:0 !important; padding:0 !important;
+  }
+  body.print-pdf-knowledge-active .knowledge-card { display:none !important; }
+  body.print-pdf-knowledge-active .knowledge-card.print-pdf-target {
+    display:block !important; border:0 !important; margin:0 !important; padding:0 !important;
+  }
+  body.print-pdf-knowledge-active .knowledge-card.print-pdf-target::before {
+    content:"Connaissances BTS GPME"; display:block; margin:0 0 8mm;
+    padding:0 0 3mm; border-bottom:1px solid #94a3b8; font-size:11pt; font-weight:700;
+  }
+  body.print-pdf-knowledge-active .knowledge-card.print-pdf-target details { display:block !important; }
+  body.print-pdf-knowledge-active .knowledge-card.print-pdf-target details > * { display:block !important; }
+  body.print-pdf-knowledge-active .knowledge-card.print-pdf-target summary { font-weight:700; list-style:none; }
+  body.print-pdf-knowledge-active .knowledge-card.print-pdf-target summary::-webkit-details-marker { display:none; }
+}

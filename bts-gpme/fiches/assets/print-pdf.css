@@ -1,0 +1,59 @@
+/* v3.3 — impression / export PDF des missions et ressources (v3.2 corrigée) */
+.print-pdf-toolbar{
+  max-width:1100px;margin:.8rem auto 1rem;padding:.7rem .85rem;
+  border:1px solid var(--line,#d7dde5);border-radius:12px;
+  background:var(--surface,#fff);display:flex;align-items:center;gap:.75rem;
+  justify-content:space-between;flex-wrap:wrap;box-shadow:0 2px 8px rgba(0,0,0,.035)
+}
+.print-pdf-toolbar__copy{min-width:240px;flex:1}.print-pdf-toolbar__title{margin:0;font-weight:700}
+.print-pdf-toolbar__help{margin:.2rem 0 0;font-size:.9rem;opacity:.82}
+.print-pdf-toolbar__button{min-height:40px;padding:.48rem .8rem;border:1px solid currentColor;border-radius:999px;background:transparent;color:inherit;cursor:pointer;font:inherit;font-weight:700}
+.print-pdf-toolbar__button:hover,.print-pdf-toolbar__button:focus-visible{outline:2px solid currentColor;outline-offset:2px}
+.print-pdf-toolbar__button::before{content:"PDF";display:inline-grid;place-items:center;min-width:2.1em;margin-right:.5rem;padding:.08rem .25rem;border:1px solid currentColor;border-radius:4px;font-size:.72em;letter-spacing:.04em}
+.print-pdf-meta{display:none}
+@media(max-width:720px){.print-pdf-toolbar__button{width:100%}}
+
+@page{size:A4;margin:14mm 13mm 15mm 13mm}
+@media print{
+  html{background:#fff!important}
+  *,*::before,*::after{-webkit-print-color-adjust:exact!important;print-color-adjust:exact!important}
+  body{background:#fff!important;color:#111!important;font-size:10.5pt!important;line-height:1.38!important}
+  body::before{content:none!important}
+  .dys-skip-link,#dys-toolbar,.demo-nav,.guidance-toolbar,.resource-view-toolbar,
+  .print-pdf-toolbar,.pilot-progress,.pilot-route,.pilot-check,.reasoning-check-link,
+  .mission-workspace__stuck,.context-return,.back-to-search,.sticky-search{display:none!important}
+  .print-pdf-meta{display:block!important;margin:0 0 8mm;padding:0 0 3mm;border-bottom:1px solid #999;font-size:8.5pt;color:#444}
+  .print-pdf-meta strong{color:#111}
+  main,.mission-workspace,.resource,article.resource{max-width:none!important;width:auto!important;margin:0!important;padding:0!important;box-shadow:none!important}
+  .pilot-hero,.resource__header{margin-top:0!important;padding-top:0!important;break-after:avoid-page}
+  .pilot-stage,.mission-workspace__phase,.resource section,.resource aside{box-shadow:none!important}
+  h1,h2,h3,h4{break-after:avoid-page;page-break-after:avoid;color:#111!important}
+  p,li,dd,dt{orphans:3;widows:3}
+  table,figure,img,svg,pre,blockquote,.mission-workspace__casefile,.mission-workspace__production,
+  .resource__method,.resource__check,.resource__outcome,.resource__responsibility{break-inside:avoid-page;page-break-inside:avoid}
+  table{width:100%!important;font-size:9pt}
+  img,svg{max-width:100%!important;height:auto!important}
+  a,a:visited{color:inherit!important;text-decoration:none!important}
+  details{display:block!important}
+  details>summary{display:list-item!important;cursor:default!important}
+  details:not([open])>*:not(summary){display:none!important}
+  details[open]>*:not(summary){display:block!important}
+  summary::marker{font-size:.8em}
+  .resource__footer{break-before:auto;border-top:1px solid #999;margin-top:6mm;padding-top:4mm}
+  .professional-tool{border:1px solid #777!important;background:transparent!important;color:#111!important}
+  /* Respecter le niveau sélectionné à l'écran. */
+  body[data-resource-view="essential"] .resource-extended{display:none!important}
+  body[data-guidance="semi"] .guided-only{display:none!important}
+  body[data-guidance="autonomous"] .guided-only,
+  body[data-guidance="autonomous"] .semi-only,
+  body[data-guidance="autonomous"] .pilot-cap,
+  body[data-guidance="autonomous"] .method-compass,
+  body[data-guidance="autonomous"] #notions,
+  body[data-guidance="autonomous"] #analyser{display:none!important}
+  body[data-guidance="autonomous"] #conceptualiser>.pilot-stage__heading,
+  body[data-guidance="autonomous"] #conceptualiser>.mission-workspace__phase:not(.mission-workspace__production){display:none!important}
+
+  /* Le référentiel détaillé n'est imprimé que s'il a été ouvert volontairement. */
+  .ref-bridge:not([open])>*:not(summary){display:none!important}
+  .ref-bridge:not([open])>summary::after{content:" — détail non imprimé";font-size:.82em;font-weight:400;color:#666}
+}

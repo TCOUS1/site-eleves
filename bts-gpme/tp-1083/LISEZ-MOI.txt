@@ -1,0 +1,25 @@
+TP 1083 — Gestion des risques — version HTML élève
+
+Contenu pédagogique : v1.2
+Version HTML : 1.0
+
+OUVERTURE
+- Ouvrir index.html dans un navigateur récent.
+- Aucune installation de logiciel n'est nécessaire.
+- Les documents R01 à R09 sont dans le dossier ressources.
+
+ACCESSIBILITÉ
+Le bandeau « Confort de lecture » est présent sur toutes les pages :
+- Dys : active OpenDyslexic + espacement renforcé ;
+- A− / A+ : modifie la taille du texte (80 % à 160 %) ;
+- Clair / Foncé : change le contraste de fond ;
+- ↺ : réinitialise les réglages.
+Les préférences sont conservées dans le navigateur.
+OpenDyslexic est chargée comme police Web lorsque la page dispose d'un accès Internet ; si elle n'est pas disponible, une police de secours lisible est utilisée. Aucun logiciel n'est à installer.
+
+IMPRESSION / PDF
+Le bouton « Imprimer / PDF » utilise la fonction d'impression du navigateur. Choisir « Enregistrer au format PDF » lorsque cette option est proposée. Les commandes de confort de lecture ne sont pas imprimées et le document est remis sur fond clair.
+
+ORGANISATION
+L'accueil contient les règles de travail collectif, le flux Kanban conseillé, les règles de traçabilité et la procédure d'arbitrage/exclusion.
+Chaque situation dispose de sa propre page pour permettre une diffusion progressive, avec une version complète dans tp-complet.html.
