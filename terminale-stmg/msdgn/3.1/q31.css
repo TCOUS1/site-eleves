@@ -1812,10 +1812,16 @@ body.light .q31-secondary-button[aria-pressed="true"] {
     }
 
     .q31-hook-image {
-        width: 100% !important;
-        max-height: 110mm;
+        width: auto !important;
+        height: auto !important;
+        max-width: 100% !important;
+        max-height: 110mm !important;
         object-fit: contain;
         border-color: #777 !important;
+    }
+
+    figure:has(.q31-hook-image) {
+        text-align: center;
     }
 
     figure {
