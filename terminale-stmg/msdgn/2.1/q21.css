@@ -1,0 +1,905 @@
+@import url("../../../style.css");
+
+/* ============================================================
+   Q2.1 - COUCHE LOCALE
+   S'appuie sur ../../../style.css et ../../../fonts.css
+   ============================================================ */
+
+/* ---------- 1. STRUCTURE GENERALE ---------- */
+.q21-page {
+    scroll-padding-top: 5rem;
+}
+
+.q21-page * {
+    box-sizing: border-box;
+}
+
+.q21-site-header {
+    padding-top: 1rem;
+}
+
+.q21-course {
+    max-width: 1180px;
+    padding-bottom: 48px;
+}
+
+.q21-banner {
+    margin: 18px 0 26px;
+}
+
+.q21-banner .banner-main {
+    font-size: 1.25rem;
+}
+
+.q21-banner .banner-sub {
+    font-size: 1.05rem;
+}
+
+.q21-section {
+    margin: 32px 0 48px;
+    scroll-margin-top: 5.5rem;
+}
+
+.q21-section > h1 {
+    margin-top: 18px;
+}
+
+.q21-section .section-title {
+    margin-top: 34px;
+}
+
+.q21-section .section-title h2 {
+    margin-top: 0;
+}
+
+.q21-course h1 {
+    margin-top: 22px;
+    margin-bottom: 18px;
+    font-size: clamp(2rem, 4vw, 2.7rem);
+    line-height: 1.15;
+}
+
+.q21-course p {
+    margin: 12px 0;
+}
+
+.q21-course .intro-page > p:not(.problem) {
+    max-width: 78ch;
+}
+
+/* ---------- 2. CADRAGE / META ---------- */
+.meta-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 14px;
+    margin: 20px 0;
+}
+
+.meta-card {
+    padding: 16px 18px;
+    border: 1px solid var(--border);
+    border-left: 4px solid var(--primary);
+    border-radius: 8px;
+    background: var(--card-bg);
+}
+
+.meta-card strong {
+    display: block;
+    margin-bottom: 8px;
+    color: var(--title-h2);
+}
+
+.meta-card.full {
+    grid-column: 1 / -1;
+}
+
+.meta-card.complement {
+    border-left-color: var(--title-h3);
+}
+
+.problem {
+    margin: 20px 0;
+    padding: 14px 16px;
+    border: 1px solid var(--border);
+    border-left: 4px solid var(--title-h4);
+    border-radius: 8px;
+    background: var(--card-bg);
+    font-weight: 700;
+}
+
+.problem span {
+    color: var(--title-h4);
+}
+
+/* ---------- 3. ACTIONS / SOMMAIRE ---------- */
+.q21-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    align-items: flex-start;
+    margin: 18px 0 0;
+}
+
+.q21-actions .q21-toc {
+    flex: 1 1 420px;
+    margin: 0;
+    padding: 12px 16px;
+}
+
+.q21-toc summary {
+    cursor: pointer;
+    color: var(--title-h2);
+    font-weight: 700;
+}
+
+.q21-toc ul {
+    columns: 2;
+    column-gap: 24px;
+}
+
+.q21-toc li {
+    break-inside: avoid;
+}
+
+.q21-print-button,
+.q21-secondary-button {
+    min-height: 42px;
+    padding: 8px 13px;
+    border: 1px solid var(--primary);
+    border-radius: 6px;
+    font: inherit;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.q21-print-button {
+    background: var(--primary);
+    color: #fff;
+}
+
+.q21-secondary-button {
+    background: var(--card-bg);
+    color: var(--primary);
+}
+
+.q21-print-button:hover,
+.q21-secondary-button:hover,
+.q21-secondary-button[aria-pressed="true"] {
+    background: var(--primary-hover);
+    color: var(--bg);
+}
+
+body.light .q21-print-button:hover,
+body.light .q21-secondary-button:hover,
+body.light .q21-secondary-button[aria-pressed="true"] {
+    color: #fff;
+}
+
+.q21-save-state {
+    align-self: center;
+    color: var(--muted);
+    font-size: .9rem;
+}
+
+/* ---------- 4. ACCROCHE / DOCUMENTS ---------- */
+.q21-hook-image {
+    display: block;
+    width: min(100%, 980px);
+    height: auto;
+    margin: 0 auto;
+    border: 1px solid var(--border);
+    border-radius: 8px;
+}
+
+.q21-course figure {
+    margin: 18px 0 24px;
+    text-align: center;
+}
+
+.q21-course figcaption {
+    margin-top: 8px;
+    color: var(--muted);
+    font-size: .9rem;
+}
+
+.dossier-name {
+    font-weight: 800;
+    font-size: 1.1em;
+    color: var(--title-h3);
+}
+
+.q21-document {
+    margin: 18px 0;
+    padding: 16px 18px;
+    border-left-color: var(--title-h2);
+}
+
+.q21-document h3 {
+    margin-top: 0;
+    text-transform: none;
+}
+
+.q21-retain {
+    margin: 22px 0;
+    border-left-color: var(--title-h3);
+}
+
+.q21-retain h3 {
+    margin-top: 0;
+}
+
+.q21-retain dl {
+    display: grid;
+    grid-template-columns: minmax(150px, .33fr) 1fr;
+    gap: 8px 16px;
+}
+
+.q21-retain dt {
+    font-weight: 800;
+    color: var(--title-h3);
+}
+
+.q21-retain dd {
+    margin: 0;
+}
+
+.q21-method {
+    border-left-color: var(--title-h4);
+}
+
+/* ---------- 5. QUESTIONS / ZONES DE REPONSE ---------- */
+.q21-question-block {
+    margin: 22px 0 12px;
+}
+
+.q21-question-block .question {
+    margin-bottom: 9px;
+    font-weight: 700;
+    line-height: 1.45;
+}
+
+.q21-question-block .num {
+    color: var(--primary);
+    font-weight: 800;
+}
+
+.q21-response {
+    display: block;
+    width: 100%;
+    min-height: 7rem;
+    padding: 12px 14px;
+    resize: vertical;
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    background: var(--card-bg);
+    color: var(--text);
+    font: inherit;
+    line-height: 1.55;
+}
+
+.q21-response:focus {
+    outline: 3px solid color-mix(in srgb, var(--primary) 28%, transparent);
+    border-color: var(--primary);
+}
+
+.q21-response.short {
+    min-height: 7.5rem;
+}
+
+.q21-response.medium {
+    min-height: 10rem;
+}
+
+.q21-response.analysis {
+    min-height: 14rem;
+}
+
+.q21-response.long {
+    min-height: 21rem;
+}
+
+/* ---------- 6. CORRIGES DEPLIABLES ---------- */
+.q21-correction {
+    margin: 0 0 26px;
+    border: 1px solid var(--border);
+    border-left: 4px solid var(--title-h3);
+    border-radius: 8px;
+    background: var(--card-bg);
+}
+
+.q21-correction > summary {
+    padding: 10px 13px;
+    cursor: pointer;
+    color: var(--title-h3);
+    font-weight: 800;
+}
+
+.q21-correction > summary:hover {
+    text-decoration: underline;
+}
+
+.q21-correction-body {
+    padding: 0 14px 12px;
+    color: var(--text);
+    overflow-x: auto;
+}
+
+.q21-correction-body p {
+    margin: 8px 0;
+}
+
+.q21-correction-table {
+    width: 100%;
+    border-collapse: collapse;
+    table-layout: auto;
+    margin: 8px 0 4px;
+}
+
+.q21-correction-table th,
+.q21-correction-table td {
+    padding: 8px;
+    border: 1px solid var(--border);
+    vertical-align: top;
+}
+
+.q21-correction-table th {
+    background: var(--banner-bg);
+    color: var(--banner-text);
+}
+
+/* ---------- 7. TABLEAUX ---------- */
+.q21-table-scroll {
+    width: 100%;
+    margin: 16px 0 22px;
+    overflow-x: auto;
+    overflow-y: hidden;
+    -webkit-overflow-scrolling: touch;
+    border-radius: 6px;
+}
+
+.q21-table {
+    margin: 0;
+    background: var(--card-bg);
+}
+
+.q21-table th {
+    background: var(--banner-bg);
+    color: var(--banner-text);
+}
+
+.q21-table td,
+.q21-table th {
+    vertical-align: top;
+    overflow-wrap: anywhere;
+}
+
+.q21-table textarea {
+    width: 100%;
+    min-height: 5.5rem;
+    padding: 8px;
+    border: 1px solid var(--border);
+    border-radius: 4px;
+    background: var(--bg);
+    color: var(--text);
+    font: inherit;
+    resize: vertical;
+}
+
+.synthesis-table textarea {
+    min-height: 7rem;
+}
+
+/* ---------- 8. REVISION ---------- */
+.q21-revision-section .mgmt-revision {
+    margin-top: 18px;
+}
+
+.revision-print-summary {
+    display: none;
+}
+
+.q21-footer {
+    max-width: 1180px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Les miroirs d'impression sont créés par q21.js. */
+.q21-print-response,
+.q21-print-cell {
+    display: none;
+}
+
+/* ============================================================
+   RESPONSIVE
+   ============================================================ */
+@media (max-width: 900px) {
+    .q21-course {
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+
+    .q21-course h1 {
+        font-size: clamp(1.75rem, 6vw, 2.3rem);
+    }
+
+    .q21-table-scroll .work-table {
+        min-width: 760px;
+    }
+
+    .q21-table-scroll .synthesis-table {
+        min-width: 860px;
+    }
+}
+
+@media (max-width: 760px) {
+    .meta-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .meta-card.full {
+        grid-column: auto;
+    }
+
+    .q21-toc ul {
+        columns: 1;
+    }
+
+    .q21-retain dl {
+        grid-template-columns: 1fr;
+    }
+
+    #accessibility-menu {
+        max-width: calc(100vw - 20px);
+        flex-wrap: wrap;
+        justify-content: flex-end;
+    }
+
+    .q21-table-scroll .q21-table {
+        font-size: .92rem;
+    }
+
+    .q21-table-scroll .data-table:not(.synthesis-table) {
+        min-width: 620px;
+    }
+
+    .q21-correction-table {
+        min-width: 680px;
+    }
+
+    .q21-correction-body {
+        padding-left: 11px;
+        padding-right: 11px;
+    }
+}
+
+@media (max-width: 600px) {
+    .q21-site-header {
+        padding-top: 4.5rem;
+    }
+
+    .q21-section {
+        margin: 24px 0 38px;
+    }
+
+    .q21-actions {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .q21-actions .q21-toc,
+    .q21-print-button,
+    .q21-secondary-button {
+        width: 100%;
+    }
+
+    .q21-save-state {
+        display: block;
+        width: 100%;
+    }
+
+    .q21-response.short {
+        min-height: 8rem;
+    }
+
+    .q21-response.medium {
+        min-height: 11rem;
+    }
+
+    .q21-response.analysis {
+        min-height: 15rem;
+    }
+
+    .q21-response.long {
+        min-height: 24rem;
+    }
+}
+
+/* ============================================================
+   IMPRESSION / PDF : RENDU DISTINCT DE L'ECRAN
+   ============================================================ */
+@page {
+    size: A4 portrait;
+    margin: 12mm 12mm 14mm;
+}
+
+@media print {
+    :root,
+    body,
+    body.light,
+    body.dys {
+        --bg: #fff;
+        --text: #000;
+        --muted: #222;
+        --card-bg: #fff;
+        --border: #777;
+        --primary: #0056b3;
+        --title-h1: #000;
+        --title-h2: #003366;
+        --title-h3: #1f5f1f;
+        --title-h4: #6b3f00;
+    }
+
+    * {
+        -webkit-print-color-adjust: exact;
+        print-color-adjust: exact;
+    }
+
+    html,
+    body {
+        width: auto !important;
+        height: auto !important;
+        overflow: visible !important;
+        background: #fff !important;
+        color: #000 !important;
+    }
+
+    body {
+        font-size: 10.5pt !important;
+        line-height: 1.42 !important;
+    }
+
+    body.dys {
+        letter-spacing: 0 !important;
+        word-spacing: 0 !important;
+        line-height: 1.45 !important;
+    }
+
+    #accessibility-menu,
+    .q21-site-header,
+    .q21-actions,
+    .screen-only,
+    .q21-correction,
+    .mgmt-revision,
+    .site-footer {
+        display: none !important;
+    }
+
+    .print-only,
+    .revision-print-summary {
+        display: block !important;
+    }
+
+    .q21-course,
+    main,
+    .container {
+        width: auto !important;
+        max-width: none !important;
+        margin: 0 !important;
+        padding: 0 !important;
+    }
+
+    .q21-section {
+        margin: 0 0 7mm !important;
+        padding: 0 !important;
+        background: #fff !important;
+        box-shadow: none !important;
+        border: 0 !important;
+        transform: none !important;
+        position: static !important;
+    }
+
+    .q21-section + .q21-section {
+        margin-top: 7mm !important;
+    }
+
+    .intro-page + .hook-page {
+        break-before: page;
+    }
+
+    h1 {
+        font-size: 19pt !important;
+        margin: 0 0 4mm !important;
+        color: #000 !important;
+    }
+
+    h2 {
+        font-size: 14.5pt !important;
+        margin-top: 3mm !important;
+        color: #003366 !important;
+        break-after: avoid-page;
+        page-break-after: avoid;
+    }
+
+    h3 {
+        font-size: 11.5pt !important;
+        break-after: avoid-page;
+        page-break-after: avoid;
+    }
+
+    p {
+        font-size: 10.5pt !important;
+    }
+
+    .top-banner {
+        margin: 0 0 5mm !important;
+        background: #eee !important;
+        color: #000 !important;
+    }
+
+    .meta-grid {
+        display: block !important;
+    }
+
+    .meta-card,
+    .problem,
+    .q21-retain,
+    .q21-method,
+    .q21-long-task {
+        background: #fff !important;
+        color: #000 !important;
+        border-color: #777 !important;
+        box-shadow: none !important;
+    }
+
+    .meta-card {
+        margin: 0 0 3mm !important;
+        break-inside: avoid-page;
+        page-break-inside: avoid;
+    }
+
+    .q21-document {
+        background: #fff !important;
+        color: #000 !important;
+        border: 1px solid #777 !important;
+        border-left: 3px solid #003366 !important;
+        border-radius: 0 !important;
+        margin: 4mm 0 !important;
+        padding: 3.5mm 4mm !important;
+        break-inside: auto !important;
+        page-break-inside: auto !important;
+    }
+
+    .q21-hook-image {
+        width: 100% !important;
+        max-height: 110mm;
+        object-fit: contain;
+        border-color: #777 !important;
+    }
+
+    figure {
+        break-inside: avoid-page;
+        page-break-inside: avoid;
+    }
+
+    figcaption {
+        color: #333 !important;
+    }
+
+    /* Champs masqués : on imprime des DIV ordinaires pour éviter les chevauchements. */
+    .q21-response,
+    .q21-table textarea {
+        display: none !important;
+    }
+
+    .q21-print-response,
+    .q21-print-cell {
+        display: block !important;
+        width: 100% !important;
+        box-sizing: border-box !important;
+        position: static !important;
+        float: none !important;
+        max-height: none !important;
+        overflow: visible !important;
+        border: 1px solid #888 !important;
+        border-radius: 0 !important;
+        color: #000 !important;
+        background-color: #fff !important;
+        padding: 3mm !important;
+        white-space: pre-wrap !important;
+        line-height: 6.6mm !important;
+        background-image: repeating-linear-gradient(
+            to bottom,
+            transparent 0,
+            transparent 6.5mm,
+            #d8d8d8 6.6mm,
+            #d8d8d8 6.8mm
+        ) !important;
+    }
+
+    .q21-print-response.short {
+        min-height: 30mm !important;
+    }
+
+    .q21-print-response.medium {
+        min-height: 44mm !important;
+    }
+
+    .q21-print-response.analysis {
+        min-height: 62mm !important;
+    }
+
+    .q21-print-response.long {
+        min-height: 100mm !important;
+    }
+
+    .q21-question-block {
+        margin: 4mm 0 5mm !important;
+        overflow: visible !important;
+        break-inside: avoid-page !important;
+        page-break-inside: avoid !important;
+        clear: both;
+    }
+
+    .q21-question-block .question,
+    .section-title {
+        break-after: avoid-page;
+        page-break-after: avoid;
+    }
+
+    .section-title h2 {
+        margin-bottom: 3mm !important;
+    }
+
+    .q21-table-scroll {
+        margin: 4mm 0 5mm !important;
+        overflow: visible !important;
+    }
+
+    .q21-table {
+        width: 100% !important;
+        min-width: 0 !important;
+        table-layout: fixed !important;
+        border-collapse: collapse !important;
+        font-size: 9.2pt !important;
+        color: #000 !important;
+    }
+
+    .q21-table thead {
+        display: table-header-group;
+    }
+
+    .q21-table tr {
+        break-inside: avoid-page !important;
+        page-break-inside: avoid !important;
+    }
+
+    .q21-table th,
+    .q21-table td {
+        padding: 2.5mm !important;
+        border: 1px solid #777 !important;
+        color: #000 !important;
+        background: #fff !important;
+        vertical-align: top !important;
+        overflow-wrap: anywhere !important;
+    }
+
+    .q21-table th {
+        background: #eee !important;
+    }
+
+    .q21-print-cell {
+        min-height: 22mm !important;
+        border: 0 !important;
+        padding: 1mm !important;
+    }
+
+    .synthesis-table .q21-print-cell {
+        min-height: 30mm !important;
+    }
+
+    .q21-retain,
+    .q21-method,
+    .q21-long-task,
+    .revision-print-summary {
+        break-inside: avoid-page !important;
+        page-break-inside: avoid !important;
+        clear: both;
+    }
+
+    #synthese,
+    #revision {
+        break-before: page;
+    }
+
+    a {
+        color: #000 !important;
+        text-decoration: none !important;
+        border: 0 !important;
+    }
+}
+
+
+/* ---------- 9. COMPOSANTS SPECIFIQUES Q2.1 ---------- */
+.scenario-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 14px;
+    margin: 18px 0 24px;
+}
+
+.scenario-card {
+    padding: 15px 17px;
+    border: 1px solid var(--border);
+    border-left: 4px solid var(--primary);
+    border-radius: 8px;
+    background: var(--card-bg);
+}
+
+.scenario-card h3 {
+    margin: 0 0 7px;
+    color: var(--title-h2);
+    text-transform: none;
+}
+
+.scenario-card p {
+    margin: 0;
+}
+
+.q21-style-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 10px;
+    margin-top: 16px;
+}
+
+.q21-style-grid > div {
+    padding: 11px 12px;
+    border: 1px solid var(--border);
+    border-radius: 7px;
+    background: var(--bg);
+}
+
+.q21-style-grid strong,
+.q21-style-grid span {
+    display: block;
+}
+
+.q21-style-grid strong {
+    margin-bottom: 4px;
+    color: var(--title-h3);
+}
+
+.meta-card ul {
+    margin: 8px 0 0;
+    padding-left: 1.25rem;
+}
+
+.meta-card li + li {
+    margin-top: 5px;
+}
+
+@media (max-width: 680px) {
+    .scenario-grid,
+    .q21-style-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media print {
+    .scenario-grid,
+    .q21-style-grid {
+        display: grid !important;
+        grid-template-columns: 1fr 1fr !important;
+        gap: 3mm !important;
+    }
+
+    .scenario-card,
+    .q21-style-grid > div {
+        background: #fff !important;
+        color: #000 !important;
+        border-color: #777 !important;
+        break-inside: avoid-page !important;
+        page-break-inside: avoid !important;
+    }
+}
