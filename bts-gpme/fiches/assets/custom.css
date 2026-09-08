@@ -6,3 +6,17 @@
 .odoo-callout h2,.odoo-extension h4{margin-top:0}
 .resource-card__odoo{font-size:.9rem;font-weight:650;margin:.45rem 0}
 .theme-dark .odoo-callout,.theme-dark .odoo-extension{background:#1b252b;border-color:#647780}
+
+/* v3.5 — recherche à divulgation progressive */
+#ranked-results .resource-results__list{display:block}
+.search-best-label{margin:.4rem 0 .55rem;font-weight:750;font-size:.95rem}
+#ranked-results-list>.search-result--primary{margin-bottom:.75rem;border-width:2px}
+.search-more-results{margin-top:.75rem;border-top:1px solid var(--line,#d9dde4);padding-top:.7rem}
+.search-more-results>summary{cursor:pointer;font-weight:700;padding:.55rem 0}
+.search-more-results__list{display:grid;gap:.55rem;margin-top:.5rem}
+.search-result--secondary{padding:.7rem .85rem}
+.search-result--secondary h3{margin:.1rem 0;font-size:1rem}
+.search-result--secondary .resource-card__type{margin-bottom:.15rem;font-size:.8rem}
+.search-more-results__note{font-size:.9rem;margin:.4rem 0}
+#ranked-results-list .resource-card__outcome{display:none}
+@media(max-width:640px){.search-result--secondary{padding:.6rem .7rem}.search-more-results__list{gap:.4rem}}

@@ -25,10 +25,16 @@ Cette distribution contient uniquement l'espace destiné aux élèves : missions
 - moteur de recherche : ajout de ponts lexicaux pour **Pareto**, **5M / Ishikawa / 5 pourquoi**, **continuité / dépendance fournisseur** et **incidents SST + indicateurs / graphique** ;
 - aucun ajout de fiche : les corrections améliorent l’accès aux ressources existantes.
 
+## Nouveautés v3.4
+- ajout d’une méthode transversale « chaîne de valeur de Porter » pour cartographier activités principales et de soutien avant l’identification des risques ;
+- ajout d’une méthode de présentation/caractérisation de la PME, conçue comme préalable aux diagnostics et analyses ;
+- intégration explicite de ces deux méthodes dans le parcours guidé de M10 et en amont de R-B2-011 ;
+- recherche enrichie avec le vocabulaire observé en classe : « cœur de métier », « fonctions support », « où chercher les risques », « présenter l’entreprise », etc.
+
 ## Nouveautés v3.0
 - recherche plus robuste aux fautes usuelles, sans correction agressive des mots français plausibles ;
 - message explicite lorsque plusieurs pistes sont possibles, avec accès de secours vers l'alphabet et Connaissances ;
-- 145 ressources indexées avec des formulations spécifiques en langage élève ;
+- 147 ressources indexées avec des formulations spécifiques en langage élève ;
 - référentiel enrichi avec les critères de performance disponibles dans la matrice fournie pour les activités 1.1 à 1.6 et 2.1 à 2.6 ;
 - aucun critère BC3/BC4 n'est inventé : le référentiel complet reste la source de référence ;
 - accessibilité et séparation élève/enseignant conservées.

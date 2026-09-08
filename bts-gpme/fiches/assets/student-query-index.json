@@ -132,7 +132,10 @@
   "R-B1-023": [
     "évaluer si un fournisseur est performant",
     "mesurer qualité délai prix fournisseur",
-    "faire bilan fournisseur et proposer actions"
+    "faire bilan fournisseur et proposer actions",
+    "criticité fournisseurs",
+    "dépendance fournisseur délai substitution",
+    "alternative fournisseur dépendance technique"
   ],
   "R-B1-024": [
     "vérifier écriture comptable facture règlement",
@@ -165,9 +168,12 @@
     "hiérarchiser risques avec preuves et risque résiduel"
   ],
   "R-B2-002": [
-    "calculer criticité probabilité gravité",
-    "construire matrice des risques",
-    "noter fréquence gravité pour classer dangers"
+    "matrice des risques",
+    "matrice de criticité",
+    "calculer criticité gravité probabilité",
+    "gravité vraisemblance G P",
+    "criticité brute et risque résiduel",
+    "risque non évaluable NE"
   ],
   "R-B2-003": [
     "mettre à jour le duerp",
@@ -177,7 +183,9 @@
   "R-B2-011": [
     "identifier correctement un risque cause événement conséquence",
     "formuler les risques à partir des faits",
-    "repérer dangers menaces et conséquences dans entreprise"
+    "repérer dangers menaces et conséquences dans entreprise",
+    "où peuvent se situer les risques dans les activités de l’entreprise",
+    "passer des activités de l’entreprise aux risques potentiels"
   ],
   "R-B2-012": [
     "quelle règle ou obligation s applique à ce risque",
@@ -195,9 +203,14 @@
     "preuve que la mesure réduit réellement le risque"
   ],
   "R-B2-004": [
-    "organiser une veille pour suivre changements utiles",
-    "mettre en place veille réglementaire ou métier",
-    "quelles sources surveiller et à quelle fréquence"
+    "mettre en place une veille",
+    "quels risques nécessitent une veille",
+    "sujet à surveiller et statut information",
+    "obligation recommandation certification volontaire",
+    "source mots clés fréquence destinataire alerte preuve",
+    "choisir sujets de veille prioritaires",
+    "REP textile",
+    "affichage coût environnemental"
   ],
   "R-B2-005": [
     "savoir si une source est fiable",
@@ -222,7 +235,10 @@
   "R-B2-008": [
     "faire cahier des charges et planning projet",
     "découper projet en tâches responsables délais",
-    "planifier projet avec dépendances livrables"
+    "planifier projet avec dépendances livrables",
+    "diagramme de Gantt",
+    "Gantt planning projet",
+    "jalons dépendances planning"
   ],
   "R-B2-009": [
     "préparer réunion de projet efficace",
@@ -242,7 +258,10 @@
   "R-B2-015": [
     "entreprise va manquer de trésorerie quelles solutions",
     "diagnostiquer tension de trésorerie",
-    "préparer solutions découvert financement relance report paiement"
+    "préparer solutions découvert financement relance report paiement",
+    "affacturage",
+    "assurance crédit affacturage acompte",
+    "comparer solutions risque client trésorerie"
   ],
   "R-B2-016": [
     "vérifier si assurance couvre un risque",
@@ -262,7 +281,12 @@
   "R-B2-019": [
     "données personnelles envoyées à mauvaise personne",
     "fuite de données que faire",
-    "réagir à violation rgpd et évaluer notification"
+    "réagir à violation rgpd et évaluer notification",
+    "chronologie incident",
+    "faits confirmés hypothèses informations manquantes",
+    "72 heures CNIL",
+    "notification CNIL",
+    "procédure phishing violation données"
   ],
   "R-B2-020": [
     "réduire déchets énergie pollution de la pme",
@@ -292,22 +316,35 @@
   "R-B2-024": [
     "même problème qualité revient chercher vraie cause",
     "diagnostiquer dysfonctionnement et causes",
-    "ne pas traiter seulement symptôme qualité"
+    "ne pas traiter seulement symptôme qualité",
+    "Pareto",
+    "5M",
+    "Ishikawa",
+    "5 pourquoi",
+    "analyse causes qualité"
   ],
   "R-B2-025": [
     "écrire un mode opératoire ou une procédure",
     "formaliser étapes responsabilités contrôles",
-    "mettre à jour et diffuser procédure de travail"
+    "mettre à jour et diffuser procédure de travail",
+    "procédure qualité",
+    "procédure contrôle qualité",
+    "formaliser contrôle non conformité escalade"
   ],
   "R-B2-026": [
     "savoir faire dépend d une seule personne",
     "procédure pas écrite connaissances risquent de se perdre",
-    "organiser partage capitalisation connaissances"
+    "organiser partage capitalisation connaissances",
+    "fiche gestion des connaissances",
+    "capitaliser incident qualité fournisseur",
+    "retour expérience connaissance preuve efficacité"
   ],
   "R-B2-027": [
     "préparer certification audit normes dossier",
     "faire veille sur exigences de certification",
-    "réunir preuves pour renouvellement certification"
+    "réunir preuves pour renouvellement certification",
+    "Origine France Garantie",
+    "certification volontaire veille dossier"
   ],
   "R-B2-031": [
     "suivre dates preuves actions d une certification",
@@ -667,7 +704,10 @@
   "R-TR-003": [
     "faire note au dirigeant pour décider",
     "présenter problème options recommandation dans note",
-    "rédiger synthèse décisionnelle courte"
+    "rédiger synthèse décisionnelle courte",
+    "note alerte direction",
+    "note professionnelle alerte risque",
+    "alerter dirigeant fait risque action à valider"
   ],
   "R-TR-004": [
     "faire compte rendu réunion avec décisions actions",
@@ -723,5 +763,21 @@
     "présenter chiffres sans noyer le lecteur",
     "faire synthèse chiffrée claire pour décideur",
     "mettre en avant message indicateur écart conclusion"
+  ],
+  "R-TR-015": [
+    "chaîne de valeur",
+    "chaîne de valeur de Porter",
+    "Porter activités principales activités de soutien",
+    "fonctions support et cœur de métier",
+    "activité internalisée externalisée mixte",
+    "où chercher les risques par activité"
+  ],
+  "R-TR-016": [
+    "présenter l’entreprise",
+    "présentation de l’entreprise",
+    "présentation PME",
+    "faire une fiche de présentation entreprise",
+    "caractériser l’entreprise",
+    "activité offre canaux implantations parties prenantes"
   ]
 }
