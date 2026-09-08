@@ -1,12 +1,8 @@
-TP 1083 — version HTML élève 1.1
+TP 1083 — version HTML 1.2 — ÉLÈVE
 
-Mise à jour du 8 septembre 2026 après utilisation de la situation 1 en classe.
+Ouvrir index.html dans un navigateur.
 
-Principales évolutions :
-- situation 1 réécrite : présentation de l’entreprise -> chaîne de valeur -> matrice de risques -> qualification des besoins de veille -> dispositif de veille ;
-- distinction claire entre documents fournis, centre de ressources sur téléphone et recherche libre Internet ;
-- R01 reformulé et amendé pour être plus explicite sans donner les risques ;
-- R09 reformulé pour permettre le travail de veille sur papier ;
-- matrice Excel + version imprimable ;
-- règle de vigilance pour les risques de gravité critique ;
-- bandeau de confort de lecture conservé sur toutes les pages HTML.
+Le TP fonctionne sans installation locale. Le bandeau de confort de lecture permet fond clair/foncé, OpenDyslexic et réglage de taille.
+Les fiches pratiques sont dans fiches-pratiques/ et sont conçues pour être réutilisées en stage en les adaptant à l’entreprise.
+
+La recherche Internet n’est pas généralisée : chaque situation indique explicitement quand elle est attendue. La tâche 25 de la situation 5 demande une mise à jour réelle de veille.
