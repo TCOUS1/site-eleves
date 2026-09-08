@@ -1,25 +1,12 @@
-TP 1083 — Gestion des risques — version HTML élève
+TP 1083 — version HTML élève 1.1
 
-Contenu pédagogique : v1.2
-Version HTML : 1.0
+Mise à jour du 8 septembre 2026 après utilisation de la situation 1 en classe.
 
-OUVERTURE
-- Ouvrir index.html dans un navigateur récent.
-- Aucune installation de logiciel n'est nécessaire.
-- Les documents R01 à R09 sont dans le dossier ressources.
-
-ACCESSIBILITÉ
-Le bandeau « Confort de lecture » est présent sur toutes les pages :
-- Dys : active OpenDyslexic + espacement renforcé ;
-- A− / A+ : modifie la taille du texte (80 % à 160 %) ;
-- Clair / Foncé : change le contraste de fond ;
-- ↺ : réinitialise les réglages.
-Les préférences sont conservées dans le navigateur.
-OpenDyslexic est chargée comme police Web lorsque la page dispose d'un accès Internet ; si elle n'est pas disponible, une police de secours lisible est utilisée. Aucun logiciel n'est à installer.
-
-IMPRESSION / PDF
-Le bouton « Imprimer / PDF » utilise la fonction d'impression du navigateur. Choisir « Enregistrer au format PDF » lorsque cette option est proposée. Les commandes de confort de lecture ne sont pas imprimées et le document est remis sur fond clair.
-
-ORGANISATION
-L'accueil contient les règles de travail collectif, le flux Kanban conseillé, les règles de traçabilité et la procédure d'arbitrage/exclusion.
-Chaque situation dispose de sa propre page pour permettre une diffusion progressive, avec une version complète dans tp-complet.html.
+Principales évolutions :
+- situation 1 réécrite : présentation de l’entreprise -> chaîne de valeur -> matrice de risques -> qualification des besoins de veille -> dispositif de veille ;
+- distinction claire entre documents fournis, centre de ressources sur téléphone et recherche libre Internet ;
+- R01 reformulé et amendé pour être plus explicite sans donner les risques ;
+- R09 reformulé pour permettre le travail de veille sur papier ;
+- matrice Excel + version imprimable ;
+- règle de vigilance pour les risques de gravité critique ;
+- bandeau de confort de lecture conservé sur toutes les pages HTML.
