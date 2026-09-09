@@ -21,7 +21,7 @@
   function expand(q){const nq=normalize(q);if(expandMemo&&nq===expandMemoQ)return expandMemo;const corr=correction(q),base=toks(corr.query),out=[...base];for(const [ph,vals] of Object.entries(ALIASES)){const pt=toks(ph);if(pt.length&&pt.every(t=>base.includes(t)))for(const v of vals)out.push(...toks(v))}expandMemoQ=nq;expandMemo={terms:[...new Set(out)],corr};return expandMemo}
   const W={title:7,student:6,knowledge:2,use:4,outcome:3,first:2,all:.5};
   const DIRECT_INTENTS=[
-    {id:'R-TR-015',phrases:['chaine de valeur','chaine valeur','chaine de valeur porter','porter','activites principales activites soutien','fonctions support','coeur metier']},
+    {id:'R-TR-015',phrases:['chaine de valeur','chaine valeur','chaine de valeur porter','porter','activites principales activites soutien','fonctions support','coeur metier','proposition de valeur','creer de la valeur','activite principale soutien']},
     {id:'R-TR-016',phrases:['presenter entreprise','presentation entreprise','presentation pme','fiche presentation entreprise','fiche identite entreprise','caracteriser entreprise']},
     {id:'R-B2-002',phrases:['matrice risques','matrice des risques','matrice criticite','matrice de criticite','criticite','gravite probabilite','gravite vraisemblance']},
     {id:'R-B2-004',phrases:['veille','besoin veille','besoin de veille','dispositif veille','dispositif de veille','mettre en place veille','quels risques necessitent veille','rep textile','affichage cout environnemental']},
