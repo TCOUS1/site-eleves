@@ -541,8 +541,10 @@ body.light .q21-secondary-button[aria-pressed="true"] {
     }
 
     * {
-        -webkit-print-color-adjust: exact;
-        print-color-adjust: exact;
+        /* Laisser le navigateur / pilote simplifier les couleurs à l'impression.
+           Cela évite certains aplats noirs produits par des pilotes N&B. */
+        -webkit-print-color-adjust: economy;
+        print-color-adjust: economy;
     }
 
     html,
@@ -686,9 +688,36 @@ body.light .q21-secondary-button[aria-pressed="true"] {
         color: #333 !important;
     }
 
-    /* Champs masqués : on imprime des DIV ordinaires pour éviter les chevauchements. */
+    /*
+       Impression robuste :
+       - sans q21.js, les textarea restent imprimables en blanc ;
+       - avec q21.js, des DIV ordinaires les remplacent pour éviter les chevauchements ;
+       - aucun dégradé/transparence dans les zones de réponse (compatibilité pilotes N&B).
+    */
     .q21-response,
     .q21-table textarea {
+        display: block !important;
+        width: 100% !important;
+        box-sizing: border-box !important;
+        position: static !important;
+        float: none !important;
+        overflow: hidden !important;
+        resize: none !important;
+        -webkit-appearance: none !important;
+        appearance: none !important;
+        opacity: 1 !important;
+        border: 1px solid #888 !important;
+        border-radius: 0 !important;
+        color: #000 !important;
+        background: #fff !important;
+        background-image: none !important;
+        box-shadow: none !important;
+        padding: 3mm !important;
+        line-height: 1.45 !important;
+    }
+
+    html.q21-print-mirrors-ready .q21-response,
+    html.q21-print-mirrors-ready .q21-table textarea {
         display: none !important;
     }
 
@@ -704,17 +733,36 @@ body.light .q21-secondary-button[aria-pressed="true"] {
         border: 1px solid #888 !important;
         border-radius: 0 !important;
         color: #000 !important;
-        background-color: #fff !important;
+        background: #fff !important;
+        background-image: none !important;
+        box-shadow: none !important;
         padding: 3mm !important;
         white-space: pre-wrap !important;
-        line-height: 6.6mm !important;
-        background-image: repeating-linear-gradient(
-            to bottom,
-            transparent 0,
-            transparent 6.5mm,
-            #d8d8d8 6.6mm,
-            #d8d8d8 6.8mm
-        ) !important;
+        line-height: 1.45 !important;
+    }
+
+    .q21-response.short {
+        min-height: 30mm !important;
+    }
+
+    .q21-response.medium {
+        min-height: 44mm !important;
+    }
+
+    .q21-response.analysis {
+        min-height: 62mm !important;
+    }
+
+    .q21-response.long {
+        min-height: 100mm !important;
+    }
+
+    .q21-table textarea {
+        min-height: 22mm !important;
+    }
+
+    .synthesis-table textarea {
+        min-height: 30mm !important;
     }
 
     .q21-print-response.short {
