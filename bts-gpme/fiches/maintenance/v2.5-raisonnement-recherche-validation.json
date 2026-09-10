@@ -1,0 +1,23 @@
+{
+  "version": "2.5",
+  "built_at": "2026-08-31",
+  "resources": 145,
+  "missions": 30,
+  "html_pages": 349,
+  "reasoning_links_on_resources": 145,
+  "alphabet_entries": 411,
+  "duplicate_id_pages": [],
+  "broken_relative_links": [],
+  "targeted_resource_enrichments": [
+    "R-B2-001-evaluer-hierarchiser-risques.html",
+    "R-B2-013-plan-traitement-risques.html",
+    "R-B2-018-verifier-conformite-traitement-rgpd.html",
+    "R-B2-024-diagnostiquer-dysfonctionnement-qualite.html"
+  ],
+  "search_boosts_present": true,
+  "new_reasoning_page": true,
+  "stress_tests_all_top_pass": true,
+  "project_rgpd_has_project_framing_top3": true,
+  "alphabet_structured_entries_without_direct_resource": 0,
+  "search_test_queries": 15
+}

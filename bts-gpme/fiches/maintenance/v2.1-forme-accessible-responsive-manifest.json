@@ -1,0 +1,29 @@
+{
+  "version": "2.1-forme-accessible-responsive",
+  "source": "bts-gpme-ressources-v1.9 via v2.0 forme validée",
+  "principle": "Fond pédagogique conservé ; ergonomie DYS, thème clair/foncé et responsive centralisés dans la couche de forme.",
+  "missions_transformed": 30,
+  "resources_transformed": 145,
+  "student_html_with_accessibility_toolbar": 335,
+  "reading_features": [
+    "OpenDyslexic depuis les fichiers fournis dans MATRICE_OFFICIELLE_COURS_V1",
+    "mode DYS mémorisé",
+    "A− / A+ mémorisés",
+    "fond clair / fond foncé mémorisé",
+    "réinitialisation globale",
+    "lien aller au contenu",
+    "responsive smartphone / tablette / ordinateur",
+    "zones tactiles renforcées",
+    "tableaux défilables sur petit écran"
+  ],
+  "core_trace": [
+    "Pièce",
+    "Fait",
+    "Méthode",
+    "Traitement",
+    "Preuve",
+    "Décision"
+  ],
+  "font_delivery": "Les fichiers binaires de police ne sont pas dupliqués dans le livrable ; les installateurs réutilisent ceux de l'archive matrice fournie par l'enseignant.",
+  "responsive_validation": "OpenDyslexic + fond foncé + texte 160 % testés sans débordement à 375 px, 768 px et 1366 px sur accueil, mission et ressource."
+}

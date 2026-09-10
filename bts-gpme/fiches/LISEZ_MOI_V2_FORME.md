@@ -1,20 +1,22 @@
-# BTS GPME — v3.1 Robustesse d'usage — distribution élève
+# BTS GPME — v3.1 Robustesse d'usage — version enseignant / source
 
-Cette archive est la version à distribuer aux élèves.
+Cette archive contient la bibliothèque complète et les outils de maintenance. Pour les élèves, distribuer exclusivement le paquet v3.0 élève.
 
-Elle permet de :
-- rechercher avec ses propres mots, y compris avec plusieurs fautes usuelles ;
-- explorer les notions par ordre alphabétique ;
-- comprendre et réviser dans « Connaissances BTS GPME » ;
-- relier ressources, missions, connaissances et référentiel ;
-- travailler les missions sans accès aux productions de référence enseignant ;
-- utiliser les méthodes transversales de contrôle du raisonnement et de traitement des situations complexes.
+## Principes conservés
+- entrée par le besoin professionnel ;
+- recherche possible dans le langage de l'élève ;
+- alphabet pour la reconnaissance d'un terme ;
+- « Connaissances BTS GPME » pour comprendre/réviser ;
+- `#` réservé aux références officielles du référentiel ;
+- distinction Pièce / Fait / Méthode / Traitement / Preuve / Décision ;
+- missions non transformées en exercices guidés.
 
-Le moteur présente des **pistes** : lorsqu'une requête est ambiguë, il le signale au lieu de présenter arbitrairement le premier résultat comme une certitude.
+## v3.0
+La recherche est volontairement conçue comme un système de **pistes classées**. Elle est complétée par l'alphabet et l'espace Connaissances lorsque le moteur lexical hors ligne ne peut pas départager correctement plusieurs intentions.
 
-Le référentiel intégré reproduit les éléments disponibles dans les données source. Les critères de performance ont été ajoutés pour les activités BC1 et BC2 lorsqu'ils étaient présents dans la matrice fournie. Aucun critère BC3/BC4 n'a été reconstitué ou inventé.
+Les critères de performance disponibles dans la matrice ont été intégrés pour les activités 1.1 à 1.6 et 2.1 à 2.6. La v3.0 ne fabrique aucun critère manquant pour BC3/BC4.
 
-Le mode DYS, la taille de texte et le fond clair/foncé restent disponibles. OpenDyslexic peut être préparée avec l'installateur fourni à partir de la matrice locale.
+Les rapports de validation et la provenance des critères se trouvent dans `maintenance/`.
 
 
 ## v3.0 — Autonomie progressive
@@ -26,3 +28,4 @@ Cette version répond à l’audit externe de septembre 2026 :
 - supports bureautiques professionnels sur M03, M05, M16, M22 et M29 ;
 - correction de la fiche DSN ;
 - 24 ressources réglementaires avec date de dernière vérification et date de prochaine revue.
+- repères enseignants : `enseignant/etalons-qualite.html` et `enseignant/reperes-reussite-bc3-bc4.html`.

@@ -1,0 +1,11 @@
+{
+  "version": "2.4.2",
+  "scope": "missions index layout/responsive only",
+  "mission_cards": 30,
+  "html_files": 348,
+  "html_changed_vs_2.4.1": [],
+  "mission_index_base_container": true,
+  "mission_index_tablet_rule": true,
+  "mission_index_mobile_rule": true,
+  "broken_local_refs": []
+}

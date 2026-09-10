@@ -1,0 +1,12 @@
+{
+  "version": "v1.3",
+  "missions": 30,
+  "mission_concepts": 208,
+  "resource_pages_enriched": 100,
+  "html_files": 193,
+  "broken_local_links": 0,
+  "duplicate_id_pages": 0,
+  "mission_pages_with_implicit_help": 30,
+  "mission_path_resources": 100,
+  "mission_path_resources_enriched": 100
+}

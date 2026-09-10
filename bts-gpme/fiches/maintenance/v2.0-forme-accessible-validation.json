@@ -1,0 +1,27 @@
+{
+  "html_pages": 348,
+  "missions": 30,
+  "resources": 145,
+  "mission_shape_errors": [],
+  "resource_shape_errors": [],
+  "missing_original_content_blocks": [],
+  "resource_metadata_mismatch": [],
+  "invalid_visible_hashtags": [],
+  "broken_relative_links": [],
+  "duplicate_ids": [],
+  "dys_toolbar_intended_pages": 335,
+  "dys_toolbar_present": 335,
+  "dys_toolbar_missing": [],
+  "peripheral_content_missing": [],
+  "javascript": {
+    "new-form.js": {
+      "ok": true,
+      "stderr": ""
+    },
+    "dys-accessibility.js": {
+      "ok": true,
+      "stderr": ""
+    }
+  },
+  "font_binaries_in_package": []
+}

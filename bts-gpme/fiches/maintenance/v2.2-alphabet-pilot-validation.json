@@ -1,0 +1,16 @@
+{
+  "version": "2.2-pilote-alphabet",
+  "html_pages": 348,
+  "resource_cards_on_home": 145,
+  "letters": 26,
+  "active_letters": 25,
+  "inactive_letters": [
+    "Y"
+  ],
+  "alphabet_terms": 100,
+  "queries_without_result": [],
+  "non_home_html_changed_vs_v21": [],
+  "duplicate_ids": false,
+  "js_syntax_checked": true,
+  "notes": "Live Chromium navigation is restricted in this execution environment; static DOM/CSS/JS and search-scoring validation completed."
+}

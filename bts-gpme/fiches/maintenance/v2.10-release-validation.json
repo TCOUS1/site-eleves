@@ -1,0 +1,464 @@
+{
+  "status": "PASS",
+  "errors": [],
+  "warnings": [],
+  "metrics": {
+    "student_html": 338,
+    "student_resources": 145,
+    "student_missions": 30,
+    "student_knowledge": 343,
+    "student_tables": 157,
+    "student_table_captions": 157,
+    "student_th": 883,
+    "student_th_scoped": 883,
+    "student_js_files": 8,
+    "student_js_errors": 0,
+    "student_css_files": 13,
+    "student_css_errors": 0,
+    "student_forbidden_links": 0,
+    "teacher_html": 352,
+    "teacher_resources": 145,
+    "teacher_missions": 30,
+    "teacher_knowledge": 343,
+    "teacher_tables": 157,
+    "teacher_table_captions": 157,
+    "teacher_th": 883,
+    "teacher_th_scoped": 883,
+    "teacher_js_files": 8,
+    "teacher_js_errors": 0,
+    "teacher_css_files": 13,
+    "teacher_css_errors": 0,
+    "criteria_activities": 12,
+    "criteria_items": 165,
+    "criteria_trace_activities": 12,
+    "unchanged_ressources_vs_v29": 145,
+    "unchanged_missions_vs_v29": 30,
+    "alphabet_label_occurrences_js": 509,
+    "alphabet_entries_validated_index": 508,
+    "search_fresh_holdout": {
+      "tested": 80,
+      "top1": 67,
+      "top1_pct": 83.8,
+      "top3": 76,
+      "top3_pct": 95.0,
+      "misses": [
+        {
+          "query": "appel entrant trouver rapidement le bon interlocuteur",
+          "expected": [
+            "R-B1-013"
+          ],
+          "top5": [
+            "R-B1-003",
+            "R-B1-001",
+            "R-B1-016",
+            "R-B1-004",
+            "R-TR-006"
+          ]
+        },
+        {
+          "query": "mécontantement acheteur à enregistrer puis résoudre",
+          "expected": [
+            "R-B1-014"
+          ],
+          "top5": [
+            "R-B4-038",
+            "R-B1-024",
+            "R-B1-006",
+            "R-B1-003",
+            "R-B1-014"
+          ]
+        },
+        {
+          "query": "faire inventaire logiciels données utilisateurs et flux de la pme",
+          "expected": [
+            "R-B4-001"
+          ],
+          "top5": [
+            "R-B4-006",
+            "R-B2-023",
+            "R-B2-017",
+            "R-B4-001",
+            "R-B2-021"
+          ]
+        },
+        {
+          "query": "déterminer quelles données demander avant de faire une analyse",
+          "expected": [
+            "R-B4-003"
+          ],
+          "top5": [
+            "R-TR-012",
+            "R-B2-021",
+            "R-B4-004",
+            "R-TR-014",
+            "R-TR-013"
+          ]
+        }
+      ]
+    },
+    "search_historical_holdout": {
+      "tested": 130,
+      "top1": 103,
+      "top1_pct": 79.2,
+      "top3": 120,
+      "top3_pct": 92.3,
+      "misses": [
+        {
+          "query": "créer facture correcte pour la vente réalisée",
+          "expected": [
+            "R-B1-008"
+          ],
+          "top5": [
+            "R-B1-024",
+            "R-B1-028",
+            "R-B1-007",
+            "R-B2-011",
+            "R-B1-009"
+          ]
+        },
+        {
+          "query": "enregistrer et résoudre un mécontentement client",
+          "expected": [
+            "R-B1-014"
+          ],
+          "top5": [
+            "R-B4-038",
+            "R-B1-006",
+            "R-B1-024",
+            "R-B1-014",
+            "R-B1-012"
+          ]
+        },
+        {
+          "query": "contrôler pièce fournisseur avant autoriser son paiement",
+          "expected": [
+            "R-B1-020"
+          ],
+          "top5": [
+            "R-B3-008",
+            "R-B3-009",
+            "R-TR-011",
+            "R-TR-012",
+            "R-B1-020"
+          ]
+        },
+        {
+          "query": "prioriser les menaces en fonction de leur niveau réel",
+          "expected": [
+            "R-B2-001"
+          ],
+          "top5": [
+            "R-B2-021",
+            "R-B4-010",
+            "R-B3-006",
+            "R-B2-011",
+            "R-B4-029"
+          ]
+        },
+        {
+          "query": "décider quelles mesures de maîtrise mettre en œuvre",
+          "expected": [
+            "R-B2-013"
+          ],
+          "top5": [
+            "R-B2-001",
+            "R-B2-003",
+            "R-TR-014",
+            "R-TR-003",
+            "R-B2-029"
+          ]
+        },
+        {
+          "query": "vérifier légalité d un usage de données nominatives",
+          "expected": [
+            "R-B2-018"
+          ],
+          "top5": [
+            "R-B3-010",
+            "R-B4-003",
+            "R-TR-012",
+            "R-B2-018",
+            "R-B3-009"
+          ]
+        },
+        {
+          "query": "gérer les formalités administratives de sortie d un collaborateur",
+          "expected": [
+            "R-B3-004"
+          ],
+          "top5": [
+            "R-B3-002",
+            "R-B3-007",
+            "R-B4-010",
+            "R-B3-017",
+            "R-B3-021"
+          ]
+        },
+        {
+          "query": "organiser dossiers numériques et règles de conservation",
+          "expected": [
+            "R-B4-005"
+          ],
+          "top5": [
+            "R-B3-005",
+            "R-B3-026",
+            "R-B2-026",
+            "R-B4-005",
+            "R-TR-006"
+          ]
+        },
+        {
+          "query": "organiser veille sur secteur concurrence et clientèle",
+          "expected": [
+            "R-B4-014"
+          ],
+          "top5": [
+            "R-B2-004",
+            "R-B1-001",
+            "R-B4-018",
+            "R-B2-027",
+            "R-B4-015"
+          ]
+        },
+        {
+          "query": "comprendre écart entre prévision et réalisation",
+          "expected": [
+            "R-B4-029"
+          ],
+          "top5": [
+            "R-B1-025",
+            "R-B2-010",
+            "R-B4-001",
+            "R-B4-027",
+            "R-B2-014"
+          ]
+        }
+      ]
+    },
+    "tp_retest": {
+      "tested": 17,
+      "top1": 10,
+      "top3": 17,
+      "rows": [
+        {
+          "query": "évaluer les risques",
+          "expected": "R-B2-001",
+          "top5": [
+            "R-B2-021",
+            "R-B2-001",
+            "R-B1-011",
+            "R-B2-003",
+            "R-B1-023"
+          ],
+          "top1": false,
+          "top3": true
+        },
+        {
+          "query": "risques liés aux données",
+          "expected": "R-B2-018",
+          "top5": [
+            "R-B2-018",
+            "R-B2-019",
+            "R-B2-021",
+            "R-B1-028",
+            "R-B4-006"
+          ],
+          "top1": true,
+          "top3": true
+        },
+        {
+          "query": "qui peut voir les données",
+          "expected": "R-B2-023",
+          "top5": [
+            "R-B2-023",
+            "R-B3-005",
+            "R-B4-006",
+            "R-B3-012",
+            "R-B4-001"
+          ],
+          "top1": true,
+          "top3": true
+        },
+        {
+          "query": "preuve que mesure fonctionne",
+          "expected": "R-B2-029",
+          "top5": [
+            "H-RAISONNEMENT",
+            "R-B2-029",
+            "R-B4-024",
+            "R-B2-022",
+            "R-B2-001"
+          ],
+          "top1": false,
+          "top3": true
+        },
+        {
+          "query": "absence de mode opératoire",
+          "expected": "R-B2-026",
+          "top5": [
+            "R-B2-025",
+            "R-B2-026",
+            "R-B4-040",
+            "R-B4-035",
+            "R-B4-029"
+          ],
+          "top1": false,
+          "top3": true
+        },
+        {
+          "query": "nom entreprise protéger contrefaçon",
+          "expected": "R-B2-017",
+          "top5": [
+            "R-B2-017",
+            "R-B4-023",
+            "R-B4-022",
+            "R-B4-020",
+            "R-B2-011"
+          ],
+          "top1": true,
+          "top3": true
+        },
+        {
+          "query": "combiner plusieurs ressources",
+          "expected": "H-COMPLEXE",
+          "top5": [
+            "H-COMPLEXE",
+            "R-B4-009",
+            "R-B4-034",
+            "R-B4-030",
+            "R-B3-019"
+          ],
+          "top1": true,
+          "top3": true
+        },
+        {
+          "query": "situation complexe",
+          "expected": "H-COMPLEXE",
+          "top5": [
+            "H-COMPLEXE",
+            "R-B4-025",
+            "R-B4-003",
+            "R-TR-001",
+            "R-B3-020"
+          ],
+          "top1": true,
+          "top3": true
+        },
+        {
+          "query": "challenger mon analyse",
+          "expected": "H-RAISONNEMENT",
+          "top5": [
+            "H-RAISONNEMENT",
+            "R-TR-012",
+            "R-B4-017",
+            "R-TR-013",
+            "R-B4-004"
+          ],
+          "top1": true,
+          "top3": true
+        },
+        {
+          "query": "vérifier mon raisonnement",
+          "expected": "H-RAISONNEMENT",
+          "top5": [
+            "H-RAISONNEMENT",
+            "R-B2-029",
+            "R-B2-018",
+            "R-B4-034",
+            "R-TR-012"
+          ],
+          "top1": true,
+          "top3": true
+        },
+        {
+          "query": "définition BFR",
+          "expected": "H-CONNAISSANCES",
+          "top5": [
+            "R-B4-031",
+            "H-CONNAISSANCES",
+            "R-B4-030",
+            "R-B2-015",
+            "R-B2-014"
+          ],
+          "top1": false,
+          "top3": true
+        },
+        {
+          "query": "projet RGPD",
+          "expected": "R-B2-018",
+          "top5": [
+            "H-COMPLEXE",
+            "R-B2-018",
+            "R-B2-019",
+            "R-B2-007",
+            "R-B2-010"
+          ],
+          "top1": false,
+          "top3": true
+        },
+        {
+          "query": "aucun accident donc risque faible",
+          "expected": "R-B2-001",
+          "top5": [
+            "R-B2-003",
+            "R-B3-024",
+            "R-B2-001",
+            "R-B2-030",
+            "R-B2-002"
+          ],
+          "top1": false,
+          "top3": true
+        },
+        {
+          "query": "mesure existe donc risque maîtrisé",
+          "expected": "R-B2-001",
+          "top5": [
+            "R-B2-001",
+            "R-B2-021",
+            "R-B2-029",
+            "R-B2-011",
+            "R-B2-013"
+          ],
+          "top1": true,
+          "top3": true
+        },
+        {
+          "query": "risque résiduel",
+          "expected": "R-B2-001",
+          "top5": [
+            "R-B2-001",
+            "R-B2-029",
+            "R-B2-013",
+            "R-B2-016",
+            "R-B4-024"
+          ],
+          "top1": true,
+          "top3": true
+        },
+        {
+          "query": "données de santé",
+          "expected": "R-B2-018",
+          "top5": [
+            "R-B2-018",
+            "R-B2-019",
+            "R-TR-006",
+            "R-B3-012",
+            "R-B3-002"
+          ],
+          "top1": true,
+          "top3": true
+        },
+        {
+          "query": "AIPD",
+          "expected": "R-B2-018",
+          "top5": [
+            "R-B2-019",
+            "R-B2-018"
+          ],
+          "top1": false,
+          "top3": true
+        }
+      ]
+    }
+  }
+}

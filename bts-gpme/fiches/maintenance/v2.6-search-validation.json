@@ -1,0 +1,232 @@
+{
+  "title": {
+    "tested": 145,
+    "top1": 145,
+    "top3": 145,
+    "worst_rank": 1
+  },
+  "use": {
+    "tested": 145,
+    "top1": 145,
+    "top3": 145,
+    "worst_rank": 1
+  },
+  "outcome": {
+    "tested": 145,
+    "top1": 145,
+    "top3": 145,
+    "worst_rank": 1
+  },
+  "challenge_queries": [
+    {
+      "query": "RGPD",
+      "expected": "R-B2-018",
+      "rank": 1,
+      "top3": [
+        "R-B2-018",
+        "R-B2-019",
+        "R-B3-005"
+      ]
+    },
+    {
+      "query": "projet RGPD",
+      "expected": "R-B2-018",
+      "rank": 1,
+      "top3": [
+        "R-B2-018",
+        "R-B2-007",
+        "R-B2-004"
+      ]
+    },
+    {
+      "query": "DPO",
+      "expected": "R-B2-018",
+      "rank": 1,
+      "top3": [
+        "R-B2-018",
+        "R-B2-019",
+        "R-B1-012"
+      ]
+    },
+    {
+      "query": "AIPD",
+      "expected": "R-B2-018",
+      "rank": 1,
+      "top3": [
+        "R-B2-018",
+        "R-B2-019",
+        "R-B1-012"
+      ]
+    },
+    {
+      "query": "données de santé",
+      "expected": "R-B2-018",
+      "rank": 1,
+      "top3": [
+        "R-B2-018",
+        "R-B2-019",
+        "R-B1-012"
+      ]
+    },
+    {
+      "query": "aucun accident donc risque faible",
+      "expected": "R-B2-001",
+      "rank": 1,
+      "top3": [
+        "R-B2-001",
+        "R-B2-003",
+        "R-B2-013"
+      ]
+    },
+    {
+      "query": "risque résiduel",
+      "expected": "R-B2-001",
+      "rank": 1,
+      "top3": [
+        "R-B2-001",
+        "R-B2-013",
+        "R-B2-029"
+      ]
+    },
+    {
+      "query": "mesure efficace",
+      "expected": "R-B2-013",
+      "rank": 1,
+      "top3": [
+        "R-B2-013",
+        "R-B2-029",
+        "R-B2-001"
+      ]
+    },
+    {
+      "query": "démarche qualité",
+      "expected": "R-B2-024",
+      "rank": 1,
+      "top3": [
+        "R-B2-024",
+        "R-B2-026",
+        "R-B2-025"
+      ]
+    },
+    {
+      "query": "réclamations clients",
+      "expected": "R-B1-014",
+      "rank": 1,
+      "top3": [
+        "R-B1-014",
+        "R-B1-026",
+        "R-B1-012"
+      ]
+    },
+    {
+      "query": "facture électronique",
+      "expected": "R-B1-009",
+      "rank": 1,
+      "top3": [
+        "R-B1-009",
+        "R-B1-012",
+        "R-B1-008"
+      ]
+    },
+    {
+      "query": "marché public",
+      "expected": "R-B1-004",
+      "rank": 1,
+      "top3": [
+        "R-B1-004",
+        "R-B4-015",
+        "R-B1-003"
+      ]
+    },
+    {
+      "query": "TVA collectée",
+      "expected": "R-B1-027",
+      "rank": 1,
+      "top3": [
+        "R-B1-027",
+        "R-B4-003",
+        "R-B1-009"
+      ]
+    },
+    {
+      "query": "temps de travail effectif",
+      "expected": "R-B3-006",
+      "rank": 1,
+      "top3": [
+        "R-B3-006",
+        "R-B3-003",
+        "R-B3-008"
+      ]
+    },
+    {
+      "query": "TCD",
+      "expected": "R-TR-013",
+      "rank": 1,
+      "top3": [
+        "R-TR-013",
+        "R-B1-001",
+        "R-B1-002"
+      ]
+    },
+    {
+      "query": "encours client",
+      "expected": "R-B1-011",
+      "rank": 1,
+      "top3": [
+        "R-B1-011",
+        "R-B1-006",
+        "R-B1-012"
+      ]
+    },
+    {
+      "query": "violation de données personnelles",
+      "expected": "R-B2-019",
+      "rank": 1,
+      "top3": [
+        "R-B2-019",
+        "R-B2-018",
+        "R-B4-003"
+      ]
+    },
+    {
+      "query": "entretien annuel",
+      "expected": "R-B3-021",
+      "rank": 1,
+      "top3": [
+        "R-B3-021",
+        "R-B3-016",
+        "R-B3-022"
+      ]
+    },
+    {
+      "query": "entretien de parcours professionnel",
+      "expected": "R-B3-022",
+      "rank": 1,
+      "top3": [
+        "R-B3-022",
+        "R-B3-021",
+        "R-B3-016"
+      ]
+    },
+    {
+      "query": "budget prévisionnel",
+      "expected": "R-B4-028",
+      "rank": 1,
+      "top3": [
+        "R-B4-028",
+        "R-B2-014",
+        "R-B3-028"
+      ]
+    },
+    {
+      "query": "ratio financier",
+      "expected": "R-B4-032",
+      "rank": 1,
+      "top3": [
+        "R-B4-032",
+        "R-B1-009",
+        "R-B2-022"
+      ]
+    }
+  ]
+}

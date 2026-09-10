@@ -1,0 +1,752 @@
+[
+  {
+    "id": "M01",
+    "documents": [
+      {
+        "file": "01-demande-direction.html",
+        "label": "Demande de la direction"
+      },
+      {
+        "file": "02-offre-ecoprint.html",
+        "label": "Fiche offre EcoPrint"
+      },
+      {
+        "file": "03-prospects-bruts.csv",
+        "label": "Fichier prospects brut"
+      },
+      {
+        "file": "04-bilan-campagne-precedente.csv",
+        "label": "Bilan de campagne précédente"
+      },
+      {
+        "file": "05-regles-internes.html",
+        "label": "Règles internes de prospection"
+      }
+    ]
+  },
+  {
+    "id": "M02",
+    "documents": [
+      {
+        "file": "01-devis.html",
+        "label": "Devis D-2026-084"
+      },
+      {
+        "file": "02-bon-commande.html",
+        "label": "Bon de commande client"
+      },
+      {
+        "file": "03-bon-livraison.html",
+        "label": "Bon de livraison"
+      },
+      {
+        "file": "04-fiche-client.html",
+        "label": "Fiche client"
+      },
+      {
+        "file": "05-regles-facturation.html",
+        "label": "Règles internes de facturation"
+      }
+    ]
+  },
+  {
+    "id": "M03",
+    "documents": [
+      {
+        "file": "01-facture.html",
+        "label": "Facture F-2026-431"
+      },
+      {
+        "file": "02-balance-agee.csv",
+        "label": "Balance âgée"
+      },
+      {
+        "file": "03-extrait-banque.csv",
+        "label": "Extrait bancaire récent"
+      },
+      {
+        "file": "04-historique-echanges.html",
+        "label": "Historique des échanges"
+      },
+      {
+        "file": "05-procedure-relance.html",
+        "label": "Procédure interne de relance"
+      }
+    ]
+  },
+  {
+    "id": "M04",
+    "documents": [
+      {
+        "file": "01-reclamation-client.html",
+        "label": "Réclamation du client"
+      },
+      {
+        "file": "02-commande-suivi.html",
+        "label": "Commande et suivi logistique"
+      },
+      {
+        "file": "03-suivi-transport.html",
+        "label": "Suivi du transporteur"
+      },
+      {
+        "file": "04-historique-client.csv",
+        "label": "Historique client"
+      },
+      {
+        "file": "05-procedure-reclamation.html",
+        "label": "Procédure de traitement des réclamations"
+      }
+    ]
+  },
+  {
+    "id": "M05",
+    "documents": [
+      {
+        "file": "01-expression-besoin.html",
+        "label": "Expression du besoin"
+      },
+      {
+        "file": "02-offre-alphasedia.html",
+        "label": "Offre AlphaSedia"
+      },
+      {
+        "file": "03-offre-buroconfort.html",
+        "label": "Offre BuroConfort"
+      },
+      {
+        "file": "04-offre-circulassise.html",
+        "label": "Offre CirculAssise"
+      },
+      {
+        "file": "05-historique-fournisseurs.csv",
+        "label": "Historique fournisseurs"
+      }
+    ]
+  },
+  {
+    "id": "M06",
+    "documents": [
+      {
+        "file": "01-etat-stock.csv",
+        "label": "État de stock"
+      },
+      {
+        "file": "02-mouvements-8-semaines.csv",
+        "label": "Mouvements des huit dernières semaines"
+      },
+      {
+        "file": "03-commandes-ouvertes.csv",
+        "label": "Commandes fournisseurs ouvertes"
+      },
+      {
+        "file": "04-politique-stock.html",
+        "label": "Politique de stock"
+      },
+      {
+        "file": "05-demande-production.html",
+        "label": "Prévision de consommation exceptionnelle"
+      }
+    ]
+  },
+  {
+    "id": "M07",
+    "documents": [
+      {
+        "file": "01-releve-bancaire.csv",
+        "label": "Relevé bancaire"
+      },
+      {
+        "file": "02-journal-banque.csv",
+        "label": "Journal de banque"
+      },
+      {
+        "file": "03-remise-cheques.html",
+        "label": "Bordereau de remise"
+      },
+      {
+        "file": "04-comptes-clients.csv",
+        "label": "Comptes clients ouverts"
+      },
+      {
+        "file": "05-procedure-rapprochement.html",
+        "label": "Procédure de rapprochement bancaire"
+      }
+    ]
+  },
+  {
+    "id": "M08",
+    "documents": [
+      {
+        "file": "01-message-client.html",
+        "label": "Message du client donneur d’ordre"
+      },
+      {
+        "file": "02-procedure-actuelle.html",
+        "label": "Procédure actuelle"
+      },
+      {
+        "file": "03-bon-livraison-actuel.html",
+        "label": "Exemple de bon de livraison actuel"
+      },
+      {
+        "file": "04-commandes-impactees.csv",
+        "label": "Commandes potentiellement impactées"
+      },
+      {
+        "file": "05-cartographie-processus.html",
+        "label": "Extrait du processus de préparation-livraison"
+      }
+    ]
+  },
+  {
+    "id": "M09",
+    "documents": [
+      {
+        "file": "01-note-cadrage-direction.html",
+        "label": "Demande initiale de la direction"
+      },
+      {
+        "file": "02-inventaire-archives.csv",
+        "label": "Inventaire des archives"
+      },
+      {
+        "file": "03-disponibilites-equipe.csv",
+        "label": "Disponibilités de l’équipe"
+      },
+      {
+        "file": "04-offres-prestataires.csv",
+        "label": "Options de prestataires"
+      },
+      {
+        "file": "05-contraintes-projet.html",
+        "label": "Contraintes et règles de continuité"
+      }
+    ]
+  },
+  {
+    "id": "M10",
+    "documents": [
+      {
+        "file": "01-journal-incidents.csv",
+        "label": "Journal des incidents"
+      },
+      {
+        "file": "02-echelle-risque.html",
+        "label": "Échelle interne de cotation"
+      },
+      {
+        "file": "03-mesures-existantes.html",
+        "label": "Mesures de maîtrise existantes"
+      },
+      {
+        "file": "04-demande-direction.html",
+        "label": "Demande de la direction"
+      },
+      {
+        "file": "05-indicateurs-activite.csv",
+        "label": "Données de contexte"
+      }
+    ]
+  },
+  {
+    "id": "M11",
+    "documents": [
+      {
+        "file": "01-position-bancaire.html",
+        "label": "Position bancaire au 31 août"
+      },
+      {
+        "file": "02-echeancier-clients.csv",
+        "label": "Échéancier clients"
+      },
+      {
+        "file": "03-echeancier-decaissements.csv",
+        "label": "Échéancier des décaissements"
+      },
+      {
+        "file": "04-previsions-activite.csv",
+        "label": "Prévisions d’activité"
+      },
+      {
+        "file": "05-note-direction.html",
+        "label": "Note de la direction"
+      }
+    ]
+  },
+  {
+    "id": "M12",
+    "documents": [
+      {
+        "file": "01-observation-poste.html",
+        "label": "Observation du poste"
+      },
+      {
+        "file": "02-extrait-duerp.html",
+        "label": "Extrait du DUERP en vigueur"
+      },
+      {
+        "file": "03-incidents-quasi-accidents.csv",
+        "label": "Incidents et quasi-accidents"
+      },
+      {
+        "file": "04-retours-salaries.html",
+        "label": "Retours des salariés"
+      },
+      {
+        "file": "05-plan-zone.html",
+        "label": "Implantation simplifiée"
+      }
+    ]
+  },
+  {
+    "id": "M13",
+    "documents": [
+      {
+        "file": "01-constat-incident.html",
+        "label": "Constat interne"
+      },
+      {
+        "file": "02-extrait-contrat-assurance.html",
+        "label": "Extrait du contrat d’assurance"
+      },
+      {
+        "file": "03-fiche-machine.html",
+        "label": "Fiche immobilisation"
+      },
+      {
+        "file": "04-rapport-technicien.html",
+        "label": "Premier rapport technique"
+      },
+      {
+        "file": "05-message-assureur.html",
+        "label": "Message du gestionnaire de sinistre"
+      }
+    ]
+  },
+  {
+    "id": "M14",
+    "documents": [
+      {
+        "file": "01-consommations-energie.csv",
+        "label": "Consommations d’énergie et production"
+      },
+      {
+        "file": "02-dechets.csv",
+        "label": "Volumes de déchets"
+      },
+      {
+        "file": "03-processus.html",
+        "label": "Note sur le processus"
+      },
+      {
+        "file": "04-prestataire-dechets.html",
+        "label": "Organisation de la collecte"
+      },
+      {
+        "file": "05-objectifs-direction.html",
+        "label": "Objectifs de la direction"
+      }
+    ]
+  },
+  {
+    "id": "M15",
+    "documents": [
+      {
+        "file": "01-mail-recu.html",
+        "label": "Courriel reçu"
+      },
+      {
+        "file": "02-journal-incident.html",
+        "label": "Journal de l’incident"
+      },
+      {
+        "file": "03-habilitations.csv",
+        "label": "Habilitations"
+      },
+      {
+        "file": "04-donnees-potentiellement-exposees.csv",
+        "label": "Cartographie des données potentiellement exposées"
+      },
+      {
+        "file": "05-procedure-securite.html",
+        "label": "Procédure interne de sécurité"
+      }
+    ]
+  },
+  {
+    "id": "M16",
+    "documents": [
+      {
+        "file": "01-erreurs-commandes.csv",
+        "label": "Journal des erreurs"
+      },
+      {
+        "file": "02-processus-commande.html",
+        "label": "Processus actuel"
+      },
+      {
+        "file": "03-procedure.html",
+        "label": "Procédure en vigueur"
+      },
+      {
+        "file": "04-retours-equipe.html",
+        "label": "Retours de l’équipe"
+      },
+      {
+        "file": "05-reclamations.html",
+        "label": "Extraits de réclamations"
+      }
+    ]
+  },
+  {
+    "id": "M17",
+    "documents": [
+      {
+        "file": "01-decision-embauche.html",
+        "label": "Décision d’embauche"
+      },
+      {
+        "file": "02-donnees-salarie.html",
+        "label": "Informations de la future salariée"
+      },
+      {
+        "file": "03-projet-contrat.html",
+        "label": "Projet de contrat"
+      },
+      {
+        "file": "04-checklist-interne.html",
+        "label": "Checklist interne d’accueil"
+      },
+      {
+        "file": "05-fiche-poste.html",
+        "label": "Fiche de poste ADV"
+      }
+    ]
+  },
+  {
+    "id": "M18",
+    "documents": [
+      {
+        "file": "01-avis-absence.html",
+        "label": "Information sur l’absence"
+      },
+      {
+        "file": "02-releve-temps.csv",
+        "label": "Relevé du temps"
+      },
+      {
+        "file": "03-variables-paie.csv",
+        "label": "Variables de paie"
+      },
+      {
+        "file": "04-brouillon-bulletin.html",
+        "label": "Brouillon de bulletin"
+      },
+      {
+        "file": "05-note-paie.html",
+        "label": "Note du prestataire paie"
+      }
+    ]
+  },
+  {
+    "id": "M19",
+    "documents": [
+      {
+        "file": "01-effectifs.csv",
+        "label": "Historique des effectifs"
+      },
+      {
+        "file": "02-historique-representation.html",
+        "label": "Historique de représentation"
+      },
+      {
+        "file": "03-repartition-personnel.html",
+        "label": "Répartition du personnel"
+      },
+      {
+        "file": "04-projet-calendrier.html",
+        "label": "Projet de calendrier"
+      },
+      {
+        "file": "05-brouillon-information.html",
+        "label": "Brouillon d’information au personnel"
+      }
+    ]
+  },
+  {
+    "id": "M20",
+    "documents": [
+      {
+        "file": "01-demande-direction.html",
+        "label": "Demande de la direction"
+      },
+      {
+        "file": "02-charge-equipe.csv",
+        "label": "Charge actuelle de l’équipe"
+      },
+      {
+        "file": "03-ancienne-fiche-poste.html",
+        "label": "Ancienne fiche de poste"
+      },
+      {
+        "file": "04-brouillon-annonce.html",
+        "label": "Brouillon d’annonce"
+      },
+      {
+        "file": "05-candidatures.csv",
+        "label": "Jeu de candidatures"
+      }
+    ]
+  },
+  {
+    "id": "M21",
+    "documents": [
+      {
+        "file": "01-demandes-formation.csv",
+        "label": "Demandes exprimées par les salariés"
+      },
+      {
+        "file": "02-evolutions-activite.html",
+        "label": "Évolutions confirmées de l’activité"
+      },
+      {
+        "file": "03-catalogue-formations.csv",
+        "label": "Catalogue de formations"
+      },
+      {
+        "file": "04-budget-formation.html",
+        "label": "Budget et engagements"
+      },
+      {
+        "file": "05-disponibilites-equipe.csv",
+        "label": "Disponibilités et périodes critiques"
+      }
+    ]
+  },
+  {
+    "id": "M22",
+    "documents": [
+      {
+        "file": "01-export-effectifs-heures.csv",
+        "label": "Export effectifs / heures"
+      },
+      {
+        "file": "02-detail-absences.csv",
+        "label": "Détail anonymisé des absences"
+      },
+      {
+        "file": "03-mouvements-personnel.csv",
+        "label": "Entrées et sorties"
+      },
+      {
+        "file": "04-tableau-bord-actuel.html",
+        "label": "Ancien tableau de bord"
+      },
+      {
+        "file": "05-demande-direction.html",
+        "label": "Demande de la direction"
+      }
+    ]
+  },
+  {
+    "id": "M23",
+    "documents": [
+      {
+        "file": "01-echanges-mails.html",
+        "label": "Échanges entre collègues"
+      },
+      {
+        "file": "02-suivi-dossiers.csv",
+        "label": "Suivi factuel des dossiers"
+      },
+      {
+        "file": "03-entretien-manager.html",
+        "label": "Notes d’entretiens du manager"
+      },
+      {
+        "file": "04-procedure-transmission.html",
+        "label": "Procédure de transmission"
+      },
+      {
+        "file": "05-erreurs-retards.csv",
+        "label": "Indicateurs de fonctionnement"
+      }
+    ]
+  },
+  {
+    "id": "M24",
+    "documents": [
+      {
+        "file": "01-inventaire-fichiers.csv",
+        "label": "Inventaire des versions concurrentes"
+      },
+      {
+        "file": "02-arborescence-actuelle.html",
+        "label": "Arborescence et pratiques"
+      },
+      {
+        "file": "03-droits-acces.csv",
+        "label": "Droits d’accès"
+      },
+      {
+        "file": "04-flux-validation.html",
+        "label": "Flux de validation"
+      },
+      {
+        "file": "05-regles-archivage.html",
+        "label": "Ancienne note d’archivage"
+      }
+    ]
+  },
+  {
+    "id": "M25",
+    "documents": [
+      {
+        "file": "01-demandes-interventions.csv",
+        "label": "Demandes d’intervention"
+      },
+      {
+        "file": "02-techniciens.csv",
+        "label": "Compétences et disponibilités"
+      },
+      {
+        "file": "03-temps-deplacement.csv",
+        "label": "Temps de déplacement"
+      },
+      {
+        "file": "04-stock-pieces.csv",
+        "label": "Disponibilité des pièces"
+      },
+      {
+        "file": "05-planning-brouillon.csv",
+        "label": "Planning brouillon à contrôler"
+      }
+    ]
+  },
+  {
+    "id": "M26",
+    "documents": [
+      {
+        "file": "01-ventes-gamme.csv",
+        "label": "Ventes mensuelles de la gamme"
+      },
+      {
+        "file": "02-prix-concurrents.csv",
+        "label": "Relevé de prix concurrents"
+      },
+      {
+        "file": "03-retours-commerciaux.html",
+        "label": "Retours des commerciaux"
+      },
+      {
+        "file": "04-web-leads.csv",
+        "label": "Trafic et conversion web"
+      },
+      {
+        "file": "05-note-veille-a-verifier.html",
+        "label": "Note de veille non vérifiée"
+      }
+    ]
+  },
+  {
+    "id": "M27",
+    "documents": [
+      {
+        "file": "01-brief-direction.html",
+        "label": "Brief de la direction"
+      },
+      {
+        "file": "02-charte-et-preuves.html",
+        "label": "Charte et preuves disponibles"
+      },
+      {
+        "file": "03-performances-canaux.csv",
+        "label": "Performances des canaux"
+      },
+      {
+        "file": "04-brouillons-publications.html",
+        "label": "Brouillons de publications"
+      },
+      {
+        "file": "05-assets-et-droits.csv",
+        "label": "Assets, droits et données"
+      }
+    ]
+  },
+  {
+    "id": "M28",
+    "documents": [
+      {
+        "file": "01-ventes-produit.csv",
+        "label": "Ventes et retours"
+      },
+      {
+        "file": "02-charges-variables.csv",
+        "label": "Charges variables"
+      },
+      {
+        "file": "03-temps-et-charges-fixes.csv",
+        "label": "Charges fixes et capacités"
+      },
+      {
+        "file": "04-fiche-cout-actuelle.html",
+        "label": "Fiche de coût actuelle"
+      },
+      {
+        "file": "05-scenario-plus-15.html",
+        "label": "Scénario de croissance"
+      }
+    ]
+  },
+  {
+    "id": "M29",
+    "documents": [
+      {
+        "file": "01-projet-machine.html",
+        "label": "Projet d’investissement"
+      },
+      {
+        "file": "02-situation-financiere.csv",
+        "label": "Situation financière"
+      },
+      {
+        "file": "03-offre-emprunt.html",
+        "label": "Offre d’emprunt"
+      },
+      {
+        "file": "04-offre-credit-bail.html",
+        "label": "Offre de crédit-bail"
+      },
+      {
+        "file": "05-tresorerie-previsionnelle.csv",
+        "label": "Trésorerie prévisionnelle"
+      }
+    ]
+  },
+  {
+    "id": "M30",
+    "documents": [
+      {
+        "file": "01-tableau-bord-brut.csv",
+        "label": "Tableau de bord brut — 40 indicateurs"
+      },
+      {
+        "file": "02-dictionnaire-indicateurs.csv",
+        "label": "Dictionnaire et formules"
+      },
+      {
+        "file": "03-priorites-direction.html",
+        "label": "Priorités de la direction"
+      },
+      {
+        "file": "04-etat-sources.csv",
+        "label": "État des sources"
+      },
+      {
+        "file": "05-note-collegue.html",
+        "label": "Note de synthèse à critiquer"
+      }
+    ]
+  }
+]

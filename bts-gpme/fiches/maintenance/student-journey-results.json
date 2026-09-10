@@ -1,0 +1,2420 @@
+[
+  {
+    "mission": "M01",
+    "title": "Trouver de nouveaux prospects sans savoir comment organiser la prospection",
+    "bc": "BC1",
+    "activity": "A1_1",
+    "queries": [
+      {
+        "q": "je dois trouver de nouveaux clients",
+        "top5": [
+          "R-B1-001",
+          "R-B1-002",
+          "R-B1-026",
+          "R-TR-013",
+          "R-B4-015"
+        ],
+        "positions": {
+          "R-B1-001": 1,
+          "R-B1-002": 2,
+          "R-TR-002": 6
+        },
+        "success": true
+      },
+      {
+        "q": "comment préparer une liste de prospects",
+        "top5": [
+          "R-B1-002",
+          "R-B1-001",
+          "R-B2-027",
+          "R-B4-004",
+          "R-B2-018"
+        ],
+        "positions": {
+          "R-B1-001": 2,
+          "R-B1-002": 1,
+          "R-TR-002": 17
+        },
+        "success": true
+      },
+      {
+        "q": "organiser une prospection cabinets médicaux",
+        "top5": [
+          "R-B1-001",
+          "R-TR-002",
+          "R-B1-002",
+          "R-B3-005",
+          "R-B1-004"
+        ],
+        "positions": {
+          "R-B1-001": 1,
+          "R-B1-002": 3,
+          "R-TR-002": 2
+        },
+        "success": true
+      }
+    ],
+    "structure": [
+      {
+        "resource": "R-B1-001",
+        "ok": true,
+        "missing": []
+      },
+      {
+        "resource": "R-B1-002",
+        "ok": true,
+        "missing": []
+      },
+      {
+        "resource": "R-TR-002",
+        "ok": true,
+        "missing": []
+      }
+    ],
+    "search_success": true,
+    "resource_success": true
+  },
+  {
+    "mission": "M02",
+    "title": "Passer d’une commande client à une facture sans oublier les contrôles",
+    "bc": "BC1",
+    "activity": "A1_2",
+    "queries": [
+      {
+        "q": "on me demande de faire la facture après la livraison",
+        "top5": [
+          "R-B1-007",
+          "R-B1-010",
+          "R-B1-030",
+          "R-B1-020",
+          "R-B1-008"
+        ],
+        "positions": {
+          "R-B1-006": 26,
+          "R-B1-007": 1,
+          "R-B1-008": 5
+        },
+        "success": true
+      },
+      {
+        "q": "je dois vérifier une commande client avant facturation",
+        "top5": [
+          "R-B1-007",
+          "R-B1-008",
+          "R-B1-006",
+          "R-B1-030",
+          "R-B1-012"
+        ],
+        "positions": {
+          "R-B1-006": 3,
+          "R-B1-007": 1,
+          "R-B1-008": 2
+        },
+        "success": true
+      },
+      {
+        "q": "comment suivre vente livraison facture",
+        "top5": [
+          "R-B1-007",
+          "R-B1-010",
+          "R-B1-020",
+          "R-B1-008",
+          "R-B1-030"
+        ],
+        "positions": {
+          "R-B1-006": 22,
+          "R-B1-007": 1,
+          "R-B1-008": 4
+        },
+        "success": true
+      }
+    ],
+    "structure": [
+      {
+        "resource": "R-B1-006",
+        "ok": true,
+        "missing": []
+      },
+      {
+        "resource": "R-B1-007",
+        "ok": true,
+        "missing": []
+      },
+      {
+        "resource": "R-B1-008",
+        "ok": true,
+        "missing": []
+      }
+    ],
+    "search_success": true,
+    "resource_success": true
+  },
+  {
+    "mission": "M03",
+    "title": "Un client n’a pas payé : savoir quoi vérifier avant de relancer",
+    "bc": "BC1",
+    "activity": "A1_2",
+    "queries": [
+      {
+        "q": "le client ne paie pas",
+        "top5": [
+          "R-B1-010",
+          "R-B1-026",
+          "R-B1-011",
+          "R-B1-012",
+          "R-B1-028"
+        ],
+        "positions": {
+          "R-B1-010": 1,
+          "R-B1-026": 2,
+          "R-TR-002": 18
+        },
+        "success": true
+      },
+      {
+        "q": "facture en retard que faire avant de relancer",
+        "top5": [
+          "R-B1-010",
+          "R-B1-020",
+          "R-B1-008",
+          "R-B1-026",
+          "R-B1-028"
+        ],
+        "positions": {
+          "R-B1-010": 1,
+          "R-B1-026": 4,
+          "R-TR-002": 7
+        },
+        "success": true
+      },
+      {
+        "q": "je dois suivre un impayé client",
+        "top5": [
+          "R-B1-026",
+          "R-B1-010",
+          "R-B1-014",
+          "R-B1-029",
+          "R-B1-012"
+        ],
+        "positions": {
+          "R-B1-010": 2,
+          "R-B1-026": 1,
+          "R-TR-002": 40
+        },
+        "success": true
+      }
+    ],
+    "structure": [
+      {
+        "resource": "R-B1-010",
+        "ok": true,
+        "missing": []
+      },
+      {
+        "resource": "R-B1-026",
+        "ok": true,
+        "missing": []
+      },
+      {
+        "resource": "R-TR-002",
+        "ok": true,
+        "missing": []
+      }
+    ],
+    "search_success": true,
+    "resource_success": true
+  },
+  {
+    "mission": "M04",
+    "title": "Un client mécontent menace de partir après une livraison en retard",
+    "bc": "BC1",
+    "activity": "A1_3",
+    "queries": [
+      {
+        "q": "client pas content retard livraison",
+        "top5": [
+          "R-B1-030",
+          "R-B1-014",
+          "R-B1-010",
+          "R-B1-007",
+          "R-B1-011"
+        ],
+        "positions": {
+          "R-B1-014": 2,
+          "R-B1-030": 1,
+          "R-B1-029": 7,
+          "R-TR-001": 10
+        },
+        "success": true
+      },
+      {
+        "q": "comment traiter une réclamation client",
+        "top5": [
+          "R-B1-014",
+          "R-B1-030",
+          "R-B1-029",
+          "R-B1-010",
+          "R-B1-013"
+        ],
+        "positions": {
+          "R-B1-014": 1,
+          "R-B1-030": 2,
+          "R-B1-029": 3,
+          "R-TR-001": 20
+        },
+        "success": true
+      },
+      {
+        "q": "un client menace de partir que répondre",
+        "top5": [
+          "R-B1-014",
+          "R-B1-029",
+          "R-B4-018",
+          "R-B1-030",
+          "R-B1-011"
+        ],
+        "positions": {
+          "R-B1-014": 1,
+          "R-B1-030": 4,
+          "R-B1-029": 2,
+          "R-TR-001": 7
+        },
+        "success": true
+      }
+    ],
+    "structure": [
+      {
+        "resource": "R-B1-014",
+        "ok": true,
+        "missing": []
+      },
+      {
+        "resource": "R-B1-030",
+        "ok": true,
+        "missing": []
+      },
+      {
+        "resource": "R-B1-029",
+        "ok": true,
+        "missing": []
+      },
+      {
+        "resource": "R-TR-001",
+        "ok": true,
+        "missing": []
+      }
+    ],
+    "search_success": true,
+    "resource_success": true
+  },
+  {
+    "mission": "M05",
+    "title": "Choisir entre trois fournisseurs sans se contenter du prix le plus bas",
+    "bc": "BC1",
+    "activity": "A1_4",
+    "queries": [
+      {
+        "q": "je dois choisir entre plusieurs fournisseurs",
+        "top5": [
+          "R-TR-013",
+          "R-B1-016",
+          "R-B3-016",
+          "R-TR-006",
+          "R-B1-017"
+        ],
+        "positions": {
+          "R-B1-015": 20,
+          "R-B1-016": 2,
+          "R-B1-017": 5,
+          "R-TR-003": 14
+        },
+        "success": true
+      },
+      {
+        "q": "comparer trois offres fournisseur",
+        "top5": [
+          "R-B1-017",
+          "R-B1-016",
+          "R-B1-032",
+          "R-B1-020",
+          "R-B1-019"
+        ],
+        "positions": {
+          "R-B1-015": 8,
+          "R-B1-016": 2,
+          "R-B1-017": 1,
+          "R-TR-003": 6
+        },
+        "success": true
+      },
+      {
+        "q": "quel fournisseur prendre pas seulement le prix",
+        "top5": [
+          "R-B1-017",
+          "R-B1-016",
+          "R-B1-026",
+          "R-B1-032",
+          "R-B1-019"
+        ],
+        "positions": {
+          "R-B1-015": 10,
+          "R-B1-016": 2,
+          "R-B1-017": 1,
+          "R-TR-003": 9
+        },
+        "success": true
+      }
+    ],
+    "structure": [
+      {
+        "resource": "R-B1-015",
+        "ok": true,
+        "missing": []
+      },
+      {
+        "resource": "R-B1-016",
+        "ok": true,
+        "missing": []
+      },
+      {
+        "resource": "R-B1-017",
+        "ok": true,
+        "missing": []
+      },
+      {
+        "resource": "R-TR-003",
+        "ok": true,
+        "missing": []
+      }
+    ],
+    "search_success": true,
+    "resource_success": true
+  },
+  {
+    "mission": "M06",
+    "title": "Le stock baisse : décider s’il faut recommander et contrôler la commande",
+    "bc": "BC1",
+    "activity": "A1_5",
+    "queries": [
+      {
+        "q": "manque de stock faut il recommander",
+        "top5": [
+          "R-B1-021",
+          "R-B1-019",
+          "R-TR-014",
+          "R-TR-013",
+          "R-TR-012"
+        ],
+        "positions": {
+          "R-B1-021": 1,
+          "R-B1-019": 2,
+          "R-B1-020": 6
+        },
+        "success": true
+      },
+      {
+        "q": "préparer une commande fournisseur stock faible",
+        "top5": [
+          "R-B1-019",
+          "R-B1-021",
+          "R-B1-020",
+          "R-B1-022",
+          "R-B1-023"
+        ],
+        "positions": {
+          "R-B1-021": 2,
+          "R-B1-019": 1,
+          "R-B1-020": 3
+        },
+        "success": true
+      },
+      {
+        "q": "contrôler commande facture fournisseur",
+        "top5": [
+          "R-B1-020",
+          "R-B1-019",
+          "R-B1-006",
+          "R-B1-008",
+          "R-B1-032"
+        ],
+        "positions": {
+          "R-B1-021": 10,
+          "R-B1-019": 2,
+          "R-B1-020": 1
+        },
+        "success": true
+      }
+    ],
+    "structure": [
+      {
+        "resource": "R-B1-021",
+        "ok": true,
+        "missing": []
+      },
+      {
+        "resource": "R-B1-019",
+        "ok": true,
+        "missing": []
+      },
+      {
+        "resource": "R-B1-020",
+        "ok": true,
+        "missing": []
+      }
+    ],
+    "search_success": true,
+    "resource_success": true
+  },
+  {
+    "mission": "M07",
+    "title": "La banque et les comptes clients ne correspondent pas en fin de mois",
+    "bc": "BC1",
+    "activity": "A1_6",
+    "queries": [
+      {
+        "q": "la banque ne correspond pas au logiciel",
+        "top5": [
+          "R-B1-025",
+          "R-B1-024",
+          "R-B1-026",
+          "R-B2-017",
+          "R-B2-021"
+        ],
+        "positions": {
+          "R-B1-025": 1,
+          "R-B1-026": 3,
+          "R-B1-024": 2
+        },
+        "success": true
+      },
+      {
+        "q": "relevé bancaire et compte banque différents",
+        "top5": [
+          "R-B1-025",
+          "R-B1-026",
+          "R-B1-024",
+          "R-TR-004",
+          "R-B2-023"
+        ],
+        "positions": {
+          "R-B1-025": 1,
+          "R-B1-026": 2,
+          "R-B1-024": 3
+        },
+        "success": true
+      },
+      {
+        "q": "clients encore débiteurs fin de mois",
+        "top5": [
+          "R-B4-033",
+          "R-B4-036",
+          "R-B4-018",
+          "R-B1-025",
+          "R-B1-024"
+        ],
+        "positions": {
+          "R-B1-025": 4,
+          "R-B1-026": 15,
+          "R-B1-024": 5
+        },
+        "success": true
+      }
+    ],
+    "structure": [
+      {
+        "resource": "R-B1-025",
+        "ok": true,
+        "missing": []
+      },
+      {
+        "resource": "R-B1-026",
+        "ok": true,
+        "missing": []
+      },
+      {
+        "resource": "R-B1-024",
+        "ok": true,
+        "missing": []
+      }
+    ],
+    "search_success": true,
+    "resource_success": true
+  },
+  {
+    "mission": "M08",
+    "title": "Une règle change : transformer l’information en action pour la PME",
+    "bc": "BC2",
+    "activity": "A2_1",
+    "queries": [
+      {
+        "q": "on me donne une nouvelle règle je dois vérifier",
+        "top5": [
+          "R-B2-028",
+          "R-B2-004",
+          "R-B2-003",
+          "R-B1-012",
+          "R-B2-006"
+        ],
+        "positions": {
+          "R-B2-005": 8,
+          "R-B2-006": 5,
+          "R-B2-028": 1,
+          "R-TR-003": 71
+        },
+        "success": true
+      },
+      {
+        "q": "comment savoir si une source est fiable",
+        "top5": [
+          "R-B2-005",
+          "R-B4-003",
+          "R-B3-026",
+          "R-TR-006",
+          "R-B4-001"
+        ],
+        "positions": {
+          "R-B2-005": 1,
+          "R-B2-006": 19,
+          "R-B2-028": 7,
+          "R-TR-003": 15
+        },
+        "success": true
+      },
+      {
+        "q": "faire une veille puis mettre à jour une procédure",
+        "top5": [
+          "R-B2-028",
+          "R-B2-025",
+          "R-B2-004",
+          "R-B4-014",
+          "R-B2-006"
+        ],
+        "positions": {
+          "R-B2-005": 22,
+          "R-B2-006": 5,
+          "R-B2-028": 1,
+          "R-TR-003": 105
+        },
+        "success": true
+      }
+    ],
+    "structure": [
+      {
+        "resource": "R-B2-005",
+        "ok": true,
+        "missing": []
+      },
+      {
+        "resource": "R-B2-006",
+        "ok": true,
+        "missing": []
+      },
+      {
+        "resource": "R-B2-028",
+        "ok": true,
+        "missing": []
+      },
+      {
+        "resource": "R-TR-003",
+        "ok": true,
+        "missing": []
+      }
+    ],
+    "search_success": true,
+    "resource_success": true
+  },
+  {
+    "mission": "M09",
+    "title": "Numériser les archives en six semaines : passer d’une idée à un projet pilotable",
+    "bc": "BC2",
+    "activity": "A2_2",
+    "queries": [
+      {
+        "q": "je dois organiser un projet de numérisation",
+        "top5": [
+          "R-B2-007",
+          "R-B3-026",
+          "R-B2-010",
+          "R-B2-009",
+          "R-B2-008"
+        ],
+        "positions": {
+          "R-B2-007": 1,
+          "R-B2-008": 5,
+          "R-B2-009": 4,
+          "R-B2-010": 3
+        },
+        "success": true
+      },
+      {
+        "q": "faire un planning projet avec plusieurs personnes",
+        "top5": [
+          "R-B2-007",
+          "R-B4-009",
+          "R-B2-008",
+          "R-B4-010",
+          "R-B2-010"
+        ],
+        "positions": {
+          "R-B2-007": 1,
+          "R-B2-008": 3,
+          "R-B2-009": 6,
+          "R-B2-010": 5
+        },
+        "success": true
+      },
+      {
+        "q": "préparer réunion projet archives",
+        "top5": [
+          "R-B2-009",
+          "R-TR-008",
+          "R-B3-027",
+          "R-TR-004",
+          "R-B2-007"
+        ],
+        "positions": {
+          "R-B2-007": 5,
+          "R-B2-008": 8,
+          "R-B2-009": 1,
+          "R-B2-010": 6
+        },
+        "success": true
+      }
+    ],
+    "structure": [
+      {
+        "resource": "R-B2-007",
+        "ok": true,
+        "missing": []
+      },
+      {
+        "resource": "R-B2-008",
+        "ok": true,
+        "missing": []
+      },
+      {
+        "resource": "R-B2-009",
+        "ok": true,
+        "missing": []
+      },
+      {
+        "resource": "R-B2-010",
+        "ok": true,
+        "missing": []
+      }
+    ],
+    "search_success": true,
+    "resource_success": true
+  },
+  {
+    "mission": "M10",
+    "title": "Des incidents se répètent : identifier les risques réellement prioritaires",
+    "bc": "BC2",
+    "activity": "A2_3",
+    "queries": [
+      {
+        "q": "plusieurs problèmes dans entreprise quels risques traiter en premier",
+        "top5": [
+          "R-B2-001",
+          "R-B2-002",
+          "R-B2-011",
+          "R-B2-013",
+          "R-B2-021"
+        ],
+        "positions": {
+          "R-B2-011": 3,
+          "R-B2-001": 1,
+          "R-B2-002": 2,
+          "R-B2-013": 4
+        },
+        "success": true
+      },
+      {
+        "q": "classer les risques par importance",
+        "top5": [
+          "R-B2-001",
+          "R-B2-002",
+          "R-B2-011",
+          "R-B2-013",
+          "R-B2-021"
+        ],
+        "positions": {
+          "R-B2-011": 3,
+          "R-B2-001": 1,
+          "R-B2-002": 2,
+          "R-B2-013": 4
+        },
+        "success": true
+      },
+      {
+        "q": "faire plan action risques pme",
+        "top5": [
+          "R-B2-013",
+          "R-B2-011",
+          "R-B2-001",
+          "R-B2-021",
+          "R-B2-020"
+        ],
+        "positions": {
+          "R-B2-011": 2,
+          "R-B2-001": 3,
+          "R-B2-002": 31,
+          "R-B2-013": 1
+        },
+        "success": true
+      }
+    ],
+    "structure": [
+      {
+        "resource": "R-B2-011",
+        "ok": true,
+        "missing": []
+      },
+      {
+        "resource": "R-B2-001",
+        "ok": true,
+        "missing": []
+      },
+      {
+        "resource": "R-B2-002",
+        "ok": true,
+        "missing": []
+      },
+      {
+        "resource": "R-B2-013",
+        "ok": true,
+        "missing": []
+      }
+    ],
+    "search_success": true,
+    "resource_success": true
+  },
+  {
+    "mission": "M11",
+    "title": "Le compte bancaire risque de devenir négatif dans deux mois",
+    "bc": "BC2",
+    "activity": "A2_4",
+    "queries": [
+      {
+        "q": "la pme va manquer d argent dans deux mois",
+        "top5": [
+          "R-B2-015",
+          "R-B2-014",
+          "R-TR-014",
+          "R-B4-028",
+          "R-B2-001"
+        ],
+        "positions": {
+          "R-B2-014": 2,
+          "R-B2-015": 1,
+          "R-TR-014": 3
+        },
+        "success": true
+      },
+      {
+        "q": "prévoir encaissements décaissements",
+        "top5": [
+          "R-TR-014",
+          "R-B2-015",
+          "R-B2-014",
+          "R-B1-025",
+          "R-TR-005"
+        ],
+        "positions": {
+          "R-B2-014": 3,
+          "R-B2-015": 2,
+          "R-TR-014": 1
+        },
+        "success": true
+      },
+      {
+        "q": "trésorerie négative quelles solutions",
+        "top5": [
+          "R-B2-015",
+          "R-B2-014",
+          "R-TR-014",
+          "R-B4-033",
+          "R-B4-031"
+        ],
+        "positions": {
+          "R-B2-014": 2,
+          "R-B2-015": 1,
+          "R-TR-014": 3
+        },
+        "success": true
+      }
+    ],
+    "structure": [
+      {
+        "resource": "R-B2-014",
+        "ok": true,
+        "missing": []
+      },
+      {
+        "resource": "R-B2-015",
+        "ok": true,
+        "missing": []
+      },
+      {
+        "resource": "R-TR-014",
+        "ok": true,
+        "missing": []
+      }
+    ],
+    "search_success": true,
+    "resource_success": true
+  },
+  {
+    "mission": "M12",
+    "title": "Un poste de travail semble dangereux : contribuer au DUERP sans jouer l’expert",
+    "bc": "BC2",
+    "activity": "A2_5",
+    "queries": [
+      {
+        "q": "poste de travail dangereux que faire",
+        "top5": [
+          "R-B2-003",
+          "R-B2-001",
+          "R-B2-011",
+          "R-B3-017",
+          "R-B3-002"
+        ],
+        "positions": {
+          "R-B2-003": 1,
+          "R-B2-011": 3,
+          "R-B2-013": 6
+        },
+        "success": true
+      },
+      {
+        "q": "mettre à jour duerp après problème",
+        "top5": [
+          "R-B2-003",
+          "R-B1-012",
+          "R-B2-025",
+          "R-B2-028",
+          "R-B4-038"
+        ],
+        "positions": {
+          "R-B2-003": 1,
+          "R-B2-011": 8,
+          "R-B2-013": 7
+        },
+        "success": true
+      },
+      {
+        "q": "sécurité salariés sol glissant",
+        "top5": [
+          "R-B2-003",
+          "R-B2-015",
+          "R-B3-018",
+          "R-B4-034",
+          "R-TR-012"
+        ],
+        "positions": {
+          "R-B2-003": 1,
+          "R-B2-011": null,
+          "R-B2-013": 64
+        },
+        "success": true
+      }
+    ],
+    "structure": [
+      {
+        "resource": "R-B2-003",
+        "ok": true,
+        "missing": []
+      },
+      {
+        "resource": "R-B2-011",
+        "ok": true,
+        "missing": []
+      },
+      {
+        "resource": "R-B2-013",
+        "ok": true,
+        "missing": []
+      }
+    ],
+    "search_success": true,
+    "resource_success": true
+  },
+  {
+    "mission": "M13",
+    "title": "Une machine est endommagée : préparer le dossier d’assurance sans promettre l’indemnisation",
+    "bc": "BC2",
+    "activity": "A2_5",
+    "queries": [
+      {
+        "q": "machine abimée assurance que faire",
+        "top5": [
+          "R-B2-016",
+          "R-B2-030",
+          "R-B4-033",
+          "R-B2-017",
+          "R-TR-005"
+        ],
+        "positions": {
+          "R-B2-016": 1,
+          "R-B2-030": 2
+        },
+        "success": true
+      },
+      {
+        "q": "préparer déclaration sinistre entreprise",
+        "top5": [
+          "R-B1-027",
+          "R-B2-030",
+          "R-B2-016",
+          "R-B3-002",
+          "R-B4-019"
+        ],
+        "positions": {
+          "R-B2-016": 3,
+          "R-B2-030": 2
+        },
+        "success": true
+      },
+      {
+        "q": "vérifier si assurance couvre le dommage",
+        "top5": [
+          "R-B2-030",
+          "R-B2-016",
+          "R-B1-004",
+          "R-B2-017",
+          "R-B3-024"
+        ],
+        "positions": {
+          "R-B2-016": 2,
+          "R-B2-030": 1
+        },
+        "success": true
+      }
+    ],
+    "structure": [
+      {
+        "resource": "R-B2-016",
+        "ok": true,
+        "missing": []
+      },
+      {
+        "resource": "R-B2-030",
+        "ok": true,
+        "missing": []
+      }
+    ],
+    "search_success": true,
+    "resource_success": true
+  },
+  {
+    "mission": "M14",
+    "title": "Les déchets et l’énergie augmentent : repérer un risque environnemental exploitable",
+    "bc": "BC2",
+    "activity": "A2_5",
+    "queries": [
+      {
+        "q": "beaucoup plus de déchets entreprise",
+        "top5": [
+          "R-B2-020",
+          "R-B2-001",
+          "R-TR-014",
+          "R-TR-011",
+          "R-B2-011"
+        ],
+        "positions": {
+          "R-B2-020": 1,
+          "R-TR-011": 4,
+          "R-TR-014": 3
+        },
+        "success": true
+      },
+      {
+        "q": "consommation énergie augmente que mesurer",
+        "top5": [
+          "R-B2-020",
+          "R-TR-014",
+          "R-TR-011",
+          "R-B4-034",
+          "R-B4-024"
+        ],
+        "positions": {
+          "R-B2-020": 1,
+          "R-TR-011": 3,
+          "R-TR-014": 2
+        },
+        "success": true
+      },
+      {
+        "q": "risque environnement entreprise actions",
+        "top5": [
+          "R-B2-020",
+          "R-B2-013",
+          "R-B2-001",
+          "R-B2-016",
+          "R-TR-011"
+        ],
+        "positions": {
+          "R-B2-020": 1,
+          "R-TR-011": 5,
+          "R-TR-014": 23
+        },
+        "success": true
+      }
+    ],
+    "structure": [
+      {
+        "resource": "R-B2-020",
+        "ok": true,
+        "missing": []
+      },
+      {
+        "resource": "R-TR-011",
+        "ok": true,
+        "missing": []
+      },
+      {
+        "resource": "R-TR-014",
+        "ok": true,
+        "missing": []
+      }
+    ],
+    "search_success": true,
+    "resource_success": true
+  },
+  {
+    "mission": "M15",
+    "title": "Un salarié clique sur un faux mail et des données clients ont peut-être été exposées",
+    "bc": "BC2",
+    "activity": "A2_5",
+    "queries": [
+      {
+        "q": "on a peut être été piraté",
+        "top5": [
+          "R-B2-021",
+          "R-B1-003",
+          "R-B2-011",
+          "R-B2-001",
+          "R-B2-022"
+        ],
+        "positions": {
+          "R-B2-021": 1,
+          "R-B2-023": 10,
+          "R-B2-019": 6,
+          "R-B2-022": 5
+        },
+        "success": true
+      },
+      {
+        "q": "salarié clique faux mail données clients",
+        "top5": [
+          "R-B2-021",
+          "R-B2-019",
+          "R-B2-022",
+          "R-TR-011",
+          "R-TR-012"
+        ],
+        "positions": {
+          "R-B2-021": 1,
+          "R-B2-023": 6,
+          "R-B2-019": 2,
+          "R-B2-022": 3
+        },
+        "success": true
+      },
+      {
+        "q": "fuite de données que faire entreprise",
+        "top5": [
+          "R-B2-019",
+          "R-B2-018",
+          "R-B2-022",
+          "R-B2-021",
+          "R-B1-009"
+        ],
+        "positions": {
+          "R-B2-021": 4,
+          "R-B2-023": 11,
+          "R-B2-019": 1,
+          "R-B2-022": 3
+        },
+        "success": true
+      }
+    ],
+    "structure": [
+      {
+        "resource": "R-B2-021",
+        "ok": true,
+        "missing": []
+      },
+      {
+        "resource": "R-B2-023",
+        "ok": true,
+        "missing": []
+      },
+      {
+        "resource": "R-B2-019",
+        "ok": true,
+        "missing": []
+      },
+      {
+        "resource": "R-B2-022",
+        "ok": true,
+        "missing": []
+      }
+    ],
+    "search_success": true,
+    "resource_success": true
+  },
+  {
+    "mission": "M16",
+    "title": "Les mêmes erreurs reviennent dans les commandes : passer du symptôme à une amélioration qualité",
+    "bc": "BC2",
+    "activity": "A2_6",
+    "queries": [
+      {
+        "q": "même erreur revient plusieurs fois qualité",
+        "top5": [
+          "R-B2-024",
+          "R-B2-025",
+          "R-B2-029",
+          "R-B4-007",
+          "R-B3-018"
+        ],
+        "positions": {
+          "R-B2-024": 1,
+          "R-B2-025": 2,
+          "R-B2-029": 3
+        },
+        "success": true
+      },
+      {
+        "q": "chercher cause problème puis faire procédure",
+        "top5": [
+          "R-B2-024",
+          "R-B2-025",
+          "R-B4-038",
+          "R-B2-029",
+          "R-B2-011"
+        ],
+        "positions": {
+          "R-B2-024": 1,
+          "R-B2-025": 2,
+          "R-B2-029": 4
+        },
+        "success": true
+      },
+      {
+        "q": "améliorer une procédure après réclamations",
+        "top5": [
+          "R-B2-025",
+          "R-B2-029",
+          "R-B4-007",
+          "R-B4-038",
+          "R-B2-024"
+        ],
+        "positions": {
+          "R-B2-024": 5,
+          "R-B2-025": 1,
+          "R-B2-029": 2
+        },
+        "success": true
+      }
+    ],
+    "structure": [
+      {
+        "resource": "R-B2-024",
+        "ok": true,
+        "missing": []
+      },
+      {
+        "resource": "R-B2-025",
+        "ok": true,
+        "missing": []
+      },
+      {
+        "resource": "R-B2-029",
+        "ok": true,
+        "missing": []
+      }
+    ],
+    "search_success": true,
+    "resource_success": true
+  },
+  {
+    "mission": "M17",
+    "title": "Un salarié commence lundi : préparer l’embauche sans oublier une formalité",
+    "bc": "BC3",
+    "activity": "A3_1",
+    "queries": [
+      {
+        "q": "nouveau salarié commence lundi que préparer",
+        "top5": [
+          "R-B3-002",
+          "R-B3-017",
+          "R-B3-005",
+          "R-B3-004",
+          "R-B3-001"
+        ],
+        "positions": {
+          "R-B3-001": 5,
+          "R-B3-002": 1,
+          "R-B3-003": 7,
+          "R-B3-005": 3
+        },
+        "success": true
+      },
+      {
+        "q": "formalités avant embauche salarié",
+        "top5": [
+          "R-B3-002",
+          "R-B3-005",
+          "R-B3-001",
+          "R-B3-017",
+          "R-B3-004"
+        ],
+        "positions": {
+          "R-B3-001": 3,
+          "R-B3-002": 1,
+          "R-B3-003": 10,
+          "R-B3-005": 2
+        },
+        "success": true
+      },
+      {
+        "q": "dpae contrat dossier salarié",
+        "top5": [
+          "R-B3-002",
+          "R-B3-005",
+          "R-B3-004",
+          "R-B3-003",
+          "R-B2-030"
+        ],
+        "positions": {
+          "R-B3-001": 6,
+          "R-B3-002": 1,
+          "R-B3-003": 4,
+          "R-B3-005": 2
+        },
+        "success": true
+      }
+    ],
+    "structure": [
+      {
+        "resource": "R-B3-001",
+        "ok": true,
+        "missing": []
+      },
+      {
+        "resource": "R-B3-002",
+        "ok": true,
+        "missing": []
+      },
+      {
+        "resource": "R-B3-003",
+        "ok": true,
+        "missing": []
+      },
+      {
+        "resource": "R-B3-005",
+        "ok": true,
+        "missing": []
+      }
+    ],
+    "search_success": true,
+    "resource_success": true
+  },
+  {
+    "mission": "M18",
+    "title": "Une absence arrive pendant la préparation de la paie",
+    "bc": "BC3",
+    "activity": "A3_1",
+    "queries": [
+      {
+        "q": "salarié absent pendant préparation paie",
+        "top5": [
+          "R-B3-008",
+          "R-B3-007",
+          "R-B3-009",
+          "R-B3-006",
+          "R-B3-004"
+        ],
+        "positions": {
+          "R-B3-007": 2,
+          "R-B3-008": 1,
+          "R-B3-009": 3,
+          "R-B3-012": 8
+        },
+        "success": true
+      },
+      {
+        "q": "arrêt maladie variables de paie",
+        "top5": [
+          "R-B3-008",
+          "R-B3-007",
+          "R-B3-009",
+          "R-B3-010",
+          "R-B3-012"
+        ],
+        "positions": {
+          "R-B3-007": 2,
+          "R-B3-008": 1,
+          "R-B3-009": 3,
+          "R-B3-012": 5
+        },
+        "success": true
+      },
+      {
+        "q": "mettre absence dans paie sans erreur",
+        "top5": [
+          "R-B3-008",
+          "R-B3-007",
+          "R-B3-010",
+          "R-B3-009",
+          "R-B3-001"
+        ],
+        "positions": {
+          "R-B3-007": 2,
+          "R-B3-008": 1,
+          "R-B3-009": 4,
+          "R-B3-012": 15
+        },
+        "success": true
+      }
+    ],
+    "structure": [
+      {
+        "resource": "R-B3-007",
+        "ok": true,
+        "missing": []
+      },
+      {
+        "resource": "R-B3-008",
+        "ok": true,
+        "missing": []
+      },
+      {
+        "resource": "R-B3-009",
+        "ok": true,
+        "missing": []
+      },
+      {
+        "resource": "R-B3-012",
+        "ok": true,
+        "missing": []
+      }
+    ],
+    "search_success": true,
+    "resource_success": true
+  },
+  {
+    "mission": "M19",
+    "title": "La PME doit organiser des élections du personnel : préparer sans décider à la place de la direction",
+    "bc": "BC3",
+    "activity": "A3_1",
+    "queries": [
+      {
+        "q": "organiser élections cse entreprise",
+        "top5": [
+          "R-B3-011",
+          "R-B3-027",
+          "R-B3-026",
+          "R-B3-001",
+          "R-B3-005"
+        ],
+        "positions": {
+          "R-B3-011": 1,
+          "R-B3-027": 2,
+          "R-B3-001": 4
+        },
+        "success": true
+      },
+      {
+        "q": "représentants du personnel procédure",
+        "top5": [
+          "R-B3-011",
+          "R-B3-027",
+          "R-B2-019",
+          "R-B2-025",
+          "R-B3-005"
+        ],
+        "positions": {
+          "R-B3-011": 1,
+          "R-B3-027": 2,
+          "R-B3-001": 7
+        },
+        "success": true
+      },
+      {
+        "q": "préparer calendrier élection salariés",
+        "top5": [
+          "R-B3-011",
+          "R-B3-027",
+          "R-B3-022",
+          "R-B1-029",
+          "R-B3-016"
+        ],
+        "positions": {
+          "R-B3-011": 1,
+          "R-B3-027": 2,
+          "R-B3-001": 26
+        },
+        "success": true
+      }
+    ],
+    "structure": [
+      {
+        "resource": "R-B3-011",
+        "ok": true,
+        "missing": []
+      },
+      {
+        "resource": "R-B3-027",
+        "ok": true,
+        "missing": []
+      },
+      {
+        "resource": "R-B3-001",
+        "ok": true,
+        "missing": []
+      }
+    ],
+    "search_success": true,
+    "resource_success": true
+  },
+  {
+    "mission": "M20",
+    "title": "Il faut recruter mais le besoin est encore flou",
+    "bc": "BC3",
+    "activity": "A3_2",
+    "queries": [
+      {
+        "q": "on doit recruter mais poste pas clair",
+        "top5": [
+          "R-B3-013",
+          "R-B3-016",
+          "R-B3-015",
+          "R-B3-028",
+          "R-B3-014"
+        ],
+        "positions": {
+          "R-B3-013": 1,
+          "R-B3-014": 5,
+          "R-B3-015": 3,
+          "R-B3-016": 2
+        },
+        "success": true
+      },
+      {
+        "q": "faire fiche de poste avant recrutement",
+        "top5": [
+          "R-B3-013",
+          "R-B3-016",
+          "R-B3-015",
+          "R-B3-028",
+          "R-B3-017"
+        ],
+        "positions": {
+          "R-B3-013": 1,
+          "R-B3-014": 6,
+          "R-B3-015": 3,
+          "R-B3-016": 2
+        },
+        "success": true
+      },
+      {
+        "q": "préparer offre et trier candidatures",
+        "top5": [
+          "R-B1-017",
+          "R-B3-016",
+          "R-B3-015",
+          "R-B3-014",
+          "R-B4-019"
+        ],
+        "positions": {
+          "R-B3-013": 6,
+          "R-B3-014": 4,
+          "R-B3-015": 3,
+          "R-B3-016": 2
+        },
+        "success": true
+      }
+    ],
+    "structure": [
+      {
+        "resource": "R-B3-013",
+        "ok": true,
+        "missing": []
+      },
+      {
+        "resource": "R-B3-014",
+        "ok": true,
+        "missing": []
+      },
+      {
+        "resource": "R-B3-015",
+        "ok": true,
+        "missing": []
+      },
+      {
+        "resource": "R-B3-016",
+        "ok": true,
+        "missing": []
+      }
+    ],
+    "search_success": true,
+    "resource_success": true
+  },
+  {
+    "mission": "M21",
+    "title": "Plusieurs salariés demandent une formation : construire une proposition utile et chiffrée",
+    "bc": "BC3",
+    "activity": "A3_2",
+    "queries": [
+      {
+        "q": "plusieurs demandes de formation comment choisir",
+        "top5": [
+          "R-B3-019",
+          "R-B3-018",
+          "R-B3-028",
+          "R-B3-020",
+          "R-TR-006"
+        ],
+        "positions": {
+          "R-B3-018": 2,
+          "R-B3-019": 1,
+          "R-B3-028": 3,
+          "R-B3-020": 4
+        },
+        "success": true
+      },
+      {
+        "q": "comparer formations salariés budget",
+        "top5": [
+          "R-B3-019",
+          "R-B3-028",
+          "R-B4-028",
+          "R-B2-014",
+          "R-B3-018"
+        ],
+        "positions": {
+          "R-B3-018": 5,
+          "R-B3-019": 1,
+          "R-B3-028": 2,
+          "R-B3-020": 10
+        },
+        "success": true
+      },
+      {
+        "q": "calculer coût formation entreprise",
+        "top5": [
+          "R-B4-026",
+          "R-B4-025",
+          "R-B3-028",
+          "R-B3-020",
+          "R-B4-027"
+        ],
+        "positions": {
+          "R-B3-018": 12,
+          "R-B3-019": 6,
+          "R-B3-028": 3,
+          "R-B3-020": 4
+        },
+        "success": true
+      }
+    ],
+    "structure": [
+      {
+        "resource": "R-B3-018",
+        "ok": true,
+        "missing": []
+      },
+      {
+        "resource": "R-B3-019",
+        "ok": true,
+        "missing": []
+      },
+      {
+        "resource": "R-B3-028",
+        "ok": true,
+        "missing": []
+      },
+      {
+        "resource": "R-B3-020",
+        "ok": true,
+        "missing": []
+      }
+    ],
+    "search_success": true,
+    "resource_success": true
+  },
+  {
+    "mission": "M22",
+    "title": "L’absentéisme augmente : produire un tableau de bord qui aide réellement le dirigeant",
+    "bc": "BC3",
+    "activity": "A3_2",
+    "queries": [
+      {
+        "q": "absences augmentent comment faire tableau de bord",
+        "top5": [
+          "R-B3-023",
+          "R-B3-024",
+          "R-B4-036",
+          "R-B4-037",
+          "R-B4-035"
+        ],
+        "positions": {
+          "R-B3-023": 1,
+          "R-B3-024": 2,
+          "R-TR-012": 11,
+          "R-TR-014": 24
+        },
+        "success": true
+      },
+      {
+        "q": "analyser absentéisme salariés",
+        "top5": [
+          "R-B3-006",
+          "R-B3-007",
+          "R-B3-024",
+          "R-B3-008",
+          "R-TR-012"
+        ],
+        "positions": {
+          "R-B3-023": 6,
+          "R-B3-024": 3,
+          "R-TR-012": 5,
+          "R-TR-014": 46
+        },
+        "success": true
+      },
+      {
+        "q": "indicateurs sociaux pour dirigeant",
+        "top5": [
+          "R-B3-024",
+          "R-B3-023",
+          "R-B4-035",
+          "R-B4-037",
+          "R-TR-012"
+        ],
+        "positions": {
+          "R-B3-023": 2,
+          "R-B3-024": 1,
+          "R-TR-012": 5,
+          "R-TR-014": 13
+        },
+        "success": true
+      }
+    ],
+    "structure": [
+      {
+        "resource": "R-B3-023",
+        "ok": true,
+        "missing": []
+      },
+      {
+        "resource": "R-B3-024",
+        "ok": true,
+        "missing": []
+      },
+      {
+        "resource": "R-TR-012",
+        "ok": true,
+        "missing": []
+      },
+      {
+        "resource": "R-TR-014",
+        "ok": true,
+        "missing": []
+      }
+    ],
+    "search_success": true,
+    "resource_success": true
+  },
+  {
+    "mission": "M23",
+    "title": "Deux collègues ne se parlent plus et le travail d’équipe se bloque",
+    "bc": "BC3",
+    "activity": "A3_3",
+    "queries": [
+      {
+        "q": "conflit dans équipe travail bloqué",
+        "top5": [
+          "R-B3-026",
+          "R-TR-009",
+          "R-B3-025",
+          "R-B2-003",
+          "R-B4-008"
+        ],
+        "positions": {
+          "R-B3-025": 3,
+          "R-B3-026": 1,
+          "R-TR-009": 2,
+          "R-TR-004": 6
+        },
+        "success": true
+      },
+      {
+        "q": "deux collègues ne se parlent plus que préparer",
+        "top5": [
+          "R-TR-009",
+          "R-B3-025",
+          "R-B3-026",
+          "R-B2-015",
+          "R-TR-004"
+        ],
+        "positions": {
+          "R-B3-025": 2,
+          "R-B3-026": 3,
+          "R-TR-009": 1,
+          "R-TR-004": 5
+        },
+        "success": true
+      },
+      {
+        "q": "organiser travail collaboratif après tension",
+        "top5": [
+          "R-B3-026",
+          "R-TR-009",
+          "R-B4-008",
+          "R-B3-025",
+          "R-B2-003"
+        ],
+        "positions": {
+          "R-B3-025": 4,
+          "R-B3-026": 1,
+          "R-TR-009": 2,
+          "R-TR-004": 8
+        },
+        "success": true
+      }
+    ],
+    "structure": [
+      {
+        "resource": "R-B3-025",
+        "ok": true,
+        "missing": []
+      },
+      {
+        "resource": "R-B3-026",
+        "ok": true,
+        "missing": []
+      },
+      {
+        "resource": "R-TR-009",
+        "ok": true,
+        "missing": []
+      },
+      {
+        "resource": "R-TR-004",
+        "ok": true,
+        "missing": []
+      }
+    ],
+    "search_success": true,
+    "resource_success": true
+  },
+  {
+    "mission": "M24",
+    "title": "Les fichiers sont partout et personne ne sait quelle version est la bonne",
+    "bc": "BC4",
+    "activity": "A4_1",
+    "queries": [
+      {
+        "q": "perdu dans les fichiers plusieurs versions",
+        "top5": [
+          "R-B4-005",
+          "R-B4-001",
+          "R-B4-002",
+          "R-TR-006",
+          "R-B4-003"
+        ],
+        "positions": {
+          "R-B4-001": 2,
+          "R-B4-002": 3,
+          "R-B4-005": 1,
+          "R-B4-006": 7
+        },
+        "success": true
+      },
+      {
+        "q": "organiser fichiers et archivage entreprise",
+        "top5": [
+          "R-B4-005",
+          "R-B4-002",
+          "R-B3-005",
+          "R-B3-004",
+          "R-B4-001"
+        ],
+        "positions": {
+          "R-B4-001": 5,
+          "R-B4-002": 2,
+          "R-B4-005": 1,
+          "R-B4-006": 7
+        },
+        "success": true
+      },
+      {
+        "q": "qui a la bonne version document",
+        "top5": [
+          "R-B4-005",
+          "R-B2-026",
+          "R-B2-022",
+          "R-B1-004",
+          "R-TR-005"
+        ],
+        "positions": {
+          "R-B4-001": 16,
+          "R-B4-002": 7,
+          "R-B4-005": 1,
+          "R-B4-006": 15
+        },
+        "success": true
+      }
+    ],
+    "structure": [
+      {
+        "resource": "R-B4-001",
+        "ok": true,
+        "missing": []
+      },
+      {
+        "resource": "R-B4-002",
+        "ok": true,
+        "missing": []
+      },
+      {
+        "resource": "R-B4-005",
+        "ok": true,
+        "missing": []
+      },
+      {
+        "resource": "R-B4-006",
+        "ok": true,
+        "missing": []
+      }
+    ],
+    "search_success": true,
+    "resource_success": true
+  },
+  {
+    "mission": "M25",
+    "title": "Planifier quinze interventions avec des urgences et des techniciens indisponibles",
+    "bc": "BC4",
+    "activity": "A4_2",
+    "queries": [
+      {
+        "q": "organiser planning interventions techniciens",
+        "top5": [
+          "R-B4-009",
+          "R-B4-010",
+          "R-B4-008",
+          "R-B4-012",
+          "R-B2-008"
+        ],
+        "positions": {
+          "R-B4-009": 1,
+          "R-B4-010": 2,
+          "R-B4-008": 3
+        },
+        "success": true
+      },
+      {
+        "q": "plusieurs urgences et salarié absent planning",
+        "top5": [
+          "R-B3-006",
+          "R-B3-007",
+          "R-B4-008",
+          "R-B3-008",
+          "R-B4-009"
+        ],
+        "positions": {
+          "R-B4-009": 5,
+          "R-B4-010": 9,
+          "R-B4-008": 3
+        },
+        "success": true
+      },
+      {
+        "q": "planifier prestations avec contraintes",
+        "top5": [
+          "R-B4-009",
+          "R-B2-008",
+          "R-B4-011",
+          "R-B2-007",
+          "R-B3-020"
+        ],
+        "positions": {
+          "R-B4-009": 1,
+          "R-B4-010": 8,
+          "R-B4-008": 9
+        },
+        "success": true
+      }
+    ],
+    "structure": [
+      {
+        "resource": "R-B4-009",
+        "ok": true,
+        "missing": []
+      },
+      {
+        "resource": "R-B4-010",
+        "ok": true,
+        "missing": []
+      },
+      {
+        "resource": "R-B4-008",
+        "ok": true,
+        "missing": []
+      }
+    ],
+    "search_success": true,
+    "resource_success": true
+  },
+  {
+    "mission": "M26",
+    "title": "Les ventes baissent : vérifier si le marché change avant de proposer une action",
+    "bc": "BC4",
+    "activity": "A4_3",
+    "queries": [
+      {
+        "q": "ventes baissent est ce que marché change",
+        "top5": [
+          "R-B4-014",
+          "R-B4-017",
+          "R-B4-015",
+          "R-B2-028",
+          "R-B1-024"
+        ],
+        "positions": {
+          "R-B4-014": 1,
+          "R-B4-015": 3,
+          "R-B4-016": 8,
+          "R-B4-017": 2
+        },
+        "success": true
+      },
+      {
+        "q": "analyser tendance marché avant action commerciale",
+        "top5": [
+          "R-B4-015",
+          "R-B4-017",
+          "R-B4-018",
+          "R-B4-016",
+          "R-B4-021"
+        ],
+        "positions": {
+          "R-B4-014": 6,
+          "R-B4-015": 1,
+          "R-B4-016": 4,
+          "R-B4-017": 2
+        },
+        "success": true
+      },
+      {
+        "q": "clients achètent moins que proposer",
+        "top5": [
+          "R-B4-015",
+          "R-B1-026",
+          "R-B4-017",
+          "R-B4-016",
+          "R-B4-014"
+        ],
+        "positions": {
+          "R-B4-014": 5,
+          "R-B4-015": 1,
+          "R-B4-016": 4,
+          "R-B4-017": 3
+        },
+        "success": true
+      }
+    ],
+    "structure": [
+      {
+        "resource": "R-B4-014",
+        "ok": true,
+        "missing": []
+      },
+      {
+        "resource": "R-B4-015",
+        "ok": true,
+        "missing": []
+      },
+      {
+        "resource": "R-B4-016",
+        "ok": true,
+        "missing": []
+      },
+      {
+        "resource": "R-B4-017",
+        "ok": true,
+        "missing": []
+      }
+    ],
+    "search_success": true,
+    "resource_success": true
+  },
+  {
+    "mission": "M27",
+    "title": "La PME veut lancer une campagne sur les réseaux sociaux sans perdre son image",
+    "bc": "BC4",
+    "activity": "A4_4",
+    "queries": [
+      {
+        "q": "faire campagne réseaux sociaux entreprise",
+        "top5": [
+          "R-B4-021",
+          "R-B4-039",
+          "R-B4-022",
+          "R-B4-019",
+          "R-B4-024"
+        ],
+        "positions": {
+          "R-B4-019": 4,
+          "R-B4-039": 2,
+          "R-B4-021": 1,
+          "R-B4-023": 6,
+          "R-B4-024": 5
+        },
+        "success": true
+      },
+      {
+        "q": "préparer communication commerciale budget limité",
+        "top5": [
+          "R-B4-021",
+          "R-B4-019",
+          "R-B4-039",
+          "R-B4-024",
+          "R-B4-037"
+        ],
+        "positions": {
+          "R-B4-019": 2,
+          "R-B4-039": 3,
+          "R-B4-021": 1,
+          "R-B4-023": 13,
+          "R-B4-024": 4
+        },
+        "success": true
+      },
+      {
+        "q": "vérifier image entreprise sur support",
+        "top5": [
+          "R-B4-020",
+          "R-B4-023",
+          "R-B4-019",
+          "R-B4-039",
+          "R-B4-024"
+        ],
+        "positions": {
+          "R-B4-019": 3,
+          "R-B4-039": 4,
+          "R-B4-021": 7,
+          "R-B4-023": 2,
+          "R-B4-024": 5
+        },
+        "success": true
+      }
+    ],
+    "structure": [
+      {
+        "resource": "R-B4-019",
+        "ok": true,
+        "missing": []
+      },
+      {
+        "resource": "R-B4-039",
+        "ok": true,
+        "missing": []
+      },
+      {
+        "resource": "R-B4-021",
+        "ok": true,
+        "missing": []
+      },
+      {
+        "resource": "R-B4-023",
+        "ok": true,
+        "missing": []
+      },
+      {
+        "resource": "R-B4-024",
+        "ok": true,
+        "missing": []
+      }
+    ],
+    "search_success": true,
+    "resource_success": true
+  },
+  {
+    "mission": "M28",
+    "title": "Un produit se vend bien mais le dirigeant doute de sa rentabilité",
+    "bc": "BC4",
+    "activity": "A4_5",
+    "queries": [
+      {
+        "q": "produit se vend bien mais est il rentable",
+        "top5": [
+          "R-B4-027",
+          "R-B4-026",
+          "R-B4-025",
+          "R-B4-040",
+          "R-B4-029"
+        ],
+        "positions": {
+          "R-B4-025": 3,
+          "R-B4-026": 2,
+          "R-B4-027": 1,
+          "R-B4-029": 5,
+          "R-B4-040": 4
+        },
+        "success": true
+      },
+      {
+        "q": "calculer coût marge seuil rentabilité",
+        "top5": [
+          "R-B4-026",
+          "R-B4-027",
+          "R-B4-025",
+          "R-B4-040",
+          "R-B3-028"
+        ],
+        "positions": {
+          "R-B4-025": 3,
+          "R-B4-026": 1,
+          "R-B4-027": 2,
+          "R-B4-029": 7,
+          "R-B4-040": 4
+        },
+        "success": true
+      },
+      {
+        "q": "simuler hausse volume impact résultat",
+        "top5": [
+          "R-B4-040",
+          "R-B4-029",
+          "R-B4-026",
+          "R-B4-027",
+          "R-B4-034"
+        ],
+        "positions": {
+          "R-B4-025": 6,
+          "R-B4-026": 3,
+          "R-B4-027": 4,
+          "R-B4-029": 2,
+          "R-B4-040": 1
+        },
+        "success": true
+      }
+    ],
+    "structure": [
+      {
+        "resource": "R-B4-025",
+        "ok": true,
+        "missing": []
+      },
+      {
+        "resource": "R-B4-026",
+        "ok": true,
+        "missing": []
+      },
+      {
+        "resource": "R-B4-027",
+        "ok": true,
+        "missing": []
+      },
+      {
+        "resource": "R-B4-029",
+        "ok": true,
+        "missing": []
+      },
+      {
+        "resource": "R-B4-040",
+        "ok": true,
+        "missing": []
+      }
+    ],
+    "search_success": true,
+    "resource_success": true
+  },
+  {
+    "mission": "M29",
+    "title": "Financer une machine : comparer les solutions sans choisir à la place du dirigeant",
+    "bc": "BC4",
+    "activity": "A4_6",
+    "queries": [
+      {
+        "q": "financer achat machine emprunt ou crédit bail",
+        "top5": [
+          "R-B4-033",
+          "R-B4-034",
+          "R-B4-040",
+          "R-B4-031",
+          "R-B4-030"
+        ],
+        "positions": {
+          "R-B4-030": 5,
+          "R-B4-031": 4,
+          "R-B4-033": 1,
+          "R-B4-034": 2,
+          "R-B4-040": 3
+        },
+        "success": true
+      },
+      {
+        "q": "comparer modes financement investissement",
+        "top5": [
+          "R-B4-033",
+          "R-B4-034",
+          "R-B3-019",
+          "R-B4-040",
+          "R-B1-017"
+        ],
+        "positions": {
+          "R-B4-030": 9,
+          "R-B4-031": 8,
+          "R-B4-033": 1,
+          "R-B4-034": 2,
+          "R-B4-040": 4
+        },
+        "success": true
+      },
+      {
+        "q": "faire plan financement machine",
+        "top5": [
+          "R-B4-034",
+          "R-B4-033",
+          "R-B3-020",
+          "R-B4-009",
+          "R-B4-005"
+        ],
+        "positions": {
+          "R-B4-030": 12,
+          "R-B4-031": 11,
+          "R-B4-033": 2,
+          "R-B4-034": 1,
+          "R-B4-040": 10
+        },
+        "success": true
+      }
+    ],
+    "structure": [
+      {
+        "resource": "R-B4-030",
+        "ok": true,
+        "missing": []
+      },
+      {
+        "resource": "R-B4-031",
+        "ok": true,
+        "missing": []
+      },
+      {
+        "resource": "R-B4-033",
+        "ok": true,
+        "missing": []
+      },
+      {
+        "resource": "R-B4-034",
+        "ok": true,
+        "missing": []
+      },
+      {
+        "resource": "R-B4-040",
+        "ok": true,
+        "missing": []
+      }
+    ],
+    "search_success": true,
+    "resource_success": true
+  },
+  {
+    "mission": "M30",
+    "title": "Le tableau de bord contient 40 chiffres : repérer ce qui mérite vraiment une alerte",
+    "bc": "BC4",
+    "activity": "A4_7",
+    "queries": [
+      {
+        "q": "tableau de bord trop de chiffres quoi regarder",
+        "top5": [
+          "R-B4-037",
+          "R-B4-036",
+          "R-B3-023",
+          "R-B4-035",
+          "R-TR-014"
+        ],
+        "positions": {
+          "R-B4-035": 4,
+          "R-B4-036": 2,
+          "R-B4-037": 1,
+          "R-TR-014": 5,
+          "R-TR-003": 11
+        },
+        "success": true
+      },
+      {
+        "q": "indicateurs sont mauvais il faut alerter",
+        "top5": [
+          "R-B4-037",
+          "R-B4-036",
+          "R-B3-023",
+          "R-B4-035",
+          "R-B3-024"
+        ],
+        "positions": {
+          "R-B4-035": 4,
+          "R-B4-036": 2,
+          "R-B4-037": 1,
+          "R-TR-014": 10,
+          "R-TR-003": 12
+        },
+        "success": true
+      },
+      {
+        "q": "faire synthèse chiffres pour dirigeant",
+        "top5": [
+          "R-B4-037",
+          "R-B4-036",
+          "R-TR-014",
+          "R-TR-003",
+          "R-B4-035"
+        ],
+        "positions": {
+          "R-B4-035": 5,
+          "R-B4-036": 2,
+          "R-B4-037": 1,
+          "R-TR-014": 3,
+          "R-TR-003": 4
+        },
+        "success": true
+      }
+    ],
+    "structure": [
+      {
+        "resource": "R-B4-035",
+        "ok": true,
+        "missing": []
+      },
+      {
+        "resource": "R-B4-036",
+        "ok": true,
+        "missing": []
+      },
+      {
+        "resource": "R-B4-037",
+        "ok": true,
+        "missing": []
+      },
+      {
+        "resource": "R-TR-014",
+        "ok": true,
+        "missing": []
+      },
+      {
+        "resource": "R-TR-003",
+        "ok": true,
+        "missing": []
+      }
+    ],
+    "search_success": true,
+    "resource_success": true
+  }
+]

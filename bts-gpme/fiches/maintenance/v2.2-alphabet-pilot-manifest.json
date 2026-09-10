@@ -1,0 +1,49 @@
+{
+  "version": "2.2-pilote-alphabet",
+  "base": "2.1-forme-accessible-responsive",
+  "scope": [
+    "index.html",
+    "assets/alphabet-explorer.css",
+    "assets/alphabet-explorer.js",
+    "LISEZ_MOI_V2_FORME.md"
+  ],
+  "resource_pages_changed": 0,
+  "mission_pages_changed": 0,
+  "alphabet_active_letters": [
+    "A",
+    "B",
+    "C",
+    "D",
+    "E",
+    "F",
+    "G",
+    "H",
+    "I",
+    "J",
+    "K",
+    "L",
+    "M",
+    "N",
+    "O",
+    "P",
+    "Q",
+    "R",
+    "S",
+    "T",
+    "U",
+    "V",
+    "W",
+    "X",
+    "Z"
+  ],
+  "alphabet_inactive_letters": [
+    "Y"
+  ],
+  "term_count": 100,
+  "principle": "alphabet triggers the existing natural-language search; no parallel classification",
+  "alphabet_query_strategy": "displayed term may use a more precise internal query; result cards remain those of the existing search engine",
+  "validation_notes": [
+    "100/100 terms return at least one resource",
+    "rare letters are not artificially populated: Y inactive"
+  ]
+}

@@ -1,6 +1,6 @@
 # BTS GPME — v3.0 Autonomie progressive
 
-Distribution **élève**.
+Distribution **enseignant/source**.
 
 ## Évolutions issues de l’audit externe
 - repère méthodologique invariant compacté ;

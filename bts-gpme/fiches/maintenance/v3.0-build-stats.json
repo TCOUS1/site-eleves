@@ -1,0 +1,18 @@
+{
+  "student": {
+    "html": 338,
+    "trace": 175,
+    "guidance": 30,
+    "reg": 24,
+    "dsn": 1,
+    "epp": 1
+  },
+  "teacher": {
+    "html": 352,
+    "trace": 175,
+    "guidance": 30,
+    "reg": 24,
+    "dsn": 1,
+    "epp": 1
+  }
+}

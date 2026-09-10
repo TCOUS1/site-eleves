@@ -1,0 +1,823 @@
+{
+  "vocabulary": {
+    "fiable": [
+      "qualifier une source",
+      "fiabilite",
+      "pertinence",
+      "information"
+    ],
+    "source fiable": [
+      "qualifier une source",
+      "fiabilite",
+      "pertinence",
+      "information"
+    ],
+    "manquer d argent": [
+      "tension de tresorerie",
+      "tresorerie",
+      "solutions"
+    ],
+    "pirate": [
+      "risques informatiques",
+      "cyber",
+      "incident informatique"
+    ],
+    "absent": [
+      "absence",
+      "conge",
+      "temps de travail"
+    ],
+    "choisir entre des candidats": [
+      "preselectionner candidatures",
+      "grille objective"
+    ],
+    "choisir une formation": [
+      "comparer formations",
+      "financement formation"
+    ],
+    "conflit dans l equipe": [
+      "tension relationnelle",
+      "entretien regulation",
+      "conflit"
+    ],
+    "archiver": [
+      "classement archivage documents",
+      "plan de classement"
+    ],
+    "circule l information": [
+      "flux information",
+      "cartographier processus"
+    ],
+    "rentable": [
+      "seuil de rentabilite"
+    ],
+    "indicateurs sont mauvais": [
+      "analyser tableau de bord",
+      "alerte dirigeant",
+      "indicateurs"
+    ],
+    "pas paye": [
+      "impaye",
+      "relance",
+      "reglement",
+      "creance"
+    ],
+    "ne paie pas": [
+      "impaye",
+      "relance",
+      "reglement",
+      "creance"
+    ],
+    "retard paiement": [
+      "impaye",
+      "relance",
+      "reglement"
+    ],
+    "faire un devis": [
+      "devis",
+      "proposition commerciale"
+    ],
+    "faire une facture": [
+      "facture",
+      "facturation"
+    ],
+    "facture fausse": [
+      "corriger",
+      "facture",
+      "avoir"
+    ],
+    "erreur facture": [
+      "corriger",
+      "facture",
+      "avoir"
+    ],
+    "client pas content": [
+      "reclamation",
+      "litige",
+      "client"
+    ],
+    "client mecontent": [
+      "reclamation",
+      "litige",
+      "client"
+    ],
+    "probleme livraison": [
+      "anomalie",
+      "livraison",
+      "reclamation"
+    ],
+    "trouver des clients": [
+      "prospection",
+      "prospects",
+      "cibler"
+    ],
+    "chercher des clients": [
+      "prospection",
+      "prospects",
+      "cibler"
+    ],
+    "trouver fournisseur": [
+      "rechercher",
+      "fournisseur",
+      "preselectionner"
+    ],
+    "choisir fournisseur": [
+      "comparer",
+      "offres",
+      "fournisseurs",
+      "recommandation"
+    ],
+    "commande fournisseur": [
+      "commande",
+      "fournisseur",
+      "suivre"
+    ],
+    "manque de stock": [
+      "stock",
+      "reapprovisionnement"
+    ],
+    "banque ne correspond pas": [
+      "rapprochement bancaire"
+    ],
+    "releve bancaire": [
+      "rapprochement bancaire",
+      "banque"
+    ],
+    "argent manque": [
+      "tresorerie",
+      "tension",
+      "budget"
+    ],
+    "plus assez d argent": [
+      "tresorerie",
+      "tension",
+      "budget"
+    ],
+    "prevoir l argent": [
+      "budget de tresorerie",
+      "encaissements",
+      "decaissements"
+    ],
+    "danger entreprise": [
+      "risque",
+      "identifier",
+      "evaluer"
+    ],
+    "classer les risques": [
+      "hierarchiser",
+      "criticite",
+      "risques"
+    ],
+    "securite travail": [
+      "duerp",
+      "sante",
+      "securite",
+      "risques professionnels"
+    ],
+    "accident travail": [
+      "duerp",
+      "sante",
+      "securite",
+      "risques professionnels"
+    ],
+    "piratage": [
+      "risques informatiques",
+      "cyber",
+      "incident",
+      "donnees"
+    ],
+    "mot de passe": [
+      "habilitations",
+      "droits d acces",
+      "risques informatiques"
+    ],
+    "sauvegarder fichiers": [
+      "sauvegardes",
+      "restauration"
+    ],
+    "donnees personnelles": [
+      "rgpd",
+      "traitement",
+      "donnees personnelles"
+    ],
+    "fuite de donnees": [
+      "violation",
+      "donnees personnelles",
+      "rgpd"
+    ],
+    "assurance sinistre": [
+      "sinistre",
+      "assureur",
+      "assurance"
+    ],
+    "faire une procedure": [
+      "formaliser",
+      "procedure",
+      "diffuser"
+    ],
+    "probleme qualite": [
+      "dysfonctionnement",
+      "qualite",
+      "causes"
+    ],
+    "organiser projet": [
+      "projet",
+      "cadrer",
+      "planifier"
+    ],
+    "faire planning projet": [
+      "cahier des charges",
+      "planifier",
+      "taches"
+    ],
+    "embaucher": [
+      "embauche",
+      "recrutement",
+      "dpae",
+      "contrat"
+    ],
+    "nouveau salarie": [
+      "integration",
+      "embauche",
+      "dossier personnel"
+    ],
+    "salarie part": [
+      "depart",
+      "fin de contrat"
+    ],
+    "employe part": [
+      "depart",
+      "fin de contrat"
+    ],
+    "salarie absent": [
+      "absence",
+      "conge",
+      "temps de travail"
+    ],
+    "employe absent": [
+      "absence",
+      "conge",
+      "temps de travail"
+    ],
+    "faire la paie": [
+      "variables de paie",
+      "bulletin de paie",
+      "paie"
+    ],
+    "declaration sociale": [
+      "dsn",
+      "declaration sociale"
+    ],
+    "representants du personnel": [
+      "cse",
+      "elections",
+      "representation"
+    ],
+    "recruter quelqu un": [
+      "recrutement",
+      "fiche de poste",
+      "offre emploi",
+      "candidatures"
+    ],
+    "choisir candidat": [
+      "preselectionner",
+      "candidatures",
+      "entretien recrutement"
+    ],
+    "former salarie": [
+      "formation",
+      "competences",
+      "plan developpement"
+    ],
+    "evaluer salarie": [
+      "evaluation",
+      "entretien",
+      "criteres"
+    ],
+    "conflit equipe": [
+      "tension",
+      "conflit",
+      "regulation"
+    ],
+    "travailler a plusieurs": [
+      "travail collaboratif",
+      "partage",
+      "validation"
+    ],
+    "organiser fichiers": [
+      "classement",
+      "archivage",
+      "documents"
+    ],
+    "perdu dans les fichiers": [
+      "classement",
+      "archivage",
+      "documents"
+    ],
+    "probleme informatique": [
+      "systeme information",
+      "anomalie",
+      "esn"
+    ],
+    "organiser le travail": [
+      "organisation",
+      "planning",
+      "priorites",
+      "charge"
+    ],
+    "faire un planning": [
+      "planifier",
+      "agenda",
+      "activites"
+    ],
+    "organiser voyage": [
+      "deplacement professionnel",
+      "reservation",
+      "budget"
+    ],
+    "organiser salon": [
+      "evenement",
+      "salon",
+      "prestataires"
+    ],
+    "avis clients": [
+      "enquete satisfaction",
+      "client",
+      "satisfaction"
+    ],
+    "connaitre le marche": [
+      "marche",
+      "veille commerciale",
+      "tendance",
+      "concurrents"
+    ],
+    "garder les clients": [
+      "fidelisation",
+      "clientele"
+    ],
+    "reseaux sociaux": [
+      "identite numerique",
+      "e reputation",
+      "communication digitale"
+    ],
+    "faire une pub": [
+      "communication commerciale",
+      "support",
+      "action"
+    ],
+    "calculer cout": [
+      "cout complet",
+      "cout partiel",
+      "marge"
+    ],
+    "a partir de combien rentable": [
+      "seuil de rentabilite"
+    ],
+    "faire un budget": [
+      "budget previsionnel"
+    ],
+    "ecart budget": [
+      "analyser ecarts",
+      "budget",
+      "simulation"
+    ],
+    "lire un bilan": [
+      "bilan fonctionnel",
+      "frng",
+      "bfr"
+    ],
+    "sante financiere": [
+      "ratios financiers",
+      "analyse financiere",
+      "frng",
+      "bfr"
+    ],
+    "financer achat": [
+      "modes de financement",
+      "investissement",
+      "plan financement"
+    ],
+    "faire tableau de bord": [
+      "tableau de bord",
+      "indicateurs",
+      "seuils"
+    ],
+    "chiffres alerte": [
+      "tableau de bord",
+      "alerte",
+      "indicateurs"
+    ],
+    "ecrire au patron": [
+      "note",
+      "dirigeant",
+      "decision"
+    ],
+    "ecrire mail": [
+      "courriel professionnel",
+      "mail"
+    ],
+    "faire compte rendu": [
+      "compte rendu",
+      "suivi",
+      "reunion"
+    ],
+    "faire reunion": [
+      "reunion",
+      "ordre du jour",
+      "decisions"
+    ],
+    "tableau excel": [
+      "tableau de donnees",
+      "tableur",
+      "tcd"
+    ],
+    "croiser les donnees": [
+      "tableau croise dynamique",
+      "tcd",
+      "tableur"
+    ],
+    "nouveaux clients": [
+      "prospection",
+      "prospects",
+      "cibler"
+    ],
+    "liste de prospects": [
+      "prospects",
+      "qualifier fichier",
+      "prospection"
+    ],
+    "apres la livraison": [
+      "suivi vente livraison",
+      "facture"
+    ],
+    "avant facturation": [
+      "commande client",
+      "livraison",
+      "facture"
+    ],
+    "menace de partir": [
+      "reclamation client",
+      "relation client",
+      "fidelisation"
+    ],
+    "pas seulement le prix": [
+      "comparer offres fournisseurs",
+      "criteres",
+      "recommandation"
+    ],
+    "stock faible": [
+      "stock",
+      "reapprovisionnement",
+      "commande fournisseur"
+    ],
+    "compte banque differents": [
+      "rapprochement bancaire"
+    ],
+    "nouvelle regle": [
+      "veille reglementaire",
+      "qualifier source",
+      "mise a jour procedure"
+    ],
+    "numerisation archives": [
+      "projet",
+      "cahier des charges",
+      "planification"
+    ],
+    "quels risques traiter en premier": [
+      "risques",
+      "hierarchiser",
+      "criticite"
+    ],
+    "dans deux mois": [
+      "budget de tresorerie",
+      "tension tresorerie"
+    ],
+    "poste de travail dangereux": [
+      "duerp",
+      "risques professionnels",
+      "sante securite"
+    ],
+    "machine abimee": [
+      "sinistre",
+      "assurance",
+      "garanties"
+    ],
+    "beaucoup plus de dechets": [
+      "risques environnementaux",
+      "dechets",
+      "indicateurs"
+    ],
+    "faux mail": [
+      "risques informatiques",
+      "phishing",
+      "donnees",
+      "violation"
+    ],
+    "meme erreur revient": [
+      "dysfonctionnement qualite",
+      "causes",
+      "procedure"
+    ],
+    "commence lundi": [
+      "embauche",
+      "dpae",
+      "contrat",
+      "dossier personnel"
+    ],
+    "pendant preparation paie": [
+      "absence",
+      "variables de paie",
+      "bulletin"
+    ],
+    "elections du personnel": [
+      "cse",
+      "elections",
+      "representation du personnel"
+    ],
+    "poste pas clair": [
+      "besoin recrutement",
+      "fiche de poste"
+    ],
+    "plusieurs demandes de formation": [
+      "besoins formation",
+      "comparer formations",
+      "budget"
+    ],
+    "absences augmentent": [
+      "tableau de bord social",
+      "indicateurs sociaux",
+      "absenteisme"
+    ],
+    "ne se parlent plus": [
+      "tension relationnelle",
+      "conflit",
+      "travail collaboratif"
+    ],
+    "plusieurs versions": [
+      "classement archivage",
+      "flux information",
+      "si"
+    ],
+    "planning interventions": [
+      "planifier activites",
+      "agenda",
+      "contraintes"
+    ],
+    "ventes baissent": [
+      "veille commerciale",
+      "marche",
+      "tendances"
+    ],
+    "campagne reseaux sociaux": [
+      "communication commerciale",
+      "plan communication",
+      "identite"
+    ],
+    "se vend bien mais rentable": [
+      "cout",
+      "marge",
+      "seuil rentabilite"
+    ],
+    "emprunt ou credit bail": [
+      "modes financement",
+      "investissement",
+      "plan financement"
+    ],
+    "trop de chiffres": [
+      "tableau de bord",
+      "indicateurs",
+      "analyse chiffree"
+    ],
+    "aucun accident": [
+      "evaluer risques",
+      "risque residuel",
+      "preuve evaluation"
+    ],
+    "pas d accident": [
+      "evaluer risques",
+      "risque residuel",
+      "preuve evaluation"
+    ],
+    "absence accident": [
+      "evaluer risques",
+      "risque residuel",
+      "preuve evaluation"
+    ],
+    "risque maitrise": [
+      "evaluer risques",
+      "mesure efficace",
+      "risque residuel"
+    ],
+    "risque residuel": [
+      "evaluer risques",
+      "traitement risques",
+      "efficacite mesure"
+    ],
+    "mesure efficace": [
+      "traitement risques",
+      "action corrective",
+      "efficacite"
+    ],
+    "efficacite mesure": [
+      "traitement risques",
+      "action corrective",
+      "risque residuel"
+    ],
+    "projet rgpd": [
+      "rgpd",
+      "traitement donnees",
+      "projet",
+      "veille"
+    ],
+    "registre rgpd": [
+      "rgpd",
+      "traitement donnees",
+      "finalite"
+    ],
+    "donnees de sante": [
+      "rgpd",
+      "donnees sensibles",
+      "traitement"
+    ],
+    "donnees sensibles": [
+      "rgpd",
+      "traitement",
+      "aipd"
+    ],
+    "base juridique": [
+      "rgpd",
+      "traitement",
+      "conformite"
+    ],
+    "dpo": [
+      "rgpd",
+      "protection donnees"
+    ],
+    "aipd": [
+      "rgpd",
+      "risque eleve",
+      "protection donnees"
+    ],
+    "demarche qualite": [
+      "qualite",
+      "dysfonctionnement",
+      "procedure",
+      "gestion connaissances",
+      "action corrective"
+    ],
+    "audit qualite": [
+      "qualite",
+      "dysfonctionnement",
+      "procedure",
+      "action corrective"
+    ],
+    "evaluer qualite": [
+      "qualite",
+      "dysfonctionnement",
+      "procedure",
+      "action corrective"
+    ],
+    "facture électronique": [
+      "facturation électronique",
+      "plateforme agréée",
+      "données de facturation"
+    ],
+    "plateforme agréée": [
+      "facturation électronique",
+      "facture électronique"
+    ]
+  },
+  "boosts": {
+    "rgpd": {
+      "R-B2-018": 120,
+      "R-B2-019": 25
+    },
+    "donnees personnelles": {
+      "R-B2-018": 100,
+      "R-B2-019": 30
+    },
+    "traitement donnees": {
+      "R-B2-018": 100
+    },
+    "registre rgpd": {
+      "R-B2-018": 130
+    },
+    "base juridique": {
+      "R-B2-018": 110
+    },
+    "dpo": {
+      "R-B2-018": 110
+    },
+    "aipd": {
+      "R-B2-018": 110
+    },
+    "donnees sensibles": {
+      "R-B2-018": 105
+    },
+    "donnees sante": {
+      "R-B2-018": 105
+    },
+    "projet rgpd": {
+      "R-B2-018": 140,
+      "R-B2-007": 110,
+      "R-B2-004": 70
+    },
+    "aucun accident": {
+      "R-B2-001": 120,
+      "R-B2-003": 70
+    },
+    "absence accident": {
+      "R-B2-001": 120,
+      "R-B2-003": 70
+    },
+    "risque residuel": {
+      "R-B2-001": 120,
+      "R-B2-013": 100,
+      "R-B2-029": 90
+    },
+    "mesure efficace": {
+      "R-B2-013": 110,
+      "R-B2-029": 100,
+      "R-B2-001": 70
+    },
+    "efficacite mesure": {
+      "R-B2-013": 110,
+      "R-B2-029": 100,
+      "R-B2-001": 70
+    },
+    "demarche qualite": {
+      "R-B2-024": 120,
+      "R-B2-025": 85,
+      "R-B2-026": 65,
+      "R-B2-029": 55,
+      "R-B2-031": 50
+    },
+    "audit qualite": {
+      "R-B2-024": 120,
+      "R-B2-025": 75,
+      "R-B2-031": 65
+    },
+    "evaluer qualite": {
+      "R-B2-024": 120,
+      "R-B2-029": 65
+    },
+    "facture électronique": {
+      "R-B1-009": 150,
+      "R-B1-008": 20
+    },
+    "plateforme agréée": {
+      "R-B1-009": 160
+    },
+    "dume": {
+      "R-B1-004": 130,
+      "R-B1-003": 30
+    },
+    "encours client": {
+      "R-B1-011": 120
+    },
+    "tva collectée": {
+      "R-B1-027": 120
+    },
+    "tva déductible": {
+      "R-B1-027": 120
+    },
+    "temps de travail effectif": {
+      "R-B3-006": 120
+    },
+    "entretien de parcours professionnel": {
+      "R-B3-022": 130
+    },
+    "biais enquête": {
+      "R-B4-016": 120
+    },
+    "budget prévisionnel": {
+      "R-B4-028": 120
+    },
+    "ratio financier": {
+      "R-B4-032": 120
+    },
+    "finalité rgpd": {
+      "R-B2-018": 110
+    },
+    "destinataire rgpd": {
+      "R-B2-018": 100
+    },
+    "sous traitant rgpd": {
+      "R-B2-018": 110
+    },
+    "violation de données": {
+      "R-B2-019": 170,
+      "R-B2-018": 35
+    },
+    "fuite de données": {
+      "R-B2-019": 160,
+      "R-B2-018": 35
+    },
+    "entretien annuel": {
+      "R-B3-021": 160
+    },
+    "évaluation du travail": {
+      "R-B3-021": 120
+    }
+  }
+}

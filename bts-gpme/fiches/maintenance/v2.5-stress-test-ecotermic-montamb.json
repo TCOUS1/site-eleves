@@ -1,0 +1,561 @@
+{
+  "tests": [
+    {
+      "query": "RGPD",
+      "expected_top": "R-B2-018",
+      "actual_top": "R-B2-018",
+      "pass": true,
+      "top5": [
+        {
+          "score": 126,
+          "id": "R-B2-018",
+          "title": "Vérifier la conformité d’un traitement de données personnelles"
+        },
+        {
+          "score": 25,
+          "id": "R-B2-019",
+          "title": "Réagir à une violation de données personnelles"
+        },
+        {
+          "score": 6,
+          "id": "R-B3-017",
+          "title": "Organiser l’intégration d’un nouveau salarié"
+        },
+        {
+          "score": 6,
+          "id": "R-B3-005",
+          "title": "Organiser un dossier du personnel conforme et exploitable"
+        }
+      ]
+    },
+    {
+      "query": "projet RGPD",
+      "expected_top": "R-B2-018",
+      "actual_top": "R-B2-018",
+      "pass": true,
+      "top5": [
+        {
+          "score": 340,
+          "id": "R-B2-018",
+          "title": "Vérifier la conformité d’un traitement de données personnelles"
+        },
+        {
+          "score": 136,
+          "id": "R-B2-007",
+          "title": "Cadrer un projet avant de le lancer"
+        },
+        {
+          "score": 94,
+          "id": "R-B2-004",
+          "title": "Veille — décider quoi surveiller et construire un dispositif utile à la PME"
+        },
+        {
+          "score": 82,
+          "id": "R-B2-019",
+          "title": "Réagir à une violation de données personnelles"
+        },
+        {
+          "score": 49,
+          "id": "R-B4-004",
+          "title": "Structurer des données et fiabiliser leur saisie"
+        }
+      ]
+    },
+    {
+      "query": "données personnelles",
+      "expected_top": "R-B2-018",
+      "actual_top": "R-B2-018",
+      "pass": true,
+      "top5": [
+        {
+          "score": 268,
+          "id": "R-B2-018",
+          "title": "Vérifier la conformité d’un traitement de données personnelles"
+        },
+        {
+          "score": 213,
+          "id": "R-B2-019",
+          "title": "Réagir à une violation de données personnelles"
+        },
+        {
+          "score": 82,
+          "id": "R-B4-003",
+          "title": "Définir un besoin d’information et contrôler les données collectées"
+        },
+        {
+          "score": 64,
+          "id": "R-B4-004",
+          "title": "Structurer des données et fiabiliser leur saisie"
+        },
+        {
+          "score": 64,
+          "id": "R-B2-022",
+          "title": "Organiser les sauvegardes et tester la restauration"
+        }
+      ]
+    },
+    {
+      "query": "registre RGPD",
+      "expected_top": "R-B2-018",
+      "actual_top": "R-B2-018",
+      "pass": true,
+      "top5": [
+        {
+          "score": 351,
+          "id": "R-B2-018",
+          "title": "Vérifier la conformité d’un traitement de données personnelles"
+        },
+        {
+          "score": 82,
+          "id": "R-B2-019",
+          "title": "Réagir à une violation de données personnelles"
+        },
+        {
+          "score": 55,
+          "id": "R-B4-003",
+          "title": "Définir un besoin d’information et contrôler les données collectées"
+        },
+        {
+          "score": 49,
+          "id": "R-B4-004",
+          "title": "Structurer des données et fiabiliser leur saisie"
+        },
+        {
+          "score": 49,
+          "id": "R-B1-012",
+          "title": "Fiabiliser et mettre à jour le système d’information clients"
+        }
+      ]
+    },
+    {
+      "query": "DPO",
+      "expected_top": "R-B2-018",
+      "actual_top": "R-B2-018",
+      "pass": true,
+      "top5": [
+        {
+          "score": 166,
+          "id": "R-B2-018",
+          "title": "Vérifier la conformité d’un traitement de données personnelles"
+        },
+        {
+          "score": 52,
+          "id": "R-B2-019",
+          "title": "Réagir à une violation de données personnelles"
+        },
+        {
+          "score": 48,
+          "id": "R-B4-004",
+          "title": "Structurer des données et fiabiliser leur saisie"
+        },
+        {
+          "score": 48,
+          "id": "R-B4-003",
+          "title": "Définir un besoin d’information et contrôler les données collectées"
+        },
+        {
+          "score": 48,
+          "id": "R-B1-012",
+          "title": "Fiabiliser et mettre à jour le système d’information clients"
+        }
+      ]
+    },
+    {
+      "query": "AIPD",
+      "expected_top": "R-B2-018",
+      "actual_top": "R-B2-018",
+      "pass": true,
+      "top5": [
+        {
+          "score": 168,
+          "id": "R-B2-018",
+          "title": "Vérifier la conformité d’un traitement de données personnelles"
+        },
+        {
+          "score": 59,
+          "id": "R-B2-019",
+          "title": "Réagir à une violation de données personnelles"
+        },
+        {
+          "score": 48,
+          "id": "R-B4-004",
+          "title": "Structurer des données et fiabiliser leur saisie"
+        },
+        {
+          "score": 48,
+          "id": "R-B4-003",
+          "title": "Définir un besoin d’information et contrôler les données collectées"
+        },
+        {
+          "score": 48,
+          "id": "R-B1-012",
+          "title": "Fiabiliser et mettre à jour le système d’information clients"
+        }
+      ]
+    },
+    {
+      "query": "données de santé",
+      "expected_top": "R-B2-018",
+      "actual_top": "R-B2-018",
+      "pass": true,
+      "top5": [
+        {
+          "score": 99,
+          "id": "R-B2-018",
+          "title": "Vérifier la conformité d’un traitement de données personnelles"
+        },
+        {
+          "score": 75,
+          "id": "R-B2-019",
+          "title": "Réagir à une violation de données personnelles"
+        },
+        {
+          "score": 67,
+          "id": "R-B4-004",
+          "title": "Structurer des données et fiabiliser leur saisie"
+        },
+        {
+          "score": 67,
+          "id": "R-B4-003",
+          "title": "Définir un besoin d’information et contrôler les données collectées"
+        },
+        {
+          "score": 67,
+          "id": "R-B1-012",
+          "title": "Fiabiliser et mettre à jour le système d’information clients"
+        }
+      ]
+    },
+    {
+      "query": "base juridique",
+      "expected_top": "R-B2-018",
+      "actual_top": "R-B2-018",
+      "pass": true,
+      "top5": [
+        {
+          "score": 160,
+          "id": "R-B2-018",
+          "title": "Vérifier la conformité d’un traitement de données personnelles"
+        },
+        {
+          "score": 20,
+          "id": "R-B2-029",
+          "title": "Suivre une action corrective et vérifier qu’elle réduit réellement le risque"
+        },
+        {
+          "score": 20,
+          "id": "R-B2-026",
+          "title": "Organiser le partage et la conservation des connaissances utiles"
+        },
+        {
+          "score": 20,
+          "id": "R-B2-005",
+          "title": "Qualifier une source et une information"
+        },
+        {
+          "score": 19,
+          "id": "R-TR-013",
+          "title": "Choisir entre filtre, recherche, validation et tableau croisé dynamique dans le tableur"
+        }
+      ]
+    },
+    {
+      "query": "aucun accident donc risque faible",
+      "expected_top": "R-B2-001",
+      "actual_top": "R-B2-001",
+      "pass": true,
+      "top5": [
+        {
+          "score": 223,
+          "id": "R-B2-001",
+          "title": "Évaluer et hiérarchiser les risques d’une PME"
+        },
+        {
+          "score": 126,
+          "id": "R-B2-003",
+          "title": "Contribuer à la mise à jour du DUERP"
+        },
+        {
+          "score": 81,
+          "id": "R-B2-013",
+          "title": "Construire et suivre un plan de traitement des risques"
+        },
+        {
+          "score": 71,
+          "id": "R-B2-021",
+          "title": "Évaluer les risques informatiques d’une PME et préparer des mesures"
+        },
+        {
+          "score": 65,
+          "id": "R-B2-029",
+          "title": "Suivre une action corrective et vérifier qu’elle réduit réellement le risque"
+        }
+      ]
+    },
+    {
+      "query": "absence accident",
+      "expected_top": "R-B2-001",
+      "actual_top": "R-B2-001",
+      "pass": true,
+      "top5": [
+        {
+          "score": 212,
+          "id": "R-B2-001",
+          "title": "Évaluer et hiérarchiser les risques d’une PME"
+        },
+        {
+          "score": 121,
+          "id": "R-B2-003",
+          "title": "Contribuer à la mise à jour du DUERP"
+        },
+        {
+          "score": 76,
+          "id": "R-B2-013",
+          "title": "Construire et suivre un plan de traitement des risques"
+        },
+        {
+          "score": 62,
+          "id": "R-B2-011",
+          "title": "Identifier et formuler les risques d’une PME"
+        },
+        {
+          "score": 60,
+          "id": "R-B2-029",
+          "title": "Suivre une action corrective et vérifier qu’elle réduit réellement le risque"
+        }
+      ]
+    },
+    {
+      "query": "risque résiduel",
+      "expected_top": "R-B2-001",
+      "actual_top": "R-B2-001",
+      "pass": true,
+      "top5": [
+        {
+          "score": 217,
+          "id": "R-B2-001",
+          "title": "Évaluer et hiérarchiser les risques d’une PME"
+        },
+        {
+          "score": 192,
+          "id": "R-B2-013",
+          "title": "Construire et suivre un plan de traitement des risques"
+        },
+        {
+          "score": 162,
+          "id": "R-B2-029",
+          "title": "Suivre une action corrective et vérifier qu’elle réduit réellement le risque"
+        },
+        {
+          "score": 81,
+          "id": "R-B2-021",
+          "title": "Évaluer les risques informatiques d’une PME et préparer des mesures"
+        },
+        {
+          "score": 65,
+          "id": "R-B2-016",
+          "title": "Analyser la couverture d’assurance d’un risque"
+        }
+      ]
+    },
+    {
+      "query": "mesure efficace",
+      "expected_top": "R-B2-013",
+      "actual_top": "R-B2-013",
+      "pass": true,
+      "top5": [
+        {
+          "score": 218,
+          "id": "R-B2-013",
+          "title": "Construire et suivre un plan de traitement des risques"
+        },
+        {
+          "score": 194,
+          "id": "R-B2-029",
+          "title": "Suivre une action corrective et vérifier qu’elle réduit réellement le risque"
+        },
+        {
+          "score": 157,
+          "id": "R-B2-001",
+          "title": "Évaluer et hiérarchiser les risques d’une PME"
+        },
+        {
+          "score": 71,
+          "id": "R-B2-021",
+          "title": "Évaluer les risques informatiques d’une PME et préparer des mesures"
+        },
+        {
+          "score": 66,
+          "id": "R-B2-016",
+          "title": "Analyser la couverture d’assurance d’un risque"
+        }
+      ]
+    },
+    {
+      "query": "démarche qualité",
+      "expected_top": "R-B2-024",
+      "actual_top": "R-B2-024",
+      "pass": true,
+      "top5": [
+        {
+          "score": 203,
+          "id": "R-B2-024",
+          "title": "Diagnostiquer un dysfonctionnement qualité et rechercher ses causes"
+        },
+        {
+          "score": 146,
+          "id": "R-B2-026",
+          "title": "Organiser le partage et la conservation des connaissances utiles"
+        },
+        {
+          "score": 126,
+          "id": "R-B2-025",
+          "title": "Formaliser, diffuser et améliorer une procédure"
+        },
+        {
+          "score": 106,
+          "id": "R-B2-029",
+          "title": "Suivre une action corrective et vérifier qu’elle réduit réellement le risque"
+        },
+        {
+          "score": 79,
+          "id": "R-B2-031",
+          "title": "Organiser le suivi administratif d’une démarche de certification"
+        }
+      ]
+    },
+    {
+      "query": "audit qualité",
+      "expected_top": "R-B2-024",
+      "actual_top": "R-B2-024",
+      "pass": true,
+      "top5": [
+        {
+          "score": 178,
+          "id": "R-B2-024",
+          "title": "Diagnostiquer un dysfonctionnement qualité et rechercher ses causes"
+        },
+        {
+          "score": 106,
+          "id": "R-B2-025",
+          "title": "Formaliser, diffuser et améliorer une procédure"
+        },
+        {
+          "score": 86,
+          "id": "R-B2-031",
+          "title": "Organiser le suivi administratif d’une démarche de certification"
+        },
+        {
+          "score": 48,
+          "id": "R-B2-029",
+          "title": "Suivre une action corrective et vérifier qu’elle réduit réellement le risque"
+        },
+        {
+          "score": 41,
+          "id": "R-TR-008",
+          "title": "Préparer et animer une réunion qui aboutit à des décisions et des actions"
+        }
+      ]
+    },
+    {
+      "query": "réclamations clients",
+      "expected_top": "R-B1-014",
+      "actual_top": "R-B1-014",
+      "pass": true,
+      "top5": [
+        {
+          "score": 60,
+          "id": "R-B1-014",
+          "title": "Traiter et suivre une réclamation client jusqu’à sa clôture"
+        },
+        {
+          "score": 52,
+          "id": "R-B1-026",
+          "title": "Suivre les comptes clients et fournisseurs avec une balance âgée"
+        },
+        {
+          "score": 43,
+          "id": "R-B1-012",
+          "title": "Fiabiliser et mettre à jour le système d’information clients"
+        },
+        {
+          "score": 43,
+          "id": "R-B1-010",
+          "title": "Suivre les règlements clients et conduire une relance amiable"
+        },
+        {
+          "score": 42,
+          "id": "R-B4-015",
+          "title": "Analyser un marché et distinguer une tendance d’un signal isolé"
+        }
+      ]
+    }
+  ],
+  "all_top_tests_pass": true,
+  "project_rgpd_has_project_framing_top3": true,
+  "alphabet": {
+    "AIPD": {
+      "present": true,
+      "direct_resources": [
+        "R-B2-018"
+      ]
+    },
+    "Base juridique": {
+      "present": true,
+      "direct_resources": [
+        "R-B2-018"
+      ]
+    },
+    "Donnée de santé": {
+      "present": true,
+      "direct_resources": [
+        "R-B2-018"
+      ]
+    },
+    "Donnée sensible": {
+      "present": true,
+      "direct_resources": [
+        "R-B2-018"
+      ]
+    },
+    "DPO / DPD": {
+      "present": true,
+      "direct_resources": [
+        "R-B2-018"
+      ]
+    },
+    "Finalité (RGPD)": {
+      "present": true,
+      "direct_resources": [
+        "R-B2-018"
+      ]
+    },
+    "Risque résiduel": {
+      "present": true,
+      "direct_resources": [
+        "R-B2-001",
+        "R-B2-013",
+        "R-B2-029"
+      ]
+    },
+    "Registre des activités de traitement": {
+      "present": true,
+      "direct_resources": [
+        "R-B2-018"
+      ]
+    },
+    "Sous-traitant (RGPD)": {
+      "present": true,
+      "direct_resources": [
+        "R-B2-018"
+      ]
+    },
+    "Traitement de données": {
+      "present": true,
+      "direct_resources": [
+        "R-B2-018"
+      ]
+    }
+  },
+  "alphabet_structured_empty": 0
+}

@@ -1,0 +1,712 @@
+{
+  "version": "2.8.1",
+  "base": "2.8",
+  "resources_same": 145,
+  "resources_total": 145,
+  "missions_same": 30,
+  "missions_total": 30,
+  "resources": [
+    {
+      "file": "ressources/bc1/R-B1-001-cibler-organiser-prospection.html",
+      "same_as_v2.8": true
+    },
+    {
+      "file": "ressources/bc1/R-B1-002-qualifier-fichier-prospects.html",
+      "same_as_v2.8": true
+    },
+    {
+      "file": "ressources/bc1/R-B1-003-analyser-appel-offres.html",
+      "same_as_v2.8": true
+    },
+    {
+      "file": "ressources/bc1/R-B1-004-constituer-reponse-marche-public.html",
+      "same_as_v2.8": true
+    },
+    {
+      "file": "ressources/bc1/R-B1-005-preparer-proposition-commerciale.html",
+      "same_as_v2.8": true
+    },
+    {
+      "file": "ressources/bc1/R-B1-006-controler-commande-contrat-client.html",
+      "same_as_v2.8": true
+    },
+    {
+      "file": "ressources/bc1/R-B1-007-suivre-vente-livraison.html",
+      "same_as_v2.8": true
+    },
+    {
+      "file": "ressources/bc1/R-B1-008-etablir-facture-conforme.html",
+      "same_as_v2.8": true
+    },
+    {
+      "file": "ressources/bc1/R-B1-009-preparer-facturation-electronique.html",
+      "same_as_v2.8": true
+    },
+    {
+      "file": "ressources/bc1/R-B1-010-suivre-reglements-relancer-impayes.html",
+      "same_as_v2.8": true
+    },
+    {
+      "file": "ressources/bc1/R-B1-011-evaluer-risque-client.html",
+      "same_as_v2.8": true
+    },
+    {
+      "file": "ressources/bc1/R-B1-012-fiabiliser-si-client.html",
+      "same_as_v2.8": true
+    },
+    {
+      "file": "ressources/bc1/R-B1-013-accueillir-informer-conseiller-client.html",
+      "same_as_v2.8": true
+    },
+    {
+      "file": "ressources/bc1/R-B1-014-traiter-suivre-reclamation-client.html",
+      "same_as_v2.8": true
+    },
+    {
+      "file": "ressources/bc1/R-B1-015-formaliser-besoin-achat.html",
+      "same_as_v2.8": true
+    },
+    {
+      "file": "ressources/bc1/R-B1-016-rechercher-preselectionner-fournisseurs.html",
+      "same_as_v2.8": true
+    },
+    {
+      "file": "ressources/bc1/R-B1-017-comparer-offres-fournisseurs.html",
+      "same_as_v2.8": true
+    },
+    {
+      "file": "ressources/bc1/R-B1-018-preparer-negociation-fournisseur.html",
+      "same_as_v2.8": true
+    },
+    {
+      "file": "ressources/bc1/R-B1-019-passer-suivre-commande-fournisseur.html",
+      "same_as_v2.8": true
+    },
+    {
+      "file": "ressources/bc1/R-B1-020-controler-achat-facture-reglement.html",
+      "same_as_v2.8": true
+    },
+    {
+      "file": "ressources/bc1/R-B1-021-suivre-stocks-reapprovisionnement.html",
+      "same_as_v2.8": true
+    },
+    {
+      "file": "ressources/bc1/R-B1-022-preparer-acquisition-immobilisation.html",
+      "same_as_v2.8": true
+    },
+    {
+      "file": "ressources/bc1/R-B1-023-evaluer-fournisseur.html",
+      "same_as_v2.8": true
+    },
+    {
+      "file": "ressources/bc1/R-B1-024-controler-enregistrement-comptable.html",
+      "same_as_v2.8": true
+    },
+    {
+      "file": "ressources/bc1/R-B1-025-rapprochement-bancaire.html",
+      "same_as_v2.8": true
+    },
+    {
+      "file": "ressources/bc1/R-B1-026-suivre-comptes-tiers-encaissements.html",
+      "same_as_v2.8": true
+    },
+    {
+      "file": "ressources/bc1/R-B1-027-preparer-controler-tva.html",
+      "same_as_v2.8": true
+    },
+    {
+      "file": "ressources/bc1/R-B1-028-evaluer-risques-echanges-internationaux.html",
+      "same_as_v2.8": true
+    },
+    {
+      "file": "ressources/bc1/R-B1-029-developper-relation-client-communication.html",
+      "same_as_v2.8": true
+    },
+    {
+      "file": "ressources/bc1/R-B1-030-traiter-anomalie-livraison-client.html",
+      "same_as_v2.8": true
+    },
+    {
+      "file": "ressources/bc1/R-B1-031-corriger-facture-avoir.html",
+      "same_as_v2.8": true
+    },
+    {
+      "file": "ressources/bc1/R-B1-032-fiabiliser-systeme-information-fournisseur.html",
+      "same_as_v2.8": true
+    },
+    {
+      "file": "ressources/bc2/R-B2-001-evaluer-hierarchiser-risques.html",
+      "same_as_v2.8": true
+    },
+    {
+      "file": "ressources/bc2/R-B2-002-construire-matrice-criticite.html",
+      "same_as_v2.8": true
+    },
+    {
+      "file": "ressources/bc2/R-B2-003-contribuer-mise-a-jour-duerp.html",
+      "same_as_v2.8": true
+    },
+    {
+      "file": "ressources/bc2/R-B2-004-mettre-en-place-veille-pme.html",
+      "same_as_v2.8": true
+    },
+    {
+      "file": "ressources/bc2/R-B2-005-qualifier-source-information.html",
+      "same_as_v2.8": true
+    },
+    {
+      "file": "ressources/bc2/R-B2-006-synthese-alerte-veille.html",
+      "same_as_v2.8": true
+    },
+    {
+      "file": "ressources/bc2/R-B2-007-cadrer-projet.html",
+      "same_as_v2.8": true
+    },
+    {
+      "file": "ressources/bc2/R-B2-008-cahier-charges-planifier.html",
+      "same_as_v2.8": true
+    },
+    {
+      "file": "ressources/bc2/R-B2-009-preparer-conduire-reunion-projet.html",
+      "same_as_v2.8": true
+    },
+    {
+      "file": "ressources/bc2/R-B2-010-suivre-projet-ecarts.html",
+      "same_as_v2.8": true
+    },
+    {
+      "file": "ressources/bc2/R-B2-011-identifier-formuler-risques.html",
+      "same_as_v2.8": true
+    },
+    {
+      "file": "ressources/bc2/R-B2-012-identifier-obligations-risque.html",
+      "same_as_v2.8": true
+    },
+    {
+      "file": "ressources/bc2/R-B2-013-plan-traitement-risques.html",
+      "same_as_v2.8": true
+    },
+    {
+      "file": "ressources/bc2/R-B2-014-budget-tresorerie.html",
+      "same_as_v2.8": true
+    },
+    {
+      "file": "ressources/bc2/R-B2-015-diagnostiquer-tension-tresorerie.html",
+      "same_as_v2.8": true
+    },
+    {
+      "file": "ressources/bc2/R-B2-016-analyser-couverture-assurance.html",
+      "same_as_v2.8": true
+    },
+    {
+      "file": "ressources/bc2/R-B2-017-proteger-actif-propriete-intellectuelle.html",
+      "same_as_v2.8": true
+    },
+    {
+      "file": "ressources/bc2/R-B2-018-verifier-conformite-traitement-rgpd.html",
+      "same_as_v2.8": true
+    },
+    {
+      "file": "ressources/bc2/R-B2-019-reagir-violation-donnees.html",
+      "same_as_v2.8": true
+    },
+    {
+      "file": "ressources/bc2/R-B2-020-reduire-risques-environnementaux.html",
+      "same_as_v2.8": true
+    },
+    {
+      "file": "ressources/bc2/R-B2-021-evaluer-risques-informatiques.html",
+      "same_as_v2.8": true
+    },
+    {
+      "file": "ressources/bc2/R-B2-022-organiser-sauvegardes-restauration.html",
+      "same_as_v2.8": true
+    },
+    {
+      "file": "ressources/bc2/R-B2-023-controler-habilitations-droits-acces.html",
+      "same_as_v2.8": true
+    },
+    {
+      "file": "ressources/bc2/R-B2-024-diagnostiquer-dysfonctionnement-qualite.html",
+      "same_as_v2.8": true
+    },
+    {
+      "file": "ressources/bc2/R-B2-025-formaliser-ameliorer-procedure.html",
+      "same_as_v2.8": true
+    },
+    {
+      "file": "ressources/bc2/R-B2-026-organiser-gestion-connaissances.html",
+      "same_as_v2.8": true
+    },
+    {
+      "file": "ressources/bc2/R-B2-027-preparer-veille-certification.html",
+      "same_as_v2.8": true
+    },
+    {
+      "file": "ressources/bc2/R-B2-028-mettre-a-jour-pratique-procedure-apres-veille.html",
+      "same_as_v2.8": true
+    },
+    {
+      "file": "ressources/bc2/R-B2-029-suivre-efficacite-action-corrective-risque.html",
+      "same_as_v2.8": true
+    },
+    {
+      "file": "ressources/bc2/R-B2-030-declarer-suivre-sinistre-assurance.html",
+      "same_as_v2.8": true
+    },
+    {
+      "file": "ressources/bc2/R-B2-031-suivre-demarche-certification.html",
+      "same_as_v2.8": true
+    },
+    {
+      "file": "ressources/bc3/R-B3-001-identifier-regle-sociale-applicable.html",
+      "same_as_v2.8": true
+    },
+    {
+      "file": "ressources/bc3/R-B3-002-preparer-embauche-salarie.html",
+      "same_as_v2.8": true
+    },
+    {
+      "file": "ressources/bc3/R-B3-003-controler-contrat-travail.html",
+      "same_as_v2.8": true
+    },
+    {
+      "file": "ressources/bc3/R-B3-004-preparer-depart-salarie.html",
+      "same_as_v2.8": true
+    },
+    {
+      "file": "ressources/bc3/R-B3-005-organiser-dossier-personnel-rgpd.html",
+      "same_as_v2.8": true
+    },
+    {
+      "file": "ressources/bc3/R-B3-006-suivre-temps-travail.html",
+      "same_as_v2.8": true
+    },
+    {
+      "file": "ressources/bc3/R-B3-007-gerer-conges-absences-maladie.html",
+      "same_as_v2.8": true
+    },
+    {
+      "file": "ressources/bc3/R-B3-008-collecter-variables-paie.html",
+      "same_as_v2.8": true
+    },
+    {
+      "file": "ressources/bc3/R-B3-009-controler-bulletin-paie.html",
+      "same_as_v2.8": true
+    },
+    {
+      "file": "ressources/bc3/R-B3-010-preparer-controler-dsn.html",
+      "same_as_v2.8": true
+    },
+    {
+      "file": "ressources/bc3/R-B3-011-organiser-elections-cse.html",
+      "same_as_v2.8": true
+    },
+    {
+      "file": "ressources/bc3/R-B3-012-communiquer-information-sociale-confidentielle.html",
+      "same_as_v2.8": true
+    },
+    {
+      "file": "ressources/bc3/R-B3-013-formaliser-besoin-recrutement-fiche-poste.html",
+      "same_as_v2.8": true
+    },
+    {
+      "file": "ressources/bc3/R-B3-014-rediger-offre-emploi-non-discriminatoire.html",
+      "same_as_v2.8": true
+    },
+    {
+      "file": "ressources/bc3/R-B3-015-preselectionner-candidatures.html",
+      "same_as_v2.8": true
+    },
+    {
+      "file": "ressources/bc3/R-B3-016-preparer-entretien-recrutement.html",
+      "same_as_v2.8": true
+    },
+    {
+      "file": "ressources/bc3/R-B3-017-organiser-integration-nouveau-salarie.html",
+      "same_as_v2.8": true
+    },
+    {
+      "file": "ressources/bc3/R-B3-018-recenser-besoins-formation-competences.html",
+      "same_as_v2.8": true
+    },
+    {
+      "file": "ressources/bc3/R-B3-019-choisir-formation-budget-opco.html",
+      "same_as_v2.8": true
+    },
+    {
+      "file": "ressources/bc3/R-B3-020-planifier-suivre-action-formation.html",
+      "same_as_v2.8": true
+    },
+    {
+      "file": "ressources/bc3/R-B3-021-preparer-entretien-evaluation.html",
+      "same_as_v2.8": true
+    },
+    {
+      "file": "ressources/bc3/R-B3-022-preparer-entretien-parcours-professionnel-2026.html",
+      "same_as_v2.8": true
+    },
+    {
+      "file": "ressources/bc3/R-B3-023-construire-tableau-bord-social.html",
+      "same_as_v2.8": true
+    },
+    {
+      "file": "ressources/bc3/R-B3-024-analyser-indicateurs-sociaux-proposer-actions.html",
+      "same_as_v2.8": true
+    },
+    {
+      "file": "ressources/bc3/R-B3-025-reperer-tension-preparer-entretien.html",
+      "same_as_v2.8": true
+    },
+    {
+      "file": "ressources/bc3/R-B3-026-organiser-travail-collaboratif.html",
+      "same_as_v2.8": true
+    },
+    {
+      "file": "ressources/bc3/R-B3-027-preparer-reunion-cse-dialogue-social.html",
+      "same_as_v2.8": true
+    },
+    {
+      "file": "ressources/bc3/R-B3-028-calculer-cout-recrutement-formation.html",
+      "same_as_v2.8": true
+    },
+    {
+      "file": "ressources/bc4/R-B4-001-caracteriser-systeme-information.html",
+      "same_as_v2.8": true
+    },
+    {
+      "file": "ressources/bc4/R-B4-002-cartographier-flux-information-processus.html",
+      "same_as_v2.8": true
+    },
+    {
+      "file": "ressources/bc4/R-B4-003-definir-besoin-information-controler-donnees.html",
+      "same_as_v2.8": true
+    },
+    {
+      "file": "ressources/bc4/R-B4-004-structurer-base-donnees-fiabiliser-saisie.html",
+      "same_as_v2.8": true
+    },
+    {
+      "file": "ressources/bc4/R-B4-005-classer-archiver-documents.html",
+      "same_as_v2.8": true
+    },
+    {
+      "file": "ressources/bc4/R-B4-006-diagnostiquer-anomalie-si-preparer-demande-esn.html",
+      "same_as_v2.8": true
+    },
+    {
+      "file": "ressources/bc4/R-B4-007-analyser-ameliorer-processus-support.html",
+      "same_as_v2.8": true
+    },
+    {
+      "file": "ressources/bc4/R-B4-008-organiser-travail-administratif.html",
+      "same_as_v2.8": true
+    },
+    {
+      "file": "ressources/bc4/R-B4-009-planifier-activites-interventions.html",
+      "same_as_v2.8": true
+    },
+    {
+      "file": "ressources/bc4/R-B4-010-gerer-charge-priorites-agenda.html",
+      "same_as_v2.8": true
+    },
+    {
+      "file": "ressources/bc4/R-B4-011-organiser-deplacement-professionnel.html",
+      "same_as_v2.8": true
+    },
+    {
+      "file": "ressources/bc4/R-B4-012-organiser-evenement-professionnel.html",
+      "same_as_v2.8": true
+    },
+    {
+      "file": "ressources/bc4/R-B4-013-selectionner-coordonner-prestataires.html",
+      "same_as_v2.8": true
+    },
+    {
+      "file": "ressources/bc4/R-B4-014-mettre-en-place-veille-commerciale.html",
+      "same_as_v2.8": true
+    },
+    {
+      "file": "ressources/bc4/R-B4-015-analyser-marche-tendances.html",
+      "same_as_v2.8": true
+    },
+    {
+      "file": "ressources/bc4/R-B4-016-construire-enquete-satisfaction.html",
+      "same_as_v2.8": true
+    },
+    {
+      "file": "ressources/bc4/R-B4-017-proposer-action-developpement-commercial.html",
+      "same_as_v2.8": true
+    },
+    {
+      "file": "ressources/bc4/R-B4-018-concevoir-evaluer-action-fidelisation.html",
+      "same_as_v2.8": true
+    },
+    {
+      "file": "ressources/bc4/R-B4-019-preparer-cahier-charges-communication.html",
+      "same_as_v2.8": true
+    },
+    {
+      "file": "ressources/bc4/R-B4-020-concevoir-support-communication-institutionnelle.html",
+      "same_as_v2.8": true
+    },
+    {
+      "file": "ressources/bc4/R-B4-021-concevoir-action-communication-commerciale.html",
+      "same_as_v2.8": true
+    },
+    {
+      "file": "ressources/bc4/R-B4-022-suivre-identite-numerique-e-reputation.html",
+      "same_as_v2.8": true
+    },
+    {
+      "file": "ressources/bc4/R-B4-023-controler-coherence-image-charte.html",
+      "same_as_v2.8": true
+    },
+    {
+      "file": "ressources/bc4/R-B4-024-mesurer-efficacite-action-communication.html",
+      "same_as_v2.8": true
+    },
+    {
+      "file": "ressources/bc4/R-B4-025-calculer-cout-complet.html",
+      "same_as_v2.8": true
+    },
+    {
+      "file": "ressources/bc4/R-B4-026-calculer-marge-cout-partiel.html",
+      "same_as_v2.8": true
+    },
+    {
+      "file": "ressources/bc4/R-B4-027-calculer-seuil-rentabilite.html",
+      "same_as_v2.8": true
+    },
+    {
+      "file": "ressources/bc4/R-B4-028-construire-budget-previsionnel.html",
+      "same_as_v2.8": true
+    },
+    {
+      "file": "ressources/bc4/R-B4-029-analyser-ecarts-simuler-decision.html",
+      "same_as_v2.8": true
+    },
+    {
+      "file": "ressources/bc4/R-B4-030-construire-bilan-fonctionnel.html",
+      "same_as_v2.8": true
+    },
+    {
+      "file": "ressources/bc4/R-B4-031-analyser-equilibres-fr-bfr-tn.html",
+      "same_as_v2.8": true
+    },
+    {
+      "file": "ressources/bc4/R-B4-032-calculer-interpreter-ratios-financiers.html",
+      "same_as_v2.8": true
+    },
+    {
+      "file": "ressources/bc4/R-B4-033-comparer-modes-financement-investissement.html",
+      "same_as_v2.8": true
+    },
+    {
+      "file": "ressources/bc4/R-B4-034-construire-plan-financement-mesurer-impact.html",
+      "same_as_v2.8": true
+    },
+    {
+      "file": "ressources/bc4/R-B4-035-choisir-indicateurs-seuils-alerte.html",
+      "same_as_v2.8": true
+    },
+    {
+      "file": "ressources/bc4/R-B4-036-construire-tableau-bord-commercial-financier.html",
+      "same_as_v2.8": true
+    },
+    {
+      "file": "ressources/bc4/R-B4-037-analyser-tableau-bord-alerter.html",
+      "same_as_v2.8": true
+    },
+    {
+      "file": "ressources/bc4/R-B4-038-resoudre-probleme-administratif.html",
+      "same_as_v2.8": true
+    },
+    {
+      "file": "ressources/bc4/R-B4-039-construire-plan-communication-operationnel.html",
+      "same_as_v2.8": true
+    },
+    {
+      "file": "ressources/bc4/R-B4-040-simuler-decision-gestion-couts-finance.html",
+      "same_as_v2.8": true
+    },
+    {
+      "file": "ressources/transversal/R-TR-001-analyser-situation-communication.html",
+      "same_as_v2.8": true
+    },
+    {
+      "file": "ressources/transversal/R-TR-002-rediger-courriel-professionnel.html",
+      "same_as_v2.8": true
+    },
+    {
+      "file": "ressources/transversal/R-TR-003-rediger-note-direction.html",
+      "same_as_v2.8": true
+    },
+    {
+      "file": "ressources/transversal/R-TR-004-produire-compte-rendu-actionnable.html",
+      "same_as_v2.8": true
+    },
+    {
+      "file": "ressources/transversal/R-TR-005-concevoir-formulaire-document-structure.html",
+      "same_as_v2.8": true
+    },
+    {
+      "file": "ressources/transversal/R-TR-006-choisir-canal-communication-numerique.html",
+      "same_as_v2.8": true
+    },
+    {
+      "file": "ressources/transversal/R-TR-007-preparer-conduire-entretien-professionnel.html",
+      "same_as_v2.8": true
+    },
+    {
+      "file": "ressources/transversal/R-TR-008-preparer-animer-reunion.html",
+      "same_as_v2.8": true
+    },
+    {
+      "file": "ressources/transversal/R-TR-009-gerer-tension-conflit.html",
+      "same_as_v2.8": true
+    },
+    {
+      "file": "ressources/transversal/R-TR-010-preparer-dialogue-negociation.html",
+      "same_as_v2.8": true
+    },
+    {
+      "file": "ressources/transversal/R-TR-011-construire-tableau-donnees-fiable.html",
+      "same_as_v2.8": true
+    },
+    {
+      "file": "ressources/transversal/R-TR-012-extraire-nettoyer-controler-donnees-pgi.html",
+      "same_as_v2.8": true
+    },
+    {
+      "file": "ressources/transversal/R-TR-013-utiliser-filtres-recherche-validation-tcd.html",
+      "same_as_v2.8": true
+    },
+    {
+      "file": "ressources/transversal/R-TR-014-presenter-analyse-chiffree.html",
+      "same_as_v2.8": true
+    }
+  ],
+  "missions": [
+    {
+      "file": "missions/M01.html",
+      "same_as_v2.8": true
+    },
+    {
+      "file": "missions/M02.html",
+      "same_as_v2.8": true
+    },
+    {
+      "file": "missions/M03.html",
+      "same_as_v2.8": true
+    },
+    {
+      "file": "missions/M04.html",
+      "same_as_v2.8": true
+    },
+    {
+      "file": "missions/M05.html",
+      "same_as_v2.8": true
+    },
+    {
+      "file": "missions/M06.html",
+      "same_as_v2.8": true
+    },
+    {
+      "file": "missions/M07.html",
+      "same_as_v2.8": true
+    },
+    {
+      "file": "missions/M08.html",
+      "same_as_v2.8": true
+    },
+    {
+      "file": "missions/M09.html",
+      "same_as_v2.8": true
+    },
+    {
+      "file": "missions/M10.html",
+      "same_as_v2.8": true
+    },
+    {
+      "file": "missions/M11.html",
+      "same_as_v2.8": true
+    },
+    {
+      "file": "missions/M12.html",
+      "same_as_v2.8": true
+    },
+    {
+      "file": "missions/M13.html",
+      "same_as_v2.8": true
+    },
+    {
+      "file": "missions/M14.html",
+      "same_as_v2.8": true
+    },
+    {
+      "file": "missions/M15.html",
+      "same_as_v2.8": true
+    },
+    {
+      "file": "missions/M16.html",
+      "same_as_v2.8": true
+    },
+    {
+      "file": "missions/M17.html",
+      "same_as_v2.8": true
+    },
+    {
+      "file": "missions/M18.html",
+      "same_as_v2.8": true
+    },
+    {
+      "file": "missions/M19.html",
+      "same_as_v2.8": true
+    },
+    {
+      "file": "missions/M20.html",
+      "same_as_v2.8": true
+    },
+    {
+      "file": "missions/M21.html",
+      "same_as_v2.8": true
+    },
+    {
+      "file": "missions/M22.html",
+      "same_as_v2.8": true
+    },
+    {
+      "file": "missions/M23.html",
+      "same_as_v2.8": true
+    },
+    {
+      "file": "missions/M24.html",
+      "same_as_v2.8": true
+    },
+    {
+      "file": "missions/M25.html",
+      "same_as_v2.8": true
+    },
+    {
+      "file": "missions/M26.html",
+      "same_as_v2.8": true
+    },
+    {
+      "file": "missions/M27.html",
+      "same_as_v2.8": true
+    },
+    {
+      "file": "missions/M28.html",
+      "same_as_v2.8": true
+    },
+    {
+      "file": "missions/M29.html",
+      "same_as_v2.8": true
+    },
+    {
+      "file": "missions/M30.html",
+      "same_as_v2.8": true
+    }
+  ]
+}

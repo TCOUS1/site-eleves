@@ -1,0 +1,21 @@
+{
+  "status": "PASS",
+  "validator_errors": 0,
+  "validator_warnings": 0,
+  "metrics": {
+    "html": 361,
+    "resources": 147,
+    "missions": 30,
+    "knowledge": 343,
+    "criteria_activities": 12
+  },
+  "visual_pages_teacher": 40,
+  "visual_pages_student": 40,
+  "local_broken_links_teacher": 0,
+  "local_broken_links_student": 0,
+  "visual_audit_resources": 147,
+  "visual_added": 40,
+  "visual_central": 25,
+  "visual_complement": 15,
+  "browser_render_test": "non exécuté : navigation locale/localhost bloquée par l’environnement"
+}
