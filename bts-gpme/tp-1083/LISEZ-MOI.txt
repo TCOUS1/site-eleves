@@ -1,0 +1,39 @@
+TP 1083 — candidat prépublication ÉcoRessources — 21/09/2026
+
+POINT D’ENTRÉE CANONIQUE : index.html
+
+L’accueil 1083 conserve son identité immersive spécifique et conduit aux six situations puis à la restitution finale.
+
+Les pages intérieures utilisent la grammaire visuelle ÉcoRessources :
+- mission et tâches au centre ;
+- ressources repliables à gauche sur ordinateur et panneau inférieur sur mobile ;
+- conseils repliés par défaut ;
+- liens directs vers le référentiel commun du site ;
+- confort de lecture commun ;
+- impression disponible lorsque la production le nécessite.
+
+Les ressources étudiantes portent des noms canoniques non versionnés. Les fiches pratiques du TP restent des guides de transfert liés au cas et renvoient vers les ressources canoniques d’ÉcoRessources lorsqu’elles existent.
+
+Les visuels de l’accueil sont stockés localement : aucune ressource graphique externe n’est chargée passivement.
+
+MISE À JOUR PÉDAGOGIQUE — SITUATION 2 (21/09/2026) :
+- Kanban obligatoire avant répartition du travail ;
+- consolidation du registre SST sans invention ;
+- entretiens / observations R10 consultés après formulation des besoins d'information ;
+- réutilisation de la matrice de risques de la situation 1 ;
+- mesures de prévention examinées selon date, état réel et efficacité ;
+- plan de prévention avec effet attendu sur P/G et date prévue de réexamen ;
+- R11 fournit un suivi daté au 30/10/2026 pour contrôler l'efficacité ;
+- nouvel examen des risques prioritaires daté, attribué à son auteur et contrôlé par le groupe.
+
+CONTRÔLE PRÉPUBLICATION FINAL — 21/09/2026 :
+- 27 pages HTML contrôlées ;
+- 0 lien local cassé ; 0 ancre invalide ; 0 ID dupliqué ;
+- 0 erreur UTF-8 / mojibake ;
+- 0 ressource externe chargée passivement ;
+- 0 référence CSS manquante ; JavaScript valide ;
+- contrôle visuel desktop effectué sur la situation 2 et R11 ; règles responsive renforcées sous 560 px ;
+- R03 reconstruit et validé par ouverture Word / export PDF (3 pages) ;
+- R10 et R11 utilisent le même dispositif de confort de lecture / impression que les autres ressources HTML.
+
+ÉTAT : prêt pour mise en ligne après validation utilisateur. Aucun commit ni push GitHub n’a été effectué automatiquement.

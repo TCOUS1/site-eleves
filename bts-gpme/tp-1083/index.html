@@ -3,128 +3,101 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>ÉcoRessources — BTS GPME</title>
-  <link rel="stylesheet" href="assets/ecoresources/home.css">
-  <script defer src="assets/search-index-v42.js?v=4.2.2"></script>
-  <script defer src="assets/ecoresources/search-extra-v1.js"></script>
-  <script defer src="assets/ecoresources/home.js"></script>
+  <meta name="color-scheme" content="light">
+  <title>Cas 1083 — Accueil du TP — BTS GPME</title>
+  <link rel="stylesheet" href="assets/accessibility.css">
+  <link rel="stylesheet" href="assets/accueil-vitrine-v02.css">
+  <script defer src="assets/accessibility.js"></script>
+  <script defer src="assets/accueil-vitrine-v02.js"></script>
 </head>
-<body>
-<a class="skip-link" href="#main">Aller au contenu</a>
-
-<!-- BANDEAU INDÉPENDANT : volontairement hors du visuel hero. -->
+<body class="photo-hero">
+<a class="skip-link" href="#contenu">Aller au contenu</a>
 <header class="topbar">
-  <a class="brand" href="index.html" aria-label="Accueil ÉcoRessources">
-    <span class="brand-mark" aria-hidden="true">
-      <svg viewBox="0 0 64 64">
-        <path d="M9 38c8-1 15 3 20 11-9 4-21 2-27-6 1-3 3-4 7-5Z" fill="#E4A56A"/>
-        <path d="M11 15c12 1 21 9 24 24-12 2-24-7-27-18 1-4 1-5 3-6Z" fill="#E7B583"/>
-        <path d="M53 13c1 10-2 19-9 26-7 7-16 10-26 10 1-10 4-19 11-26 7-7 15-10 24-10Z" fill="#1E553B"/>
-        <path d="M33 17c0 19-1 29-4 36" stroke="#fff6ef" stroke-width="3" stroke-linecap="round"/>
-      </svg>
-    </span>
-    <span class="brand-copy">
-      <strong>Éco<span>Ressources</span></strong>
-      <small>BTS GPME · Comprendre aujourd’hui, agir demain</small>
-    </span>
+  <button class="menu-btn" type="button" data-drawer-open aria-expanded="false" aria-controls="parcoursDrawer">
+    <span class="menu-icon" aria-hidden="true"><i></i><i></i><i></i></span><span>Parcours du TP</span>
+  </button>
+  <a class="brand" href="index.html" aria-label="Accueil du cas 1083">
+    <img src="assets/logo-1083.png" alt="1083">
+    <span class="brand-copy"><strong>Cas d’entreprise</strong><span>BTS GPME · Gestion des risques</span></span>
   </a>
-
-  <nav class="topnav" aria-label="Navigation principale"><a href="referentiel/index.html"><span aria-hidden="true">▤</span><small>Référentiel</small></a><a href="demarrer/index.html"><span aria-hidden="true">?</span><small>Aide</small></a><a href="apropos/index.html"><span aria-hidden="true">i</span><small>À propos</small></a></nav>
-
-  <button class="reading-entry" type="button" data-open-reading aria-expanded="false" aria-controls="readingPanel">
-    <span aria-hidden="true">◉</span><b>Confort de lecture</b>
+  <a class="eco-return" href="../fiches/situations.html" aria-label="Retour aux situations professionnelles ÉcoRessources"><span class="eco-return__full">← Situations professionnelles</span><span class="eco-return__short">←</span></a>
+  <div class="unofficial">Simulation pédagogique non officielle</div>
+  <button class="comfort-btn reading-open" type="button" data-reading-open aria-expanded="false" aria-controls="readingPanel">
+    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h9M4 12h7M4 17h5"/><path d="M16 6l3 12M14.7 13h5.6"/></svg><span>Confort de lecture</span>
   </button>
 </header>
-
-<main id="main">
-  <section class="hero-wrap" aria-label="Accueil ÉcoRessources">
-    <div class="hero-stage">
-      <picture class="hero-picture">
-        <source media="(max-width:720px)" srcset="assets/ecoresources/hero-mobile.png">
-        <img src="assets/ecoresources/hero-desktop.png" alt="Trois étudiants souriants dans une ambiance de progression et de réussite">
-      </picture>
-      <img class="hero-decoration hero-decoration-left-title" src="assets/ecoresources/hero-decoration-desktop.png" alt="" aria-hidden="true">
-      <img class="hero-decoration hero-decoration-left-list" src="assets/ecoresources/hero-decoration-desktop.png" alt="" aria-hidden="true">
-      <img class="hero-decoration hero-decoration-right" src="assets/ecoresources/hero-decoration-desktop.png" alt="" aria-hidden="true">
-      <img class="hero-decoration hero-decoration-bottom" src="assets/ecoresources/hero-decoration-desktop.png" alt="" aria-hidden="true">
-
-      <!-- Couche fonctionnelle superposée au visuel figé.
-           Les textes graphiques restent ceux de l'image de référence. -->
-      <form class="search-hotspot" role="search" data-search-form>
-        <label class="sr-only" for="homeSearch">Rechercher une notion, une question ou un mot-clé</label>
-        <input id="homeSearch" type="search" placeholder="Rechercher une notion, une question, un mot-clé…" autocomplete="off">
-        <button type="submit" aria-label="Rechercher"><span class="sr-only">Rechercher</span></button>
-      </form>
-
-      <div class="search-popover" data-search-popover hidden aria-live="polite"></div>
-
-      <a class="door-hotspot door-situation" href="situations.html" aria-label="Partir d’une situation professionnelle"></a>
-      <a class="door-hotspot door-az" href="az.html" aria-label="Explorer les notions par ordre alphabétique"></a>
-    </div>
-
-    <div class="search-feedback" data-search-feedback hidden aria-live="polite"></div>
-  </section>
-
-  </main>
-
-<footer class="footer" id="apropos">
-  <div class="footer-brand"><strong>Éco<span>Ressources</span></strong><small>BTS GPME · Comprendre aujourd’hui, agir demain</small></div>
-
-</footer>
-
-<div class="overlay" data-overlay hidden></div>
-<aside id="readingPanel" class="reading-panel" hidden aria-labelledby="readingTitle">
-  <div class="reading-panel__head">
-    <div><span>Affichage</span><h2 id="readingTitle">Confort de lecture</h2></div>
-    <button type="button" data-close-reading aria-label="Fermer">×</button>
-  </div>
-
-  <p class="reading-intro">Ces réglages concernent l’affichage des contenus de lecture. Ils ne modifient ni leur structure ni leur contenu.</p>
-
-  <section>
-    <h3>Police</h3>
-    <div class="button-row">
-      <button type="button" data-font="system">Standard</button>
-      <button type="button" data-font="verdana">Verdana</button>
-      <button type="button" data-font="dys">OpenDyslexic</button>
-    </div>
-    <p class="helper">La police OpenDyslexic est intégrée au site.</p>
-  </section>
-
-  <section>
-    <h3>Taille du texte</h3>
-    <div class="adjuster">
-      <button type="button" data-size="minus">−</button>
-      <output data-size-label>100 %</output>
-      <button type="button" data-size="plus">+</button>
-    </div>
-  </section>
-
-  <section>
-    <h3>Interligne</h3>
-    <div class="adjuster">
-      <button type="button" data-line="minus">−</button>
-      <output data-line-label>1,60</output>
-      <button type="button" data-line="plus">+</button>
-    </div>
-  </section>
-
-  <section>
-    <div class="switch-row">
-      <div>
-        <strong>Alternance des lignes</strong>
-        <small>La couleur alterne ligne par ligne. Le poids du texte est légèrement renforcé pour que l’aide reste perceptible avec une police légère.</small>
-      </div>
-      <button type="button" class="switch" role="switch" aria-checked="false" data-lines><span></span></button>
-    </div>
-  </section>
-
-  <section class="preview-zone">
-    <h3>Aperçu</h3>
-    <p data-preview>Le besoin en fonds de roulement mesure le financement nécessaire pour couvrir le décalage entre les décaissements et les encaissements liés au cycle d’exploitation.</p>
-  </section>
-
-  <button type="button" class="reset" data-reset>Réinitialiser</button>
+<div class="drawer-overlay" data-drawer-overlay aria-hidden="true"></div>
+<aside class="drawer" id="parcoursDrawer" data-drawer aria-label="Parcours du TP">
+  <button class="drawer-close" type="button" data-drawer-close aria-label="Fermer le parcours">×</button>
+  <span class="drawer-kicker">Parcours du cas</span><h2>Situations du TP</h2>
+  <nav><ul>
+    <li><a href="index.html" aria-current="page"><span class="step">⌂</span><span><strong>Accueil</strong><small>Découvrir l’entreprise et le parcours</small></span></a></li>
+    <li><a href="situations/01-diagnostic-veille.html"><span class="step">01</span><span><strong>Diagnostic global & veille</strong><small>Analyser avant de prioriser</small></span></a></li>
+    <li><a href="situations/02-sst-duerp.html"><span class="step">02</span><span><strong>Santé & sécurité</strong><small>Contrôler et prévenir</small></span></a></li>
+    <li><a href="situations/03-cyber-rgpd.html"><span class="step">03</span><span><strong>Cyber & données</strong><small>Qualifier et sécuriser</small></span></a></li>
+    <li><a href="situations/04-risque-financier.html"><span class="step">04</span><span><strong>Clients & trésorerie</strong><small>Mesurer et anticiper</small></span></a></li>
+    <li><a href="situations/05-fournisseurs-projet.html"><span class="step">05</span><span><strong>Fournisseurs & continuité</strong><small>Analyser les dépendances</small></span></a></li>
+    <li><a href="situations/06-qualite.html"><span class="step">06</span><span><strong>Qualité</strong><small>Mesurer et améliorer</small></span></a></li>
+    <li><a href="restitution-finale.html"><span class="step">✓</span><span><strong>Restitution finale</strong><small>Capitaliser le travail</small></span></a></li>
+  </ul></nav>
+  <p class="drawer-note"><strong>Principe :</strong> l’analyse globale vient d’abord. Les autres situations approfondissent ensuite les principaux types de risques pour les besoins de l’apprentissage.</p>
 </aside>
-</body>
-</html>
+<main id="contenu">
+  <section class="showcase" aria-labelledby="hero-title">
+    <div class="showcase-copy">
+      <p class="eyebrow">Entreprise support · 1083</p>
+      <h1 id="hero-title">Une activité réelle.<br>Des risques à maîtriser.</h1>
+      <p class="lead">Jeans et chaussures donnent à voir l’activité. Le TP commence ensuite par une analyse globale des risques avant d’en approfondir les principaux types.</p>
+    </div>
+    <div class="showcase-visual" aria-label="Représentation pédagogique de l’univers produit de 1083">
+      <article class="product-card primary"><img src="assets/jean-generic.jpg" alt="Photographie illustrative d’un jean — visuel générique, produit non 1083"><span class="product-badge">Jeans</span></article>
+      <article class="product-card shoe-card"><img src="assets/basket-toile-blanche-v04.png" alt="Photographie pédagogique d’une basket basse en toile blanche — visuel généré pour le cas pédagogique, produit non 1083"><span class="product-badge">Chaussures</span></article>
+      <article class="product-card"><img src="assets/denim-detail-generic.jpg" alt="Photographie illustrative d’un détail de denim — visuel générique"><span class="product-badge">Savoir-faire textile</span></article>
+      <span class="showcase-caption">Visuels pédagogiques génériques — non officiels et non 1083</span><details class="photo-credits"><summary>Crédits des visuels</summary><p>Jean : Oktaeder / Wikimedia Commons, domaine public. Basket blanche : visuel généré pour ce cas pédagogique, sans marque et ne représentant pas un produit 1083. Denim : Mark Michaelis / Wikimedia Commons, CC BY 2.0. Ces images servent uniquement à construire l’ambiance visuelle de l’accueil et ne constituent pas un catalogue officiel de 1083.</p></details>
+    </div>
+  </section>
+  <div class="red-rule" aria-hidden="true"></div>
+  <section class="diagnostic" aria-label="Première étape du TP">
+    <div class="diagnostic-num">01</div>
+    <div><strong>Commencer par l’analyse globale des risques</strong><span>Comprendre le fonctionnement de l’entreprise, identifier les risques puis les hiérarchiser avant d’approfondir les risques prioritaires.</span></div>
+    <a href="situations/01-diagnostic-veille.html">Commencer l’analyse →</a>
+  </section>
+  <section class="risks" aria-labelledby="risks-title">
+    <div class="section-head"><div><p class="eyebrow">À approfondir dans le TP</p><h2 id="risks-title">Les principaux types de risques</h2></div><p>Situations internes fictives créées pour l’apprentissage. Le bandeau défile automatiquement ; chaque vignette ouvre la situation correspondante.</p></div>
+    <div class="risk-window">
+      <div class="risk-rail" data-risk-rail>
+        <a class="risk-card" href="situations/02-sst-duerp.html"><span class="risk-tag">Situation fictive</span><div class="risk-visual"><svg viewBox="0 0 300 180" aria-hidden="true"><path d="M150 20L275 160H25z" fill="#fff" stroke="#111" stroke-width="8"/><path d="M146 62h8l-3 58h-2z" fill="#ff0000"/><circle cx="150" cy="139" r="7" fill="#ff0000"/></svg></div><footer><h3>Santé & sécurité</h3><span class="arrow">→</span></footer></a>
+        <a class="risk-card" href="situations/03-cyber-rgpd.html"><span class="risk-tag">Situation fictive</span><div class="risk-visual"><svg viewBox="0 0 300 180" aria-hidden="true"><rect x="42" y="28" width="216" height="124" rx="12" fill="#fff" stroke="#111" stroke-width="8"/><path d="M102 152v18m96-18v18M78 170h144" stroke="#111" stroke-width="8"/><path d="M150 64l45 18v30c0 28-20 47-45 58-25-11-45-30-45-58V82z" fill="#ff0000"/></svg></div><footer><h3>Cyber & données</h3><span class="arrow">→</span></footer></a>
+        <a class="risk-card" href="situations/04-risque-financier.html"><span class="risk-tag">Situation fictive</span><div class="risk-visual"><svg viewBox="0 0 300 180" aria-hidden="true"><path d="M36 138h228M58 122l50-44 38 24 48-58 48 36" fill="none" stroke="#111" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"/><circle cx="242" cy="80" r="10" fill="#ff0000"/></svg></div><footer><h3>Clients & trésorerie</h3><span class="arrow">→</span></footer></a>
+        <a class="risk-card" href="situations/05-fournisseurs-projet.html"><span class="risk-tag">Situation fictive</span><div class="risk-visual"><svg viewBox="0 0 300 180" aria-hidden="true"><rect x="26" y="34" width="76" height="62" fill="#fff" stroke="#111" stroke-width="7"/><rect x="198" y="34" width="76" height="62" fill="#fff" stroke="#111" stroke-width="7"/><rect x="112" y="112" width="76" height="48" fill="#fff" stroke="#111" stroke-width="7"/><path d="M102 65h96M64 96l74 28M236 96l-74 28" stroke="#111" stroke-width="7"/><path d="M143 52h14M150 45v14" stroke="#ff0000" stroke-width="7"/></svg></div><footer><h3>Fournisseurs & continuité</h3><span class="arrow">→</span></footer></a>
+        <a class="risk-card" href="situations/06-qualite.html"><span class="risk-tag">Situation fictive</span><div class="risk-visual"><svg viewBox="0 0 300 180" aria-hidden="true"><circle cx="116" cy="86" r="48" fill="#fff" stroke="#111" stroke-width="8"/><path d="M89 87l18 18 38-48" fill="none" stroke="#ff0000" stroke-width="10" stroke-linecap="round"/><path d="M194 144V94m26 50V70m26 74V42" stroke="#111" stroke-width="18"/></svg></div><footer><h3>Qualité</h3><span class="arrow">→</span></footer></a>
+      </div>
+    </div>
+    <div class="risk-controls" aria-label="Commandes du bandeau des risques"><button type="button" data-risk-prev aria-label="Risques précédents">‹</button><button type="button" data-risk-pause aria-label="Mettre en pause le défilement automatique">Ⅱ</button><button type="button" data-risk-next aria-label="Risques suivants">›</button></div>
+    <p class="risk-note"><strong>Deux clés d’entrée :</strong> le menu « Parcours du TP » pour suivre la progression, ou un type de risque pour accéder directement à la situation correspondante.</p>
+  </section>
+</main>
+<footer class="site-footer">
+  <div class="footer-grid">
+    <div class="footer-brand"><img src="assets/logo-1083.png" alt=""><div><h4>Cas pédagogique 1083</h4><p>Entreprise support réelle. Données internes et situations du scénario simulées pour le TP.</p></div></div>
+    <div><h4>Parcours</h4><p><a href="situations/01-diagnostic-veille.html">Diagnostic global</a><br><a href="restitution-finale.html">Restitution finale</a></p></div>
+    <div><h4>Ressources</h4><p><a href="fiches-pratiques/index.html">Fiches pratiques</a><br><a href="ressources-html/R01-1083-entreprise.html">Repères sur l’entreprise</a></p></div>
+    <div><h4>Cadre pédagogique</h4><p>BTS GPME · Participer à la gestion des risques de la PME</p></div>
+  </div>
+  <div class="footer-bottom"><strong>Simulation pédagogique non officielle.</strong><span>Identité visuelle pédagogique noir / rouge / blanc · Montserrat</span></div>
+</footer>
+<div id="readingOverlay" class="reading-overlay" hidden></div>
+<aside id="readingPanel" class="reading-panel" hidden aria-labelledby="readingTitle">
+  <div class="reading-panel__head"><div><span class="reading-panel__eyebrow">Affichage</span><h2 id="readingTitle">Confort de lecture</h2></div><button type="button" class="reading-panel__close" aria-label="Fermer le panneau">×</button></div>
+  <p class="reading-panel__intro">Adapte l’affichage à ce qui t’aide. Le contenu ne change pas et aucun profil d’élève n’est imposé.</p>
+  <section class="reading-group" aria-labelledby="profilesLabel"><span id="profilesLabel" class="reading-label">Profils rapides</span><div class="reading-profiles"><button type="button" data-profile="standard"><strong>Standard</strong><small>Affichage par défaut</small></button><button type="button" data-profile="comfortable"><strong>Lecture confortable</strong><small>Plus grand et plus aéré</small></button><button type="button" data-profile="contrast"><strong>Contraste renforcé</strong><small>Texte plus contrasté</small></button><button type="button" data-profile="lines"><strong>Lignes colorées</strong><small>Repérage ligne par ligne</small></button></div></section>
+  <section class="reading-group"><span class="reading-label">Police</span><div class="reading-controls"><button type="button" data-font="standard">Standard</button><button type="button" data-font="verdana">Verdana</button><button type="button" data-font="dys">OpenDyslexic</button></div><p class="reading-help">OpenDyslexic est intégrée au site ; Verdana reste disponible comme alternative.</p></section>
+  <section class="reading-group"><span class="reading-label">Taille du texte</span><div class="reading-stepper"><button type="button" data-size-minus aria-label="Réduire la taille du texte">−</button><output data-size-output>100 %</output><button type="button" data-size-plus aria-label="Augmenter la taille du texte">+</button></div></section>
+  <section class="reading-group"><span class="reading-label">Interligne</span><div class="reading-stepper"><button type="button" data-line-minus aria-label="Réduire l’interligne">−</button><output data-line-output>1.66</output><button type="button" data-line-plus aria-label="Augmenter l’interligne">+</button></div></section>
+  <section class="reading-group"><div class="reading-toggle-row"><div><strong>Alternance des lignes</strong><small>Alterne automatiquement les couleurs entre les lignes réellement affichées. Les titres et les contenus visuels ne changent pas.</small></div><button type="button" class="reading-switch" role="switch" aria-checked="false" data-lines-toggle aria-label="Activer l’alternance des couleurs entre les lignes"><span></span></button></div><div class="reading-line-sample" aria-hidden="true"><span>Première ligne</span><span>Deuxième ligne</span><span>Troisième ligne</span></div></section>
+  <section class="reading-group"><div class="reading-toggle-row"><div><strong>Guide de ligne</strong><small>Suit le pointeur pour aider à garder la ligne en cours.</small></div><button type="button" class="reading-switch" role="switch" aria-checked="false" data-ruler-toggle aria-label="Activer le guide de ligne"><span></span></button></div></section>
+  <details class="reading-advanced"><summary>Options avancées</summary><section class="reading-group"><span class="reading-label">Espacement lettres et mots</span><div class="reading-controls"><button type="button" data-spacing="normal">Normal</button><button type="button" data-spacing="medium">Aéré</button><button type="button" data-spacing="wide">Très aéré</button></div></section></details>
+  <button class="reading-reset" type="button" data-reset-reading>Réinitialiser les réglages</button>
+</aside>
+<div id="readingRuler" class="reading-ruler" aria-hidden="true"></div>
+</body></html>
