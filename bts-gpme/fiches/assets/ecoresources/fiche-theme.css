@@ -1,0 +1,99 @@
+/* ÉcoRessources — charte commune appliquée aux fiches, sans modifier leur logique pédagogique. */
+@font-face{font-family:"OpenDyslexic";font-style:normal;font-weight:400;font-display:swap;src:url("fonts/OpenDyslexic-Regular.woff2") format("woff2")}
+@font-face{font-family:"OpenDyslexic";font-style:normal;font-weight:700;font-display:swap;src:url("fonts/OpenDyslexic-Bold.woff2") format("woff2")}
+
+body.eco-fiche-shell{
+  --eco-green:#1E5B38;--eco-green-logo:#214734;--eco-green-deep:#15392A;
+  --eco-orange:#BF5F2C;--eco-bg:#F7F2ED;--eco-paper:#FFFDFA;
+  --eco-ink:#20211F;--eco-muted:#6E6A65;--eco-line:#E4D9CF;
+  padding-left:0!important;padding-top:88px!important;background:var(--eco-bg)!important;
+  color:var(--eco-ink)!important;font-family:Montserrat,Inter,Arial,sans-serif!important;
+}
+body.eco-fiche-shell .v41-sidebar,body.eco-fiche-shell .v42-mobile-top{display:none!important}
+body.eco-fiche-shell main.resource-page,body.eco-fiche-shell main.v41-page,body.eco-fiche-shell .resource-center{
+  background:var(--eco-bg)!important;padding:1.35rem clamp(.8rem,3vw,3rem) 4rem!important;
+}
+body.eco-fiche-shell .v41-page-inner,body.eco-fiche-shell article.resource{
+  max-width:1080px!important;background:var(--eco-paper)!important;border:1px solid var(--eco-line)!important;
+  border-radius:18px!important;box-shadow:0 12px 32px rgba(58,42,31,.07)!important;
+}
+body.eco-fiche-shell .v41-page-header,body.eco-fiche-shell .resource__header{border-bottom-color:#eadfd5!important}
+body.eco-fiche-shell .v41-page-header h1,body.eco-fiche-shell .resource__header h1{color:var(--eco-green-logo)!important}
+body.eco-fiche-shell .v41-page-header p,body.eco-fiche-shell .resource__lead{color:var(--eco-muted)!important}
+body.eco-fiche-shell .v41-page-header .v41-type,body.eco-fiche-shell .resource__type,body.eco-fiche-shell .v42-kicker{
+  background:#F7E9DF!important;color:var(--eco-orange)!important;border:1px solid #EED5C4!important;
+}
+body.eco-fiche-shell .v41-page-section h2,body.eco-fiche-shell .v40-editorial h2,body.eco-fiche-shell .v40-editorial h3{color:#294D3A!important}
+body.eco-fiche-shell .v41-notion-page .v41-definition{
+  background:#F4F8F4!important;border-left-color:var(--eco-green)!important;color:#26372D!important;
+}
+body.eco-fiche-shell .v41-chip{
+  border-color:#D7E3DA!important;background:#fff!important;color:#315B43!important;
+}
+body.eco-fiche-shell .v41-chip:hover,body.eco-fiche-shell .v41-chip:focus-visible{border-color:#82A58E!important;background:#F1F6F2!important}
+body.eco-fiche-shell .v41-training-card,body.eco-fiche-shell .v42-action-link{
+  border-color:#E5DAD0!important;background:#fff!important;color:#30342F!important;box-shadow:none!important;
+}
+body.eco-fiche-shell .v41-training-card:hover,body.eco-fiche-shell .v42-action-link:hover{
+  border-color:#CFAE98!important;background:#FFF9F4!important;
+}
+body.eco-fiche-shell .v42-page-training-toggle,body.eco-fiche-shell .v41-more-btn{
+  border-color:#D8C9BE!important;color:#315B43!important;background:#fff!important;
+}
+body.eco-fiche-shell .v41-feedback-link{border-top-color:#E9DED5!important}
+body.eco-fiche-shell .v41-feedback-open{background:#F3ECE5!important;color:#665A51!important}
+.eco-fiche-topbar{
+  position:fixed;z-index:13000;top:0;left:0;right:0;min-height:88px;
+  display:grid;grid-template-columns:auto 1fr auto;align-items:center;gap:1rem;
+  padding:.72rem 1.35rem;background:rgba(251,247,243,.97);border-bottom:1px solid var(--eco-line);
+  backdrop-filter:blur(10px);box-shadow:0 4px 16px rgba(58,42,31,.035);
+}
+.eco-fiche-brand{display:flex;align-items:center;gap:.72rem;text-decoration:none;color:inherit}
+.eco-fiche-mark{width:52px;height:52px;border-radius:14px;background:#fff;display:grid;place-items:center;box-shadow:0 4px 15px rgba(0,0,0,.05)}
+.eco-fiche-mark svg{width:40px;height:40px}.eco-fiche-copy strong{display:block;font-size:1.65rem;line-height:1;color:var(--eco-green-logo)}
+.eco-fiche-copy strong span{color:var(--eco-orange)}.eco-fiche-copy small{display:block;margin-top:.2rem;font-size:.75rem;color:#514C47}
+.eco-fiche-nav{display:flex;justify-content:center;gap:1.6rem}.eco-fiche-nav a{text-decoration:none;color:#383A37;font-size:.82rem;font-weight:700;padding:.55rem .25rem;border-bottom:3px solid transparent}
+.eco-fiche-nav a:hover,.eco-fiche-nav a:focus-visible{color:var(--eco-orange);border-bottom-color:var(--eco-orange);outline:none}
+.eco-fiche-actions{display:flex;align-items:center;gap:.55rem}.eco-fiche-actions button{
+  min-height:44px;border:1px solid #D8CCC1;background:#fff;color:#26372D;border-radius:14px;padding:.65rem .82rem;
+  font:inherit;font-weight:760;cursor:pointer;box-shadow:0 5px 16px rgba(0,0,0,.04)
+}
+.eco-fiche-actions button:hover,.eco-fiche-actions button:focus-visible{border-color:#AFC3B5;outline:3px solid rgba(191,95,44,.16);outline-offset:2px}
+.eco-fiche-reading::before{content:"◉";display:inline-grid;place-items:center;width:24px;height:24px;margin-right:.42rem;border-radius:50%;background:var(--eco-green);color:#fff;font-size:.72rem}
+body.eco-fiche-shell .v42-reading-panel{border-color:#DED2C8!important;color:var(--eco-ink)!important;background:#FFFAF6!important;box-shadow:0 24px 70px rgba(58,42,31,.20)!important}
+body.eco-fiche-shell .v42-reading-row button[aria-pressed="true"]{background:var(--eco-green)!important;border-color:var(--eco-green)!important;color:#fff!important}
+body.eco-fiche-shell .v42-reading-panel button:focus-visible,body.eco-fiche-shell .v42-reading-open:focus-visible{outline-color:rgba(191,95,44,.35)!important}
+body.eco-fiche-shell.dys-mode,body.eco-fiche-shell.dys-mode input,body.eco-fiche-shell.dys-mode textarea,body.eco-fiche-shell.dys-mode select,body.eco-fiche-shell.dys-mode button{font-family:"OpenDyslexic",Arial,Verdana,sans-serif!important}
+
+body.theme-dark.eco-fiche-shell{--eco-bg:#101713;--eco-paper:#182019;--eco-ink:#EEF3EF;--eco-muted:#B4BDB6;--eco-line:#354239;background:var(--eco-bg)!important;color:var(--eco-ink)!important}
+body.theme-dark.eco-fiche-shell .eco-fiche-topbar{background:rgba(18,27,21,.97);border-bottom-color:#354239}
+body.theme-dark.eco-fiche-shell .eco-fiche-copy strong{color:#E9F0EB}.theme-dark .eco-fiche-copy small,.theme-dark .eco-fiche-nav a{color:#CFD7D1}
+body.theme-dark.eco-fiche-shell .eco-fiche-actions button{background:#202B23;color:#EEF3EF;border-color:#455249}
+body.theme-dark.eco-fiche-shell .v41-page-inner,body.theme-dark.eco-fiche-shell article.resource{background:var(--eco-paper)!important;border-color:var(--eco-line)!important}
+
+@media(max-width:760px){
+  body.eco-fiche-shell{padding-top:122px!important}
+  .eco-fiche-topbar{grid-template-columns:1fr auto;grid-template-areas:"brand actions" "nav nav";padding:.55rem .75rem;gap:.35rem .7rem}
+  .eco-fiche-brand{grid-area:brand}.eco-fiche-actions{grid-area:actions}.eco-fiche-nav{grid-area:nav;border-top:1px solid #E8DDD4;padding-top:.32rem;justify-content:space-around;gap:.3rem}
+  .eco-fiche-mark{width:43px;height:43px}.eco-fiche-mark svg{width:33px;height:33px}.eco-fiche-copy strong{font-size:1.35rem}.eco-fiche-copy small{display:none}
+  .eco-fiche-print{display:none}.eco-fiche-actions button{width:44px;height:44px;padding:0;font-size:0}.eco-fiche-reading::before{margin:0;width:28px;height:28px;font-size:.8rem}
+  .eco-fiche-nav a{font-size:.72rem;padding:.35rem .2rem}
+  body.eco-fiche-shell main.resource-page,body.eco-fiche-shell main.v41-page,body.eco-fiche-shell .resource-center{padding:.8rem .55rem 3rem!important}
+  body.eco-fiche-shell .v41-page-inner,body.eco-fiche-shell article.resource{padding:1.05rem!important;border-radius:15px!important}
+}
+@media print{.eco-fiche-topbar{display:none!important}body.eco-fiche-shell{padding-top:0!important}}
+@media(max-width:760px){
+  html,body.eco-fiche-shell{max-width:100%;overflow-x:hidden}
+  .eco-fiche-topbar{grid-template-columns:minmax(0,1fr) 48px!important;width:100%;max-width:100vw;overflow:hidden}
+  .eco-fiche-brand,.eco-fiche-copy{min-width:0}.eco-fiche-copy strong{font-size:1.25rem;white-space:nowrap}
+  .eco-fiche-actions{justify-self:end;min-width:44px}.eco-fiche-actions .eco-fiche-reading{display:grid!important;place-items:center!important}
+  .eco-fiche-nav{display:grid!important;grid-template-columns:repeat(3,minmax(0,1fr));width:100%;min-width:0}
+  .eco-fiche-nav a{display:block;text-align:center;white-space:nowrap;min-width:0;font-size:.68rem}
+  body.eco-fiche-shell .v41-page-inner,body.eco-fiche-shell article.resource{width:100%!important;max-width:100%!important;min-width:0!important}
+  body.eco-fiche-shell .v41-training-grid{grid-template-columns:minmax(0,1fr)!important;min-width:0}
+  body.eco-fiche-shell .v41-training-card,body.eco-fiche-shell .v42-action-link{min-width:0;overflow-wrap:anywhere}
+  body.eco-fiche-shell .v41-definition{overflow-wrap:anywhere}
+}
+
+/* ÉcoRessources porte désormais l'action d'impression dans le bandeau commun. */
+.eco-fiche-shell .print-pdf-toolbar{display:none!important}

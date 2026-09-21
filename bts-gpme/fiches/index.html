@@ -1,1 +1,130 @@
-<!doctype html><html lang="fr"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>BTS GPME — Ressources professionnelles</title><link rel="stylesheet" href="assets/demo.css"><link rel="stylesheet" href="assets/app-v41.css"><script defer src="assets/search-index-v41.js"></script><script defer src="assets/knowledge-brief-v41.js"></script><script defer src="assets/app-v41.js"></script></head><body class="v41-home-body"><main class="v41-home"><div class="v41-home__hero"><span class="v41-home__eyebrow">Un espace pour comprendre, faire et s'entraîner</span><h1>Que voulez-vous faire ?</h1><p class="v41-home__lead">Recherchez une notion, une méthode ou une situation professionnelle pour avancer dans votre travail.</p><div class="v41-domain-pills"><span>Clients &amp; fournisseurs</span><span>Risques</span><span>Ressources humaines</span><span>Fonctionnement &amp; développement</span></div><h2 class="v41-home__prompt">Choisissez votre point de départ</h2></div><div class="v41-home-cards"><a class="v41-home-card v41-home-card--notion" href="connaissances/index.html"><span class="v41-home-card__icon"><img src="assets/icons/knowledge.svg" alt=""></span><h2>1. Comprendre une notion</h2><p>Je cherche le sens d’un terme, d’un concept ou d’un mécanisme.</p><small>BFR, criticité, CSE, affacturage…</small></a><a class="v41-home-card v41-home-card--method" href="ressources/index.html"><span class="v41-home-card__icon"><img src="assets/icons/method.svg" alt=""></span><h2>2. Savoir comment faire</h2><p>Je cherche une méthode ou un outil pour réaliser une tâche.</p><small>Chaîne de valeur, rapprochement bancaire, veille, Pareto…</small></a><a class="v41-home-card v41-home-card--train" href="missions/index.html"><span class="v41-home-card__icon"><img src="assets/icons/mission.svg" alt=""></span><h2>3. M’entraîner</h2><p>Je mets en pratique dans une situation professionnelle et j’utilise les ressources dont j’ai besoin.</p><small>Missions, exercices, situations avec PGI…</small></a></div><div class="v41-home-note"><strong>Astuce :</strong> utilisez la recherche dans le panneau de gauche. Repliez-le ensuite pour consacrer presque tout l’écran à votre ressource.</div></main></body></html>
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>ÉcoRessources — BTS GPME</title>
+  <link rel="stylesheet" href="assets/ecoresources/home.css">
+  <script defer src="assets/search-index-v42.js?v=4.2.2"></script>
+  <script defer src="assets/ecoresources/search-extra-v1.js"></script>
+  <script defer src="assets/ecoresources/home.js"></script>
+</head>
+<body>
+<a class="skip-link" href="#main">Aller au contenu</a>
+
+<!-- BANDEAU INDÉPENDANT : volontairement hors du visuel hero. -->
+<header class="topbar">
+  <a class="brand" href="index.html" aria-label="Accueil ÉcoRessources">
+    <span class="brand-mark" aria-hidden="true">
+      <svg viewBox="0 0 64 64">
+        <path d="M9 38c8-1 15 3 20 11-9 4-21 2-27-6 1-3 3-4 7-5Z" fill="#E4A56A"/>
+        <path d="M11 15c12 1 21 9 24 24-12 2-24-7-27-18 1-4 1-5 3-6Z" fill="#E7B583"/>
+        <path d="M53 13c1 10-2 19-9 26-7 7-16 10-26 10 1-10 4-19 11-26 7-7 15-10 24-10Z" fill="#1E553B"/>
+        <path d="M33 17c0 19-1 29-4 36" stroke="#fff6ef" stroke-width="3" stroke-linecap="round"/>
+      </svg>
+    </span>
+    <span class="brand-copy">
+      <strong>Éco<span>Ressources</span></strong>
+      <small>BTS GPME · Comprendre aujourd’hui, agir demain</small>
+    </span>
+  </a>
+
+  <nav class="topnav" aria-label="Navigation principale"><a href="referentiel/index.html"><span aria-hidden="true">▤</span><small>Référentiel</small></a><a href="demarrer/index.html"><span aria-hidden="true">?</span><small>Aide</small></a><a href="apropos/index.html"><span aria-hidden="true">i</span><small>À propos</small></a></nav>
+
+  <button class="reading-entry" type="button" data-open-reading aria-expanded="false" aria-controls="readingPanel">
+    <span aria-hidden="true">◉</span><b>Confort de lecture</b>
+  </button>
+</header>
+
+<main id="main">
+  <section class="hero-wrap" aria-label="Accueil ÉcoRessources">
+    <div class="hero-stage">
+      <picture class="hero-picture">
+        <source media="(max-width:720px)" srcset="assets/ecoresources/hero-mobile.png">
+        <img src="assets/ecoresources/hero-desktop.png" alt="Trois étudiants souriants dans une ambiance de progression et de réussite">
+      </picture>
+      <img class="hero-decoration hero-decoration-left-title" src="assets/ecoresources/hero-decoration-desktop.png" alt="" aria-hidden="true">
+      <img class="hero-decoration hero-decoration-left-list" src="assets/ecoresources/hero-decoration-desktop.png" alt="" aria-hidden="true">
+      <img class="hero-decoration hero-decoration-right" src="assets/ecoresources/hero-decoration-desktop.png" alt="" aria-hidden="true">
+      <img class="hero-decoration hero-decoration-bottom" src="assets/ecoresources/hero-decoration-desktop.png" alt="" aria-hidden="true">
+
+      <!-- Couche fonctionnelle superposée au visuel figé.
+           Les textes graphiques restent ceux de l'image de référence. -->
+      <form class="search-hotspot" role="search" data-search-form>
+        <label class="sr-only" for="homeSearch">Rechercher une notion, une question ou un mot-clé</label>
+        <input id="homeSearch" type="search" placeholder="Rechercher une notion, une question, un mot-clé…" autocomplete="off">
+        <button type="submit" aria-label="Rechercher"><span class="sr-only">Rechercher</span></button>
+      </form>
+
+      <div class="search-popover" data-search-popover hidden aria-live="polite"></div>
+
+      <a class="door-hotspot door-situation" href="situations.html" aria-label="Partir d’une situation professionnelle"></a>
+      <a class="door-hotspot door-az" href="az.html" aria-label="Explorer les notions par ordre alphabétique"></a>
+    </div>
+
+    <div class="search-feedback" data-search-feedback hidden aria-live="polite"></div>
+  </section>
+
+  </main>
+
+<footer class="footer" id="apropos">
+  <div class="footer-brand"><strong>Éco<span>Ressources</span></strong><small>BTS GPME · Comprendre aujourd’hui, agir demain</small></div>
+
+</footer>
+
+<div class="overlay" data-overlay hidden></div>
+<aside id="readingPanel" class="reading-panel" hidden aria-labelledby="readingTitle">
+  <div class="reading-panel__head">
+    <div><span>Affichage</span><h2 id="readingTitle">Confort de lecture</h2></div>
+    <button type="button" data-close-reading aria-label="Fermer">×</button>
+  </div>
+
+  <p class="reading-intro">Ces réglages concernent l’affichage des contenus de lecture. Ils ne modifient ni leur structure ni leur contenu.</p>
+
+  <section>
+    <h3>Police</h3>
+    <div class="button-row">
+      <button type="button" data-font="system">Standard</button>
+      <button type="button" data-font="verdana">Verdana</button>
+      <button type="button" data-font="dys">OpenDyslexic</button>
+    </div>
+    <p class="helper">La police OpenDyslexic est intégrée au site.</p>
+  </section>
+
+  <section>
+    <h3>Taille du texte</h3>
+    <div class="adjuster">
+      <button type="button" data-size="minus">−</button>
+      <output data-size-label>100 %</output>
+      <button type="button" data-size="plus">+</button>
+    </div>
+  </section>
+
+  <section>
+    <h3>Interligne</h3>
+    <div class="adjuster">
+      <button type="button" data-line="minus">−</button>
+      <output data-line-label>1,60</output>
+      <button type="button" data-line="plus">+</button>
+    </div>
+  </section>
+
+  <section>
+    <div class="switch-row">
+      <div>
+        <strong>Alternance des lignes</strong>
+        <small>La couleur alterne ligne par ligne. Le poids du texte est légèrement renforcé pour que l’aide reste perceptible avec une police légère.</small>
+      </div>
+      <button type="button" class="switch" role="switch" aria-checked="false" data-lines><span></span></button>
+    </div>
+  </section>
+
+  <section class="preview-zone">
+    <h3>Aperçu</h3>
+    <p data-preview>Le besoin en fonds de roulement mesure le financement nécessaire pour couvrir le décalage entre les décaissements et les encaissements liés au cycle d’exploitation.</p>
+  </section>
+
+  <button type="button" class="reset" data-reset>Réinitialiser</button>
+</aside>
+</body>
+</html>

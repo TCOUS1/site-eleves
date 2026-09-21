@@ -1,8 +1,60 @@
+.dys-skip-link{position:fixed;left:12px;top:-120px;z-index:12000;background:#fff;color:#111;padding:10px 14px;border:2px solid #111;border-radius:8px;font:700 15px/1.25 system-ui,sans-serif}.dys-skip-link:focus{top:8px}
+.reading-overlay{position:fixed;inset:0;z-index:10050;background:rgba(40,31,26,.28);backdrop-filter:blur(1px)}
+.reading-panel{position:fixed;z-index:10100;top:0;right:0;width:min(410px,100vw);height:100dvh;overflow:auto;background:#fffdf9;color:#332a24;border-left:1px solid #dfd1c4;box-shadow:-18px 0 45px rgba(61,44,33,.16);padding:1rem 1rem 1.4rem}
+.reading-panel[hidden],.reading-overlay[hidden]{display:none!important}
+.reading-panel__head{display:flex;align-items:flex-start;justify-content:space-between;gap:1rem;padding-bottom:.8rem;border-bottom:1px solid #e3d7ca}
+.reading-panel__eyebrow{display:block;text-transform:uppercase;letter-spacing:.06em;font-size:.72rem;font-weight:800;color:#a15135}
+.reading-panel h2{margin:.12rem 0 0;font-size:1.35rem}
+.reading-panel__close{appearance:none;border:0;background:#f2e7dc;color:#5a4034;width:2.55rem;height:2.55rem;border-radius:50%;font-size:1.45rem;cursor:pointer}
+.reading-panel__intro{font-size:.94rem;color:#66584f;background:#f8efe6;padding:.8rem .9rem;border-radius:10px}
+.reading-group{padding:.85rem 0;border-bottom:1px solid #eee4db}
+.reading-label{display:block;font-weight:800;margin-bottom:.55rem}
+.reading-help{font-size:.78rem;color:#796b61;margin:.45rem 0 0}
+.reading-controls{display:flex;gap:.4rem;flex-wrap:wrap}
+.reading-controls button,.reading-profiles button,.reading-reset{appearance:none;border:1px solid #d9c9bc;background:#fff;color:#43372f;border-radius:9px;padding:.56rem .65rem;font:inherit;cursor:pointer}
+.reading-controls button[aria-pressed="true"],.reading-profiles button[aria-pressed="true"]{background:#f2dfd2;border-color:#bd7354;color:#6d3625}
+.reading-profiles{display:grid;grid-template-columns:1fr 1fr;gap:.5rem}
+.reading-profiles button{text-align:left;min-height:64px}
+.reading-profiles strong,.reading-profiles small{display:block}
+.reading-profiles small{margin-top:.18rem;color:#74665d;font-size:.75rem}
+.reading-stepper{display:grid;grid-template-columns:42px 1fr 42px;gap:.45rem;align-items:center}
+.reading-stepper button{appearance:none;border:1px solid #d9c9bc;background:#f7efe7;border-radius:9px;min-height:42px;font-size:1.15rem;cursor:pointer}
+.reading-stepper output{text-align:center;font-weight:800;padding:.5rem;border-radius:9px;background:#f8f5f1}
+.reading-toggle-row{display:flex;align-items:center;justify-content:space-between;gap:1rem}
+.reading-toggle-row strong,.reading-toggle-row small{display:block}
+.reading-toggle-row small{font-size:.76rem;color:#74665d;margin-top:.14rem;max-width:290px}
+.reading-switch{appearance:none;border:0;background:#c9c5c1;width:52px;height:30px;border-radius:999px;padding:3px;cursor:pointer;flex:0 0 auto}
+.reading-switch span{display:block;width:24px;height:24px;border-radius:50%;background:#fff;transition:transform .18s ease}
+.reading-switch[aria-checked="true"]{background:#70805f}
+.reading-switch[aria-checked="true"] span{transform:translateX(22px)}
+.reading-line-sample{display:grid;gap:.14rem;margin-top:.65rem;padding:.55rem .7rem;border:1px solid #e3d7ca;border-radius:9px;background:#fff}
+.reading-line-sample span{font-size:.8rem;font-weight:650}
+.reading-line-sample span:nth-child(1){color:#1f4e79}
+.reading-line-sample span:nth-child(2){color:#9b2c2c}
+.reading-line-sample span:nth-child(3){color:#245c46}
+.reading-advanced summary{cursor:pointer;font-weight:800;padding:.8rem 0;color:#69493a}
+.reading-reset{width:100%;margin-top:1rem;background:#f7efe7;font-weight:800}
+.reading-panel button:focus-visible,.reading-panel select:focus-visible{outline:3px solid #df9a45;outline-offset:2px}
 
-@font-face{font-family:"OpenDyslexic";font-style:normal;font-weight:400;font-display:swap;src:local("OpenDyslexic"),local("OpenDyslexic Regular"),url("https://cdn.jsdelivr.net/fontsource/fonts/opendyslexic@5.3.0/latin-400-normal.woff2") format("woff2")}
-@font-face{font-family:"OpenDyslexic";font-style:normal;font-weight:700;font-display:swap;src:local("OpenDyslexic Bold"),url("https://cdn.jsdelivr.net/fontsource/fonts/opendyslexic@5.3.0/latin-700-normal.woff2") format("woff2")}
-.dys-skip-link{position:fixed;left:12px;top:-120px;z-index:10001;background:#fff;color:#111;padding:10px 14px;border:2px solid #111;border-radius:8px;font:700 15px/1.25 system-ui,sans-serif}.dys-skip-link:focus{top:8px}
-#dys-toolbar{box-sizing:border-box;position:sticky;z-index:9999;top:0;width:100%;display:flex;align-items:center;justify-content:flex-end;gap:6px;flex-wrap:wrap;min-height:52px;padding:6px max(10px,calc((100vw - 1160px)/2));background:rgba(255,255,255,.98);color:#263746;border-bottom:1px solid #9ba8b4;box-shadow:0 3px 14px rgba(20,35,50,.12);font:14px/1.2 system-ui,-apple-system,"Segoe UI",Arial,sans-serif}#dys-toolbar .dys-toolbar__label{font-weight:750;padding:0 5px;white-space:nowrap}#dys-toolbar button{appearance:none;border:1px solid #315d77;background:#315d77;color:#fff;border-radius:8px;min-width:44px;min-height:40px;padding:7px 10px;font:700 14px/1.05 system-ui,sans-serif;cursor:pointer}#dys-toolbar button:hover{background:#24485f}#dys-toolbar button:focus-visible{outline:3px solid #f0a500;outline-offset:2px}#dys-toolbar #btn-dys[aria-pressed="true"]{background:#f0a500;color:#111;border-color:#b87900}#dys-toolbar #btn-theme[aria-pressed="true"]{background:#263746;color:#fff;border-color:#263746}#dys-toolbar .dys-reset{background:#fff;color:#24485f}#dys-toolbar .dys-toolbar__state{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}#dys-toolbar .dys-theme-icon{font-size:1.05em;margin-right:3px}
-body.dys-mode,body.dys-mode input,body.dys-mode textarea,body.dys-mode select,body.dys-mode button:not(#dys-toolbar button){font-family:"OpenDyslexic",Arial,Verdana,Tahoma,sans-serif!important}body.dys-mode{letter-spacing:.03em;word-spacing:.075em;line-height:1.85!important;text-align:left!important;hyphens:none!important}body.dys-mode p,body.dys-mode li,body.dys-mode dd,body.dys-mode td,body.dys-mode th,body.dys-mode summary{line-height:1.85!important}body.dys-mode h1,body.dys-mode h2,body.dys-mode h3{letter-spacing:0!important;line-height:1.4!important}body.dys-mode a{text-decoration-thickness:2px;text-underline-offset:.22em}
-body.theme-dark #dys-toolbar{background:rgba(20,26,31,.99);color:#eef3f6;border-bottom-color:#56636d;box-shadow:0 3px 16px rgba(0,0,0,.35)}body.theme-dark #dys-toolbar button{background:#d6e7f0;color:#10161a;border-color:#d6e7f0}body.theme-dark #dys-toolbar #btn-dys[aria-pressed="true"],body.theme-dark #dys-toolbar #btn-theme[aria-pressed="true"]{background:#ffd36a;color:#17120a;border-color:#ffd36a}body.theme-dark #dys-toolbar .dys-reset{background:#222b31;color:#eef3f6;border-color:#8ba0ad}
-@media(max-width:640px){#dys-toolbar{justify-content:center;padding:6px 7px}#dys-toolbar .dys-toolbar__label{width:100%;text-align:center}#dys-toolbar button{min-height:38px;padding:6px 9px}}
+/* Les couleurs sont appliquées aux mots selon leur ligne visuelle réelle.
+   Les titres et les objets visuels ne sont jamais transformés. */
+.reading-line-token{color:inherit}
+body.reading-lines-on .reading-line-token{transition:none}
+
+@media(max-width:520px){.reading-profiles{grid-template-columns:1fr}.reading-panel{width:100vw}}
+@media print{.reading-open,.reading-panel,.reading-overlay,.reading-ruler{display:none!important}}
+
+/* OpenDyslexic intégrée localement au site. */
+@font-face{font-family:"OpenDyslexic";src:url("fonts/OpenDyslexic-Regular.woff2") format("woff2");font-weight:400;font-style:normal;font-display:swap}
+@font-face{font-family:"OpenDyslexic";src:url("fonts/OpenDyslexic-Bold.woff2") format("woff2");font-weight:700;font-style:normal;font-display:swap}
+@font-face{font-family:"OpenDyslexic";src:url("fonts/OpenDyslexic-Italic.woff2") format("woff2");font-weight:400;font-style:italic;font-display:swap}
+@font-face{font-family:"OpenDyslexic";src:url("fonts/OpenDyslexic-BoldItalic.woff2") format("woff2");font-weight:700;font-style:italic;font-display:swap}
+body.reading-font-verdana{font-family:Verdana,Arial,sans-serif!important}
+body.reading-font-dys{font-family:"OpenDyslexic",Verdana,Arial,sans-serif!important}
+
+/* Comportements communs du confort de lecture */
+body.reading-contrast{background:#fff!important;color:#111!important}
+body.reading-contrast main,body.reading-contrast .mission-tools,body.reading-contrast .eco-topbar,body.reading-contrast .section-card,body.reading-contrast .guide-section,body.reading-contrast .task-section{color:#111!important}
+.reading-ruler{position:fixed;z-index:11000;left:0;right:0;height:3.2rem;pointer-events:none;border-top:2px solid rgba(184,94,58,.42);border-bottom:2px solid rgba(184,94,58,.42);background:rgba(255,249,240,.12);display:none}
+body.reading-ruler-on .reading-ruler{display:block}
+@media print{.reading-ruler{display:none!important}}

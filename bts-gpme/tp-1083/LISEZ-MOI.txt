@@ -1,8 +1,26 @@
-TP 1083 — version HTML 1.2 — ÉLÈVE
+TP 1083 — candidat prépublication ÉcoRessources — 20/09/2026
 
-Ouvrir index.html dans un navigateur.
+POINT D’ENTRÉE CANONIQUE : index.html
 
-Le TP fonctionne sans installation locale. Le bandeau de confort de lecture permet fond clair/foncé, OpenDyslexic et réglage de taille.
-Les fiches pratiques sont dans fiches-pratiques/ et sont conçues pour être réutilisées en stage en les adaptant à l’entreprise.
+L’accueil 1083 V0.4 conserve son identité immersive spécifique. Il conduit au parcours composé de six situations puis à la restitution finale.
 
-La recherche Internet n’est pas généralisée : chaque situation indique explicitement quand elle est attendue. La tâche 25 de la situation 5 demande une mise à jour réelle de veille.
+Les pages intérieures utilisent la grammaire visuelle ÉcoRessources :
+- identité ÉcoRessources visible ;
+- espace de travail centré sur la mission et les tâches ;
+- ressources latérales repliables sur ordinateur et accessibles par panneau sur mobile ;
+- conseils repliés par défaut ;
+- référentiel relié directement au référentiel commun du site ;
+- confort de lecture commun : police, taille, interligne, espacement, contraste, alternance des lignes et guide de ligne ;
+- impression disponible lorsque la production le nécessite.
+
+Les ressources étudiantes sont regroupées sous des noms canoniques non versionnés. Les anciennes copies intermédiaires ne font plus partie du parcours publié.
+
+Les fiches pratiques du TP restent des guides de transfert liés au cas. Elles renvoient vers les ressources canoniques d’ÉcoRessources lorsqu’une ressource commune existe.
+
+Le guide de mise en forme de la note de synthèse et du rapport d’activité est disponible dans outils/guide-mise-en-forme-note-rapport.html.
+
+Les visuels photographiques de l’accueil sont stockés localement : aucune ressource graphique externe n’est chargée passivement à l’ouverture des pages.
+
+Les situations et données internes du scénario sont pédagogiques et fictives lorsqu’elles ne correspondent pas à des informations publiques sourcées sur 1083.
+
+ÉTAT : prêt pour contrôle visuel final puis mise en ligne. Le contenu pédagogique consolidé correspond à la version locale 2.3, avec situation 6 qualité v2.2 intégrée.

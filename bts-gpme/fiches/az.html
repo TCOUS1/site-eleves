@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Explorer de A à Z — ÉcoRessources</title>
+<link rel="stylesheet" href="assets/ecoresources/transitions.css">
+<script defer src="assets/search-index-v42.js?v=4.2.2"></script>
+<script defer src="assets/ecoresources/transitions.js"></script>
+</head>
+<body>
+<a class="skip-link" href="#main">Aller au contenu</a>
+
+<header class="topbar">
+  <a class="brand" href="index.html">
+    <span class="brand-mark" aria-hidden="true">
+      <svg viewBox="0 0 64 64">
+        <path d="M9 38c8-1 15 3 20 11-9 4-21 2-27-6 1-3 3-4 7-5Z" fill="#E4A56A"/>
+        <path d="M11 15c12 1 21 9 24 24-12 2-24-7-27-18 1-4 1-5 3-6Z" fill="#E7B583"/>
+        <path d="M53 13c1 10-2 19-9 26-7 7-16 10-26 10 1-10 4-19 11-26 7-7 15-10 24-10Z" fill="#1E553B"/>
+        <path d="M33 17c0 19-1 29-4 36" stroke="#fff6ef" stroke-width="3" stroke-linecap="round"/>
+      </svg>
+    </span>
+    <span class="brand-copy"><strong>Éco<span>Ressources</span></strong><small>BTS GPME · Comprendre aujourd’hui, agir demain</small></span>
+  </a>
+  <nav class="topnav" aria-label="Navigation principale"><a href="referentiel/index.html"><span aria-hidden="true">▤</span><small>Référentiel</small></a><a href="demarrer/index.html"><span aria-hidden="true">?</span><small>Aide</small></a><a href="apropos/index.html"><span aria-hidden="true">i</span><small>À propos</small></a></nav>
+  <button class="reading-entry" type="button" data-open-reading aria-expanded="false" aria-controls="readingPanel"><span aria-hidden="true">◉</span>Confort de lecture</button>
+  <button class="mobile-menu-btn" type="button" aria-label="Ouvrir le menu"><i></i><i></i><i></i></button>
+</header>
+<main id="main">
+  <div class="page-shell">
+    <div class="banner-frame banner-frame--html-copy"><img src="assets/ecoresources/bandeau-az.png" alt=""><div class="banner-copy"><nav class="banner-breadcrumb" aria-label="Fil d’Ariane"><a href="index.html">Accueil</a><span aria-hidden="true">›</span><span>Explorer de A à Z</span></nav><h1>Explorer de A à Z</h1><p>Retrouvez rapidement une notion du BTS GPME.</p></div></div>
+    
+<section class="menu-zone az-directory">
+  <div class="menu-zone__head"><div><span>Index des notions</span></div><p>Recherchez directement une notion ou choisissez sa première lettre.</p></div>
+  <div class="az-tools">
+    <label class="az-searchbox" for="azSearch"><span aria-hidden="true">&#128269;</span><input id="azSearch" type="search" autocomplete="off" placeholder="Rechercher une notion…"></label>
+    <div class="alphabet" aria-label="Choisir une lettre">
+      <button type="button" data-alpha="A">A</button><button type="button" data-alpha="B">B</button><button type="button" data-alpha="C">C</button><button type="button" data-alpha="D">D</button><button type="button" data-alpha="E">E</button><button type="button" data-alpha="F">F</button><button type="button" data-alpha="G">G</button><button type="button" data-alpha="H">H</button><button type="button" data-alpha="I">I</button><button type="button" data-alpha="J">J</button><button type="button" data-alpha="K">K</button><button type="button" data-alpha="L">L</button><button type="button" data-alpha="M">M</button><button type="button" data-alpha="N">N</button><button type="button" data-alpha="O">O</button><button type="button" data-alpha="P">P</button><button type="button" data-alpha="Q">Q</button><button type="button" data-alpha="R">R</button><button type="button" data-alpha="S">S</button><button type="button" data-alpha="T">T</button><button type="button" data-alpha="U">U</button><button type="button" data-alpha="V">V</button><button type="button" data-alpha="W">W</button><button type="button" data-alpha="X">X</button><button type="button" data-alpha="Y">Y</button><button type="button" data-alpha="Z">Z</button><button class="alpha-all is-current" type="button" data-alpha="">Toutes</button>
+    </div>
+    <p class="az-status" data-az-status aria-live="polite"></p>
+    <div class="az-list" data-az-list></div>
+  </div>
+</section>
+  </div>
+</main>
+<footer class="footer"><div><strong>Éco<span>Ressources</span></strong><small>BTS GPME · Comprendre aujourd’hui, agir demain</small></div></footer>
+
+<div class="overlay" data-overlay hidden></div>
+<aside id="readingPanel" class="reading-panel" hidden>
+  <div class="reading-panel__head"><div><small>Affichage</small><h2>Confort de lecture</h2></div><button type="button" data-close-reading>×</button></div>
+  <section><h3>Police</h3><div class="button-row"><button type="button" data-font="system">Standard</button><button type="button" data-font="verdana">Verdana</button><button type="button" data-font="dys">OpenDyslexic</button></div><p class="helper">La police OpenDyslexic est intégrée au site.</p></section>
+  <section><h3>Alternance des lignes</h3><button type="button" data-lines aria-checked="false">Activer / désactiver</button></section>
+  <section><h3>Aperçu</h3><p class="preview" data-preview>Comprendre une notion consiste à relier sa définition, son utilité et ses conséquences dans une situation professionnelle.</p></section>
+</aside>
+</body>
+</html>
