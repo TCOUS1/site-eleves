@@ -1,0 +1,28 @@
+{
+  "title": {
+    "tested": 145,
+    "top1": 145,
+    "top3": 145,
+    "worst": 1,
+    "fail": []
+  },
+  "use": {
+    "tested": 145,
+    "top1": 145,
+    "top3": 145,
+    "worst": 1,
+    "fail": []
+  },
+  "outcome": {
+    "tested": 145,
+    "top1": 145,
+    "top3": 145,
+    "worst": 1,
+    "fail": []
+  },
+  "challenge": {
+    "tested": 21,
+    "top1": 21,
+    "fails": []
+  }
+}

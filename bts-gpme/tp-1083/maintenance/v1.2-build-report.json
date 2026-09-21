@@ -1,0 +1,14 @@
+{
+  "version": "1.2",
+  "resources": 145,
+  "missions": 30,
+  "mission_unique_resources": 100,
+  "broken_local_links": 0,
+  "duplicate_id_pages": 0,
+  "generation_placeholder_pages": 0,
+  "critical_resources_missing_sections": 0,
+  "broken_examples": [],
+  "duplicate_examples": [],
+  "placeholder_examples": [],
+  "missing_section_examples": []
+}

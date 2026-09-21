@@ -1,0 +1,104 @@
+[
+  {
+    "query": "évaluer les risques",
+    "expected": "R-B2-001",
+    "actual": "R-B2-001",
+    "pass": true
+  },
+  {
+    "query": "évaluer les risques informatiques",
+    "expected": "R-B2-021",
+    "actual": "R-B2-021",
+    "pass": true
+  },
+  {
+    "query": "risques liés aux données",
+    "expected": "R-B2-018",
+    "actual": "R-B2-018",
+    "pass": true
+  },
+  {
+    "query": "qui peut voir les données",
+    "expected": "R-B2-023",
+    "actual": "R-B2-023",
+    "pass": true
+  },
+  {
+    "query": "preuve que mesure fonctionne",
+    "expected": "R-B2-029",
+    "actual": "R-B2-029",
+    "pass": true
+  },
+  {
+    "query": "absence de mode opératoire",
+    "expected": "R-B2-026",
+    "actual": "R-B2-026",
+    "pass": true
+  },
+  {
+    "query": "nom entreprise protéger contrefaçon",
+    "expected": "R-B2-017",
+    "actual": "R-B2-017",
+    "pass": true
+  },
+  {
+    "query": "mode opératoire",
+    "expected": "R-B2-026",
+    "actual": "R-B2-026",
+    "pass": true
+  },
+  {
+    "query": "combiner plusieurs ressources",
+    "expected": "H-COMPLEXE",
+    "actual": "H-COMPLEXE",
+    "pass": true
+  },
+  {
+    "query": "situation complexe",
+    "expected": "H-COMPLEXE",
+    "actual": "H-COMPLEXE",
+    "pass": true
+  },
+  {
+    "query": "challenger mon analyse",
+    "expected": "H-RAISONNEMENT",
+    "actual": "H-RAISONNEMENT",
+    "pass": true
+  },
+  {
+    "query": "vérifier mon raisonnement",
+    "expected": "H-RAISONNEMENT",
+    "actual": "H-RAISONNEMENT",
+    "pass": true
+  },
+  {
+    "query": "définition BFR",
+    "expected": "H-CONNAISSANCES",
+    "actual": "H-CONNAISSANCES",
+    "pass": true
+  },
+  {
+    "query": "projet RGPD",
+    "expected": "R-B2-018",
+    "actual": "R-B2-018",
+    "pass": true
+  },
+  {
+    "query": "aucun accident donc risque faible",
+    "expected": "R-B2-001",
+    "actual": "R-B2-001",
+    "pass": true
+  },
+  {
+    "query": "mesure existe donc risque maîtrisé",
+    "expected": "R-B2-001",
+    "actual": "R-B2-001",
+    "pass": true
+  },
+  {
+    "query": "risque résiduel",
+    "expected": "R-B2-001",
+    "actual": "R-B2-001",
+    "pass": true
+  }
+]

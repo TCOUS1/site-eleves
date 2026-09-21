@@ -1,0 +1,13 @@
+{
+  "version": "1.1",
+  "date": "2026-08-30",
+  "resources": 145,
+  "missions": 30,
+  "activities_tested": 22,
+  "student_queries": 90,
+  "student_queries_success_top5": 90,
+  "mission_search_success": 30,
+  "mission_resource_structure_success": 30,
+  "broken_local_links": 0,
+  "duplicate_id_pages": 0
+}

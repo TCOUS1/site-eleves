@@ -1,0 +1,365 @@
+{
+  "missions": 30,
+  "issues": [],
+  "rows": [
+    {
+      "mission": "M01",
+      "situation": true,
+      "dossier": true,
+      "livrable": true,
+      "outil_production": true,
+      "notions": true,
+      "parcours_analyse": true,
+      "aide_blocage": true,
+      "ok": true
+    },
+    {
+      "mission": "M02",
+      "situation": true,
+      "dossier": true,
+      "livrable": true,
+      "outil_production": true,
+      "notions": true,
+      "parcours_analyse": true,
+      "aide_blocage": true,
+      "ok": true
+    },
+    {
+      "mission": "M03",
+      "situation": true,
+      "dossier": true,
+      "livrable": true,
+      "outil_production": true,
+      "notions": true,
+      "parcours_analyse": true,
+      "aide_blocage": true,
+      "ok": true
+    },
+    {
+      "mission": "M04",
+      "situation": true,
+      "dossier": true,
+      "livrable": true,
+      "outil_production": true,
+      "notions": true,
+      "parcours_analyse": true,
+      "aide_blocage": true,
+      "ok": true
+    },
+    {
+      "mission": "M05",
+      "situation": true,
+      "dossier": true,
+      "livrable": true,
+      "outil_production": true,
+      "notions": true,
+      "parcours_analyse": true,
+      "aide_blocage": true,
+      "ok": true
+    },
+    {
+      "mission": "M06",
+      "situation": true,
+      "dossier": true,
+      "livrable": true,
+      "outil_production": true,
+      "notions": true,
+      "parcours_analyse": true,
+      "aide_blocage": true,
+      "ok": true
+    },
+    {
+      "mission": "M07",
+      "situation": true,
+      "dossier": true,
+      "livrable": true,
+      "outil_production": true,
+      "notions": true,
+      "parcours_analyse": true,
+      "aide_blocage": true,
+      "ok": true
+    },
+    {
+      "mission": "M08",
+      "situation": true,
+      "dossier": true,
+      "livrable": true,
+      "outil_production": true,
+      "notions": true,
+      "parcours_analyse": true,
+      "aide_blocage": true,
+      "ok": true
+    },
+    {
+      "mission": "M09",
+      "situation": true,
+      "dossier": true,
+      "livrable": true,
+      "outil_production": true,
+      "notions": true,
+      "parcours_analyse": true,
+      "aide_blocage": true,
+      "ok": true
+    },
+    {
+      "mission": "M10",
+      "situation": true,
+      "dossier": true,
+      "livrable": true,
+      "outil_production": true,
+      "notions": true,
+      "parcours_analyse": true,
+      "aide_blocage": true,
+      "ok": true
+    },
+    {
+      "mission": "M11",
+      "situation": true,
+      "dossier": true,
+      "livrable": true,
+      "outil_production": true,
+      "notions": true,
+      "parcours_analyse": true,
+      "aide_blocage": true,
+      "ok": true
+    },
+    {
+      "mission": "M12",
+      "situation": true,
+      "dossier": true,
+      "livrable": true,
+      "outil_production": true,
+      "notions": true,
+      "parcours_analyse": true,
+      "aide_blocage": true,
+      "ok": true
+    },
+    {
+      "mission": "M13",
+      "situation": true,
+      "dossier": true,
+      "livrable": true,
+      "outil_production": true,
+      "notions": true,
+      "parcours_analyse": true,
+      "aide_blocage": true,
+      "ok": true
+    },
+    {
+      "mission": "M14",
+      "situation": true,
+      "dossier": true,
+      "livrable": true,
+      "outil_production": true,
+      "notions": true,
+      "parcours_analyse": true,
+      "aide_blocage": true,
+      "ok": true
+    },
+    {
+      "mission": "M15",
+      "situation": true,
+      "dossier": true,
+      "livrable": true,
+      "outil_production": true,
+      "notions": true,
+      "parcours_analyse": true,
+      "aide_blocage": true,
+      "ok": true
+    },
+    {
+      "mission": "M16",
+      "situation": true,
+      "dossier": true,
+      "livrable": true,
+      "outil_production": true,
+      "notions": true,
+      "parcours_analyse": true,
+      "aide_blocage": true,
+      "ok": true
+    },
+    {
+      "mission": "M17",
+      "situation": true,
+      "dossier": true,
+      "livrable": true,
+      "outil_production": true,
+      "notions": true,
+      "parcours_analyse": true,
+      "aide_blocage": true,
+      "ok": true
+    },
+    {
+      "mission": "M18",
+      "situation": true,
+      "dossier": true,
+      "livrable": true,
+      "outil_production": true,
+      "notions": true,
+      "parcours_analyse": true,
+      "aide_blocage": true,
+      "ok": true
+    },
+    {
+      "mission": "M19",
+      "situation": true,
+      "dossier": true,
+      "livrable": true,
+      "outil_production": true,
+      "notions": true,
+      "parcours_analyse": true,
+      "aide_blocage": true,
+      "ok": true
+    },
+    {
+      "mission": "M20",
+      "situation": true,
+      "dossier": true,
+      "livrable": true,
+      "outil_production": true,
+      "notions": true,
+      "parcours_analyse": true,
+      "aide_blocage": true,
+      "ok": true
+    },
+    {
+      "mission": "M21",
+      "situation": true,
+      "dossier": true,
+      "livrable": true,
+      "outil_production": true,
+      "notions": true,
+      "parcours_analyse": true,
+      "aide_blocage": true,
+      "ok": true
+    },
+    {
+      "mission": "M22",
+      "situation": true,
+      "dossier": true,
+      "livrable": true,
+      "outil_production": true,
+      "notions": true,
+      "parcours_analyse": true,
+      "aide_blocage": true,
+      "ok": true
+    },
+    {
+      "mission": "M23",
+      "situation": true,
+      "dossier": true,
+      "livrable": true,
+      "outil_production": true,
+      "notions": true,
+      "parcours_analyse": true,
+      "aide_blocage": true,
+      "ok": true
+    },
+    {
+      "mission": "M24",
+      "situation": true,
+      "dossier": true,
+      "livrable": true,
+      "outil_production": true,
+      "notions": true,
+      "parcours_analyse": true,
+      "aide_blocage": true,
+      "ok": true
+    },
+    {
+      "mission": "M25",
+      "situation": true,
+      "dossier": true,
+      "livrable": true,
+      "outil_production": true,
+      "notions": true,
+      "parcours_analyse": true,
+      "aide_blocage": true,
+      "ok": true
+    },
+    {
+      "mission": "M26",
+      "situation": true,
+      "dossier": true,
+      "livrable": true,
+      "outil_production": true,
+      "notions": true,
+      "parcours_analyse": true,
+      "aide_blocage": true,
+      "ok": true
+    },
+    {
+      "mission": "M27",
+      "situation": true,
+      "dossier": true,
+      "livrable": true,
+      "outil_production": true,
+      "notions": true,
+      "parcours_analyse": true,
+      "aide_blocage": true,
+      "ok": true
+    },
+    {
+      "mission": "M28",
+      "situation": true,
+      "dossier": true,
+      "livrable": true,
+      "outil_production": true,
+      "notions": true,
+      "parcours_analyse": true,
+      "aide_blocage": true,
+      "ok": true
+    },
+    {
+      "mission": "M29",
+      "situation": true,
+      "dossier": true,
+      "livrable": true,
+      "outil_production": true,
+      "notions": true,
+      "parcours_analyse": true,
+      "aide_blocage": true,
+      "ok": true
+    },
+    {
+      "mission": "M30",
+      "situation": true,
+      "dossier": true,
+      "livrable": true,
+      "outil_production": true,
+      "notions": true,
+      "parcours_analyse": true,
+      "aide_blocage": true,
+      "ok": true
+    }
+  ],
+  "expected": {
+    "guided": {
+      "situation": true,
+      "dossier": true,
+      "livrable": true,
+      "outil_production": true,
+      "notions": true,
+      "parcours_analyse": true,
+      "aide_blocage": true
+    },
+    "semi": {
+      "situation": true,
+      "dossier": true,
+      "livrable": true,
+      "outil_production": true,
+      "notions": "partiel",
+      "parcours_analyse": "partiel",
+      "aide_blocage": true
+    },
+    "autonomous": {
+      "situation": true,
+      "dossier": true,
+      "livrable": true,
+      "outil_production": true,
+      "notions": false,
+      "parcours_analyse": false,
+      "aide_blocage": false
+    }
+  }
+}

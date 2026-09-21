@@ -1,0 +1,3681 @@
+[
+  {
+    "id": "M01",
+    "title": "Trouver de nouveaux prospects sans savoir comment organiser la prospection",
+    "activity": "A1_1",
+    "bc": "BC1",
+    "output": "Une base de prospects nettoyée et qualifiée, un plan pour atteindre 20 contacts, une organisation de suivi CRM et un message de prise de contact traçable.",
+    "steps": [
+      {
+        "id": "R-B1-001",
+        "title": "Cibler et organiser une prospection utile à la PME",
+        "url": "ressources/bc1/R-B1-001-cibler-organiser-prospection.html",
+        "use": "Lorsque la direction ou un commercial fixe une cible, un secteur, un produit à promouvoir ou un objectif de contacts à obtenir.",
+        "outcome": "Un plan de prospection réaliste et un fichier de suivi permettant de savoir qui contacter, pourquoi, par quel canal, quand et avec quel résultat.",
+        "first_action": "Reformuler l’objectif. Précisez le résultat recherché : rendez-vous, devis, inscription, prise de contact, réponse à une campagne.",
+        "inputs": [
+          "objectif commercial et offre à promouvoir",
+          "caractéristiques des clients recherchés",
+          "zone géographique ou secteur éventuel",
+          "budget et moyens disponibles",
+          "données clients/prospects déjà présentes dans le PGI"
+        ],
+        "checks": [
+          "la cible découle bien de l’objectif commercial",
+          "chaque prospect a une raison d’être dans le fichier",
+          "les données sont suffisamment fiables pour agir",
+          "le suivi prévoit une date et un résultat",
+          "les indicateurs permettent d’améliorer la campagne suivante"
+        ],
+        "validate": [
+          "cible commerciale, budget et moyens retenus",
+          "engagement commercial non prévu par les consignes"
+        ],
+        "activities": "A1_1",
+        "tasks": "T1_1_1 T1_1_3",
+        "knowledge": "S1_1_1 S1_1_2 S1_7 S5_2",
+        "order": 1
+      },
+      {
+        "id": "R-B1-002",
+        "title": "Qualifier un fichier de prospects avant une action commerciale",
+        "url": "ressources/bc1/R-B1-002-qualifier-fichier-prospects.html",
+        "use": "Avant une campagne, après l’import de données ou lorsqu’un fichier contient des doublons, informations anciennes ou contacts mal ciblés.",
+        "outcome": "Un fichier nettoyé, dédupliqué et segmenté, avec un statut et une priorité exploitables dans le PGI ou le tableur.",
+        "first_action": "Définir les champs indispensables. Identité, organisation, coordonnées, secteur, source, statut, date de mise à jour.",
+        "inputs": [
+          "fichier source",
+          "critères de cible validés",
+          "règles de nommage et champs du PGI",
+          "historique des contacts si disponible"
+        ],
+        "checks": [
+          "pas de doublons manifestes",
+          "champs obligatoires renseignés",
+          "source et date connues pour les données importantes",
+          "priorité justifiée par des critères",
+          "format compatible avec le PGI"
+        ],
+        "validate": [
+          "suppression massive de données",
+          "règles de conservation ou d’utilisation particulières"
+        ],
+        "activities": "A1_1",
+        "tasks": "T1_1_1",
+        "knowledge": "S1_1_1 S1_1_2 S1_7",
+        "order": 2
+      },
+      {
+        "id": "R-TR-002",
+        "title": "Rédiger un courriel professionnel qui permet d’agir",
+        "url": "ressources/transversal/R-TR-002-rediger-courriel-professionnel.html",
+        "use": "Courriel à un client, fournisseur, salarié, prestataire, administration ou responsable.",
+        "outcome": "Un message court avec objet utile, contexte suffisant, demande explicite, échéance, pièces identifiées et ton adapté.",
+        "first_action": "Écrire l’objet comme une information d’action : sujet + référence + échéance si utile.",
+        "inputs": [
+          "objectif du message",
+          "faits vérifiés",
+          "destinataires et copies utiles",
+          "échéance",
+          "pièces à joindre"
+        ],
+        "checks": [
+          "objet informatif",
+          "demande visible",
+          "faits vérifiables",
+          "échéance explicite",
+          "pièces présentes",
+          "destinataires justifiés"
+        ],
+        "validate": [
+          "engagement commercial ou juridique non délégué",
+          "diffusion d’une donnée sensible",
+          "message de crise ou réputation sensible"
+        ],
+        "activities": "",
+        "tasks": "",
+        "knowledge": "S5_2 S5_4",
+        "order": 3
+      }
+    ]
+  },
+  {
+    "id": "M02",
+    "title": "Passer d’une commande client à une facture sans oublier les contrôles",
+    "activity": "A1_2",
+    "bc": "BC1",
+    "output": "Une facture justifiée par ce qui est réellement livré ou réalisé, avec les écarts devis-commande et le reliquat de commande clairement tracés.",
+    "steps": [
+      {
+        "id": "R-B1-006",
+        "title": "Contrôler une commande ou un contrat client avant validation",
+        "url": "ressources/bc1/R-B1-006-controler-commande-contrat-client.html",
+        "use": "Réception d’un bon de commande, d’un contrat ou d’un retour de devis signé.",
+        "outcome": "Une commande contrôlée, enregistrée et, si nécessaire, une liste d’écarts à résoudre avant exécution.",
+        "first_action": "Identifier les documents de référence. Dernière offre validée, échanges modificatifs et commande reçue.",
+        "inputs": [
+          "devis ou offre acceptée",
+          "bon de commande ou contrat reçu",
+          "CGV et conditions particulières",
+          "fichier client à jour",
+          "règles internes de validation"
+        ],
+        "checks": [
+          "la commande correspond à la dernière offre valide",
+          "les écarts sont documentés",
+          "aucune condition importante n’est supposée",
+          "les données client sont à jour",
+          "le déclenchement de l’exécution est autorisé"
+        ],
+        "validate": [
+          "prix ou délai modifié",
+          "clause contractuelle inhabituelle",
+          "dépassement d’encours ou de délégation"
+        ],
+        "activities": "A1_2",
+        "tasks": "T1_2_2 T1_2_7",
+        "knowledge": "S1_2_2 S1_7",
+        "order": 1
+      },
+      {
+        "id": "R-B1-007",
+        "title": "Suivre une vente et une livraison jusqu’à la preuve d’exécution",
+        "url": "ressources/bc1/R-B1-007-suivre-vente-livraison.html",
+        "use": "Dès qu’une commande client est validée et jusqu’à la livraison ou réalisation complète.",
+        "outcome": "Un suivi de commande à jour : étapes, dates prévues/réelles, responsables, preuves, écarts et information client.",
+        "first_action": "Décomposer les jalons. Préparation, production, expédition, livraison, réception ou validation du service.",
+        "inputs": [
+          "commande validée",
+          "planning ou délai promis",
+          "informations production/prestataire/transport",
+          "documents de livraison ou réception"
+        ],
+        "checks": [
+          "chaque commande a un statut compréhensible",
+          "les dates prévues et réelles sont distinguées",
+          "les écarts importants ont une action",
+          "les preuves sont liées au dossier",
+          "le client a été informé en cas d’incident significatif"
+        ],
+        "validate": [
+          "nouveau délai engageant la PME",
+          "geste commercial",
+          "acceptation d’une non-conformité importante"
+        ],
+        "activities": "A1_2",
+        "tasks": "T1_2_3 T1_2_7",
+        "knowledge": "S1_2_3 S1_7",
+        "order": 2
+      },
+      {
+        "id": "R-B1-008",
+        "title": "Établir et contrôler une facture conforme",
+        "url": "ressources/bc1/R-B1-008-etablir-facture-conforme.html",
+        "use": "Après livraison/réalisation ou à l’événement de facturation prévu par le contrat et la réglementation.",
+        "outcome": "Une facture exacte, cohérente avec la commande et les preuves d’exécution, comportant les mentions applicables à la situation.",
+        "first_action": "Vérifier le fait générateur. L’opération est-elle livrée/réalisée ou l’acompte est-il facturable ?",
+        "inputs": [
+          "commande/contrat",
+          "preuve de livraison ou de réalisation",
+          "données client à jour",
+          "tarifs, remises et taxes",
+          "conditions de paiement et CGV"
+        ],
+        "checks": [
+          "numéro unique et chronologique",
+          "client et opération correctement identifiés",
+          "calculs HT/TVA/TTC contrôlés",
+          "échéance cohérente avec le contrat et la loi",
+          "mentions particulières vérifiées sur une source actuelle"
+        ],
+        "validate": [
+          "traitement fiscal inhabituel",
+          "avoir ou annulation hors procédure",
+          "changement de règle de TVA ou de facturation"
+        ],
+        "activities": "A1_2",
+        "tasks": "T1_2_4 T1_2_7",
+        "knowledge": "S1_2_2 S1_2_5 S1_7",
+        "order": 3
+      }
+    ]
+  },
+  {
+    "id": "M03",
+    "title": "Un client n’a pas payé : savoir quoi vérifier avant de relancer",
+    "activity": "A1_2",
+    "bc": "BC1",
+    "output": "Un dossier de relance traçable avec solde reconstitué, avoir et règlement rapprochés, litige identifié, action choisie et prochaine échéance appliquée ou signalée comme restant à valider.",
+    "steps": [
+      {
+        "id": "R-B1-010",
+        "title": "Suivre les règlements clients et conduire une relance amiable",
+        "url": "ressources/bc1/R-B1-010-suivre-reglements-relancer-impayes.html",
+        "use": "Suivi périodique de balance âgée, facture arrivée à échéance, promesse de paiement non tenue ou litige bloquant le règlement.",
+        "outcome": "Un dossier de relance traçable : facture, échéance, montant, historique, cause du retard, action, engagement client, prochaine date et niveau d’alerte.",
+        "first_action": "Fiabiliser la créance. Facture, livraison, échéance, paiement partiel, avoir et litige éventuel.",
+        "inputs": [
+          "facture et échéance",
+          "balance âgée ou compte client",
+          "historique des échanges",
+          "procédure de relance",
+          "CGV et conditions de paiement",
+          "litiges éventuels"
+        ],
+        "checks": [
+          "la dette est certaine et justifiée avant relance",
+          "l’historique est complet",
+          "le ton correspond au niveau de relance",
+          "chaque promesse a une date de contrôle",
+          "le responsable est alerté selon les seuils internes"
+        ],
+        "validate": [
+          "accord d’échelonnement ou remise",
+          "mise en demeure ou procédure contentieuse selon l’organisation",
+          "abandon de créance"
+        ],
+        "activities": "A1_2",
+        "tasks": "T1_2_4 T1_2_5 T1_2_7",
+        "knowledge": "S1_2_4 S1_2_5 S1_6_3 S5_2 S5_5",
+        "order": 1
+      },
+      {
+        "id": "R-B1-026",
+        "title": "Suivre les comptes clients et fournisseurs avec une balance âgée",
+        "url": "ressources/bc1/R-B1-026-suivre-comptes-tiers-encaissements.html",
+        "use": "Suivi périodique des tiers, clôture mensuelle, relance clients, contrôle fournisseurs.",
+        "outcome": "Une balance âgée ou un état de comptes tiers nettoyé : échéances, lettrage, litiges, avoirs, retards et actions.",
+        "first_action": "Extraire les comptes ouverts. Clients et/ou fournisseurs selon le besoin.",
+        "inputs": [
+          "grand livre auxiliaire/balance tiers",
+          "échéances",
+          "règlements",
+          "avoirs",
+          "litiges",
+          "procédure de lettrage"
+        ],
+        "checks": [
+          "règlements récents pris en compte",
+          "avoirs et acomptes identifiés",
+          "retards calculés sur l’échéance correcte",
+          "litiges distingués des impayés simples",
+          "chaque solde significatif a une action"
+        ],
+        "validate": [
+          "passage en perte",
+          "compensation inhabituelle de dettes/créances",
+          "écriture de régularisation complexe"
+        ],
+        "activities": "A1_6",
+        "tasks": "T1_6_3",
+        "knowledge": "S1_6_3 S1_2_5 S1_7_1",
+        "order": 2
+      },
+      {
+        "id": "R-TR-002",
+        "title": "Rédiger un courriel professionnel qui permet d’agir",
+        "url": "ressources/transversal/R-TR-002-rediger-courriel-professionnel.html",
+        "use": "Courriel à un client, fournisseur, salarié, prestataire, administration ou responsable.",
+        "outcome": "Un message court avec objet utile, contexte suffisant, demande explicite, échéance, pièces identifiées et ton adapté.",
+        "first_action": "Écrire l’objet comme une information d’action : sujet + référence + échéance si utile.",
+        "inputs": [
+          "objectif du message",
+          "faits vérifiés",
+          "destinataires et copies utiles",
+          "échéance",
+          "pièces à joindre"
+        ],
+        "checks": [
+          "objet informatif",
+          "demande visible",
+          "faits vérifiables",
+          "échéance explicite",
+          "pièces présentes",
+          "destinataires justifiés"
+        ],
+        "validate": [
+          "engagement commercial ou juridique non délégué",
+          "diffusion d’une donnée sensible",
+          "message de crise ou réputation sensible"
+        ],
+        "activities": "",
+        "tasks": "",
+        "knowledge": "S5_2 S5_4",
+        "order": 3
+      }
+    ]
+  },
+  {
+    "id": "M04",
+    "title": "Un client mécontent menace de partir après une livraison en retard",
+    "activity": "A1_3",
+    "bc": "BC1",
+    "output": "Une réclamation qualifiée, une réponse adaptée, les actions internes nécessaires et une trace de clôture ou de suivi.",
+    "steps": [
+      {
+        "id": "R-B1-014",
+        "title": "Traiter et suivre une réclamation client jusqu’à sa clôture",
+        "url": "ressources/bc1/R-B1-014-traiter-suivre-reclamation-client.html",
+        "use": "Toute réclamation reçue par téléphone, courriel, formulaire, réseau social ou intermédiaire.",
+        "outcome": "Une fiche de réclamation complète : faits, attente, preuve, cause, responsabilité de traitement, solution validée, réponse client, délai et clôture.",
+        "first_action": "Accueillir sans contester. Écouter, reformuler et obtenir les faits précis.",
+        "inputs": [
+          "message ou compte rendu du client",
+          "commande/contrat/facture",
+          "preuves de livraison ou de prestation",
+          "procédure interne",
+          "historique de réclamations"
+        ],
+        "checks": [
+          "faits et opinions distingués",
+          "preuve recherchée",
+          "responsable et échéance définis",
+          "solution validée avant promesse",
+          "cause et action préventive examinées si récurrence"
+        ],
+        "validate": [
+          "reconnaissance de responsabilité",
+          "indemnisation ou geste au-delà du seuil",
+          "réponse à un litige juridique"
+        ],
+        "activities": "A1_3",
+        "tasks": "T1_3_2 T1_3_3",
+        "knowledge": "S1_3_2 S1_7 S5_7",
+        "order": 1
+      },
+      {
+        "id": "R-B1-030",
+        "title": "Traiter une anomalie de livraison avant qu’elle ne devienne une réclamation",
+        "url": "ressources/bc1/R-B1-030-traiter-anomalie-livraison-client.html",
+        "use": "Dès qu’un écart apparaît entre commande, préparation, expédition, livraison ou information du client.",
+        "outcome": "Un diagnostic de l’écart, une information client cohérente, une action de correction tracée et une mise à jour du suivi de vente.",
+        "first_action": "Comparer la commande, l’expédition et la livraison pour qualifier précisément l’écart.",
+        "inputs": [
+          "commande et conditions convenues",
+          "bon de préparation ou d’expédition",
+          "bon de livraison ou preuve transporteur",
+          "historique des échanges",
+          "procédure interne et possibilités de correction"
+        ],
+        "checks": [
+          "écart prouvé par les documents",
+          "délai annoncé réaliste",
+          "client informé avant relance si possible",
+          "historique mis à jour",
+          "clôture vérifiée"
+        ],
+        "validate": [
+          "geste commercial non prévu",
+          "modification contractuelle",
+          "reconnaissance de responsabilité engageant juridiquement la PME"
+        ],
+        "activities": "A1_2",
+        "tasks": "T1_2_3 T1_2_7",
+        "knowledge": "S1_2_3 S5_2 S5_5",
+        "order": 2
+      },
+      {
+        "id": "R-B1-029",
+        "title": "Préparer une action de communication pour développer la relation client",
+        "url": "ressources/bc1/R-B1-029-developper-relation-client-communication.html",
+        "use": "Après une vente, avant un renouvellement, pour informer d’un nouveau service, réactiver des clients ou maintenir une relation régulière.",
+        "outcome": "Une action ciblée avec objectif, destinataires, message, canal, calendrier, règles de suivi et indicateurs simples.",
+        "first_action": "Définir l’objectif concret : informer, réactiver, inviter, remercier, renouveler ou obtenir un retour.",
+        "inputs": [
+          "objectif commercial ou relationnel validé",
+          "fichier clients à jour",
+          "historique des échanges et achats",
+          "offre ou information à communiquer",
+          "contraintes de ton, canal et calendrier"
+        ],
+        "checks": [
+          "objectif explicite et mesurable",
+          "cible justifiée",
+          "historique client pris en compte",
+          "message cohérent avec l’image de la PME",
+          "suivi prévu dans le SI"
+        ],
+        "validate": [
+          "offre commerciale ou avantage non prévu",
+          "engagement financier ou contractuel",
+          "campagne sensible pour l’image de la PME"
+        ],
+        "activities": "A1_3",
+        "tasks": "T1_3_3",
+        "knowledge": "S5_1 S5_2 S5_4 S5_5",
+        "order": 3
+      },
+      {
+        "id": "R-TR-001",
+        "title": "Analyser une situation de communication avant de répondre",
+        "url": "ressources/transversal/R-TR-001-analyser-situation-communication.html",
+        "use": "Dès qu’il faut choisir un ton, un argument, un canal ou une posture selon un interlocuteur et un objectif professionnel.",
+        "outcome": "Une préparation courte identifiant acteurs, objectif, enjeux, contraintes, informations disponibles, canal et stratégie de réponse.",
+        "first_action": "Identifier qui demande quoi et dans quel rôle.",
+        "inputs": [
+          "demande reçue ou mission",
+          "identité et rôle des interlocuteurs",
+          "historique utile",
+          "règles de l’entreprise",
+          "niveau d’urgence et de confidentialité"
+        ],
+        "checks": [
+          "objectif explicite",
+          "destinataire et rôle identifiés",
+          "faits vérifiés",
+          "limites de responsabilité prises en compte",
+          "action attendue claire"
+        ],
+        "validate": [
+          "prise de position engageant la direction",
+          "information sensible ou incertaine",
+          "promesse hors délégation"
+        ],
+        "activities": "",
+        "tasks": "",
+        "knowledge": "S5_1",
+        "order": 4
+      }
+    ]
+  },
+  {
+    "id": "M05",
+    "title": "Choisir entre trois fournisseurs sans se contenter du prix le plus bas",
+    "activity": "A1_4",
+    "bc": "BC1",
+    "output": "Une comparaison multicritère justifiée et une recommandation préparée pour le dirigeant, sans prendre la décision à sa place.",
+    "steps": [
+      {
+        "id": "R-B1-015",
+        "title": "Formaliser un besoin d’achat ou d’investissement avant de consulter",
+        "url": "ressources/bc1/R-B1-015-formaliser-besoin-achat.html",
+        "use": "Achat nouveau, renouvellement, investissement, changement de fournisseur ou besoin exprimé par un service.",
+        "outcome": "Un cahier des charges proportionné : besoin, quantité, usage, exigences, contraintes, critères de comparaison, budget indicatif et calendrier.",
+        "first_action": "Identifier le besoin réel. Quel problème résoudre ou quel résultat obtenir ?",
+        "inputs": [
+          "demandeur et objectif",
+          "usage réel",
+          "contraintes techniques et organisationnelles",
+          "budget ou enveloppe",
+          "historique d’achats si disponible"
+        ],
+        "checks": [
+          "le besoin est exprimé en résultat attendu",
+          "les exigences obligatoires sont identifiées",
+          "les critères permettent de comparer plusieurs offres",
+          "les contraintes réelles sont documentées",
+          "le demandeur a validé"
+        ],
+        "validate": [
+          "budget définitif",
+          "exigences engageant stratégiquement la PME",
+          "choix d’investissement"
+        ],
+        "activities": "A1_4",
+        "tasks": "T1_4_1 T1_4_5",
+        "knowledge": "S1_4_1 S1_7",
+        "order": 1
+      },
+      {
+        "id": "R-B1-016",
+        "title": "Rechercher et présélectionner des fournisseurs",
+        "url": "ressources/bc1/R-B1-016-rechercher-preselectionner-fournisseurs.html",
+        "use": "Nouveau besoin, recherche d’alternative, mise en concurrence, dépendance excessive à un fournisseur.",
+        "outcome": "Une short-list de fournisseurs avec coordonnées, capacités, preuves, conditions principales, source des informations et date de vérification.",
+        "first_action": "Rechercher d’abord dans le SI. Fournisseurs déjà connus, performances passées, incidents.",
+        "inputs": [
+          "cahier des charges validé",
+          "critères éliminatoires",
+          "sources professionnelles et historiques internes",
+          "fichier fournisseurs du PGI"
+        ],
+        "checks": [
+          "pas de fournisseur retenu uniquement sur sa visibilité web",
+          "critères éliminatoires contrôlés",
+          "informations comparables",
+          "date/source conservées",
+          "statut dans le SI cohérent"
+        ],
+        "validate": [
+          "homologation finale",
+          "engagement contractuel",
+          "dérogation aux critères de qualification"
+        ],
+        "activities": "A1_4",
+        "tasks": "T1_4_2 T1_4_4 T1_4_5",
+        "knowledge": "S1_4_2 S1_7",
+        "order": 2
+      },
+      {
+        "id": "R-B1-017",
+        "title": "Comparer des offres fournisseurs et préparer une recommandation",
+        "url": "ressources/bc1/R-B1-017-comparer-offres-fournisseurs.html",
+        "use": "Après une consultation fournisseur ou pour renouveler une prestation/équipement.",
+        "outcome": "Un tableau comparatif traçable et une recommandation présentant avantages, limites, risques et points à négocier.",
+        "first_action": "Mettre les offres sur un périmètre comparable. Quantités, durée, options, taxes, services.",
+        "inputs": [
+          "cahier des charges",
+          "offres reçues",
+          "conditions générales/particulières",
+          "coûts annexes",
+          "critères de choix validés"
+        ],
+        "checks": [
+          "même périmètre pour les offres",
+          "coûts annexes intégrés",
+          "notes qualitatives justifiées",
+          "critères obligatoires distingués",
+          "recommandation et décision finale séparées"
+        ],
+        "validate": [
+          "pondération stratégique si non définie",
+          "choix final du fournisseur",
+          "engagement de dépense"
+        ],
+        "activities": "A1_4",
+        "tasks": "T1_4_3 T1_4_5",
+        "knowledge": "S1_4_1 S1_4_2 S1_7",
+        "order": 3
+      },
+      {
+        "id": "R-TR-003",
+        "title": "Rédiger une note professionnelle pour aider le dirigeant à décider",
+        "url": "ressources/transversal/R-TR-003-rediger-note-direction.html",
+        "use": "Alerte, comparaison, diagnostic, risque, choix fournisseur, décision RH, analyse commerciale ou financière.",
+        "outcome": "Une note courte distinguant objet, faits essentiels, analyse, options, recommandation argumentée et décision attendue.",
+        "first_action": "Écrire en tête la question à trancher.",
+        "inputs": [
+          "question posée par le responsable",
+          "données vérifiées",
+          "sources",
+          "contraintes",
+          "options possibles"
+        ],
+        "checks": [
+          "question de décision claire",
+          "faits sourcés",
+          "options comparables",
+          "recommandation justifiée",
+          "décision attendue visible"
+        ],
+        "validate": [
+          "décision finale",
+          "communication externe de la recommandation",
+          "interprétation relevant d’un expert"
+        ],
+        "activities": "",
+        "tasks": "",
+        "knowledge": "S5_2",
+        "order": 4
+      }
+    ]
+  },
+  {
+    "id": "M06",
+    "title": "Le stock baisse : décider s’il faut recommander et contrôler la commande",
+    "activity": "A1_5",
+    "bc": "BC1",
+    "output": "Une projection de stock datée, une conclusion sur la capacité de la commande ouverte à couvrir la campagne et, si nécessaire, une proposition de nouveau réapprovisionnement à faire valider.",
+    "steps": [
+      {
+        "id": "R-B1-021",
+        "title": "Suivre les stocks et déclencher un réapprovisionnement",
+        "url": "ressources/bc1/R-B1-021-suivre-stocks-reapprovisionnement.html",
+        "use": "Suivi périodique des articles, alerte de stock, préparation d’une commande ou analyse d’une rupture.",
+        "outcome": "Un état de stock fiable avec besoin de réapprovisionnement justifié, quantité proposée et date de commande.",
+        "first_action": "Fiabiliser le stock. Vérifier les anomalies, mouvements non saisis et éventuel inventaire.",
+        "inputs": [
+          "stock physique ou stock PGI fiable",
+          "consommation/historique",
+          "commandes clients ou prévisions",
+          "commandes fournisseurs en cours",
+          "délais d’approvisionnement",
+          "règles de stock de la PME"
+        ],
+        "checks": [
+          "stock de départ fiable",
+          "commandes en cours prises en compte",
+          "délai fournisseur réaliste",
+          "quantité compatible avec les contraintes",
+          "prochaine date de contrôle prévue"
+        ],
+        "validate": [
+          "modification de la politique de stock",
+          "commande exceptionnelle importante",
+          "surstock volontaire pour raison stratégique"
+        ],
+        "activities": "A1_5",
+        "tasks": "T1_5_2 T1_5_4",
+        "knowledge": "S1_5_2 S1_7",
+        "order": 1
+      },
+      {
+        "id": "R-B1-019",
+        "title": "Passer et suivre une commande fournisseur",
+        "url": "ressources/bc1/R-B1-019-passer-suivre-commande-fournisseur.html",
+        "use": "Après sélection/validation du fournisseur ou pour les commandes courantes déclenchées par la politique de réapprovisionnement.",
+        "outcome": "Une commande conforme au besoin, confirmée par le fournisseur et suivie jusqu’à réception, avec écarts et actions tracés.",
+        "first_action": "Contrôler l’autorisation. Bon fournisseur, budget, centre de coût et signataire selon procédure.",
+        "inputs": [
+          "besoin ou demande d’achat validée",
+          "offre/contrat fournisseur",
+          "conditions négociées",
+          "adresse et délai requis",
+          "budget/autorisation"
+        ],
+        "checks": [
+          "commande autorisée",
+          "prix et conditions conformes à l’accord",
+          "confirmation fournisseur conservée",
+          "écarts suivis",
+          "réception liée à la commande"
+        ],
+        "validate": [
+          "dépassement de budget",
+          "modification contractuelle",
+          "substitution importante proposée par le fournisseur"
+        ],
+        "activities": "A1_5",
+        "tasks": "T1_5_2 T1_5_6",
+        "knowledge": "S1_5_1 S1_2_2 S1_7",
+        "order": 2
+      }
+    ]
+  },
+  {
+    "id": "M07",
+    "title": "La banque et les comptes clients ne correspondent pas en fin de mois",
+    "activity": "A1_6",
+    "bc": "BC1",
+    "output": "Un rapprochement bancaire provisoire et explicable, une liste des opérations à enregistrer ou à laisser en circulation et, si les pièces ne suffisent pas, un écart résiduel chiffré avec les documents complémentaires à demander.",
+    "steps": [
+      {
+        "id": "R-B1-025",
+        "title": "Réaliser et contrôler un rapprochement bancaire",
+        "url": "ressources/bc1/R-B1-025-rapprochement-bancaire.html",
+        "use": "Contrôle mensuel ou recherche d’un écart de trésorerie.",
+        "outcome": "Un état de rapprochement exact, avec opérations pointées, opérations en circulation, anomalies et écritures à traiter.",
+        "first_action": "Vérifier la date de comparaison. Même date pour les deux soldes.",
+        "inputs": [
+          "relevé bancaire",
+          "compte 512 ou équivalent issu du PGI",
+          "rapprochement précédent",
+          "pièces relatives aux opérations non identifiées"
+        ],
+        "checks": [
+          "même date de solde",
+          "opérations anciennes en circulation examinées",
+          "aucun écart forcé",
+          "opérations bancaires non comptabilisées listées",
+          "soldes rapprochés mathématiquement"
+        ],
+        "validate": [
+          "opération bancaire inconnue ou suspecte",
+          "écart ancien non expliqué",
+          "correction inhabituelle"
+        ],
+        "activities": "A1_6",
+        "tasks": "T1_6_2 T1_6_3",
+        "knowledge": "S1_6_1 S1_6_3 S1_7_1",
+        "order": 1
+      },
+      {
+        "id": "R-B1-026",
+        "title": "Suivre les comptes clients et fournisseurs avec une balance âgée",
+        "url": "ressources/bc1/R-B1-026-suivre-comptes-tiers-encaissements.html",
+        "use": "Suivi périodique des tiers, clôture mensuelle, relance clients, contrôle fournisseurs.",
+        "outcome": "Une balance âgée ou un état de comptes tiers nettoyé : échéances, lettrage, litiges, avoirs, retards et actions.",
+        "first_action": "Extraire les comptes ouverts. Clients et/ou fournisseurs selon le besoin.",
+        "inputs": [
+          "grand livre auxiliaire/balance tiers",
+          "échéances",
+          "règlements",
+          "avoirs",
+          "litiges",
+          "procédure de lettrage"
+        ],
+        "checks": [
+          "règlements récents pris en compte",
+          "avoirs et acomptes identifiés",
+          "retards calculés sur l’échéance correcte",
+          "litiges distingués des impayés simples",
+          "chaque solde significatif a une action"
+        ],
+        "validate": [
+          "passage en perte",
+          "compensation inhabituelle de dettes/créances",
+          "écriture de régularisation complexe"
+        ],
+        "activities": "A1_6",
+        "tasks": "T1_6_3",
+        "knowledge": "S1_6_3 S1_2_5 S1_7_1",
+        "order": 2
+      },
+      {
+        "id": "R-B1-024",
+        "title": "Contrôler l’enregistrement comptable d’une opération commerciale",
+        "url": "ressources/bc1/R-B1-024-controler-enregistrement-comptable.html",
+        "use": "Contrôle d’un journal achats/ventes/banque, recherche d’un écart ou préparation d’une clôture périodique.",
+        "outcome": "Une liste de contrôles effectués et, s’il existe des anomalies, une proposition de correction ou une alerte documentée.",
+        "first_action": "Identifier la pièce. Nature, numéro, date, fournisseur/client, opération.",
+        "inputs": [
+          "pièce justificative",
+          "écriture du PGI",
+          "plan de comptes de la PME",
+          "règles de TVA et de comptabilisation applicables",
+          "procédure de correction"
+        ],
+        "checks": [
+          "pièce retrouvable",
+          "totaux cohérents",
+          "tiers correct",
+          "TVA cohérente avec la pièce",
+          "correction traçable"
+        ],
+        "validate": [
+          "schéma comptable inhabituel",
+          "qualification complexe",
+          "correction de période clôturée selon les règles de l’entreprise"
+        ],
+        "activities": "A1_6",
+        "tasks": "T1_6_1",
+        "knowledge": "S1_6_1 S1_2_5 S1_7_1",
+        "order": 3
+      }
+    ]
+  },
+  {
+    "id": "M08",
+    "title": "Une exigence client change : transformer l’information en action pour la PME",
+    "activity": "A2_1",
+    "bc": "BC2",
+    "output": "Une exigence qualifiée et datée, une analyse des commandes et étapes impactées, les modifications de processus à préparer et les points techniques ou contractuels restant à confirmer.",
+    "steps": [
+      {
+        "id": "R-B2-005",
+        "title": "Qualifier une source et une information",
+        "url": "ressources/bc2/R-B2-005-qualifier-source-information.html",
+        "use": "Dès qu’une information trouvée sur Internet, dans un document professionnel ou transmise par un tiers doit servir de base à une décision.",
+        "outcome": "Une décision explicite : conserver, recouper, écarter ou utiliser avec réserve, avec la justification correspondante.",
+        "first_action": "Identifier l’émetteur. Qui publie ? Quelle est sa compétence, sa responsabilité ou son intérêt ?",
+        "inputs": [
+          "le document ou la page à évaluer",
+          "le besoin d’information",
+          "si possible une deuxième source permettant le recoupement"
+        ],
+        "checks": [
+          "L’auteur ou l’organisme est identifié.",
+          "La date est suffisamment récente pour le sujet.",
+          "La source est distinguée d’un contenu sponsorisé ou promotionnel.",
+          "Le champ d’application a été vérifié.",
+          "Les affirmations importantes peuvent être retracées jusqu’à une preuve ou un texte."
+        ],
+        "validate": [
+          "une interprétation juridique, fiscale, sociale ou technique reste nécessaire",
+          "deux sources fiables se contredisent sur un point déterminant"
+        ],
+        "activities": "A2_1",
+        "tasks": "T2_1_2",
+        "knowledge": "S2_1_1 S2_1_2",
+        "order": 1
+      },
+      {
+        "id": "R-B2-006",
+        "title": "Transformer une veille en synthèse et en alerte actionnable",
+        "url": "ressources/bc2/R-B2-006-synthese-alerte-veille.html",
+        "use": "Quand une évolution détectée peut créer un risque, une opportunité ou nécessiter une modification de procédure.",
+        "outcome": "Une synthèse courte, sourcée et orientée décision, avec éventuellement une alerte et une proposition de mise à jour de pratique.",
+        "first_action": "Trier. Éliminez doublons, détails sans effet sur la PME et informations non confirmées.",
+        "inputs": [
+          "les informations déjà qualifiées",
+          "le profil du destinataire",
+          "les pratiques actuelles de la PME",
+          "les échéances ou dates d’entrée en vigueur si elles existent"
+        ],
+        "checks": [
+          "Le destinataire comprend le sujet en moins d’une minute.",
+          "La différence entre fait, analyse et proposition est visible.",
+          "L’impact sur la PME est explicite.",
+          "Les sources essentielles sont présentes.",
+          "La synthèse débouche sur une action, une surveillance ou une décision."
+        ],
+        "validate": [
+          "l’information engage une décision de direction",
+          "la nouvelle règle doit être interprétée par un spécialiste",
+          "la diffusion contient une information sensible ou confidentielle"
+        ],
+        "activities": "A2_1",
+        "tasks": "T2_1_3 T2_1_4 T2_1_5 T2_1_6",
+        "knowledge": "S2_1_1 S2_1_2 S5_2 S5_4",
+        "order": 2
+      },
+      {
+        "id": "R-B2-028",
+        "title": "Transformer une information de veille en mise à jour de pratique ou de procédure",
+        "url": "ressources/bc2/R-B2-028-mettre-a-jour-pratique-procedure-apres-veille.html",
+        "use": "Après validation d’une information réglementaire, technique, commerciale ou organisationnelle ayant un impact sur une pratique existante.",
+        "outcome": "Une fiche d’impact et une proposition de mise à jour précisant ce qui change, pour qui, à partir de quand, dans quels documents et avec quel contrôle.",
+        "first_action": "Résumer la nouveauté en citant précisément la source et la date.",
+        "inputs": [
+          "source qualifiée et version du texte ou de l’information",
+          "procédure actuelle",
+          "documents ou outils concernés",
+          "personnes impliquées",
+          "date d’entrée en application ou échéance"
+        ],
+        "checks": [
+          "source officielle ou qualifiée",
+          "impact distinct du résumé",
+          "date d’application identifiée",
+          "version précédente conservée",
+          "contrôle post-mise à jour prévu"
+        ],
+        "validate": [
+          "interprétation juridique engageante",
+          "modification d’une règle interne relevant de la direction",
+          "date de bascule définitive"
+        ],
+        "activities": "A2_1",
+        "tasks": "T2_1_6",
+        "knowledge": "S2_1_1 S5_2 S5_4",
+        "order": 3
+      },
+      {
+        "id": "R-TR-003",
+        "title": "Rédiger une note professionnelle pour aider le dirigeant à décider",
+        "url": "ressources/transversal/R-TR-003-rediger-note-direction.html",
+        "use": "Alerte, comparaison, diagnostic, risque, choix fournisseur, décision RH, analyse commerciale ou financière.",
+        "outcome": "Une note courte distinguant objet, faits essentiels, analyse, options, recommandation argumentée et décision attendue.",
+        "first_action": "Écrire en tête la question à trancher.",
+        "inputs": [
+          "question posée par le responsable",
+          "données vérifiées",
+          "sources",
+          "contraintes",
+          "options possibles"
+        ],
+        "checks": [
+          "question de décision claire",
+          "faits sourcés",
+          "options comparables",
+          "recommandation justifiée",
+          "décision attendue visible"
+        ],
+        "validate": [
+          "décision finale",
+          "communication externe de la recommandation",
+          "interprétation relevant d’un expert"
+        ],
+        "activities": "",
+        "tasks": "",
+        "knowledge": "S5_2",
+        "order": 4
+      }
+    ]
+  },
+  {
+    "id": "M09",
+    "title": "Numériser les archives en six semaines : passer d’une idée à un projet pilotable",
+    "activity": "A2_2",
+    "bc": "BC2",
+    "output": "Un cadrage, un cahier des charges, un planning, une réunion préparée et un dispositif de suivi des écarts.",
+    "steps": [
+      {
+        "id": "R-B2-007",
+        "title": "Cadrer un projet avant de le lancer",
+        "url": "ressources/bc2/R-B2-007-cadrer-projet.html",
+        "use": "Avant la planification, dès qu’un projet implique plusieurs acteurs, des contraintes, un résultat à livrer ou une modification de l’organisation.",
+        "outcome": "Une note de cadrage validable : besoin, objectifs, périmètre, livrables, acteurs, contraintes, critères de réussite et risques principaux.",
+        "first_action": "Décrire la situation de départ. Faits observables, dysfonctionnement, opportunité ou demande.",
+        "inputs": [
+          "l’événement déclencheur ou le problème",
+          "les attentes du demandeur",
+          "les ressources et contraintes connues",
+          "les personnes concernées"
+        ],
+        "checks": [
+          "Le besoin est formulé sans confondre besoin et solution.",
+          "Les objectifs sont vérifiables.",
+          "Les limites du projet sont écrites.",
+          "Les acteurs et décideurs sont identifiés.",
+          "Les livrables et critères d’acceptation sont explicites."
+        ],
+        "validate": [
+          "le choix de la solution",
+          "le budget",
+          "les priorités et arbitrages entre services"
+        ],
+        "activities": "A2_2",
+        "tasks": "T2_2_1 T2_2_2",
+        "knowledge": "S2_2",
+        "order": 1
+      },
+      {
+        "id": "R-B2-008",
+        "title": "Construire un cahier des charges et planifier les tâches",
+        "url": "ressources/bc2/R-B2-008-cahier-charges-planifier.html",
+        "use": "Avant de consulter un prestataire, répartir le travail d’une équipe ou lancer une action d’amélioration.",
+        "outcome": "Un cahier des charges proportionné au projet et un planning reliant tâches, dépendances, responsables, échéances et jalons.",
+        "first_action": "Structurer le cahier des charges. Contexte, besoin, périmètre, exigences, contraintes, livrables, critères d’acceptation et modalités de suivi.",
+        "inputs": [
+          "note de cadrage validée",
+          "fonctions et exigences attendues",
+          "ressources et disponibilités",
+          "date ou contraintes de mise en service"
+        ],
+        "checks": [
+          "Chaque exigence importante peut être contrôlée.",
+          "Toutes les tâches servent un livrable.",
+          "Les dépendances sont cohérentes.",
+          "Chaque tâche a un responsable.",
+          "Les jalons correspondent à de vraies décisions ou preuves."
+        ],
+        "validate": [
+          "les exigences engageant la stratégie ou le budget",
+          "la date de lancement ou de mise en service",
+          "le choix d’un prestataire"
+        ],
+        "activities": "A2_2",
+        "tasks": "T2_2_3",
+        "knowledge": "S2_2 S2_7",
+        "order": 2
+      },
+      {
+        "id": "R-B2-009",
+        "title": "Préparer et conduire une réunion de projet",
+        "url": "ressources/bc2/R-B2-009-preparer-conduire-reunion-projet.html",
+        "use": "Réunion de lancement, point d’avancement, arbitrage, réception ou retour d’expérience.",
+        "outcome": "Une réunion préparée, conduite dans le temps prévu et conclue par un relevé de décisions avec actions, responsables et échéances.",
+        "first_action": "Définir le résultat attendu. Décider, valider, analyser, coordonner ou informer.",
+        "inputs": [
+          "objectif précis de la réunion",
+          "participants nécessaires",
+          "documents préparatoires",
+          "points nécessitant une décision ou un échange"
+        ],
+        "checks": [
+          "La réunion a un objectif écrit.",
+          "Les participants sont nécessaires.",
+          "Les décisions sont séparées des simples échanges.",
+          "Chaque action a un responsable et une date.",
+          "Le compte rendu est diffusé aux personnes concernées."
+        ],
+        "validate": [
+          "un arbitrage dépasse le mandat confié",
+          "un conflit ou une décision sensible nécessite la direction"
+        ],
+        "activities": "A2_2",
+        "tasks": "T2_2_4",
+        "knowledge": "S2_2 S5_5 S5_6",
+        "order": 3
+      },
+      {
+        "id": "R-B2-010",
+        "title": "Suivre un projet et traiter les écarts",
+        "url": "ressources/bc2/R-B2-010-suivre-projet-ecarts.html",
+        "use": "Pendant toute la réalisation et lors des bilans d’étape.",
+        "outcome": "Un tableau de suivi à jour, des écarts expliqués, des actions correctives proposées et des décisions tracées.",
+        "first_action": "Mettre à jour le réalisé. Dates, tâches terminées, charges, dépenses, livrables.",
+        "inputs": [
+          "planning de référence",
+          "budget ou ressources prévues",
+          "état d’avancement réel",
+          "incidents, demandes de changement et décisions précédentes"
+        ],
+        "checks": [
+          "Les données de suivi sont datées.",
+          "Les écarts sont mesurés avant d’être commentés.",
+          "La cause est distinguée de la conséquence.",
+          "Les actions correctives ont un responsable.",
+          "La version de référence est identifiable."
+        ],
+        "validate": [
+          "toute modification de budget, périmètre ou délai engageant la PME",
+          "la clôture et l’acceptation des livrables"
+        ],
+        "activities": "A2_2",
+        "tasks": "T2_2_5",
+        "knowledge": "S2_2 S2_7",
+        "order": 4
+      }
+    ]
+  },
+  {
+    "id": "M10",
+    "title": "Des incidents se répètent : identifier les risques réellement prioritaires",
+    "activity": "A2_3",
+    "bc": "BC2",
+    "output": "Un registre des risques formulés correctement, une hiérarchisation justifiée et un plan de traitement soumis à validation.",
+    "steps": [
+      {
+        "id": "R-B2-011",
+        "title": "Identifier et formuler les risques d’une PME",
+        "url": "ressources/bc2/R-B2-011-identifier-formuler-risques.html",
+        "use": "Lors d’un diagnostic global, d’une analyse d’activité, après un incident, une réclamation, une veille ou un changement dans la PME.",
+        "outcome": "Un registre de risques compréhensible décrivant pour chaque risque le contexte, la cause, l’événement redouté, les conséquences, les mesures existantes et les preuves disponibles.",
+        "first_action": "Définir le périmètre. Processus, site, projet, activité ou objectif.",
+        "inputs": [
+          "processus ou activité à analyser",
+          "incidents et réclamations",
+          "entretiens et observations",
+          "données du PGI, indicateurs et documents",
+          "veille et obligations applicables"
+        ],
+        "checks": [
+          "Chaque ligne décrit un événement et pas seulement une catégorie.",
+          "Les conséquences sont concrètes.",
+          "Les mesures existantes ne sont pas confondues avec le risque.",
+          "La source de l’information est traçable.",
+          "Les doublons ont été regroupés."
+        ],
+        "validate": [
+          "l’analyse nécessite une expertise spécialisée",
+          "un risque grave ou urgent apparaît"
+        ],
+        "activities": "A2_3",
+        "tasks": "T2_3_1",
+        "knowledge": "S2_3 S2_7",
+        "order": 1
+      },
+      {
+        "id": "R-B2-001",
+        "title": "Évaluer et hiérarchiser les risques d’une PME",
+        "url": "ressources/bc2/R-B2-001-evaluer-hierarchiser-risques.html",
+        "use": "Quand vous disposez d’informations sur plusieurs risques et devez préparer une analyse permettant au responsable de décider des priorités de traitement.",
+        "outcome": "Un classement argumenté des risques, fondé sur des critères définis à l’avance, accompagné des éléments permettant d’expliquer les priorités proposées.",
+        "first_action": "Définir le périmètre. Précisez l’activité, le processus, le poste ou l’objectif concerné.",
+        "inputs": [
+          "le contexte, les objectifs et les activités de la PME ;",
+          "une liste de risques formulés avec leurs causes, événements redoutés et conséquences ;",
+          "les mesures de maîtrise déjà en place ;",
+          "des faits, données, incidents, statistiques ou avis qualifiés permettant d’étayer l’évaluation."
+        ],
+        "checks": [
+          "Les échelles sont définies avant l’évaluation et sont compréhensibles par un tiers.",
+          "Chaque note importante peut être justifiée par un élément du dossier ou une source identifiable.",
+          "La même méthode est appliquée à tous les risques comparés.",
+          "Les mesures déjà existantes sont prises en compte.",
+          "La hiérarchisation débouche sur une décision à préparer : traiter, surveiller, approfondir ou accepter sous conditions."
+        ],
+        "validate": [
+          "la décision engage des ressources, une politique ou un niveau de risque accepté par la PME ;",
+          "l’évaluation nécessite une expertise juridique, technique, médicale, comptable ou informatique que vous ne détenez pas ;",
+          "un risque grave ou urgent est identifié."
+        ],
+        "activities": "A2_3",
+        "tasks": "T2_3_1 T2_3_4 T2_3_5",
+        "knowledge": "S2_3 S2_7",
+        "order": 2
+      },
+      {
+        "id": "R-B2-002",
+        "title": "Construire une matrice de criticité",
+        "url": "ressources/bc2/R-B2-002-construire-matrice-criticite.html",
+        "use": "Après avoir identifié plusieurs risques, lorsque vous devez les positionner selon leur probabilité et leur gravité afin de préparer une hiérarchisation.",
+        "outcome": "Une matrice lisible dont chaque niveau est défini, avec un tableau de cotation permettant de retrouver la justification de chaque positionnement.",
+        "first_action": "Créer l’échelle de probabilité. Exemple : 1 rare ; 2 occasionnel ; 3 probable ; 4 fréquent. Remplacez ces mots par des seuils adaptés au cas si des données existent.",
+        "inputs": [
+          "la liste des risques à comparer ;",
+          "des éléments permettant d’estimer leur fréquence ou probabilité ;",
+          "des éléments permettant d’estimer leurs conséquences ;",
+          "les mesures de maîtrise existantes."
+        ],
+        "checks": [
+          "Chaque niveau de l’échelle est défini.",
+          "Les évaluations sont traçables et justifiées.",
+          "Les axes et la règle de lecture sont indiqués.",
+          "Deux personnes disposant des mêmes informations peuvent comprendre comment le classement a été obtenu.",
+          "La matrice débouche sur une action ou une décision à préparer."
+        ],
+        "validate": [
+          "les seuils d’acceptabilité, les priorités définitives ou les actions engagent la direction ;",
+          "l’évaluation nécessite une expertise spécialisée."
+        ],
+        "activities": "A2_3",
+        "tasks": "T2_3_4",
+        "knowledge": "S2_3 S2_7",
+        "order": 3
+      },
+      {
+        "id": "R-B2-013",
+        "title": "Construire et suivre un plan de traitement des risques",
+        "url": "ressources/bc2/R-B2-013-plan-traitement-risques.html",
+        "use": "Quand la direction a demandé des propositions ou validé des actions de réduction d’un risque.",
+        "outcome": "Un plan d’actions avec risque traité, action, responsable, échéance, ressources, indicateur, preuve et état d’avancement.",
+        "first_action": "Choisir la priorité. Commencez par les risques nécessitant une action validée.",
+        "inputs": [
+          "risques hiérarchisés",
+          "mesures déjà en place",
+          "contraintes et ressources",
+          "décisions ou orientations de la direction"
+        ],
+        "checks": [
+          "Chaque action traite une cause ou une conséquence identifiée.",
+          "Le responsable et l’échéance sont nommés.",
+          "La preuve de réalisation est prévue.",
+          "L’efficacité sera testée.",
+          "Les décisions de la direction sont tracées."
+        ],
+        "validate": [
+          "le choix du niveau de risque accepté",
+          "les dépenses et engagements",
+          "la décision de mise en œuvre"
+        ],
+        "activities": "A2_3",
+        "tasks": "T2_3_5 T2_3_6",
+        "knowledge": "S2_3 S2_7",
+        "order": 4
+      }
+    ]
+  },
+  {
+    "id": "M11",
+    "title": "La trésorerie peut devenir négative dans les prochaines semaines",
+    "activity": "A2_4",
+    "bc": "BC2",
+    "output": "Un budget de trésorerie daté et contrôlé, un diagnostic de tension intramensuelle, des scénarios documentés et une alerte argumentée.",
+    "steps": [
+      {
+        "id": "R-B2-014",
+        "title": "Construire et contrôler un budget de trésorerie",
+        "url": "ressources/bc2/R-B2-014-budget-tresorerie.html",
+        "use": "À partir d’échéanciers clients/fournisseurs, prévisions de ventes et d’achats, documents bancaires, investissements et autres flux prévus.",
+        "outcome": "Un budget de trésorerie exact, contrôlé et commenté, permettant d’identifier les périodes de tension.",
+        "first_action": "Fixer les périodes. Le plus souvent mois par mois sur l’horizon demandé.",
+        "inputs": [
+          "trésorerie initiale rapprochée avec les comptes bancaires",
+          "échéanciers d’encaissement et de décaissement",
+          "prévisions de ventes et achats",
+          "TVA et autres échéances connues",
+          "investissements, financements et opérations exceptionnelles"
+        ],
+        "checks": [
+          "Le solde initial est justifié.",
+          "Les flux sont placés selon leur échéance réelle.",
+          "Les montants HT/TTC sont cohérents.",
+          "Le report du solde est correct.",
+          "Les périodes négatives ou trop proches du seuil d’alerte sont commentées."
+        ],
+        "validate": [
+          "la politique financière",
+          "les décisions de financement ou de négociation engageant la PME"
+        ],
+        "activities": "A2_4",
+        "tasks": "T2_4_1 T2_4_2",
+        "knowledge": "S2_4 S2_7_1",
+        "order": 1
+      },
+      {
+        "id": "R-B2-015",
+        "title": "Diagnostiquer une tension de trésorerie et préparer des solutions",
+        "url": "ressources/bc2/R-B2-015-diagnostiquer-tension-tresorerie.html",
+        "use": "Après construction du budget de trésorerie ou lors d’un incident affectant les flux.",
+        "outcome": "Un diagnostic chiffré, une alerte proportionnée et plusieurs solutions comparées avant décision de la direction.",
+        "first_action": "Localiser la tension. Montant minimal, date de début, durée et marge disponible.",
+        "inputs": [
+          "budget de trésorerie contrôlé",
+          "balance âgée ou échéanciers",
+          "conditions de règlement",
+          "informations sur financements ou possibilités de négociation",
+          "consignes de la direction"
+        ],
+        "checks": [
+          "Le montant et la durée de la tension sont chiffrés.",
+          "La cause est explicitée.",
+          "Le scénario est plausible et documenté.",
+          "Au moins deux solutions sont comparées lorsqu’elles existent.",
+          "Le coût et les contraintes ne sont pas oubliés."
+        ],
+        "validate": [
+          "le recours à un financement",
+          "la modification d’un engagement contractuel",
+          "la décision de différer un paiement ou investissement"
+        ],
+        "activities": "A2_4",
+        "tasks": "T2_4_3 T2_4_4 T2_4_5 T2_4_6",
+        "knowledge": "S2_4 S2_7_1 S5_2",
+        "order": 2
+      },
+      {
+        "id": "R-TR-014",
+        "title": "Présenter une analyse chiffrée sans noyer le destinataire sous les données",
+        "url": "ressources/transversal/R-TR-014-presenter-analyse-chiffree.html",
+        "use": "Trésorerie, coûts, RH, ventes, stocks, risques, budget, satisfaction ou tout suivi chiffré.",
+        "outcome": "Une synthèse en quatre niveaux : constat, mesure de l’écart, explication étayée, action ou question de décision.",
+        "first_action": "Commencer par la question de gestion, pas par le tableau.",
+        "inputs": [
+          "calculs contrôlés",
+          "objectif ou référence",
+          "historique ou comparaison",
+          "contexte",
+          "destinataire"
+        ],
+        "checks": [
+          "chiffres contrôlés",
+          "référence visible",
+          "écart quantifié",
+          "cause non inventée",
+          "conclusion orientée décision"
+        ],
+        "validate": [
+          "interprétation stratégique définitive",
+          "objectif ou seuil non fourni",
+          "communication externe sensible"
+        ],
+        "activities": "",
+        "tasks": "",
+        "knowledge": "S5_2",
+        "order": 3
+      }
+    ]
+  },
+  {
+    "id": "M12",
+    "title": "Un poste de travail semble dangereux : contribuer au DUERP sans jouer l’expert",
+    "activity": "A2_5",
+    "bc": "BC2",
+    "output": "Des faits objectivés, des risques formulés, une évaluation selon la méthode de la PME si elle est disponible, puis des mesures de prévention proposées pour validation.",
+    "steps": [
+      {
+        "id": "R-B2-003",
+        "title": "Contribuer à la mise à jour du DUERP",
+        "url": "ressources/bc2/R-B2-003-contribuer-mise-a-jour-duerp.html",
+        "use": "Lorsqu’une PME doit évaluer ou réévaluer les risques professionnels d’une unité de travail, après une évolution importante des conditions de travail, lorsqu’une nouvelle information sur un risque apparaît, ou dans le cadre de la mise à jour périodique du document unique.",
+        "outcome": "Une analyse traçable d’une unité de travail : situations observées, dangers, personnes exposées, risques évalués, mesures existantes et propositions de prévention, prête à être examinée et validée par le responsable.",
+        "first_action": "Délimiter l’unité de travail. Identifiez le groupe de salariés, l’activité ou la situation étudiée.",
+        "inputs": [
+          "le DUERP en vigueur et, si nécessaire, ses versions antérieures ;",
+          "la définition des unités de travail retenues par l’entreprise ;",
+          "les informations sur les postes, équipements, produits, horaires, incidents et accidents ;",
+          "les procédures et mesures de prévention déjà en place ;",
+          "les personnes à interroger : salariés concernés, responsable, prévention/santé au travail selon le contexte."
+        ],
+        "checks": [
+          "Le travail réel a été observé et les salariés concernés ont pu apporter des informations.",
+          "Les risques sont reliés à des situations d’exposition concrètes.",
+          "Les mesures existantes sont prises en compte avant de proposer de nouvelles actions.",
+          "Les évaluations sont justifiées et la méthode est homogène.",
+          "Les actions proposées ont un responsable, une échéance et un moyen de vérifier leur efficacité.",
+          "La version du document et la date de mise à jour sont traçables."
+        ],
+        "validate": [
+          "l’analyse engage la responsabilité de l’employeur ou nécessite une expertise technique, médicale ou réglementaire ;",
+          "les mesures de prévention modifient l’organisation, les équipements ou les conditions de travail ;",
+          "la gravité ou l’urgence de la situation dépasse votre périmètre."
+        ],
+        "activities": "A2_3 A2_5",
+        "tasks": "T2_3_2 T2_3_3 T2_3_4 T2_3_5 T2_5_1",
+        "knowledge": "S2_3 S2_5_1_1 S2_5_1_2 S2_5_2",
+        "order": 1
+      },
+      {
+        "id": "R-B2-011",
+        "title": "Identifier et formuler les risques d’une PME",
+        "url": "ressources/bc2/R-B2-011-identifier-formuler-risques.html",
+        "use": "Lors d’un diagnostic global, d’une analyse d’activité, après un incident, une réclamation, une veille ou un changement dans la PME.",
+        "outcome": "Un registre de risques compréhensible décrivant pour chaque risque le contexte, la cause, l’événement redouté, les conséquences, les mesures existantes et les preuves disponibles.",
+        "first_action": "Définir le périmètre. Processus, site, projet, activité ou objectif.",
+        "inputs": [
+          "processus ou activité à analyser",
+          "incidents et réclamations",
+          "entretiens et observations",
+          "données du PGI, indicateurs et documents",
+          "veille et obligations applicables"
+        ],
+        "checks": [
+          "Chaque ligne décrit un événement et pas seulement une catégorie.",
+          "Les conséquences sont concrètes.",
+          "Les mesures existantes ne sont pas confondues avec le risque.",
+          "La source de l’information est traçable.",
+          "Les doublons ont été regroupés."
+        ],
+        "validate": [
+          "l’analyse nécessite une expertise spécialisée",
+          "un risque grave ou urgent apparaît"
+        ],
+        "activities": "A2_3",
+        "tasks": "T2_3_1",
+        "knowledge": "S2_3 S2_7",
+        "order": 2
+      },
+      {
+        "id": "R-B2-013",
+        "title": "Construire et suivre un plan de traitement des risques",
+        "url": "ressources/bc2/R-B2-013-plan-traitement-risques.html",
+        "use": "Quand la direction a demandé des propositions ou validé des actions de réduction d’un risque.",
+        "outcome": "Un plan d’actions avec risque traité, action, responsable, échéance, ressources, indicateur, preuve et état d’avancement.",
+        "first_action": "Choisir la priorité. Commencez par les risques nécessitant une action validée.",
+        "inputs": [
+          "risques hiérarchisés",
+          "mesures déjà en place",
+          "contraintes et ressources",
+          "décisions ou orientations de la direction"
+        ],
+        "checks": [
+          "Chaque action traite une cause ou une conséquence identifiée.",
+          "Le responsable et l’échéance sont nommés.",
+          "La preuve de réalisation est prévue.",
+          "L’efficacité sera testée.",
+          "Les décisions de la direction sont tracées."
+        ],
+        "validate": [
+          "le choix du niveau de risque accepté",
+          "les dépenses et engagements",
+          "la décision de mise en œuvre"
+        ],
+        "activities": "A2_3",
+        "tasks": "T2_3_5 T2_3_6",
+        "knowledge": "S2_3 S2_7",
+        "order": 3
+      }
+    ]
+  },
+  {
+    "id": "M13",
+    "title": "Une machine est endommagée : préparer le dossier d’assurance sans promettre l’indemnisation",
+    "activity": "A2_5",
+    "bc": "BC2",
+    "output": "Un dossier de sinistre documenté et une analyse prudente des garanties, exclusions, franchises et pièces à transmettre.",
+    "steps": [
+      {
+        "id": "R-B2-016",
+        "title": "Analyser la couverture d’assurance d’un risque",
+        "url": "ressources/bc2/R-B2-016-analyser-couverture-assurance.html",
+        "use": "Analyse d’une police, préparation d’un renouvellement, après un sinistre ou lors de l’apparition d’un nouveau risque.",
+        "outcome": "Un tableau reliant les risques de la PME aux garanties, exclusions, franchises, plafonds, obligations et éventuels écarts de couverture.",
+        "first_action": "Partir du risque. Décrivez l’événement, les biens/personnes exposés et les conséquences.",
+        "inputs": [
+          "risques et biens/personnes concernés",
+          "police et conditions particulières",
+          "avenants",
+          "historique des sinistres",
+          "valeurs assurées et activités déclarées"
+        ],
+        "checks": [
+          "L’analyse part d’un risque précis.",
+          "Les exclusions sont lues.",
+          "Franchise et plafond ne sont pas confondus.",
+          "Les conditions particulières et avenants sont pris en compte.",
+          "Les écarts sont présentés sans promettre une indemnisation."
+        ],
+        "validate": [
+          "le choix du contrat",
+          "l’interprétation d’une clause litigieuse",
+          "la déclaration engageant la responsabilité de la PME"
+        ],
+        "activities": "A2_5",
+        "tasks": "T2_5_2",
+        "knowledge": "S2_5_3_1",
+        "order": 1
+      },
+      {
+        "id": "R-B2-030",
+        "title": "Préparer et suivre un dossier de sinistre auprès de l’assureur",
+        "url": "ressources/bc2/R-B2-030-declarer-suivre-sinistre-assurance.html",
+        "use": "Vol, dégât des eaux, dommage matériel, accident ou autre événement susceptible d’être couvert par un contrat de la PME.",
+        "outcome": "Un dossier chronologique avec faits, pièces, contrat concerné, échanges, échéances, coûts et état de suivi.",
+        "first_action": "Sécuriser la situation et recueillir immédiatement les faits vérifiables.",
+        "inputs": [
+          "police et conditions applicables",
+          "date et circonstances de l’événement",
+          "photos, constats, factures ou devis",
+          "coordonnées des parties",
+          "consignes du dirigeant"
+        ],
+        "checks": [
+          "faits séparés des hypothèses",
+          "contrat et référence identifiés",
+          "preuve d’envoi conservée",
+          "pièces indexées",
+          "échéances suivies"
+        ],
+        "validate": [
+          "reconnaissance de responsabilité",
+          "acceptation d’une transaction ou indemnisation",
+          "contestation juridique de la décision de l’assureur"
+        ],
+        "activities": "A2_5",
+        "tasks": "T2_5_2",
+        "knowledge": "S2_5_3_1 S5_2",
+        "order": 2
+      }
+    ]
+  },
+  {
+    "id": "M14",
+    "title": "Les déchets et l’énergie augmentent : repérer un risque environnemental exploitable",
+    "activity": "A2_5",
+    "bc": "BC2",
+    "output": "Un diagnostic fondé sur des données comparables, des actions proportionnées et des indicateurs de suivi.",
+    "steps": [
+      {
+        "id": "R-B2-020",
+        "title": "Identifier et réduire les risques environnementaux d’une PME",
+        "url": "ressources/bc2/R-B2-020-reduire-risques-environnementaux.html",
+        "use": "Diagnostic environnemental, évolution réglementaire, hausse de consommation, changement de prestataire déchets ou incident environnemental.",
+        "outcome": "Une analyse reliant activité, aspect environnemental, conséquence, exigence éventuelle, mesure existante, indicateur et action proposée.",
+        "first_action": "Cartographier les activités. Production, stockage, transport, entretien, bureaux, achats, sous-traitance.",
+        "inputs": [
+          "processus et produits",
+          "consommations d’énergie et de matières",
+          "types et quantités de déchets",
+          "contrats de prestataires",
+          "incidents et réclamations",
+          "réglementation applicable"
+        ],
+        "checks": [
+          "Les impacts sont reliés à des activités réelles.",
+          "Les règles sont vérifiées selon le type de déchet ou d’activité.",
+          "Les prestataires et justificatifs sont identifiés.",
+          "Les actions commencent par la réduction à la source lorsque possible.",
+          "Un indicateur permettra de mesurer l’effet."
+        ],
+        "validate": [
+          "l’interprétation d’une réglementation spécialisée",
+          "le choix de filières ou prestataires engageant la PME",
+          "les investissements"
+        ],
+        "activities": "A2_5",
+        "tasks": "T2_5_3",
+        "knowledge": "S2_5_4",
+        "order": 1
+      },
+      {
+        "id": "R-TR-011",
+        "title": "Construire un tableau de données fiable avant de calculer ou filtrer",
+        "url": "ressources/transversal/R-TR-011-construire-tableau-donnees-fiable.html",
+        "use": "Fichier clients, fournisseurs, risques, paie, planning, enquête, coûts, suivi d’activité ou tableau de bord.",
+        "outcome": "Une table structurée avec une ligne par enregistrement, une colonne par variable, des formats homogènes et des contrôles de saisie.",
+        "first_action": "Définir ce que représente une ligne : client, commande, salarié, risque, période, etc.",
+        "inputs": [
+          "liste des données nécessaires",
+          "règles de calcul ou d’analyse futures",
+          "source des données",
+          "formats attendus"
+        ],
+        "checks": [
+          "une ligne = un enregistrement",
+          "aucun sous-total au milieu des données",
+          "formats cohérents",
+          "catégories normalisées",
+          "ajout d’une ligne sans casser les calculs"
+        ],
+        "validate": [
+          "modification de la source officielle de données",
+          "suppression massive",
+          "collecte de données nouvelles sensibles"
+        ],
+        "activities": "",
+        "tasks": "",
+        "knowledge": "S1_7 S2_7 S3_4 S4_8",
+        "order": 2
+      },
+      {
+        "id": "R-TR-014",
+        "title": "Présenter une analyse chiffrée sans noyer le destinataire sous les données",
+        "url": "ressources/transversal/R-TR-014-presenter-analyse-chiffree.html",
+        "use": "Trésorerie, coûts, RH, ventes, stocks, risques, budget, satisfaction ou tout suivi chiffré.",
+        "outcome": "Une synthèse en quatre niveaux : constat, mesure de l’écart, explication étayée, action ou question de décision.",
+        "first_action": "Commencer par la question de gestion, pas par le tableau.",
+        "inputs": [
+          "calculs contrôlés",
+          "objectif ou référence",
+          "historique ou comparaison",
+          "contexte",
+          "destinataire"
+        ],
+        "checks": [
+          "chiffres contrôlés",
+          "référence visible",
+          "écart quantifié",
+          "cause non inventée",
+          "conclusion orientée décision"
+        ],
+        "validate": [
+          "interprétation stratégique définitive",
+          "objectif ou seuil non fourni",
+          "communication externe sensible"
+        ],
+        "activities": "",
+        "tasks": "",
+        "knowledge": "S5_2",
+        "order": 3
+      }
+    ]
+  },
+  {
+    "id": "M15",
+    "title": "Un salarié clique sur un faux mail et des données clients ont peut-être été exposées",
+    "activity": "A2_5",
+    "bc": "BC2",
+    "output": "Une chronologie factuelle, des mesures immédiates de limitation, une analyse des données potentiellement concernées et une escalade vers les responsables compétents.",
+    "steps": [
+      {
+        "id": "R-B2-021",
+        "title": "Évaluer les risques informatiques d’une PME et préparer des mesures",
+        "url": "ressources/bc2/R-B2-021-evaluer-risques-informatiques.html",
+        "use": "Après un incident, avant un projet informatique, lors d’un audit ou à la demande de la direction.",
+        "outcome": "Un registre des risques informatiques priorisés, avec actifs critiques, menaces, vulnérabilités, mesures existantes et recommandations à discuter avec le prestataire.",
+        "first_action": "Identifier les actifs critiques. Données, logiciels, messagerie, site, accès bancaire, équipements, services cloud.",
+        "inputs": [
+          "inventaire des équipements et services",
+          "applications et données critiques",
+          "règles d’accès",
+          "sauvegardes",
+          "mises à jour",
+          "incidents connus",
+          "contrats et contacts prestataires"
+        ],
+        "checks": [
+          "Les actifs critiques sont identifiés.",
+          "Les scénarios sont concrets.",
+          "Les recommandations restent dans le périmètre d’un généraliste.",
+          "Le prestataire est sollicité pour les choix techniques.",
+          "La direction reçoit une alerte compréhensible sur les priorités."
+        ],
+        "validate": [
+          "les configurations techniques",
+          "les choix d’architecture ou de sécurité avancés",
+          "la réponse technique à un incident majeur"
+        ],
+        "activities": "A2_5",
+        "tasks": "T2_5_4",
+        "knowledge": "S2_5_5",
+        "order": 1
+      },
+      {
+        "id": "R-B2-023",
+        "title": "Contrôler les habilitations et les droits d’accès",
+        "url": "ressources/bc2/R-B2-023-controler-habilitations-droits-acces.html",
+        "use": "Arrivée, changement de poste, départ, audit, incident ou revue périodique des comptes.",
+        "outcome": "Une matrice d’habilitations contrôlée, avec comptes, rôles, applications, droits attendus, droits constatés, écarts et actions à faire valider.",
+        "first_action": "Lister les rôles. Fonctions réellement exercées, y compris prestataires et comptes techniques pertinents.",
+        "inputs": [
+          "liste à jour des salariés et prestataires",
+          "applications et ressources",
+          "rôles métiers",
+          "liste des comptes et groupes",
+          "procédures d’arrivée/mobilité/départ"
+        ],
+        "checks": [
+          "Chaque compte correspond à une personne ou un usage identifié.",
+          "Les droits sont justifiés par le rôle.",
+          "Les départs et mobilités sont traités.",
+          "Les comptes administrateurs sont distingués.",
+          "Les corrections sont tracées."
+        ],
+        "validate": [
+          "l’attribution ou le retrait de droits sensibles",
+          "les comptes d’administration",
+          "les exceptions aux règles de la PME"
+        ],
+        "activities": "A2_5",
+        "tasks": "T2_5_4",
+        "knowledge": "S2_5_5",
+        "order": 2
+      },
+      {
+        "id": "R-B2-019",
+        "title": "Réagir à une violation de données personnelles",
+        "url": "ressources/bc2/R-B2-019-reagir-violation-donnees.html",
+        "use": "Envoi au mauvais destinataire, compte compromis, perte de support, rançongiciel, suppression accidentelle, accès non autorisé, fuite ou autre incident touchant des données personnelles.",
+        "outcome": "Une fiche d’incident complète permettant au responsable de traitement d’évaluer le risque, de décider des notifications et de piloter les mesures immédiates.",
+        "first_action": "Alerter immédiatement. Prévenez le responsable prévu par la procédure ; ne cachez pas l’erreur et n’attendez pas d’avoir toutes les réponses.",
+        "inputs": [
+          "date et heure de découverte",
+          "nature de l’incident",
+          "données et personnes concernées",
+          "systèmes touchés",
+          "mesures déjà prises",
+          "contacts internes et prestataires"
+        ],
+        "checks": [
+          "L’heure de découverte est tracée.",
+          "L’incident est remonté sans délai.",
+          "Toutes les violations sont inscrites dans la documentation interne.",
+          "La décision de notifier est attribuée au responsable compétent.",
+          "Les actions de remédiation et de prévention sont suivies."
+        ],
+        "validate": [
+          "le niveau de risque",
+          "la notification CNIL",
+          "l’information des personnes",
+          "la communication externe ou juridique"
+        ],
+        "activities": "A2_5",
+        "tasks": "T2_5_4",
+        "knowledge": "S2_5_3_3 S2_5_5",
+        "order": 3
+      },
+      {
+        "id": "R-B2-022",
+        "title": "Organiser les sauvegardes et tester la restauration",
+        "url": "ressources/bc2/R-B2-022-organiser-sauvegardes-restauration.html",
+        "use": "Diagnostic informatique, modification du système, changement de prestataire, après un incident ou lors d’un contrôle périodique.",
+        "outcome": "Un plan de sauvegarde documenté et un procès-verbal de test de restauration indiquant données, fréquence, support, accès, localisation, test, résultat et actions correctives.",
+        "first_action": "Identifier ce qui doit être récupérable. Données, bases, configurations, logiciels ou documents critiques.",
+        "inputs": [
+          "liste des données et systèmes critiques",
+          "solution de sauvegarde existante",
+          "fréquence et historique",
+          "droits d’accès",
+          "procédure de restauration",
+          "contact du prestataire"
+        ],
+        "checks": [
+          "Les données critiques sont toutes couvertes.",
+          "La fréquence répond au besoin métier.",
+          "Une copie n’est pas exposée au même incident.",
+          "Les droits sur les sauvegardes sont contrôlés.",
+          "Un test de restauration a une date, un résultat et une prochaine échéance."
+        ],
+        "validate": [
+          "le paramétrage technique",
+          "la suppression d’une sauvegarde",
+          "le choix de l’architecture ou du prestataire"
+        ],
+        "activities": "A2_5",
+        "tasks": "T2_5_4",
+        "knowledge": "S2_5_5",
+        "order": 4
+      }
+    ]
+  },
+  {
+    "id": "M16",
+    "title": "Les mêmes erreurs reviennent dans les commandes : passer du symptôme à une amélioration qualité",
+    "activity": "A2_6",
+    "bc": "BC2",
+    "output": "Une analyse des causes, une procédure corrigée, des responsabilités et un indicateur permettant de vérifier l’efficacité.",
+    "steps": [
+      {
+        "id": "R-B2-024",
+        "title": "Diagnostiquer un dysfonctionnement qualité et rechercher ses causes",
+        "url": "ressources/bc2/R-B2-024-diagnostiquer-dysfonctionnement-qualite.html",
+        "use": "Après un dysfonctionnement significatif ou lors de l’analyse de l’existant dans une démarche qualité.",
+        "outcome": "Une fiche de non-conformité ou d’analyse de problème : fait, exigence attendue, impact, cause(s) vérifiée(s), action immédiate, action corrective et indicateur de suivi.",
+        "first_action": "Sécuriser la situation. Si nécessaire, limiter immédiatement l’impact sur client, salarié ou activité.",
+        "inputs": [
+          "faits et preuves",
+          "procédure ou exigence attendue",
+          "personnes impliquées",
+          "données ou indicateurs",
+          "historique d’incidents similaires"
+        ],
+        "checks": [
+          "Le fait est vérifiable.",
+          "L’exigence attendue est connue.",
+          "La cause est appuyée par des éléments.",
+          "L’action traite la cause.",
+          "L’efficacité sera mesurée."
+        ],
+        "validate": [
+          "les actions qui modifient un processus ou engagent des ressources",
+          "une cause nécessitant une expertise technique"
+        ],
+        "activities": "A2_6",
+        "tasks": "T2_6_1 T2_6_2",
+        "knowledge": "S2_6_1 S2_7",
+        "order": 1
+      },
+      {
+        "id": "R-B2-025",
+        "title": "Formaliser, diffuser et améliorer une procédure",
+        "url": "ressources/bc2/R-B2-025-formaliser-ameliorer-procedure.html",
+        "use": "Création, mise à jour ou harmonisation d’une procédure de PME.",
+        "outcome": "Une procédure courte, testable, versionnée et diffusée aux bons utilisateurs, avec un mécanisme de contrôle et de mise à jour.",
+        "first_action": "Observer le travail réel. Entretiens, documents, écrans, étapes et exceptions.",
+        "inputs": [
+          "processus réel observé",
+          "exigences et contraintes",
+          "utilisateurs",
+          "documents et outils",
+          "dysfonctionnements connus"
+        ],
+        "checks": [
+          "Le processus décrit correspond au réel.",
+          "Chaque étape a un acteur.",
+          "Les contrôles et preuves sont visibles.",
+          "La version et la validation sont identifiables.",
+          "Les anciennes versions ne créent pas d’ambiguïté."
+        ],
+        "validate": [
+          "la procédure finale",
+          "les modifications de responsabilités",
+          "les règles juridiques ou techniques spécialisées"
+        ],
+        "activities": "A2_6",
+        "tasks": "T2_6_2",
+        "knowledge": "S2_6_1 S2_7 S5_3",
+        "order": 2
+      },
+      {
+        "id": "R-B2-029",
+        "title": "Suivre une action corrective et vérifier qu’elle réduit réellement le risque",
+        "url": "ressources/bc2/R-B2-029-suivre-efficacite-action-corrective-risque.html",
+        "use": "Dès qu’un plan de traitement est accepté : prévention, procédure, équipement, formation, transfert ou autre action.",
+        "outcome": "Un suivi documenté avec responsable, échéance, preuve de réalisation, indicateur d’efficacité et réévaluation du risque résiduel.",
+        "first_action": "Reprendre le risque initial, sa cause et sa cotation de référence.",
+        "inputs": [
+          "risque initial et cotation",
+          "action validée",
+          "responsable et échéance",
+          "critère de réussite",
+          "preuves disponibles"
+        ],
+        "checks": [
+          "preuve de réalisation disponible",
+          "indicateur lié au risque",
+          "comparaison avant/après cohérente",
+          "risque résiduel réévalué",
+          "conclusion transmise"
+        ],
+        "validate": [
+          "acceptation du risque résiduel",
+          "arrêt ou remplacement d’une action importante",
+          "engagement de nouvelles ressources"
+        ],
+        "activities": "A2_3",
+        "tasks": "T2_3_6",
+        "knowledge": "S2_3 S2_7",
+        "order": 3
+      }
+    ]
+  },
+  {
+    "id": "M17",
+    "title": "Un salarié commence lundi : préparer l’embauche sans oublier une formalité",
+    "activity": "A3_1",
+    "bc": "BC3",
+    "output": "Une check-list d’embauche, les formalités préparées dans les délais et un dossier salarié initialisé sans donnée inutile.",
+    "steps": [
+      {
+        "id": "R-B3-001",
+        "title": "Identifier la règle sociale applicable avant d’agir",
+        "url": "ressources/bc3/R-B3-001-identifier-regle-sociale-applicable.html",
+        "use": "Avant une embauche, un congé, une absence, une paie, une élection, une rupture ou toute réponse à un salarié lorsque la règle applicable n’est pas certaine.",
+        "outcome": "Une réponse sourcée indiquant la règle applicable, son champ, la date de vérification, les éventuelles dispositions conventionnelles et le point qui doit être validé.",
+        "first_action": "Décrire les faits. Qui ? Quel contrat ? Quelle date ? Quel événement ? Quel effectif ?",
+        "inputs": [
+          "situation précise et date concernée",
+          "convention collective et accords applicables",
+          "contrat de travail si nécessaire",
+          "effectif de la PME",
+          "source institutionnelle actualisée"
+        ],
+        "checks": [
+          "la situation est datée et suffisamment précise",
+          "la convention collective a été vérifiée lorsque nécessaire",
+          "la source est institutionnelle et à jour",
+          "la conclusion distingue règle certaine et point à faire valider",
+          "aucune donnée sensible inutile n’est diffusée"
+        ],
+        "validate": [
+          "interprétation litigieuse ou complexe",
+          "décision disciplinaire ou contentieuse",
+          "choix engageant juridiquement l’employeur"
+        ],
+        "activities": "A3_1",
+        "tasks": "T3_1_7",
+        "knowledge": "S3_1_1 S5_2",
+        "order": 1
+      },
+      {
+        "id": "R-B3-002",
+        "title": "Préparer l’embauche d’un salarié sans oublier les formalités obligatoires",
+        "url": "ressources/bc3/R-B3-002-preparer-embauche-salarie.html",
+        "use": "Dès que la direction a validé l’identité du salarié, le poste, le contrat, la date d’entrée et la rémunération.",
+        "outcome": "Une check-list d’embauche complétée avec les preuves : contrat ou informations écrites, DPAE, inscription au registre, dossier salarié créé, suivi santé au travail et informations d’accueil.",
+        "first_action": "Ouvrir une check-list nominative. Date d’embauche, contrat, poste et responsable.",
+        "inputs": [
+          "identité du salarié",
+          "poste, classification et rémunération validés",
+          "type et dates du contrat",
+          "convention collective",
+          "coordonnées de l’établissement et du service de prévention et santé au travail"
+        ],
+        "checks": [
+          "DPAE transmise avant la prise de fonction",
+          "accusé de DPAE archivé",
+          "registre mis à jour",
+          "contrat/informations écrites cohérents avec la décision",
+          "suivi santé au travail planifié",
+          "accès au dossier limités aux personnes habilitées"
+        ],
+        "validate": [
+          "contenu final du contrat et clauses sensibles",
+          "rémunération et classification",
+          "cas atypique nécessitant un spécialiste"
+        ],
+        "activities": "A3_1",
+        "tasks": "T3_1_1 T3_1_2 T3_1_7",
+        "knowledge": "S3_1_2 S3_1_3 S3_4",
+        "order": 2
+      },
+      {
+        "id": "R-B3-003",
+        "title": "Contrôler un contrat de travail avant signature",
+        "url": "ressources/bc3/R-B3-003-controler-contrat-travail.html",
+        "use": "Avant signature d’un CDI, CDD, temps partiel ou avenant préparé à partir d’un modèle.",
+        "outcome": "Une grille de contrôle signalant les mentions présentes, les incohérences, les données manquantes et les clauses à faire valider.",
+        "first_action": "Identifier exactement le type de contrat. CDI/CDD, temps plein/partiel, alternance, etc.",
+        "inputs": [
+          "projet de contrat",
+          "fiche de poste et décision d’embauche",
+          "convention collective",
+          "durée du travail et rémunération validées",
+          "modèle institutionnel ou validé par la PME"
+        ],
+        "checks": [
+          "type de contrat identifié",
+          "cohérence avec la fiche de poste et la rémunération",
+          "mentions obligatoires contrôlées",
+          "convention collective vérifiée",
+          "aucune clause sensible ajoutée sans validation"
+        ],
+        "validate": [
+          "choix du type de contrat",
+          "motif de recours au CDD",
+          "clauses particulières ou litige d’interprétation"
+        ],
+        "activities": "A3_1",
+        "tasks": "T3_1_1",
+        "knowledge": "S3_1_1 S3_1_2 S5_2",
+        "order": 3
+      },
+      {
+        "id": "R-B3-005",
+        "title": "Organiser un dossier du personnel conforme et exploitable",
+        "url": "ressources/bc3/R-B3-005-organiser-dossier-personnel-rgpd.html",
+        "use": "Création d’un dossier d’embauche, audit de dossiers existants, départ d’un salarié ou migration vers un dossier numérique.",
+        "outcome": "Une arborescence RH claire, une matrice des droits d’accès et un tableau de conservation indiquant pour chaque famille de documents la durée et le sort en fin de période.",
+        "first_action": "Inventorier les familles de données. Contrat, paie, absences, formation, évaluation, santé au travail sans données médicales inutiles, etc.",
+        "inputs": [
+          "liste des documents RH utilisés",
+          "rôles des utilisateurs",
+          "règles de conservation de l’entreprise",
+          "référentiel CNIL 2026",
+          "procédure d’archivage"
+        ],
+        "checks": [
+          "chaque donnée a une finalité",
+          "droits d’accès documentés",
+          "durées de conservation justifiées",
+          "données médicales non nécessaires absentes du dossier RH",
+          "départ du salarié déclenche une règle d’archivage"
+        ],
+        "validate": [
+          "durée en cas de doute juridique",
+          "traitement de données particulièrement sensibles",
+          "demande de droit RGPD complexe"
+        ],
+        "activities": "A3_1",
+        "tasks": "T3_1_2 T3_1_7",
+        "knowledge": "S3_1_3 S3_4 S5_4",
+        "order": 4
+      }
+    ]
+  },
+  {
+    "id": "M18",
+    "title": "Une absence arrive pendant la préparation de la paie",
+    "activity": "A3_1",
+    "bc": "BC3",
+    "output": "Une absence enregistrée avec les justificatifs nécessaires, des variables de paie fiabilisées et une transmission confidentielle au bon interlocuteur.",
+    "steps": [
+      {
+        "id": "R-B3-007",
+        "title": "Gérer les congés et absences sans fausser les droits du salarié",
+        "url": "ressources/bc3/R-B3-007-gerer-conges-absences-maladie.html",
+        "use": "Congés payés, arrêt maladie, événement familial ou autre absence prévue par la loi, la convention collective ou l’entreprise.",
+        "outcome": "Une fiche d’absence indiquant le motif administratif, les dates, le justificatif attendu, l’effet sur le compteur et la paie, les formalités à réaliser et la règle vérifiée.",
+        "first_action": "Identifier le motif administratif sans collecter le diagnostic médical.",
+        "inputs": [
+          "demande ou justificatif du salarié",
+          "contrat et planning",
+          "compteurs de congés",
+          "convention collective",
+          "règle sociale à jour"
+        ],
+        "checks": [
+          "motif administratif correctement qualifié",
+          "convention collective vérifiée",
+          "compteur cohérent avant/après",
+          "impact paie transmis avec preuve",
+          "aucune donnée médicale inutile enregistrée"
+        ],
+        "validate": [
+          "cas complexe ou contesté",
+          "maintien de salaire non standard",
+          "situation nécessitant expertise juridique ou paie"
+        ],
+        "activities": "A3_1",
+        "tasks": "T3_1_3 T3_1_4 T3_1_7",
+        "knowledge": "S3_1_4 S3_1_5 S3_4",
+        "order": 1
+      },
+      {
+        "id": "R-B3-008",
+        "title": "Collecter et fiabiliser les variables de paie",
+        "url": "ressources/bc3/R-B3-008-collecter-variables-paie.html",
+        "use": "Chaque cycle de paie : nouveaux salariés, temps de travail, absences, primes, avantages, frais, acomptes, départs et régularisations.",
+        "outcome": "Un tableau de variables de paie complet, daté, justifié et validé, prêt à être saisi dans le logiciel ou transmis au prestataire.",
+        "first_action": "Partir de la population du mois. Entrées, présents, absents, sorties.",
+        "inputs": [
+          "liste des salariés actifs",
+          "relevés de temps",
+          "absences et congés",
+          "décisions de primes/augmentations",
+          "avantages et frais",
+          "entrées/sorties",
+          "bulletin du mois précédent"
+        ],
+        "checks": [
+          "chaque variable est rattachée au bon salarié et à la bonne période",
+          "chaque montant ou quantité a une origine",
+          "entrées et sorties traitées",
+          "variations inhabituelles expliquées",
+          "version transmise identifiable"
+        ],
+        "validate": [
+          "prime ou retenue non prévue",
+          "régularisation complexe",
+          "décision de rémunération"
+        ],
+        "activities": "A3_1",
+        "tasks": "T3_1_3 T3_1_4 T3_1_7",
+        "knowledge": "S3_1_4 S3_1_5 S3_4",
+        "order": 2
+      },
+      {
+        "id": "R-B3-009",
+        "title": "Contrôler un bulletin de paie avant validation",
+        "url": "ressources/bc3/R-B3-009-controler-bulletin-paie.html",
+        "use": "Contrôle d’un bulletin généré par le PGI, le logiciel de paie ou le prestataire.",
+        "outcome": "Une grille de contrôle avec données d’identité, contrat, temps, rémunération, cotisations, net social, net à payer, prélèvement à la source et variations expliquées.",
+        "first_action": "Contrôler l’identité et le contrat. Employeur, salarié, emploi, classification, convention.",
+        "inputs": [
+          "bulletin du mois",
+          "bulletin précédent",
+          "contrat et classification",
+          "variables validées",
+          "convention collective",
+          "règles de rémunération applicables"
+        ],
+        "checks": [
+          "classification et temps cohérents avec le contrat",
+          "variables du mois toutes reprises",
+          "écarts expliqués",
+          "net social présent",
+          "aucune mention relative à l’exercice du droit de grève ou à l’activité de représentation des salariés",
+          "bulletin corrigé recontrôlé"
+        ],
+        "validate": [
+          "règle de cotisation complexe",
+          "modification du salaire ou de la classification",
+          "régularisation importante ou litige"
+        ],
+        "activities": "A3_1",
+        "tasks": "T3_1_4 T3_1_7",
+        "knowledge": "S3_1_1 S3_1_5 S3_4",
+        "order": 3
+      },
+      {
+        "id": "R-B3-012",
+        "title": "Communiquer une information sociale en respectant la confidentialité",
+        "url": "ressources/bc3/R-B3-012-communiquer-information-sociale-confidentielle.html",
+        "use": "Demande d’un manager, d’un salarié, d’un organisme, du comptable ou d’un prestataire portant sur une information RH.",
+        "outcome": "Une réponse utile, exacte, adressée au bon destinataire, avec uniquement les données nécessaires et une trace de la transmission.",
+        "first_action": "Identifier le demandeur. Qui est-il et quelle est sa fonction ?",
+        "inputs": [
+          "demande précise",
+          "identité et rôle du demandeur",
+          "finalité de la communication",
+          "données disponibles",
+          "procédure interne et habilitations"
+        ],
+        "checks": [
+          "destinataire habilité",
+          "données limitées au besoin",
+          "canal adapté à la sensibilité",
+          "aucun destinataire en copie sans nécessité",
+          "transmission traçable lorsque nécessaire"
+        ],
+        "validate": [
+          "demande externe inhabituelle",
+          "transmission massive ou sensible",
+          "demande susceptible de porter atteinte aux droits d’un salarié"
+        ],
+        "activities": "A3_1",
+        "tasks": "T3_1_7",
+        "knowledge": "S3_1_3 S5_1 S5_2 S5_4 S5_5",
+        "order": 4
+      }
+    ]
+  },
+  {
+    "id": "M19",
+    "title": "La PME approche le seuil du CSE : vérifier l’obligation avant de lancer les élections",
+    "activity": "A3_1",
+    "bc": "BC3",
+    "output": "Une vérification du seuil et de sa durée, puis seulement si l’obligation est acquise, un calendrier de procédure et les points à faire valider.",
+    "steps": [
+      {
+        "id": "R-B3-011",
+        "title": "Organiser les élections du CSE sous la responsabilité de la direction",
+        "url": "ressources/bc3/R-B3-011-organiser-elections-cse.html",
+        "use": "Préparation d’une première élection, renouvellement, vacance ou calendrier de représentation du personnel.",
+        "outcome": "Un rétroplanning électoral validé, les listes et courriers préparés, les preuves de diffusion, le protocole préélectoral géré avec les acteurs compétents et les procès-verbaux correctement préparés.",
+        "first_action": "Vérifier l’obligation et l’échéance. Effectif, durée du franchissement, mandat en cours.",
+        "inputs": [
+          "effectif et historique des 12 derniers mois",
+          "date des élections précédentes",
+          "répartition des salariés",
+          "coordonnées des organisations à inviter lorsque requis",
+          "règles de l’entreprise et convention collective"
+        ],
+        "checks": [
+          "seuil et échéance vérifiés",
+          "rétroplanning avec marges de sécurité",
+          "listes contrôlées",
+          "communications datées et archivées",
+          "décisions de la direction identifiées",
+          "PV et formalités finales prévus"
+        ],
+        "validate": [
+          "interprétation juridique du corps électoral",
+          "protocole préélectoral",
+          "décision en cas de difficulté ou contestation"
+        ],
+        "activities": "A3_1",
+        "tasks": "T3_1_6 T3_1_7",
+        "knowledge": "S3_1_1 S3_1_6 S5_2 S5_6",
+        "order": 1
+      },
+      {
+        "id": "R-B3-027",
+        "title": "Préparer une réunion de représentation du personnel ou de dialogue social",
+        "url": "ressources/bc3/R-B3-027-preparer-reunion-cse-dialogue-social.html",
+        "use": "Réunion du CSE, échange préparatoire à une négociation, consultation ou suivi d’un sujet social nécessitant des informations fiables.",
+        "outcome": "Un dossier de réunion structuré : objet, participants, calendrier, documents, points à traiter, questions en attente et traçabilité des suites.",
+        "first_action": "Identifier la nature de la réunion et les règles internes/applicables à vérifier.",
+        "inputs": [
+          "objet et cadre de la réunion",
+          "calendrier et consignes de la direction",
+          "documents sociaux nécessaires",
+          "liste des participants",
+          "questions ou demandes reçues"
+        ],
+        "checks": [
+          "cadre de la réunion identifié",
+          "documents validés",
+          "confidentialité respectée",
+          "questions sans réponse attribuées",
+          "suivi des décisions organisé"
+        ],
+        "validate": [
+          "position de négociation",
+          "réponse engageant juridiquement l’entreprise",
+          "information sociale sensible dont la diffusion n’est pas autorisée"
+        ],
+        "activities": "A3_1",
+        "tasks": "T3_1_6 T3_1_7",
+        "knowledge": "S3_1_6 S5_6 S5_8",
+        "order": 2
+      },
+      {
+        "id": "R-B3-001",
+        "title": "Identifier la règle sociale applicable avant d’agir",
+        "url": "ressources/bc3/R-B3-001-identifier-regle-sociale-applicable.html",
+        "use": "Avant une embauche, un congé, une absence, une paie, une élection, une rupture ou toute réponse à un salarié lorsque la règle applicable n’est pas certaine.",
+        "outcome": "Une réponse sourcée indiquant la règle applicable, son champ, la date de vérification, les éventuelles dispositions conventionnelles et le point qui doit être validé.",
+        "first_action": "Décrire les faits. Qui ? Quel contrat ? Quelle date ? Quel événement ? Quel effectif ?",
+        "inputs": [
+          "situation précise et date concernée",
+          "convention collective et accords applicables",
+          "contrat de travail si nécessaire",
+          "effectif de la PME",
+          "source institutionnelle actualisée"
+        ],
+        "checks": [
+          "la situation est datée et suffisamment précise",
+          "la convention collective a été vérifiée lorsque nécessaire",
+          "la source est institutionnelle et à jour",
+          "la conclusion distingue règle certaine et point à faire valider",
+          "aucune donnée sensible inutile n’est diffusée"
+        ],
+        "validate": [
+          "interprétation litigieuse ou complexe",
+          "décision disciplinaire ou contentieuse",
+          "choix engageant juridiquement l’employeur"
+        ],
+        "activities": "A3_1",
+        "tasks": "T3_1_7",
+        "knowledge": "S3_1_1 S5_2",
+        "order": 3
+      }
+    ]
+  },
+  {
+    "id": "M20",
+    "title": "Il faut recruter mais le besoin est encore flou",
+    "activity": "A3_2",
+    "bc": "BC3",
+    "output": "Un besoin de recrutement formalisé, une fiche de poste, une offre non discriminatoire et des outils de sélection comparables.",
+    "steps": [
+      {
+        "id": "R-B3-013",
+        "title": "Formaliser un besoin de recrutement et construire une fiche de poste",
+        "url": "ressources/bc3/R-B3-013-formaliser-besoin-recrutement-fiche-poste.html",
+        "use": "Création de poste, remplacement, évolution d’activité ou besoin de compétence identifié par la direction.",
+        "outcome": "Une fiche de poste et un profil de recrutement distinguant missions, activités, responsabilités, relations, contraintes, compétences nécessaires et critères de sélection.",
+        "first_action": "Partir du besoin. Quel problème ou quelle charge justifie le recrutement ?",
+        "inputs": [
+          "objectif du recrutement",
+          "organisation et organigramme",
+          "activités à prendre en charge",
+          "compétences disponibles dans l’équipe",
+          "contraintes de temps, lieu et budget"
+        ],
+        "checks": [
+          "besoin explicite",
+          "missions observables",
+          "critères liés au poste",
+          "indispensable et souhaitable distingués",
+          "fiche validée par le responsable"
+        ],
+        "validate": [
+          "création ou suppression du poste",
+          "niveau de responsabilité et rémunération",
+          "exigence inhabituelle ou potentiellement discriminatoire"
+        ],
+        "activities": "A3_2",
+        "tasks": "T3_2_1",
+        "knowledge": "S3_2_1 S3_4 S5_2",
+        "order": 1
+      },
+      {
+        "id": "R-B3-014",
+        "title": "Rédiger et publier une offre d’emploi non discriminatoire",
+        "url": "ressources/bc3/R-B3-014-rediger-offre-emploi-non-discriminatoire.html",
+        "use": "Avant publication sur France Travail, un site d’emploi, le site de la PME, un réseau social ou un support professionnel.",
+        "outcome": "Une annonce comprenant les missions, compétences, conditions essentielles et modalités de candidature, sans critère discriminatoire ni promesse non validée.",
+        "first_action": "Rédiger un titre fidèle au poste.",
+        "inputs": [
+          "fiche de poste validée",
+          "conditions d’emploi autorisées à publier",
+          "canal de diffusion",
+          "date limite et contact",
+          "charte de communication de la PME"
+        ],
+        "checks": [
+          "aucun critère discriminatoire",
+          "critères reliés à la fiche de poste",
+          "titre et contrat cohérents",
+          "conditions publiées validées",
+          "canal et contact corrects"
+        ],
+        "validate": [
+          "critère de sélection atypique",
+          "promesse de rémunération ou avantage",
+          "publication finale selon procédure de la PME"
+        ],
+        "activities": "A3_2",
+        "tasks": "T3_2_1 T3_2_6",
+        "knowledge": "S3_2_1 S5_2 S5_4",
+        "order": 2
+      },
+      {
+        "id": "R-B3-015",
+        "title": "Présélectionner des candidatures avec une grille objective",
+        "url": "ressources/bc3/R-B3-015-preselectionner-candidatures.html",
+        "use": "Après clôture ou pendant une campagne de recrutement, à partir d’une fiche de poste validée.",
+        "outcome": "Une grille multicritère documentée, un classement argumenté et une traçabilité des décisions sans données ou commentaires discriminatoires.",
+        "first_action": "Transformer le profil en critères observables. Expérience, compétence, disponibilité objective, certification utile.",
+        "inputs": [
+          "fiche de poste et critères validés",
+          "CV et candidatures",
+          "règles de conservation des candidatures",
+          "éventuels tests autorisés et pertinents"
+        ],
+        "checks": [
+          "mêmes critères appliqués à tous",
+          "preuves associées aux évaluations",
+          "aucun critère discriminatoire",
+          "commentaires professionnels et neutres",
+          "sort des candidatures non retenues prévu"
+        ],
+        "validate": [
+          "choix final des candidats à recruter",
+          "test ou méthode de sélection sensible",
+          "conservation prolongée des candidatures"
+        ],
+        "activities": "A3_2",
+        "tasks": "T3_2_1",
+        "knowledge": "S3_2_1 S3_4",
+        "order": 3
+      },
+      {
+        "id": "R-B3-016",
+        "title": "Préparer un entretien de recrutement structuré et comparable",
+        "url": "ressources/bc3/R-B3-016-preparer-entretien-recrutement.html",
+        "use": "Avant les entretiens de recrutement, à partir des critères de la fiche de poste et de la présélection.",
+        "outcome": "Un guide d’entretien avec questions communes, relances, critères d’évaluation, prise de notes et synthèse finale.",
+        "first_action": "Choisir 5 à 8 critères clés.",
+        "inputs": [
+          "fiche de poste",
+          "grille de sélection",
+          "CV du candidat",
+          "informations sur l’organisation",
+          "participants à l’entretien"
+        ],
+        "checks": [
+          "questions liées au poste",
+          "socle commun pour tous les candidats",
+          "aucune question discriminatoire ou intrusive",
+          "notes factuelles",
+          "synthèse rattachée aux critères"
+        ],
+        "validate": [
+          "décision finale de recrutement",
+          "question inhabituelle touchant à la vie privée",
+          "promesse d’embauche"
+        ],
+        "activities": "A3_2",
+        "tasks": "T3_2_1 T3_2_6",
+        "knowledge": "S3_2_1 S5_5",
+        "order": 4
+      }
+    ]
+  },
+  {
+    "id": "M21",
+    "title": "Plusieurs salariés demandent une formation : construire une proposition utile et chiffrée",
+    "activity": "A3_2",
+    "bc": "BC3",
+    "output": "Une synthèse des besoins, une comparaison des solutions, un coût prévisionnel et un planning soumis à décision.",
+    "steps": [
+      {
+        "id": "R-B3-018",
+        "title": "Recenser les besoins en compétences et en formation",
+        "url": "ressources/bc3/R-B3-018-recenser-besoins-formation-competences.html",
+        "use": "Préparation du plan de développement des compétences, évolution d’un outil, changement réglementaire, dysfonctionnement récurrent ou remontées des salariés/managers.",
+        "outcome": "Une matrice besoins-compétences priorisée indiquant écart observé, population concernée, résultat attendu, urgence, solution possible et mode d’évaluation.",
+        "first_action": "Recueillir les signaux. Projets, erreurs, nouveaux outils, obligations, évaluations, demandes.",
+        "inputs": [
+          "stratégie et projets de la PME",
+          "fiches de poste",
+          "entretiens et évaluations",
+          "incidents et indicateurs",
+          "demandes des salariés",
+          "évolutions réglementaires/technologiques"
+        ],
+        "checks": [
+          "chaque besoin part d’un écart ou objectif concret",
+          "population concernée identifiée",
+          "obligatoire et souhaitable distingués",
+          "résultat attendu mesurable",
+          "priorisation argumentée"
+        ],
+        "validate": [
+          "priorités finales",
+          "budget",
+          "obligations nécessitant expertise particulière"
+        ],
+        "activities": "A3_2",
+        "tasks": "T3_2_3 T3_2_5 T3_2_6",
+        "knowledge": "S3_2_3 S3_2_5 S3_4",
+        "order": 1
+      },
+      {
+        "id": "R-B3-019",
+        "title": "Comparer des formations et préparer leur financement",
+        "url": "ressources/bc3/R-B3-019-choisir-formation-budget-opco.html",
+        "use": "Choix d’un organisme, d’une modalité de formation ou préparation d’une demande de prise en charge.",
+        "outcome": "Un tableau comparatif indiquant objectif, programme, durée, modalité, qualité, coût pédagogique, temps mobilisé, frais annexes, financement potentiel et critères de réussite.",
+        "first_action": "Reprendre le besoin et le résultat attendu.",
+        "inputs": [
+          "besoin validé",
+          "budget ou plafond",
+          "offres de formation",
+          "contraintes de planning",
+          "OPCO de l’entreprise",
+          "règles conventionnelles éventuelles"
+        ],
+        "checks": [
+          "besoin initial visible dans la comparaison",
+          "coût complet calculé",
+          "financement seulement présenté s’il est vérifié",
+          "contraintes de planning intégrées",
+          "critères de choix explicites"
+        ],
+        "validate": [
+          "engagement financier",
+          "choix final du prestataire",
+          "signature du dossier de financement"
+        ],
+        "activities": "A3_2",
+        "tasks": "T3_2_3 T3_2_6",
+        "knowledge": "S3_2_3 S3_4",
+        "order": 2
+      },
+      {
+        "id": "R-B3-028",
+        "title": "Calculer et comparer le coût prévisionnel d’un recrutement ou d’une formation",
+        "url": "ressources/bc3/R-B3-028-calculer-cout-recrutement-formation.html",
+        "use": "Comparaison de canaux de recrutement, prestataires, actions de formation ou scénarios d’organisation.",
+        "outcome": "Un tableau chiffré avec hypothèses, coûts directs, temps internes valorisés si demandé, aides/prises en charge identifiées séparément et coût net prévisionnel.",
+        "first_action": "Définir l’objet et la période du calcul.",
+        "inputs": [
+          "devis et tarifs",
+          "temps prévus des acteurs internes",
+          "coûts de déplacement ou logistique",
+          "modalités de prise en charge connues",
+          "scénarios comparables"
+        ],
+        "checks": [
+          "hypothèses visibles",
+          "mêmes bases de comparaison",
+          "pas de double comptage",
+          "aides non garanties identifiées comme telles",
+          "coût relié aux critères qualitatifs"
+        ],
+        "validate": [
+          "choix final du recrutement ou de la formation",
+          "engagement budgétaire",
+          "prise en charge non confirmée"
+        ],
+        "activities": "A3_2",
+        "tasks": "T3_2_1 T3_2_3 T3_2_5",
+        "knowledge": "S3_2_1 S3_2_3 S3_2_5 S3_4",
+        "order": 3
+      },
+      {
+        "id": "R-B3-020",
+        "title": "Planifier et suivre une action de formation jusqu’à son évaluation",
+        "url": "ressources/bc3/R-B3-020-planifier-suivre-action-formation.html",
+        "use": "Formation interne ou externe, présentielle, à distance ou en situation de travail.",
+        "outcome": "Un dossier de formation complet : convocation, planning, financement, preuve de réalisation, évaluation à chaud et contrôle du transfert en situation de travail.",
+        "first_action": "Confirmer l’inscription et les conditions. Dates, horaires, accès, prérequis.",
+        "inputs": [
+          "formation validée",
+          "salariés concernés",
+          "dates et contraintes",
+          "convention/commande",
+          "modalités de financement",
+          "critères de réussite"
+        ],
+        "checks": [
+          "formation réellement suivie",
+          "preuve archivée",
+          "coût final rapproché du prévu",
+          "évaluation du transfert prévue",
+          "dossier RH et tableau mis à jour"
+        ],
+        "validate": [
+          "report ou annulation avec impact contractuel",
+          "prise en charge financière finale",
+          "action obligatoire complexe"
+        ],
+        "activities": "A3_2",
+        "tasks": "T3_2_3 T3_2_6",
+        "knowledge": "S3_2_3 S3_4",
+        "order": 4
+      }
+    ]
+  },
+  {
+    "id": "M22",
+    "title": "L’absentéisme augmente : produire un tableau de bord qui aide réellement le dirigeant",
+    "activity": "A3_2",
+    "bc": "BC3",
+    "output": "Un tableau de bord social lisible, des évolutions comparables, des faits distingués des hypothèses et quelques questions ou actions à décider.",
+    "steps": [
+      {
+        "id": "R-B3-023",
+        "title": "Construire un tableau de bord social simple et utile au dirigeant",
+        "url": "ressources/bc3/R-B3-023-construire-tableau-bord-social.html",
+        "use": "Suivi des effectifs, absentéisme, turnover, recrutement, formation ou autres priorités sociales de la PME.",
+        "outcome": "Un tableau de bord avec indicateurs définis, source, formule, fréquence, objectif ou seuil, évolution et commentaire.",
+        "first_action": "Partir des questions de pilotage. « Avons-nous un problème d’absentéisme ? » plutôt que « quels indicateurs peut-on calculer ? »",
+        "inputs": [
+          "questions du dirigeant",
+          "données RH fiables",
+          "historique suffisant",
+          "définitions des indicateurs",
+          "périodicité de suivi"
+        ],
+        "checks": [
+          "indicateurs reliés à une question de gestion",
+          "formules documentées",
+          "sources fiables",
+          "comparaisons cohérentes",
+          "données individuelles non exposées inutilement"
+        ],
+        "validate": [
+          "seuils d’alerte",
+          "interprétation causale",
+          "décision de gestion"
+        ],
+        "activities": "A3_2",
+        "tasks": "T3_2_5 T3_2_6",
+        "knowledge": "S3_2_5 S3_4",
+        "order": 1
+      },
+      {
+        "id": "R-B3-024",
+        "title": "Analyser des indicateurs sociaux et préparer des propositions",
+        "url": "ressources/bc3/R-B3-024-analyser-indicateurs-sociaux-proposer-actions.html",
+        "use": "Hausse d’absentéisme, turnover, difficulté de recrutement, faible participation aux formations ou autre signal social.",
+        "outcome": "Une note courte : constat chiffré, vérifications, hypothèses, informations complémentaires, risques et propositions à soumettre à la direction.",
+        "first_action": "Décrire le signal. Indicateur, période, ampleur, comparaison.",
+        "inputs": [
+          "tableau de bord fiabilisé",
+          "données détaillées non nominatives si possible",
+          "contexte de la période",
+          "événements organisationnels",
+          "retours des responsables"
+        ],
+        "checks": [
+          "signal chiffré précisément",
+          "qualité de donnée vérifiée",
+          "hypothèses présentées comme hypothèses",
+          "propositions reliées à des preuves",
+          "indicateur de suivi prévu"
+        ],
+        "validate": [
+          "interprétation sensible concernant des salariés",
+          "action RH engageante",
+          "communication des résultats à un large public"
+        ],
+        "activities": "A3_2",
+        "tasks": "T3_2_5 T3_2_6",
+        "knowledge": "S3_2_5 S5_2",
+        "order": 2
+      },
+      {
+        "id": "R-TR-012",
+        "title": "Extraire, nettoyer et contrôler des données du PGI avant analyse",
+        "url": "ressources/transversal/R-TR-012-extraire-nettoyer-controler-donnees-pgi.html",
+        "use": "Balance, commandes, clients, fournisseurs, salariés, stocks, écritures, ventes ou toute extraction autorisée.",
+        "outcome": "Un fichier de travail daté avec source, périmètre, contrôles, transformations documentées et nombre d’enregistrements cohérent.",
+        "first_action": "Noter la source, le module, la date et les filtres d’extraction.",
+        "inputs": [
+          "extraction brute",
+          "périmètre demandé",
+          "date/heure de l’extraction",
+          "droits d’accès",
+          "résultat attendu"
+        ],
+        "checks": [
+          "copie brute conservée",
+          "filtres connus",
+          "nombre d’enregistrements contrôlé",
+          "transformations justifiées",
+          "totaux comparés à la source"
+        ],
+        "validate": [
+          "modification directe de données de production",
+          "suppression massive",
+          "export de données sensibles hors environnement autorisé"
+        ],
+        "activities": "",
+        "tasks": "",
+        "knowledge": "S1_7 S2_7 S3_4 S4_8",
+        "order": 3
+      },
+      {
+        "id": "R-TR-014",
+        "title": "Présenter une analyse chiffrée sans noyer le destinataire sous les données",
+        "url": "ressources/transversal/R-TR-014-presenter-analyse-chiffree.html",
+        "use": "Trésorerie, coûts, RH, ventes, stocks, risques, budget, satisfaction ou tout suivi chiffré.",
+        "outcome": "Une synthèse en quatre niveaux : constat, mesure de l’écart, explication étayée, action ou question de décision.",
+        "first_action": "Commencer par la question de gestion, pas par le tableau.",
+        "inputs": [
+          "calculs contrôlés",
+          "objectif ou référence",
+          "historique ou comparaison",
+          "contexte",
+          "destinataire"
+        ],
+        "checks": [
+          "chiffres contrôlés",
+          "référence visible",
+          "écart quantifié",
+          "cause non inventée",
+          "conclusion orientée décision"
+        ],
+        "validate": [
+          "interprétation stratégique définitive",
+          "objectif ou seuil non fourni",
+          "communication externe sensible"
+        ],
+        "activities": "",
+        "tasks": "",
+        "knowledge": "S5_2",
+        "order": 4
+      }
+    ]
+  },
+  {
+    "id": "M23",
+    "title": "Deux collègues ne se parlent plus et le travail d’équipe se bloque",
+    "activity": "A3_3",
+    "bc": "BC3",
+    "output": "Des faits objectivés, les impacts sur le travail, un cadre d’échange et des règles collaboratives à proposer, sans décider d’une sanction.",
+    "steps": [
+      {
+        "id": "R-B3-025",
+        "title": "Repérer une tension relationnelle et préparer un entretien de régulation",
+        "url": "ressources/bc3/R-B3-025-reperer-tension-preparer-entretien.html",
+        "use": "Signaux de conflit, échanges dégradés, coordination difficile, plaintes croisées ou risque de rupture de coopération.",
+        "outcome": "Une fiche de situation factuelle, les parties et enjeux identifiés, un objectif d’entretien, des questions de clarification et des options de régulation à soumettre au dirigeant.",
+        "first_action": "Séparer faits, perceptions et interprétations.",
+        "inputs": [
+          "faits datés",
+          "acteurs concernés",
+          "échanges ou incidents documentés",
+          "règles internes",
+          "objectif de la direction"
+        ],
+        "checks": [
+          "faits datés et vérifiables",
+          "aucun diagnostic psychologique",
+          "objectif de l’entretien clair",
+          "rôle du dirigeant identifié",
+          "actions et responsables tracés"
+        ],
+        "validate": [
+          "sanction",
+          "arbitrage final du conflit",
+          "situation de harcèlement, violence ou risque grave à traiter selon procédures spécifiques"
+        ],
+        "activities": "A3_3",
+        "tasks": "T3_3_1",
+        "knowledge": "S3_3 S5_5 S5_7 S5_8",
+        "order": 1
+      },
+      {
+        "id": "R-B3-026",
+        "title": "Organiser un travail collaboratif avec des règles simples et vérifiables",
+        "url": "ressources/bc3/R-B3-026-organiser-travail-collaboratif.html",
+        "use": "Mise en place d’un espace partagé, traitement collectif d’un dossier, projet transversal ou amélioration de la circulation d’information.",
+        "outcome": "Une procédure collaborative légère : espace, arborescence, rôles, règles de nommage, droits, version, délais, validation, réunions et suivi des actions.",
+        "first_action": "Définir le résultat collectif. Quel livrable ou service doit être produit ?",
+        "inputs": [
+          "objectif du travail collectif",
+          "participants et rôles",
+          "outils disponibles",
+          "nature et sensibilité des documents",
+          "échéances",
+          "règles du SI de la PME"
+        ],
+        "checks": [
+          "un seul espace de référence",
+          "rôles et valideurs explicites",
+          "règles de version écrites",
+          "droits adaptés",
+          "échéances et réunions visibles",
+          "ancien contenu archivé ou clôturé"
+        ],
+        "validate": [
+          "choix stratégique d’outil",
+          "droits sensibles ou accès externes",
+          "processus engageant plusieurs services"
+        ],
+        "activities": "A3_3",
+        "tasks": "T3_3_2",
+        "knowledge": "S3_3 S5_3 S5_4 S5_6",
+        "order": 2
+      },
+      {
+        "id": "R-TR-009",
+        "title": "Repérer une tension et préparer une intervention sans se substituer au décideur",
+        "url": "ressources/transversal/R-TR-009-gerer-tension-conflit.html",
+        "use": "Tension entre collègues, désaccord récurrent, conflit avec un interlocuteur ou situation relationnelle qui dégrade la coordination.",
+        "outcome": "Une fiche factuelle distinguant événements, impacts, acteurs, tentatives déjà réalisées, points à vérifier et options de traitement.",
+        "first_action": "Décrire les faits observables sans qualifier les personnes.",
+        "inputs": [
+          "faits observés",
+          "échanges ou traces disponibles",
+          "rôles des acteurs",
+          "règles internes",
+          "impact sur l’activité"
+        ],
+        "checks": [
+          "faits séparés des jugements",
+          "impact professionnel explicite",
+          "urgence évaluée",
+          "périmètre de décision respecté",
+          "confidentialité maîtrisée"
+        ],
+        "validate": [
+          "sanction",
+          "médiation formelle non prévue",
+          "décision finale de résolution"
+        ],
+        "activities": "",
+        "tasks": "",
+        "knowledge": "S5_7",
+        "order": 3
+      },
+      {
+        "id": "R-TR-004",
+        "title": "Produire un compte rendu de réunion ou d’entretien qui permet le suivi",
+        "url": "ressources/transversal/R-TR-004-produire-compte-rendu-actionnable.html",
+        "use": "Réunion projet, entretien fournisseur, réunion interne, point RH, échange avec un prestataire ou entretien de suivi.",
+        "outcome": "Un compte rendu fidèle avec décisions, actions, responsables, dates, points en attente et documents de référence.",
+        "first_action": "Identifier l’objet, la date et les participants.",
+        "inputs": [
+          "ordre du jour ou objectif",
+          "notes prises pendant l’échange",
+          "liste des participants",
+          "documents examinés",
+          "échéances décidées"
+        ],
+        "checks": [
+          "décisions non ambiguës",
+          "actions attribuées",
+          "échéances présentes",
+          "points ouverts visibles",
+          "aucune opinion personnelle ajoutée"
+        ],
+        "validate": [
+          "formulation d’une décision sensible",
+          "diffusion externe",
+          "compte rendu ayant valeur formelle particulière"
+        ],
+        "activities": "",
+        "tasks": "",
+        "knowledge": "S5_2 S5_6",
+        "order": 4
+      }
+    ]
+  },
+  {
+    "id": "M24",
+    "title": "Les fichiers sont partout et personne ne sait quelle version est la bonne",
+    "activity": "A4_1",
+    "bc": "BC4",
+    "output": "Un diagnostic du flux documentaire, un plan de classement/archivage et des propositions d’amélioration ou d’escalade vers l’ESN.",
+    "steps": [
+      {
+        "id": "R-B4-001",
+        "title": "Caractériser le système d’information d’une PME",
+        "url": "ressources/bc4/R-B4-001-caracteriser-systeme-information.html",
+        "use": "Diagnostic du SI, arrivée dans une nouvelle entreprise, dysfonctionnement d’information ou préparation d’une évolution du système.",
+        "outcome": "Une représentation synthétique des acteurs, informations, applications, supports, flux, droits et points de fragilité du SI.",
+        "first_action": "Définir le périmètre. Service, processus, site ou activité à étudier.",
+        "inputs": [
+          "organigramme et rôles",
+          "applications et outils utilisés",
+          "documents et données principales",
+          "interlocuteurs internes et prestataires",
+          "exemples de flux réels"
+        ],
+        "checks": [
+          "périmètre clairement défini",
+          "acteurs et données réellement observés",
+          "flux entrants et sortants visibles",
+          "droits et responsabilités repérés",
+          "anomalies appuyées sur des faits"
+        ],
+        "validate": [
+          "choix d’architecture ou de logiciel",
+          "modification de droits sensibles",
+          "décision d’investissement informatique"
+        ],
+        "activities": "A4_1",
+        "tasks": "T4_1_1",
+        "knowledge": "S4_1_1 S4_1_4 S5_2",
+        "order": 1
+      },
+      {
+        "id": "R-B4-002",
+        "title": "Cartographier un flux d’information ou un processus",
+        "url": "ressources/bc4/R-B4-002-cartographier-flux-information-processus.html",
+        "use": "Analyse d’un processus support ou opérationnel : commande, réclamation, achat, recrutement, facturation, intervention, archivage.",
+        "outcome": "Un schéma lisible montrant déclencheur, étapes, acteurs, documents/données, décisions, contrôles, sortie et anomalies.",
+        "first_action": "Fixer le début et la fin. Quel événement déclenche le processus ? Quel résultat marque sa fin ?",
+        "inputs": [
+          "objectif du processus",
+          "entretiens ou observation du travail réel",
+          "documents utilisés",
+          "délais et contrôles",
+          "incidents ou anomalies connus"
+        ],
+        "checks": [
+          "début et fin explicites",
+          "chaque étape a un acteur",
+          "flux d’information visibles",
+          "exceptions importantes représentées",
+          "schéma compréhensible sans commentaire oral"
+        ],
+        "validate": [
+          "nouvelle répartition des responsabilités",
+          "suppression d’un contrôle important",
+          "modification engageant plusieurs services"
+        ],
+        "activities": "A4_1",
+        "tasks": "T4_1_1 T4_1_4",
+        "knowledge": "S4_1_1 S5_2",
+        "order": 2
+      },
+      {
+        "id": "R-B4-005",
+        "title": "Construire un plan de classement et d’archivage des documents",
+        "url": "ressources/bc4/R-B4-005-classer-archiver-documents.html",
+        "use": "Réorganisation d’un dossier partagé ou d’une GED, création d’un plan d’archivage, traitement de documents dispersés ou mal nommés.",
+        "outcome": "Un plan de classement avec règles de nommage, droits, version, statut, durée de conservation, sort final et responsable.",
+        "first_action": "Inventorier les familles documentaires. Contrats, factures, RH, fiscal, commercial, projets, etc.",
+        "inputs": [
+          "types de documents réellement produits",
+          "processus auxquels ils se rattachent",
+          "utilisateurs et droits",
+          "obligations légales ou contractuelles",
+          "outils de stockage disponibles"
+        ],
+        "checks": [
+          "arborescence compréhensible par un nouvel utilisateur",
+          "pas de dossiers nommés uniquement par une personne",
+          "versions finales identifiables",
+          "durée et point de départ documentés",
+          "destruction prévue quand la conservation n’est plus justifiée"
+        ],
+        "validate": [
+          "durées juridiques complexes ou litigieuses",
+          "destruction d’archives engageantes",
+          "choix d’une solution de GED ou d’archivage probant"
+        ],
+        "activities": "A4_1",
+        "tasks": "T4_1_5",
+        "knowledge": "S4_1_3 S5_2",
+        "order": 3
+      },
+      {
+        "id": "R-B4-006",
+        "title": "Diagnostiquer une anomalie du SI et préparer une demande à l’ESN",
+        "url": "ressources/bc4/R-B4-006-diagnostiquer-anomalie-si-preparer-demande-esn.html",
+        "use": "Erreur récurrente, donnée inaccessible, lenteur, problème de droits, synchronisation ou évolution fonctionnelle demandée par les utilisateurs.",
+        "outcome": "Un ticket ou cahier de besoin structuré : contexte, utilisateurs concernés, résultat attendu, anomalie reproduite, preuves, urgence et contraintes.",
+        "first_action": "Décrire l’impact métier. Quelle tâche ne peut plus être réalisée ?",
+        "inputs": [
+          "description du problème par les utilisateurs",
+          "captures ou messages d’erreur non sensibles",
+          "heure et fréquence",
+          "outil/version concernés",
+          "impact métier"
+        ],
+        "checks": [
+          "faits séparés des hypothèses",
+          "impact métier explicite",
+          "aucune donnée sensible transmise inutilement",
+          "résultat attendu décrit",
+          "test de résolution prévu"
+        ],
+        "validate": [
+          "intervention technique",
+          "modification du SI en production",
+          "accès administrateur ou sécurité"
+        ],
+        "activities": "A4_1",
+        "tasks": "T4_1_6",
+        "knowledge": "S4_1_1 S4_1_4 S5_2",
+        "order": 4
+      }
+    ]
+  },
+  {
+    "id": "M25",
+    "title": "Planifier quinze interventions avec des urgences et des techniciens indisponibles",
+    "activity": "A4_2",
+    "bc": "BC4",
+    "output": "Un planning sous contraintes, des priorités explicites, les conflits repérés et un dispositif de mise à jour.",
+    "steps": [
+      {
+        "id": "R-B4-009",
+        "title": "Planifier des activités, interventions ou prestations",
+        "url": "ressources/bc4/R-B4-009-planifier-activites-interventions.html",
+        "use": "Planning de techniciens, chantiers, livraisons, prestations clients, maintenance ou interventions multi-sites.",
+        "outcome": "Un planning réalisable avec ressources affectées, contraintes respectées, marges, dépendances, confirmation et suivi des écarts.",
+        "first_action": "Transformer chaque demande en opération planifiable. Durée, lieu, ressource, prérequis.",
+        "inputs": [
+          "demandes à planifier",
+          "durée estimée",
+          "compétences et ressources nécessaires",
+          "disponibilités",
+          "temps de déplacement et contraintes client"
+        ],
+        "checks": [
+          "aucune ressource affectée deux fois",
+          "temps de déplacement intégré",
+          "prérequis vérifiés",
+          "version du planning identifiable",
+          "écarts et replanifications tracés"
+        ],
+        "validate": [
+          "priorité entre clients sensibles",
+          "engagement de délai hors procédure",
+          "recours à une ressource externe non prévue"
+        ],
+        "activities": "A4_2",
+        "tasks": "T4_2_3",
+        "knowledge": "S4_2_2 S4_2_3 S4_8",
+        "order": 1
+      },
+      {
+        "id": "R-B4-010",
+        "title": "Gérer les priorités, la charge et un agenda partagé",
+        "url": "ressources/bc4/R-B4-010-gerer-charge-priorites-agenda.html",
+        "use": "Agenda du dirigeant, équipe commerciale, techniciens, suivi de rendez-vous, réunions et échéances administratives.",
+        "outcome": "Un agenda partagé fiable complété par des règles de priorité, de réservation, de modification et d’alerte.",
+        "first_action": "Définir les catégories utiles. Rendez-vous, déplacement, préparation, indisponibilité, échéance.",
+        "inputs": [
+          "participants et droits",
+          "types de rendez-vous",
+          "contraintes de durée",
+          "temps de préparation/déplacement",
+          "règles de confidentialité"
+        ],
+        "checks": [
+          "droits adaptés",
+          "pas de chevauchement injustifié",
+          "temps de préparation prévu",
+          "informations sensibles masquées",
+          "modifications notifiées"
+        ],
+        "validate": [
+          "arbitrage de priorité du dirigeant",
+          "accès à un agenda confidentiel",
+          "déplacement d’un engagement stratégique"
+        ],
+        "activities": "A4_2",
+        "tasks": "T4_2_2 T4_2_3",
+        "knowledge": "S4_2_3 S4_8",
+        "order": 2
+      },
+      {
+        "id": "R-B4-008",
+        "title": "Organiser et suivre le travail administratif",
+        "url": "ressources/bc4/R-B4-008-organiser-travail-administratif.html",
+        "use": "Période chargée, dossiers parallèles, absences, nouvelle organisation ou manque de visibilité sur les échéances.",
+        "outcome": "Un dispositif simple de pilotage : tâches, priorité, responsable, échéance, charge estimée, statut, dépendances et points de contrôle.",
+        "first_action": "Recenser le travail à faire. Utilisez des unités suffisamment précises pour être suivies.",
+        "inputs": [
+          "liste des activités et échéances",
+          "priorités de la direction",
+          "ressources disponibles",
+          "durées ou charges estimées",
+          "contraintes récurrentes"
+        ],
+        "checks": [
+          "priorités justifiées",
+          "charge compatible avec la capacité",
+          "responsables explicites",
+          "blocages visibles",
+          "outil mis à jour à une fréquence définie"
+        ],
+        "validate": [
+          "arbitrage entre priorités stratégiques",
+          "modification durable des missions",
+          "heures supplémentaires ou ressources supplémentaires"
+        ],
+        "activities": "A4_2",
+        "tasks": "T4_2_2",
+        "knowledge": "S4_2_2 S4_2_3 S4_8",
+        "order": 3
+      }
+    ]
+  },
+  {
+    "id": "M26",
+    "title": "Les ventes baissent : vérifier si le marché change avant de proposer une action",
+    "activity": "A4_3",
+    "bc": "BC4",
+    "output": "Une analyse distinguant données internes, marché, concurrence et avis clients, suivie d’une proposition commerciale argumentée.",
+    "steps": [
+      {
+        "id": "R-B4-014",
+        "title": "Mettre en place une veille commerciale orientée décision",
+        "url": "ressources/bc4/R-B4-014-mettre-en-place-veille-commerciale.html",
+        "use": "Projet de développement commercial, lancement d’offre, évolution de la demande ou suivi régulier d’un marché.",
+        "outcome": "Un dispositif de veille avec questions, sources, fréquence, critères de qualification, synthèse et signaux déclenchant une alerte.",
+        "first_action": "Formuler 3 à 5 questions de veille. Ex. évolution des prix, nouveaux concurrents, besoin client.",
+        "inputs": [
+          "enjeu commercial",
+          "marché et zone concernés",
+          "clients/cibles",
+          "concurrents ou substituts",
+          "sources disponibles"
+        ],
+        "checks": [
+          "questions de veille reliées à un enjeu",
+          "sources diversifiées et datées",
+          "faits séparés des interprétations",
+          "impacts pour la PME explicités",
+          "action ou surveillance proposée"
+        ],
+        "validate": [
+          "orientation commerciale",
+          "engagement sur un nouveau marché",
+          "décision d’investissement"
+        ],
+        "activities": "A4_3",
+        "tasks": "T4_3_1",
+        "knowledge": "S4_3_1 S4_8_1 S5_2",
+        "order": 1
+      },
+      {
+        "id": "R-B4-015",
+        "title": "Analyser un marché et distinguer une tendance d’un signal isolé",
+        "url": "ressources/bc4/R-B4-015-analyser-marche-tendances.html",
+        "use": "Étude d’un segment, évolution de la demande, concurrence, prix, comportements clients ou opportunité de diversification.",
+        "outcome": "Un diagnostic de marché sourcé : taille/évolution, segments, clients, concurrence, facteurs d’évolution, opportunités, menaces et limites des données.",
+        "first_action": "Délimiter le marché. Produit/service, besoin, clients, zone.",
+        "inputs": [
+          "périmètre du marché",
+          "période d’analyse",
+          "données internes",
+          "sources statistiques externes",
+          "informations concurrentielles"
+        ],
+        "checks": [
+          "marché clairement délimité",
+          "sources et dates visibles",
+          "comparaisons sur des unités homogènes",
+          "signal isolé non présenté comme tendance",
+          "conclusion reliée aux capacités de la PME"
+        ],
+        "validate": [
+          "choix du marché cible",
+          "modification du positionnement",
+          "engagement commercial majeur"
+        ],
+        "activities": "A4_3",
+        "tasks": "T4_3_2",
+        "knowledge": "S4_3_1 S4_3_2 S4_8_1",
+        "order": 2
+      },
+      {
+        "id": "R-B4-016",
+        "title": "Construire et exploiter une enquête de satisfaction client",
+        "url": "ressources/bc4/R-B4-016-construire-enquete-satisfaction.html",
+        "use": "Bilan qualité client, action de fidélisation, évolution d’une offre ou analyse d’un point de contact.",
+        "outcome": "Un questionnaire ciblé, un plan de diffusion, un fichier exploitable, des résultats synthétiques et des pistes d’action.",
+        "first_action": "Définir l’objectif. Quelles décisions pourront être prises ?",
+        "inputs": [
+          "objectif de l’enquête",
+          "population concernée",
+          "canal de diffusion",
+          "informations clients déjà connues",
+          "décisions possibles après enquête"
+        ],
+        "checks": [
+          "questionnaire lié à une décision",
+          "échelles constantes",
+          "questions non orientées",
+          "taux de réponse calculé",
+          "résultats segmentés seulement si effectifs suffisants"
+        ],
+        "validate": [
+          "collecte de données personnelles nouvelles",
+          "diffusion à une base client selon règles de la PME",
+          "engagement sur les actions correctrices"
+        ],
+        "activities": "A4_3",
+        "tasks": "T4_3_2 T4_3_3",
+        "knowledge": "S4_3_1 S4_3_3 S4_8_1",
+        "order": 3
+      },
+      {
+        "id": "R-B4-017",
+        "title": "Transformer une analyse de marché en proposition de développement commercial",
+        "url": "ressources/bc4/R-B4-017-proposer-action-developpement-commercial.html",
+        "use": "Nouveau segment, nouveau canal, extension géographique, adaptation de l’offre ou action commerciale ciblée.",
+        "outcome": "Une recommandation structurée : opportunité, cible, proposition de valeur, actions, ressources, risques, indicateurs et scénario de test.",
+        "first_action": "Formuler l’opportunité. Quel besoin ou changement est observé ?",
+        "inputs": [
+          "diagnostic de marché",
+          "capacité de la PME",
+          "objectifs commerciaux",
+          "budget ou contraintes",
+          "données clients"
+        ],
+        "checks": [
+          "proposition fondée sur des données",
+          "cible précise",
+          "test limité et mesurable",
+          "coûts et ressources visibles",
+          "risques présentés sans les minimiser"
+        ],
+        "validate": [
+          "choix stratégique",
+          "budget et prix",
+          "engagement de ressources"
+        ],
+        "activities": "A4_3",
+        "tasks": "T4_3_2",
+        "knowledge": "S4_3_2 S5_2",
+        "order": 4
+      }
+    ]
+  },
+  {
+    "id": "M27",
+    "title": "La PME veut lancer une campagne sur les réseaux sociaux sans perdre son image",
+    "activity": "A4_4",
+    "bc": "BC4",
+    "output": "Un cahier des charges, un plan d’action, des supports cohérents avec l’identité de la PME et des indicateurs d’efficacité.",
+    "steps": [
+      {
+        "id": "R-B4-019",
+        "title": "Préparer le cahier des charges d’une action de communication",
+        "url": "ressources/bc4/R-B4-019-preparer-cahier-charges-communication.html",
+        "use": "Création d’un support, campagne, refonte d’une page, événement, dossier de presse ou action commerciale.",
+        "outcome": "Un brief ou cahier des charges avec contexte, objectif, cible, message, livrables, canaux, contraintes, budget, planning, validation et indicateurs.",
+        "first_action": "Présenter le contexte. PME, offre, problème ou opportunité.",
+        "inputs": [
+          "stratégie et identité de la PME",
+          "objectif de communication",
+          "cible",
+          "budget",
+          "supports existants"
+        ],
+        "checks": [
+          "objectif distinct de l’outil choisi",
+          "cible précise",
+          "message cohérent avec l’identité",
+          "budget et planning visibles",
+          "validation et critères de réussite définis"
+        ],
+        "validate": [
+          "orientation et message stratégique",
+          "budget",
+          "choix final d’une campagne sensible"
+        ],
+        "activities": "A4_4",
+        "tasks": "T4_4_1 T4_4_2",
+        "knowledge": "S4_4_1 S5_2",
+        "order": 1
+      },
+      {
+        "id": "R-B4-039",
+        "title": "Décliner la stratégie de communication en plan d’actions opérationnel",
+        "url": "ressources/bc4/R-B4-039-construire-plan-communication-operationnel.html",
+        "use": "Lancement d’une offre, événement, communication institutionnelle, campagne locale, développement de la visibilité ou coordination de plusieurs canaux.",
+        "outcome": "Un plan d’actions précisant objectif, cible, message, canal, support, responsable, calendrier, budget, validation et indicateur.",
+        "first_action": "Reformuler l’objectif de communication en résultat observable.",
+        "inputs": [
+          "stratégie et objectifs définis par la direction",
+          "cibles prioritaires",
+          "identité/charte de la PME",
+          "budget",
+          "canaux et supports disponibles",
+          "contraintes de calendrier"
+        ],
+        "checks": [
+          "objectif relié à la stratégie",
+          "cible identifiable",
+          "message cohérent entre canaux",
+          "budget total calculé",
+          "responsables et validations visibles",
+          "indicateurs liés à l’objectif"
+        ],
+        "validate": [
+          "stratégie et positionnement",
+          "budget final",
+          "messages sensibles et publication externe"
+        ],
+        "activities": "A4_4",
+        "tasks": "T4_4_1 T4_4_2 T4_4_4",
+        "knowledge": "S4_4_1 S4_4_2 S4_4_3 S4_4_4 S4_8_1",
+        "order": 2
+      },
+      {
+        "id": "R-B4-021",
+        "title": "Concevoir une action de communication commerciale cohérente",
+        "url": "ressources/bc4/R-B4-021-concevoir-action-communication-commerciale.html",
+        "use": "Lancement d’offre, promotion, campagne de prospection, invitation commerciale ou animation d’un segment client.",
+        "outcome": "Un plan d’action de communication commerciale avec cible, message, preuve, canal, budget, calendrier, responsable et indicateurs.",
+        "first_action": "Partir de l’objectif commercial. Volume, segment, comportement attendu.",
+        "inputs": [
+          "objectif commercial",
+          "cible",
+          "offre et avantages",
+          "charte et ton",
+          "budget/canaux"
+        ],
+        "checks": [
+          "objectif et action attendue explicites",
+          "message adapté à la cible",
+          "preuve réelle",
+          "canal cohérent",
+          "indicateur relié au résultat commercial"
+        ],
+        "validate": [
+          "budget et offre promotionnelle",
+          "message engageant juridiquement la PME",
+          "diffusion à grande échelle"
+        ],
+        "activities": "A4_4",
+        "tasks": "T4_4_2 T4_4_4",
+        "knowledge": "S4_4_1 S4_4_3 S4_8_1",
+        "order": 3
+      },
+      {
+        "id": "R-B4-023",
+        "title": "Contrôler la cohérence d’un support avec l’image et la charte de la PME",
+        "url": "ressources/bc4/R-B4-023-controler-coherence-image-charte.html",
+        "use": "Affiche, présentation, publication sociale, courriel de campagne, brochure, page web ou document prestataire.",
+        "outcome": "Une grille de contrôle avec écarts repérés, corrections demandées, validation et version finale identifiée.",
+        "first_action": "Vérifier l’identité. Logo, proportions, couleurs, typographies, iconographie.",
+        "inputs": [
+          "charte graphique",
+          "règles éditoriales",
+          "support à contrôler",
+          "objectif/cible",
+          "mentions ou éléments obligatoires"
+        ],
+        "checks": [
+          "logo conforme",
+          "message et ton cohérents",
+          "aucune information obsolète",
+          "liens et coordonnées testés",
+          "version finale identifiable"
+        ],
+        "validate": [
+          "exception à la charte",
+          "nouvelle identité visuelle",
+          "message sensible"
+        ],
+        "activities": "A4_4",
+        "tasks": "T4_4_4",
+        "knowledge": "S4_4_1 S4_4_4 S5_4",
+        "order": 4
+      },
+      {
+        "id": "R-B4-024",
+        "title": "Mesurer l’efficacité d’une action de communication",
+        "url": "ressources/bc4/R-B4-024-mesurer-efficacite-action-communication.html",
+        "use": "Après une campagne, un événement, une publication, une action presse ou commerciale.",
+        "outcome": "Un bilan reliant objectifs, indicateurs, résultats, coûts, écarts, enseignements et recommandations.",
+        "first_action": "Reprendre l’objectif initial. Ne changez pas la question après l’action.",
+        "inputs": [
+          "objectif initial",
+          "indicateurs définis avant l’action",
+          "données de diffusion",
+          "résultats commerciaux ou relationnels",
+          "budget réalisé"
+        ],
+        "checks": [
+          "indicateurs reliés à l’objectif",
+          "coût réel intégré",
+          "comparaison avec une base pertinente",
+          "résultats séparés des explications",
+          "recommandation fondée sur les données"
+        ],
+        "validate": [
+          "conclusion stratégique",
+          "nouveau budget",
+          "arrêt ou extension d’un canal"
+        ],
+        "activities": "A4_4",
+        "tasks": "T4_4_1 T4_4_2 T4_4_4",
+        "knowledge": "S4_4_1 S4_8_1",
+        "order": 5
+      }
+    ]
+  },
+  {
+    "id": "M28",
+    "title": "Un produit se vend bien mais le dirigeant doute de sa rentabilité",
+    "activity": "A4_5",
+    "bc": "BC4",
+    "output": "Des coûts calculés avec la méthode fournie, une marge/seuil interprétés et une simulation explicitant les hypothèses.",
+    "steps": [
+      {
+        "id": "R-B4-025",
+        "title": "Calculer et analyser un coût complet avec la méthode fournie",
+        "url": "ressources/bc4/R-B4-025-calculer-cout-complet.html",
+        "use": "Analyse de rentabilité, comparaison de commandes, tarification ou contrôle d’un coût calculé par la PME.",
+        "outcome": "Un coût calculé de façon traçable, avec charges intégrées, unités d’œuvre ou clés fournies, contrôles et commentaire sur les principaux postes.",
+        "first_action": "Définir l’objet de coût. Produit, service, commande, chantier, client.",
+        "inputs": [
+          "méthode de calcul en usage dans la PME",
+          "charges et période",
+          "volumes ou unités d’œuvre",
+          "répartition des charges indirectes fournie",
+          "objet de coût"
+        ],
+        "checks": [
+          "objet de coût explicite",
+          "période identique pour charges et volumes",
+          "clés de répartition documentées",
+          "totaux réconciliés",
+          "analyse séparée du calcul"
+        ],
+        "validate": [
+          "choix d’une nouvelle méthode analytique",
+          "modification de clés structurantes",
+          "décision de prix ou abandon d’activité"
+        ],
+        "activities": "A4_5",
+        "tasks": "T4_5_1",
+        "knowledge": "S4_5_1 S4_5_2 S4_8_1",
+        "order": 1
+      },
+      {
+        "id": "R-B4-026",
+        "title": "Calculer une marge sur coût variable ou un coût partiel",
+        "url": "ressources/bc4/R-B4-026-calculer-marge-cout-partiel.html",
+        "use": "Choix de commande, simulation de volume, analyse d’activité ou préparation d’un seuil de rentabilité.",
+        "outcome": "Un tableau chiffre d’affaires, charges variables, marge sur coût variable, taux de marge et charges fixes avec interprétation.",
+        "first_action": "Identifier les charges variables selon la méthode donnée.",
+        "inputs": [
+          "chiffre d’affaires ou prix/quantités",
+          "liste des charges classées selon la méthode",
+          "période",
+          "hypothèses de volume",
+          "consignes de calcul"
+        ],
+        "checks": [
+          "classement des charges justifié par la méthode",
+          "signes et unités cohérents",
+          "taux calculé sur la bonne base",
+          "charges fixes non imputées arbitrairement",
+          "hypothèses de simulation visibles"
+        ],
+        "validate": [
+          "classement complexe d’une charge",
+          "choix de prix",
+          "acceptation d’une commande stratégique"
+        ],
+        "activities": "A4_5",
+        "tasks": "T4_5_1",
+        "knowledge": "S4_5_1 S4_5_2 S4_8_1",
+        "order": 2
+      },
+      {
+        "id": "R-B4-027",
+        "title": "Calculer et interpréter un seuil de rentabilité",
+        "url": "ressources/bc4/R-B4-027-calculer-seuil-rentabilite.html",
+        "use": "Prévision d’activité, lancement d’offre, simulation de prix, structure de coûts ou mesure d’un risque d’exploitation.",
+        "outcome": "Un seuil de rentabilité en valeur et, si possible, en volume, accompagné d’une marge de sécurité et d’une analyse des hypothèses.",
+        "first_action": "Vérifier les données. Période, charges fixes et marge cohérentes.",
+        "inputs": [
+          "charges fixes",
+          "taux de marge sur coût variable ou prix/coût variable unitaire",
+          "activité prévue",
+          "période",
+          "hypothèses stables"
+        ],
+        "checks": [
+          "période cohérente",
+          "charges fixes correctement reprises",
+          "taux exprimé dans la bonne unité",
+          "hypothèses visibles",
+          "seuil interprété et non seulement calculé"
+        ],
+        "validate": [
+          "hypothèses stratégiques",
+          "nouveau prix",
+          "décision d’investissement"
+        ],
+        "activities": "A4_5",
+        "tasks": "T4_5_1 T4_5_3",
+        "knowledge": "S4_5_3 S4_8_1",
+        "order": 3
+      },
+      {
+        "id": "R-B4-029",
+        "title": "Analyser les écarts et simuler l’impact d’une décision de gestion",
+        "url": "ressources/bc4/R-B4-029-analyser-ecarts-simuler-decision.html",
+        "use": "Écart budgétaire, hausse de prix fournisseur, changement de tarif, volume, investissement ou organisation.",
+        "outcome": "Une analyse distinguant écart, causes possibles, variables explicatives, scénario de décision et impact attendu.",
+        "first_action": "Calculer l’écart. Valeur et pourcentage si pertinent.",
+        "inputs": [
+          "budget de référence",
+          "réalisé fiable",
+          "hypothèses d’origine",
+          "données opérationnelles",
+          "décision à tester"
+        ],
+        "checks": [
+          "budget initial conservé",
+          "écart calculé sur une base comparable",
+          "cause étayée par une donnée",
+          "hypothèse de simulation visible",
+          "impact non présenté comme certain"
+        ],
+        "validate": [
+          "cause managériale ou stratégique",
+          "décision à mettre en œuvre",
+          "hypothèse engageant la PME"
+        ],
+        "activities": "A4_5",
+        "tasks": "T4_5_2 T4_5_3",
+        "knowledge": "S4_5_1 S4_5_4 S4_8_1",
+        "order": 4
+      },
+      {
+        "id": "R-B4-040",
+        "title": "Simuler l’impact d’une décision de gestion sur les coûts, le résultat et les équilibres financiers",
+        "url": "ressources/bc4/R-B4-040-simuler-decision-gestion-couts-finance.html",
+        "use": "Investissement, hausse de volume, embauche, changement de prix, nouveau contrat, modification de charges ou autre décision fournie par la direction.",
+        "outcome": "Un tableau de scénarios montrant hypothèses, variation des coûts/produits, résultat, trésorerie ou équilibres financiers concernés et limites du calcul.",
+        "first_action": "Figer une situation de référence datée.",
+        "inputs": [
+          "situation de référence fiable",
+          "hypothèses de décision",
+          "coûts variables/fixes concernés",
+          "calendrier des flux si nécessaire",
+          "indicateurs à suivre"
+        ],
+        "checks": [
+          "référence datée",
+          "hypothèses séparées des données réelles",
+          "pas de double comptage",
+          "horizon cohérent",
+          "limites du modèle explicitées"
+        ],
+        "validate": [
+          "hypothèses stratégiques",
+          "choix final",
+          "engagement financier"
+        ],
+        "activities": "A4_5 A4_6",
+        "tasks": "T4_5_3 T4_6_2",
+        "knowledge": "S4_5_1 S4_5_2 S4_5_3 S4_5_4 S4_6_1 S4_6_2 S4_8_1",
+        "order": 5
+      }
+    ]
+  },
+  {
+    "id": "M29",
+    "title": "Financer une machine : comparer les solutions sans choisir à la place du dirigeant",
+    "activity": "A4_6",
+    "bc": "BC4",
+    "output": "Une comparaison argumentée des financements et un plan de financement montrant l’impact sur les équilibres financiers.",
+    "steps": [
+      {
+        "id": "R-B4-030",
+        "title": "Construire un bilan fonctionnel à partir des données fournies",
+        "url": "ressources/bc4/R-B4-030-construire-bilan-fonctionnel.html",
+        "use": "Diagnostic financier lorsque la méthode et les retraitements attendus sont fournis dans la situation.",
+        "outcome": "Un bilan fonctionnel équilibré, avec retraitements tracés et montants contrôlés avant calcul du FRNG, BFR et de la trésorerie nette.",
+        "first_action": "Conserver une copie du bilan source.",
+        "inputs": [
+          "bilan comptable",
+          "méthode/retraitements fournis",
+          "annexes nécessaires",
+          "exercice comparable",
+          "consignes du cas"
+        ],
+        "checks": [
+          "source et exercice identifiés",
+          "retraitements documentés",
+          "totaux équilibrés",
+          "aucun montant compté deux fois",
+          "méthode appliquée de manière constante"
+        ],
+        "validate": [
+          "traitement d’un poste atypique non prévu",
+          "conclusion sur la politique financière"
+        ],
+        "activities": "A4_6",
+        "tasks": "T4_6_1",
+        "knowledge": "S4_6_1 S4_8_1",
+        "order": 1
+      },
+      {
+        "id": "R-B4-031",
+        "title": "Calculer et interpréter FRNG, BFR et trésorerie nette",
+        "url": "ressources/bc4/R-B4-031-analyser-equilibres-fr-bfr-tn.html",
+        "use": "Diagnostic de structure financière et préparation d’une synthèse à la direction.",
+        "outcome": "Les trois agrégats calculés, leur cohérence vérifiée, leur évolution analysée et les facteurs explicatifs recherchés.",
+        "first_action": "Calculer le FRNG. Avec la formule retenue dans le cours ou le cas.",
+        "inputs": [
+          "bilan fonctionnel fiable",
+          "formules attendues",
+          "exercice précédent si disponible",
+          "informations sur activité et délais",
+          "repères sectoriels si fournis"
+        ],
+        "checks": [
+          "formules cohérentes",
+          "TN contrôlée de deux façons si possible",
+          "évolution chiffrée",
+          "causes recherchées dans les données",
+          "aucun jugement sans contexte"
+        ],
+        "validate": [
+          "diagnostic définitif",
+          "décision de financement",
+          "interprétation d’une situation complexe"
+        ],
+        "activities": "A4_6",
+        "tasks": "T4_6_1",
+        "knowledge": "S4_6_1 S4_8_1",
+        "order": 2
+      },
+      {
+        "id": "R-B4-033",
+        "title": "Comparer des modes de financement d’un investissement",
+        "url": "ressources/bc4/R-B4-033-comparer-modes-financement-investissement.html",
+        "use": "Investissement matériel, véhicule, équipement, logiciel ou projet nécessitant un financement externe ou mixte.",
+        "outcome": "Un tableau comparatif des solutions : montant financé, apport, échéances, coût, durée, garanties/contraintes, flexibilité et impacts principaux.",
+        "first_action": "Définir le besoin de financement. Montant, date, durée d’utilisation.",
+        "inputs": [
+          "montant et calendrier de l’investissement",
+          "capacité d’apport",
+          "offres ou hypothèses de financement",
+          "durée d’usage",
+          "situation financière de la PME"
+        ],
+        "checks": [
+          "même investissement comparé",
+          "tous les frais connus intégrés",
+          "calendrier des flux visible",
+          "hypothèses identifiées",
+          "avantages non financiers explicités"
+        ],
+        "validate": [
+          "choix du financement",
+          "signature et garanties",
+          "analyse fiscale ou juridique complexe"
+        ],
+        "activities": "A4_6",
+        "tasks": "T4_6_2",
+        "knowledge": "S4_6_2 S4_6_3 S4_8_1",
+        "order": 3
+      },
+      {
+        "id": "R-B4-034",
+        "title": "Construire un plan de financement et mesurer l’impact d’une décision",
+        "url": "ressources/bc4/R-B4-034-construire-plan-financement-mesurer-impact.html",
+        "use": "Investissement, croissance, renouvellement d’équipement ou autre décision nécessitant emplois et ressources durables.",
+        "outcome": "Un plan de financement équilibré, avec besoins, ressources, solde, hypothèses et commentaire sur les marges de sécurité.",
+        "first_action": "Lister les emplois. Investissements et autres besoins durables selon la méthode fournie.",
+        "inputs": [
+          "investissements et besoins associés",
+          "ressources prévues",
+          "offres de financement",
+          "capacité d’autofinancement si fournie",
+          "calendrier"
+        ],
+        "checks": [
+          "emplois et ressources exhaustifs selon la méthode",
+          "dates compatibles",
+          "aucun financement compté deux fois",
+          "hypothèses séparées des données acquises",
+          "scénario prudent explicité"
+        ],
+        "validate": [
+          "montant définitif à financer",
+          "choix des ressources",
+          "engagement auprès d’un financeur"
+        ],
+        "activities": "A4_6",
+        "tasks": "T4_6_2",
+        "knowledge": "S4_6_2 S4_6_3 S4_8_1 S5_2",
+        "order": 4
+      },
+      {
+        "id": "R-B4-040",
+        "title": "Simuler l’impact d’une décision de gestion sur les coûts, le résultat et les équilibres financiers",
+        "url": "ressources/bc4/R-B4-040-simuler-decision-gestion-couts-finance.html",
+        "use": "Investissement, hausse de volume, embauche, changement de prix, nouveau contrat, modification de charges ou autre décision fournie par la direction.",
+        "outcome": "Un tableau de scénarios montrant hypothèses, variation des coûts/produits, résultat, trésorerie ou équilibres financiers concernés et limites du calcul.",
+        "first_action": "Figer une situation de référence datée.",
+        "inputs": [
+          "situation de référence fiable",
+          "hypothèses de décision",
+          "coûts variables/fixes concernés",
+          "calendrier des flux si nécessaire",
+          "indicateurs à suivre"
+        ],
+        "checks": [
+          "référence datée",
+          "hypothèses séparées des données réelles",
+          "pas de double comptage",
+          "horizon cohérent",
+          "limites du modèle explicitées"
+        ],
+        "validate": [
+          "hypothèses stratégiques",
+          "choix final",
+          "engagement financier"
+        ],
+        "activities": "A4_5 A4_6",
+        "tasks": "T4_5_3 T4_6_2",
+        "knowledge": "S4_5_1 S4_5_2 S4_5_3 S4_5_4 S4_6_1 S4_6_2 S4_8_1",
+        "order": 5
+      }
+    ]
+  },
+  {
+    "id": "M30",
+    "title": "Le tableau de bord contient 40 chiffres : repérer ce qui mérite vraiment une alerte",
+    "activity": "A4_7",
+    "bc": "BC4",
+    "output": "Une synthèse courte des indicateurs pertinents, des écarts contrôlés et une alerte distinguant faits, hypothèses et décision à prendre.",
+    "steps": [
+      {
+        "id": "R-B4-035",
+        "title": "Choisir des indicateurs de gestion et des seuils d’alerte",
+        "url": "ressources/bc4/R-B4-035-choisir-indicateurs-seuils-alerte.html",
+        "use": "Création ou refonte d’un tableau de bord commercial, financier ou mixte.",
+        "outcome": "Une fiche par indicateur : question de pilotage, définition, formule, source, fréquence, responsable, objectif/seuil et action en cas d’écart.",
+        "first_action": "Partir des décisions. Que doit savoir le dirigeant pour agir ?",
+        "inputs": [
+          "priorités de la direction",
+          "objectifs",
+          "sources disponibles",
+          "historique",
+          "fréquence de décision"
+        ],
+        "checks": [
+          "chaque indicateur répond à une question",
+          "formule stable",
+          "source disponible à temps",
+          "seuil justifié",
+          "action associée à l’alerte"
+        ],
+        "validate": [
+          "objectifs et seuils stratégiques",
+          "indicateurs engageant plusieurs services",
+          "action déclenchée par une alerte sensible"
+        ],
+        "activities": "A4_7",
+        "tasks": "T4_7_1",
+        "knowledge": "S4_7_1 S4_8 S5_2",
+        "order": 1
+      },
+      {
+        "id": "R-B4-036",
+        "title": "Construire un tableau de bord commercial et financier lisible",
+        "url": "ressources/bc4/R-B4-036-construire-tableau-bord-commercial-financier.html",
+        "use": "Reporting mensuel ou hebdomadaire à la direction, suivi d’un plan d’action ou synthèse commerciale/financière.",
+        "outcome": "Un tableau de bord d’une ou quelques pages avec indicateurs, objectifs, écarts, tendances, alertes et commentaires.",
+        "first_action": "Organiser par question de pilotage. Commercial, activité, marge, trésorerie/finance selon le besoin.",
+        "inputs": [
+          "indicateurs définis",
+          "sources fiables",
+          "objectifs/seuils",
+          "historique",
+          "destinataire et fréquence"
+        ],
+        "checks": [
+          "indicateurs définis ailleurs",
+          "pas de calcul manuel caché",
+          "objectifs visibles",
+          "graphiques avec axes/unités lisibles",
+          "mise à jour reproductible",
+          "commentaire orienté décision"
+        ],
+        "validate": [
+          "sélection finale des indicateurs stratégiques",
+          "diffusion à des destinataires externes",
+          "interprétation engageant la stratégie"
+        ],
+        "activities": "A4_7",
+        "tasks": "T4_7_2",
+        "knowledge": "S4_7_1 S4_8 S5_2",
+        "order": 2
+      },
+      {
+        "id": "R-B4-037",
+        "title": "Analyser un tableau de bord et préparer une alerte au dirigeant",
+        "url": "ressources/bc4/R-B4-037-analyser-tableau-bord-alerter.html",
+        "use": "Revue périodique du tableau de bord, dérive commerciale, financière ou opérationnelle.",
+        "outcome": "Une note ou synthèse courte : faits, ampleur, tendance, facteurs explicatifs, conséquences possibles, urgence et options.",
+        "first_action": "Vérifier la donnée. Source, date, formule, anomalie de saisie.",
+        "inputs": [
+          "tableau de bord à jour",
+          "définitions et seuils",
+          "historique",
+          "données détaillées permettant de décomposer",
+          "contexte récent"
+        ],
+        "checks": [
+          "donnée vérifiée avant alerte",
+          "écart quantifié",
+          "cause non affirmée sans preuve",
+          "urgence justifiée",
+          "options reliées aux facteurs identifiés"
+        ],
+        "validate": [
+          "interprétation stratégique",
+          "arbitrage final",
+          "communication externe de la situation"
+        ],
+        "activities": "A4_7",
+        "tasks": "T4_7_1 T4_7_2",
+        "knowledge": "S4_7_1 S5_2",
+        "order": 3
+      },
+      {
+        "id": "R-TR-014",
+        "title": "Présenter une analyse chiffrée sans noyer le destinataire sous les données",
+        "url": "ressources/transversal/R-TR-014-presenter-analyse-chiffree.html",
+        "use": "Trésorerie, coûts, RH, ventes, stocks, risques, budget, satisfaction ou tout suivi chiffré.",
+        "outcome": "Une synthèse en quatre niveaux : constat, mesure de l’écart, explication étayée, action ou question de décision.",
+        "first_action": "Commencer par la question de gestion, pas par le tableau.",
+        "inputs": [
+          "calculs contrôlés",
+          "objectif ou référence",
+          "historique ou comparaison",
+          "contexte",
+          "destinataire"
+        ],
+        "checks": [
+          "chiffres contrôlés",
+          "référence visible",
+          "écart quantifié",
+          "cause non inventée",
+          "conclusion orientée décision"
+        ],
+        "validate": [
+          "interprétation stratégique définitive",
+          "objectif ou seuil non fourni",
+          "communication externe sensible"
+        ],
+        "activities": "",
+        "tasks": "",
+        "knowledge": "S5_2",
+        "order": 4
+      },
+      {
+        "id": "R-TR-003",
+        "title": "Rédiger une note professionnelle pour aider le dirigeant à décider",
+        "url": "ressources/transversal/R-TR-003-rediger-note-direction.html",
+        "use": "Alerte, comparaison, diagnostic, risque, choix fournisseur, décision RH, analyse commerciale ou financière.",
+        "outcome": "Une note courte distinguant objet, faits essentiels, analyse, options, recommandation argumentée et décision attendue.",
+        "first_action": "Écrire en tête la question à trancher.",
+        "inputs": [
+          "question posée par le responsable",
+          "données vérifiées",
+          "sources",
+          "contraintes",
+          "options possibles"
+        ],
+        "checks": [
+          "question de décision claire",
+          "faits sourcés",
+          "options comparables",
+          "recommandation justifiée",
+          "décision attendue visible"
+        ],
+        "validate": [
+          "décision finale",
+          "communication externe de la recommandation",
+          "interprétation relevant d’un expert"
+        ],
+        "activities": "",
+        "tasks": "",
+        "knowledge": "S5_2",
+        "order": 5
+      }
+    ]
+  }
+]

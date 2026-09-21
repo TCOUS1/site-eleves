@@ -1,0 +1,252 @@
+[
+  {
+    "id": "M01",
+    "documents": [
+      {
+        "file": "01-demande-direction.html",
+        "label": "Demande de la direction"
+      },
+      {
+        "file": "02-offre-ecoprint.html",
+        "label": "Fiche offre EcoPrint"
+      },
+      {
+        "file": "03-prospects-bruts.csv",
+        "label": "Fichier prospects brut"
+      },
+      {
+        "file": "04-bilan-campagne-precedente.csv",
+        "label": "Bilan de campagne précédente"
+      },
+      {
+        "file": "05-regles-internes.html",
+        "label": "Règles internes de prospection"
+      }
+    ]
+  },
+  {
+    "id": "M02",
+    "documents": [
+      {
+        "file": "01-devis.html",
+        "label": "Devis D-2026-084"
+      },
+      {
+        "file": "02-bon-commande.html",
+        "label": "Bon de commande client"
+      },
+      {
+        "file": "03-bon-livraison.html",
+        "label": "Bon de livraison"
+      },
+      {
+        "file": "04-fiche-client.html",
+        "label": "Fiche client"
+      },
+      {
+        "file": "05-regles-facturation.html",
+        "label": "Règles internes de facturation"
+      }
+    ]
+  },
+  {
+    "id": "M03",
+    "documents": [
+      {
+        "file": "01-facture.html",
+        "label": "Facture F-2026-431"
+      },
+      {
+        "file": "02-balance-agee.csv",
+        "label": "Balance âgée"
+      },
+      {
+        "file": "03-extrait-banque.csv",
+        "label": "Extrait bancaire récent"
+      },
+      {
+        "file": "04-historique-echanges.html",
+        "label": "Historique des échanges"
+      },
+      {
+        "file": "05-procedure-relance.html",
+        "label": "Procédure interne de relance"
+      }
+    ]
+  },
+  {
+    "id": "M04",
+    "documents": [
+      {
+        "file": "01-reclamation-client.html",
+        "label": "Réclamation du client"
+      },
+      {
+        "file": "02-commande-suivi.html",
+        "label": "Commande et suivi logistique"
+      },
+      {
+        "file": "03-suivi-transport.html",
+        "label": "Suivi du transporteur"
+      },
+      {
+        "file": "04-historique-client.csv",
+        "label": "Historique client"
+      },
+      {
+        "file": "05-procedure-reclamation.html",
+        "label": "Procédure de traitement des réclamations"
+      }
+    ]
+  },
+  {
+    "id": "M05",
+    "documents": [
+      {
+        "file": "01-expression-besoin.html",
+        "label": "Expression du besoin"
+      },
+      {
+        "file": "02-offre-alphasedia.html",
+        "label": "Offre AlphaSedia"
+      },
+      {
+        "file": "03-offre-buroconfort.html",
+        "label": "Offre BuroConfort"
+      },
+      {
+        "file": "04-offre-circulassise.html",
+        "label": "Offre CirculAssise"
+      },
+      {
+        "file": "05-historique-fournisseurs.csv",
+        "label": "Historique fournisseurs"
+      }
+    ]
+  },
+  {
+    "id": "M06",
+    "documents": [
+      {
+        "file": "01-etat-stock.csv",
+        "label": "État de stock"
+      },
+      {
+        "file": "02-mouvements-8-semaines.csv",
+        "label": "Mouvements des huit dernières semaines"
+      },
+      {
+        "file": "03-commandes-ouvertes.csv",
+        "label": "Commandes fournisseurs ouvertes"
+      },
+      {
+        "file": "04-politique-stock.html",
+        "label": "Politique de stock"
+      },
+      {
+        "file": "05-demande-production.html",
+        "label": "Prévision de consommation exceptionnelle"
+      }
+    ]
+  },
+  {
+    "id": "M07",
+    "documents": [
+      {
+        "file": "01-releve-bancaire.csv",
+        "label": "Relevé bancaire"
+      },
+      {
+        "file": "02-journal-banque.csv",
+        "label": "Journal de banque"
+      },
+      {
+        "file": "03-remise-cheques.html",
+        "label": "Bordereau de remise"
+      },
+      {
+        "file": "04-comptes-clients.csv",
+        "label": "Comptes clients ouverts"
+      },
+      {
+        "file": "05-procedure-rapprochement.html",
+        "label": "Procédure de rapprochement bancaire"
+      }
+    ]
+  },
+  {
+    "id": "M08",
+    "documents": [
+      {
+        "file": "01-message-client.html",
+        "label": "Message du client donneur d’ordre"
+      },
+      {
+        "file": "02-procedure-actuelle.html",
+        "label": "Procédure actuelle"
+      },
+      {
+        "file": "03-bon-livraison-actuel.html",
+        "label": "Exemple de bon de livraison actuel"
+      },
+      {
+        "file": "04-commandes-impactees.csv",
+        "label": "Commandes potentiellement impactées"
+      },
+      {
+        "file": "05-cartographie-processus.html",
+        "label": "Extrait du processus de préparation-livraison"
+      }
+    ]
+  },
+  {
+    "id": "M09",
+    "documents": [
+      {
+        "file": "01-note-cadrage-direction.html",
+        "label": "Demande initiale de la direction"
+      },
+      {
+        "file": "02-inventaire-archives.csv",
+        "label": "Inventaire des archives"
+      },
+      {
+        "file": "03-disponibilites-equipe.csv",
+        "label": "Disponibilités de l’équipe"
+      },
+      {
+        "file": "04-offres-prestataires.csv",
+        "label": "Options de prestataires"
+      },
+      {
+        "file": "05-contraintes-projet.html",
+        "label": "Contraintes et règles de continuité"
+      }
+    ]
+  },
+  {
+    "id": "M10",
+    "documents": [
+      {
+        "file": "01-journal-incidents.csv",
+        "label": "Journal des incidents"
+      },
+      {
+        "file": "02-echelle-risque.html",
+        "label": "Échelle interne de cotation"
+      },
+      {
+        "file": "03-mesures-existantes.html",
+        "label": "Mesures de maîtrise existantes"
+      },
+      {
+        "file": "04-demande-direction.html",
+        "label": "Demande de la direction"
+      },
+      {
+        "file": "05-indicateurs-activite.csv",
+        "label": "Données de contexte"
+      }
+    ]
+  }
+]

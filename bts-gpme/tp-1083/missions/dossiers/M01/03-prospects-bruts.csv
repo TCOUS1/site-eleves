@@ -1,0 +1,13 @@
+﻿Organisation;Ville;Secteur;Effectif;Courriel;Source;Date_source;Notes
+ArchiForma;Lyon;Architecture;28;contact@archiforma.example;Annuaire pro;2026-08-12;3 agences
+Studio Ligne 8;Grenoble;Architecture;14;bonjour@ligne8.example;Salon 2025;2025-11-04;Effectif ancien à vérifier
+IngéNova;Clermont-Ferrand;Bureau d’études;42;contact@ingenova.example;Site web;2026-08-21;
+ArchiForma;Lyon;Architecture;28;info@archiforma.example;Import CRM;2026-07-30;Doublon probable
+MétalPro;Saint-Étienne;Industrie;120;achats@metalpro.example;Annuaire pro;2026-08-02;Hors cible sectorielle
+Atelier M2;Annecy;Architecture;;contact@atelierm2.example;Site web;2026-08-26;Effectif manquant
+BatiConseil;Valence;Bureau d’études;9;direction@baticonseil.example;Réseau commercial;2026-08-01;Sous seuil cible
+Planisphère Architecture;Chambéry;Architecture;33;;Salon 2026;2026-06-18;Coordonnée à compléter
+EcoStructure;Bourg-en-Bresse;Bureau d’études;18;contact@ecostructure.example;Site web;2026-08-29;4 imprimantes visibles dans visite virtuelle
+Arc&Co;Dijon;Architecture;24;contact@arcco.example;Annuaire pro;2026-08-11;Hors zone
+TekBIM;Villeurbanne;Bureau d’études;51;hello@tekbim.example;LinkedIn;2026-08-27;Effectif légèrement supérieur
+Atelier Rhôna;Vienne;Architecture;19;agence@rhona.example;Recommandation client;2026-08-28;Recommandé par client actif

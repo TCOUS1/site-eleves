@@ -1,0 +1,25 @@
+{
+  "version": "1.7",
+  "resource_pages": 145,
+  "mission_dossiers": 30,
+  "dossier_pieces_previous": 150,
+  "dossier_pieces_added": 1,
+  "student_production_tools": 10,
+  "student_csv_templates": 10,
+  "missions_production_tested": [
+    "M01",
+    "M02",
+    "M03",
+    "M04",
+    "M05",
+    "M06",
+    "M07",
+    "M08",
+    "M09",
+    "M10"
+  ],
+  "broken_local_links": 0,
+  "broken_examples": [],
+  "duplicate_id_pages": 0,
+  "duplicate_id_examples": []
+}

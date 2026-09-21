@@ -1,0 +1,90 @@
+/* CSS de démonstration uniquement : remplaçable par la feuille de style du site. */
+:root { font-family: system-ui, sans-serif; line-height: 1.55; }
+body { margin: 0; background: #f7f7f8; color: #202124; }
+a { color: inherit; }
+.resource-center { width: min(1100px, calc(100% - 2rem)); margin: 0 auto; padding: 2rem 0 4rem; }
+.resource-center__header, .resource-search, .resource-results, .resource-center__referential { background: white; border: 1px solid #ddd; border-radius: 12px; padding: 1.25rem; margin-bottom: 1rem; }
+.resource-center__eyebrow, .resource-card__type { font-size: .8rem; text-transform: uppercase; letter-spacing: .05em; font-weight: 700; }
+.resource-search__row { display: flex; flex-wrap: wrap; gap: .5rem; }
+.resource-search input { flex: 1 1 28rem; min-height: 2.75rem; padding: 0 .75rem; }
+button { min-height: 2.75rem; padding: 0 .85rem; cursor: pointer; }
+.resource-search__examples, .resource-card__tags { display: flex; flex-wrap: wrap; gap: .4rem; margin-top: 1rem; }
+.resource-search__examples a, .resource-card__tags a { text-decoration: none; border: 1px solid #bbb; border-radius: 999px; padding: .2rem .55rem; font-family: ui-monospace, monospace; font-size: .9rem; }
+.resource-search__active { margin-top: 1rem; padding: .75rem; border: 1px dashed #aaa; }
+.resource-results__header { display: flex; justify-content: space-between; align-items: baseline; gap: 1rem; }
+.resource-results__list { display: grid; gap: .8rem; }
+.resource-card { border: 1px solid #ddd; border-radius: 10px; padding: 1rem; }
+.resource-card h3 { margin: .25rem 0; }
+.resource-card[hidden] { display: none; }
+.resource-results__empty { padding: 1rem; border: 1px dashed #aaa; }
+.referential__permalink { text-decoration: none; opacity: .55; }
+:target { scroll-margin-top: 1rem; outline: 3px solid currentColor; outline-offset: .35rem; }
+.demo-nav { width: min(1100px, calc(100% - 2rem)); margin: 1rem auto 0; display: flex; gap: 1rem; }
+.resource-page, .referential { width: min(900px, calc(100% - 2rem)); margin: 1rem auto 4rem; }
+.mission-index { width: min(1100px, calc(100% - 2rem)); margin: 1rem auto 4rem; }
+.resource, .referential { background: white; border: 1px solid #ddd; border-radius: 12px; padding: 1.4rem; }
+.resource__referential-tags { display: flex; flex-wrap: wrap; gap: .4rem; margin: 1rem 0; }
+.resource__referential-tags a, .referential__tag { display: inline-block; text-decoration: none; border: 1px solid #bbb; border-radius: 999px; padding: .18rem .5rem; font-family: ui-monospace, monospace; font-size: .9rem; }
+.resource section, .resource details { margin: 1.5rem 0; }
+.resource details { border: 1px solid #ddd; border-radius: 8px; padding: .8rem; }
+.resource summary { cursor: pointer; font-weight: 700; }
+.referential__block { margin: 2rem 0; padding-top: .5rem; }
+.referential__activity { margin: 1.25rem 0; padding: .75rem; border-left: 3px solid #ccc; }
+.referential__tasks { padding-left: 1.5rem; }
+.referential__task { margin: .45rem 0; }
+
+.resource-group { margin: 1.5rem 0 2.25rem; }
+.resource-group > h3 { padding-bottom: .45rem; border-bottom: 1px solid #ddd; }
+.resource-group[hidden] { display: none; }
+.resource__sources { padding-top: 1rem; border-top: 1px solid #ddd; }
+.resource__maintenance { font-size: .95rem; }
+.resource li + li { margin-top: .3rem; }
+.resource__lead { font-size: 1.08rem; }
+
+/* v0.7 — audit / transversal */
+.audit-table-wrap{overflow-x:auto}.audit-table{width:100%;border-collapse:collapse;font-size:.92rem}.audit-table th,.audit-table td{border:1px solid #d7dce1;padding:.55rem;vertical-align:top;text-align:left}.audit-table th{background:#f4f6f8}.resource-center__footer-nav{margin:2rem 0}.referential__transversal{margin-top:2rem}
+
+/* v0.8 — structural additions; safe to replace with site CSS */
+.resource__referential-detail{margin-top:.75rem}
+.resource__referential-detail dl{display:grid;grid-template-columns:max-content 1fr;gap:.35rem .75rem}
+.resource__referential-detail dt{font-weight:700}.resource__referential-detail dd{margin:0}
+.resource__tool,.resource__transfer{margin:1rem 0;padding:.75rem;border:1px solid #bbb;border-radius:.4rem}
+.resource__tool-table-wrap,.audit-table-wrap{overflow-x:auto}.resource__tool-table,.audit-table{border-collapse:collapse;width:100%}
+.resource__tool-table th,.resource__tool-table td,.audit-table th,.audit-table td{border:1px solid #ccc;padding:.4rem;vertical-align:top}.resource__tool-table td{min-height:1.8rem}
+.referential-knowledge{padding:.6rem 0;border-bottom:1px solid #ddd}.referential-note{font-size:.95em}.referential-knowledge-links{font-size:.95em}
+.resource-search select{min-height:2.4rem}
+.resource__related small{display:inline;color:#555}
+
+/* v0.9 — autonomy additions */
+.resource__missing-info{margin:.8rem 0;padding:.65rem;border-left:4px solid currentColor}
+.resource__missing-info summary{font-weight:700;cursor:pointer}
+.training-card{margin:1rem 0;padding:1rem;border:1px solid #ccc;border-radius:.5rem}
+.training-card h2{font-size:1.15rem;margin:.35rem 0}
+.training-card__refs{font-size:.9rem}
+.training-card__refs span{margin-right:.45rem}
+.training-group{margin-top:2rem}
+
+/* v1.0 — student-first discovery */
+.resource-center__start-link a{display:inline-block;font-weight:700;padding:.7rem .9rem;border:2px solid currentColor;border-radius:.5rem;text-decoration:none}.resource-search__hint{max-width:70ch}.resource-results__ranked{margin:1rem 0}.resource-card__choose,.resource-card__outcome,.resource-card__first{margin:.45rem 0}.resource-card__first{font-size:.94rem}.resource__quick-start{border:2px solid #bbb;border-radius:.6rem;padding:1rem;margin:1rem 0 1.5rem}.resource__quick-start h2{margin-top:0}.guided-queries{display:flex;flex-wrap:wrap;gap:.45rem;padding:0;list-style:none}.guided-queries a{display:inline-block;border:1px solid #bbb;border-radius:999px;padding:.35rem .65rem;text-decoration:none}.glossary-entry{padding:.8rem 0;border-bottom:1px solid #ddd}.glossary-entry h2{font-size:1.1rem;margin-bottom:.2rem}.glossary-entry p{margin:.25rem 0}.student-search-audit .pass{font-weight:700}.student-search-audit .fail{font-weight:700}.resource-search__row select{padding:0 .5rem}
+
+/* v1.1 — parcours élève */
+.resource__mission-decoder,.student-method,.audit-summary{border:1px solid currentColor;padding:1rem;margin:1rem 0;border-radius:.5rem}.resource__student-search-phrases,.resource-card__student-query{font-size:.92em}.mission-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:1rem}.mission-card{border:1px solid #bbb;padding:1rem;border-radius:.5rem}.mission-card details{margin:.65rem 0}.audit-table-wrap{overflow-x:auto}.audit-table-wrap table{border-collapse:collapse;width:100%}.audit-table-wrap th,.audit-table-wrap td{border:1px solid #bbb;padding:.55rem;vertical-align:top}.student-method li{margin-bottom:1rem}
+
+/* v1.2 — structure fonctionnelle, à remplacer par le CSS du site */
+.resource__mobilisation-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(16rem,1fr));gap:1rem}
+.resource__mobilisation,.resource__blockage-diagnostic,.v12-onboarding,.v12-student-tools,.mission-workspace__phase,.mission-workspace__stuck{margin-block:1.25rem}
+.mission-step{margin-block:1rem;padding-block:.75rem;border-block-start:1px solid currentColor}
+.mission-step__number{font-size:.9em;font-weight:700}
+.mission-self-template{padding-inline-start:1rem;border-inline-start:3px solid currentColor}
+.diagnostic-form{display:grid;gap:1rem;max-width:60rem}
+.diagnostic-form label{display:grid;gap:.4rem;font-weight:700}
+.diagnostic-form textarea{font:inherit;width:100%}
+.mission-grid{display:grid;gap:1rem}
+.audit-summary{display:grid;gap:.25rem}
+
+
+/* v1.7 — production réelle, structure fonctionnelle temporaire */
+.mission-workspace__production{border:2px solid #aaa;border-radius:.6rem;padding:1rem}
+.mission-workspace__production a{font-weight:700}
+.teacher-audit{margin:1.5rem 0;padding:1rem;border:1px solid #bbb;border-radius:.5rem}
+.teacher-audit h2{margin-top:0}

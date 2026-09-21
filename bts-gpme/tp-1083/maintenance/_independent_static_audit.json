@@ -1,0 +1,45 @@
+{
+  "html_count": 351,
+  "errors": 0,
+  "warnings": 5,
+  "stats": {
+    "student_html": 346,
+    "dys_text": 336,
+    "skip_link": 336
+  },
+  "error_types": {},
+  "warning_types": {
+    "missing_lang": 1,
+    "missing_viewport": 1,
+    "missing_title": 1,
+    "h1_count": 2
+  },
+  "errors_sample": [],
+  "warnings_sample": [
+    [
+      "templates/fiche-ressource.html",
+      "missing_lang",
+      ""
+    ],
+    [
+      "templates/fiche-ressource.html",
+      "missing_viewport",
+      ""
+    ],
+    [
+      "templates/fiche-ressource.html",
+      "missing_title",
+      ""
+    ],
+    [
+      "demarrer/glossaire.html",
+      "h1_count",
+      "0"
+    ],
+    [
+      "referentiel/savoirs.html",
+      "h1_count",
+      "0"
+    ]
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "version": "2.3-recherche-referentiel",
+  "base": "2.2-pilote-alphabet",
+  "resources": 145,
+  "missions": 30,
+  "alphabet_terms": 394,
+  "defined_concepts": 209,
+  "referential_elements": 217,
+  "referential_counts": {
+    "bloc": 4,
+    "activite": 22,
+    "tache": 102,
+    "connaissance": 89
+  },
+  "resource_pages_with_ref_bridge": 145,
+  "mission_pages_with_ref_bridge": 30,
+  "hashtag_semantics": "official referential link only; no student-facing hashtag filters",
+  "fonts_embedded": false,
+  "opendyslexic_preparation": "interactive extractor from user-provided matrix archive or local system font"
+}

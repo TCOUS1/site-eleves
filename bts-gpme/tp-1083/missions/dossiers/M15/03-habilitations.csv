@@ -1,0 +1,5 @@
+﻿Compte;Fonction;Accès CRM clients;Accès paie;Accès factures;MFA
+m.dupont;commercial;lecture/écriture;non;lecture;oui
+a.martin;ADV;lecture/écriture;non;lecture/écriture;oui
+direction;direction;admin;lecture;admin;oui
+stagiaire2025;ancien compte;lecture;non;non;non

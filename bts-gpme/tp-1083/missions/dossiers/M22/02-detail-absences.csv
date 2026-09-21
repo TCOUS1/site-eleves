@@ -1,0 +1,10 @@
+﻿ID absence;Salarié anonymisé;Service;Début;Fin;Heures;Catégorie export
+A26041;S014;Atelier;2026-06-03;2026-06-05;21;Maladie
+A26042;S021;ADV;2026-06-08;2026-06-08;7;Enfant malade
+A26043;S006;Atelier;2026-06-15;2026-06-26;70;Maladie
+A26043;S006;Atelier;2026-06-15;2026-06-26;70;Maladie - doublon import ?
+A26044;S018;Logistique;2026-06-22;2026-06-24;21;AT
+A26051;S006;Atelier;2026-07-01;2026-07-03;21;Maladie
+A26052;S009;Atelier;2026-07-06;2026-07-17;70;Maladie
+A26053;S023;Commercial;2026-07-20;2026-07-24;35;Maladie
+A26054;S004;ADV;2026-07-27;2026-07-27;7;Absence autorisée

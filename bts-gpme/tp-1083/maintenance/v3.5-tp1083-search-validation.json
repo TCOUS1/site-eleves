@@ -1,0 +1,74 @@
+{
+  "version": "3.5",
+  "date": "2026-09-08",
+  "status": "PASS",
+  "metrics": {
+    "resources": 147,
+    "missions": 30,
+    "knowledge": 343,
+    "student_local_refs": 11880,
+    "student_broken_links": 0,
+    "teacher_local_refs": 12922,
+    "teacher_broken_links": 0,
+    "search_cases_passed": 14,
+    "search_cases_total": 14
+  },
+  "search_cases": [
+    [
+      "chaîne de valeur",
+      "R-TR-015"
+    ],
+    [
+      "présenter entreprise",
+      "R-TR-016"
+    ],
+    [
+      "matrice des risques",
+      "R-B2-002"
+    ],
+    [
+      "veille",
+      "R-B2-004"
+    ],
+    [
+      "note alerte direction",
+      "R-TR-003"
+    ],
+    [
+      "chronologie incident",
+      "R-B2-019"
+    ],
+    [
+      "72 heures CNIL",
+      "R-B2-019"
+    ],
+    [
+      "affacturage",
+      "R-B2-015"
+    ],
+    [
+      "criticité fournisseurs",
+      "R-B1-023"
+    ],
+    [
+      "Gantt",
+      "R-B2-008"
+    ],
+    [
+      "Pareto",
+      "R-B2-024"
+    ],
+    [
+      "procédure qualité",
+      "R-B2-025"
+    ],
+    [
+      "gestion connaissances",
+      "R-B2-026"
+    ],
+    [
+      "Origine France Garantie",
+      "R-B2-027"
+    ]
+  ]
+}

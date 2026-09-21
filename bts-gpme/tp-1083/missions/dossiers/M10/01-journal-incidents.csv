@@ -1,0 +1,13 @@
+﻿Date;Categorie;Incident;Arret_heures;Impact_signale_1a4;Commentaire
+2026-01-12;Quasi-accident;Chariot dans allée;0;2;Aucun blessé
+2026-02-03;Informatique;Compte partagé utilisé après départ salarié;0;3;Corrigé le jour même
+2026-02-21;Production;Panne presse 4 h;4;2;Retard client
+2026-03-11;Santé-sécurité;Glissade sans arrêt;0;2;Sol humide
+2026-04-18;Production;Panne presse 6 h;6;2;Pièce usée
+2026-05-07;Données;Clé USB perdue — contenu non chiffré;0;4;Données commerciales
+2026-05-26;Production;Panne presse 3 h;3;2;Même équipement
+2026-06-14;Fournisseur;Retard matière 2 jours;0;2;Commande urgente
+2026-07-02;Santé-sécurité;Douleur dos déclarée poste emballage;0;3;Poste non réglable
+2026-07-29;Production;Panne presse 5 h;5;2;Même équipement
+2026-08-06;Cybersécurité;Faux mail fournisseur détecté;0;4;Aucun clic
+2026-08-20;Santé-sécurité;Chute carton hauteur — aucun blessé;0;4;Stockage provisoire

@@ -1,0 +1,24 @@
+{
+  "version": "2.0-forme-accessible",
+  "source": "bts-gpme-ressources-v1.9",
+  "principle": "Fond v1.9 conservé ; forme pilote généralisée et confort de lecture DYS ajouté.",
+  "missions_transformed": 30,
+  "resources_transformed": 145,
+  "student_html_with_dys_toolbar": 335,
+  "dys_features": [
+    "mode DYS mémorisé",
+    "A−",
+    "A+",
+    "réinitialisation",
+    "lien aller au contenu",
+    "sans police binaire embarquée"
+  ],
+  "core_trace": [
+    "Pièce",
+    "Fait",
+    "Méthode",
+    "Traitement",
+    "Preuve",
+    "Décision"
+  ]
+}

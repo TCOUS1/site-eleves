@@ -1,0 +1,18 @@
+{
+  "version": "2.8",
+  "baseline": "v2.7",
+  "missions_unchanged": 30,
+  "resources_total": 145,
+  "resources_byte_identical": 121,
+  "regulatory_resources_reviewed": 24,
+  "regulatory_metadata_only_changes": 22,
+  "regulatory_wording_updates": [
+    "R-B1-009",
+    "R-B3-007"
+  ],
+  "knowledge_space_change": "taxonomy curation only; definitions and pedagogical links preserved",
+  "redirect_pages_improved": [
+    "demarrer/glossaire.html",
+    "referentiel/savoirs.html"
+  ]
+}

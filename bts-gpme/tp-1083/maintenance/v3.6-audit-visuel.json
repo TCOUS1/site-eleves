@@ -1,0 +1,1472 @@
+[
+  {
+    "id": "R-B1-001",
+    "title": "Cibler et organiser une prospection utile à la PME",
+    "decision": "surveiller",
+    "role": "aucun ajout v3.6",
+    "format": "processus",
+    "objectif": "Lorsque la direction ou un commercial fixe une cible, un secteur, un produit à promouvoir ou un objectif de contacts à obtenir.",
+    "representation_mentale": "Un plan de prospection réaliste et un fichier de suivi permettant de savoir qui contacter, pourquoi, par quel canal, quand et avec quel résultat.",
+    "motif": "La fiche suit une démarche. Un visuel peut être utile si les élèves ont besoin de voir l’ordre, les dépendances ou les points de décision ; à confirmer par l’usage en TP."
+  },
+  {
+    "id": "R-B1-002",
+    "title": "Qualifier un fichier de prospects avant une action commerciale",
+    "decision": "conserver",
+    "role": "aucun ajout v3.6",
+    "format": "texte-structure",
+    "objectif": "Avant une campagne, après l’import de données ou lorsqu’un fichier contient des doublons, informations anciennes ou contacts mal ciblés.",
+    "representation_mentale": "Un fichier nettoyé, dédupliqué et segmenté, avec un statut et une priorité exploitables dans le PGI ou le tableur.",
+    "motif": "Aucun gain visuel évident identifié à ce stade ; la structure actuelle paraît plus directe que l’ajout d’un schéma."
+  },
+  {
+    "id": "R-B1-003",
+    "title": "Détecter et analyser un appel d’offres avant de décider de répondre",
+    "decision": "surveiller",
+    "role": "aucun ajout v3.6",
+    "format": "processus",
+    "objectif": "Dès qu’un appel d’offres public ou privé est repéré par veille, plateforme, réseau professionnel ou demande directe.",
+    "representation_mentale": "Une fiche go/no-go : objet, acheteur, échéance, périmètre, critères, pièces, contraintes, risques et recommandation à la direction.",
+    "motif": "La fiche suit une démarche. Un visuel peut être utile si les élèves ont besoin de voir l’ordre, les dépendances ou les points de décision ; à confirmer par l’usage en TP."
+  },
+  {
+    "id": "R-B1-004",
+    "title": "Constituer et contrôler un dossier de réponse à un marché public",
+    "decision": "surveiller",
+    "role": "aucun ajout v3.6",
+    "format": "processus",
+    "objectif": "Après la décision de candidater, pour organiser la production du dossier jusqu’à la preuve de dépôt.",
+    "representation_mentale": "Un dossier complet, cohérent avec le règlement de consultation, déposé dans le délai, avec une trace des versions et de l’accusé de réception.",
+    "motif": "La fiche suit une démarche. Un visuel peut être utile si les élèves ont besoin de voir l’ordre, les dépendances ou les points de décision ; à confirmer par l’usage en TP."
+  },
+  {
+    "id": "R-B1-005",
+    "title": "Transformer une demande client en proposition commerciale ou devis",
+    "decision": "conserver",
+    "role": "aucun ajout v3.6",
+    "format": "texte-structure",
+    "objectif": "Après une demande de prix, de prestation, de renouvellement ou une demande issue d’un commercial.",
+    "representation_mentale": "Un devis ou une proposition commerciale cohérente avec le besoin, les tarifs, les conditions de vente et les capacités de la PME.",
+    "motif": "Aucun gain visuel évident identifié à ce stade ; la structure actuelle paraît plus directe que l’ajout d’un schéma."
+  },
+  {
+    "id": "R-B1-006",
+    "title": "Contrôler une commande ou un contrat client avant validation",
+    "decision": "conserver",
+    "role": "aucun ajout v3.6",
+    "format": "texte-regle",
+    "objectif": "Réception d’un bon de commande, d’un contrat ou d’un retour de devis signé.",
+    "representation_mentale": "Une commande contrôlée, enregistrée et, si nécessaire, une liste d’écarts à résoudre avant exécution.",
+    "motif": "La précision des règles, conditions, pièces et contrôles prime ; un visuel supplémentaire risquerait de masquer les nuances."
+  },
+  {
+    "id": "R-B1-007",
+    "title": "Suivre une vente et une livraison jusqu’à la preuve d’exécution",
+    "decision": "visuel ajouté v3.6",
+    "role": "complement",
+    "format": "timeline",
+    "objectif": "Se représenter le cycle d’une vente jusqu’à la preuve d’exécution.",
+    "representation_mentale": "commande → préparation → expédition/prestation → livraison/réception → preuve → alerte si écart",
+    "motif": "Le visuel réduit l’effort nécessaire pour reconstruire mentalement une structure, un enchaînement, une relation ou une décision."
+  },
+  {
+    "id": "R-B1-008",
+    "title": "Établir et contrôler une facture conforme",
+    "decision": "conserver",
+    "role": "aucun ajout v3.6",
+    "format": "texte-regle",
+    "objectif": "Après livraison/réalisation ou à l’événement de facturation prévu par le contrat et la réglementation.",
+    "representation_mentale": "Une facture exacte, cohérente avec la commande et les preuves d’exécution, comportant les mentions applicables à la situation.",
+    "motif": "La précision des règles, conditions, pièces et contrôles prime ; un visuel supplémentaire risquerait de masquer les nuances."
+  },
+  {
+    "id": "R-B1-009",
+    "title": "Préparer la PME à la facturation électronique 2026–2027",
+    "decision": "surveiller",
+    "role": "aucun ajout v3.6",
+    "format": "processus",
+    "objectif": "Diagnostic de préparation, choix ou paramétrage d’une plateforme agréée, fiabilisation des données clients/fournisseurs et tests de processus.",
+    "representation_mentale": "Une checklist de préparation : obligations applicables, plateforme, données de routage, processus réception/émission, rôles, tests, incidents et plan d’action.",
+    "motif": "La fiche suit une démarche. Un visuel peut être utile si les élèves ont besoin de voir l’ordre, les dépendances ou les points de décision ; à confirmer par l’usage en TP."
+  },
+  {
+    "id": "R-B1-010",
+    "title": "Suivre les règlements clients et conduire une relance amiable",
+    "decision": "surveiller",
+    "role": "aucun ajout v3.6",
+    "format": "processus",
+    "objectif": "Suivi périodique de balance âgée, facture arrivée à échéance, promesse de paiement non tenue ou litige bloquant le règlement.",
+    "representation_mentale": "Un dossier de relance traçable : facture, échéance, montant, historique, cause du retard, action, engagement client, prochaine date et niveau d’alerte.",
+    "motif": "La fiche suit une démarche. Un visuel peut être utile si les élèves ont besoin de voir l’ordre, les dépendances ou les points de décision ; à confirmer par l’usage en TP."
+  },
+  {
+    "id": "R-B1-011",
+    "title": "Évaluer le risque client avant ou pendant la relation commerciale",
+    "decision": "surveiller",
+    "role": "aucun ajout v3.6",
+    "format": "processus",
+    "objectif": "Nouveau client, commande importante, demande de délai inhabituel, hausse d’encours ou retards répétés.",
+    "representation_mentale": "Une évaluation argumentée du risque client avec indicateurs factuels, exposition, signaux d’alerte et proposition à valider.",
+    "motif": "La fiche suit une démarche. Un visuel peut être utile si les élèves ont besoin de voir l’ordre, les dépendances ou les points de décision ; à confirmer par l’usage en TP."
+  },
+  {
+    "id": "R-B1-012",
+    "title": "Fiabiliser et mettre à jour le système d’information clients",
+    "decision": "conserver",
+    "role": "aucun ajout v3.6",
+    "format": "texte-structure",
+    "objectif": "Création d’un client, changement d’adresse, fusion de doublons, migration, retour de facture ou campagne de qualité des données.",
+    "representation_mentale": "Une fiche client fiable, avec données critiques contrôlées, source/date de mise à jour, historique conservé et éventuels écarts traités.",
+    "motif": "Aucun gain visuel évident identifié à ce stade ; la structure actuelle paraît plus directe que l’ajout d’un schéma."
+  },
+  {
+    "id": "R-B1-013",
+    "title": "Accueillir, informer et orienter un client de façon professionnelle",
+    "decision": "conserver",
+    "role": "aucun ajout v3.6",
+    "format": "texte-structure",
+    "objectif": "Accueil physique, téléphone, messagerie, formulaire, réseau social ou demande transmise par un collègue.",
+    "representation_mentale": "Une demande qualifiée, une réponse adaptée ou une orientation vers le bon interlocuteur, avec une trace lorsque le suivi est nécessaire.",
+    "motif": "Aucun gain visuel évident identifié à ce stade ; la structure actuelle paraît plus directe que l’ajout d’un schéma."
+  },
+  {
+    "id": "R-B1-014",
+    "title": "Traiter et suivre une réclamation client jusqu’à sa clôture",
+    "decision": "surveiller",
+    "role": "aucun ajout v3.6",
+    "format": "processus",
+    "objectif": "Toute réclamation reçue par téléphone, courriel, formulaire, réseau social ou intermédiaire.",
+    "representation_mentale": "Une fiche de réclamation complète : faits, attente, preuve, cause, responsabilité de traitement, solution validée, réponse client, délai et clôture.",
+    "motif": "La fiche suit une démarche. Un visuel peut être utile si les élèves ont besoin de voir l’ordre, les dépendances ou les points de décision ; à confirmer par l’usage en TP."
+  },
+  {
+    "id": "R-B1-015",
+    "title": "Formaliser un besoin d’achat ou d’investissement avant de consulter",
+    "decision": "conserver",
+    "role": "aucun ajout v3.6",
+    "format": "texte-structure",
+    "objectif": "Achat nouveau, renouvellement, investissement, changement de fournisseur ou besoin exprimé par un service.",
+    "representation_mentale": "Un cahier des charges proportionné : besoin, quantité, usage, exigences, contraintes, critères de comparaison, budget indicatif et calendrier.",
+    "motif": "Aucun gain visuel évident identifié à ce stade ; la structure actuelle paraît plus directe que l’ajout d’un schéma."
+  },
+  {
+    "id": "R-B1-016",
+    "title": "Rechercher et présélectionner des fournisseurs",
+    "decision": "conserver",
+    "role": "aucun ajout v3.6",
+    "format": "texte-structure",
+    "objectif": "Nouveau besoin, recherche d’alternative, mise en concurrence, dépendance excessive à un fournisseur.",
+    "representation_mentale": "Une short-list de fournisseurs avec coordonnées, capacités, preuves, conditions principales, source des informations et date de vérification.",
+    "motif": "Aucun gain visuel évident identifié à ce stade ; la structure actuelle paraît plus directe que l’ajout d’un schéma."
+  },
+  {
+    "id": "R-B1-017",
+    "title": "Comparer des offres fournisseurs et préparer une recommandation",
+    "decision": "conserver",
+    "role": "aucun ajout v3.6",
+    "format": "texte-regle",
+    "objectif": "Après une consultation fournisseur ou pour renouveler une prestation/équipement.",
+    "representation_mentale": "Un tableau comparatif traçable et une recommandation présentant avantages, limites, risques et points à négocier.",
+    "motif": "La précision des règles, conditions, pièces et contrôles prime ; un visuel supplémentaire risquerait de masquer les nuances."
+  },
+  {
+    "id": "R-B1-018",
+    "title": "Préparer une négociation fournisseur",
+    "decision": "surveiller",
+    "role": "aucun ajout v3.6",
+    "format": "processus",
+    "objectif": "Renouvellement de contrat, achat significatif, hausse tarifaire, incident répété ou négociation de conditions.",
+    "representation_mentale": "Un dossier préparatoire : objectifs, priorités, arguments, concessions possibles, points non négociables, solution de repli et preuves.",
+    "motif": "La fiche suit une démarche. Un visuel peut être utile si les élèves ont besoin de voir l’ordre, les dépendances ou les points de décision ; à confirmer par l’usage en TP."
+  },
+  {
+    "id": "R-B1-019",
+    "title": "Passer et suivre une commande fournisseur",
+    "decision": "visuel ajouté v3.6",
+    "role": "complement",
+    "format": "timeline",
+    "objectif": "Voir la commande fournisseur comme un cycle de suivi et non un acte ponctuel.",
+    "representation_mentale": "besoin → commande → accusé → suivi → réception → écart",
+    "motif": "Le visuel réduit l’effort nécessaire pour reconstruire mentalement une structure, un enchaînement, une relation ou une décision."
+  },
+  {
+    "id": "R-B1-020",
+    "title": "Contrôler un achat, une facture fournisseur et préparer le règlement",
+    "decision": "visuel ajouté v3.6",
+    "role": "central",
+    "format": "rapprochement",
+    "objectif": "Comprendre que le paiement suppose la cohérence de plusieurs pièces.",
+    "representation_mentale": "commande ↔ réception ↔ facture → écart ou validation → règlement",
+    "motif": "Le visuel réduit l’effort nécessaire pour reconstruire mentalement une structure, un enchaînement, une relation ou une décision."
+  },
+  {
+    "id": "R-B1-021",
+    "title": "Suivre les stocks et déclencher un réapprovisionnement",
+    "decision": "surveiller",
+    "role": "aucun ajout v3.6",
+    "format": "processus",
+    "objectif": "Suivi périodique des articles, alerte de stock, préparation d’une commande ou analyse d’une rupture.",
+    "representation_mentale": "Un état de stock fiable avec besoin de réapprovisionnement justifié, quantité proposée et date de commande.",
+    "motif": "La fiche suit une démarche. Un visuel peut être utile si les élèves ont besoin de voir l’ordre, les dépendances ou les points de décision ; à confirmer par l’usage en TP."
+  },
+  {
+    "id": "R-B1-022",
+    "title": "Préparer l’acquisition et le suivi administratif d’une immobilisation",
+    "decision": "surveiller",
+    "role": "aucun ajout v3.6",
+    "format": "processus",
+    "objectif": "Achat de matériel, véhicule, équipement ou autre actif traité comme immobilisation selon les choix de l’entité.",
+    "representation_mentale": "Un dossier d’acquisition complet : autorisation, fournisseur, commande, réception, facture, mise en service, localisation, garanties et données transmises au suivi comptable.",
+    "motif": "La fiche suit une démarche. Un visuel peut être utile si les élèves ont besoin de voir l’ordre, les dépendances ou les points de décision ; à confirmer par l’usage en TP."
+  },
+  {
+    "id": "R-B1-023",
+    "title": "Évaluer la performance d’un fournisseur et préparer des actions",
+    "decision": "visuel ajouté v3.6",
+    "role": "complement",
+    "format": "scorecard",
+    "objectif": "Se représenter l’évaluation fournisseur comme plusieurs dimensions observables, pas une note globale arbitraire.",
+    "representation_mentale": "qualité + délai + coût + service + risque → preuves → appréciation",
+    "motif": "Le visuel réduit l’effort nécessaire pour reconstruire mentalement une structure, un enchaînement, une relation ou une décision."
+  },
+  {
+    "id": "R-B1-024",
+    "title": "Contrôler l’enregistrement comptable d’une opération commerciale",
+    "decision": "surveiller",
+    "role": "aucun ajout v3.6",
+    "format": "processus",
+    "objectif": "Contrôle d’un journal achats/ventes/banque, recherche d’un écart ou préparation d’une clôture périodique.",
+    "representation_mentale": "Une liste de contrôles effectués et, s’il existe des anomalies, une proposition de correction ou une alerte documentée.",
+    "motif": "La fiche suit une démarche. Un visuel peut être utile si les élèves ont besoin de voir l’ordre, les dépendances ou les points de décision ; à confirmer par l’usage en TP."
+  },
+  {
+    "id": "R-B1-025",
+    "title": "Réaliser et contrôler un rapprochement bancaire",
+    "decision": "visuel ajouté v3.6",
+    "role": "central",
+    "format": "pont",
+    "objectif": "Comprendre le rapprochement bancaire comme la mise en cohérence de deux visions d’un même flux.",
+    "representation_mentale": "comptabilité + relevé bancaire → éléments non pointés → rapprochement → soldes expliqués",
+    "motif": "Le visuel réduit l’effort nécessaire pour reconstruire mentalement une structure, un enchaînement, une relation ou une décision."
+  },
+  {
+    "id": "R-B1-026",
+    "title": "Suivre les comptes clients et fournisseurs avec une balance âgée",
+    "decision": "surveiller",
+    "role": "aucun ajout v3.6",
+    "format": "processus",
+    "objectif": "Suivi périodique des tiers, clôture mensuelle, relance clients, contrôle fournisseurs.",
+    "representation_mentale": "Une balance âgée ou un état de comptes tiers nettoyé : échéances, lettrage, litiges, avoirs, retards et actions.",
+    "motif": "La fiche suit une démarche. Un visuel peut être utile si les élèves ont besoin de voir l’ordre, les dépendances ou les points de décision ; à confirmer par l’usage en TP."
+  },
+  {
+    "id": "R-B1-027",
+    "title": "Préparer et contrôler une déclaration de TVA à partir du PGI",
+    "decision": "conserver",
+    "role": "aucun ajout v3.6",
+    "format": "texte-regle",
+    "objectif": "Avant une échéance de TVA ou lors d’un contrôle d’écart entre comptabilité et déclaration.",
+    "representation_mentale": "Un dossier de préparation : période, régime, bases, TVA collectée/déductible, contrôles, anomalies, déclaration préparée et éléments à faire valider.",
+    "motif": "La précision des règles, conditions, pièces et contrôles prime ; un visuel supplémentaire risquerait de masquer les nuances."
+  },
+  {
+    "id": "R-B1-028",
+    "title": "Repérer et suivre les risques liés à un échange international",
+    "decision": "surveiller",
+    "role": "aucun ajout v3.6",
+    "format": "processus",
+    "objectif": "Préparation ou suivi d’une opération d’import/export, d’une facture en devise, d’un paiement international ou d’un contrat comportant des modalités documentaires.",
+    "representation_mentale": "Une fiche de risques : devise, paiement, délai, documents, transport/contrat, contrepartie, exposition et mesures proposées à la direction.",
+    "motif": "La fiche suit une démarche. Un visuel peut être utile si les élèves ont besoin de voir l’ordre, les dépendances ou les points de décision ; à confirmer par l’usage en TP."
+  },
+  {
+    "id": "R-B1-029",
+    "title": "Préparer une action de communication pour développer la relation client",
+    "decision": "surveiller",
+    "role": "aucun ajout v3.6",
+    "format": "processus",
+    "objectif": "Après une vente, avant un renouvellement, pour informer d’un nouveau service, réactiver des clients ou maintenir une relation régulière.",
+    "representation_mentale": "Une action ciblée avec objectif, destinataires, message, canal, calendrier, règles de suivi et indicateurs simples.",
+    "motif": "La fiche suit une démarche. Un visuel peut être utile si les élèves ont besoin de voir l’ordre, les dépendances ou les points de décision ; à confirmer par l’usage en TP."
+  },
+  {
+    "id": "R-B1-030",
+    "title": "Traiter une anomalie de livraison avant qu’elle ne devienne une réclamation",
+    "decision": "surveiller",
+    "role": "aucun ajout v3.6",
+    "format": "processus",
+    "objectif": "Dès qu’un écart apparaît entre commande, préparation, expédition, livraison ou information du client.",
+    "representation_mentale": "Un diagnostic de l’écart, une information client cohérente, une action de correction tracée et une mise à jour du suivi de vente.",
+    "motif": "La fiche suit une démarche. Un visuel peut être utile si les élèves ont besoin de voir l’ordre, les dépendances ou les points de décision ; à confirmer par l’usage en TP."
+  },
+  {
+    "id": "R-B1-031",
+    "title": "Corriger une facture et préparer un avoir sans perdre la traçabilité",
+    "decision": "surveiller",
+    "role": "aucun ajout v3.6",
+    "format": "processus",
+    "objectif": "Après détection d’une erreur interne, un retour, une annulation partielle ou une contestation justifiée du client.",
+    "representation_mentale": "Une correction documentée reliant facture initiale, motif, pièce corrective et mise à jour du compte client.",
+    "motif": "La fiche suit une démarche. Un visuel peut être utile si les élèves ont besoin de voir l’ordre, les dépendances ou les points de décision ; à confirmer par l’usage en TP."
+  },
+  {
+    "id": "R-B1-032",
+    "title": "Fiabiliser le système d’information fournisseurs après une recherche ou une évaluation",
+    "decision": "conserver",
+    "role": "aucun ajout v3.6",
+    "format": "texte-structure",
+    "objectif": "Après référencement d’un nouveau fournisseur, modification de coordonnées/conditions, évaluation périodique ou détection d’un doublon.",
+    "representation_mentale": "Une fiche fournisseur fiable, datée, sans doublon, avec les informations utiles au processus d’achat et leur source.",
+    "motif": "Aucun gain visuel évident identifié à ce stade ; la structure actuelle paraît plus directe que l’ajout d’un schéma."
+  },
+  {
+    "id": "R-B2-001",
+    "title": "Évaluer et hiérarchiser les risques d’une PME",
+    "decision": "visuel ajouté v3.6",
+    "role": "central",
+    "format": "processus",
+    "objectif": "Se représenter l’analyse des risques comme une démarche ordonnée.",
+    "representation_mentale": "identifier → évaluer → comparer → prioriser → traiter → suivre",
+    "motif": "Le visuel réduit l’effort nécessaire pour reconstruire mentalement une structure, un enchaînement, une relation ou une décision."
+  },
+  {
+    "id": "R-B2-002",
+    "title": "Construire une matrice de criticité",
+    "decision": "visuel ajouté v3.6",
+    "role": "central",
+    "format": "matrice",
+    "objectif": "Voir immédiatement comment deux dimensions se croisent pour hiérarchiser.",
+    "representation_mentale": "gravité × probabilité → position dans une matrice → priorité à interpréter",
+    "motif": "Le visuel réduit l’effort nécessaire pour reconstruire mentalement une structure, un enchaînement, une relation ou une décision."
+  },
+  {
+    "id": "R-B2-003",
+    "title": "Contribuer à la mise à jour du DUERP",
+    "decision": "conserver",
+    "role": "aucun ajout v3.6",
+    "format": "texte-structure",
+    "objectif": "Lorsqu’une PME doit évaluer ou réévaluer les risques professionnels d’une unité de travail, après une évolution importante des conditions de travail, lorsqu’une nouvelle information sur un risque apparaît, ou dans le cadre de la mise à jour périodique du document unique.",
+    "representation_mentale": "Une analyse traçable d’une unité de travail : situations observées, dangers, personnes exposées, risques évalués, mesures existantes et propositions de prévention, prête à être examinée et validée par le responsable.",
+    "motif": "Aucun gain visuel évident identifié à ce stade ; la structure actuelle paraît plus directe que l’ajout d’un schéma."
+  },
+  {
+    "id": "R-B2-004",
+    "title": "Veille — décider quoi surveiller et construire un dispositif utile à la PME",
+    "decision": "visuel ajouté v3.6",
+    "role": "central",
+    "format": "processus",
+    "objectif": "Comprendre comment un risque ou un besoin d’information devient un dispositif de veille.",
+    "representation_mentale": "risque/besoin → information à surveiller → source → fréquence → alerte → destinataire → preuve",
+    "motif": "Le visuel réduit l’effort nécessaire pour reconstruire mentalement une structure, un enchaînement, une relation ou une décision."
+  },
+  {
+    "id": "R-B2-005",
+    "title": "Qualifier une source et une information",
+    "decision": "visuel ajouté v3.6",
+    "role": "complement",
+    "format": "decision",
+    "objectif": "Éviter de confondre résultat trouvé et source exploitable.",
+    "representation_mentale": "source trouvée → auteur/date/compétence → corroboration → usage possible",
+    "motif": "Le visuel réduit l’effort nécessaire pour reconstruire mentalement une structure, un enchaînement, une relation ou une décision."
+  },
+  {
+    "id": "R-B2-006",
+    "title": "Transformer une veille en synthèse et en alerte actionnable",
+    "decision": "conserver",
+    "role": "aucun ajout v3.6",
+    "format": "texte-structure",
+    "objectif": "Quand une évolution détectée peut créer un risque, une opportunité ou nécessiter une modification de procédure.",
+    "representation_mentale": "Une synthèse courte, sourcée et orientée décision, avec éventuellement une alerte et une proposition de mise à jour de pratique.",
+    "motif": "Aucun gain visuel évident identifié à ce stade ; la structure actuelle paraît plus directe que l’ajout d’un schéma."
+  },
+  {
+    "id": "R-B2-007",
+    "title": "Cadrer un projet avant de le lancer",
+    "decision": "conserver",
+    "role": "aucun ajout v3.6",
+    "format": "texte-structure",
+    "objectif": "Avant la planification, dès qu’un projet implique plusieurs acteurs, des contraintes, un résultat à livrer ou une modification de l’organisation.",
+    "representation_mentale": "Une note de cadrage validable : besoin, objectifs, périmètre, livrables, acteurs, contraintes, critères de réussite et risques principaux.",
+    "motif": "Aucun gain visuel évident identifié à ce stade ; la structure actuelle paraît plus directe que l’ajout d’un schéma."
+  },
+  {
+    "id": "R-B2-008",
+    "title": "Construire un cahier des charges et planifier les tâches",
+    "decision": "visuel ajouté v3.6",
+    "role": "central",
+    "format": "gantt",
+    "objectif": "Se représenter un projet comme des tâches ordonnées dans le temps avec dépendances.",
+    "representation_mentale": "tâches → durée → dépendances → jalons → responsables",
+    "motif": "Le visuel réduit l’effort nécessaire pour reconstruire mentalement une structure, un enchaînement, une relation ou une décision."
+  },
+  {
+    "id": "R-B2-009",
+    "title": "Préparer et conduire une réunion de projet",
+    "decision": "surveiller",
+    "role": "aucun ajout v3.6",
+    "format": "processus",
+    "objectif": "Réunion de lancement, point d’avancement, arbitrage, réception ou retour d’expérience.",
+    "representation_mentale": "Une réunion préparée, conduite dans le temps prévu et conclue par un relevé de décisions avec actions, responsables et échéances.",
+    "motif": "La fiche suit une démarche. Un visuel peut être utile si les élèves ont besoin de voir l’ordre, les dépendances ou les points de décision ; à confirmer par l’usage en TP."
+  },
+  {
+    "id": "R-B2-010",
+    "title": "Suivre un projet et traiter les écarts",
+    "decision": "surveiller",
+    "role": "aucun ajout v3.6",
+    "format": "processus",
+    "objectif": "Pendant toute la réalisation et lors des bilans d’étape.",
+    "representation_mentale": "Un tableau de suivi à jour, des écarts expliqués, des actions correctives proposées et des décisions tracées.",
+    "motif": "La fiche suit une démarche. Un visuel peut être utile si les élèves ont besoin de voir l’ordre, les dépendances ou les points de décision ; à confirmer par l’usage en TP."
+  },
+  {
+    "id": "R-B2-011",
+    "title": "Identifier et formuler les risques d’une PME",
+    "decision": "visuel ajouté v3.6",
+    "role": "central",
+    "format": "chaine-causale",
+    "objectif": "Passer d’un constat d’activité à un risque formulé sans confondre cause, événement et conséquence.",
+    "representation_mentale": "activité → dépendance/vulnérabilité → événement redouté → conséquence → preuve",
+    "motif": "Le visuel réduit l’effort nécessaire pour reconstruire mentalement une structure, un enchaînement, une relation ou une décision."
+  },
+  {
+    "id": "R-B2-012",
+    "title": "Identifier les obligations applicables à un risque",
+    "decision": "conserver",
+    "role": "aucun ajout v3.6",
+    "format": "texte-structure",
+    "objectif": "Avant de conclure qu’une pratique est conforme ou non conforme, ou avant de proposer une action corrective.",
+    "representation_mentale": "Un registre des exigences : source, champ d’application, exigence, preuve attendue, responsable, échéance et état de conformité.",
+    "motif": "Aucun gain visuel évident identifié à ce stade ; la structure actuelle paraît plus directe que l’ajout d’un schéma."
+  },
+  {
+    "id": "R-B2-013",
+    "title": "Construire et suivre un plan de traitement des risques",
+    "decision": "visuel ajouté v3.6",
+    "role": "central",
+    "format": "boucle",
+    "objectif": "Comprendre qu’un plan de traitement lie risque, action, responsable, délai et preuve d’efficacité.",
+    "representation_mentale": "risque prioritaire → action → responsable/délai → preuve → contrôle → ajustement",
+    "motif": "Le visuel réduit l’effort nécessaire pour reconstruire mentalement une structure, un enchaînement, une relation ou une décision."
+  },
+  {
+    "id": "R-B2-014",
+    "title": "Construire et contrôler un budget de trésorerie",
+    "decision": "surveiller",
+    "role": "aucun ajout v3.6",
+    "format": "calcul-tableau",
+    "objectif": "À partir d’échéanciers clients/fournisseurs, prévisions de ventes et d’achats, documents bancaires, investissements et autres flux prévus.",
+    "representation_mentale": "Un budget de trésorerie exact, contrôlé et commenté, permettant d’identifier les périodes de tension.",
+    "motif": "Un schéma ou une formule peut aider, mais seulement s’il clarifie le mécanisme sans remplacer les calculs et contrôles."
+  },
+  {
+    "id": "R-B2-015",
+    "title": "Diagnostiquer une tension de trésorerie et préparer des solutions",
+    "decision": "surveiller",
+    "role": "aucun ajout v3.6",
+    "format": "calcul-tableau",
+    "objectif": "Après construction du budget de trésorerie ou lors d’un incident affectant les flux.",
+    "representation_mentale": "Un diagnostic chiffré, une alerte proportionnée et plusieurs solutions comparées avant décision de la direction.",
+    "motif": "Un schéma ou une formule peut aider, mais seulement s’il clarifie le mécanisme sans remplacer les calculs et contrôles."
+  },
+  {
+    "id": "R-B2-016",
+    "title": "Analyser la couverture d’assurance d’un risque",
+    "decision": "surveiller",
+    "role": "aucun ajout v3.6",
+    "format": "processus",
+    "objectif": "Analyse d’une police, préparation d’un renouvellement, après un sinistre ou lors de l’apparition d’un nouveau risque.",
+    "representation_mentale": "Un tableau reliant les risques de la PME aux garanties, exclusions, franchises, plafonds, obligations et éventuels écarts de couverture.",
+    "motif": "La fiche suit une démarche. Un visuel peut être utile si les élèves ont besoin de voir l’ordre, les dépendances ou les points de décision ; à confirmer par l’usage en TP."
+  },
+  {
+    "id": "R-B2-017",
+    "title": "Choisir une protection adaptée pour un actif de propriété intellectuelle",
+    "decision": "conserver",
+    "role": "aucun ajout v3.6",
+    "format": "texte-structure",
+    "objectif": "Avant un lancement, un dépôt, une communication publique, un contrat de licence ou lorsqu’un droit arrive à échéance.",
+    "representation_mentale": "Une fiche de protection précisant l’actif, le titulaire, le droit potentiellement adapté, le territoire, les vérifications à mener, les échéances et la décision à faire valider.",
+    "motif": "Aucun gain visuel évident identifié à ce stade ; la structure actuelle paraît plus directe que l’ajout d’un schéma."
+  },
+  {
+    "id": "R-B2-018",
+    "title": "Vérifier la conformité d’un traitement de données personnelles",
+    "decision": "visuel ajouté v3.6",
+    "role": "complement",
+    "format": "decision",
+    "objectif": "Se représenter un contrôle RGPD comme une suite de questions, tout en conservant le texte réglementaire.",
+    "representation_mentale": "traitement → finalité/base → données/minimisation → droits/sécurité → preuve",
+    "motif": "Le visuel réduit l’effort nécessaire pour reconstruire mentalement une structure, un enchaînement, une relation ou une décision."
+  },
+  {
+    "id": "R-B2-019",
+    "title": "Réagir à une violation de données personnelles",
+    "decision": "visuel ajouté v3.6",
+    "role": "central",
+    "format": "timeline-decision",
+    "objectif": "Donner une chronologie mentale d’un incident de données et distinguer faits, décision de notification et suivi.",
+    "representation_mentale": "alerter → chronologie → contenir → documenter → évaluer → notifier si requis → corriger",
+    "motif": "Le visuel réduit l’effort nécessaire pour reconstruire mentalement une structure, un enchaînement, une relation ou une décision."
+  },
+  {
+    "id": "R-B2-020",
+    "title": "Identifier et réduire les risques environnementaux d’une PME",
+    "decision": "conserver",
+    "role": "aucun ajout v3.6",
+    "format": "texte-structure",
+    "objectif": "Diagnostic environnemental, évolution réglementaire, hausse de consommation, changement de prestataire déchets ou incident environnemental.",
+    "representation_mentale": "Une analyse reliant activité, aspect environnemental, conséquence, exigence éventuelle, mesure existante, indicateur et action proposée.",
+    "motif": "Aucun gain visuel évident identifié à ce stade ; la structure actuelle paraît plus directe que l’ajout d’un schéma."
+  },
+  {
+    "id": "R-B2-021",
+    "title": "Évaluer les risques informatiques d’une PME et préparer des mesures",
+    "decision": "surveiller",
+    "role": "aucun ajout v3.6",
+    "format": "processus",
+    "objectif": "Après un incident, avant un projet informatique, lors d’un audit ou à la demande de la direction.",
+    "representation_mentale": "Un registre des risques informatiques priorisés, avec actifs critiques, menaces, vulnérabilités, mesures existantes et recommandations à discuter avec le prestataire.",
+    "motif": "La fiche suit une démarche. Un visuel peut être utile si les élèves ont besoin de voir l’ordre, les dépendances ou les points de décision ; à confirmer par l’usage en TP."
+  },
+  {
+    "id": "R-B2-022",
+    "title": "Organiser les sauvegardes et tester la restauration",
+    "decision": "surveiller",
+    "role": "aucun ajout v3.6",
+    "format": "processus",
+    "objectif": "Diagnostic informatique, modification du système, changement de prestataire, après un incident ou lors d’un contrôle périodique.",
+    "representation_mentale": "Un plan de sauvegarde documenté et un procès-verbal de test de restauration indiquant données, fréquence, support, accès, localisation, test, résultat et actions correctives.",
+    "motif": "La fiche suit une démarche. Un visuel peut être utile si les élèves ont besoin de voir l’ordre, les dépendances ou les points de décision ; à confirmer par l’usage en TP."
+  },
+  {
+    "id": "R-B2-023",
+    "title": "Contrôler les habilitations et les droits d’accès",
+    "decision": "surveiller",
+    "role": "aucun ajout v3.6",
+    "format": "processus",
+    "objectif": "Arrivée, changement de poste, départ, audit, incident ou revue périodique des comptes.",
+    "representation_mentale": "Une matrice d’habilitations contrôlée, avec comptes, rôles, applications, droits attendus, droits constatés, écarts et actions à faire valider.",
+    "motif": "La fiche suit une démarche. Un visuel peut être utile si les élèves ont besoin de voir l’ordre, les dépendances ou les points de décision ; à confirmer par l’usage en TP."
+  },
+  {
+    "id": "R-B2-024",
+    "title": "Diagnostiquer un dysfonctionnement qualité et rechercher ses causes",
+    "decision": "visuel ajouté v3.6",
+    "role": "central",
+    "format": "causes",
+    "objectif": "Comprendre que les outils qualité servent à passer du symptôme aux causes vérifiées.",
+    "representation_mentale": "problème mesuré → familles de causes → hypothèses → vérification → cause racine",
+    "motif": "Le visuel réduit l’effort nécessaire pour reconstruire mentalement une structure, un enchaînement, une relation ou une décision."
+  },
+  {
+    "id": "R-B2-025",
+    "title": "Formaliser, diffuser et améliorer une procédure",
+    "decision": "visuel ajouté v3.6",
+    "role": "central",
+    "format": "flowchart",
+    "objectif": "Voir une procédure comme une séquence d’actions, décisions, rôles et preuves.",
+    "representation_mentale": "déclencheur → action → décision → responsable → preuve → fin",
+    "motif": "Le visuel réduit l’effort nécessaire pour reconstruire mentalement une structure, un enchaînement, une relation ou une décision."
+  },
+  {
+    "id": "R-B2-026",
+    "title": "Organiser le partage et la conservation des connaissances utiles",
+    "decision": "visuel ajouté v3.6",
+    "role": "central",
+    "format": "cycle",
+    "objectif": "Comprendre la gestion des connaissances comme un cycle et non comme un simple stockage de fichiers.",
+    "representation_mentale": "identifier → formaliser → stocker → partager → réutiliser → mettre à jour",
+    "motif": "Le visuel réduit l’effort nécessaire pour reconstruire mentalement une structure, un enchaînement, une relation ou une décision."
+  },
+  {
+    "id": "R-B2-027",
+    "title": "Préparer une veille et un dossier de certification",
+    "decision": "conserver",
+    "role": "aucun ajout v3.6",
+    "format": "texte-regle",
+    "objectif": "Étude d’opportunité, préparation d’audit, renouvellement ou évolution d’une certification.",
+    "representation_mentale": "Un dossier de suivi indiquant référentiel applicable, version, champ, exigences à préparer, preuves, acteurs, échéances, écarts et actions.",
+    "motif": "La précision des règles, conditions, pièces et contrôles prime ; un visuel supplémentaire risquerait de masquer les nuances."
+  },
+  {
+    "id": "R-B2-028",
+    "title": "Transformer une information de veille en mise à jour de pratique ou de procédure",
+    "decision": "conserver",
+    "role": "aucun ajout v3.6",
+    "format": "texte-structure",
+    "objectif": "Après validation d’une information réglementaire, technique, commerciale ou organisationnelle ayant un impact sur une pratique existante.",
+    "representation_mentale": "Une fiche d’impact et une proposition de mise à jour précisant ce qui change, pour qui, à partir de quand, dans quels documents et avec quel contrôle.",
+    "motif": "Aucun gain visuel évident identifié à ce stade ; la structure actuelle paraît plus directe que l’ajout d’un schéma."
+  },
+  {
+    "id": "R-B2-029",
+    "title": "Suivre une action corrective et vérifier qu’elle réduit réellement le risque",
+    "decision": "surveiller",
+    "role": "aucun ajout v3.6",
+    "format": "processus",
+    "objectif": "Dès qu’un plan de traitement est accepté : prévention, procédure, équipement, formation, transfert ou autre action.",
+    "representation_mentale": "Un suivi documenté avec responsable, échéance, preuve de réalisation, indicateur d’efficacité et réévaluation du risque résiduel.",
+    "motif": "La fiche suit une démarche. Un visuel peut être utile si les élèves ont besoin de voir l’ordre, les dépendances ou les points de décision ; à confirmer par l’usage en TP."
+  },
+  {
+    "id": "R-B2-030",
+    "title": "Préparer et suivre un dossier de sinistre auprès de l’assureur",
+    "decision": "surveiller",
+    "role": "aucun ajout v3.6",
+    "format": "processus",
+    "objectif": "Vol, dégât des eaux, dommage matériel, accident ou autre événement susceptible d’être couvert par un contrat de la PME.",
+    "representation_mentale": "Un dossier chronologique avec faits, pièces, contrat concerné, échanges, échéances, coûts et état de suivi.",
+    "motif": "La fiche suit une démarche. Un visuel peut être utile si les élèves ont besoin de voir l’ordre, les dépendances ou les points de décision ; à confirmer par l’usage en TP."
+  },
+  {
+    "id": "R-B2-031",
+    "title": "Organiser le suivi administratif d’une démarche de certification",
+    "decision": "conserver",
+    "role": "aucun ajout v3.6",
+    "format": "texte-regle",
+    "objectif": "Préparation d’un audit, renouvellement, suivi d’écarts ou constitution du dossier de certification.",
+    "representation_mentale": "Un plan de suivi avec exigences, responsables, preuves attendues, échéances, état d’avancement et anomalies à traiter.",
+    "motif": "La précision des règles, conditions, pièces et contrôles prime ; un visuel supplémentaire risquerait de masquer les nuances."
+  },
+  {
+    "id": "R-B3-001",
+    "title": "Identifier la règle sociale applicable avant d’agir",
+    "decision": "conserver",
+    "role": "aucun ajout v3.6",
+    "format": "texte-regle",
+    "objectif": "Avant une embauche, un congé, une absence, une paie, une élection, une rupture ou toute réponse à un salarié lorsque la règle applicable n’est pas certaine.",
+    "representation_mentale": "Une réponse sourcée indiquant la règle applicable, son champ, la date de vérification, les éventuelles dispositions conventionnelles et le point qui doit être validé.",
+    "motif": "La précision des règles, conditions, pièces et contrôles prime ; un visuel supplémentaire risquerait de masquer les nuances."
+  },
+  {
+    "id": "R-B3-002",
+    "title": "Préparer l’embauche d’un salarié sans oublier les formalités obligatoires",
+    "decision": "visuel ajouté v3.6",
+    "role": "complement",
+    "format": "timeline",
+    "objectif": "Se représenter l’embauche comme une succession de formalités et contrôles.",
+    "representation_mentale": "besoin/validation → données candidat → formalités → contrat → accueil/dossier",
+    "motif": "Le visuel réduit l’effort nécessaire pour reconstruire mentalement une structure, un enchaînement, une relation ou une décision."
+  },
+  {
+    "id": "R-B3-003",
+    "title": "Contrôler un contrat de travail avant signature",
+    "decision": "conserver",
+    "role": "aucun ajout v3.6",
+    "format": "texte-regle",
+    "objectif": "Avant signature d’un CDI, CDD, temps partiel ou avenant préparé à partir d’un modèle.",
+    "representation_mentale": "Une grille de contrôle signalant les mentions présentes, les incohérences, les données manquantes et les clauses à faire valider.",
+    "motif": "La précision des règles, conditions, pièces et contrôles prime ; un visuel supplémentaire risquerait de masquer les nuances."
+  },
+  {
+    "id": "R-B3-004",
+    "title": "Préparer le départ d’un salarié et contrôler les documents de fin de contrat",
+    "decision": "conserver",
+    "role": "aucun ajout v3.6",
+    "format": "texte-regle",
+    "objectif": "Fin de CDD, démission, rupture conventionnelle, licenciement ou autre fin de relation de travail déjà décidée et sécurisée par la personne compétente.",
+    "representation_mentale": "Un dossier de sortie complet : dates contrôlées, variables de paie, documents de fin de contrat, signalements nécessaires, restitution des biens, suppression des accès et archivage.",
+    "motif": "La précision des règles, conditions, pièces et contrôles prime ; un visuel supplémentaire risquerait de masquer les nuances."
+  },
+  {
+    "id": "R-B3-005",
+    "title": "Organiser un dossier du personnel conforme et exploitable",
+    "decision": "surveiller",
+    "role": "aucun ajout v3.6",
+    "format": "processus",
+    "objectif": "Création d’un dossier d’embauche, audit de dossiers existants, départ d’un salarié ou migration vers un dossier numérique.",
+    "representation_mentale": "Une arborescence RH claire, une matrice des droits d’accès et un tableau de conservation indiquant pour chaque famille de documents la durée et le sort en fin de période.",
+    "motif": "La fiche suit une démarche. Un visuel peut être utile si les élèves ont besoin de voir l’ordre, les dépendances ou les points de décision ; à confirmer par l’usage en TP."
+  },
+  {
+    "id": "R-B3-006",
+    "title": "Suivre le temps de travail et repérer les anomalies",
+    "decision": "surveiller",
+    "role": "aucun ajout v3.6",
+    "format": "processus",
+    "objectif": "Contrôle hebdomadaire ou mensuel des relevés d’heures, planning, badgeuse, feuilles de temps ou logiciel RH.",
+    "representation_mentale": "Un état contrôlé du temps de travail par salarié, avec anomalies, justificatifs manquants, écarts à corriger et variables à transmettre à la paie.",
+    "motif": "La fiche suit une démarche. Un visuel peut être utile si les élèves ont besoin de voir l’ordre, les dépendances ou les points de décision ; à confirmer par l’usage en TP."
+  },
+  {
+    "id": "R-B3-007",
+    "title": "Gérer les congés et absences sans fausser les droits du salarié",
+    "decision": "conserver",
+    "role": "aucun ajout v3.6",
+    "format": "texte-regle",
+    "objectif": "Congés payés, arrêt maladie, événement familial ou autre absence prévue par la loi, la convention collective ou l’entreprise.",
+    "representation_mentale": "Une fiche d’absence indiquant le motif administratif, les dates, le justificatif attendu, l’effet sur le compteur et la paie, les formalités à réaliser et la règle vérifiée.",
+    "motif": "La précision des règles, conditions, pièces et contrôles prime ; un visuel supplémentaire risquerait de masquer les nuances."
+  },
+  {
+    "id": "R-B3-008",
+    "title": "Collecter et fiabiliser les variables de paie",
+    "decision": "conserver",
+    "role": "aucun ajout v3.6",
+    "format": "texte-structure",
+    "objectif": "Chaque cycle de paie : nouveaux salariés, temps de travail, absences, primes, avantages, frais, acomptes, départs et régularisations.",
+    "representation_mentale": "Un tableau de variables de paie complet, daté, justifié et validé, prêt à être saisi dans le logiciel ou transmis au prestataire.",
+    "motif": "Aucun gain visuel évident identifié à ce stade ; la structure actuelle paraît plus directe que l’ajout d’un schéma."
+  },
+  {
+    "id": "R-B3-009",
+    "title": "Contrôler un bulletin de paie avant validation",
+    "decision": "surveiller",
+    "role": "aucun ajout v3.6",
+    "format": "processus",
+    "objectif": "Contrôle d’un bulletin généré par le PGI, le logiciel de paie ou le prestataire.",
+    "representation_mentale": "Une grille de contrôle avec données d’identité, contrat, temps, rémunération, cotisations, net social, net à payer, prélèvement à la source et variations expliquées.",
+    "motif": "La fiche suit une démarche. Un visuel peut être utile si les élèves ont besoin de voir l’ordre, les dépendances ou les points de décision ; à confirmer par l’usage en TP."
+  },
+  {
+    "id": "R-B3-010",
+    "title": "Préparer, transmettre et contrôler une DSN",
+    "decision": "conserver",
+    "role": "aucun ajout v3.6",
+    "format": "texte-regle",
+    "objectif": "Après clôture de la paie mensuelle ou lors d’un événement nécessitant un signalement, notamment arrêt de travail ou fin de contrat.",
+    "representation_mentale": "Une DSN transmise dans le délai, avec preuve de dépôt, comptes rendus contrôlés, anomalies traitées et corrections tracées.",
+    "motif": "La précision des règles, conditions, pièces et contrôles prime ; un visuel supplémentaire risquerait de masquer les nuances."
+  },
+  {
+    "id": "R-B3-011",
+    "title": "Organiser les élections du CSE sous la responsabilité de la direction",
+    "decision": "visuel ajouté v3.6",
+    "role": "complement",
+    "format": "timeline",
+    "objectif": "Se représenter l’élection du CSE comme un rétroplanning à sécuriser juridiquement.",
+    "representation_mentale": "vérifier obligation/échéance → rétroplanning → listes/communications → protocole → scrutin → PV/formalités",
+    "motif": "Le visuel réduit l’effort nécessaire pour reconstruire mentalement une structure, un enchaînement, une relation ou une décision."
+  },
+  {
+    "id": "R-B3-012",
+    "title": "Communiquer une information sociale en respectant la confidentialité",
+    "decision": "conserver",
+    "role": "aucun ajout v3.6",
+    "format": "texte-structure",
+    "objectif": "Demande d’un manager, d’un salarié, d’un organisme, du comptable ou d’un prestataire portant sur une information RH.",
+    "representation_mentale": "Une réponse utile, exacte, adressée au bon destinataire, avec uniquement les données nécessaires et une trace de la transmission.",
+    "motif": "Aucun gain visuel évident identifié à ce stade ; la structure actuelle paraît plus directe que l’ajout d’un schéma."
+  },
+  {
+    "id": "R-B3-013",
+    "title": "Formaliser un besoin de recrutement et construire une fiche de poste",
+    "decision": "conserver",
+    "role": "aucun ajout v3.6",
+    "format": "texte-structure",
+    "objectif": "Création de poste, remplacement, évolution d’activité ou besoin de compétence identifié par la direction.",
+    "representation_mentale": "Une fiche de poste et un profil de recrutement distinguant missions, activités, responsabilités, relations, contraintes, compétences nécessaires et critères de sélection.",
+    "motif": "Aucun gain visuel évident identifié à ce stade ; la structure actuelle paraît plus directe que l’ajout d’un schéma."
+  },
+  {
+    "id": "R-B3-014",
+    "title": "Rédiger et publier une offre d’emploi non discriminatoire",
+    "decision": "conserver",
+    "role": "aucun ajout v3.6",
+    "format": "texte-gabarit",
+    "objectif": "Avant publication sur France Travail, un site d’emploi, le site de la PME, un réseau social ou un support professionnel.",
+    "representation_mentale": "Une annonce comprenant les missions, compétences, conditions essentielles et modalités de candidature, sans critère discriminatoire ni promesse non validée.",
+    "motif": "La représentation utile est surtout la forme du livrable ; les gabarits et exemples de production existants apportent plus qu’un schéma supplémentaire."
+  },
+  {
+    "id": "R-B3-015",
+    "title": "Présélectionner des candidatures avec une grille objective",
+    "decision": "conserver",
+    "role": "aucun ajout v3.6",
+    "format": "texte-structure",
+    "objectif": "Après clôture ou pendant une campagne de recrutement, à partir d’une fiche de poste validée.",
+    "representation_mentale": "Une grille multicritère documentée, un classement argumenté et une traçabilité des décisions sans données ou commentaires discriminatoires.",
+    "motif": "Aucun gain visuel évident identifié à ce stade ; la structure actuelle paraît plus directe que l’ajout d’un schéma."
+  },
+  {
+    "id": "R-B3-016",
+    "title": "Préparer un entretien de recrutement structuré et comparable",
+    "decision": "surveiller",
+    "role": "aucun ajout v3.6",
+    "format": "processus",
+    "objectif": "Avant les entretiens de recrutement, à partir des critères de la fiche de poste et de la présélection.",
+    "representation_mentale": "Un guide d’entretien avec questions communes, relances, critères d’évaluation, prise de notes et synthèse finale.",
+    "motif": "La fiche suit une démarche. Un visuel peut être utile si les élèves ont besoin de voir l’ordre, les dépendances ou les points de décision ; à confirmer par l’usage en TP."
+  },
+  {
+    "id": "R-B3-017",
+    "title": "Organiser l’intégration d’un nouveau salarié",
+    "decision": "visuel ajouté v3.6",
+    "role": "central",
+    "format": "parcours",
+    "objectif": "Voir l’intégration comme un parcours dans le temps et non une journée d’accueil isolée.",
+    "representation_mentale": "avant arrivée → jour J → première semaine → premiers points → ajustement",
+    "motif": "Le visuel réduit l’effort nécessaire pour reconstruire mentalement une structure, un enchaînement, une relation ou une décision."
+  },
+  {
+    "id": "R-B3-018",
+    "title": "Recenser les besoins en compétences et en formation",
+    "decision": "conserver",
+    "role": "aucun ajout v3.6",
+    "format": "texte-structure",
+    "objectif": "Préparation du plan de développement des compétences, évolution d’un outil, changement réglementaire, dysfonctionnement récurrent ou remontées des salariés/managers.",
+    "representation_mentale": "Une matrice besoins-compétences priorisée indiquant écart observé, population concernée, résultat attendu, urgence, solution possible et mode d’évaluation.",
+    "motif": "Aucun gain visuel évident identifié à ce stade ; la structure actuelle paraît plus directe que l’ajout d’un schéma."
+  },
+  {
+    "id": "R-B3-019",
+    "title": "Comparer des formations et préparer leur financement",
+    "decision": "surveiller",
+    "role": "aucun ajout v3.6",
+    "format": "calcul-tableau",
+    "objectif": "Choix d’un organisme, d’une modalité de formation ou préparation d’une demande de prise en charge.",
+    "representation_mentale": "Un tableau comparatif indiquant objectif, programme, durée, modalité, qualité, coût pédagogique, temps mobilisé, frais annexes, financement potentiel et critères de réussite.",
+    "motif": "Un schéma ou une formule peut aider, mais seulement s’il clarifie le mécanisme sans remplacer les calculs et contrôles."
+  },
+  {
+    "id": "R-B3-020",
+    "title": "Planifier et suivre une action de formation jusqu’à son évaluation",
+    "decision": "surveiller",
+    "role": "aucun ajout v3.6",
+    "format": "processus",
+    "objectif": "Formation interne ou externe, présentielle, à distance ou en situation de travail.",
+    "representation_mentale": "Un dossier de formation complet : convocation, planning, financement, preuve de réalisation, évaluation à chaud et contrôle du transfert en situation de travail.",
+    "motif": "La fiche suit une démarche. Un visuel peut être utile si les élèves ont besoin de voir l’ordre, les dépendances ou les points de décision ; à confirmer par l’usage en TP."
+  },
+  {
+    "id": "R-B3-021",
+    "title": "Préparer un entretien annuel d’évaluation avec des critères professionnels",
+    "decision": "surveiller",
+    "role": "aucun ajout v3.6",
+    "format": "processus",
+    "objectif": "Cycle annuel ou périodique d’évaluation du travail, hors entretien de parcours professionnel.",
+    "representation_mentale": "Une grille préparée avec objectifs, résultats, compétences, faits observables, difficultés, besoins d’appui et propositions, prête à être utilisée par le responsable.",
+    "motif": "La fiche suit une démarche. Un visuel peut être utile si les élèves ont besoin de voir l’ordre, les dépendances ou les points de décision ; à confirmer par l’usage en TP."
+  },
+  {
+    "id": "R-B3-022",
+    "title": "Préparer l’entretien de parcours professionnel (EPP) selon les règles 2026",
+    "decision": "surveiller",
+    "role": "aucun ajout v3.6",
+    "format": "processus",
+    "objectif": "Première année après embauche, cycle périodique, retour de certains congés ou situations particulières, ou préparation de l’état des lieux du parcours.",
+    "representation_mentale": "Un calendrier EPP à jour, une trame d’entretien, un document de synthèse remis au salarié et un suivi des actions décidées.",
+    "motif": "La fiche suit une démarche. Un visuel peut être utile si les élèves ont besoin de voir l’ordre, les dépendances ou les points de décision ; à confirmer par l’usage en TP."
+  },
+  {
+    "id": "R-B3-023",
+    "title": "Construire un tableau de bord social simple et utile au dirigeant",
+    "decision": "visuel ajouté v3.6",
+    "role": "complement",
+    "format": "dashboard",
+    "objectif": "Se représenter un tableau de bord social comme peu d’indicateurs reliés à une question de pilotage.",
+    "representation_mentale": "question → indicateurs → cible/évolution → alerte → action",
+    "motif": "Le visuel réduit l’effort nécessaire pour reconstruire mentalement une structure, un enchaînement, une relation ou une décision."
+  },
+  {
+    "id": "R-B3-024",
+    "title": "Analyser des indicateurs sociaux et préparer des propositions",
+    "decision": "surveiller",
+    "role": "aucun ajout v3.6",
+    "format": "processus",
+    "objectif": "Hausse d’absentéisme, turnover, difficulté de recrutement, faible participation aux formations ou autre signal social.",
+    "representation_mentale": "Une note courte : constat chiffré, vérifications, hypothèses, informations complémentaires, risques et propositions à soumettre à la direction.",
+    "motif": "La fiche suit une démarche. Un visuel peut être utile si les élèves ont besoin de voir l’ordre, les dépendances ou les points de décision ; à confirmer par l’usage en TP."
+  },
+  {
+    "id": "R-B3-025",
+    "title": "Repérer une tension relationnelle et préparer un entretien de régulation",
+    "decision": "surveiller",
+    "role": "aucun ajout v3.6",
+    "format": "processus",
+    "objectif": "Signaux de conflit, échanges dégradés, coordination difficile, plaintes croisées ou risque de rupture de coopération.",
+    "representation_mentale": "Une fiche de situation factuelle, les parties et enjeux identifiés, un objectif d’entretien, des questions de clarification et des options de régulation à soumettre au dirigeant.",
+    "motif": "La fiche suit une démarche. Un visuel peut être utile si les élèves ont besoin de voir l’ordre, les dépendances ou les points de décision ; à confirmer par l’usage en TP."
+  },
+  {
+    "id": "R-B3-026",
+    "title": "Organiser un travail collaboratif avec des règles simples et vérifiables",
+    "decision": "surveiller",
+    "role": "aucun ajout v3.6",
+    "format": "processus",
+    "objectif": "Mise en place d’un espace partagé, traitement collectif d’un dossier, projet transversal ou amélioration de la circulation d’information.",
+    "representation_mentale": "Une procédure collaborative légère : espace, arborescence, rôles, règles de nommage, droits, version, délais, validation, réunions et suivi des actions.",
+    "motif": "La fiche suit une démarche. Un visuel peut être utile si les élèves ont besoin de voir l’ordre, les dépendances ou les points de décision ; à confirmer par l’usage en TP."
+  },
+  {
+    "id": "R-B3-027",
+    "title": "Préparer une réunion de représentation du personnel ou de dialogue social",
+    "decision": "surveiller",
+    "role": "aucun ajout v3.6",
+    "format": "processus",
+    "objectif": "Réunion du CSE, échange préparatoire à une négociation, consultation ou suivi d’un sujet social nécessitant des informations fiables.",
+    "representation_mentale": "Un dossier de réunion structuré : objet, participants, calendrier, documents, points à traiter, questions en attente et traçabilité des suites.",
+    "motif": "La fiche suit une démarche. Un visuel peut être utile si les élèves ont besoin de voir l’ordre, les dépendances ou les points de décision ; à confirmer par l’usage en TP."
+  },
+  {
+    "id": "R-B3-028",
+    "title": "Calculer et comparer le coût prévisionnel d’un recrutement ou d’une formation",
+    "decision": "surveiller",
+    "role": "aucun ajout v3.6",
+    "format": "calcul-tableau",
+    "objectif": "Comparaison de canaux de recrutement, prestataires, actions de formation ou scénarios d’organisation.",
+    "representation_mentale": "Un tableau chiffré avec hypothèses, coûts directs, temps internes valorisés si demandé, aides/prises en charge identifiées séparément et coût net prévisionnel.",
+    "motif": "Un schéma ou une formule peut aider, mais seulement s’il clarifie le mécanisme sans remplacer les calculs et contrôles."
+  },
+  {
+    "id": "R-B4-001",
+    "title": "Caractériser le système d’information d’une PME",
+    "decision": "visuel ajouté v3.6",
+    "role": "central",
+    "format": "carte-systeme",
+    "objectif": "Comprendre un système d’information comme un ensemble d’acteurs, données, outils, règles et flux.",
+    "representation_mentale": "acteurs ↔ données ↔ outils ↔ règles/processus ↔ décisions",
+    "motif": "Le visuel réduit l’effort nécessaire pour reconstruire mentalement une structure, un enchaînement, une relation ou une décision."
+  },
+  {
+    "id": "R-B4-002",
+    "title": "Cartographier un flux d’information ou un processus",
+    "decision": "visuel ajouté v3.6",
+    "role": "central",
+    "format": "flux",
+    "objectif": "Se représenter un processus comme un flux entre acteurs avec entrées, transformations, contrôles et sorties.",
+    "representation_mentale": "entrée → acteur/action → donnée/outil → contrôle/décision → sortie",
+    "motif": "Le visuel réduit l’effort nécessaire pour reconstruire mentalement une structure, un enchaînement, une relation ou une décision."
+  },
+  {
+    "id": "R-B4-003",
+    "title": "Définir un besoin d’information et contrôler les données collectées",
+    "decision": "surveiller",
+    "role": "aucun ajout v3.6",
+    "format": "processus",
+    "objectif": "Préparation d’une analyse, d’un reporting, d’une enquête ou d’un tableau de bord nécessitant plusieurs sources d’information.",
+    "representation_mentale": "Une fiche de besoin d’information précisant usage, données nécessaires, source, responsable, fréquence, contrôle et format attendu.",
+    "motif": "La fiche suit une démarche. Un visuel peut être utile si les élèves ont besoin de voir l’ordre, les dépendances ou les points de décision ; à confirmer par l’usage en TP."
+  },
+  {
+    "id": "R-B4-004",
+    "title": "Structurer des données et fiabiliser leur saisie",
+    "decision": "conserver",
+    "role": "aucun ajout v3.6",
+    "format": "texte-structure",
+    "objectif": "Fichier clients/fournisseurs, suivi d’interventions, inscriptions, enquêtes ou extractions à préparer pour analyse.",
+    "representation_mentale": "Un jeu de données structuré avec champs définis, règles de saisie, contrôles, identifiant stable et procédure de correction.",
+    "motif": "Aucun gain visuel évident identifié à ce stade ; la structure actuelle paraît plus directe que l’ajout d’un schéma."
+  },
+  {
+    "id": "R-B4-005",
+    "title": "Construire un plan de classement et d’archivage des documents",
+    "decision": "conserver",
+    "role": "aucun ajout v3.6",
+    "format": "texte-structure",
+    "objectif": "Réorganisation d’un dossier partagé ou d’une GED, création d’un plan d’archivage, traitement de documents dispersés ou mal nommés.",
+    "representation_mentale": "Un plan de classement avec règles de nommage, droits, version, statut, durée de conservation, sort final et responsable.",
+    "motif": "Aucun gain visuel évident identifié à ce stade ; la structure actuelle paraît plus directe que l’ajout d’un schéma."
+  },
+  {
+    "id": "R-B4-006",
+    "title": "Diagnostiquer une anomalie du SI et préparer une demande à l’ESN",
+    "decision": "surveiller",
+    "role": "aucun ajout v3.6",
+    "format": "processus",
+    "objectif": "Erreur récurrente, donnée inaccessible, lenteur, problème de droits, synchronisation ou évolution fonctionnelle demandée par les utilisateurs.",
+    "representation_mentale": "Un ticket ou cahier de besoin structuré : contexte, utilisateurs concernés, résultat attendu, anomalie reproduite, preuves, urgence et contraintes.",
+    "motif": "La fiche suit une démarche. Un visuel peut être utile si les élèves ont besoin de voir l’ordre, les dépendances ou les points de décision ; à confirmer par l’usage en TP."
+  },
+  {
+    "id": "R-B4-007",
+    "title": "Analyser et améliorer un processus support",
+    "decision": "visuel ajouté v3.6",
+    "role": "central",
+    "format": "avant-apres",
+    "objectif": "Comprendre l’amélioration d’un processus comme la réduction d’un écart démontré.",
+    "representation_mentale": "processus actuel → point de rupture → cause → processus cible → indicateur de contrôle",
+    "motif": "Le visuel réduit l’effort nécessaire pour reconstruire mentalement une structure, un enchaînement, une relation ou une décision."
+  },
+  {
+    "id": "R-B4-008",
+    "title": "Organiser et suivre le travail administratif",
+    "decision": "surveiller",
+    "role": "aucun ajout v3.6",
+    "format": "processus",
+    "objectif": "Période chargée, dossiers parallèles, absences, nouvelle organisation ou manque de visibilité sur les échéances.",
+    "representation_mentale": "Un dispositif simple de pilotage : tâches, priorité, responsable, échéance, charge estimée, statut, dépendances et points de contrôle.",
+    "motif": "La fiche suit une démarche. Un visuel peut être utile si les élèves ont besoin de voir l’ordre, les dépendances ou les points de décision ; à confirmer par l’usage en TP."
+  },
+  {
+    "id": "R-B4-009",
+    "title": "Planifier des activités, interventions ou prestations",
+    "decision": "visuel ajouté v3.6",
+    "role": "central",
+    "format": "gantt",
+    "objectif": "Voir une planification comme des tâches distribuées dans le temps avec contraintes et marges.",
+    "representation_mentale": "liste des tâches → contraintes → ordre → créneaux → contrôle des conflits",
+    "motif": "Le visuel réduit l’effort nécessaire pour reconstruire mentalement une structure, un enchaînement, une relation ou une décision."
+  },
+  {
+    "id": "R-B4-010",
+    "title": "Gérer les priorités, la charge et un agenda partagé",
+    "decision": "visuel ajouté v3.6",
+    "role": "complement",
+    "format": "matrice-priorites",
+    "objectif": "Distinguer priorité, urgence et charge avant de remplir l’agenda.",
+    "representation_mentale": "importance × urgence + durée/contraintes → arbitrage → agenda réaliste",
+    "motif": "Le visuel réduit l’effort nécessaire pour reconstruire mentalement une structure, un enchaînement, une relation ou une décision."
+  },
+  {
+    "id": "R-B4-011",
+    "title": "Organiser un déplacement professionnel de bout en bout",
+    "decision": "surveiller",
+    "role": "aucun ajout v3.6",
+    "format": "processus",
+    "objectif": "Rendez-vous client, salon, formation, réunion externe ou déplacement multi-étapes en France ou à l’étranger.",
+    "representation_mentale": "Un dossier de déplacement avec itinéraire, réservations, budget, contacts, documents, contraintes, alternatives et éléments de remboursement.",
+    "motif": "La fiche suit une démarche. Un visuel peut être utile si les élèves ont besoin de voir l’ordre, les dépendances ou les points de décision ; à confirmer par l’usage en TP."
+  },
+  {
+    "id": "R-B4-012",
+    "title": "Organiser un événement interne ou une participation à un salon",
+    "decision": "surveiller",
+    "role": "aucun ajout v3.6",
+    "format": "processus",
+    "objectif": "Séminaire interne, inauguration, journée clients, salon professionnel, portes ouvertes ou participation à un événement externe.",
+    "representation_mentale": "Un plan d’organisation : objectifs, public, budget, rétroplanning, rôles, prestataires, logistique, communication, risques et bilan.",
+    "motif": "La fiche suit une démarche. Un visuel peut être utile si les élèves ont besoin de voir l’ordre, les dépendances ou les points de décision ; à confirmer par l’usage en TP."
+  },
+  {
+    "id": "R-B4-013",
+    "title": "Sélectionner et coordonner des prestataires pour une activité",
+    "decision": "conserver",
+    "role": "aucun ajout v3.6",
+    "format": "texte-structure",
+    "objectif": "Organisation d’un déplacement, événement, salon ou prestation support nécessitant plusieurs offres.",
+    "representation_mentale": "Une comparaison argumentée, une commande ou confirmation conforme, les contacts utiles et un suivi des engagements du prestataire.",
+    "motif": "Aucun gain visuel évident identifié à ce stade ; la structure actuelle paraît plus directe que l’ajout d’un schéma."
+  },
+  {
+    "id": "R-B4-014",
+    "title": "Mettre en place une veille commerciale orientée décision",
+    "decision": "surveiller",
+    "role": "aucun ajout v3.6",
+    "format": "processus",
+    "objectif": "Projet de développement commercial, lancement d’offre, évolution de la demande ou suivi régulier d’un marché.",
+    "representation_mentale": "Un dispositif de veille avec questions, sources, fréquence, critères de qualification, synthèse et signaux déclenchant une alerte.",
+    "motif": "La fiche suit une démarche. Un visuel peut être utile si les élèves ont besoin de voir l’ordre, les dépendances ou les points de décision ; à confirmer par l’usage en TP."
+  },
+  {
+    "id": "R-B4-015",
+    "title": "Analyser un marché et distinguer une tendance d’un signal isolé",
+    "decision": "surveiller",
+    "role": "aucun ajout v3.6",
+    "format": "processus",
+    "objectif": "Étude d’un segment, évolution de la demande, concurrence, prix, comportements clients ou opportunité de diversification.",
+    "representation_mentale": "Un diagnostic de marché sourcé : taille/évolution, segments, clients, concurrence, facteurs d’évolution, opportunités, menaces et limites des données.",
+    "motif": "La fiche suit une démarche. Un visuel peut être utile si les élèves ont besoin de voir l’ordre, les dépendances ou les points de décision ; à confirmer par l’usage en TP."
+  },
+  {
+    "id": "R-B4-016",
+    "title": "Construire et exploiter une enquête de satisfaction client",
+    "decision": "conserver",
+    "role": "aucun ajout v3.6",
+    "format": "texte-structure",
+    "objectif": "Bilan qualité client, action de fidélisation, évolution d’une offre ou analyse d’un point de contact.",
+    "representation_mentale": "Un questionnaire ciblé, un plan de diffusion, un fichier exploitable, des résultats synthétiques et des pistes d’action.",
+    "motif": "Aucun gain visuel évident identifié à ce stade ; la structure actuelle paraît plus directe que l’ajout d’un schéma."
+  },
+  {
+    "id": "R-B4-017",
+    "title": "Transformer une analyse de marché en proposition de développement commercial",
+    "decision": "conserver",
+    "role": "aucun ajout v3.6",
+    "format": "texte-structure",
+    "objectif": "Nouveau segment, nouveau canal, extension géographique, adaptation de l’offre ou action commerciale ciblée.",
+    "representation_mentale": "Une recommandation structurée : opportunité, cible, proposition de valeur, actions, ressources, risques, indicateurs et scénario de test.",
+    "motif": "Aucun gain visuel évident identifié à ce stade ; la structure actuelle paraît plus directe que l’ajout d’un schéma."
+  },
+  {
+    "id": "R-B4-018",
+    "title": "Concevoir, suivre et évaluer une action de fidélisation",
+    "decision": "surveiller",
+    "role": "aucun ajout v3.6",
+    "format": "processus",
+    "objectif": "Clients inactifs, baisse de réachat, satisfaction à consolider, lancement d’un service relationnel ou animation d’un portefeuille.",
+    "representation_mentale": "Une action de fidélisation ciblée avec population, objectif, message/offre, calendrier, budget, indicateurs et bilan.",
+    "motif": "La fiche suit une démarche. Un visuel peut être utile si les élèves ont besoin de voir l’ordre, les dépendances ou les points de décision ; à confirmer par l’usage en TP."
+  },
+  {
+    "id": "R-B4-019",
+    "title": "Préparer le cahier des charges d’une action de communication",
+    "decision": "surveiller",
+    "role": "aucun ajout v3.6",
+    "format": "processus",
+    "objectif": "Création d’un support, campagne, refonte d’une page, événement, dossier de presse ou action commerciale.",
+    "representation_mentale": "Un brief ou cahier des charges avec contexte, objectif, cible, message, livrables, canaux, contraintes, budget, planning, validation et indicateurs.",
+    "motif": "La fiche suit une démarche. Un visuel peut être utile si les élèves ont besoin de voir l’ordre, les dépendances ou les points de décision ; à confirmer par l’usage en TP."
+  },
+  {
+    "id": "R-B4-020",
+    "title": "Concevoir un support de communication institutionnelle",
+    "decision": "conserver",
+    "role": "aucun ajout v3.6",
+    "format": "texte-gabarit",
+    "objectif": "Présentation entreprise, dossier de partenariat, communiqué, dossier de presse, page institutionnelle ou support événementiel.",
+    "representation_mentale": "Un support professionnel adapté au destinataire, hiérarchisé, sourcé, cohérent avec l’identité et prêt à validation.",
+    "motif": "La représentation utile est surtout la forme du livrable ; les gabarits et exemples de production existants apportent plus qu’un schéma supplémentaire."
+  },
+  {
+    "id": "R-B4-021",
+    "title": "Concevoir une action de communication commerciale cohérente",
+    "decision": "conserver",
+    "role": "aucun ajout v3.6",
+    "format": "texte-structure",
+    "objectif": "Lancement d’offre, promotion, campagne de prospection, invitation commerciale ou animation d’un segment client.",
+    "representation_mentale": "Un plan d’action de communication commerciale avec cible, message, preuve, canal, budget, calendrier, responsable et indicateurs.",
+    "motif": "Aucun gain visuel évident identifié à ce stade ; la structure actuelle paraît plus directe que l’ajout d’un schéma."
+  },
+  {
+    "id": "R-B4-022",
+    "title": "Suivre l’identité numérique et l’e-réputation de la PME",
+    "decision": "surveiller",
+    "role": "aucun ajout v3.6",
+    "format": "processus",
+    "objectif": "Suivi de réseaux sociaux, avis clients, résultats de recherche, mentions de la marque, profils d’établissement ou incident d’image.",
+    "representation_mentale": "Un tableau de suivi des présences et mentions avec source, date, portée, tonalité, risque/opportunité, action et responsable.",
+    "motif": "La fiche suit une démarche. Un visuel peut être utile si les élèves ont besoin de voir l’ordre, les dépendances ou les points de décision ; à confirmer par l’usage en TP."
+  },
+  {
+    "id": "R-B4-023",
+    "title": "Contrôler la cohérence d’un support avec l’image et la charte de la PME",
+    "decision": "surveiller",
+    "role": "aucun ajout v3.6",
+    "format": "processus",
+    "objectif": "Affiche, présentation, publication sociale, courriel de campagne, brochure, page web ou document prestataire.",
+    "representation_mentale": "Une grille de contrôle avec écarts repérés, corrections demandées, validation et version finale identifiée.",
+    "motif": "La fiche suit une démarche. Un visuel peut être utile si les élèves ont besoin de voir l’ordre, les dépendances ou les points de décision ; à confirmer par l’usage en TP."
+  },
+  {
+    "id": "R-B4-024",
+    "title": "Mesurer l’efficacité d’une action de communication",
+    "decision": "conserver",
+    "role": "aucun ajout v3.6",
+    "format": "texte-structure",
+    "objectif": "Après une campagne, un événement, une publication, une action presse ou commerciale.",
+    "representation_mentale": "Un bilan reliant objectifs, indicateurs, résultats, coûts, écarts, enseignements et recommandations.",
+    "motif": "Aucun gain visuel évident identifié à ce stade ; la structure actuelle paraît plus directe que l’ajout d’un schéma."
+  },
+  {
+    "id": "R-B4-025",
+    "title": "Calculer et analyser un coût complet avec la méthode fournie",
+    "decision": "visuel ajouté v3.6",
+    "role": "complement",
+    "format": "empilement",
+    "objectif": "Se représenter le coût complet comme l’addition progressive des charges affectées au bon objet de coût.",
+    "representation_mentale": "charges directes + charges indirectes réparties → coût complet → comparaison",
+    "motif": "Le visuel réduit l’effort nécessaire pour reconstruire mentalement une structure, un enchaînement, une relation ou une décision."
+  },
+  {
+    "id": "R-B4-026",
+    "title": "Calculer une marge sur coût variable ou un coût partiel",
+    "decision": "visuel ajouté v3.6",
+    "role": "complement",
+    "format": "formule",
+    "objectif": "Voir la logique économique entre chiffre d’affaires, charges variables, marge et charges fixes.",
+    "representation_mentale": "CA − charges variables = MCV ; MCV couvre charges fixes puis résultat",
+    "motif": "Le visuel réduit l’effort nécessaire pour reconstruire mentalement une structure, un enchaînement, une relation ou une décision."
+  },
+  {
+    "id": "R-B4-027",
+    "title": "Calculer et interpréter un seuil de rentabilité",
+    "decision": "visuel ajouté v3.6",
+    "role": "central",
+    "format": "graphique",
+    "objectif": "Comprendre le seuil de rentabilité comme un point d’équilibre entre revenus et coûts.",
+    "representation_mentale": "activité augmente → CA et coûts évoluent → intersection = seuil → avant/après",
+    "motif": "Le visuel réduit l’effort nécessaire pour reconstruire mentalement une structure, un enchaînement, une relation ou une décision."
+  },
+  {
+    "id": "R-B4-028",
+    "title": "Construire un budget prévisionnel exploitable",
+    "decision": "visuel ajouté v3.6",
+    "role": "complement",
+    "format": "processus",
+    "objectif": "Se représenter un budget comme la traduction chiffrée d’hypothèses cohérentes dans le temps.",
+    "representation_mentale": "hypothèses → volumes/prix → charges → périodes → contrôle cohérence → scénarios",
+    "motif": "Le visuel réduit l’effort nécessaire pour reconstruire mentalement une structure, un enchaînement, une relation ou une décision."
+  },
+  {
+    "id": "R-B4-029",
+    "title": "Analyser les écarts et simuler l’impact d’une décision de gestion",
+    "decision": "visuel ajouté v3.6",
+    "role": "central",
+    "format": "pont",
+    "objectif": "Comprendre un écart comme la différence entre une référence et un réalisé, puis remonter à ses facteurs.",
+    "representation_mentale": "prévu → écart mesuré → facteurs volume/prix/coût/temps → conséquence → décision",
+    "motif": "Le visuel réduit l’effort nécessaire pour reconstruire mentalement une structure, un enchaînement, une relation ou une décision."
+  },
+  {
+    "id": "R-B4-030",
+    "title": "Construire un bilan fonctionnel à partir des données fournies",
+    "decision": "visuel ajouté v3.6",
+    "role": "complement",
+    "format": "structure",
+    "objectif": "Se représenter le bilan fonctionnel comme des emplois et ressources regroupés par fonction.",
+    "representation_mentale": "emplois stables / actif circulant / trésorerie ↔ ressources stables / passif circulant / trésorerie",
+    "motif": "Le visuel réduit l’effort nécessaire pour reconstruire mentalement une structure, un enchaînement, une relation ou une décision."
+  },
+  {
+    "id": "R-B4-031",
+    "title": "Calculer et interpréter FRNG, BFR et trésorerie nette",
+    "decision": "visuel ajouté v3.6",
+    "role": "central",
+    "format": "equilibre",
+    "objectif": "Comprendre la relation structurelle entre FRNG, BFR et trésorerie nette.",
+    "representation_mentale": "ressources durables → FRNG ; cycle exploitation → BFR ; différence → TN",
+    "motif": "Le visuel réduit l’effort nécessaire pour reconstruire mentalement une structure, un enchaînement, une relation ou une décision."
+  },
+  {
+    "id": "R-B4-032",
+    "title": "Calculer et interpréter des ratios financiers pertinents",
+    "decision": "surveiller",
+    "role": "aucun ajout v3.6",
+    "format": "calcul-tableau",
+    "objectif": "Comparaison dans le temps, avec un secteur ou entre hypothèses, en complément des équilibres financiers.",
+    "representation_mentale": "Un tableau de ratios avec formule, valeur, comparaison, évolution et commentaire centré sur les facteurs explicatifs.",
+    "motif": "Un schéma ou une formule peut aider, mais seulement s’il clarifie le mécanisme sans remplacer les calculs et contrôles."
+  },
+  {
+    "id": "R-B4-033",
+    "title": "Comparer des modes de financement d’un investissement",
+    "decision": "visuel ajouté v3.6",
+    "role": "complement",
+    "format": "comparaison",
+    "objectif": "Comparer les financements comme des combinaisons de coût, trésorerie, risque, durée et contraintes.",
+    "representation_mentale": "besoin → critères → options comparables → impacts → recommandation",
+    "motif": "Le visuel réduit l’effort nécessaire pour reconstruire mentalement une structure, un enchaînement, une relation ou une décision."
+  },
+  {
+    "id": "R-B4-034",
+    "title": "Construire un plan de financement et mesurer l’impact d’une décision",
+    "decision": "surveiller",
+    "role": "aucun ajout v3.6",
+    "format": "calcul-tableau",
+    "objectif": "Investissement, croissance, renouvellement d’équipement ou autre décision nécessitant emplois et ressources durables.",
+    "representation_mentale": "Un plan de financement équilibré, avec besoins, ressources, solde, hypothèses et commentaire sur les marges de sécurité.",
+    "motif": "Un schéma ou une formule peut aider, mais seulement s’il clarifie le mécanisme sans remplacer les calculs et contrôles."
+  },
+  {
+    "id": "R-B4-035",
+    "title": "Choisir des indicateurs de gestion et des seuils d’alerte",
+    "decision": "conserver",
+    "role": "aucun ajout v3.6",
+    "format": "texte-structure",
+    "objectif": "Création ou refonte d’un tableau de bord commercial, financier ou mixte.",
+    "representation_mentale": "Une fiche par indicateur : question de pilotage, définition, formule, source, fréquence, responsable, objectif/seuil et action en cas d’écart.",
+    "motif": "Aucun gain visuel évident identifié à ce stade ; la structure actuelle paraît plus directe que l’ajout d’un schéma."
+  },
+  {
+    "id": "R-B4-036",
+    "title": "Construire un tableau de bord commercial et financier lisible",
+    "decision": "visuel ajouté v3.6",
+    "role": "central",
+    "format": "dashboard",
+    "objectif": "Se représenter un tableau de bord comme une réponse visuelle à quelques questions de pilotage.",
+    "representation_mentale": "question → KPI → cible → tendance → alerte → action",
+    "motif": "Le visuel réduit l’effort nécessaire pour reconstruire mentalement une structure, un enchaînement, une relation ou une décision."
+  },
+  {
+    "id": "R-B4-037",
+    "title": "Analyser un tableau de bord et préparer une alerte au dirigeant",
+    "decision": "surveiller",
+    "role": "aucun ajout v3.6",
+    "format": "processus",
+    "objectif": "Revue périodique du tableau de bord, dérive commerciale, financière ou opérationnelle.",
+    "representation_mentale": "Une note ou synthèse courte : faits, ampleur, tendance, facteurs explicatifs, conséquences possibles, urgence et options.",
+    "motif": "La fiche suit une démarche. Un visuel peut être utile si les élèves ont besoin de voir l’ordre, les dépendances ou les points de décision ; à confirmer par l’usage en TP."
+  },
+  {
+    "id": "R-B4-038",
+    "title": "Résoudre un problème administratif sans traiter seulement le symptôme",
+    "decision": "visuel ajouté v3.6",
+    "role": "central",
+    "format": "resolution",
+    "objectif": "Comprendre qu’on résout un problème en remontant du symptôme à une cause vérifiée puis en contrôlant l’action.",
+    "representation_mentale": "écart → processus réel → causes possibles → preuves → cause → action → contrôle",
+    "motif": "Le visuel réduit l’effort nécessaire pour reconstruire mentalement une structure, un enchaînement, une relation ou une décision."
+  },
+  {
+    "id": "R-B4-039",
+    "title": "Décliner la stratégie de communication en plan d’actions opérationnel",
+    "decision": "conserver",
+    "role": "aucun ajout v3.6",
+    "format": "texte-structure",
+    "objectif": "Lancement d’une offre, événement, communication institutionnelle, campagne locale, développement de la visibilité ou coordination de plusieurs canaux.",
+    "representation_mentale": "Un plan d’actions précisant objectif, cible, message, canal, support, responsable, calendrier, budget, validation et indicateur.",
+    "motif": "Aucun gain visuel évident identifié à ce stade ; la structure actuelle paraît plus directe que l’ajout d’un schéma."
+  },
+  {
+    "id": "R-B4-040",
+    "title": "Simuler l’impact d’une décision de gestion sur les coûts, le résultat et les équilibres financiers",
+    "decision": "surveiller",
+    "role": "aucun ajout v3.6",
+    "format": "calcul-tableau",
+    "objectif": "Investissement, hausse de volume, embauche, changement de prix, nouveau contrat, modification de charges ou autre décision fournie par la direction.",
+    "representation_mentale": "Un tableau de scénarios montrant hypothèses, variation des coûts/produits, résultat, trésorerie ou équilibres financiers concernés et limites du calcul.",
+    "motif": "Un schéma ou une formule peut aider, mais seulement s’il clarifie le mécanisme sans remplacer les calculs et contrôles."
+  },
+  {
+    "id": "R-TR-001",
+    "title": "Analyser une situation de communication avant de répondre",
+    "decision": "surveiller",
+    "role": "aucun ajout v3.6",
+    "format": "processus",
+    "objectif": "Dès qu’il faut choisir un ton, un argument, un canal ou une posture selon un interlocuteur et un objectif professionnel.",
+    "representation_mentale": "Une préparation courte identifiant acteurs, objectif, enjeux, contraintes, informations disponibles, canal et stratégie de réponse.",
+    "motif": "La fiche suit une démarche. Un visuel peut être utile si les élèves ont besoin de voir l’ordre, les dépendances ou les points de décision ; à confirmer par l’usage en TP."
+  },
+  {
+    "id": "R-TR-002",
+    "title": "Rédiger un courriel professionnel qui permet d’agir",
+    "decision": "conserver",
+    "role": "aucun ajout v3.6",
+    "format": "texte-gabarit",
+    "objectif": "Courriel à un client, fournisseur, salarié, prestataire, administration ou responsable.",
+    "representation_mentale": "Un message court avec objet utile, contexte suffisant, demande explicite, échéance, pièces identifiées et ton adapté.",
+    "motif": "La représentation utile est surtout la forme du livrable ; les gabarits et exemples de production existants apportent plus qu’un schéma supplémentaire."
+  },
+  {
+    "id": "R-TR-003",
+    "title": "Rédiger une note professionnelle pour aider le dirigeant à décider",
+    "decision": "conserver",
+    "role": "aucun ajout v3.6",
+    "format": "texte-gabarit",
+    "objectif": "Alerte, comparaison, diagnostic, risque, choix fournisseur, décision RH, analyse commerciale ou financière.",
+    "representation_mentale": "Une note courte distinguant objet, faits essentiels, analyse, options, recommandation argumentée et décision attendue.",
+    "motif": "La représentation utile est surtout la forme du livrable ; les gabarits et exemples de production existants apportent plus qu’un schéma supplémentaire."
+  },
+  {
+    "id": "R-TR-004",
+    "title": "Produire un compte rendu de réunion ou d’entretien qui permet le suivi",
+    "decision": "conserver",
+    "role": "aucun ajout v3.6",
+    "format": "texte-gabarit",
+    "objectif": "Réunion projet, entretien fournisseur, réunion interne, point RH, échange avec un prestataire ou entretien de suivi.",
+    "representation_mentale": "Un compte rendu fidèle avec décisions, actions, responsables, dates, points en attente et documents de référence.",
+    "motif": "La représentation utile est surtout la forme du livrable ; les gabarits et exemples de production existants apportent plus qu’un schéma supplémentaire."
+  },
+  {
+    "id": "R-TR-005",
+    "title": "Concevoir un formulaire ou document structuré qui produit des données exploitables",
+    "decision": "conserver",
+    "role": "aucun ajout v3.6",
+    "format": "texte-structure",
+    "objectif": "Fiche de réclamation, demande d’achat, formulaire d’absence, relevé d’incident, fiche d’évaluation, inscription ou collecte interne.",
+    "representation_mentale": "Un document avec champs utiles, formats contrôlables, instructions courtes, identifiants et circuit de validation.",
+    "motif": "Aucun gain visuel évident identifié à ce stade ; la structure actuelle paraît plus directe que l’ajout d’un schéma."
+  },
+  {
+    "id": "R-TR-006",
+    "title": "Choisir le bon canal de communication numérique et maîtriser la trace laissée",
+    "decision": "conserver",
+    "role": "aucun ajout v3.6",
+    "format": "texte-structure",
+    "objectif": "Lorsque plusieurs canaux sont possibles ou que l’information est sensible, durable, urgente ou destinée à plusieurs acteurs.",
+    "representation_mentale": "Un choix de canal justifié avec destinataires, niveau de confidentialité, besoin de trace, règles de partage et archivage.",
+    "motif": "Aucun gain visuel évident identifié à ce stade ; la structure actuelle paraît plus directe que l’ajout d’un schéma."
+  },
+  {
+    "id": "R-TR-007",
+    "title": "Préparer et conduire un entretien professionnel court",
+    "decision": "surveiller",
+    "role": "aucun ajout v3.6",
+    "format": "processus",
+    "objectif": "Entretien avec un client, fournisseur, salarié, prestataire ou responsable, hors situations nécessitant une expertise spécifique.",
+    "representation_mentale": "Un entretien cadré avec objectif, questions préparées, reformulation, conclusion et traces utiles.",
+    "motif": "La fiche suit une démarche. Un visuel peut être utile si les élèves ont besoin de voir l’ordre, les dépendances ou les points de décision ; à confirmer par l’usage en TP."
+  },
+  {
+    "id": "R-TR-008",
+    "title": "Préparer et animer une réunion qui aboutit à des décisions et des actions",
+    "decision": "surveiller",
+    "role": "aucun ajout v3.6",
+    "format": "processus",
+    "objectif": "Réunion projet, qualité, organisation, fournisseurs, RH ou suivi d’actions.",
+    "representation_mentale": "Une réunion avec objectif, ordre du jour minuté, documents utiles, décisions tracées et actions attribuées.",
+    "motif": "La fiche suit une démarche. Un visuel peut être utile si les élèves ont besoin de voir l’ordre, les dépendances ou les points de décision ; à confirmer par l’usage en TP."
+  },
+  {
+    "id": "R-TR-009",
+    "title": "Repérer une tension et préparer une intervention sans se substituer au décideur",
+    "decision": "surveiller",
+    "role": "aucun ajout v3.6",
+    "format": "processus",
+    "objectif": "Tension entre collègues, désaccord récurrent, conflit avec un interlocuteur ou situation relationnelle qui dégrade la coordination.",
+    "representation_mentale": "Une fiche factuelle distinguant événements, impacts, acteurs, tentatives déjà réalisées, points à vérifier et options de traitement.",
+    "motif": "La fiche suit une démarche. Un visuel peut être utile si les élèves ont besoin de voir l’ordre, les dépendances ou les points de décision ; à confirmer par l’usage en TP."
+  },
+  {
+    "id": "R-TR-010",
+    "title": "Préparer un dialogue ou une négociation dans le cadre fixé par la direction",
+    "decision": "surveiller",
+    "role": "aucun ajout v3.6",
+    "format": "processus",
+    "objectif": "Négociation fournisseur, échange social, discussion avec un prestataire ou autre situation où les intérêts ne sont pas totalement identiques.",
+    "representation_mentale": "Une fiche de préparation avec objectif, intérêts, critères, informations, solution idéale, minimum acceptable, points non négociables et zones à valider.",
+    "motif": "La fiche suit une démarche. Un visuel peut être utile si les élèves ont besoin de voir l’ordre, les dépendances ou les points de décision ; à confirmer par l’usage en TP."
+  },
+  {
+    "id": "R-TR-011",
+    "title": "Construire un tableau de données fiable avant de calculer ou filtrer",
+    "decision": "visuel ajouté v3.6",
+    "role": "complement",
+    "format": "structure-tableau",
+    "objectif": "Se représenter un tableau fiable comme une structure régulière : une ligne = une unité, une colonne = une donnée.",
+    "representation_mentale": "unité d’observation → lignes ; variables → colonnes ; formats homogènes → contrôle",
+    "motif": "Le visuel réduit l’effort nécessaire pour reconstruire mentalement une structure, un enchaînement, une relation ou une décision."
+  },
+  {
+    "id": "R-TR-012",
+    "title": "Extraire, nettoyer et contrôler des données du PGI avant analyse",
+    "decision": "surveiller",
+    "role": "aucun ajout v3.6",
+    "format": "processus",
+    "objectif": "Balance, commandes, clients, fournisseurs, salariés, stocks, écritures, ventes ou toute extraction autorisée.",
+    "representation_mentale": "Un fichier de travail daté avec source, périmètre, contrôles, transformations documentées et nombre d’enregistrements cohérent.",
+    "motif": "La fiche suit une démarche. Un visuel peut être utile si les élèves ont besoin de voir l’ordre, les dépendances ou les points de décision ; à confirmer par l’usage en TP."
+  },
+  {
+    "id": "R-TR-013",
+    "title": "Choisir entre filtre, recherche, validation et tableau croisé dynamique dans le tableur",
+    "decision": "conserver",
+    "role": "aucun ajout v3.6",
+    "format": "texte-structure",
+    "objectif": "Analyse clients/fournisseurs, risques, RH, coûts, ventes, stocks ou indicateurs.",
+    "representation_mentale": "Un traitement reproductible avec l’outil le plus simple répondant à la question, sans programmation inutile.",
+    "motif": "Aucun gain visuel évident identifié à ce stade ; la structure actuelle paraît plus directe que l’ajout d’un schéma."
+  },
+  {
+    "id": "R-TR-014",
+    "title": "Présenter une analyse chiffrée sans noyer le destinataire sous les données",
+    "decision": "visuel ajouté v3.6",
+    "role": "central",
+    "format": "storyline",
+    "objectif": "Comprendre qu’une analyse chiffrée doit conduire du chiffre à une conclusion puis à une action.",
+    "representation_mentale": "question → 1-3 chiffres → référence → écart → explication → message/action",
+    "motif": "Le visuel réduit l’effort nécessaire pour reconstruire mentalement une structure, un enchaînement, une relation ou une décision."
+  },
+  {
+    "id": "R-TR-015",
+    "title": "Chaîne de valeur de Porter — cartographier les activités avant d’identifier les risques",
+    "decision": "visuel ajouté v3.6",
+    "role": "central",
+    "format": "schema-conceptuel",
+    "objectif": "Comprendre que Porter est une grille de représentation adaptable et non une liste de fonctions à recopier.",
+    "representation_mentale": "réalité de l’organisation → rôle des activités → organisation principales/soutien",
+    "motif": "Le visuel réduit l’effort nécessaire pour reconstruire mentalement une structure, un enchaînement, une relation ou une décision."
+  },
+  {
+    "id": "R-TR-016",
+    "title": "Présentation de l’entreprise — construire une fiche synthétique utile à la mission",
+    "decision": "visuel ajouté v3.6",
+    "role": "central",
+    "format": "canvas",
+    "objectif": "Se représenter l’entreprise comme un système cohérent utile à la mission, pas comme une liste administrative.",
+    "representation_mentale": "proposition de valeur au centre, puis clients, organisation, ressources, partenaires et contexte",
+    "motif": "Le visuel réduit l’effort nécessaire pour reconstruire mentalement une structure, un enchaînement, une relation ou une décision."
+  }
+]

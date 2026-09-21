@@ -1,0 +1,8 @@
+
+(()=>{
+ const data=window.GPME_KNOWLEDGE_V41||{}; if(!Object.keys(data).length)return;
+ let dlg=document.querySelector('.v41-knowledge-dialog');if(!dlg){dlg=document.createElement('dialog');dlg.className='v41-knowledge-dialog';dlg.innerHTML='<div class="v41-dialog-card"></div>';document.body.appendChild(dlg)}
+ function slugFrom(h){const m=(h||'').match(/\/connaissances\/notions\/([^\/#?]+)\.html/);return m?decodeURIComponent(m[1]):null}
+ function show(slug,href){const k=data[slug];if(!k)return;const box=dlg.querySelector('.v41-dialog-card');box.innerHTML=`<div class="v41-dialog-head"><div><div class="v41-dialog-kind">${k.kind||'Notion'}</div><h2>${k.title}</h2></div><button class="v41-dialog-close" type="button" aria-label="Fermer">×</button></div><div class="v41-dialog-definition">${k.definition}</div>${k.related&&k.related.length?`<div class="v41-dialog-actions"><span style="font-size:.78rem;color:#7a8499;align-self:center">Notions connexes :</span>${k.related.slice(0,3).map(r=>`<button type="button" data-related="${r.slug}">${r.title}</button>`).join('')}</div>`:''}<div class="v41-dialog-actions"><a href="${href}">Ouvrir la notion</a></div>`;box.querySelector('.v41-dialog-close').onclick=()=>dlg.close();box.querySelectorAll('[data-related]').forEach(b=>b.onclick=()=>show(b.dataset.related,href.replace(/[^/]+\.html.*/,b.dataset.related+'.html')));dlg.showModal()}
+ document.addEventListener('click',e=>{const a=e.target.closest('a[href]');if(!a)return;const slug=slugFrom(a.href);if(!slug||!data[slug])return;if(location.pathname.includes('/connaissances/notions/'))return;e.preventDefault();show(slug,a.href)});
+})();

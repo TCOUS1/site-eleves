@@ -1,0 +1,25 @@
+{
+  "version": "2.4",
+  "resource_pages": 145,
+  "mission_detail_pages": 30,
+  "student_pages_excluding_templates_audit_maintenance": 335,
+  "pages_with_visual_hierarchy_css": 334,
+  "redirect_pages_without_visual_layer": [
+    "referentiel/savoirs.html"
+  ],
+  "icon_count": 23,
+  "invalid_svg_files": [],
+  "home_resource_card_types": {
+    "methode": 114,
+    "regle": 24,
+    "outil": 5,
+    "repere": 2
+  },
+  "alphabet_hash_links_removed": true,
+  "official_visible_hash_occurrences": 2941,
+  "non_official_visible_hashes": [],
+  "broken_relative_links": [],
+  "pedagogical_text_differences_vs_v23": [],
+  "font_files_bundled": [],
+  "browser_visual_test": "blocked by environment administrator; structural/CSS/JS/link validations completed"
+}

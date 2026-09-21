@@ -1,0 +1,8 @@
+﻿Ressource;Groupe;Lecture;Modification;Justification connue
+Réseau/Commun;Tous;Oui;Oui;ancienne règle historique
+Réseau/Commercial;Commercial;Oui;Oui;activité commerciale
+Réseau/Commercial;ADV;Oui;Oui;devis et tarifs
+Réseau/Commercial;Atelier;Oui;Non;besoin de consultation
+Réseau/Qualité;Tous;Oui;Non;procédures
+Réseau/Qualité;Qualité;Oui;Oui;pilotage procédures
+Clients_MASTER.xlsx;Tous;Oui;Oui;hérite du dossier Commun

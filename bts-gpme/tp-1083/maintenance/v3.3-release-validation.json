@@ -1,0 +1,13 @@
+{
+  "version": "3.3",
+  "date": "2026-09-02",
+  "static_checks": 73,
+  "static_failures": 0,
+  "resources": 145,
+  "missions": 30,
+  "maintenance_attrs": 145,
+  "broken_local_links_student": 0,
+  "broken_local_links_teacher": 0,
+  "javascript_syntax": "passed",
+  "browser_e2e": "blocked_by_environment_policy"
+}

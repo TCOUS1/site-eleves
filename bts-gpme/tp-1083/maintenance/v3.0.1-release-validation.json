@@ -1,0 +1,18 @@
+{
+  "status": "PASS",
+  "errors": [],
+  "warnings": [],
+  "metrics": {
+    "student_html": 338,
+    "teacher_html": 356,
+    "resources": 145,
+    "missions": 30,
+    "knowledge": 343,
+    "maintenance": {
+      "stable": 99,
+      "technique-evolutive": 22,
+      "reglementaire": 24
+    },
+    "guidance_issues": 0
+  }
+}

@@ -1,0 +1,110 @@
+[
+  {
+    "scrollWidth": 375,
+    "clientWidth": 375,
+    "toolbarRight": 375,
+    "toolbarLeft": 0,
+    "fontLoaded": true,
+    "fontFamily": "OpenDyslexic, Arial, Verdana, Tahoma, sans-serif",
+    "viewport": "mobile",
+    "page": "index.html",
+    "overflow_ok": true,
+    "toolbar_ok": true
+  },
+  {
+    "scrollWidth": 375,
+    "clientWidth": 375,
+    "toolbarRight": 375,
+    "toolbarLeft": 0,
+    "fontLoaded": true,
+    "fontFamily": "OpenDyslexic, Arial, Verdana, Tahoma, sans-serif",
+    "viewport": "mobile",
+    "page": "missions/M03.html",
+    "overflow_ok": true,
+    "toolbar_ok": true
+  },
+  {
+    "scrollWidth": 375,
+    "clientWidth": 375,
+    "toolbarRight": 375,
+    "toolbarLeft": 0,
+    "fontLoaded": true,
+    "fontFamily": "OpenDyslexic, Arial, Verdana, Tahoma, sans-serif",
+    "viewport": "mobile",
+    "page": "ressources/bc1/R-B1-010-suivre-reglements-relancer-impayes.html",
+    "overflow_ok": true,
+    "toolbar_ok": true
+  },
+  {
+    "scrollWidth": 768,
+    "clientWidth": 768,
+    "toolbarRight": 768,
+    "toolbarLeft": 0,
+    "fontLoaded": true,
+    "fontFamily": "OpenDyslexic, Arial, Verdana, Tahoma, sans-serif",
+    "viewport": "tablet",
+    "page": "index.html",
+    "overflow_ok": true,
+    "toolbar_ok": true
+  },
+  {
+    "scrollWidth": 768,
+    "clientWidth": 768,
+    "toolbarRight": 768,
+    "toolbarLeft": 0,
+    "fontLoaded": true,
+    "fontFamily": "OpenDyslexic, Arial, Verdana, Tahoma, sans-serif",
+    "viewport": "tablet",
+    "page": "missions/M03.html",
+    "overflow_ok": true,
+    "toolbar_ok": true
+  },
+  {
+    "scrollWidth": 768,
+    "clientWidth": 768,
+    "toolbarRight": 768,
+    "toolbarLeft": 0,
+    "fontLoaded": true,
+    "fontFamily": "OpenDyslexic, Arial, Verdana, Tahoma, sans-serif",
+    "viewport": "tablet",
+    "page": "ressources/bc1/R-B1-010-suivre-reglements-relancer-impayes.html",
+    "overflow_ok": true,
+    "toolbar_ok": true
+  },
+  {
+    "scrollWidth": 1366,
+    "clientWidth": 1366,
+    "toolbarRight": 1366,
+    "toolbarLeft": 0,
+    "fontLoaded": true,
+    "fontFamily": "OpenDyslexic, Arial, Verdana, Tahoma, sans-serif",
+    "viewport": "desktop",
+    "page": "index.html",
+    "overflow_ok": true,
+    "toolbar_ok": true
+  },
+  {
+    "scrollWidth": 1366,
+    "clientWidth": 1366,
+    "toolbarRight": 1366,
+    "toolbarLeft": 0,
+    "fontLoaded": true,
+    "fontFamily": "OpenDyslexic, Arial, Verdana, Tahoma, sans-serif",
+    "viewport": "desktop",
+    "page": "missions/M03.html",
+    "overflow_ok": true,
+    "toolbar_ok": true
+  },
+  {
+    "scrollWidth": 1366,
+    "clientWidth": 1366,
+    "toolbarRight": 1366,
+    "toolbarLeft": 0,
+    "fontLoaded": true,
+    "fontFamily": "OpenDyslexic, Arial, Verdana, Tahoma, sans-serif",
+    "viewport": "desktop",
+    "page": "ressources/bc1/R-B1-010-suivre-reglements-relancer-impayes.html",
+    "overflow_ok": true,
+    "toolbar_ok": true
+  }
+]

@@ -1,0 +1,7 @@
+﻿Date;Commande;Type erreur;Détection;Conséquence;Opérateur
+04/08/2026;C4102;adresse livraison ancienne;transporteur;retard 1 jour;A
+07/08/2026;C4128;référence produit proche;client;retour produit;B
+11/08/2026;C4151;adresse livraison ancienne;transporteur;retard 2 jours;A
+18/08/2026;C4198;quantité 12 au lieu de 10;préparation;corrigé avant envoi;C
+21/08/2026;C4210;adresse livraison ancienne;client;réexpédition;B
+27/08/2026;C4255;référence produit proche;préparation;corrigé avant envoi;A

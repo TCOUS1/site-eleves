@@ -1,0 +1,713 @@
+[
+  {
+    "id": "M01",
+    "bc": "BC1",
+    "activity": "A1_1",
+    "title": "Trouver de nouveaux prospects sans savoir comment organiser la prospection",
+    "brief": "Le dirigeant veut développer les contrats de maintenance auprès de cabinets médicaux dans un rayon de 40 km. Il vous demande de préparer une liste de prospects et une action de prise de contact. Il ne vous donne pas de méthode.",
+    "queries": [
+      "je dois trouver de nouveaux clients",
+      "comment préparer une liste de prospects",
+      "organiser une prospection cabinets médicaux"
+    ],
+    "targets": [
+      "R-B1-001",
+      "R-B1-002",
+      "R-TR-002"
+    ],
+    "output": "Un fichier de prospects qualifié, un plan de prospection et un message de prise de contact traçable.",
+    "first_reasoning": [
+      "Quel est l’objectif réel : rendez-vous, devis, contacts ou information ?",
+      "Quels critères permettent de reconnaître un prospect pertinent ?",
+      "Quelles données existent déjà dans le PGI ou les fichiers de l’entreprise ?"
+    ]
+  },
+  {
+    "id": "M02",
+    "bc": "BC1",
+    "activity": "A1_2",
+    "title": "Passer d’une commande client à une facture sans oublier les contrôles",
+    "brief": "Un client a accepté un devis. La livraison vient d’être signalée comme terminée et votre responsable vous dit simplement : « tu peux préparer la facture ». Vous devez vérifier que vous avez réellement le droit et les éléments nécessaires pour facturer.",
+    "queries": [
+      "on me demande de faire la facture après la livraison",
+      "je dois vérifier une commande client avant facturation",
+      "comment suivre vente livraison facture"
+    ],
+    "targets": [
+      "R-B1-006",
+      "R-B1-007",
+      "R-B1-008"
+    ],
+    "output": "Une facture justifiée par les pièces commerciales, exacte et enregistrée avec une traçabilité suffisante.",
+    "first_reasoning": [
+      "La commande correspond-elle au devis ou contrat validé ?",
+      "La livraison ou prestation est-elle réellement prouvée ?",
+      "Les données client, prix, remises, TVA et conditions de paiement sont-elles disponibles ?"
+    ]
+  },
+  {
+    "id": "M03",
+    "bc": "BC1",
+    "activity": "A1_2",
+    "title": "Un client n’a pas payé : savoir quoi vérifier avant de relancer",
+    "brief": "Une facture de 4 800 € est échue depuis douze jours. Le dirigeant vous demande de « relancer le client aujourd’hui ». Avant d’écrire, vous devez vérifier la créance et choisir une action adaptée.",
+    "queries": [
+      "le client ne paie pas",
+      "facture en retard que faire avant de relancer",
+      "je dois suivre un impayé client"
+    ],
+    "targets": [
+      "R-B1-010",
+      "R-B1-026",
+      "R-TR-002"
+    ],
+    "output": "Un dossier de relance traçable avec situation vérifiée, action choisie, message et prochaine échéance.",
+    "first_reasoning": [
+      "La facture est-elle exacte, envoyée et réellement échue ?",
+      "Existe-t-il un litige, un avoir, un paiement non rapproché ou une promesse de règlement ?",
+      "Quelle procédure de relance la PME impose-t-elle ?"
+    ]
+  },
+  {
+    "id": "M04",
+    "bc": "BC1",
+    "activity": "A1_3",
+    "title": "Un client mécontent menace de partir après une livraison en retard",
+    "brief": "Un client important écrit qu’il a reçu sa commande avec quatre jours de retard et qu’il envisage de changer de fournisseur. Votre responsable vous demande de traiter le message et de lui faire un retour.",
+    "queries": [
+      "client pas content retard livraison",
+      "comment traiter une réclamation client",
+      "un client menace de partir que répondre"
+    ],
+    "targets": [
+      "R-B1-014",
+      "R-B1-030",
+      "R-B1-029",
+      "R-TR-001"
+    ],
+    "output": "Une réclamation qualifiée, une réponse adaptée, les actions internes nécessaires et une trace de clôture ou de suivi.",
+    "first_reasoning": [
+      "Quel est le fait exact reproché et quelles preuves sont disponibles ?",
+      "La demande du client relève-t-elle d’une correction, d’une information, d’un geste commercial ou d’une décision du responsable ?",
+      "Qui doit être informé en interne ?"
+    ]
+  },
+  {
+    "id": "M05",
+    "bc": "BC1",
+    "activity": "A1_4",
+    "title": "Choisir entre trois fournisseurs sans se contenter du prix le plus bas",
+    "brief": "La PME doit renouveler dix ordinateurs portables. Trois fournisseurs ont répondu. Le dirigeant vous demande : « compare-les et dis-moi lequel tu recommandes ». Les offres n’ont pas exactement les mêmes garanties ni les mêmes délais.",
+    "queries": [
+      "je dois choisir entre plusieurs fournisseurs",
+      "comparer trois offres fournisseur",
+      "quel fournisseur prendre pas seulement le prix"
+    ],
+    "targets": [
+      "R-B1-015",
+      "R-B1-016",
+      "R-B1-017",
+      "R-TR-003"
+    ],
+    "output": "Une comparaison multicritère justifiée et une recommandation préparée pour le dirigeant, sans prendre la décision à sa place.",
+    "first_reasoning": [
+      "Le besoin et les critères de décision sont-ils définis avant de noter les offres ?",
+      "Les offres sont-elles réellement comparables ?",
+      "Quels critères sont obligatoires, éliminatoires ou simplement préférentiels ?"
+    ]
+  },
+  {
+    "id": "M06",
+    "bc": "BC1",
+    "activity": "A1_5",
+    "title": "Le stock baisse : décider s’il faut recommander et contrôler la commande",
+    "brief": "Le stock d’un consommable critique est presque épuisé. Un fournisseur habituel annonce aussi une hausse de prix. Votre responsable vous demande de vérifier la situation et de préparer la commande nécessaire.",
+    "queries": [
+      "manque de stock faut il recommander",
+      "préparer une commande fournisseur stock faible",
+      "contrôler commande facture fournisseur"
+    ],
+    "targets": [
+      "R-B1-021",
+      "R-B1-019",
+      "R-B1-020"
+    ],
+    "output": "Une proposition de réapprovisionnement justifiée, une commande conforme et un contrôle achat-réception-facture.",
+    "first_reasoning": [
+      "Quel est le stock réellement disponible et la consommation prévisible ?",
+      "Quels délais et contraintes de commande s’appliquent ?",
+      "La hausse de prix impose-t-elle une validation ou une nouvelle comparaison ?"
+    ]
+  },
+  {
+    "id": "M07",
+    "bc": "BC1",
+    "activity": "A1_6",
+    "title": "La banque et les comptes clients ne correspondent pas en fin de mois",
+    "brief": "À la fin du mois, le solde du relevé bancaire ne correspond pas au compte banque du PGI et plusieurs clients apparaissent encore débiteurs. On vous demande de fiabiliser la situation avant les travaux comptables suivants.",
+    "queries": [
+      "la banque ne correspond pas au logiciel",
+      "relevé bancaire et compte banque différents",
+      "clients encore débiteurs fin de mois"
+    ],
+    "targets": [
+      "R-B1-025",
+      "R-B1-026",
+      "R-B1-024"
+    ],
+    "output": "Un rapprochement bancaire expliqué, des comptes tiers contrôlés et une liste d’anomalies ou d’écritures à traiter.",
+    "first_reasoning": [
+      "Quelle est la date de comparaison et les opérations présentes de chaque côté ?",
+      "Quels encaissements/décaissements sont en transit ?",
+      "Les soldes clients viennent-ils d’impayés réels ou d’opérations mal enregistrées ?"
+    ]
+  },
+  {
+    "id": "M08",
+    "bc": "BC2",
+    "activity": "A2_1",
+    "title": "Une règle change : transformer l’information en action pour la PME",
+    "brief": "Votre responsable vous transmet un lien annonçant une évolution réglementaire qui pourrait concerner l’entreprise. Il vous demande : « vérifie si c’est fiable, dis-moi ce qui change et ce qu’on doit modifier ». Vous ne connaissez pas encore le sujet.",
+    "queries": [
+      "on me donne une nouvelle règle je dois vérifier",
+      "comment savoir si une source est fiable",
+      "faire une veille puis mettre à jour une procédure"
+    ],
+    "targets": [
+      "R-B2-005",
+      "R-B2-006",
+      "R-B2-028",
+      "R-TR-003"
+    ],
+    "output": "Une information qualifiée, une synthèse ciblée, les impacts pour la PME et les pratiques ou procédures à actualiser.",
+    "first_reasoning": [
+      "Quelle source est à l’origine de l’information et quelle est son autorité ?",
+      "La règle concerne-t-elle réellement la PME, à quelle date et dans quelles conditions ?",
+      "Quelles pratiques internes sont touchées ?"
+    ]
+  },
+  {
+    "id": "M09",
+    "bc": "BC2",
+    "activity": "A2_2",
+    "title": "Numériser les archives en six semaines : passer d’une idée à un projet pilotable",
+    "brief": "La direction souhaite numériser une partie des archives papier avant un déménagement prévu dans six semaines. Elle vous demande de préparer l’organisation du projet et une première réunion avec les personnes concernées.",
+    "queries": [
+      "je dois organiser un projet de numérisation",
+      "faire un planning projet avec plusieurs personnes",
+      "préparer réunion projet archives"
+    ],
+    "targets": [
+      "R-B2-007",
+      "R-B2-008",
+      "R-B2-009",
+      "R-B2-010"
+    ],
+    "output": "Un cadrage, un cahier des charges, un planning, une réunion préparée et un dispositif de suivi des écarts.",
+    "first_reasoning": [
+      "Quel résultat final doit être obtenu avant le déménagement ?",
+      "Quelles contraintes de conservation, accès, confidentialité et moyens sont déjà connues ?",
+      "Qui décide, qui réalise et qui doit être consulté ?"
+    ]
+  },
+  {
+    "id": "M10",
+    "bc": "BC2",
+    "activity": "A2_3",
+    "title": "Des incidents se répètent : identifier les risques réellement prioritaires",
+    "brief": "La PME a connu plusieurs incidents : erreurs de livraison, panne de serveur, absence d’un salarié clé et retard de paiement d’un gros client. Le dirigeant vous demande de préparer une analyse des risques et des priorités d’action.",
+    "queries": [
+      "plusieurs problèmes dans entreprise quels risques traiter en premier",
+      "classer les risques par importance",
+      "faire plan action risques pme"
+    ],
+    "targets": [
+      "R-B2-011",
+      "R-B2-001",
+      "R-B2-002",
+      "R-B2-013"
+    ],
+    "output": "Un registre des risques formulés correctement, une hiérarchisation justifiée et un plan de traitement soumis à validation.",
+    "first_reasoning": [
+      "Chaque risque est-il formulé comme un événement possible et non comme une simple cause ?",
+      "Quelles preuves permettent d’évaluer probabilité et gravité ?",
+      "Quels seuils ou priorités doivent être validés par la direction ?"
+    ]
+  },
+  {
+    "id": "M11",
+    "bc": "BC2",
+    "activity": "A2_4",
+    "title": "Le compte bancaire risque de devenir négatif dans deux mois",
+    "brief": "Le dirigeant vous indique que les encaissements ralentissent alors qu’un gros règlement fournisseur approche. Il veut savoir si la PME pourra faire face à ses échéances et quelles solutions étudier.",
+    "queries": [
+      "la pme va manquer d argent dans deux mois",
+      "prévoir encaissements décaissements",
+      "trésorerie négative quelles solutions"
+    ],
+    "targets": [
+      "R-B2-014",
+      "R-B2-015",
+      "R-TR-014"
+    ],
+    "output": "Un budget de trésorerie contrôlé, un diagnostic de tension, des scénarios et une alerte argumentée.",
+    "first_reasoning": [
+      "Quelles échéances sont certaines, probables ou encore hypothétiques ?",
+      "Les montants sont-ils TTC/HT et les dates d’encaissement réalistes ?",
+      "Quelles solutions relèvent d’une proposition et lesquelles nécessitent une décision du dirigeant ?"
+    ]
+  },
+  {
+    "id": "M12",
+    "bc": "BC2",
+    "activity": "A2_5",
+    "title": "Un poste de travail semble dangereux : contribuer au DUERP sans jouer l’expert",
+    "brief": "Deux salariés signalent que la zone de préparation des commandes est glissante et encombrée. Votre responsable vous demande de recueillir les faits et de préparer la mise à jour de l’évaluation des risques.",
+    "queries": [
+      "poste de travail dangereux que faire",
+      "mettre à jour duerp après problème",
+      "sécurité salariés sol glissant"
+    ],
+    "targets": [
+      "R-B2-003",
+      "R-B2-011",
+      "R-B2-013"
+    ],
+    "output": "Des faits objectivés, un risque formulé et évalué, puis des mesures de prévention proposées pour validation.",
+    "first_reasoning": [
+      "Quel danger est observé, qui est exposé et dans quelles conditions ?",
+      "Quelles observations ou données permettent d’éviter une évaluation au hasard ?",
+      "Quelles mesures peuvent être proposées sans se substituer à l’employeur ou au spécialiste ?"
+    ]
+  },
+  {
+    "id": "M13",
+    "bc": "BC2",
+    "activity": "A2_5",
+    "title": "Une machine est endommagée : préparer le dossier d’assurance sans promettre l’indemnisation",
+    "brief": "Une machine a été endommagée après une fuite d’eau. Le dirigeant vous demande de vérifier le contrat d’assurance et de préparer le dossier à transmettre à l’assureur.",
+    "queries": [
+      "machine abimée assurance que faire",
+      "préparer déclaration sinistre entreprise",
+      "vérifier si assurance couvre le dommage"
+    ],
+    "targets": [
+      "R-B2-016",
+      "R-B2-030"
+    ],
+    "output": "Un dossier de sinistre documenté et une analyse prudente des garanties, exclusions, franchises et pièces à transmettre.",
+    "first_reasoning": [
+      "Quels sont les faits, dates, dommages et premières mesures conservatoires ?",
+      "Quelles garanties semblent applicables et quelles limites figurent dans le contrat ?",
+      "Quelles affirmations doivent rester conditionnelles jusqu’à la position de l’assureur ?"
+    ]
+  },
+  {
+    "id": "M14",
+    "bc": "BC2",
+    "activity": "A2_5",
+    "title": "Les déchets et l’énergie augmentent : repérer un risque environnemental exploitable",
+    "brief": "La consommation d’électricité et le volume de déchets ont nettement augmenté depuis six mois. La direction vous demande d’identifier les causes possibles et de proposer des actions simples à suivre.",
+    "queries": [
+      "beaucoup plus de déchets entreprise",
+      "consommation énergie augmente que mesurer",
+      "risque environnement entreprise actions"
+    ],
+    "targets": [
+      "R-B2-020",
+      "R-TR-011",
+      "R-TR-014"
+    ],
+    "output": "Un diagnostic fondé sur des données comparables, des actions proportionnées et des indicateurs de suivi.",
+    "first_reasoning": [
+      "Les données sont-elles comparables sur la même période et le même niveau d’activité ?",
+      "Quelles activités ou équipements expliquent potentiellement l’évolution ?",
+      "Quelle action peut être suivie par un indicateur simple ?"
+    ]
+  },
+  {
+    "id": "M15",
+    "bc": "BC2",
+    "activity": "A2_5",
+    "title": "Un salarié clique sur un faux mail et des données clients ont peut-être été exposées",
+    "brief": "Un salarié a saisi son mot de passe après avoir cliqué sur un faux courriel. Il avait accès au fichier clients. On ne sait pas encore si des données ont été copiées. Votre responsable vous demande de préparer les premières actions et les informations à remonter.",
+    "queries": [
+      "on a peut être été piraté",
+      "salarié clique faux mail données clients",
+      "fuite de données que faire entreprise"
+    ],
+    "targets": [
+      "R-B2-021",
+      "R-B2-023",
+      "R-B2-019",
+      "R-B2-022"
+    ],
+    "output": "Une chronologie factuelle, des mesures immédiates de limitation, une analyse des données potentiellement concernées et une escalade vers les responsables compétents.",
+    "first_reasoning": [
+      "Quels comptes, postes, données et traces sont concernés ?",
+      "Quelles mesures immédiates peuvent limiter le risque sans détruire les preuves ?",
+      "Qui doit décider de la qualification RGPD et des notifications éventuelles ?"
+    ]
+  },
+  {
+    "id": "M16",
+    "bc": "BC2",
+    "activity": "A2_6",
+    "title": "Les mêmes erreurs reviennent dans les commandes : passer du symptôme à une amélioration qualité",
+    "brief": "Trois réclamations du même type sont survenues en un mois. Le responsable ne veut plus « corriger au cas par cas » et vous demande de chercher la cause et de proposer une procédure plus fiable.",
+    "queries": [
+      "même erreur revient plusieurs fois qualité",
+      "chercher cause problème puis faire procédure",
+      "améliorer une procédure après réclamations"
+    ],
+    "targets": [
+      "R-B2-024",
+      "R-B2-025",
+      "R-B2-029"
+    ],
+    "output": "Une analyse des causes, une procédure corrigée, des responsabilités et un indicateur permettant de vérifier l’efficacité.",
+    "first_reasoning": [
+      "Le problème est-il décrit avec des faits et non des jugements ?",
+      "Quelle cause est réellement démontrée ?",
+      "Comment vérifier après mise en œuvre que l’action a réduit le problème ?"
+    ]
+  },
+  {
+    "id": "M17",
+    "bc": "BC3",
+    "activity": "A3_1",
+    "title": "Un salarié commence lundi : préparer l’embauche sans oublier une formalité",
+    "brief": "Le dirigeant vous annonce vendredi qu’un nouveau salarié commencera lundi matin. Il vous demande de « préparer tout ce qu’il faut ». Vous devez identifier les documents et formalités avant de commencer à les produire.",
+    "queries": [
+      "nouveau salarié commence lundi que préparer",
+      "formalités avant embauche salarié",
+      "dpae contrat dossier salarié"
+    ],
+    "targets": [
+      "R-B3-001",
+      "R-B3-002",
+      "R-B3-003",
+      "R-B3-005"
+    ],
+    "output": "Une check-list d’embauche, les formalités préparées dans les délais et un dossier salarié initialisé sans donnée inutile.",
+    "first_reasoning": [
+      "Quel contrat, quelle convention collective et quelles consignes de la direction s’appliquent ?",
+      "Quelles formalités doivent être réalisées avant la prise de poste ?",
+      "Quelles données personnelles sont nécessaires et qui peut y accéder ?"
+    ]
+  },
+  {
+    "id": "M18",
+    "bc": "BC3",
+    "activity": "A3_1",
+    "title": "Une absence arrive pendant la préparation de la paie",
+    "brief": "Un salarié vous transmet un arrêt alors que les variables de paie doivent partir au prestataire demain. Votre responsable vous demande de mettre à jour le suivi et de préparer les éléments corrects.",
+    "queries": [
+      "salarié absent pendant préparation paie",
+      "arrêt maladie variables de paie",
+      "mettre absence dans paie sans erreur"
+    ],
+    "targets": [
+      "R-B3-007",
+      "R-B3-008",
+      "R-B3-009",
+      "R-B3-012"
+    ],
+    "output": "Une absence enregistrée avec les justificatifs nécessaires, des variables de paie fiabilisées et une transmission confidentielle au bon interlocuteur.",
+    "first_reasoning": [
+      "Quelle est la nature exacte de l’absence et quelles dates sont justifiées ?",
+      "Quelle règle ou convention s’applique avant de calculer quoi que ce soit ?",
+      "Quelles informations peuvent être communiquées et à qui ?"
+    ]
+  },
+  {
+    "id": "M19",
+    "bc": "BC3",
+    "activity": "A3_1",
+    "title": "La PME doit organiser des élections du personnel : préparer sans décider à la place de la direction",
+    "brief": "L’effectif et la situation de la PME conduisent la direction à organiser les élections du CSE. Le dirigeant vous demande de préparer le calendrier, les documents et les points de vigilance.",
+    "queries": [
+      "organiser élections cse entreprise",
+      "représentants du personnel procédure",
+      "préparer calendrier élection salariés"
+    ],
+    "targets": [
+      "R-B3-011",
+      "R-B3-027",
+      "R-B3-001"
+    ],
+    "output": "Un calendrier de procédure, une liste des documents/actions à préparer et des points à faire valider par la direction ou un spécialiste.",
+    "first_reasoning": [
+      "Quel est le cadre juridique applicable à la PME aujourd’hui ?",
+      "Quelles échéances sont impératives ?",
+      "Quels choix appartiennent à la direction ou nécessitent l’appui d’un spécialiste ?"
+    ]
+  },
+  {
+    "id": "M20",
+    "bc": "BC3",
+    "activity": "A3_2",
+    "title": "Il faut recruter mais le besoin est encore flou",
+    "brief": "La direction dit seulement : « il nous faut quelqu’un pour aider l’équipe commerciale rapidement ». Vous devez préparer le recrutement mais aucune fiche de poste n’est à jour.",
+    "queries": [
+      "on doit recruter mais poste pas clair",
+      "faire fiche de poste avant recrutement",
+      "préparer offre et trier candidatures"
+    ],
+    "targets": [
+      "R-B3-013",
+      "R-B3-014",
+      "R-B3-015",
+      "R-B3-016"
+    ],
+    "output": "Un besoin de recrutement formalisé, une fiche de poste, une offre non discriminatoire et des outils de sélection comparables.",
+    "first_reasoning": [
+      "Quel problème opérationnel le recrutement doit-il résoudre ?",
+      "Quelles missions, compétences et contraintes sont réellement nécessaires ?",
+      "Quels critères sont professionnels, observables et non discriminatoires ?"
+    ]
+  },
+  {
+    "id": "M21",
+    "bc": "BC3",
+    "activity": "A3_2",
+    "title": "Plusieurs salariés demandent une formation : construire une proposition utile et chiffrée",
+    "brief": "Quatre salariés ont exprimé des besoins de formation différents. Le dirigeant vous demande de lui proposer des priorités, des organismes et une estimation du budget.",
+    "queries": [
+      "plusieurs demandes de formation comment choisir",
+      "comparer formations salariés budget",
+      "calculer coût formation entreprise"
+    ],
+    "targets": [
+      "R-B3-018",
+      "R-B3-019",
+      "R-B3-028",
+      "R-B3-020"
+    ],
+    "output": "Une synthèse des besoins, une comparaison des solutions, un coût prévisionnel et un planning soumis à décision.",
+    "first_reasoning": [
+      "Quel besoin de compétence est derrière chaque demande ?",
+      "Quelles formations répondent réellement au besoin et avec quelles contraintes ?",
+      "Quels coûts directs et indirects doivent être comparés ?"
+    ]
+  },
+  {
+    "id": "M22",
+    "bc": "BC3",
+    "activity": "A3_2",
+    "title": "L’absentéisme augmente : produire un tableau de bord qui aide réellement le dirigeant",
+    "brief": "Le dirigeant estime que « les absences explosent » mais n’a qu’un export brut du logiciel RH. Il vous demande une analyse simple avant la réunion de direction.",
+    "queries": [
+      "absences augmentent comment faire tableau de bord",
+      "analyser absentéisme salariés",
+      "indicateurs sociaux pour dirigeant"
+    ],
+    "targets": [
+      "R-B3-023",
+      "R-B3-024",
+      "R-TR-012",
+      "R-TR-014"
+    ],
+    "output": "Un tableau de bord social lisible, des évolutions comparables, des faits distingués des hypothèses et quelques questions ou actions à décider.",
+    "first_reasoning": [
+      "Les données couvrent-elles les mêmes effectifs et périodes ?",
+      "Quels indicateurs répondent vraiment à la question ?",
+      "Quelles causes sont prouvées et lesquelles nécessitent une investigation ?"
+    ]
+  },
+  {
+    "id": "M23",
+    "bc": "BC3",
+    "activity": "A3_3",
+    "title": "Deux collègues ne se parlent plus et le travail d’équipe se bloque",
+    "brief": "Deux salariés se renvoient la responsabilité d’erreurs et ne partagent plus leurs informations. Le dirigeant vous demande de préparer un point de situation et des propositions pour remettre le travail en circulation.",
+    "queries": [
+      "conflit dans équipe travail bloqué",
+      "deux collègues ne se parlent plus que préparer",
+      "organiser travail collaboratif après tension"
+    ],
+    "targets": [
+      "R-B3-025",
+      "R-B3-026",
+      "R-TR-009",
+      "R-TR-004"
+    ],
+    "output": "Des faits objectivés, les impacts sur le travail, un cadre d’échange et des règles collaboratives à proposer, sans décider d’une sanction.",
+    "first_reasoning": [
+      "Quels faits sont observables et quels éléments relèvent d’une interprétation ?",
+      "Quel est l’impact sur le travail et la circulation de l’information ?",
+      "Quelle décision reste exclusivement du ressort du dirigeant ?"
+    ]
+  },
+  {
+    "id": "M24",
+    "bc": "BC4",
+    "activity": "A4_1",
+    "title": "Les fichiers sont partout et personne ne sait quelle version est la bonne",
+    "brief": "Les mêmes documents existent sur plusieurs dossiers réseau et dans des pièces jointes. Des salariés utilisent parfois une ancienne version. La direction vous demande de proposer une organisation plus fiable.",
+    "queries": [
+      "perdu dans les fichiers plusieurs versions",
+      "organiser fichiers et archivage entreprise",
+      "qui a la bonne version document"
+    ],
+    "targets": [
+      "R-B4-001",
+      "R-B4-002",
+      "R-B4-005",
+      "R-B4-006"
+    ],
+    "output": "Un diagnostic du flux documentaire, un plan de classement/archivage et des propositions d’amélioration ou d’escalade vers l’ESN.",
+    "first_reasoning": [
+      "Quels documents circulent, entre qui, à quel moment et pour quelle utilisation ?",
+      "Quel emplacement fait foi aujourd’hui ?",
+      "Quelles règles de conservation, droits d’accès et contraintes du SI doivent être respectées ?"
+    ]
+  },
+  {
+    "id": "M25",
+    "bc": "BC4",
+    "activity": "A4_2",
+    "title": "Planifier quinze interventions avec des urgences et des techniciens indisponibles",
+    "brief": "Quinze interventions clients sont à planifier sur la semaine. Deux sont urgentes, un technicien est absent et certaines nécessitent un matériel spécifique. Votre responsable vous demande un planning réaliste et un suivi.",
+    "queries": [
+      "organiser planning interventions techniciens",
+      "plusieurs urgences et salarié absent planning",
+      "planifier prestations avec contraintes"
+    ],
+    "targets": [
+      "R-B4-009",
+      "R-B4-010",
+      "R-B4-008"
+    ],
+    "output": "Un planning sous contraintes, des priorités explicites, les conflits repérés et un dispositif de mise à jour.",
+    "first_reasoning": [
+      "Quelles contraintes sont impératives : compétences, matériel, client, délai, temps de trajet ?",
+      "Quelles urgences ont réellement priorité et selon quelle règle ?",
+      "Quels arbitrages doivent être validés par le responsable ?"
+    ]
+  },
+  {
+    "id": "M26",
+    "bc": "BC4",
+    "activity": "A4_3",
+    "title": "Les ventes baissent : vérifier si le marché change avant de proposer une action",
+    "brief": "Les ventes d’une gamme diminuent depuis trois mois. Le dirigeant pense que « les clients n’en veulent plus » et vous demande d’analyser le marché puis de proposer une action commerciale.",
+    "queries": [
+      "ventes baissent est ce que marché change",
+      "analyser tendance marché avant action commerciale",
+      "clients achètent moins que proposer"
+    ],
+    "targets": [
+      "R-B4-014",
+      "R-B4-015",
+      "R-B4-016",
+      "R-B4-017"
+    ],
+    "output": "Une analyse distinguant données internes, marché, concurrence et avis clients, suivie d’une proposition commerciale argumentée.",
+    "first_reasoning": [
+      "La baisse est-elle réelle, saisonnière ou concentrée sur certains clients/produits ?",
+      "Quelles sources externes permettent de tester l’hypothèse de marché ?",
+      "Quelles données de satisfaction ou de comportement client complètent l’analyse ?"
+    ]
+  },
+  {
+    "id": "M27",
+    "bc": "BC4",
+    "activity": "A4_4",
+    "title": "La PME veut lancer une campagne sur les réseaux sociaux sans perdre son image",
+    "brief": "La direction veut promouvoir une nouvelle offre sur les réseaux sociaux avec un budget limité. Elle vous demande de préparer le plan d’action, les supports et les indicateurs de suivi.",
+    "queries": [
+      "faire campagne réseaux sociaux entreprise",
+      "préparer communication commerciale budget limité",
+      "vérifier image entreprise sur support"
+    ],
+    "targets": [
+      "R-B4-019",
+      "R-B4-039",
+      "R-B4-021",
+      "R-B4-023",
+      "R-B4-024"
+    ],
+    "output": "Un cahier des charges, un plan d’action, des supports cohérents avec l’identité de la PME et des indicateurs d’efficacité.",
+    "first_reasoning": [
+      "Quel objectif précis et quelle cible la campagne doit-elle atteindre ?",
+      "Quelles règles de marque, ton, budget et canaux sont déjà décidés ?",
+      "Comment saura-t-on si l’action a fonctionné ?"
+    ]
+  },
+  {
+    "id": "M28",
+    "bc": "BC4",
+    "activity": "A4_5",
+    "title": "Un produit se vend bien mais le dirigeant doute de sa rentabilité",
+    "brief": "Une gamme réalise beaucoup de chiffre d’affaires mais mobilise aussi beaucoup de temps et de frais. Le dirigeant vous demande de vérifier si elle est réellement rentable et ce qui changerait si le volume augmentait de 15 %.",
+    "queries": [
+      "produit se vend bien mais est il rentable",
+      "calculer coût marge seuil rentabilité",
+      "simuler hausse volume impact résultat"
+    ],
+    "targets": [
+      "R-B4-025",
+      "R-B4-026",
+      "R-B4-027",
+      "R-B4-029",
+      "R-B4-040"
+    ],
+    "output": "Des coûts calculés avec la méthode fournie, une marge/seuil interprétés et une simulation explicitant les hypothèses.",
+    "first_reasoning": [
+      "Quelle méthode de calcul des coûts la PME utilise-t-elle ?",
+      "Quelles charges sont fixes, variables, directes ou indirectes selon la méthode fournie ?",
+      "L’augmentation de volume modifie-t-elle aussi les coûts ou capacités ?"
+    ]
+  },
+  {
+    "id": "M29",
+    "bc": "BC4",
+    "activity": "A4_6",
+    "title": "Financer une machine : comparer les solutions sans choisir à la place du dirigeant",
+    "brief": "La PME envisage une machine à 85 000 €. La banque propose un emprunt et le fournisseur une solution de crédit-bail. Le dirigeant vous demande de comparer les effets financiers et de préparer un plan de financement.",
+    "queries": [
+      "financer achat machine emprunt ou crédit bail",
+      "comparer modes financement investissement",
+      "faire plan financement machine"
+    ],
+    "targets": [
+      "R-B4-030",
+      "R-B4-031",
+      "R-B4-033",
+      "R-B4-034",
+      "R-B4-040"
+    ],
+    "output": "Une comparaison argumentée des financements et un plan de financement montrant l’impact sur les équilibres financiers.",
+    "first_reasoning": [
+      "Quelle est la situation financière de départ ?",
+      "Les offres sont-elles comparées sur les mêmes montants, durées, frais et hypothèses ?",
+      "Quels critères financiers éclairent la décision sans la prendre ?"
+    ]
+  },
+  {
+    "id": "M30",
+    "bc": "BC4",
+    "activity": "A4_7",
+    "title": "Le tableau de bord contient 40 chiffres : repérer ce qui mérite vraiment une alerte",
+    "brief": "Le dirigeant reçoit un tableau de bord de 40 indicateurs et vous demande en dix minutes : « qu’est-ce que je dois regarder et qu’est-ce qui doit m’inquiéter ? ». Vous devez sélectionner, contrôler et expliquer sans surinterpréter.",
+    "queries": [
+      "tableau de bord trop de chiffres quoi regarder",
+      "indicateurs sont mauvais il faut alerter",
+      "faire synthèse chiffres pour dirigeant"
+    ],
+    "targets": [
+      "R-B4-035",
+      "R-B4-036",
+      "R-B4-037",
+      "R-TR-014",
+      "R-TR-003"
+    ],
+    "output": "Une synthèse courte des indicateurs pertinents, des écarts contrôlés et une alerte distinguant faits, hypothèses et décision à prendre.",
+    "first_reasoning": [
+      "Quelle question de gestion le tableau doit-il éclairer ?",
+      "Quels seuils ou comparaisons donnent du sens aux chiffres ?",
+      "Quels écarts sont significatifs et quelles causes sont réellement démontrées ?"
+    ]
+  }
+]

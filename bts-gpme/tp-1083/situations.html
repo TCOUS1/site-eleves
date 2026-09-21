@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Situations professionnelles — ÉcoRessources</title>
+<link rel="stylesheet" href="assets/ecoresources/transitions.css">
+<script defer src="assets/ecoresources/transitions.js"></script>
+</head>
+<body>
+<a class="skip-link" href="#main">Aller au contenu</a>
+
+<header class="topbar">
+  <a class="brand" href="index.html">
+    <span class="brand-mark" aria-hidden="true">
+      <svg viewBox="0 0 64 64">
+        <path d="M9 38c8-1 15 3 20 11-9 4-21 2-27-6 1-3 3-4 7-5Z" fill="#E4A56A"/>
+        <path d="M11 15c12 1 21 9 24 24-12 2-24-7-27-18 1-4 1-5 3-6Z" fill="#E7B583"/>
+        <path d="M53 13c1 10-2 19-9 26-7 7-16 10-26 10 1-10 4-19 11-26 7-7 15-10 24-10Z" fill="#1E553B"/>
+        <path d="M33 17c0 19-1 29-4 36" stroke="#fff6ef" stroke-width="3" stroke-linecap="round"/>
+      </svg>
+    </span>
+    <span class="brand-copy"><strong>Éco<span>Ressources</span></strong><small>BTS GPME · Comprendre aujourd’hui, agir demain</small></span>
+  </a>
+  <nav class="topnav" aria-label="Navigation principale"><a href="referentiel/index.html"><span aria-hidden="true">▤</span><small>Référentiel</small></a><a href="demarrer/index.html"><span aria-hidden="true">?</span><small>Aide</small></a><a href="apropos/index.html"><span aria-hidden="true">i</span><small>À propos</small></a></nav>
+  <button class="reading-entry" type="button" data-open-reading aria-expanded="false" aria-controls="readingPanel"><span aria-hidden="true">◉</span>Confort de lecture</button>
+  <button class="mobile-menu-btn" type="button" aria-label="Ouvrir le menu"><i></i><i></i><i></i></button>
+</header>
+<main id="main">
+  <div class="page-shell">
+    <div class="banner-frame banner-frame--html-copy"><img src="assets/ecoresources/bandeau-situations.png" alt=""><div class="banner-copy"><nav class="banner-breadcrumb" aria-label="Fil d’Ariane"><a href="index.html">Accueil</a><span aria-hidden="true">›</span><span>Situations professionnelles</span></nav><h1>Situations professionnelles</h1><p>Accédez directement aux TP et cas disponibles.</p></div></div>
+    
+<section class="menu-zone situation-picker" aria-labelledby="situationsTitle">
+  <div class="menu-zone__head situation-picker__head">
+    <div><span>Situations professionnelles</span><h2 id="situationsTitle">Choisissez le cas sur lequel vous allez travailler</h2></div>
+    <p>Accédez directement au cas lorsqu'il est unique. Lorsqu'un domaine comporte plusieurs TP, dépliez la liste.</p>
+  </div>
+
+  <div class="situation-grid">
+    <a class="situation-card situation-card--direct" href="../tp-1083/index.html">
+      <span class="situation-icon c2" aria-hidden="true">◆</span>
+      <span class="situation-card__content">
+        <span class="situation-meta">Gestion des risques · TP transversal</span>
+        <strong>1083 — Sécuriser la croissance d’une PME industrielle et omnicanale</strong>
+        <small>6 situations · 31 tâches · diagnostic global, SST, cyber/RGPD, risque client, fournisseurs et qualité.</small>
+      </span>
+      <span class="situation-action" aria-hidden="true">Ouvrir →</span>
+    </a>
+
+    <details class="situation-card situation-card--family">
+      <summary>
+        <span class="situation-icon c1" aria-hidden="true">↔</span>
+        <span class="situation-card__content">
+          <span class="situation-meta">GRCF · Plusieurs cas</span>
+          <strong>Relation clients et fournisseurs</strong>
+          <small>Choisissez le TP correspondant à l'activité travaillée.</small>
+        </span>
+        <span class="situation-action" aria-hidden="true">Choisir</span>
+      </summary>
+      <div class="case-list" aria-label="Travaux pratiques GRCF disponibles">
+        <a href="../tp-papeterie-services/index.html"><span><b>Papeterie Services</b><small>Activité 1.1 · Prospection</small></span><span>→</span></a>
+        <a href="../tp-hexa/index.html"><span><b>HEXA</b><small>Activité 1.1 · Prospection</small></span><span>→</span></a>
+        <a href="../tp-pepinieres-sirot/index.html"><span><b>Pépinières SIROT</b><small>Activité 1.2 · Administration des ventes</small></span><span>→</span></a>
+        <a href="../tp-bainu-errandonea/index.html"><span><b>Bainu Errandonea</b><small>Activité 1.3 · Relation client</small></span><span>→</span></a>
+        <a href="../tp-technord-services/index.html"><span><b>Technord Services</b><small>Activité 1.5 · Achats et investissements</small></span><span>→</span></a>
+        <a class="case-list__all" href="../grcf/index.html"><span><b>Voir l'ensemble de la GRCF</b><small>Référentiel, activités et autres TP</small></span><span>→</span></a>
+      </div>
+    </details>
+  </div>
+
+</section>
+  </div>
+</main>
+<footer class="footer"><div><strong>Éco<span>Ressources</span></strong><small>BTS GPME · Comprendre aujourd’hui, agir demain</small></div></footer>
+
+<div class="overlay" data-overlay hidden></div>
+<aside id="readingPanel" class="reading-panel" hidden>
+  <div class="reading-panel__head"><div><small>Affichage</small><h2>Confort de lecture</h2></div><button type="button" data-close-reading>×</button></div>
+  <section><h3>Police</h3><div class="button-row"><button type="button" data-font="system">Standard</button><button type="button" data-font="verdana">Verdana</button><button type="button" data-font="dys">OpenDyslexic</button></div><p class="helper">La police OpenDyslexic est intégrée au site.</p></section>
+  <section><h3>Alternance des lignes</h3><button type="button" data-lines aria-checked="false">Activer / désactiver</button></section>
+  <section><h3>Aperçu</h3><p class="preview" data-preview>Comprendre une notion consiste à relier sa définition, son utilité et ses conséquences dans une situation professionnelle.</p></section>
+</aside>
+</body>
+</html>

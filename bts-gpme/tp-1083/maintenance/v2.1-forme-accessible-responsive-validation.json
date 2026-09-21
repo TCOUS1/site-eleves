@@ -1,0 +1,48 @@
+{
+  "version": "2.1-forme-accessible-responsive",
+  "html_pages": 348,
+  "missions": 30,
+  "resources": 145,
+  "student_pages_intended": 335,
+  "mission_shape_errors": [],
+  "resource_shape_errors": [],
+  "broken_relative_links": [],
+  "duplicate_ids": [],
+  "viewport_meta_missing": [],
+  "dys_toolbar_missing": [],
+  "theme_button_missing": [],
+  "pedagogical_html_diff_vs_v20_after_removing_theme_button": [
+    "index.html"
+  ],
+  "javascript": {
+    "new-form.js": {
+      "ok": true,
+      "stderr": ""
+    },
+    "dys-accessibility.js": {
+      "ok": true,
+      "stderr": ""
+    }
+  },
+  "features": {
+    "opendyslexic_font_faces": true,
+    "dark_theme_css": true,
+    "dark_theme_persistence": true,
+    "dys_persistence": true,
+    "font_scale_persistence": true,
+    "responsive_breakpoints": true,
+    "touch_targets": true,
+    "tables_scroll": true,
+    "no_css_filter_invert": true
+  },
+  "font_references": {
+    "OpenDyslexic-Regular.otf": true,
+    "OpenDyslexic-Bold.otf": true,
+    "OpenDyslexic-Italic.otf": true,
+    "OpenDyslexic-BoldItalic.otf": true,
+    "OpenDyslexicMono-Regular.otf": true
+  },
+  "font_installer_files_present": true,
+  "font_installer_tested_against_user_matrix": true,
+  "font_binaries_in_deliverable": []
+}

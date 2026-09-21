@@ -1,0 +1,2 @@
+<?php
+declare(strict_types=1);require __DIR__.'/bootstrap.php';try{$n=(int)gpme_db()->query("SELECT COUNT(*) FROM feedback WHERE status!='treated'")->fetchColumn();gpme_json(['ok'=>true,'pending'=>$n]);}catch(Throwable $e){gpme_json(['ok'=>false,'pending'=>0,'error'=>$e->getMessage()],500);}?>

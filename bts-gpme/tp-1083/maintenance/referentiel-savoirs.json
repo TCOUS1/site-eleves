@@ -1,0 +1,270 @@
+{
+  "S1_1_1": [
+    "L’identification de la clientèle"
+  ],
+  "S1_1_2": [
+    "La prospection et la qualification des prospects"
+  ],
+  "S1_1_3": [
+    "Les appels d’offres"
+  ],
+  "S1_2_1": [
+    "Le système d’information client"
+  ],
+  "S1_2_2": [
+    "Les documents commerciaux, les contrats, l’établissement des factures"
+  ],
+  "S1_2_3": [
+    "Le suivi des commandes clients – la traçabilité du produit"
+  ],
+  "S1_2_4": [
+    "Les risques d’insolvabilité"
+  ],
+  "S1_2_5": [
+    "Les principes de base du modèle comptable, les comptes, comptes de tiers et balance"
+  ],
+  "S1_3_1": [
+    "L’accueil"
+  ],
+  "S1_3_2": [
+    "Les réclamations"
+  ],
+  "S1_4_1": [
+    "Typologie des achats et investissements"
+  ],
+  "S1_4_2": [
+    "Référencement des fournisseurs",
+    "Système d’information fournisseur"
+  ],
+  "S1_5_1": [
+    "Processus d’achat et d’investissement, les commandes fournisseurs"
+  ],
+  "S1_5_2": [
+    "Principes généraux de la gestion des stocks"
+  ],
+  "S1_6_1": [
+    "Principes comptables"
+  ],
+  "S1_6_2": [
+    "Principes et règles de calcul de la TVA"
+  ],
+  "S1_6_3": [
+    "Suivi des encaissements et décaissements"
+  ],
+  "S1_7": [
+    "Fonctionnalités du PGI et d’outils bureautiques et numériques"
+  ],
+  "S1_7_1": [
+    "Fonctionnalités du PGI et d’outils bureautiques et numériques dans le cadre du suivi comptable"
+  ],
+  "S2_1_1": [
+    "Méthodologie de la veille"
+  ],
+  "S2_1_2": [
+    "Droit de la propriété intellectuelle"
+  ],
+  "S2_2": [
+    "Méthodologie de la conduite de projet"
+  ],
+  "S2_3": [
+    "La gestion des risques"
+  ],
+  "S2_4": [
+    "Analyse des risques de trésorerie"
+  ],
+  "S2_5_1": [
+    "La protection des salariés en matière d’hygiène et sécurité, de poste de travail et l’amélioration des conditions de travail"
+  ],
+  "S2_5_1_1": [
+    "La protection des salariés en matière d’hygiène et sécurité"
+  ],
+  "S2_5_1_2": [
+    "La protection des salariés par l’amélioration des conditions de travail"
+  ],
+  "S2_5_2": [
+    "La prévention des risques professionnels"
+  ],
+  "S2_5_3": [
+    "La protection des personnes, des biens et des données"
+  ],
+  "S2_5_3_1": [
+    "La protection des personnes, des biens"
+  ],
+  "S2_5_3_2": [
+    "Protection des droits de propriété intellectuelle : règles juridiques et procédures de dépôt"
+  ],
+  "S2_5_3_3": [
+    "La protection des données"
+  ],
+  "S2_5_4": [
+    "La gestion des risques environnementaux"
+  ],
+  "S2_5_5": [
+    "La gestion des risques informatiques"
+  ],
+  "S2_5_5_1": [
+    "La notion de système d’information"
+  ],
+  "S2_5_5_2": [
+    "Notion de système informatique"
+  ],
+  "S2_5_5_3": [
+    "Les enjeux de la sécurité informatique et l’importance d’une évaluation"
+  ],
+  "S2_5_5_4": [
+    "La prise en charge des risques informatiques"
+  ],
+  "S2_5_5_5": [
+    "Les axes majeurs de la sécurité informatique"
+  ],
+  "S2_6_1": [
+    "La démarche qualité"
+  ],
+  "S2_6_2": [
+    "La gestion des connaissances"
+  ],
+  "S2_6_3": [
+    "Les normes et la certification"
+  ],
+  "S2_7": [
+    "Fonctionnalités du PGI et d’outils bureautiques et numériques"
+  ],
+  "S2_7_1": [
+    "Fonctionnalités du PGI et d’outils bureautiques et numériques dans le cadre de la gestion des risques financiers"
+  ],
+  "S3_1_1": [
+    "Les sources du droit social"
+  ],
+  "S3_1_2": [
+    "Les formalités d’embauche et de départ, le contrat de travail"
+  ],
+  "S3_1_3": [
+    "Les dossiers du personnel"
+  ],
+  "S3_1_4": [
+    "Les absences et congés du personnel"
+  ],
+  "S3_1_5": [
+    "La paie"
+  ],
+  "S3_1_6": [
+    "La représentation des salariés"
+  ],
+  "S3_2_1": [
+    "Le recrutement"
+  ],
+  "S3_2_2": [
+    "L’intégration des nouveaux membres"
+  ],
+  "S3_2_3": [
+    "La formation"
+  ],
+  "S3_2_4": [
+    "L’évaluation"
+  ],
+  "S3_2_5": [
+    "Le tableau de bord social"
+  ],
+  "S3_3": [
+    "Le travail collaboratif"
+  ],
+  "S3_4": [
+    "Fonctionnalités du PGI et d’outils bureautiques et numériques dans le cadre de la gestion du personnel et des ressources humaines"
+  ],
+  "S4_1_1": [
+    "Le système d’information et sa représentation"
+  ],
+  "S4_1_2": [
+    "Les bases de données"
+  ],
+  "S4_1_3": [
+    "La gestion de l’archivage des documents"
+  ],
+  "S4_1_4": [
+    "Les ressources, leur localisation et leurs rôles au sein du SI, leurs droits d’accès et les services de sécurité"
+  ],
+  "S4_2_1": [
+    "La méthodologie de résolution de problème"
+  ],
+  "S4_2_2": [
+    "L’organisation des activités"
+  ],
+  "S4_2_3": [
+    "La gestion du temps"
+  ],
+  "S4_3_1": [
+    "Le marché de l’entreprise"
+  ],
+  "S4_3_2": [
+    "La stratégie commerciale et sa mise en œuvre"
+  ],
+  "S4_3_3": [
+    "Les techniques de fidélisation"
+  ],
+  "S4_4_1": [
+    "Communication globale et identité de l’entreprise"
+  ],
+  "S4_4_2": [
+    "La communication institutionnelle"
+  ],
+  "S4_4_3": [
+    "La communication commerciale"
+  ],
+  "S4_4_4": [
+    "La communication digitale"
+  ],
+  "S4_5_1": [
+    "La performance"
+  ],
+  "S4_5_2": [
+    "Calcul et analyse des coûts et des résultats"
+  ],
+  "S4_5_3": [
+    "Le seuil de rentabilité"
+  ],
+  "S4_5_4": [
+    "La démarche budgétaire"
+  ],
+  "S4_6_1": [
+    "L’analyse financière de l’entreprise"
+  ],
+  "S4_6_2": [
+    "Le plan de financement"
+  ],
+  "S4_6_3": [
+    "Les modes de financement des investissements"
+  ],
+  "S4_7_1": [
+    "Le tableau de bord"
+  ],
+  "S4_8": [
+    "Fonctionnalités d’outils bureautiques et numériques"
+  ],
+  "S4_8_1": [
+    "Fonctionnalités du PGI et d’outils bureautiques et numériques"
+  ],
+  "S5_1": [
+    "Enjeux et concepts de base de communication"
+  ],
+  "S5_2": [
+    "Communication écrite opérationnelle"
+  ],
+  "S5_3": [
+    "La modélisation des documents et l’interface homme-machine"
+  ],
+  "S5_4": [
+    "La communication numérique écrite"
+  ],
+  "S5_5": [
+    "La communication orale interpersonnelle"
+  ],
+  "S5_6": [
+    "La communication dans les groupes"
+  ],
+  "S5_7": [
+    "La gestion des conflits"
+  ],
+  "S5_8": [
+    "Les instruments de dialogue"
+  ]
+}

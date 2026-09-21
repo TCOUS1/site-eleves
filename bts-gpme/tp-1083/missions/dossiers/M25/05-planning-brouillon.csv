@@ -1,0 +1,9 @@
+﻿Jour;Technicien;Heure;Intervention;Observation
+Lun;Alice;08:00;I01;
+Lun;Alice;10:00;I10;I10 demandé mardi matin
+Lun;Claire;09:00;I05;
+Lun;Claire;11:00;I11;trajet C→B non prévu
+Mar;Bilal;09:00;I03;Bilal absent
+Mer;Bilal;08:30;I07;Bilal absent
+Mer;Claire;09:00;I04;conflit avec astreinte
+Jeu;Alice;14:30;I12;3 h + formation à 15 h

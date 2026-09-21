@@ -1,0 +1,1 @@
+(() => { const q=new URLSearchParams(location.search),mid=q.get('from');if(!/^M\d{2}$/.test(mid||''))return;const nav=document.querySelector('.demo-nav');if(!nav)return;const a=document.createElement('a');a.href=`../../missions/${mid}.html`;a.className='context-return';a.textContent=`← Retour à ${mid}`;a.setAttribute('aria-label',`Retour à la mission ${mid}`);nav.prepend(a);})();

@@ -1,0 +1,48 @@
+{
+  "version": "2.8",
+  "date": "2026-09-01",
+  "status": "PASS",
+  "metrics": {
+    "html_files": 351,
+    "student_html_files": 338,
+    "resources_index": 145,
+    "resources_with_3plus_concepts": 145,
+    "missions": 30,
+    "knowledge_cards": 332,
+    "knowledge_kinds": {
+      "notion": 163,
+      "methode": 42,
+      "regle": 43,
+      "document": 43,
+      "indicateur": 34,
+      "outil": 7
+    },
+    "resource_to_knowledge_links": 521,
+    "alphabet_entries": 501,
+    "official_visible_hashtags": 217,
+    "regulatory_resources": 24,
+    "search": {
+      "title": {
+        "tested": 145,
+        "top1": 145
+      },
+      "use": {
+        "tested": 145,
+        "top1": 145
+      },
+      "outcome": {
+        "tested": 145,
+        "top1": 145
+      },
+      "challenge": {
+        "tested": 21,
+        "passed": 21
+      }
+    },
+    "js_files_checked": 8,
+    "css_files_checked": 10,
+    "dys_core_pages": 184
+  },
+  "errors": [],
+  "warnings": []
+}

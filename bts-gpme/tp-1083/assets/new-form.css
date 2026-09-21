@@ -1,0 +1,67 @@
+/*
+  BTS GPME — forme pédagogique v2.0.
+  Couche de présentation remplaçable : le sens et les données restent dans le HTML.
+*/
+:root{
+  --p-bg:#f4f6f8; --p-paper:#fff; --p-text:#17212b; --p-muted:#5e6a76;
+  --p-line:#d8dee5; --p-strong:#243447; --p-accent:#315d77; --p-accent-soft:#e9f1f5;
+  --p-observe:#eef6f1; --p-notion:#f5f1e8; --p-analyse:#edf2f8; --p-concept:#f4eef7;
+  --p-practice:#f5f5f2; --p-warning:#fff7df; --p-ok:#edf7ed;
+  --p-radius:14px; --p-shadow:0 8px 30px rgba(24,39,55,.08); --p-max:1160px;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--p-bg);color:var(--p-text);font-family:system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif;line-height:1.58}
+a{color:#174f70;text-underline-offset:.16em}
+a:hover{text-decoration-thickness:2px}
+a:focus-visible,button:focus-visible,input:focus-visible,summary:focus-visible{outline:3px solid #1d6d99;outline-offset:3px}
+.demo-nav{position:sticky;top:0;z-index:20;display:flex;gap:.55rem;flex-wrap:wrap;padding:.65rem max(1rem,calc((100vw - var(--p-max))/2));background:rgba(255,255,255,.96);border-bottom:1px solid var(--p-line);backdrop-filter:blur(8px)}
+.demo-nav a{display:inline-flex;align-items:center;padding:.38rem .64rem;border-radius:8px;text-decoration:none;font-weight:650}
+.demo-nav a:hover{background:var(--p-accent-soft)}
+.mission-workspace,.resource-page{width:min(var(--p-max),calc(100% - 2rem));margin:1.4rem auto 4rem}
+.pilot-hero,.resource__header{background:var(--p-paper);border:1px solid var(--p-line);border-radius:var(--p-radius);box-shadow:var(--p-shadow);padding:clamp(1.2rem,3vw,2.2rem);margin-bottom:1rem}
+.pilot-hero h1,.resource__header h1{font-size:clamp(1.8rem,4vw,3rem);line-height:1.08;margin:.3rem 0 .8rem;letter-spacing:-.025em}
+.mission-brief,.resource__lead{font-size:1.08rem;max-width:80ch;color:#354451}
+.mission-card__ref,.resource__type{font-weight:800;letter-spacing:.035em;color:var(--p-muted);margin:0}
+.resource__referential-tags{display:flex;flex-wrap:wrap;gap:.42rem;margin:1rem 0 .35rem}
+.resource__referential-tags a,.mission-card__ref a{display:inline-block;border:1px solid #b7c7d1;background:#f5fafc;border-radius:999px;padding:.24rem .52rem;text-decoration:none;font-weight:800}
+.resource__referential-position{margin:.35rem 0}.resource__referential-detail{margin-top:.75rem}
+.pilot-cap,.pilot-stage,.mission-workspace__stuck,.pilot-trace-panel{background:var(--p-paper);border:1px solid var(--p-line);border-radius:var(--p-radius);padding:clamp(1rem,2.5vw,1.55rem);margin:1rem 0;box-shadow:0 3px 15px rgba(24,39,55,.04)}
+.pilot-cap{border-left:5px solid var(--p-accent)}
+.pilot-cap>h2,.pilot-stage__heading h2{margin:.15rem 0 .35rem;line-height:1.2}
+.pilot-stage__heading{display:grid;grid-template-columns:auto 1fr auto;gap:.8rem;align-items:start;margin-bottom:.9rem}
+.pilot-stage__number{display:grid;place-items:center;width:2.2rem;height:2.2rem;border-radius:999px;background:var(--p-strong);color:white;font-weight:850}
+.pilot-stage__matrix{font-size:.9rem;color:var(--p-muted);margin:.1rem 0 0}
+.pilot-stage--observe{background:linear-gradient(180deg,var(--p-observe),#fff 11rem)}
+.pilot-stage--notion{background:linear-gradient(180deg,var(--p-notion),#fff 11rem)}
+.pilot-stage--analyse{background:linear-gradient(180deg,var(--p-analyse),#fff 11rem)}
+.pilot-stage--concept{background:linear-gradient(180deg,var(--p-concept),#fff 11rem)}
+.pilot-stage--practice{background:linear-gradient(180deg,var(--p-practice),#fff 11rem)}
+.pilot-route{display:grid;grid-template-columns:repeat(6,minmax(0,1fr));gap:.55rem;margin:1rem 0}
+.pilot-route a{display:flex;align-items:center;justify-content:center;text-align:center;min-height:3rem;padding:.55rem;border:1px solid var(--p-line);border-radius:10px;background:#fff;text-decoration:none;font-weight:750;font-size:.92rem}
+.pilot-route a:hover{border-color:#8da8b8;background:#f7fbfd}
+.pilot-trace-panel>h2{font-size:1.05rem;margin:.1rem 0 .75rem}
+.pilot-trace{display:grid;grid-template-columns:repeat(6,minmax(0,1fr));gap:.55rem;list-style:none;padding:0;margin:0;counter-reset:trace}
+.pilot-trace li{position:relative;border:1px solid var(--p-line);border-radius:10px;padding:.65rem;background:#fbfcfd;min-height:5.5rem;font-size:.88rem}
+.pilot-trace strong{display:block;font-size:.96rem;color:var(--p-strong);margin-bottom:.18rem}
+.pilot-trace li:not(:last-child)::after{content:"→";position:absolute;right:-.48rem;top:1.7rem;z-index:2;color:#7d8992;font-weight:900;background:var(--p-bg);border-radius:999px;padding:0 .08rem}
+.pilot-subsection{border-top:1px solid var(--p-line);padding-top:1rem;margin-top:1rem}
+.pilot-subsection:first-of-type{border-top:0;padding-top:0;margin-top:0}.pilot-subsection>h3:first-child{margin-top:0}
+.mission-self-template{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:.5rem 1rem;border:1px dashed #b9c4cc;border-radius:10px;padding:.75rem 1rem;background:#fbfcfd}.mission-self-template p{margin:.2rem 0}
+.mission-step{border:1px solid var(--p-line);border-radius:12px;padding:1rem;margin:.8rem 0;background:#fff}.mission-step__number{font-weight:850;color:var(--p-accent)}.mission-step h3{margin:.2rem 0 .65rem}
+.mission-concepts{display:grid;grid-template-columns:minmax(9rem,.7fr) 2fr;gap:.45rem 1rem}.mission-concepts dt{font-weight:850}.mission-concepts dd{margin:0}
+.mission-doc-reading,table{border-collapse:collapse;width:100%;display:block;overflow:auto}th,td{border:1px solid var(--p-line);padding:.55rem .65rem;vertical-align:top;text-align:left}th{background:#f3f6f8}
+details{border:1px solid var(--p-line);border-radius:10px;background:#fff;padding:.12rem .78rem;margin:.7rem 0}summary{cursor:pointer;font-weight:780;padding:.55rem 0}details[open]>summary{border-bottom:1px solid var(--p-line);margin-bottom:.55rem}
+.pilot-check{display:inline-flex;gap:.38rem;align-items:center;white-space:nowrap;font-size:.88rem;color:var(--p-muted);font-weight:650}.pilot-check input{width:1.05rem;height:1.05rem}
+.pilot-progress{display:flex;align-items:center;gap:.75rem;background:#fff;border:1px solid var(--p-line);border-radius:10px;padding:.65rem .8rem;margin:1rem 0;color:var(--p-muted);font-size:.92rem}.pilot-progress__bar{height:.45rem;flex:1;background:#e5e9ed;border-radius:999px;overflow:hidden}.pilot-progress__fill{height:100%;width:0;background:var(--p-accent);transition:width .2s ease}
+.resource-page .resource{display:block}.resource-page .pilot-stage>section,.resource-page .pilot-stage>details,.resource-page .pilot-stage>footer{margin:.85rem 0;padding:1rem;border:1px solid var(--p-line);border-radius:11px;background:rgba(255,255,255,.93)}.resource-page .pilot-stage>section>h2:first-child{font-size:1.17rem;margin-top:0}
+.resource__quick-start{border-left:4px solid var(--p-accent)!important}.resource__missing-info,.resource__errors{background:var(--p-warning)!important}.resource__check{background:var(--p-ok)!important}.resource__responsibility{border-left:4px solid #76588b!important}
+.resource__mobilisation-grid{display:grid;grid-template-columns:1fr 1fr;gap:.8rem}.resource__mobilisation-grid section{border:1px solid var(--p-line);border-radius:10px;padding:.75rem}.resource__concept-list{display:grid;grid-template-columns:minmax(9rem,.6fr) 2fr;gap:.42rem 1rem}.resource__concept-list dt{font-weight:850}.resource__concept-list dd{margin:0}
+.resource__footer{background:#fbfcfd!important}.resource__sources h2{margin-top:0}.pilot-stage ul,.pilot-stage ol{padding-left:1.35rem}.pilot-stage li+li{margin-top:.28rem}.pilot-stage h3{line-height:1.25}.mission-workspace__stuck{border-style:dashed}.pilot-note{background:#f7fafb;border-left:4px solid #7d9baa;padding:.8rem 1rem;border-radius:8px;margin:.8rem 0}
+@media(max-width:850px){.pilot-route{grid-template-columns:repeat(3,1fr)}.pilot-trace{grid-template-columns:repeat(3,1fr)}.pilot-trace li::after{display:none}.resource__mobilisation-grid{grid-template-columns:1fr}}
+@media(max-width:600px){.mission-workspace,.resource-page{width:min(100% - 1rem,var(--p-max));margin-top:.6rem}.demo-nav{position:static;padding:.55rem}.pilot-route{grid-template-columns:1fr 1fr}.pilot-trace{grid-template-columns:1fr 1fr}.pilot-stage__heading{grid-template-columns:auto 1fr}.pilot-check{grid-column:1/-1}.mission-self-template,.mission-concepts,.resource__concept-list{grid-template-columns:1fr}.pilot-hero h1,.resource__header h1{font-size:1.8rem}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.pilot-progress__fill{transition:none}}
+@media print{body{background:#fff}.demo-nav,.pilot-route,.pilot-check,.pilot-progress{display:none!important}.mission-workspace,.resource-page{width:100%;margin:0}.pilot-hero,.resource__header,.pilot-cap,.pilot-stage,.pilot-trace-panel,.mission-workspace__stuck{box-shadow:none;break-inside:auto}.pilot-stage{background:#fff!important}.pilot-subsection,details{break-inside:avoid}details{display:block}details>*{display:block!important}}
+
+/* v2.7 : les notions définies dans une ressource peuvent être ouvertes dans Connaissances BTS GPME. */
+.knowledge-term-link{color:inherit;text-decoration-color:color-mix(in srgb,currentColor 35%,transparent);text-underline-offset:.15em}.knowledge-term-link:hover{text-decoration-thickness:2px}

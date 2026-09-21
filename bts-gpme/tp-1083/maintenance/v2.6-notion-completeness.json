@@ -1,0 +1,1542 @@
+{
+  "resource_count": 145,
+  "min_concepts": 3,
+  "resources": [
+    {
+      "resource_id": "R-B1-001",
+      "title": "Cibler et organiser une prospection utile à la PME",
+      "file": "ressources/bc1/R-B1-001-cibler-organiser-prospection.html",
+      "concepts": [
+        "Cible de prospection",
+        "Critère de ciblage",
+        "Prospect",
+        "Segmentation",
+        "Traçabilité du contact"
+      ]
+    },
+    {
+      "resource_id": "R-B1-002",
+      "title": "Qualifier un fichier de prospects avant une action commerciale",
+      "file": "ressources/bc1/R-B1-002-qualifier-fichier-prospects.html",
+      "concepts": [
+        "Critère de ciblage",
+        "Prospect",
+        "Qualification",
+        "Segmentation",
+        "Traçabilité du contact"
+      ]
+    },
+    {
+      "resource_id": "R-B1-003",
+      "title": "Détecter et analyser un appel d’offres avant de décider de répondre",
+      "file": "ressources/bc1/R-B1-003-analyser-appel-offres.html",
+      "concepts": [
+        "Appel d’offres",
+        "Dossier de consultation",
+        "Critère d’attribution"
+      ]
+    },
+    {
+      "resource_id": "R-B1-004",
+      "title": "Constituer et contrôler un dossier de réponse à un marché public",
+      "file": "ressources/bc1/R-B1-004-constituer-reponse-marche-public.html",
+      "concepts": [
+        "Marché public",
+        "DUME",
+        "Preuve de dépôt"
+      ]
+    },
+    {
+      "resource_id": "R-B1-005",
+      "title": "Transformer une demande client en proposition commerciale ou devis",
+      "file": "ressources/bc1/R-B1-005-preparer-proposition-commerciale.html",
+      "concepts": [
+        "Proposition commerciale",
+        "Devis",
+        "Périmètre de prestation"
+      ]
+    },
+    {
+      "resource_id": "R-B1-006",
+      "title": "Contrôler une commande ou un contrat client avant validation",
+      "file": "ressources/bc1/R-B1-006-controler-commande-contrat-client.html",
+      "concepts": [
+        "Commande",
+        "Devis accepté",
+        "Conditions contractuelles"
+      ]
+    },
+    {
+      "resource_id": "R-B1-007",
+      "title": "Suivre une vente et une livraison jusqu’à la preuve d’exécution",
+      "file": "ressources/bc1/R-B1-007-suivre-vente-livraison.html",
+      "concepts": [
+        "Commande",
+        "Preuve d’exécution",
+        "Bon de livraison"
+      ]
+    },
+    {
+      "resource_id": "R-B1-008",
+      "title": "Établir et contrôler une facture conforme",
+      "file": "ressources/bc1/R-B1-008-etablir-facture-conforme.html",
+      "concepts": [
+        "Fait de facturation",
+        "HT / TVA / TTC",
+        "Preuve d’exécution",
+        "Échéance de paiement"
+      ]
+    },
+    {
+      "resource_id": "R-B1-009",
+      "title": "Préparer la PME à la facturation électronique 2026–2027",
+      "file": "ressources/bc1/R-B1-009-preparer-facturation-electronique.html",
+      "concepts": [
+        "Facture électronique",
+        "Plateforme agréée",
+        "Donnée de facturation"
+      ]
+    },
+    {
+      "resource_id": "R-B1-010",
+      "title": "Suivre les règlements clients et conduire une relance amiable",
+      "file": "ressources/bc1/R-B1-010-suivre-reglements-relancer-impayes.html",
+      "concepts": [
+        "Avoir",
+        "Créance client",
+        "Litige",
+        "Relance amiable",
+        "Échéance"
+      ]
+    },
+    {
+      "resource_id": "R-B1-011",
+      "title": "Évaluer le risque client avant ou pendant la relation commerciale",
+      "file": "ressources/bc1/R-B1-011-evaluer-risque-client.html",
+      "concepts": [
+        "Risque client",
+        "Encours client",
+        "Exposition"
+      ]
+    },
+    {
+      "resource_id": "R-B1-012",
+      "title": "Fiabiliser et mettre à jour le système d’information clients",
+      "file": "ressources/bc1/R-B1-012-fiabiliser-si-client.html",
+      "concepts": [
+        "Système d’information client",
+        "Donnée de référence",
+        "Doublon"
+      ]
+    },
+    {
+      "resource_id": "R-B1-013",
+      "title": "Accueillir, informer et orienter un client de façon professionnelle",
+      "file": "ressources/bc1/R-B1-013-accueillir-informer-conseiller-client.html",
+      "concepts": [
+        "Demande client",
+        "Reformulation",
+        "Orientation"
+      ]
+    },
+    {
+      "resource_id": "R-B1-014",
+      "title": "Traiter et suivre une réclamation client jusqu’à sa clôture",
+      "file": "ressources/bc1/R-B1-014-traiter-suivre-reclamation-client.html",
+      "concepts": [
+        "Action corrective",
+        "Cause",
+        "Fait / opinion",
+        "Geste commercial",
+        "Non-conformité",
+        "Réclamation"
+      ]
+    },
+    {
+      "resource_id": "R-B1-015",
+      "title": "Formaliser un besoin d’achat ou d’investissement avant de consulter",
+      "file": "ressources/bc1/R-B1-015-formaliser-besoin-achat.html",
+      "concepts": [
+        "Besoin",
+        "Critère de choix",
+        "Critère éliminatoire"
+      ]
+    },
+    {
+      "resource_id": "R-B1-016",
+      "title": "Rechercher et présélectionner des fournisseurs",
+      "file": "ressources/bc1/R-B1-016-rechercher-preselectionner-fournisseurs.html",
+      "concepts": [
+        "Critère éliminatoire",
+        "Qualification fournisseur",
+        "Critère de sélection"
+      ]
+    },
+    {
+      "resource_id": "R-B1-017",
+      "title": "Comparer des offres fournisseurs et préparer une recommandation",
+      "file": "ressources/bc1/R-B1-017-comparer-offres-fournisseurs.html",
+      "concepts": [
+        "Coût total",
+        "Critère de choix",
+        "Critère éliminatoire",
+        "Pondération",
+        "Recommandation"
+      ]
+    },
+    {
+      "resource_id": "R-B1-018",
+      "title": "Préparer une négociation fournisseur",
+      "file": "ressources/bc1/R-B1-018-preparer-negociation-fournisseur.html",
+      "concepts": [
+        "Négociation",
+        "Concession",
+        "Marge de négociation"
+      ]
+    },
+    {
+      "resource_id": "R-B1-019",
+      "title": "Passer et suivre une commande fournisseur",
+      "file": "ressources/bc1/R-B1-019-passer-suivre-commande-fournisseur.html",
+      "concepts": [
+        "Contrôle commande-réception-facture",
+        "Délai d’approvisionnement",
+        "Commande"
+      ]
+    },
+    {
+      "resource_id": "R-B1-020",
+      "title": "Contrôler un achat, une facture fournisseur et préparer le règlement",
+      "file": "ressources/bc1/R-B1-020-controler-achat-facture-reglement.html",
+      "concepts": [
+        "Contrôle commande-réception-facture",
+        "Facture",
+        "Bon de livraison"
+      ]
+    },
+    {
+      "resource_id": "R-B1-021",
+      "title": "Suivre les stocks et déclencher un réapprovisionnement",
+      "file": "ressources/bc1/R-B1-021-suivre-stocks-reapprovisionnement.html",
+      "concepts": [
+        "Consommation",
+        "Délai d’approvisionnement",
+        "Seuil de réapprovisionnement",
+        "Stock disponible",
+        "Stock physique",
+        "Stock théorique"
+      ]
+    },
+    {
+      "resource_id": "R-B1-022",
+      "title": "Préparer l’acquisition et le suivi administratif d’une immobilisation",
+      "file": "ressources/bc1/R-B1-022-preparer-acquisition-immobilisation.html",
+      "concepts": [
+        "Immobilisation",
+        "Pièce justificative",
+        "Mise en service"
+      ]
+    },
+    {
+      "resource_id": "R-B1-023",
+      "title": "Évaluer la performance d’un fournisseur et préparer des actions",
+      "file": "ressources/bc1/R-B1-023-evaluer-fournisseur.html",
+      "concepts": [
+        "Performance fournisseur",
+        "Indicateur",
+        "Critère éliminatoire"
+      ]
+    },
+    {
+      "resource_id": "R-B1-024",
+      "title": "Contrôler l’enregistrement comptable d’une opération commerciale",
+      "file": "ressources/bc1/R-B1-024-controler-enregistrement-comptable.html",
+      "concepts": [
+        "Compte banque en comptabilité",
+        "Pièce justificative",
+        "HT / TVA / TTC"
+      ]
+    },
+    {
+      "resource_id": "R-B1-025",
+      "title": "Réaliser et contrôler un rapprochement bancaire",
+      "file": "ressources/bc1/R-B1-025-rapprochement-bancaire.html",
+      "concepts": [
+        "Compte banque en comptabilité",
+        "Opération en circulation",
+        "Pièce justificative",
+        "Rapprochement bancaire",
+        "Relevé bancaire"
+      ]
+    },
+    {
+      "resource_id": "R-B1-026",
+      "title": "Suivre les comptes clients et fournisseurs avec une balance âgée",
+      "file": "ressources/bc1/R-B1-026-suivre-comptes-tiers-encaissements.html",
+      "concepts": [
+        "Avoir",
+        "Balance âgée",
+        "Compte de tiers",
+        "Créance client",
+        "Lettrage",
+        "Litige",
+        "Échéance"
+      ]
+    },
+    {
+      "resource_id": "R-B1-027",
+      "title": "Préparer et contrôler une déclaration de TVA à partir du PGI",
+      "file": "ressources/bc1/R-B1-027-preparer-controler-tva.html",
+      "concepts": [
+        "TVA collectée",
+        "TVA déductible",
+        "TVA à payer / crédit de TVA"
+      ]
+    },
+    {
+      "resource_id": "R-B1-028",
+      "title": "Repérer et suivre les risques liés à un échange international",
+      "file": "ressources/bc1/R-B1-028-evaluer-risques-echanges-internationaux.html",
+      "concepts": [
+        "Risque de change",
+        "Risque de contrepartie",
+        "Crédit documentaire"
+      ]
+    },
+    {
+      "resource_id": "R-B1-029",
+      "title": "Préparer une action de communication pour développer la relation client",
+      "file": "ressources/bc1/R-B1-029-developper-relation-client-communication.html",
+      "concepts": [
+        "Geste commercial",
+        "Fidélisation",
+        "Indicateur"
+      ]
+    },
+    {
+      "resource_id": "R-B1-030",
+      "title": "Traiter une anomalie de livraison avant qu’elle ne devienne une réclamation",
+      "file": "ressources/bc1/R-B1-030-traiter-anomalie-livraison-client.html",
+      "concepts": [
+        "Action corrective",
+        "Cause",
+        "Fait / opinion",
+        "Non-conformité"
+      ]
+    },
+    {
+      "resource_id": "R-B1-031",
+      "title": "Corriger une facture et préparer un avoir sans perdre la traçabilité",
+      "file": "ressources/bc1/R-B1-031-corriger-facture-avoir.html",
+      "concepts": [
+        "Facture",
+        "Avoir",
+        "Traçabilité"
+      ]
+    },
+    {
+      "resource_id": "R-B1-032",
+      "title": "Fiabiliser le système d’information fournisseurs après une recherche ou une évaluation",
+      "file": "ressources/bc1/R-B1-032-fiabiliser-systeme-information-fournisseur.html",
+      "concepts": [
+        "Système d’information fournisseur",
+        "Donnée de référence",
+        "Qualification fournisseur"
+      ]
+    },
+    {
+      "resource_id": "R-B2-001",
+      "title": "Évaluer et hiérarchiser les risques d’une PME",
+      "file": "ressources/bc2/R-B2-001-evaluer-hierarchiser-risques.html",
+      "concepts": [
+        "Conséquence",
+        "Gravité",
+        "Mesure existante",
+        "Probabilité / fréquence",
+        "Risque",
+        "Risque initial",
+        "Efficacité d’une mesure",
+        "Risque résiduel",
+        "Preuve d’évaluation"
+      ]
+    },
+    {
+      "resource_id": "R-B2-002",
+      "title": "Construire une matrice de criticité",
+      "file": "ressources/bc2/R-B2-002-construire-matrice-criticite.html",
+      "concepts": [
+        "Criticité",
+        "Gravité",
+        "Probabilité / fréquence"
+      ]
+    },
+    {
+      "resource_id": "R-B2-003",
+      "title": "Contribuer à la mise à jour du DUERP",
+      "file": "ressources/bc2/R-B2-003-contribuer-mise-a-jour-duerp.html",
+      "concepts": [
+        "DUERP",
+        "Danger",
+        "Exposition",
+        "Mesure de prévention",
+        "Observation factuelle",
+        "Risque professionnel",
+        "Unité de travail"
+      ]
+    },
+    {
+      "resource_id": "R-B2-004",
+      "title": "Veille — décider quoi surveiller et construire un dispositif utile à la PME",
+      "file": "ressources/bc2/R-B2-004-mettre-en-place-veille-pme.html",
+      "concepts": [
+        "Veille",
+        "Besoin de veille",
+        "Signal de veille"
+      ]
+    },
+    {
+      "resource_id": "R-B2-005",
+      "title": "Qualifier une source et une information",
+      "file": "ressources/bc2/R-B2-005-qualifier-source-information.html",
+      "concepts": [
+        "Champ d’application",
+        "Date d’effet",
+        "Fiabilité",
+        "Source primaire"
+      ]
+    },
+    {
+      "resource_id": "R-B2-006",
+      "title": "Transformer une veille en synthèse et en alerte actionnable",
+      "file": "ressources/bc2/R-B2-006-synthese-alerte-veille.html",
+      "concepts": [
+        "Champ d’application",
+        "Date d’effet",
+        "Impact opérationnel",
+        "Obligation / recommandation"
+      ]
+    },
+    {
+      "resource_id": "R-B2-007",
+      "title": "Cadrer un projet avant de le lancer",
+      "file": "ressources/bc2/R-B2-007-cadrer-projet.html",
+      "concepts": [
+        "Besoin projet",
+        "Livrable",
+        "Périmètre"
+      ]
+    },
+    {
+      "resource_id": "R-B2-008",
+      "title": "Construire un cahier des charges et planifier les tâches",
+      "file": "ressources/bc2/R-B2-008-cahier-charges-planifier.html",
+      "concepts": [
+        "Dépendance",
+        "Jalon",
+        "Livrable",
+        "Périmètre",
+        "Tâche"
+      ]
+    },
+    {
+      "resource_id": "R-B2-009",
+      "title": "Préparer et conduire une réunion de projet",
+      "file": "ressources/bc2/R-B2-009-preparer-conduire-reunion-projet.html",
+      "concepts": [
+        "Décision de réunion",
+        "Ordre du jour",
+        "Action de suivi"
+      ]
+    },
+    {
+      "resource_id": "R-B2-010",
+      "title": "Suivre un projet et traiter les écarts",
+      "file": "ressources/bc2/R-B2-010-suivre-projet-ecarts.html",
+      "concepts": [
+        "Décision de réunion",
+        "Jalon",
+        "Écart projet"
+      ]
+    },
+    {
+      "resource_id": "R-B2-011",
+      "title": "Identifier et formuler les risques d’une PME",
+      "file": "ressources/bc2/R-B2-011-identifier-formuler-risques.html",
+      "concepts": [
+        "Cause",
+        "Conséquence",
+        "Danger",
+        "Danger / source de risque",
+        "Exposition",
+        "Risque"
+      ]
+    },
+    {
+      "resource_id": "R-B2-012",
+      "title": "Identifier les obligations applicables à un risque",
+      "file": "ressources/bc2/R-B2-012-identifier-obligations-risque.html",
+      "concepts": [
+        "Obligation / recommandation",
+        "Champ d’application",
+        "Source officielle"
+      ]
+    },
+    {
+      "resource_id": "R-B2-013",
+      "title": "Construire et suivre un plan de traitement des risques",
+      "file": "ressources/bc2/R-B2-013-plan-traitement-risques.html",
+      "concepts": [
+        "Mesure de prévention",
+        "Mesure existante",
+        "Prévention",
+        "Protection",
+        "Transfert / partage",
+        "Détection / récupération",
+        "Acceptation sous conditions",
+        "Risque résiduel"
+      ]
+    },
+    {
+      "resource_id": "R-B2-014",
+      "title": "Construire et contrôler un budget de trésorerie",
+      "file": "ressources/bc2/R-B2-014-budget-tresorerie.html",
+      "concepts": [
+        "Décaissement",
+        "Décalage de trésorerie",
+        "Encaissement",
+        "Solde initial / final",
+        "Trésorerie"
+      ]
+    },
+    {
+      "resource_id": "R-B2-015",
+      "title": "Diagnostiquer une tension de trésorerie et préparer des solutions",
+      "file": "ressources/bc2/R-B2-015-diagnostiquer-tension-tresorerie.html",
+      "concepts": [
+        "Décalage de trésorerie",
+        "Scénario",
+        "Tension de trésorerie",
+        "Trésorerie"
+      ]
+    },
+    {
+      "resource_id": "R-B2-016",
+      "title": "Analyser la couverture d’assurance d’un risque",
+      "file": "ressources/bc2/R-B2-016-analyser-couverture-assurance.html",
+      "concepts": [
+        "Exclusion",
+        "Franchise",
+        "Garantie",
+        "Plafond",
+        "Sinistre"
+      ]
+    },
+    {
+      "resource_id": "R-B2-017",
+      "title": "Choisir une protection adaptée pour un actif de propriété intellectuelle",
+      "file": "ressources/bc2/R-B2-017-proteger-actif-propriete-intellectuelle.html",
+      "concepts": [
+        "Actif immatériel",
+        "Propriété intellectuelle",
+        "Protection"
+      ]
+    },
+    {
+      "resource_id": "R-B2-018",
+      "title": "Vérifier la conformité d’un traitement de données personnelles",
+      "file": "ressources/bc2/R-B2-018-verifier-conformite-traitement-rgpd.html",
+      "concepts": [
+        "Donnée personnelle",
+        "Traitement de données",
+        "Finalité (RGPD)",
+        "Base juridique",
+        "Responsable du traitement",
+        "Destinataire (RGPD)",
+        "Sous-traitant (RGPD)",
+        "Donnée sensible",
+        "Donnée de santé",
+        "Registre des activités de traitement",
+        "DPO / DPD",
+        "AIPD"
+      ]
+    },
+    {
+      "resource_id": "R-B2-019",
+      "title": "Réagir à une violation de données personnelles",
+      "file": "ressources/bc2/R-B2-019-reagir-violation-donnees.html",
+      "concepts": [
+        "Confinement",
+        "Donnée personnelle",
+        "Violation de données"
+      ]
+    },
+    {
+      "resource_id": "R-B2-020",
+      "title": "Identifier et réduire les risques environnementaux d’une PME",
+      "file": "ressources/bc2/R-B2-020-reduire-risques-environnementaux.html",
+      "concepts": [
+        "Action de réduction",
+        "Aspect environnemental",
+        "Flux",
+        "Impact environnemental",
+        "Indicateur",
+        "Valeur de référence"
+      ]
+    },
+    {
+      "resource_id": "R-B2-021",
+      "title": "Évaluer les risques informatiques d’une PME et préparer des mesures",
+      "file": "ressources/bc2/R-B2-021-evaluer-risques-informatiques.html",
+      "concepts": [
+        "Confidentialité / intégrité / disponibilité",
+        "Confinement",
+        "Hameçonnage / phishing"
+      ]
+    },
+    {
+      "resource_id": "R-B2-022",
+      "title": "Organiser les sauvegardes et tester la restauration",
+      "file": "ressources/bc2/R-B2-022-organiser-sauvegardes-restauration.html",
+      "concepts": [
+        "Sauvegarde / restauration",
+        "Sauvegarde",
+        "Test de restauration"
+      ]
+    },
+    {
+      "resource_id": "R-B2-023",
+      "title": "Contrôler les habilitations et les droits d’accès",
+      "file": "ressources/bc2/R-B2-023-controler-habilitations-droits-acces.html",
+      "concepts": [
+        "Habilitation",
+        "Droit d’accès",
+        "Principe du moindre privilège"
+      ]
+    },
+    {
+      "resource_id": "R-B2-024",
+      "title": "Diagnostiquer un dysfonctionnement qualité et rechercher ses causes",
+      "file": "ressources/bc2/R-B2-024-diagnostiquer-dysfonctionnement-qualite.html",
+      "concepts": [
+        "Cause racine",
+        "Correction",
+        "Dysfonctionnement",
+        "Symptôme"
+      ]
+    },
+    {
+      "resource_id": "R-B2-025",
+      "title": "Formaliser, diffuser et améliorer une procédure",
+      "file": "ressources/bc2/R-B2-025-formaliser-ameliorer-procedure.html",
+      "concepts": [
+        "Action corrective",
+        "Correction",
+        "Procédure"
+      ]
+    },
+    {
+      "resource_id": "R-B2-026",
+      "title": "Organiser le partage et la conservation des connaissances utiles",
+      "file": "ressources/bc2/R-B2-026-organiser-gestion-connaissances.html",
+      "concepts": [
+        "Connaissance critique",
+        "Capitalisation",
+        "Version de référence"
+      ]
+    },
+    {
+      "resource_id": "R-B2-027",
+      "title": "Préparer une veille et un dossier de certification",
+      "file": "ressources/bc2/R-B2-027-preparer-veille-certification.html",
+      "concepts": [
+        "Certification",
+        "Référentiel de certification",
+        "Veille"
+      ]
+    },
+    {
+      "resource_id": "R-B2-028",
+      "title": "Transformer une information de veille en mise à jour de pratique ou de procédure",
+      "file": "ressources/bc2/R-B2-028-mettre-a-jour-pratique-procedure-apres-veille.html",
+      "concepts": [
+        "Impact opérationnel",
+        "Obligation / recommandation",
+        "Version de procédure"
+      ]
+    },
+    {
+      "resource_id": "R-B2-029",
+      "title": "Suivre une action corrective et vérifier qu’elle réduit réellement le risque",
+      "file": "ressources/bc2/R-B2-029-suivre-efficacite-action-corrective-risque.html",
+      "concepts": [
+        "Action corrective",
+        "Indicateur d’efficacité",
+        "Risque résiduel"
+      ]
+    },
+    {
+      "resource_id": "R-B2-030",
+      "title": "Préparer et suivre un dossier de sinistre auprès de l’assureur",
+      "file": "ressources/bc2/R-B2-030-declarer-suivre-sinistre-assurance.html",
+      "concepts": [
+        "Déclaration de sinistre",
+        "Preuve du dommage",
+        "Sinistre"
+      ]
+    },
+    {
+      "resource_id": "R-B2-031",
+      "title": "Organiser le suivi administratif d’une démarche de certification",
+      "file": "ressources/bc2/R-B2-031-suivre-demarche-certification.html",
+      "concepts": [
+        "Certification",
+        "Référentiel de certification",
+        "Preuve de conformité"
+      ]
+    },
+    {
+      "resource_id": "R-B3-001",
+      "title": "Identifier la règle sociale applicable avant d’agir",
+      "file": "ressources/bc3/R-B3-001-identifier-regle-sociale-applicable.html",
+      "concepts": [
+        "Convention collective",
+        "Source de droit social",
+        "Champ d’application"
+      ]
+    },
+    {
+      "resource_id": "R-B3-002",
+      "title": "Préparer l’embauche d’un salarié sans oublier les formalités obligatoires",
+      "file": "ressources/bc3/R-B3-002-preparer-embauche-salarie.html",
+      "concepts": [
+        "DPAE",
+        "Contrat de travail",
+        "Dossier du personnel"
+      ]
+    },
+    {
+      "resource_id": "R-B3-003",
+      "title": "Contrôler un contrat de travail avant signature",
+      "file": "ressources/bc3/R-B3-003-controler-contrat-travail.html",
+      "concepts": [
+        "Contrat de travail",
+        "Convention collective",
+        "Fiche de poste"
+      ]
+    },
+    {
+      "resource_id": "R-B3-004",
+      "title": "Préparer le départ d’un salarié et contrôler les documents de fin de contrat",
+      "file": "ressources/bc3/R-B3-004-preparer-depart-salarie.html",
+      "concepts": [
+        "Fin de contrat",
+        "Documents de fin de contrat",
+        "Contrat de travail"
+      ]
+    },
+    {
+      "resource_id": "R-B3-005",
+      "title": "Organiser un dossier du personnel conforme et exploitable",
+      "file": "ressources/bc3/R-B3-005-organiser-dossier-personnel-rgpd.html",
+      "concepts": [
+        "Donnée RH confidentielle",
+        "Dossier du personnel",
+        "Droit d’accès"
+      ]
+    },
+    {
+      "resource_id": "R-B3-006",
+      "title": "Suivre le temps de travail et repérer les anomalies",
+      "file": "ressources/bc3/R-B3-006-suivre-temps-travail.html",
+      "concepts": [
+        "Temps de travail effectif",
+        "Heures supplémentaires",
+        "Convention collective"
+      ]
+    },
+    {
+      "resource_id": "R-B3-007",
+      "title": "Gérer les congés et absences sans fausser les droits du salarié",
+      "file": "ressources/bc3/R-B3-007-gerer-conges-absences-maladie.html",
+      "concepts": [
+        "Justificatif",
+        "Type d’absence",
+        "Solde de congés"
+      ]
+    },
+    {
+      "resource_id": "R-B3-008",
+      "title": "Collecter et fiabiliser les variables de paie",
+      "file": "ressources/bc3/R-B3-008-collecter-variables-paie.html",
+      "concepts": [
+        "Date de clôture paie",
+        "Période de paie",
+        "Variable de paie"
+      ]
+    },
+    {
+      "resource_id": "R-B3-009",
+      "title": "Contrôler un bulletin de paie avant validation",
+      "file": "ressources/bc3/R-B3-009-controler-bulletin-paie.html",
+      "concepts": [
+        "Contrôle de cohérence",
+        "Période de paie",
+        "Variable de paie"
+      ]
+    },
+    {
+      "resource_id": "R-B3-010",
+      "title": "Préparer, transmettre et contrôler une DSN",
+      "file": "ressources/bc3/R-B3-010-preparer-controler-dsn.html",
+      "concepts": [
+        "DSN",
+        "Donnée de paie",
+        "Contrôle de cohérence"
+      ]
+    },
+    {
+      "resource_id": "R-B3-011",
+      "title": "Organiser les élections du CSE sous la responsabilité de la direction",
+      "file": "ressources/bc3/R-B3-011-organiser-elections-cse.html",
+      "concepts": [
+        "CSE",
+        "Calendrier électoral",
+        "Collège électoral",
+        "Liste électorale",
+        "Protocole préélectoral",
+        "Électeur / éligible"
+      ]
+    },
+    {
+      "resource_id": "R-B3-012",
+      "title": "Communiquer une information sociale en respectant la confidentialité",
+      "file": "ressources/bc3/R-B3-012-communiquer-information-sociale-confidentielle.html",
+      "concepts": [
+        "Confidentialité RH",
+        "Droit d’accès",
+        "Destinataire autorisé"
+      ]
+    },
+    {
+      "resource_id": "R-B3-013",
+      "title": "Formaliser un besoin de recrutement et construire une fiche de poste",
+      "file": "ressources/bc3/R-B3-013-formaliser-besoin-recrutement-fiche-poste.html",
+      "concepts": [
+        "Besoin de recrutement",
+        "Compétence",
+        "Mission / activité / tâche"
+      ]
+    },
+    {
+      "resource_id": "R-B3-014",
+      "title": "Rédiger et publier une offre d’emploi non discriminatoire",
+      "file": "ressources/bc3/R-B3-014-rediger-offre-emploi-non-discriminatoire.html",
+      "concepts": [
+        "Critère discriminatoire",
+        "Critère de sélection",
+        "Fiche de poste"
+      ]
+    },
+    {
+      "resource_id": "R-B3-015",
+      "title": "Présélectionner des candidatures avec une grille objective",
+      "file": "ressources/bc3/R-B3-015-preselectionner-candidatures.html",
+      "concepts": [
+        "Compétence",
+        "Critère de sélection",
+        "Critère discriminatoire",
+        "Preuve de compétence"
+      ]
+    },
+    {
+      "resource_id": "R-B3-016",
+      "title": "Préparer un entretien de recrutement structuré et comparable",
+      "file": "ressources/bc3/R-B3-016-preparer-entretien-recrutement.html",
+      "concepts": [
+        "Critère de sélection",
+        "Critère discriminatoire",
+        "Grille d’entretien",
+        "Preuve de compétence"
+      ]
+    },
+    {
+      "resource_id": "R-B3-017",
+      "title": "Organiser l’intégration d’un nouveau salarié",
+      "file": "ressources/bc3/R-B3-017-organiser-integration-nouveau-salarie.html",
+      "concepts": [
+        "Intégration",
+        "Parcours d’intégration",
+        "Référent d’intégration"
+      ]
+    },
+    {
+      "resource_id": "R-B3-018",
+      "title": "Recenser les besoins en compétences et en formation",
+      "file": "ressources/bc3/R-B3-018-recenser-besoins-formation-competences.html",
+      "concepts": [
+        "Besoin de compétence",
+        "Demande de formation",
+        "Objectif de formation"
+      ]
+    },
+    {
+      "resource_id": "R-B3-019",
+      "title": "Comparer des formations et préparer leur financement",
+      "file": "ressources/bc3/R-B3-019-choisir-formation-budget-opco.html",
+      "concepts": [
+        "Coût direct",
+        "OPCO",
+        "Objectif de formation"
+      ]
+    },
+    {
+      "resource_id": "R-B3-020",
+      "title": "Planifier et suivre une action de formation jusqu’à son évaluation",
+      "file": "ressources/bc3/R-B3-020-planifier-suivre-action-formation.html",
+      "concepts": [
+        "Évaluation de la formation",
+        "Objectif de formation",
+        "Preuve de compétence"
+      ]
+    },
+    {
+      "resource_id": "R-B3-021",
+      "title": "Préparer un entretien annuel d’évaluation avec des critères professionnels",
+      "file": "ressources/bc3/R-B3-021-preparer-entretien-evaluation.html",
+      "concepts": [
+        "Entretien annuel d’évaluation",
+        "Critère d’évaluation",
+        "Fiche de poste"
+      ]
+    },
+    {
+      "resource_id": "R-B3-022",
+      "title": "Préparer l’entretien de parcours professionnel (EPP) selon les règles 2026",
+      "file": "ressources/bc3/R-B3-022-preparer-entretien-parcours-professionnel-2026.html",
+      "concepts": [
+        "Entretien de parcours professionnel",
+        "Trace d’entretien",
+        "Convention collective"
+      ]
+    },
+    {
+      "resource_id": "R-B3-023",
+      "title": "Construire un tableau de bord social simple et utile au dirigeant",
+      "file": "ressources/bc3/R-B3-023-construire-tableau-bord-social.html",
+      "concepts": [
+        "Donnée brute",
+        "Indicateur",
+        "Numérateur / dénominateur",
+        "Périmètre",
+        "Taux"
+      ]
+    },
+    {
+      "resource_id": "R-B3-024",
+      "title": "Analyser des indicateurs sociaux et préparer des propositions",
+      "file": "ressources/bc3/R-B3-024-analyser-indicateurs-sociaux-proposer-actions.html",
+      "concepts": [
+        "Corrélation / cause",
+        "Numérateur / dénominateur",
+        "Périmètre",
+        "Évolution"
+      ]
+    },
+    {
+      "resource_id": "R-B3-025",
+      "title": "Repérer une tension relationnelle et préparer un entretien de régulation",
+      "file": "ressources/bc3/R-B3-025-reperer-tension-preparer-entretien.html",
+      "concepts": [
+        "Conflit",
+        "Fait / interprétation",
+        "Tension"
+      ]
+    },
+    {
+      "resource_id": "R-B3-026",
+      "title": "Organiser un travail collaboratif avec des règles simples et vérifiables",
+      "file": "ressources/bc3/R-B3-026-organiser-travail-collaboratif.html",
+      "concepts": [
+        "Règle collaborative",
+        "Version de référence",
+        "Droit d’accès"
+      ]
+    },
+    {
+      "resource_id": "R-B3-027",
+      "title": "Préparer une réunion de représentation du personnel ou de dialogue social",
+      "file": "ressources/bc3/R-B3-027-preparer-reunion-cse-dialogue-social.html",
+      "concepts": [
+        "CSE",
+        "Dialogue social",
+        "Protocole préélectoral"
+      ]
+    },
+    {
+      "resource_id": "R-B3-028",
+      "title": "Calculer et comparer le coût prévisionnel d’un recrutement ou d’une formation",
+      "file": "ressources/bc3/R-B3-028-calculer-cout-recrutement-formation.html",
+      "concepts": [
+        "Coût direct",
+        "Coût indirect",
+        "Scénario"
+      ]
+    },
+    {
+      "resource_id": "R-B4-001",
+      "title": "Caractériser le système d’information d’une PME",
+      "file": "ressources/bc4/R-B4-001-caracteriser-systeme-information.html",
+      "concepts": [
+        "Donnée / information / document",
+        "Droit d’accès",
+        "Flux d’information"
+      ]
+    },
+    {
+      "resource_id": "R-B4-002",
+      "title": "Cartographier un flux d’information ou un processus",
+      "file": "ressources/bc4/R-B4-002-cartographier-flux-information-processus.html",
+      "concepts": [
+        "Donnée / information / document",
+        "Flux d’information",
+        "Acteur du processus"
+      ]
+    },
+    {
+      "resource_id": "R-B4-003",
+      "title": "Définir un besoin d’information et contrôler les données collectées",
+      "file": "ressources/bc4/R-B4-003-definir-besoin-information-controler-donnees.html",
+      "concepts": [
+        "Besoin d’information",
+        "Qualité des données",
+        "Source primaire"
+      ]
+    },
+    {
+      "resource_id": "R-B4-004",
+      "title": "Structurer des données et fiabiliser leur saisie",
+      "file": "ressources/bc4/R-B4-004-structurer-base-donnees-fiabiliser-saisie.html",
+      "concepts": [
+        "Champ",
+        "Enregistrement",
+        "Identifiant"
+      ]
+    },
+    {
+      "resource_id": "R-B4-005",
+      "title": "Construire un plan de classement et d’archivage des documents",
+      "file": "ressources/bc4/R-B4-005-classer-archiver-documents.html",
+      "concepts": [
+        "Archivage",
+        "Indexation",
+        "Nommage",
+        "Version de référence"
+      ]
+    },
+    {
+      "resource_id": "R-B4-006",
+      "title": "Diagnostiquer une anomalie du SI et préparer une demande à l’ESN",
+      "file": "ressources/bc4/R-B4-006-diagnostiquer-anomalie-si-preparer-demande-esn.html",
+      "concepts": [
+        "Droit d’accès",
+        "Sauvegarde",
+        "Symptôme"
+      ]
+    },
+    {
+      "resource_id": "R-B4-007",
+      "title": "Analyser et améliorer un processus support",
+      "file": "ressources/bc4/R-B4-007-analyser-ameliorer-processus-support.html",
+      "concepts": [
+        "Processus",
+        "Dysfonctionnement",
+        "Cause"
+      ]
+    },
+    {
+      "resource_id": "R-B4-008",
+      "title": "Organiser et suivre le travail administratif",
+      "file": "ressources/bc4/R-B4-008-organiser-travail-administratif.html",
+      "concepts": [
+        "Replanification",
+        "Priorité",
+        "Charge"
+      ]
+    },
+    {
+      "resource_id": "R-B4-009",
+      "title": "Planifier des activités, interventions ou prestations",
+      "file": "ressources/bc4/R-B4-009-planifier-activites-interventions.html",
+      "concepts": [
+        "Charge",
+        "Contrainte dure",
+        "Contrainte souple",
+        "Replanification",
+        "Ressource"
+      ]
+    },
+    {
+      "resource_id": "R-B4-010",
+      "title": "Gérer les priorités, la charge et un agenda partagé",
+      "file": "ressources/bc4/R-B4-010-gerer-charge-priorites-agenda.html",
+      "concepts": [
+        "Capacité",
+        "Charge",
+        "Contrainte dure",
+        "Contrainte souple",
+        "Priorité"
+      ]
+    },
+    {
+      "resource_id": "R-B4-011",
+      "title": "Organiser un déplacement professionnel de bout en bout",
+      "file": "ressources/bc4/R-B4-011-organiser-deplacement-professionnel.html",
+      "concepts": [
+        "Coût total",
+        "Contrainte dure",
+        "Justificatif"
+      ]
+    },
+    {
+      "resource_id": "R-B4-012",
+      "title": "Organiser un événement interne ou une participation à un salon",
+      "file": "ressources/bc4/R-B4-012-organiser-evenement-professionnel.html",
+      "concepts": [
+        "Événement professionnel",
+        "Jalon",
+        "Budget d’événement"
+      ]
+    },
+    {
+      "resource_id": "R-B4-013",
+      "title": "Sélectionner et coordonner des prestataires pour une activité",
+      "file": "ressources/bc4/R-B4-013-selectionner-coordonner-prestataires.html",
+      "concepts": [
+        "Critère de choix",
+        "Pondération",
+        "Coût total"
+      ]
+    },
+    {
+      "resource_id": "R-B4-014",
+      "title": "Mettre en place une veille commerciale orientée décision",
+      "file": "ressources/bc4/R-B4-014-mettre-en-place-veille-commerciale.html",
+      "concepts": [
+        "Marché",
+        "Signal",
+        "Tendance"
+      ]
+    },
+    {
+      "resource_id": "R-B4-015",
+      "title": "Analyser un marché et distinguer une tendance d’un signal isolé",
+      "file": "ressources/bc4/R-B4-015-analyser-marche-tendances.html",
+      "concepts": [
+        "Concurrent",
+        "Marché",
+        "Segment",
+        "Tendance"
+      ]
+    },
+    {
+      "resource_id": "R-B4-016",
+      "title": "Construire et exploiter une enquête de satisfaction client",
+      "file": "ressources/bc4/R-B4-016-construire-enquete-satisfaction.html",
+      "concepts": [
+        "Satisfaction client",
+        "Taux de réponse",
+        "Biais d’enquête"
+      ]
+    },
+    {
+      "resource_id": "R-B4-017",
+      "title": "Transformer une analyse de marché en proposition de développement commercial",
+      "file": "ressources/bc4/R-B4-017-proposer-action-developpement-commercial.html",
+      "concepts": [
+        "Proposition commerciale",
+        "Marché",
+        "Scénario"
+      ]
+    },
+    {
+      "resource_id": "R-B4-018",
+      "title": "Concevoir, suivre et évaluer une action de fidélisation",
+      "file": "ressources/bc4/R-B4-018-concevoir-evaluer-action-fidelisation.html",
+      "concepts": [
+        "Fidélisation",
+        "Segmentation",
+        "Indicateur"
+      ]
+    },
+    {
+      "resource_id": "R-B4-019",
+      "title": "Préparer le cahier des charges d’une action de communication",
+      "file": "ressources/bc4/R-B4-019-preparer-cahier-charges-communication.html",
+      "concepts": [
+        "Cible de communication",
+        "Objectif de communication",
+        "Cahier des charges"
+      ]
+    },
+    {
+      "resource_id": "R-B4-020",
+      "title": "Concevoir un support de communication institutionnelle",
+      "file": "ressources/bc4/R-B4-020-concevoir-support-communication-institutionnelle.html",
+      "concepts": [
+        "Communication institutionnelle",
+        "Message",
+        "Identité de marque / image"
+      ]
+    },
+    {
+      "resource_id": "R-B4-021",
+      "title": "Concevoir une action de communication commerciale cohérente",
+      "file": "ressources/bc4/R-B4-021-concevoir-action-communication-commerciale.html",
+      "concepts": [
+        "Canal",
+        "Message",
+        "Cible de communication"
+      ]
+    },
+    {
+      "resource_id": "R-B4-022",
+      "title": "Suivre l’identité numérique et l’e-réputation de la PME",
+      "file": "ressources/bc4/R-B4-022-suivre-identite-numerique-e-reputation.html",
+      "concepts": [
+        "Identité numérique",
+        "E-réputation",
+        "Tendance"
+      ]
+    },
+    {
+      "resource_id": "R-B4-023",
+      "title": "Contrôler la cohérence d’un support avec l’image et la charte de la PME",
+      "file": "ressources/bc4/R-B4-023-controler-coherence-image-charte.html",
+      "concepts": [
+        "Identité de marque / image",
+        "Identité numérique",
+        "Message"
+      ]
+    },
+    {
+      "resource_id": "R-B4-024",
+      "title": "Mesurer l’efficacité d’une action de communication",
+      "file": "ressources/bc4/R-B4-024-mesurer-efficacite-action-communication.html",
+      "concepts": [
+        "Indicateur de communication",
+        "Indicateur d’efficacité",
+        "Taux"
+      ]
+    },
+    {
+      "resource_id": "R-B4-025",
+      "title": "Calculer et analyser un coût complet avec la méthode fournie",
+      "file": "ressources/bc4/R-B4-025-calculer-cout-complet.html",
+      "concepts": [
+        "Charge",
+        "Charge directe / indirecte",
+        "Coût complet"
+      ]
+    },
+    {
+      "resource_id": "R-B4-026",
+      "title": "Calculer une marge sur coût variable ou un coût partiel",
+      "file": "ressources/bc4/R-B4-026-calculer-marge-cout-partiel.html",
+      "concepts": [
+        "Charge",
+        "Charge variable / fixe",
+        "Marge sur coût variable"
+      ]
+    },
+    {
+      "resource_id": "R-B4-027",
+      "title": "Calculer et interpréter un seuil de rentabilité",
+      "file": "ressources/bc4/R-B4-027-calculer-seuil-rentabilite.html",
+      "concepts": [
+        "Charge variable / fixe",
+        "Marge sur coût variable",
+        "Seuil de rentabilité"
+      ]
+    },
+    {
+      "resource_id": "R-B4-028",
+      "title": "Construire un budget prévisionnel exploitable",
+      "file": "ressources/bc4/R-B4-028-construire-budget-previsionnel.html",
+      "concepts": [
+        "Budget prévisionnel",
+        "Hypothèse budgétaire",
+        "Version de référence"
+      ]
+    },
+    {
+      "resource_id": "R-B4-029",
+      "title": "Analyser les écarts et simuler l’impact d’une décision de gestion",
+      "file": "ressources/bc4/R-B4-029-analyser-ecarts-simuler-decision.html",
+      "concepts": [
+        "Simulation",
+        "Écart",
+        "Cause"
+      ]
+    },
+    {
+      "resource_id": "R-B4-030",
+      "title": "Construire un bilan fonctionnel à partir des données fournies",
+      "file": "ressources/bc4/R-B4-030-construire-bilan-fonctionnel.html",
+      "concepts": [
+        "BFR",
+        "FRNG",
+        "Trésorerie nette"
+      ]
+    },
+    {
+      "resource_id": "R-B4-031",
+      "title": "Calculer et interpréter FRNG, BFR et trésorerie nette",
+      "file": "ressources/bc4/R-B4-031-analyser-equilibres-fr-bfr-tn.html",
+      "concepts": [
+        "BFR",
+        "FRNG",
+        "Trésorerie nette"
+      ]
+    },
+    {
+      "resource_id": "R-B4-032",
+      "title": "Calculer et interpréter des ratios financiers pertinents",
+      "file": "ressources/bc4/R-B4-032-calculer-interpreter-ratios-financiers.html",
+      "concepts": [
+        "Ratio financier",
+        "Numérateur / dénominateur",
+        "Valeur de référence"
+      ]
+    },
+    {
+      "resource_id": "R-B4-033",
+      "title": "Comparer des modes de financement d’un investissement",
+      "file": "ressources/bc4/R-B4-033-comparer-modes-financement-investissement.html",
+      "concepts": [
+        "Coût global de financement",
+        "Crédit-bail / location financière",
+        "Emprunt"
+      ]
+    },
+    {
+      "resource_id": "R-B4-034",
+      "title": "Construire un plan de financement et mesurer l’impact d’une décision",
+      "file": "ressources/bc4/R-B4-034-construire-plan-financement-mesurer-impact.html",
+      "concepts": [
+        "Besoin de financement",
+        "Emprunt",
+        "Plan de financement"
+      ]
+    },
+    {
+      "resource_id": "R-B4-035",
+      "title": "Choisir des indicateurs de gestion et des seuils d’alerte",
+      "file": "ressources/bc4/R-B4-035-choisir-indicateurs-seuils-alerte.html",
+      "concepts": [
+        "Indicateur",
+        "KPI",
+        "Objectif",
+        "Seuil d’alerte"
+      ]
+    },
+    {
+      "resource_id": "R-B4-036",
+      "title": "Construire un tableau de bord commercial et financier lisible",
+      "file": "ressources/bc4/R-B4-036-construire-tableau-bord-commercial-financier.html",
+      "concepts": [
+        "Indicateur",
+        "Tableau de bord",
+        "Écart"
+      ]
+    },
+    {
+      "resource_id": "R-B4-037",
+      "title": "Analyser un tableau de bord et préparer une alerte au dirigeant",
+      "file": "ressources/bc4/R-B4-037-analyser-tableau-bord-alerter.html",
+      "concepts": [
+        "Alerte argumentée",
+        "Seuil d’alerte",
+        "Tendance",
+        "Écart"
+      ]
+    },
+    {
+      "resource_id": "R-B4-038",
+      "title": "Résoudre un problème administratif sans traiter seulement le symptôme",
+      "file": "ressources/bc4/R-B4-038-resoudre-probleme-administratif.html",
+      "concepts": [
+        "Symptôme",
+        "Cause racine",
+        "Action corrective"
+      ]
+    },
+    {
+      "resource_id": "R-B4-039",
+      "title": "Décliner la stratégie de communication en plan d’actions opérationnel",
+      "file": "ressources/bc4/R-B4-039-construire-plan-communication-operationnel.html",
+      "concepts": [
+        "Canal",
+        "Cible de communication",
+        "Objectif de communication"
+      ]
+    },
+    {
+      "resource_id": "R-B4-040",
+      "title": "Simuler l’impact d’une décision de gestion sur les coûts, le résultat et les équilibres financiers",
+      "file": "ressources/bc4/R-B4-040-simuler-decision-gestion-couts-finance.html",
+      "concepts": [
+        "Coût global de financement",
+        "Simulation",
+        "Scénario"
+      ]
+    },
+    {
+      "resource_id": "R-TR-001",
+      "title": "Analyser une situation de communication avant de répondre",
+      "file": "ressources/transversal/R-TR-001-analyser-situation-communication.html",
+      "concepts": [
+        "Situation de communication",
+        "Objectif de communication",
+        "Enjeu",
+        "Registre et ton",
+        "Canal"
+      ]
+    },
+    {
+      "resource_id": "R-TR-002",
+      "title": "Rédiger un courriel professionnel qui permet d’agir",
+      "file": "ressources/transversal/R-TR-002-rediger-courriel-professionnel.html",
+      "concepts": [
+        "Objet du courriel",
+        "Contexte utile",
+        "Demande explicite",
+        "Échéance",
+        "Pièce jointe",
+        "Traçabilité"
+      ]
+    },
+    {
+      "resource_id": "R-TR-003",
+      "title": "Rédiger une note professionnelle pour aider le dirigeant à décider",
+      "file": "ressources/transversal/R-TR-003-rediger-note-direction.html",
+      "concepts": [
+        "Alerte argumentée",
+        "Note de décision",
+        "Recommandation"
+      ]
+    },
+    {
+      "resource_id": "R-TR-004",
+      "title": "Produire un compte rendu de réunion ou d’entretien qui permet le suivi",
+      "file": "ressources/transversal/R-TR-004-produire-compte-rendu-actionnable.html",
+      "concepts": [
+        "Compte rendu actionnable",
+        "Décision de réunion",
+        "Action de suivi"
+      ]
+    },
+    {
+      "resource_id": "R-TR-005",
+      "title": "Concevoir un formulaire ou document structuré qui produit des données exploitables",
+      "file": "ressources/transversal/R-TR-005-concevoir-formulaire-document-structure.html",
+      "concepts": [
+        "Champ de formulaire",
+        "Contrôle de saisie",
+        "Qualité des données"
+      ]
+    },
+    {
+      "resource_id": "R-TR-006",
+      "title": "Choisir le bon canal de communication numérique et maîtriser la trace laissée",
+      "file": "ressources/transversal/R-TR-006-choisir-canal-communication-numerique.html",
+      "concepts": [
+        "Canal",
+        "Traçabilité",
+        "Niveau de confidentialité"
+      ]
+    },
+    {
+      "resource_id": "R-TR-007",
+      "title": "Préparer et conduire un entretien professionnel court",
+      "file": "ressources/transversal/R-TR-007-preparer-conduire-entretien-professionnel.html",
+      "concepts": [
+        "Reformulation",
+        "Question ouverte",
+        "Trace d’entretien"
+      ]
+    },
+    {
+      "resource_id": "R-TR-008",
+      "title": "Préparer et animer une réunion qui aboutit à des décisions et des actions",
+      "file": "ressources/transversal/R-TR-008-preparer-animer-reunion.html",
+      "concepts": [
+        "Ordre du jour",
+        "Décision de réunion",
+        "Action de suivi"
+      ]
+    },
+    {
+      "resource_id": "R-TR-009",
+      "title": "Repérer une tension et préparer une intervention sans se substituer au décideur",
+      "file": "ressources/transversal/R-TR-009-gerer-tension-conflit.html",
+      "concepts": [
+        "Besoin / position",
+        "Conflit",
+        "Fait / interprétation",
+        "Reformulation",
+        "Tension"
+      ]
+    },
+    {
+      "resource_id": "R-TR-010",
+      "title": "Préparer un dialogue ou une négociation dans le cadre fixé par la direction",
+      "file": "ressources/transversal/R-TR-010-preparer-dialogue-negociation.html",
+      "concepts": [
+        "Besoin / position",
+        "Concession",
+        "Marge de négociation"
+      ]
+    },
+    {
+      "resource_id": "R-TR-011",
+      "title": "Construire un tableau de données fiable avant de calculer ou filtrer",
+      "file": "ressources/transversal/R-TR-011-construire-tableau-donnees-fiable.html",
+      "concepts": [
+        "Flux",
+        "Donnée brute",
+        "Contrôle de cohérence"
+      ]
+    },
+    {
+      "resource_id": "R-TR-012",
+      "title": "Extraire, nettoyer et contrôler des données du PGI avant analyse",
+      "file": "ressources/transversal/R-TR-012-extraire-nettoyer-controler-donnees-pgi.html",
+      "concepts": [
+        "Donnée brute",
+        "Contrôle de cohérence",
+        "Qualité des données"
+      ]
+    },
+    {
+      "resource_id": "R-TR-013",
+      "title": "Choisir entre filtre, recherche, validation et tableau croisé dynamique dans le tableur",
+      "file": "ressources/transversal/R-TR-013-utiliser-filtres-recherche-validation-tcd.html",
+      "concepts": [
+        "Filtre",
+        "Recherche dans un tableur",
+        "Validation des données",
+        "Tableau croisé dynamique (TCD)"
+      ]
+    },
+    {
+      "resource_id": "R-TR-014",
+      "title": "Présenter une analyse chiffrée sans noyer le destinataire sous les données",
+      "file": "ressources/transversal/R-TR-014-presenter-analyse-chiffree.html",
+      "concepts": [
+        "Indicateur",
+        "Valeur de référence",
+        "Évolution"
+      ]
+    }
+  ]
+}
