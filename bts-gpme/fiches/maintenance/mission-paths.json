@@ -375,37 +375,6 @@
         "order": 2
       },
       {
-        "id": "R-B1-029",
-        "title": "Préparer une action de communication pour développer la relation client",
-        "url": "ressources/bc1/R-B1-029-developper-relation-client-communication.html",
-        "use": "Après une vente, avant un renouvellement, pour informer d’un nouveau service, réactiver des clients ou maintenir une relation régulière.",
-        "outcome": "Une action ciblée avec objectif, destinataires, message, canal, calendrier, règles de suivi et indicateurs simples.",
-        "first_action": "Définir l’objectif concret : informer, réactiver, inviter, remercier, renouveler ou obtenir un retour.",
-        "inputs": [
-          "objectif commercial ou relationnel validé",
-          "fichier clients à jour",
-          "historique des échanges et achats",
-          "offre ou information à communiquer",
-          "contraintes de ton, canal et calendrier"
-        ],
-        "checks": [
-          "objectif explicite et mesurable",
-          "cible justifiée",
-          "historique client pris en compte",
-          "message cohérent avec l’image de la PME",
-          "suivi prévu dans le SI"
-        ],
-        "validate": [
-          "offre commerciale ou avantage non prévu",
-          "engagement financier ou contractuel",
-          "campagne sensible pour l’image de la PME"
-        ],
-        "activities": "A1_3",
-        "tasks": "T1_3_3",
-        "knowledge": "S5_1 S5_2 S5_4 S5_5",
-        "order": 3
-      },
-      {
         "id": "R-TR-001",
         "title": "Analyser une situation de communication avant de répondre",
         "url": "ressources/transversal/R-TR-001-analyser-situation-communication.html",
@@ -434,7 +403,7 @@
         "activities": "",
         "tasks": "",
         "knowledge": "S5_1",
-        "order": 4
+        "order": 3
       }
     ]
   },
@@ -1403,7 +1372,7 @@
   },
   {
     "id": "M14",
-    "title": "Les déchets et l’énergie augmentent : repérer un risque environnemental exploitable",
+    "title": "Les déchets et l’énergie augmentent : relier les flux aux impacts et risques environnementaux",
     "activity": "A2_5",
     "bc": "BC2",
     "output": "Un diagnostic fondé sur des données comparables, des actions proportionnées et des indicateurs de suivi.",
@@ -2349,38 +2318,6 @@
         "tasks": "T3_2_1 T3_2_3 T3_2_5",
         "knowledge": "S3_2_1 S3_2_3 S3_2_5 S3_4",
         "order": 3
-      },
-      {
-        "id": "R-B3-020",
-        "title": "Planifier et suivre une action de formation jusqu’à son évaluation",
-        "url": "ressources/bc3/R-B3-020-planifier-suivre-action-formation.html",
-        "use": "Formation interne ou externe, présentielle, à distance ou en situation de travail.",
-        "outcome": "Un dossier de formation complet : convocation, planning, financement, preuve de réalisation, évaluation à chaud et contrôle du transfert en situation de travail.",
-        "first_action": "Confirmer l’inscription et les conditions. Dates, horaires, accès, prérequis.",
-        "inputs": [
-          "formation validée",
-          "salariés concernés",
-          "dates et contraintes",
-          "convention/commande",
-          "modalités de financement",
-          "critères de réussite"
-        ],
-        "checks": [
-          "formation réellement suivie",
-          "preuve archivée",
-          "coût final rapproché du prévu",
-          "évaluation du transfert prévue",
-          "dossier RH et tableau mis à jour"
-        ],
-        "validate": [
-          "report ou annulation avec impact contractuel",
-          "prise en charge financière finale",
-          "action obligatoire complexe"
-        ],
-        "activities": "A3_2",
-        "tasks": "T3_2_3 T3_2_6",
-        "knowledge": "S3_2_3 S3_4",
-        "order": 4
       }
     ]
   },
@@ -2589,37 +2526,6 @@
         "order": 2
       },
       {
-        "id": "R-TR-009",
-        "title": "Repérer une tension et préparer une intervention sans se substituer au décideur",
-        "url": "ressources/transversal/R-TR-009-gerer-tension-conflit.html",
-        "use": "Tension entre collègues, désaccord récurrent, conflit avec un interlocuteur ou situation relationnelle qui dégrade la coordination.",
-        "outcome": "Une fiche factuelle distinguant événements, impacts, acteurs, tentatives déjà réalisées, points à vérifier et options de traitement.",
-        "first_action": "Décrire les faits observables sans qualifier les personnes.",
-        "inputs": [
-          "faits observés",
-          "échanges ou traces disponibles",
-          "rôles des acteurs",
-          "règles internes",
-          "impact sur l’activité"
-        ],
-        "checks": [
-          "faits séparés des jugements",
-          "impact professionnel explicite",
-          "urgence évaluée",
-          "périmètre de décision respecté",
-          "confidentialité maîtrisée"
-        ],
-        "validate": [
-          "sanction",
-          "médiation formelle non prévue",
-          "décision finale de résolution"
-        ],
-        "activities": "",
-        "tasks": "",
-        "knowledge": "S5_7",
-        "order": 3
-      },
-      {
         "id": "R-TR-004",
         "title": "Produire un compte rendu de réunion ou d’entretien qui permet le suivi",
         "url": "ressources/transversal/R-TR-004-produire-compte-rendu-actionnable.html",
@@ -2648,7 +2554,7 @@
         "activities": "",
         "tasks": "",
         "knowledge": "S5_2 S5_6",
-        "order": 4
+        "order": 3
       }
     ]
   },
@@ -2751,37 +2657,6 @@
         "tasks": "T4_1_5",
         "knowledge": "S4_1_3 S5_2",
         "order": 3
-      },
-      {
-        "id": "R-B4-006",
-        "title": "Diagnostiquer une anomalie du SI et préparer une demande à l’ESN",
-        "url": "ressources/bc4/R-B4-006-diagnostiquer-anomalie-si-preparer-demande-esn.html",
-        "use": "Erreur récurrente, donnée inaccessible, lenteur, problème de droits, synchronisation ou évolution fonctionnelle demandée par les utilisateurs.",
-        "outcome": "Un ticket ou cahier de besoin structuré : contexte, utilisateurs concernés, résultat attendu, anomalie reproduite, preuves, urgence et contraintes.",
-        "first_action": "Décrire l’impact métier. Quelle tâche ne peut plus être réalisée ?",
-        "inputs": [
-          "description du problème par les utilisateurs",
-          "captures ou messages d’erreur non sensibles",
-          "heure et fréquence",
-          "outil/version concernés",
-          "impact métier"
-        ],
-        "checks": [
-          "faits séparés des hypothèses",
-          "impact métier explicite",
-          "aucune donnée sensible transmise inutilement",
-          "résultat attendu décrit",
-          "test de résolution prévu"
-        ],
-        "validate": [
-          "intervention technique",
-          "modification du SI en production",
-          "accès administrateur ou sécurité"
-        ],
-        "activities": "A4_1",
-        "tasks": "T4_1_6",
-        "knowledge": "S4_1_1 S4_1_4 S5_2",
-        "order": 4
       }
     ]
   },
