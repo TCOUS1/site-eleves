@@ -1,0 +1,330 @@
+@import url("https://cdn.jsdelivr.net/npm/open-dyslexic@1.0.3/open-dyslexic-regular.css");
+
+
+:root{--font-size:17px;--ink:#222;--muted:#666;--line:#c9c9c9;--soft:#f2f2f2;--soft2:#fafafa;--accent:#4b4b4b;--paper:#fff;--max:1080px}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:#f5f5f5;color:var(--ink);font-family:Aptos,Arial,Helvetica,sans-serif;font-size:var(--font-size);line-height:1.55}
+.hero,.toolbar,.toc,.course{max-width:var(--max);margin-left:auto;margin-right:auto}.hero{background:#fff;padding:2.1rem 2.2rem 1.5rem;border-bottom:1px solid var(--line)}
+.hero-kicker{font-size:.92rem;text-transform:uppercase;letter-spacing:.06em;color:var(--muted);font-weight:700}.hero h1{margin:.25rem 0 .3rem;font-size:clamp(1.8rem,3.5vw,2.8rem);line-height:1.12}.hero-sub{margin:0;color:var(--muted)}
+.toolbar{position:sticky;top:0;z-index:20;display:flex;flex-wrap:wrap;gap:.45rem;background:#fff;padding:.7rem 1rem;border-bottom:1px solid var(--line);box-shadow:0 2px 10px #0000000a}.toolbar button{border:1px solid #aaa;background:#fff;border-radius:6px;padding:.45rem .7rem;font-weight:700;cursor:pointer}.toolbar button:hover,.toolbar button:focus{background:#eee}
+.toc{background:#fff;margin-top:1rem;padding:1rem 1.4rem;border:1px solid var(--line);border-radius:8px}.toc h2{margin:0 0 .5rem;font-size:1.25rem}.toc ul{list-style:none;margin:0;padding:0;columns:2;column-gap:2rem}.toc li{break-inside:avoid;margin:.22rem 0}.toc .h2{padding-left:.8rem;font-size:.95em}.toc .h3{padding-left:1.6rem;font-size:.9em}.toc a{color:inherit;text-decoration:none}.toc a:hover{text-decoration:underline}
+.course{background:var(--paper);margin-top:1rem;margin-bottom:3rem;padding:2rem 2.2rem;border:1px solid var(--line);border-radius:8px}.course>blockquote:first-child{margin-top:0;background:#f7f7f7;border-left:5px solid #777;padding:.8rem 1rem}.course h1{margin-top:2.3rem;padding-top:.5rem;font-size:1.75rem;line-height:1.2}.course h2{margin-top:1.9rem;font-size:1.35rem;color:#505050}.course h3{margin-top:1.4rem;font-size:1.08rem;color:#666}.course p{margin:.55rem 0}
+.block-label{font-weight:800;margin-top:1rem!important;margin-bottom:0!important;padding:.2rem .5rem;background:#e9e9e9;border-top:1px solid #c5c5c5;border-bottom:1px solid #c5c5c5}.block-label.notion{background:#e5e5e5}.block-label.rappel{background:#ededed}.block-label.astuce{background:#f1f1f1}.block-label.retenir{background:#e3e3e3}.block-label.question{background:#ededed}
+.block-content{margin-top:.45rem!important}.table-wrap{overflow-x:auto;margin:.45rem 0 1rem}.table-wrap>.block-content{margin:0!important}table{border-collapse:collapse;width:100%;background:#fff}th,td{border:1px solid #aaa;padding:.55rem .65rem;vertical-align:top;text-align:left}th{font-weight:600}thead th{background:#f2f2f2}table img{display:block;max-width:100%;height:auto;margin:.25rem auto}.document-content img{max-height:720px;object-fit:contain}.question-content{background:#fff}.question-content th,.question-content td{padding:.75rem}.question-content img[src$=".svg"]{float:left;width:56px;max-width:56px;margin:0 .9rem .4rem 0}.notion-content img[src$=".svg"],.rappel-content img[src$=".svg"],.astuce-content img[src$=".svg"],.retenir-content img[src$=".svg"]{width:48px;max-width:48px;float:left;margin:0 .9rem .35rem 0}
+img{max-width:100%;height:auto}.course>p>img{display:block;margin:.6rem auto;max-height:760px;object-fit:contain}
+.correction{margin:-.35rem 0 1.15rem;border:1px solid #b9b9b9;border-radius:0 0 7px 7px;background:#fbfbfb}.correction summary{cursor:pointer;padding:.55rem .8rem;font-weight:800;list-style:none}.correction summary::-webkit-details-marker{display:none}.correction summary::before{content:'＋';display:inline-block;width:1.5em}.correction[open] summary::before{content:'−'}.correction-body{border-top:1px solid #d6d6d6;padding:.65rem .9rem}.correction-body p{margin:.45rem 0}
+body.reading-space{line-height:1.8;letter-spacing:.025em}.reading-space .course p,.reading-space .course li,.reading-space td,.reading-space th{word-spacing:.10em}
+@media(max-width:760px){body{font-size:16px}.hero,.course{padding:1.2rem}.toc{margin:0;border-left:0;border-right:0;border-radius:0}.toc ul{columns:1}.course{margin-top:0;border-radius:0;border-left:0;border-right:0}.toolbar{top:0}.course h1{font-size:1.5rem}.course h2{font-size:1.25rem}th,td{padding:.45rem}.document-content img{max-height:none}}
+@media print{@page{size:A4 portrait;margin:13mm}body{background:#fff;font-size:11pt;line-height:1.35}.hero,.toc,.course{max-width:none;border:0;border-radius:0;margin:0;padding:0}.hero{margin-bottom:8mm}.toolbar,.toc{display:none!important}.course h1{break-before:page;margin-top:0}.course h1:first-of-type{break-before:auto}.block-label{break-after:avoid}.table-wrap{overflow:visible}.table-wrap,table,img,.correction{break-inside:avoid}.correction{display:none}.course>p>img,.document-content img{max-height:235mm}.question-content img[src$=".svg"]{width:12mm}.notion-content img[src$=".svg"],.rappel-content img[src$=".svg"],.astuce-content img[src$=".svg"],.retenir-content img[src$=".svg"]{width:10mm}a{color:#000;text-decoration:none}}
+
+
+/* Harmonisation du bandeau ergonomie avec les versions précédentes */
+.screen-only{display:block}
+.toolbar{position:sticky;top:0;z-index:50;max-width:none!important;width:100%;margin:0!important;display:flex;flex-wrap:wrap;align-items:center;gap:8px;background:#202020!important;color:#fff;padding:10px 14px!important;border:0!important;border-bottom:1px solid #555!important;box-shadow:0 2px 10px #0004!important}
+.toolbar button{font:inherit;border:1px solid #777!important;border-radius:7px!important;background:#fff!important;color:#222!important;padding:6px 9px!important;font-weight:700;cursor:pointer}
+.toolbar button:hover,.toolbar button:focus-visible{background:#ededed!important;outline:2px solid #fff;outline-offset:2px}
+.tool-main{font-weight:800!important}
+.tool-primary{display:flex;flex-wrap:wrap;gap:8px;align-items:center}
+.tool-drawer{flex-basis:100%;padding-top:3px}
+.tool-drawer[hidden]{display:none!important}
+.tool-group{display:flex;flex-wrap:wrap;align-items:center;gap:7px}
+.tool-group strong{margin-right:3px;color:#fff}
+.toolbar button.is-active{background:#d9d9d9!important;box-shadow:inset 0 0 0 2px #333}
+@media(max-width:620px){.toolbar{padding:8px 9px!important}.tool-primary{gap:5px}.toolbar button{padding:6px 8px!important}.tool-drawer{width:100%}}
+@media print{.screen-only,.toolbar{display:none!important}}
+
+
+
+/* === Stabilisation graphique 2026-10-02 === */
+:root{--page-bg:#151515;--memory:#eeeeee;--frame:#b8b8b8;--icon-size:30px}
+body{background:var(--page-bg)}
+.sheet{max-width:1120px;margin:0 auto 42px;background:#fff;box-shadow:0 0 0 1px #333,0 16px 42px #0008}
+.hero,.toc,.course{max-width:none;margin-left:0;margin-right:0;border-left:0;border-right:0;border-radius:0}
+.hero{padding-top:1.8rem}.toc{margin-top:0;border-top:1px solid var(--line)}.course{margin:0;padding-top:1.7rem;border-top:0}
+/* Toolbar is interface, before the sheet */
+.toolbar{position:sticky;top:0}
+/* TOC numbering is in link text; preserve hierarchy */
+.toc ul{list-style:none}.toc .h1{font-weight:700}.toc .h2{padding-left:1.1rem}.toc .h3{padding-left:2.2rem}
+/* Capacity alignment */
+.capacity-title{font-weight:800;margin-bottom:.35rem!important}.capacity-item{display:block;margin:.22rem 0!important;padding-left:1.7rem;text-indent:-1.7rem}
+/* Unified cartouche icons */
+.block-label{position:relative;min-height:calc(var(--icon-size) + 12px);padding:.52rem .7rem .48rem calc(var(--icon-size) + 1rem)!important;background:#fff;border:1px solid var(--frame);border-bottom:0;display:flex;align-items:flex-start}
+.block-label .block-icon{position:absolute;left:.55rem;top:.42rem;width:var(--icon-size);height:var(--icon-size);object-fit:contain;margin:0!important;float:none!important;color:#222}
+/* Only memorisation blocks get grey backgrounds */
+.block-label.notion,.block-label.rappel,.block-label.astuce,.block-label.retenir{background:var(--memory)}
+.block-label.document,.block-label.question{background:#fff}
+.block-label + .table-wrap{margin-top:0!important;border-top:0}
+.block-content{border-color:var(--frame)}
+.notion-content,.rappel-content,.astuce-content,.retenir-content{background:var(--memory)!important}
+.notion-content th,.notion-content td,.rappel-content th,.rappel-content td,.astuce-content th,.astuce-content td,.retenir-content th,.retenir-content td{background:var(--memory)!important}
+.question-content,.question-content th,.question-content td,.document-content,.document-content th,.document-content td{background:#fff!important}
+/* Document tables must not inherit grey THEAD shading */
+.document-content thead th,.document-plain-table thead th{background:#fff!important}
+/* inline attention stays small and in-flow */
+.attention-inline{display:inline-block!important;float:none!important;width:20px!important;height:20px!important;max-width:20px!important;vertical-align:-4px;margin:0 .35rem 0 0!important}
+/* response notice always its own italic line */
+.response-sheet{display:block!important;clear:both;margin:.65rem 0 .1rem!important;font-style:italic;color:#555}
+/* Document 17: use all available width */
+#document-17 + .document-fullwidth{width:100%;max-width:none;margin-left:0;margin-right:0}
+#document-17 + .document-fullwidth table{width:100%;table-layout:fixed}
+#document-17 + .document-fullwidth th,#document-17 + .document-fullwidth td{padding:0!important;border:0}
+#document-17 + .document-fullwidth img{display:block;width:100%!important;max-width:100%!important;height:auto!important;max-height:none!important;margin:0 auto!important;object-fit:contain}
+/* OpenDyslexic — remote font loaded by the @import at the top of this file */
+body.opendyslexic,.opendyslexic button,.opendyslexic input,.opendyslexic select,.opendyslexic textarea{font-family:OpenDyslexicRegular,OpenDyslexic,Aptos,Arial,sans-serif!important}
+/* RVB reading aid: no gradient or text clipping.
+   JavaScript assigns one real CSS text colour to every rendered visual line. */
+body.color-lines .course .rgb-token{
+  color:var(--rgb-color)!important;
+  -webkit-text-fill-color:var(--rgb-color)!important;
+  background:none!important;
+  -webkit-background-clip:border-box!important;
+  background-clip:border-box!important;
+}
+body.color-lines .block-label,
+body.color-lines .response-sheet,
+body.color-lines .toolbar,
+body.color-lines .toc{
+  color:var(--ink)!important;
+  -webkit-text-fill-color:currentColor!important;
+  background-image:none!important;
+}
+/* print: white paper, toolbar hidden, full-width doc 17 on a fresh page */
+@media print{
+ body{background:#fff}.sheet{max-width:none;margin:0;box-shadow:none}.toolbar{display:none!important}
+ #document-17{break-before:page}.document-fullwidth{break-inside:avoid}.document-fullwidth img{width:100%!important;max-height:245mm!important}
+ .response-sheet{color:#000}
+}
+
+/* Final alignment refinements */
+.course blockquote:has(.response-sheet),.course blockquote:has(.capacity-item){margin:0;padding:0;border:0;background:transparent}
+.capacity-item{width:100%}
+.question-content .response-sheet{margin-top:.8rem!important}
+
+
+/* === V32 — alignement sur la matrice Word, responsive et aide RVB robuste === */
+html,body{max-width:100%;overflow-x:hidden}
+.sheet{width:min(100%,1120px);max-width:1120px}
+.course{overflow-wrap:anywhere}
+.table-wrap{width:100%;max-width:100%;overflow-x:auto;-webkit-overflow-scrolling:touch}
+table{max-width:100%}
+
+/* Cartouches Word: bandeau-titre gris, puis corps encadré avec icône à gauche. */
+.block-label{
+  display:block!important;min-height:0!important;
+  padding:.18rem .5rem!important;margin:1rem 0 0!important;
+  background:#e3e3e3!important;border:1px solid #c5c5c5!important;
+  color:#222;font-weight:800;line-height:1.25;
+}
+.block-label.document,.block-label.question,.block-label.notion,.block-label.rappel,.block-label.astuce,.block-label.retenir{background:#e3e3e3!important}
+.block-label + .table-wrap{margin-top:0!important}
+.block-content{border:1px solid #999!important}
+.cartouche-cell{position:relative;padding:.72rem .8rem .72rem 5.1rem!important;min-height:4.8rem}
+.cartouche-icon{position:absolute;left:1rem;top:50%;transform:translateY(-50%);width:3.1rem!important;height:3.1rem!important;max-width:3.1rem!important;object-fit:contain;margin:0!important;float:none!important}
+.question-content .cartouche-icon{width:3.65rem!important;height:3.65rem!important;max-width:3.65rem!important;left:.85rem}
+.notion-content,.rappel-content,.astuce-content,.retenir-content,
+.notion-content th,.notion-content td,.rappel-content th,.rappel-content td,.astuce-content th,.astuce-content td,.retenir-content th,.retenir-content td{background:#f1f1f1!important}
+.question-content,.question-content th,.question-content td{background:#fff!important}
+.document-content,.document-content th,.document-content td{background:#fff!important}
+
+/* Editable cloze fields — keeps the answer hidden until the student/correction supplies it. */
+.cloze-input{
+  display:inline-block;vertical-align:baseline;
+  width:clamp(5.5rem,14vw,9.5rem);min-width:5.5rem;
+  margin:0 .14rem;padding:.05rem .3rem .08rem;
+  border:0;border-bottom:2px solid #555;border-radius:0;
+  background:#fff;color:#111;font:inherit;font-weight:700;text-align:center;
+}
+.cloze-input:focus{outline:2px solid #555;outline-offset:2px}
+.retenir-content .response-sheet{margin:.8rem 0 0!important}
+
+/* RGB tokens inherit normal styling when the reading aid is off. */
+.rgb-token{color:inherit;-webkit-text-fill-color:currentColor}
+
+/* Responsive web layout. Tables remain scrollable rather than being distorted. */
+@media(max-width:900px){
+  .hero,.course{padding-left:clamp(.9rem,3vw,1.5rem);padding-right:clamp(.9rem,3vw,1.5rem)}
+  .toc{padding-left:1rem;padding-right:1rem}
+}
+@media(max-width:700px){
+  :root{--font-size:16px}
+  .sheet{margin:0;background:#fff;box-shadow:none}
+  .hero{padding:1.25rem 1rem 1rem}
+  .hero h1{font-size:clamp(1.55rem,7vw,2rem)}
+  .course{padding:1.1rem 1rem}
+  .course h1{font-size:1.45rem}.course h2{font-size:1.22rem}.course h3{font-size:1.05rem}
+  .toc{margin:0;border-radius:0;border-left:0;border-right:0}.toc ul{columns:1}
+  .toolbar{position:sticky;top:0;padding:7px 8px!important;gap:5px}.toolbar button{padding:6px 8px!important}
+  .tool-drawer{flex-basis:100%}
+  .cartouche-cell{padding-left:4.35rem!important}
+  .cartouche-icon{left:.7rem;width:2.75rem!important;height:2.75rem!important;max-width:2.75rem!important}
+  .question-content .cartouche-icon{width:3rem!important;height:3rem!important;max-width:3rem!important;left:.55rem}
+  th,td{padding:.48rem .52rem}
+  .document-content img{max-height:none}
+  .cloze-input{width:min(8rem,42vw)}
+}
+@media(max-width:460px){
+  .hero-kicker{font-size:.78rem}.hero-sub{font-size:.9rem}
+  .course{padding-left:.72rem;padding-right:.72rem}
+  .cartouche-cell{padding-left:3.65rem!important}
+  .cartouche-icon{left:.5rem;width:2.45rem!important;height:2.45rem!important;max-width:2.45rem!important}
+  .question-content .cartouche-icon{width:2.65rem!important;height:2.65rem!important;max-width:2.65rem!important}
+  .block-label{font-size:.95rem}
+  .response-sheet{font-size:.93rem}
+}
+@media print{
+  .cartouche-cell{padding-left:16mm!important}
+  .cartouche-icon{left:3mm;width:10mm!important;height:10mm!important;max-width:10mm!important}
+  .question-content .cartouche-icon{width:12mm!important;height:12mm!important;max-width:12mm!important}
+  .cloze-input{border-bottom:1pt solid #333;background:#fff;width:28mm}
+}
+
+/* === V34 — corrections issues de la revue utilisateur === */
+/* Bandeaux de titre : thème et question de gestion clairement séparés. */
+.hero{padding:1.25rem 1.5rem 1.15rem!important;background:#fff!important}
+.hero-theme-band,.hero-question-band{border:1px solid #a8a8a8;display:flex;align-items:stretch;width:100%;margin:0}
+.hero-theme-band{background:#ededed;margin-bottom:.55rem}
+.hero-question-band{background:#fff;border-width:1.5px}
+.hero-band-label{display:flex;align-items:center;flex:0 0 auto;padding:.58rem .8rem;background:#d6d6d6;border-right:1px solid #a8a8a8;font-weight:800;text-transform:uppercase;letter-spacing:.035em;color:#111;font-size:.85rem}
+.hero-band-text{display:flex;align-items:center;padding:.58rem .85rem;font-weight:700;color:#222}
+.hero-question-band h1{margin:0!important;padding:.62rem .9rem!important;display:flex;align-items:center;font-size:clamp(1.55rem,3.1vw,2.35rem)!important;line-height:1.14;color:#111!important}
+.hero-sub{margin:.65rem .15rem 0!important}
+
+/* Icônes de cartouches : plus grandes et ancrées en haut à gauche du corps. */
+.cartouche-cell{padding-left:5.55rem!important;min-height:5.35rem}
+.cartouche-icon{left:.85rem!important;top:.7rem!important;transform:none!important;width:3.65rem!important;height:3.65rem!important;max-width:3.65rem!important}
+.question-content .cartouche-icon{left:.72rem!important;top:.58rem!important;width:4.1rem!important;height:4.1rem!important;max-width:4.1rem!important}
+
+/* Attention : renforcer un pictogramme trop fin par rapport à la graisse du texte. */
+.attention-inline{width:28px!important;height:28px!important;max-width:28px!important;vertical-align:-7px!important;margin-right:.4rem!important;filter:drop-shadow(.45px 0 0 #111) drop-shadow(-.45px 0 0 #111) drop-shadow(0 .45px 0 #111) drop-shadow(0 -.45px 0 #111)}
+
+/* Notion 3 et document 4 : première ligne non grasse. */
+#notion-3 + .table-wrap tr.top-row-normal th,
+#document-4 + .table-wrap tr.top-row-normal th{font-weight:400!important}
+
+/* Documents 7 et 8 : illustration sur toute la largeur disponible. */
+#document-7 + .document-image-fullwidth table,
+#document-8 + .document-image-fullwidth table{width:100%!important;table-layout:fixed}
+#document-7 + .document-image-fullwidth img.fullwidth-image,
+#document-8 + .document-image-fullwidth img.fullwidth-image{display:block;width:100%!important;max-width:100%!important;height:auto!important;max-height:none!important;object-fit:contain;margin:.55rem 0 0!important}
+
+@media(max-width:700px){
+  .hero{padding:.9rem .75rem!important}
+  .hero-theme-band,.hero-question-band{display:block}
+  .hero-band-label{display:block;border-right:0;border-bottom:1px solid #a8a8a8;padding:.42rem .62rem;font-size:.76rem}
+  .hero-band-text{display:block;padding:.5rem .65rem}
+  .hero-question-band h1{display:block;padding:.55rem .65rem!important;font-size:clamp(1.4rem,6.5vw,1.85rem)!important}
+  .cartouche-cell{padding-left:4.8rem!important}
+  .cartouche-icon{left:.55rem!important;top:.55rem!important;width:3.25rem!important;height:3.25rem!important;max-width:3.25rem!important}
+  .question-content .cartouche-icon{left:.45rem!important;top:.45rem!important;width:3.55rem!important;height:3.55rem!important;max-width:3.55rem!important}
+}
+@media(max-width:460px){
+  .cartouche-cell{padding-left:4.15rem!important}
+  .cartouche-icon{width:2.85rem!important;height:2.85rem!important;max-width:2.85rem!important}
+  .question-content .cartouche-icon{width:3.1rem!important;height:3.1rem!important;max-width:3.1rem!important}
+}
+@media print{
+  .hero-theme-band,.hero-question-band{border-color:#777!important}
+  .hero-band-label{background:#ddd!important}
+  .cartouche-cell{padding-left:18mm!important}
+  .cartouche-icon{left:3mm!important;top:2.5mm!important;transform:none!important;width:12mm!important;height:12mm!important;max-width:12mm!important}
+  .question-content .cartouche-icon{width:13mm!important;height:13mm!important;max-width:13mm!important}
+}
+
+
+/* === Revue V35 — titre et tableaux notionnels === */
+/* En-tête inspiré du gabarit Word : question de gestion dans un bandeau gris,
+   thème immédiatement en dessous. */
+.hero{padding:1.7rem 1.8rem 1.35rem!important}
+.hero-question-band{display:block;background:#8d8d8d;margin:0 0 1rem;padding:.28rem .72rem}
+.hero-question-band h1{margin:0!important;padding:0!important;color:#fff!important;font-size:clamp(1.65rem,3.25vw,2.2rem)!important;line-height:1.15!important;font-weight:800!important;letter-spacing:.005em}
+.hero-q-number{white-space:nowrap}
+.hero-theme-band{display:block;background:transparent!important;border:0!important;padding:0 .72rem!important;margin:0!important;color:#818181!important}
+.hero-theme-text{font-size:clamp(1.08rem,2vw,1.32rem);font-weight:800;line-height:1.25}
+.hero-sub{display:none!important}
+
+/* Document 4 : seul le titre de chaque situation est en gras. */
+#document-4 + .document-plain-table thead th,
+#document-4 + .document-plain-table tbody td{font-weight:400!important}
+#document-4 + .document-plain-table p strong{font-weight:800!important}
+
+/* Tableaux à l'intérieur des cartouches notionnels :
+   rubriques visuellement fortes, données en graisse normale sur fond blanc. */
+.notion-content .concept-table{background:#fff!important;font-weight:400!important}
+.notion-content .concept-table th,
+.notion-content .concept-table td{font-weight:400!important;background:#fff!important}
+.notion-content .concept-table thead th{font-weight:800!important;background:#e9e9e9!important}
+.notion-content .concept-table tbody td:first-child{font-weight:800!important;background:#f1f1f1!important}
+/* Styles de direction : toutes les valeurs, hors rubriques, restent blanches. */
+.notion-content .concept-table-styles tbody td:not(:first-child){background:#fff!important;font-weight:400!important}
+/* Culture : colonne "Éléments de culture" = rubrique ; explications = contenu. */
+.notion-content .concept-table-culture tbody td:nth-child(2){background:#fff!important;font-weight:400!important}
+
+@media(max-width:760px){
+  .hero{padding:1.1rem 1rem!important}
+  .hero-question-band{margin-bottom:.75rem;padding:.35rem .55rem}
+  .hero-question-band h1{font-size:clamp(1.35rem,6vw,1.75rem)!important}
+  .hero-theme-band{padding:0 .55rem!important}
+  .hero-theme-text{font-size:1.05rem}
+}
+@media print{
+  .hero{padding:0 0 6mm!important;margin-bottom:5mm!important}
+  .hero-question-band{background:#8d8d8d!important;-webkit-print-color-adjust:exact;print-color-adjust:exact}
+  .hero-question-band h1{color:#fff!important}
+  .notion-content .concept-table thead th{background:#e9e9e9!important;-webkit-print-color-adjust:exact;print-color-adjust:exact}
+  .notion-content .concept-table tbody td:first-child{background:#f1f1f1!important;-webkit-print-color-adjust:exact;print-color-adjust:exact}
+}
+
+/* V37 — Normalisation typographique : Aptos 12 pt, deux niveaux de graisse */
+:root{--font-size:16px}
+body,
+button,
+input,
+select,
+textarea{
+  font-family:Aptos,"Aptos Display",Arial,Helvetica,sans-serif;
+  font-size:var(--font-size);
+  font-weight:400;
+}
+
+/* Le contenu courant reste systématiquement en graisse normale. */
+p,li,td,blockquote,.block-content,.correction-body,.response-sheet,.hero-sub{
+  font-weight:400;
+}
+
+/* Mise en évidence volontaire : un seul niveau de gras. */
+strong,b,
+th,
+.block-label,
+.correction summary,
+.capacity-title,
+.hero-kicker,
+.hero-question-band h1,
+.hero-theme-text,
+.toolbar button,
+.tool-main,
+.toc .h1,
+.notion-content .concept-table thead th,
+.notion-content .concept-table tbody td:first-child{
+  font-weight:700!important;
+}
+
+/* Évite les graisses intermédiaires héritées des conversions Word/HTML. */
+thead th{font-weight:700!important}
+#document-4 + .document-plain-table tbody td{font-weight:400!important}
+#document-4 + .document-plain-table p strong{font-weight:700!important}
+.notion-content .concept-table,
+.notion-content .concept-table td,
+.notion-content .concept-table-styles tbody td:not(:first-child),
+.notion-content .concept-table-culture tbody td:nth-child(2){
+  font-weight:400!important;
+}
+.notion-content .concept-table tbody td:first-child{font-weight:700!important}
+
+@media(max-width:760px){
+  body{font-size:16px}
+}
+
+@media print{
+  body{font-family:Aptos,"Aptos Display",Arial,Helvetica,sans-serif;font-size:12pt;font-weight:400}
+  strong,b,th,.block-label,.capacity-title{font-weight:700!important}
+}
+\n\n/* === V38 : distinguer PDF de référence et impression personnalisée === */\n.toolbar .tool-action{display:inline-flex;align-items:center;gap:.35rem;font:inherit;border:1px solid #777!important;border-radius:7px!important;background:#fff!important;color:#222!important;padding:6px 9px!important;font-weight:700;text-decoration:none;cursor:pointer;line-height:1.35}\n.toolbar .tool-action:hover,.toolbar .tool-action:focus-visible{background:#ededed!important;outline:2px solid #fff;outline-offset:2px}\n.toolbar .tool-pdf{border-color:#b7b7b7!important}\n.toolbar .tool-print{border-color:#777!important}\n.tool-primary-hint{font-size:.86rem;color:#ddd;margin-left:.2rem;white-space:nowrap}\n@media(max-width:760px){.tool-primary{width:100%}.toolbar .tool-action{flex:1 1 250px;justify-content:center}.tool-primary-hint{flex-basis:100%;text-align:center;margin:.1rem 0 0;white-space:normal}}\n@media print{.tool-primary-hint{display:none!important}}\n
